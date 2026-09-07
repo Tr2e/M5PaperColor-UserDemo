@@ -12,6 +12,7 @@
 #include "esp_log.h"
 #include "esp_log_level.h"
 #include "esp_timer.h"
+#include "nvs.h"
 #include <M5Unified.h>
 #include "hal/storage/hal_storage.h"
 #include "hal/hal.h"
@@ -23,6 +24,9 @@
 static const char *TAG = "Slideshow";
 
 static constexpr uint8_t RX8130_RAM_INDEX_CURRENT_STORAGE = 0;
+static constexpr const char *PHOTO_SELECTION_NVS_NAMESPACE = "papercolor";
+static constexpr const char *PHOTO_SELECTION_NVS_KEY_INTERNAL = "local_pic_int";
+static constexpr const char *PHOTO_SELECTION_NVS_KEY_SD = "local_pic_sd";
 
 // Define an invalid index to represent "no photo is currently displayed"
 #define NO_PHOTO 0xFFFF
@@ -122,6 +126,7 @@ bool PhotoSlideshow::init(const char *dir_path, uint8_t interval_min)
     selectStorageMedia(_last_sd_inserted, _sd_fallback_locked);
 
     scanPhotos();
+    restoreSelection();
     hal.statusEventSend(OPERATION_EVENT_STARTUP_SUCCESS);
 
     ESP_LOGI(TAG, "Init: Found %d photos, mode: %s%s", (int)_photo_list.size(), interval_min == 0 ? "manual" : "auto",
@@ -148,14 +153,7 @@ void PhotoSlideshow::start()
     _last_refresh_ms = millis_();
 
     if (!_photo_list.empty()) {
-        // ESP_LOGI(TAG, "Start → displaying first photo...");
-        // displayPhoto(0);
-        // _current_index = 0;
-        // _pending_index = 0;
-        uint8_t b0, b1;
-        hal.rx8130RamRead(RX8130_RAM_INDEX_CURRENT, &b0);
-        hal.rx8130RamRead(RX8130_RAM_INDEX_CURRENT + 1, &b1);
-        _pending_index = (uint16_t)(b1 << 8 | b0);
+        restoreSelection();
     } else {
         // Starting without photos is fine; nothing will be displayed
         ESP_LOGW(TAG, "Start → No photos found, running in background...");
@@ -297,6 +295,7 @@ bool PhotoSlideshow::showSelectedPhoto()
     _last_refresh_ms = millis_();
     hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT, (uint8_t)(index & 0xFF));
     hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT + 1, (uint8_t)((index >> 8) & 0xFF));
+    persistSelection(index);
     return true;
 }
 
@@ -397,6 +396,7 @@ void PhotoSlideshow::update()
             if (displayPhoto(_pending_index)) {
                 _current_index   = _pending_index;
                 _last_refresh_ms = millis_();
+                persistSelection(_current_index);
             }
             _needs_refresh = false;
         }
@@ -473,6 +473,9 @@ void PhotoSlideshow::handleButtons()
 bool PhotoSlideshow::rescanAndClamp()
 {
     bool has_photos = scanPhotos();
+    if (has_photos && _pending_index == NO_PHOTO) {
+        restoreSelection();
+    }
     clampIndices();
     if (!has_photos) {
         ESP_LOGD(TAG, "Rescan: directory empty");
@@ -588,6 +591,9 @@ bool PhotoSlideshow::displayPhotoByPath(const char *path)
             if (displayPhoto(photo_index)) {
                 _current_index = photo_index;
                 _pending_index = photo_index;
+                hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT, (uint8_t)(photo_index & 0xFF));
+                hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT + 1, (uint8_t)((photo_index >> 8) & 0xFF));
+                persistSelection(photo_index);
                 ESP_LOGI(TAG, "Display by path: [%d/%d]: %s", photo_index + 1, (int)_photo_list.size(), path);
                 return true;
             }
@@ -624,6 +630,110 @@ bool PhotoSlideshow::scanPhotos()
     std::sort(_photo_list.begin(), _photo_list.end());
     ESP_LOGD(TAG, "Scanned %d photos in %s", (int)_photo_list.size(), _dir_path);
     return !_photo_list.empty();
+}
+
+bool PhotoSlideshow::restoreSelection()
+{
+    if (_photo_list.empty()) {
+        _pending_index = NO_PHOTO;
+        return false;
+    }
+
+    if (restorePersistedSelection()) {
+        return true;
+    }
+
+    // Compatibility fallback for builds that only stored the selected list
+    // index in the RTC backup RAM.
+    uint8_t b0 = 0;
+    uint8_t b1 = 0;
+    hal.rx8130RamRead(RX8130_RAM_INDEX_CURRENT, &b0);
+    hal.rx8130RamRead(RX8130_RAM_INDEX_CURRENT + 1, &b1);
+    _pending_index = (uint16_t)(b1 << 8 | b0);
+    clampIndices();
+    ESP_LOGI(TAG, "Restored legacy photo index: [%d/%d]", _pending_index + 1, (int)_photo_list.size());
+    return true;
+}
+
+bool PhotoSlideshow::restorePersistedSelection()
+{
+    const char *key = hal_storage_get_media() == APP_STORAGE_MEDIA_SDMMC ? PHOTO_SELECTION_NVS_KEY_SD
+                                                                         : PHOTO_SELECTION_NVS_KEY_INTERNAL;
+    nvs_handle_t handle;
+    if (nvs_open(PHOTO_SELECTION_NVS_NAMESPACE, NVS_READONLY, &handle) != ESP_OK) {
+        return false;
+    }
+
+    size_t name_size = 0;
+    esp_err_t err    = nvs_get_str(handle, key, nullptr, &name_size);
+    if (err != ESP_OK || name_size <= 1) {
+        nvs_close(handle);
+        return false;
+    }
+
+    std::vector<char> saved_name(name_size);
+    err = nvs_get_str(handle, key, saved_name.data(), &name_size);
+    nvs_close(handle);
+    if (err != ESP_OK) {
+        return false;
+    }
+
+    for (uint16_t index = 0; index < _photo_list.size(); ++index) {
+        const char *path = _photo_list[index].c_str();
+        const char *name = strrchr(path, '/');
+        name             = name ? name + 1 : path;
+        if (strcmp(name, saved_name.data()) == 0) {
+            _pending_index = index;
+            hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT, (uint8_t)(index & 0xFF));
+            hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT + 1, (uint8_t)((index >> 8) & 0xFF));
+            ESP_LOGI(TAG, "Restored selected photo: [%d/%d]: %s", index + 1, (int)_photo_list.size(), name);
+            return true;
+        }
+    }
+
+    ESP_LOGW(TAG, "Saved photo is no longer available: %s", saved_name.data());
+    return false;
+}
+
+void PhotoSlideshow::persistSelection(uint16_t index)
+{
+    if (index >= _photo_list.size()) {
+        return;
+    }
+
+    const char *path = _photo_list[index].c_str();
+    const char *name = strrchr(path, '/');
+    name             = name ? name + 1 : path;
+    const char *key  = hal_storage_get_media() == APP_STORAGE_MEDIA_SDMMC ? PHOTO_SELECTION_NVS_KEY_SD
+                                                                          : PHOTO_SELECTION_NVS_KEY_INTERNAL;
+
+    nvs_handle_t handle;
+    if (nvs_open(PHOTO_SELECTION_NVS_NAMESPACE, NVS_READWRITE, &handle) != ESP_OK) {
+        ESP_LOGW(TAG, "Failed to open NVS while saving selected photo");
+        return;
+    }
+
+    bool changed     = true;
+    size_t saved_len = 0;
+    if (nvs_get_str(handle, key, nullptr, &saved_len) == ESP_OK && saved_len == strlen(name) + 1) {
+        std::vector<char> saved_name(saved_len);
+        if (nvs_get_str(handle, key, saved_name.data(), &saved_len) == ESP_OK && strcmp(saved_name.data(), name) == 0) {
+            changed = false;
+        }
+    }
+
+    if (changed) {
+        esp_err_t err = nvs_set_str(handle, key, name);
+        if (err == ESP_OK) {
+            err = nvs_commit(handle);
+        }
+        if (err == ESP_OK) {
+            ESP_LOGI(TAG, "Saved selected photo: %s", name);
+        } else {
+            ESP_LOGW(TAG, "Failed to save selected photo: %s", esp_err_to_name(err));
+        }
+    }
+    nvs_close(handle);
 }
 
 bool PhotoSlideshow::isImageFile(const char *filename)

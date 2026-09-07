@@ -771,11 +771,13 @@ static void app_task(void* param)
                 if (!muted) {
                     audio::play_tone_from_midi(96, 0.05);
                 }
+                hal.statusEventSend(muted ? OPERATION_EVENT_AUDIO_MUTED : OPERATION_EVENT_AUDIO_UNMUTED);
 
                 // Do not refresh the E Ink panel for a transient sound setting.
-                // The audible cue is enough; the next natural full home draw
-                // will reflect the persisted state without visual disruption.
-                ESP_LOGI(g_tag, "Audio %s from home C button (display unchanged)", muted ? "muted" : "unmuted");
+                // Audio and RGB cues acknowledge the change; the next natural
+                // full home draw reflects the persisted state.
+                ESP_LOGI(g_tag, "Audio %s from home C button (RGB cue, display unchanged)",
+                         muted ? "muted" : "unmuted");
                 vTaskDelay(pdMS_TO_TICKS(10));
                 continue;
             }

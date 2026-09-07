@@ -183,6 +183,9 @@ private:
     bool scanPhotos();      // Rescan using _dir_path
     bool rescanAndClamp();  // Rescan and wrap indices into range
     void clampIndices();    // Wrap indices by _photo_list.size()
+    bool restoreSelection();
+    bool restorePersistedSelection();
+    void persistSelection(uint16_t index);
     bool isImageFile(const char* name);
     bool displayPhoto(uint16_t index);
     void handleButtons();

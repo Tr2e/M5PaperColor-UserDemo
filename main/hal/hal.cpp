@@ -634,7 +634,8 @@ void Hal::LedStatusIndicateTask(void* task_parameters)
     const EventBits_t all_event_bits = OPERATION_EVENT_FAILED | OPERATION_EVENT_ERROR_IMAGE_READ |
                                        OPERATION_EVENT_REFRESH_START | OPERATION_EVENT_REFRESH_COMPLETE |
                                        OPERATION_EVENT_SUCCESS | OPERATION_EVENT_WAITING_WIFI |
-                                       OPERATION_EVENT_STARTUP_SUCCESS;
+                                       OPERATION_EVENT_STARTUP_SUCCESS | OPERATION_EVENT_AUDIO_MUTED |
+                                       OPERATION_EVENT_AUDIO_UNMUTED;
 
     LedState current_state    = LED_STATE_IDLE;
     LedState previous_state   = LED_STATE_IDLE;
@@ -688,7 +689,8 @@ void Hal::LedStatusIndicateTask(void* task_parameters)
 
         if (event_bits & OPERATION_EVENT_FAILED) {
             ESP_LOGW(TAG, "Event: Directory open error");
-            if (current_state != LED_STATE_ERROR_FADE) {
+            if (current_state != LED_STATE_ERROR_FADE && current_state != LED_STATE_AUDIO_MUTED_BLINK &&
+                current_state != LED_STATE_AUDIO_UNMUTED_BLINK) {
                 previous_state = current_state;
             }
             current_state    = LED_STATE_ERROR_FADE;
@@ -696,7 +698,8 @@ void Hal::LedStatusIndicateTask(void* task_parameters)
         }
         if (event_bits & OPERATION_EVENT_ERROR_IMAGE_READ) {
             ESP_LOGE(TAG, "Event: Image read error");
-            if (current_state != LED_STATE_ERROR_FADE) {
+            if (current_state != LED_STATE_ERROR_FADE && current_state != LED_STATE_AUDIO_MUTED_BLINK &&
+                current_state != LED_STATE_AUDIO_UNMUTED_BLINK) {
                 previous_state = current_state;
             }
             current_state    = LED_STATE_ERROR_FADE;
@@ -743,6 +746,26 @@ void Hal::LedStatusIndicateTask(void* task_parameters)
                 previous_state = current_state;
             }
             current_state    = LED_STATE_SUCCESS_STEADY_BLINK;
+            state_start_time = now;
+        }
+        const EventBits_t critical_event_bits = OPERATION_EVENT_FAILED | OPERATION_EVENT_ERROR_IMAGE_READ |
+                                                OPERATION_EVENT_REFRESH_START | OPERATION_EVENT_REFRESH_COMPLETE;
+        if ((event_bits & OPERATION_EVENT_AUDIO_MUTED) && !(event_bits & critical_event_bits) &&
+            current_state != LED_STATE_ERROR_FADE) {
+            ESP_LOGI(TAG, "Event: Audio muted");
+            if (current_state != LED_STATE_AUDIO_MUTED_BLINK && current_state != LED_STATE_AUDIO_UNMUTED_BLINK) {
+                previous_state = current_state;
+            }
+            current_state    = LED_STATE_AUDIO_MUTED_BLINK;
+            state_start_time = now;
+        }
+        if ((event_bits & OPERATION_EVENT_AUDIO_UNMUTED) && !(event_bits & critical_event_bits) &&
+            current_state != LED_STATE_ERROR_FADE) {
+            ESP_LOGI(TAG, "Event: Audio unmuted");
+            if (current_state != LED_STATE_AUDIO_MUTED_BLINK && current_state != LED_STATE_AUDIO_UNMUTED_BLINK) {
+                previous_state = current_state;
+            }
+            current_state    = LED_STATE_AUDIO_UNMUTED_BLINK;
             state_start_time = now;
         }
 
@@ -847,6 +870,25 @@ void Hal::LedStatusIndicateTask(void* task_parameters)
                     M5.Led.setBrightness(0);
                 }
                 M5.Led.display();
+                break;
+
+            case LED_STATE_AUDIO_MUTED_BLINK:
+            case LED_STATE_AUDIO_UNMUTED_BLINK:
+                blink_phase = elapsed / 100;
+                if (blink_phase < 4) {
+                    M5.Led.setBrightness((blink_phase % 2 == 0) ? 75 : 0);
+                    if (current_state == LED_STATE_AUDIO_MUTED_BLINK) {
+                        M5.Led.setAllColor(255, 48, 0);
+                    } else {
+                        M5.Led.setAllColor(0, 255, 96);
+                    }
+                    M5.Led.display();
+                } else {
+                    M5.Led.setBrightness(0);
+                    M5.Led.display();
+                    current_state    = previous_state;
+                    state_start_time = now;
+                }
                 break;
 
             case LED_STATE_IDLE:
