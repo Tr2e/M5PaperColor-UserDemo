@@ -9,6 +9,8 @@
 #include <cstring>
 #include <cctype>
 #include <cstdint>
+#include <ctime>
+#include <sys/time.h>
 #include <sys/stat.h>
 #include <dirent.h>
 #include <unistd.h>
@@ -26,7 +28,6 @@
 
 #include "hal/wifi/hal_wifi.h"
 #include "hal/storage/hal_storage.h"
-#include "apps/local_photo_slideshow/local_photo_slideshow.h"
 #include "apps/ezdata_photo_push/ezdata_photo_push.h"
 #include "hal/utils/dns_server/dns_server.h"
 #include "hal/hal.h"
@@ -35,8 +36,6 @@
 #include "hal/ezdata/hal_ezdata.h"
 
 using namespace hal_wifi;
-
-extern PhotoSlideshow photo_slideshow;
 
 #define TAG "app_server"
 
@@ -221,6 +220,7 @@ static void send_json_response(httpd_req_t *req, cJSON *root)
 static esp_err_t send_error_response(httpd_req_t *req, int code, const char *msg)
 {
     httpd_resp_set_status(req, code == 400   ? "400 Bad Request"
+                               : code == 409 ? "409 Conflict"
                                : code == 403 ? "403 Forbidden"
                                : code == 404 ? "404 Not Found"
                                              : "500 Internal Server Error");
@@ -951,9 +951,12 @@ static esp_err_t h_photos_upload(httpd_req_t *req)
     cJSON_AddStringToObject(r, "name", fname);
 
     if (strcmp(action, "upload_display") == 0) {
-        photo_slideshow.displayPhotoByPath(path);
-        strlcpy(g_dev_state.current_image, fname, sizeof(g_dev_state.current_image));
-        cJSON_AddStringToObject(r, "displaying", fname);
+        if (app_manager_display_local_photo(path)) {
+            strlcpy(g_dev_state.current_image, fname, sizeof(g_dev_state.current_image));
+            cJSON_AddStringToObject(r, "displaying", fname);
+        } else {
+            cJSON_AddStringToObject(r, "display_error", "image decode failed");
+        }
     }
 
     send_json_response(req, r);
@@ -1038,6 +1041,81 @@ static esp_err_t h_battery(httpd_req_t *req)
     send_json_response(req, r);
     cJSON_Delete(r);
 
+    return ESP_OK;
+}
+
+static esp_err_t h_time_sync(httpd_req_t *req)
+{
+    char buf[256];
+    int len = httpd_req_recv(req, buf, sizeof(buf) - 1);
+    if (len <= 0) {
+        return send_error_response(req, 400, "no body");
+    }
+    buf[len] = 0;
+
+    cJSON *j = cJSON_Parse(buf);
+    if (!j) {
+        return send_error_response(req, 400, "bad json");
+    }
+    cJSON *epoch_j  = cJSON_GetObjectItem(j, "unix_time_ms");
+    cJSON *offset_j = cJSON_GetObjectItem(j, "timezone_offset_minutes");
+    if (!cJSON_IsNumber(epoch_j) || !cJSON_IsNumber(offset_j)) {
+        cJSON_Delete(j);
+        return send_error_response(req, 400, "unix_time_ms and timezone_offset_minutes required");
+    }
+
+    const int64_t epoch_ms = static_cast<int64_t>(epoch_j->valuedouble);
+    const int offset_minutes = offset_j->valueint;
+    cJSON_Delete(j);
+
+    // RX8130 stores local wall-clock fields. The browser supplies UTC epoch
+    // plus its local offset, avoiding firmware timezone assumptions.
+    if (epoch_ms < 1704067200000LL || epoch_ms > 4102444799999LL || offset_minutes < -840 ||
+        offset_minutes > 840) {
+        return send_error_response(req, 400, "time value out of range");
+    }
+
+    const time_t utc_seconds   = static_cast<time_t>(epoch_ms / 1000LL);
+    const time_t local_seconds = utc_seconds + static_cast<time_t>(offset_minutes) * 60;
+    struct tm local_tm         = {};
+    if (!gmtime_r(&local_seconds, &local_tm)) {
+        return send_error_response(req, 400, "invalid time");
+    }
+    const int local_year = local_tm.tm_year + 1900;
+    if (local_year < 2024 || local_year > 2099) {
+        return send_error_response(req, 400, "local time outside RTC range");
+    }
+
+    // Also align ESP system time in UTC for services that use time_t.
+    struct timeval system_time = {};
+    system_time.tv_sec         = utc_seconds;
+    system_time.tv_usec        = static_cast<suseconds_t>((epoch_ms % 1000LL) * 1000LL);
+    if (settimeofday(&system_time, nullptr) != 0) {
+        ESP_LOGW(TAG, "settimeofday failed: errno=%d", errno);
+    }
+
+    M5.Rtc.setDateTime(&local_tm);
+    vTaskDelay(pdMS_TO_TICKS(20));
+
+    m5::rtc_date_t date;
+    m5::rtc_time_t time;
+    if (!M5.Rtc.getDateTime(&date, &time) || date.year != local_tm.tm_year + 1900 ||
+        date.month != local_tm.tm_mon + 1 || date.date != local_tm.tm_mday) {
+        return send_error_response(req, 500, "RTC write verification failed");
+    }
+
+    app_manager_refresh_home_date();
+
+    char local_datetime[32];
+    snprintf(local_datetime, sizeof(local_datetime), "%04d-%02d-%02d %02d:%02d:%02d", date.year, date.month,
+             date.date, time.hours, time.minutes, time.seconds);
+    cJSON *r = cJSON_CreateObject();
+    cJSON_AddStringToObject(r, "status", "ok");
+    cJSON_AddStringToObject(r, "local_datetime", local_datetime);
+    cJSON_AddNumberToObject(r, "timezone_offset_minutes", offset_minutes);
+    send_json_response(req, r);
+    cJSON_Delete(r);
+    ESP_LOGI(TAG, "RTC synced from browser: %s (UTC offset %+d min)", local_datetime, offset_minutes);
     return ESP_OK;
 }
 
@@ -1251,7 +1329,10 @@ static esp_err_t h_photos_display(httpd_req_t *req)
     }
 
     /* Call the local album to display the image */
-    photo_slideshow.displayPhotoByPath(path);
+    if (!app_manager_display_local_photo(path)) {
+        cJSON_Delete(j);
+        return send_error_response(req, 500, "image decode failed");
+    }
 
     strlcpy(g_dev_state.current_image, name, sizeof(g_dev_state.current_image));
 
@@ -1370,6 +1451,7 @@ static const httpd_uri_t routes[] = {
     {"/api/photos/delete", HTTP_DELETE, h_photos_delete},
     {"/api/storage", HTTP_GET, h_storage},
     {"/api/battery", HTTP_GET, h_battery},
+    {"/api/time/sync", HTTP_POST, h_time_sync},
     {"/api/mode/mode_1/config", HTTP_GET, h_mode_cfg_get},
     {"/api/mode/mode_1/config", HTTP_POST, h_mode_cfg_set},
     {"/api/mode/mode_2/config", HTTP_GET, h_mode2_cfg_get},
@@ -1419,7 +1501,7 @@ esp_err_t app_server_init(void)
 
     /* HTTP server */
     httpd_config_t hc   = HTTPD_DEFAULT_CONFIG();
-    hc.max_uri_handlers = 20;
+    hc.max_uri_handlers = 24;
     hc.stack_size       = 1024 * 20;
     hc.lru_purge_enable = true;
     hc.uri_match_fn     = httpd_uri_match_wildcard;

@@ -74,8 +74,25 @@ public:
      * @brief Displays a specific image by file path.
      *
      * @param path Absolute or mounted file path to the image.
+     * @return True when the image was displayed.
      */
-    void displayPhotoByPath(const char* path);
+    bool displayPhotoByPath(const char* path);
+
+    /**
+     * @brief Draws the selected local photo into a clipped AspectFill tile.
+     *
+     * This only updates the canvas; it does not refresh the e-paper panel.
+     *
+     * @return True when a photo was decoded into the tile.
+     */
+    bool drawThumbnail(int x, int y, int width, int height);
+
+    /**
+     * @brief Immediately displays the selected (or first) local photo.
+     *
+     * @return True when a photo was displayed and the panel refreshed.
+     */
+    bool showSelectedPhoto();
 
     /**
      * @brief Updates the auto-play interval.
@@ -167,7 +184,7 @@ private:
     bool rescanAndClamp();  // Rescan and wrap indices into range
     void clampIndices();    // Wrap indices by _photo_list.size()
     bool isImageFile(const char* name);
-    void displayPhoto(uint16_t index);
+    bool displayPhoto(uint16_t index);
     void handleButtons();
     void requestRefresh(uint16_t new_index);
 };

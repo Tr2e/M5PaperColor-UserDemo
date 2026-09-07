@@ -280,6 +280,7 @@ void Hal::settingsInit()
     settings.interval_minutes = 60;
     settings.boot_sound       = true;
     settings.low_power_mode   = false;
+    settings.audio_muted      = false;
     cstring_copy(settings.current_mode, "", sizeof(settings.current_mode));
     cstring_copy(settings.device_name, "papercolor", sizeof(settings.device_name));
 
@@ -304,6 +305,7 @@ void Hal::settingsInit()
 
         if (nvs_get_u8(nvs_handle, "boot_sound", &value_u8) == ESP_OK) settings.boot_sound = (value_u8 != 0);
         if (nvs_get_u8(nvs_handle, "low_power", &value_u8) == ESP_OK) settings.low_power_mode = (value_u8 != 0);
+        if (nvs_get_u8(nvs_handle, "audio_muted", &value_u8) == ESP_OK) settings.audio_muted = (value_u8 != 0);
 
         uint16_t value_u16;
         if (nvs_get_u16(nvs_handle, "interval", &value_u16) == ESP_OK && value_u16 >= 1 && value_u16 <= 255)
@@ -351,8 +353,9 @@ void Hal::settingsInit()
 
     Canvas->setRotation(settings.rotation);
 
-    ESP_LOGI(TAG, "Settings loaded: rot=%d, slide=%d, interval=%d, mode=%s, boot_sound=%d", settings.rotation,
-             settings.auto_slideshow, settings.interval_minutes, settings.current_mode, settings.boot_sound ? 1 : 0);
+    ESP_LOGI(TAG, "Settings loaded: rot=%d, slide=%d, interval=%d, mode=%s, boot_sound=%d, muted=%d",
+             settings.rotation, settings.auto_slideshow, settings.interval_minutes, settings.current_mode,
+             settings.boot_sound ? 1 : 0, settings.audio_muted ? 1 : 0);
 }
 
 void Hal::settingsSave(SettingKey key)
@@ -449,6 +452,14 @@ void Hal::settingsSave(SettingKey key)
             }
             break;
         }
+        case SETTING_AUDIO_MUTED: {
+            uint8_t v;
+            if (nvs_get_u8(h, "audio_muted", &v) != ESP_OK || (v != 0) != settings.audio_muted) {
+                nvs_set_u8(h, "audio_muted", settings.audio_muted ? 1 : 0);
+                changed = true;
+            }
+            break;
+        }
     }
 
     if (changed) {
@@ -486,17 +497,32 @@ bool Hal::isSDCardInserted()
 bool Hal::sht40Read(float* temp, float* humi)
 {
     uint8_t cmd = SHT4X_CMD_HI_PRE;
-    uint8_t buf[6];
+    uint8_t buf[6] = {};
+
+    auto crc8 = [](const uint8_t* data, size_t length) {
+        uint8_t crc = 0xFF;
+        for (size_t i = 0; i < length; ++i) {
+            crc ^= data[i];
+            for (uint8_t bit = 0; bit < 8; ++bit) {
+                crc = (crc & 0x80) ? static_cast<uint8_t>((crc << 1) ^ 0x31) : static_cast<uint8_t>(crc << 1);
+            }
+        }
+        return crc;
+    };
 
     if (!M5.In_I2C.start(SHT4X_ADDR, false, 400000)) return false;
-    M5.In_I2C.write(&cmd, 1);
-    M5.In_I2C.stop();
+    bool write_ok = M5.In_I2C.write(&cmd, 1);
+    bool stop_ok  = M5.In_I2C.stop();
+    if (!write_ok || !stop_ok) return false;
 
     vTaskDelay(pdMS_TO_TICKS(10));  // High precision mode requires ~8.3ms
 
     if (!M5.In_I2C.start(SHT4X_ADDR, true, 400000)) return false;
-    M5.In_I2C.read(buf, 6);
-    M5.In_I2C.stop();
+    // SHT40 expects the controller to NACK the final byte before STOP. Without
+    // this, the payload may arrive but endTransaction() reports a false error.
+    bool read_ok = M5.In_I2C.read(buf, 6, true);
+    stop_ok      = M5.In_I2C.stop();
+    if (!read_ok || !stop_ok || crc8(buf, 2) != buf[2] || crc8(buf + 3, 2) != buf[5]) return false;
 
     uint16_t raw_t = (buf[0] << 8) | buf[1];
     uint16_t raw_h = (buf[3] << 8) | buf[4];

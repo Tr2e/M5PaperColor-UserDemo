@@ -13,6 +13,7 @@
 #include "hal/hal.h"
 #include "apps/app_manager/app_manager.h"
 #include "assets/boot_sfx.h"
+#include "hal/utils/audio/audio.h"
 
 using namespace hal_wifi;
 Hal hal;
@@ -24,8 +25,9 @@ extern "C" void app_main(void)
     vTaskDelay(pdMS_TO_TICKS(500));
 
     hal.settingsInit();
+    audio::set_muted(hal.settings.audio_muted);
 
-    if (!hal.isRtcWakeBoot() && hal.settings.boot_sound) {
+    if (!hal.isRtcWakeBoot() && hal.settings.boot_sound && !hal.settings.audio_muted) {
         M5.Speaker.setVolume(200);
         M5.Speaker.playWav(boot_sfx, sizeof(boot_sfx));
         vTaskDelay(pdMS_TO_TICKS(300));

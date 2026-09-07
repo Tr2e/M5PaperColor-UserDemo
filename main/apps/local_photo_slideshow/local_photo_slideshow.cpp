@@ -117,7 +117,7 @@ bool PhotoSlideshow::init(const char *dir_path, uint8_t interval_min)
     _scr_w = hal.Canvas->width();
     _scr_h = hal.Canvas->height();
 
-    M5.Speaker.setVolume(120);
+    audio::set_volume(120);
 
     selectStorageMedia(_last_sd_inserted, _sd_fallback_locked);
 
@@ -237,7 +237,9 @@ bool PhotoSlideshow::runOneShotRefresh()
 
     uint16_t next_index = (_pending_index == NO_PHOTO) ? 0 : ((_pending_index + 1) % (uint16_t)_photo_list.size());
     ESP_LOGI(TAG, "One-shot → [%d/%d]: %s", next_index + 1, (int)_photo_list.size(), _photo_list[next_index].c_str());
-    displayPhoto(next_index);
+    if (!displayPhoto(next_index)) {
+        return false;
+    }
     _current_index   = next_index;
     _pending_index   = next_index;
     _needs_refresh   = false;
@@ -276,6 +278,73 @@ void PhotoSlideshow::toggleRotation()
     displayPhoto(_pending_index);
 }
 
+bool PhotoSlideshow::showSelectedPhoto()
+{
+    syncSettings();
+    if (!rescanAndClamp()) {
+        hal.statusEventSend(OPERATION_EVENT_FAILED);
+        return false;
+    }
+
+    uint16_t index = (_pending_index == NO_PHOTO) ? 0 : _pending_index;
+    if (!displayPhoto(index)) {
+        return false;
+    }
+
+    _current_index   = index;
+    _pending_index   = index;
+    _needs_refresh   = false;
+    _last_refresh_ms = millis_();
+    hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT, (uint8_t)(index & 0xFF));
+    hal.rx8130RamWrite(RX8130_RAM_INDEX_CURRENT + 1, (uint8_t)((index >> 8) & 0xFF));
+    return true;
+}
+
+bool PhotoSlideshow::drawThumbnail(int x, int y, int width, int height)
+{
+    if (width <= 0 || height <= 0 || !rescanAndClamp()) {
+        return false;
+    }
+
+    uint16_t index = (_pending_index == NO_PHOTO) ? 0 : _pending_index;
+    if (index >= _photo_list.size()) {
+        return false;
+    }
+
+    const char* path = _photo_list[index].c_str();
+    int image_width  = 0;
+    int image_height = 0;
+    bool rendered    = false;
+
+    hal_storage_prepare_photo_fs_access();
+    hal_storage_lock();
+    if (get_image_size_from_file(path, &image_width, &image_height) && image_width > 0 && image_height > 0) {
+        float scale = std::max((float)width / image_width, (float)height / image_height);
+        int draw_x  = x + (width - (int)(image_width * scale)) / 2;
+        int draw_y  = y + (height - (int)(image_height * scale)) / 2;
+
+        int32_t clip_x = 0;
+        int32_t clip_y = 0;
+        int32_t clip_w = 0;
+        int32_t clip_h = 0;
+        hal.Canvas->getClipRect(&clip_x, &clip_y, &clip_w, &clip_h);
+        hal.Canvas->setClipRect(x, y, width, height);
+
+        const char* dot = strrchr(path, '.');
+        if (dot && (strcasecmp(dot, ".jpg") == 0 || strcasecmp(dot, ".jpeg") == 0)) {
+            rendered = hal.Canvas->drawJpgFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        } else if (dot && strcasecmp(dot, ".bmp") == 0) {
+            rendered = hal.Canvas->drawBmpFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        } else if (dot && strcasecmp(dot, ".png") == 0) {
+            rendered = hal.Canvas->drawPngFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        }
+
+        hal.Canvas->setClipRect(clip_x, clip_y, clip_w, clip_h);
+    }
+    hal_storage_unlock();
+    return rendered;
+}
+
 void PhotoSlideshow::syncSettings()
 {
     hal.settingsLock();
@@ -290,9 +359,11 @@ void PhotoSlideshow::syncSettings()
 
     if (hal.Canvas->getRotation() != target_rotation) {
         hal.Canvas->setRotation(target_rotation);
-        _scr_w = hal.Canvas->width();
-        _scr_h = hal.Canvas->height();
     }
+    // Canvas rotation is shared with the portrait home screen. Always refresh the
+    // cached dimensions so every photo entry point uses the current orientation.
+    _scr_w = hal.Canvas->width();
+    _scr_h = hal.Canvas->height();
 }
 
 /* ====================== Main loop ====================== */
@@ -323,10 +394,11 @@ void PhotoSlideshow::update()
             }
             ESP_LOGI(TAG, "Settle OK → refreshing [%d/%d]: %s", _pending_index + 1, (int)_photo_list.size(),
                      _photo_list[_pending_index].c_str());
-            displayPhoto(_pending_index);
-            _current_index   = _pending_index;
-            _needs_refresh   = false;
-            _last_refresh_ms = millis_();
+            if (displayPhoto(_pending_index)) {
+                _current_index   = _pending_index;
+                _last_refresh_ms = millis_();
+            }
+            _needs_refresh = false;
         }
         return;
     }
@@ -349,9 +421,10 @@ void PhotoSlideshow::update()
 
             ESP_LOGI(TAG, "Auto → [%d/%d]: %s", next_index + 1, (int)_photo_list.size(),
                      _photo_list[next_index].c_str());
-            displayPhoto(next_index);
-            _current_index = next_index;
-            _pending_index = next_index;
+            if (displayPhoto(next_index)) {
+                _current_index = next_index;
+                _pending_index = next_index;
+            }
         }
     }
 }
@@ -441,11 +514,15 @@ void PhotoSlideshow::requestRefresh(uint16_t new_index)
 }
 
 /* ====================== Display photo ====================== */
-void PhotoSlideshow::displayPhoto(uint16_t index)
+bool PhotoSlideshow::displayPhoto(uint16_t index)
 {
+    // Web "View" / "Upload & Display" can enter here directly, without update().
+    // Restore the orientation selected in the web UI before fitting the image.
+    syncSettings();
+
     int image_width = 0, image_height = 0;
 
-    if (index >= _photo_list.size()) return;
+    if (index >= _photo_list.size()) return false;
     const char *path = _photo_list[index].c_str();
 
     hal_storage_prepare_photo_fs_access();
@@ -454,7 +531,7 @@ void PhotoSlideshow::displayPhoto(uint16_t index)
         hal_storage_unlock();
         ESP_LOGE(TAG, "Failed to read image size: %s", path);
         hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
-        return;
+        return false;
     }
 
     float scale = std::min((float)_scr_w / image_width, (float)_scr_h / image_height);
@@ -470,55 +547,55 @@ void PhotoSlideshow::displayPhoto(uint16_t index)
         M5.Display.setEpdMode(epd_mode_t::epd_fastest);
     }
 
+    bool rendered   = false;
     const char *dot = strrchr(path, '.');
     if (dot) {
         if (strcasecmp(dot, ".jpg") == 0 || strcasecmp(dot, ".jpeg") == 0) {
-            hal.Canvas->drawJpgFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawJpgFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         } else if (strcasecmp(dot, ".bmp") == 0) {
-            hal.Canvas->drawBmpFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawBmpFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         } else if (strcasecmp(dot, ".png") == 0) {
-            hal.Canvas->drawPngFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawPngFile(path, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         }
+    }
+
+    if (rendered) {
+        hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
+        app_manager_set_refresh_in_progress(true);
+        hal.Canvas->pushSprite(0, 0);
+        app_manager_set_refresh_in_progress(false);
+        hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    } else {
+        hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
     }
 
     if (use_fastest) {
         M5.Display.setEpdMode(epd_mode_t::epd_quality);
     }
     hal_storage_unlock();
+    return rendered;
 }
 
 /* ====================== Display photo by path ====================== */
-void PhotoSlideshow::displayPhotoByPath(const char *path)
+bool PhotoSlideshow::displayPhotoByPath(const char *path)
 {
     if (!rescanAndClamp()) {
         hal.statusEventSend(OPERATION_EVENT_FAILED);
-        return;
+        return false;
     }
     for (uint16_t photo_index = 0; photo_index < _photo_list.size(); photo_index++) {
         if (_photo_list[photo_index] == path) {
-            displayPhoto(photo_index);
-            _current_index = photo_index;
-            _pending_index = photo_index;
-            ESP_LOGI(TAG, "Display by path: [%d/%d]: %s", photo_index + 1, (int)_photo_list.size(), path);
-            return;
+            if (displayPhoto(photo_index)) {
+                _current_index = photo_index;
+                _pending_index = photo_index;
+                ESP_LOGI(TAG, "Display by path: [%d/%d]: %s", photo_index + 1, (int)_photo_list.size(), path);
+                return true;
+            }
+            return false;
         }
     }
     ESP_LOGW(TAG, "Photo not found in list: %s", path);
+    return false;
 }
 
 /* ====================== File scan ====================== */

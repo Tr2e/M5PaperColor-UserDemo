@@ -14,10 +14,32 @@
 namespace audio {
 
 static std::vector<int> c_major_scale = {60, 62, 64, 65, 67, 69, 71};  // C大调音阶（C D E F G A B）
+static bool s_muted                      = false;
+static uint8_t s_output_volume           = 120;
+
+void set_volume(uint8_t volume)
+{
+    s_output_volume = volume;
+    M5.Speaker.setVolume(s_muted ? 0 : s_output_volume);
+}
+
+void set_muted(bool muted)
+{
+    s_muted = muted;
+    if (s_muted) {
+        M5.Speaker.stop();
+    }
+    M5.Speaker.setVolume(s_muted ? 0 : s_output_volume);
+}
+
+bool is_muted()
+{
+    return s_muted;
+}
 
 void play_tone(int frequency, double duration_sec)
 {
-    if (M5.Speaker.getVolume() <= 0) {
+    if (s_muted || M5.Speaker.getVolume() <= 0) {
         return;
     }
 
@@ -47,7 +69,7 @@ void play_tone(int frequency, double duration_sec)
 
 void play_melody(const std::vector<int>& midi_list, double duration_sec = 0.1)
 {
-    if (M5.Speaker.getVolume() <= 0) {
+    if (s_muted || M5.Speaker.getVolume() <= 0) {
         return;
     }
 
@@ -85,7 +107,7 @@ void play_melody(const std::vector<int>& midi_list, double duration_sec = 0.1)
 
 void play_tone_from_midi(int midi, double duration_sec)
 {
-    if (M5.Speaker.getVolume() <= 0) {
+    if (s_muted || M5.Speaker.getVolume() <= 0) {
         return;
     }
 
@@ -95,7 +117,7 @@ void play_tone_from_midi(int midi, double duration_sec)
 
 void play_random_tone(int semitone_shift = 0, double duration_sec = 0.15)
 {
-    if (M5.Speaker.getVolume() <= 0) {
+    if (s_muted || M5.Speaker.getVolume() <= 0) {
         return;
     }
 

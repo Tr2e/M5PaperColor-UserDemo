@@ -132,6 +132,15 @@ SPDX-License-Identifier: MIT
     #status-bar .status-right {
       display: flex; align-items: center; gap: 12px; flex-shrink: 0; margin-left: auto;
     }
+    #status-bar .sync-time-action {
+      appearance: none; border: 1px solid #332C2B; border-radius: 999px;
+      min-height: 30px; padding: 5px 12px; background: #332C2B; color: #fff;
+      font: 800 var(--meta-size)/1 'Arial', 'Helvetica', sans-serif;
+      letter-spacing: 0.07em; cursor: pointer; white-space: nowrap;
+      box-shadow: 0 2px 0 rgba(51, 44, 43, 0.18);
+    }
+    #status-bar .sync-time-action:active { transform: translateY(1px); box-shadow: none; }
+    #status-bar .sync-time-action:disabled { opacity: 0.58; cursor: wait; }
     #status-bar .mode-badge {
       font-size: var(--meta-size); background: linear-gradient(135deg, #f0e6f6, #fce4ec);
       color: #990099; padding: 4px 12px; border-radius: 999px; flex-shrink: 0;
@@ -842,6 +851,8 @@ SPDX-License-Identifier: MIT
   #status-bar {
     flex-wrap: wrap;
   }
+  #status-bar .status-right { gap: 8px; }
+  #status-bar .sync-time-action { padding-inline: 10px; }
 }
 @media (min-width: 640px) {
   :root {
@@ -1193,6 +1204,7 @@ SPDX-License-Identifier: MIT
       <span id="wifi-status-text"></span>
     </div>
     <div class="status-right">
+      <button class="sync-time-action" id="status-sync-time-btn" onclick="syncDeviceTime(this)">SYNC TIME</button>
       <div class="battery-wrap" id="battery-wrap">
         <span class="battery-percent" id="battery-percent">--%</span>
         <span class="battery-icon">
@@ -2603,6 +2615,7 @@ let modeConfig = {
   low_power_mode: false,
   interval_minutes: 60,
 };
+let orientationSavePromise = Promise.resolve();
 
 let globalConfig = {
   boot_sound: false,
@@ -2711,6 +2724,7 @@ async function loadSettingsDeviceInfo() {
     if (dnInput) dnInput.value = sanitizeDeviceNameInput(status.device_name || "papercolor") || "papercolor";
     const bsToggle = document.getElementById("settings-boot-sound-toggle");
     if (bsToggle) bsToggle.checked = !!status.boot_sound;
+    updateStatusBar(status);
   } catch(e) {
     settingsOriginalSsid = "";
     const dnInput = document.getElementById("settings-device-name-input");
@@ -2730,7 +2744,9 @@ function hideSettings(e) {
 function selectOrient(val) {
   modeConfig.orientation = val;
   updateOrientSeg(val);
-  saveDisplaySetting({ orientation: val });
+  // Serialize rapid orientation changes so an earlier response cannot overwrite
+  // the latest selection just before a photo is sent to the device.
+  orientationSavePromise = orientationSavePromise.then(() => saveDisplaySetting({ orientation: val }));
 }
 
 function updateOrientSeg(val) {
@@ -2792,6 +2808,29 @@ function onSettingsBootSoundChange() {
   apiCall("POST", "/api/wifi/config", { boot_sound: on })
     .then(() => showToast("Saved", "success"))
     .catch(e => showToast(e.message, "error"));
+}
+
+async function syncDeviceTime(triggerButton) {
+  const button = triggerButton || document.getElementById("status-sync-time-btn");
+  if (!button) return;
+
+  button.disabled = true;
+  button.textContent = "Syncing…";
+  showToast("Syncing RTC...", "");
+  try {
+    const now = new Date();
+    const data = await apiCall("POST", "/api/time/sync", {
+      unix_time_ms: now.getTime(),
+      timezone_offset_minutes: -now.getTimezoneOffset(),
+    });
+    button.textContent = "SYNCED";
+    showToast("Time synced · " + data.local_datetime, "success");
+  } catch(e) {
+    showToast(e.message, "error");
+  } finally {
+    button.disabled = false;
+    setTimeout(() => { button.textContent = "SYNC TIME"; }, 1200);
+  }
 }
 
 // ---------- Wi-Fi: Save button logic ----------
@@ -3298,6 +3337,8 @@ async function uploadWithDisplay() {
   if (!canvas) { showToast("Please select an image first", "error"); return; }
 
   try {
+    // The physical display must use the same orientation as this exported canvas.
+    await orientationSavePromise;
     const blob = await new Promise((resolve, reject) => {
       canvas.toBlob(b => { if (b) resolve(b); else reject(new Error("Export failed")); }, "image/png");
     });
@@ -3420,6 +3461,7 @@ function escapeAttr(s) { return s.replace(/'/g, "\\'").replace(/"/g, "&quot;"); 
 async function displayPhoto(name) {
   try {
     showToast("Refreshing display...", "");
+    await orientationSavePromise;
     await apiCall("POST", "/api/photos/display", { name });
     showToast("Refresh complete", "success");
   } catch(e) { showToast(e.message, "error"); }

@@ -9,6 +9,7 @@
 #include "hal/utils/audio/audio.h"
 #include "apps/local_photo_slideshow/local_photo_slideshow.h"
 #include "apps/ezdata_photo_push/ezdata_photo_push.h"
+#include "apps/papercolor_home/papercolor_home.h"
 #include "apps/app_server/app_server.h"
 #include "hal/ezdata/hal_ezdata.h"
 #include "esp_log.h"
@@ -17,6 +18,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include <algorithm>
+#include <atomic>
 #include <cstdio>
 #include <M5Unified.h>
 #include "qrcode.h"
@@ -47,6 +49,12 @@ static AppMode g_current_mode     = APP_MODE_LOCAL;
 static uint32_t g_btn_press_start = 0;
 static bool g_btn_long_pressed    = false;
 
+enum class AppView : uint8_t { HOME = 0, PHOTO, CONFIG };
+static AppView g_current_view = AppView::HOME;
+static AppMode g_photo_view_source = APP_MODE_LOCAL;
+static uint32_t g_home_date_key = 0;
+static std::atomic_bool g_home_date_refresh_requested{false};
+
 // ---- WiFi AP auto-off timer ----
 static uint32_t g_ap_auto_off_timer     = 0;
 static bool g_ap_auto_off_timer_running = false;
@@ -63,6 +71,112 @@ static constexpr uint32_t LOW_POWER_IDLE_SHUTDOWN_MS = 60000;
 static inline uint32_t millis_()
 {
     return (uint32_t)(esp_timer_get_time() / 1000ULL);
+}
+
+static uint32_t current_rtc_date_key()
+{
+    m5::rtc_date_t date;
+    if (!M5.Rtc.getDate(&date) || date.year < 2020 || date.year > 2099 || date.month < 1 || date.month > 12 ||
+        date.date < 1 || date.date > 31) {
+        return 0;
+    }
+    return static_cast<uint32_t>(date.year) * 10000U + static_cast<uint32_t>(date.month) * 100U + date.date;
+}
+
+static void push_home_region(int x, int y, int width, int height)
+{
+    // M5Canvas keeps a 600x400 backing buffer while the home UI draws through
+    // rotation 1 as 400x600. pushSprite() transfers the unrotated buffer, so the
+    // physical display clip must be expressed in backing-buffer coordinates.
+    int display_x = x;
+    int display_y = y;
+    int display_w = width;
+    int display_h = height;
+    switch (hal.Canvas->getRotation() & 3U) {
+        case 1:
+            display_x = hal.Canvas->height() - (y + height);
+            display_y = x;
+            display_w = height;
+            display_h = width;
+            break;
+        case 2:
+            display_x = hal.Canvas->width() - (x + width);
+            display_y = hal.Canvas->height() - (y + height);
+            break;
+        case 3:
+            display_x = y;
+            display_y = hal.Canvas->width() - (x + width);
+            display_w = height;
+            display_h = width;
+            break;
+        default:
+            break;
+    }
+
+    M5.Display.setEpdMode(epd_mode_t::epd_fastest);
+    M5.Display.setClipRect(display_x, display_y, display_w, display_h);
+    hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
+    app_manager_set_refresh_in_progress(true);
+    hal.Canvas->pushSprite(0, 0);
+    app_manager_set_refresh_in_progress(false);
+    hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    M5.Display.clearClipRect();
+    M5.Display.setEpdMode(epd_mode_t::epd_quality);
+    app_manager_mark_activity();
+}
+
+static void show_home_view()
+{
+    g_current_view = AppView::HOME;
+    M5.Display.setEpdMode(epd_mode_t::epd_quality);
+    papercolor_home_draw(g_current_mode, photo_slideshow, ezdata_photo_push, hal.settings.audio_muted);
+    hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
+    app_manager_set_refresh_in_progress(true);
+    hal.Canvas->pushSprite(0, 0);
+    app_manager_set_refresh_in_progress(false);
+    hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    g_home_date_key = current_rtc_date_key();
+    g_home_date_refresh_requested.store(false, std::memory_order_release);
+    app_manager_mark_activity();
+}
+
+static void refresh_home_date_now()
+{
+    papercolor_home_draw_date();
+    push_home_region(PAPERCOLOR_HOME_DATE_X, PAPERCOLOR_HOME_DATE_Y, PAPERCOLOR_HOME_DATE_W,
+                     PAPERCOLOR_HOME_DATE_H);
+    g_home_date_key = current_rtc_date_key();
+}
+
+void app_manager_refresh_home_date(void)
+{
+    // HTTP handlers run on a different FreeRTOS task. Defer all Canvas and EPD
+    // access to the app-manager UI loop and retain the request until home is visible.
+    g_home_date_refresh_requested.store(true, std::memory_order_release);
+}
+
+static bool show_photo_view()
+{
+    bool displayed = false;
+    if (g_current_mode == APP_MODE_EZDATA) {
+        g_photo_view_source = APP_MODE_EZDATA;
+        // With no remote image yet, entering the view still enables the
+        // existing EzData binding/status scene. A short A click returns home.
+        displayed = ezdata_photo_push.getTotal() > 0 ? ezdata_photo_push.showSelectedPhoto()
+                                                     : ezdata_photo_push.isRunning();
+    } else {
+        g_photo_view_source = APP_MODE_LOCAL;
+        if (!photo_slideshow.isRunning()) {
+            photo_slideshow.start();
+        }
+        displayed = photo_slideshow.showSelectedPhoto();
+    }
+
+    if (displayed) {
+        g_current_view = AppView::PHOTO;
+        app_manager_mark_activity();
+    }
+    return displayed;
 }
 
 static bool mode_requires_sta(AppMode mode)
@@ -195,6 +309,20 @@ void app_manager_mark_activity(void)
 void app_manager_set_refresh_in_progress(bool in_progress)
 {
     g_refresh_in_progress = in_progress;
+}
+
+bool app_manager_display_local_photo(const char* path)
+{
+    if (!photo_slideshow.isRunning()) {
+        photo_slideshow.start();
+    }
+    if (!photo_slideshow.displayPhotoByPath(path)) {
+        return false;
+    }
+    g_photo_view_source = APP_MODE_LOCAL;
+    g_current_view      = AppView::PHOTO;
+    app_manager_mark_activity();
+    return true;
 }
 
 static bool should_idle_power_off_in_low_power_mode()
@@ -341,6 +469,7 @@ static void switch_app_mode(AppMode target_mode)
 
     start_current_mode();
     apply_current_mode_setting();
+    show_home_view();
 }
 
 // ---- Pause WiFi auto-reconnect (used during scanning/provisioning) ----
@@ -366,6 +495,7 @@ esp_err_t app_manager_apply_mode(const char* mode_id)
     AppMode target = app_mode_from_mode_id(mode_id);
     if (g_current_mode == target) {
         apply_current_mode_setting();
+        show_home_view();
         return ESP_OK;
     }
     switch_app_mode(target);
@@ -515,6 +645,7 @@ void app_manager_factory_reset_machine()
     hal.settings.interval_minutes = 60;
     hal.settings.boot_sound       = true;
     hal.settings.low_power_mode   = false;
+    hal.settings.audio_muted      = false;
     cstring_copy(hal.settings.device_name, "papercolor", sizeof(hal.settings.device_name));
     hal.settingsUnlock();
 
@@ -527,6 +658,7 @@ void app_manager_factory_reset_machine()
     hal.settingsSave(SETTING_BOOT_SOUND);
     hal.settingsSave(SETTING_DEVICE_NAME);
     hal.settingsSave(SETTING_LOW_POWER_MODE);
+    hal.settingsSave(SETTING_AUDIO_MUTED);
 
     g_current_mode = APP_MODE_NONE;
     app_server_sync_mode("");
@@ -554,6 +686,10 @@ static void app_task(void* param)
 
     while (1) {
         hal.update();
+
+        // Preserve this value across the release branch below so releasing a
+        // consumed long press cannot also trigger a short-click view action.
+        bool long_press_consumed = g_btn_long_pressed;
 
         if (should_idle_power_off_in_low_power_mode()) {
             ESP_LOGI(g_tag, "Low-power idle timeout reached, scheduling wake and powering off");
@@ -615,8 +751,52 @@ static void app_task(void* param)
                     ESP_LOGW(g_tag, "Failed to re-enable AP by long press: %s", esp_err_to_name(err));
                 } else {
                     ESP_LOGI(g_tag, "AP re-enabled by long press");
+                    g_current_view = AppView::CONFIG;
                     show_wifi_config_qrcode(ap_name);
                 }
+            }
+        }
+
+        // ==================== OS view navigation ====================
+        if (!long_press_consumed && !g_btn_long_pressed) {
+            if (g_current_view == AppView::HOME && M5.BtnC.wasPressed()) {
+                const bool muted = !hal.settings.audio_muted;
+                if (muted) {
+                    audio::play_tone_from_midi(84, 0.05);
+                    vTaskDelay(pdMS_TO_TICKS(60));
+                }
+                hal.settings.audio_muted = muted;
+                audio::set_muted(muted);
+                hal.settingsSave(SETTING_AUDIO_MUTED);
+                if (!muted) {
+                    audio::play_tone_from_midi(96, 0.05);
+                }
+
+                // Do not refresh the E Ink panel for a transient sound setting.
+                // The audible cue is enough; the next natural full home draw
+                // will reflect the persisted state without visual disruption.
+                ESP_LOGI(g_tag, "Audio %s from home C button (display unchanged)", muted ? "muted" : "unmuted");
+                vTaskDelay(pdMS_TO_TICKS(10));
+                continue;
+            }
+
+            if (g_current_view == AppView::HOME && M5.BtnB.wasPressed()) {
+                audio::play_tone_from_midi(120, 0.08);
+                if (!show_photo_view()) {
+                    hal.statusEventSend(OPERATION_EVENT_FAILED);
+                }
+                vTaskDelay(pdMS_TO_TICKS(10));
+                continue;
+            }
+
+            if ((g_current_view == AppView::PHOTO || g_current_view == AppView::CONFIG) && M5.BtnA.wasClicked()) {
+                audio::play_tone_from_midi(121, 0.08);
+                if (g_photo_view_source == APP_MODE_LOCAL && g_current_mode != APP_MODE_LOCAL) {
+                    photo_slideshow.stop();
+                }
+                show_home_view();
+                vTaskDelay(pdMS_TO_TICKS(10));
+                continue;
             }
         }
 
@@ -672,14 +852,31 @@ static void app_task(void* param)
             }
         }
 
-        // ==================== Dual-mode update ====================
-        AppMode active = g_current_mode;
-        if (active != APP_MODE_NONE) {
-            photo_slideshow.update();
+        // The calendar changes once per day; check infrequently and refresh
+        // only its monochrome region when midnight advances the RTC date.
+        {
+            static uint32_t s_last_date_check_ms = 0;
+            if (g_current_view == AppView::HOME && millis_() - s_last_date_check_ms >= 30000) {
+                s_last_date_check_ms = millis_();
+                const uint32_t date_key = current_rtc_date_key();
+                if (date_key != 0 && g_home_date_key != 0 && date_key != g_home_date_key) {
+                    app_manager_refresh_home_date();
+                }
+            }
         }
 
-        if (active == APP_MODE_EZDATA && g_current_mode == APP_MODE_EZDATA) {
-            ezdata_photo_push.update();
+        if (g_current_view == AppView::HOME &&
+            g_home_date_refresh_requested.exchange(false, std::memory_order_acq_rel)) {
+            refresh_home_date_now();
+        }
+
+        // ==================== Dual-mode update ====================
+        if (g_current_view == AppView::PHOTO) {
+            if (g_photo_view_source == APP_MODE_EZDATA) {
+                ezdata_photo_push.update();
+            } else {
+                photo_slideshow.update();
+            }
         }
 
         vTaskDelay(pdMS_TO_TICKS(10));
@@ -732,9 +929,9 @@ esp_err_t app_manager_start()
         return ESP_OK;
     }
 
-    if (g_current_mode == APP_MODE_LOCAL) {
-        photo_slideshow.init("/data", hal.settings.auto_slideshow ? (uint8_t)hal.settings.interval_minutes : 0);
-    }
+    // The local library is an OS-level capability and provides the home tile
+    // even before a display mode is explicitly selected.
+    photo_slideshow.init("/data", hal.settings.auto_slideshow ? (uint8_t)hal.settings.interval_minutes : 0);
 
     ESP_ERROR_CHECK(WiFi.begin());
     ESP_ERROR_CHECK(ensure_apsta_started());
@@ -769,6 +966,8 @@ esp_err_t app_manager_start()
     }
 
     start_current_mode();
+
+    show_home_view();
 
     ESP_LOGI(g_tag, "Default mode: %s", mode_id_from_app_mode(g_current_mode));
 

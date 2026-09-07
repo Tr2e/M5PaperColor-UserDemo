@@ -4,6 +4,7 @@ idf_component_register(
     SRCS
         "main.cpp"
         "apps/app_manager/app_manager.cpp"
+        "apps/papercolor_home/papercolor_home.cpp"
         "apps/app_server/app_server.cpp"
         "hal/storage/hal_storage.cpp"
         "hal/ezdata/hal_ezdata.cpp"
@@ -43,3 +44,4 @@ target_compile_definitions(${COMPONENT_LIB} PRIVATE APP_ASSETS_USE_EMBEDDED=${AP
 target_add_binary_data(${COMPONENT_LIB} "apps/app_server/index.html" TEXT)
 target_add_binary_data(${COMPONENT_LIB} "assets/PaperColor.png" BINARY)
 target_add_binary_data(${COMPONENT_LIB} "assets/arrowClickToPowerOn.png" BINARY)
+target_add_binary_data(${COMPONENT_LIB} "assets/papercolor_web_logo.png" BINARY)

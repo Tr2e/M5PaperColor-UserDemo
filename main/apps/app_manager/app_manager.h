@@ -94,3 +94,15 @@ void app_manager_mark_activity(void);
  * @param in_progress True while a refresh is running, otherwise false.
  */
 void app_manager_set_refresh_in_progress(bool in_progress);
+
+/**
+ * @brief Displays a local image requested by the web UI and enters its viewer.
+ *
+ * The following physical A-button click will return to the OS home view.
+ *
+ * @return True when the image was displayed.
+ */
+bool app_manager_display_local_photo(const char* path);
+
+/** @brief Refreshes the RTC date panel when the OS home view is visible. */
+void app_manager_refresh_home_date(void);

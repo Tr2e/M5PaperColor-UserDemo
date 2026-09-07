@@ -138,7 +138,7 @@ bool EzdataPhotoPush::init(uint8_t interval_min)
     _scr_w                          = hal.Canvas->width();
     _scr_h                          = hal.Canvas->height();
 
-    M5.Speaker.setVolume(120);
+    audio::set_volume(120);
 
     ezdata_init();
 
@@ -278,7 +278,9 @@ bool EzdataPhotoPush::runOneShotRefresh()
     uint16_t photo_count = (uint16_t)ezdata_get_photo_count();
     uint16_t next_index  = (_pending_index == NO_PHOTO) ? 0 : _pending_index;
     ESP_LOGI(TAG, "One-shot → ezdata [%d/%d]", next_index + 1, (int)photo_count);
-    displayPhoto(next_index);
+    if (!displayPhoto(next_index)) {
+        return false;
+    }
     _current_index = next_index;
     _pending_index = next_index;
     set_tracked_current_photo_url(ezdata_get_photo_url(next_index));
@@ -321,6 +323,86 @@ void EzdataPhotoPush::toggleRotation()
     }
 }
 
+bool EzdataPhotoPush::showSelectedPhoto()
+{
+    syncSettings();
+    if (!ezdata_is_connected() || ezdata_get_photo_count() == 0) {
+        hal.statusEventSend(OPERATION_EVENT_FAILED);
+        return false;
+    }
+
+    clampIndices();
+    uint16_t index = (_pending_index == NO_PHOTO) ? 0 : _pending_index;
+    if (!displayPhoto(index)) {
+        return false;
+    }
+
+    _current_index = index;
+    _pending_index = index;
+    set_tracked_current_photo_url(ezdata_get_photo_url(index));
+    set_tracked_pending_photo_url(ezdata_get_photo_url(index));
+    _needs_refresh                  = false;
+    _force_refresh_for_image_update = false;
+    _last_refresh_ms                = millis_();
+    hal.rx8130RamWrite(RX8130_RAM_INDEX_EZDATA_CURRENT, (uint8_t)index);
+    return true;
+}
+
+bool EzdataPhotoPush::drawThumbnail(int x, int y, int width, int height)
+{
+    uint16_t photo_count = (uint16_t)ezdata_get_photo_count();
+    if (width <= 0 || height <= 0 || !ezdata_is_connected() || photo_count == 0) {
+        return false;
+    }
+
+    clampIndices();
+    uint16_t index = (_pending_index == NO_PHOTO) ? 0 : _pending_index;
+    if (index >= photo_count) {
+        return false;
+    }
+
+    uint8_t* img_data = nullptr;
+    size_t img_len    = 0;
+    esp_err_t err     = ezdata_fetch_photo(index, &img_data, &img_len, MAX_IMAGE_SIZE);
+    if (err != ESP_OK || !img_data || img_len == 0) {
+        if (img_data) heap_caps_free(img_data);
+        return false;
+    }
+
+    const char* url = ezdata_get_photo_url(index);
+    const char* dot = url ? strrchr(url, '.') : nullptr;
+    int image_width = 0;
+    int image_height = 0;
+    bool rendered = false;
+
+    if (dot && get_image_size_from_memory(img_data, img_len, &image_width, &image_height, dot) && image_width > 0 &&
+        image_height > 0) {
+        float scale = std::max((float)width / image_width, (float)height / image_height);
+        int draw_x  = x + (width - (int)(image_width * scale)) / 2;
+        int draw_y  = y + (height - (int)(image_height * scale)) / 2;
+
+        int32_t clip_x = 0;
+        int32_t clip_y = 0;
+        int32_t clip_w = 0;
+        int32_t clip_h = 0;
+        hal.Canvas->getClipRect(&clip_x, &clip_y, &clip_w, &clip_h);
+        hal.Canvas->setClipRect(x, y, width, height);
+
+        if (strcasecmp(dot, ".jpg") == 0 || strcasecmp(dot, ".jpeg") == 0) {
+            rendered = hal.Canvas->drawJpg(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        } else if (strcasecmp(dot, ".bmp") == 0) {
+            rendered = hal.Canvas->drawBmp(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        } else if (strcasecmp(dot, ".png") == 0) {
+            rendered = hal.Canvas->drawPng(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
+        }
+
+        hal.Canvas->setClipRect(clip_x, clip_y, clip_w, clip_h);
+    }
+
+    heap_caps_free(img_data);
+    return rendered;
+}
+
 void EzdataPhotoPush::syncSettings()
 {
     hal.settingsLock();
@@ -335,9 +417,11 @@ void EzdataPhotoPush::syncSettings()
 
     if (hal.Canvas->getRotation() != target_rotation) {
         hal.Canvas->setRotation(target_rotation);
-        _scr_w = hal.Canvas->width();
-        _scr_h = hal.Canvas->height();
     }
+    // Canvas is shared by all apps; keep cached dimensions aligned even when a
+    // photo is displayed through a direct web/API path rather than update().
+    _scr_w = hal.Canvas->width();
+    _scr_h = hal.Canvas->height();
 }
 
 void EzdataPhotoPush::update()
@@ -449,11 +533,12 @@ void EzdataPhotoPush::update()
             }
 
             ESP_LOGI(TAG, "Settle OK → refreshing ezdata [%d/%d]", _pending_index + 1, (int)ezdata_get_photo_count());
-            displayPhoto(_pending_index);
-            _current_index = _pending_index;
-            if (_current_index != NO_PHOTO && _current_index < ezdata_get_photo_count()) {
-                set_tracked_current_photo_url(ezdata_get_photo_url(_current_index));
-                set_tracked_pending_photo_url(ezdata_get_photo_url(_current_index));
+            if (displayPhoto(_pending_index)) {
+                _current_index = _pending_index;
+                if (_current_index != NO_PHOTO && _current_index < ezdata_get_photo_count()) {
+                    set_tracked_current_photo_url(ezdata_get_photo_url(_current_index));
+                    set_tracked_pending_photo_url(ezdata_get_photo_url(_current_index));
+                }
             }
             _needs_refresh                  = false;
             _force_refresh_for_image_update = false;
@@ -517,13 +602,14 @@ void EzdataPhotoPush::update()
             }
 
             ESP_LOGI(TAG, "Auto refresh → ezdata [%d/%d]", _pending_index + 1, (int)ezdata_get_photo_count());
-            displayPhoto(_pending_index);
-            _current_index = _pending_index;
-            set_tracked_current_photo_url(latest_url);
-            set_tracked_pending_photo_url(latest_url);
-            hal.rx8130RamWrite(RX8130_RAM_INDEX_EZDATA_CURRENT, (uint8_t)_current_index);
-            hal.rx8130RamWrite(RX8130_RAM_INDEX_EZDATA_FINGERPRINT, latest_fingerprint);
-            ezdata_mark_image_record_persisted();
+            if (displayPhoto(_pending_index)) {
+                _current_index = _pending_index;
+                set_tracked_current_photo_url(latest_url);
+                set_tracked_pending_photo_url(latest_url);
+                hal.rx8130RamWrite(RX8130_RAM_INDEX_EZDATA_CURRENT, (uint8_t)_current_index);
+                hal.rx8130RamWrite(RX8130_RAM_INDEX_EZDATA_FINGERPRINT, latest_fingerprint);
+                ezdata_mark_image_record_persisted();
+            }
         }
     }
 }
@@ -642,8 +728,10 @@ void EzdataPhotoPush::handleButtons()
     _last_btn_a = button_a_released;
 }
 
-void EzdataPhotoPush::displayPhoto(uint16_t index)
+bool EzdataPhotoPush::displayPhoto(uint16_t index)
 {
+    syncSettings();
+
     int image_width = 0, image_height = 0;
     uint8_t *img_data = nullptr;
     size_t img_len    = 0;
@@ -652,14 +740,15 @@ void EzdataPhotoPush::displayPhoto(uint16_t index)
     if (photo_count == 0 || index >= photo_count) {
         ESP_LOGE(TAG, "Invalid index or empty photo list");
         hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
-        return;
+        return false;
     }
 
     esp_err_t err = ezdata_fetch_photo(index, &img_data, &img_len, MAX_IMAGE_SIZE);
     if (err != ESP_OK || !img_data || img_len == 0) {
         ESP_LOGE(TAG, "Failed to fetch ezdata photo: %s", esp_err_to_name(err));
         hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
-        return;
+        if (img_data) heap_caps_free(img_data);
+        return false;
     }
 
     const char *url = ezdata_get_photo_url(index);
@@ -667,14 +756,14 @@ void EzdataPhotoPush::displayPhoto(uint16_t index)
         ESP_LOGE(TAG, "Photo URL not found for index %d", index);
         hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
         if (img_data) heap_caps_free(img_data);
-        return;
+        return false;
     }
     const char *dot = strrchr(url, '.');
     if (!dot || !get_image_size_from_memory(img_data, img_len, &image_width, &image_height, dot)) {
         ESP_LOGE(TAG, "Failed to read image size from memory");
         hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
         if (img_data) heap_caps_free(img_data);
-        return;
+        return false;
     }
 
     float scale = std::min((float)_scr_w / image_width, (float)_scr_h / image_height);
@@ -685,32 +774,29 @@ void EzdataPhotoPush::displayPhoto(uint16_t index)
 
     hal.Canvas->fillScreen(TFT_WHITE);
 
+    bool rendered = false;
     if (dot) {
         if (strcasecmp(dot, ".jpg") == 0 || strcasecmp(dot, ".jpeg") == 0) {
-            hal.Canvas->drawJpg(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawJpg(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         } else if (strcasecmp(dot, ".bmp") == 0) {
-            hal.Canvas->drawBmp(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawBmp(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         } else if (strcasecmp(dot, ".png") == 0) {
-            hal.Canvas->drawPng(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-            app_manager_set_refresh_in_progress(true);
-            hal.Canvas->pushSprite(0, 0);
-            app_manager_set_refresh_in_progress(false);
-            hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+            rendered = hal.Canvas->drawPng(img_data, img_len, draw_x, draw_y, 0, 0, 0, 0, scale, scale);
         }
+    }
+
+    if (rendered) {
+        hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
+        app_manager_set_refresh_in_progress(true);
+        hal.Canvas->pushSprite(0, 0);
+        app_manager_set_refresh_in_progress(false);
+        hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    } else {
+        hal.statusEventSend(OPERATION_EVENT_ERROR_IMAGE_READ);
     }
 
     if (img_data) {
         heap_caps_free(img_data);
     }
+    return rendered;
 }

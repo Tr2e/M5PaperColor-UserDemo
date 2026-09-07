@@ -91,6 +91,22 @@ public:
     bool runOneShotRefresh();
 
     /**
+     * @brief Draws the selected EzData photo into a clipped AspectFill tile.
+     *
+     * This only updates the canvas; it does not refresh the e-paper panel.
+     *
+     * @return True when a remote photo was fetched and decoded.
+     */
+    bool drawThumbnail(int x, int y, int width, int height);
+
+    /**
+     * @brief Immediately displays the selected (or first) EzData photo.
+     *
+     * @return True when a photo was displayed and the panel refreshed.
+     */
+    bool showSelectedPhoto();
+
+    /**
      * @brief Returns the number of tracked images.
      *
      * @return Total image count.
@@ -157,7 +173,7 @@ private:
     int findPhotoIndexByUrl(const char* url) const;
     void syncTrackedIndicesWithList();
     void clampIndices();
-    void displayPhoto(uint16_t index);
+    bool displayPhoto(uint16_t index);
     void handleButtons();
     void requestRefresh(uint16_t new_index);
 };

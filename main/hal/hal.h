@@ -25,7 +25,8 @@ enum SettingKey : uint8_t {
     SETTING_CURRENT_MODE,
     SETTING_BOOT_SOUND,
     SETTING_DEVICE_NAME,
-    SETTING_LOW_POWER_MODE
+    SETTING_LOW_POWER_MODE,
+    SETTING_AUDIO_MUTED
 };
 
 /** @brief Local slideshow mode identifier. */
@@ -66,6 +67,7 @@ struct Settings {
     bool boot_sound;
     char device_name[64];
     bool low_power_mode;
+    bool audio_muted;
 };
 
 #define OPERATION_EVENT_FAILED           BIT0
