@@ -1,0 +1,4 @@
+# Controlled photo A/B, without the startup native chart. Defaults stay off.
+CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT=y
+CONFIG_PAPERCOLOR_PRIMARY_WHITE_BUDGET=y
+# CONFIG_PAPERCOLOR_NATIVE_CHART_ON_BOOT is not set

@@ -26,6 +26,7 @@
 #include "hal/storage/hal_storage.h"
 #include "display/display_metrics.h"
 #include "display/papercolor_lut_display.h"
+#include "display/papercolor_native_chart.h"
 
 #ifndef APP_ASSETS_USE_EMBEDDED
 #define APP_ASSETS_USE_EMBEDDED 0
@@ -987,7 +988,14 @@ esp_err_t app_manager_start()
 
     start_current_mode();
 
-    show_home_view();
+    if (papercolor_show_native_chart()) {
+        // Reuse the existing A-to-home navigation without starting a slideshow
+        // over the reference. The normal build's diagnostic is a no-op.
+        g_current_view = AppView::CONFIG;
+        app_manager_mark_activity();
+    } else {
+        show_home_view();
+    }
 
     ESP_LOGI(g_tag, "Default mode: %s", mode_id_from_app_mode(g_current_mode));
 

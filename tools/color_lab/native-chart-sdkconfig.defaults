@@ -1,0 +1,3 @@
+# Dedicated diagnostic build; production and accepted LUT configs unchanged.
+CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT=y
+CONFIG_PAPERCOLOR_NATIVE_CHART_ON_BOOT=y

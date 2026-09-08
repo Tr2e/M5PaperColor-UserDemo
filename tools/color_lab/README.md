@@ -76,18 +76,21 @@ page: `legacy` is the exact upstream path, `ui` is perceptual nearest-color,
 `photo-balanced` is serpentine Floyd-Steinberg, and `photo-detail` is
 serpentine Burkes. Full-screen local and EZData photos currently select
 `photo-balanced`; home, QR, and other UI screens remain in `ui` mode. Both
-photo modes diffuse error in a fixed-point linear-light approximation and use
-two bounded scanline buffers plus 4,096-byte inverse and 512-byte forward
-transfer tables. The 600-pixel unrotated Canvas backing width therefore uses
-19,104 bytes. The workspace uses internal RAM only when a 96 KiB reserve and a
+photo modes in the currently accepted repair use signed Q4 nominal sRGB error
+diffusion, constrained gamut targets and a 32-entry target cache (384 bytes in
+the state). The two scanline buffers use 14,496 bytes at the 600-pixel unrotated
+Canvas backing width. This is not yet a measured linear-light mixing model.
+The workspace uses internal RAM only when a 96 KiB reserve and a
 large-enough contiguous block remain; otherwise it falls back to PSRAM, and it
 is released before the physical panel refresh begins.
 
 The M5Canvas byte-swapped RGB565 fast path is tested against the RGB888 path
 for byte-identical native-color output. Only the two measured per-pixel source
 files are compiled with `-O2`; the rest of the application keeps the project's
-debuggable `-Og` profile. On the C151 sample, the final full-frame
-`photo-balanced` preparation time is 638,422 us, below the 1 s device budget.
+debuggable `-Og` profile. On the C151 sample, the latest calibration-chart
+`photo-balanced` preparation time is 1,009,798 us; the full display call took
+17,659,355 us. `panel_us` includes preparation and must not be added to it.
+Earlier timings belong to earlier variants/images, not same-image A/B evidence.
 
 Build the enabled variant in an independent directory:
 

@@ -7,6 +7,7 @@ idf_component_register(
         "display/papercolor_lut.cpp"
         "display/papercolor_photo_dither.cpp"
         "display/papercolor_lut_display.cpp"
+        "display/papercolor_native_chart.cpp"
         "apps/app_manager/app_manager.cpp"
         "apps/papercolor_home/papercolor_home.cpp"
         "apps/app_server/app_server.cpp"

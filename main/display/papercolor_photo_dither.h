@@ -27,8 +27,11 @@ typedef struct {
     const uint8_t* lut;
     int32_t* current_error;
     int32_t* next_error;
-    uint8_t* linear_to_lut5;
-    uint16_t* srgb_to_linear;
+    // Small direct-mapped cache of gamut-constrained Q4 RGB targets.
+    struct {
+        uint32_t key;
+        int16_t target[3];
+    } target_cache[32];
 } papercolor_dither_state_t;
 
 /** Workspace required by the selected row-streaming dither mode. */

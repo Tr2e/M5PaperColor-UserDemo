@@ -1327,6 +1327,7 @@ SPDX-License-Identifier: MIT
             <div class="mode-main-side">
               <div>
                 <div class="section-title">Preview &amp; Edit <span class="status-inline" id="orientation-label">600&times;400</span></div>
+                <p class="status-inline" id="preview-color-note">Original image preview. Screen colors may differ; processing is applied on the device.</p>
                 <div class="device-preview-shell">
                   <div class="device-frame" id="device-frame">
                     <div class="preview-container" id="preview-container">
@@ -2444,24 +2445,12 @@ function renderPreviewInkEffect() {
       return;
     }
     ctx.clearRect(0, 0, cw, ch);
-    ctx.fillStyle = "#eef1f4";
+    ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, cw, ch);
     ctx.drawImage(source, 0, 0, cw, ch);
-    const imageData = ctx.getImageData(0, 0, cw, ch);
-    if (displayMode === "nearest") {
-      quantizeToEpdPaletteOriginal(imageData);
-    } else {
-      quantizeToEpdPalette(imageData);
-    }
-    const data = imageData.data;
-    for (let i = 0; i < data.length; i += 4) {
-      if (data[i] === 255 && data[i + 1] === 255 && data[i + 2] === 255) {
-        data[i] = 238;
-        data[i + 1] = 241;
-        data[i + 2] = 244;
-      }
-    }
-    ctx.putImageData(imageData, 0, 0);
+    // Match the unquantized canvas sent by both upload actions. The legacy
+    // browser palette/dither is not the firmware algorithm or a panel profile,
+    // and must not masquerade as a calibrated physical-screen preview.
     setPreviewInkVisible(true);
   });
 }

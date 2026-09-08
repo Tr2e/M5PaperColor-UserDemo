@@ -9,4 +9,21 @@ config PAPERCOLOR_EXPERIMENTAL_LUT
         The bundled nominal profile is for pipeline validation only; regenerate
         the LUT from measured panel patches before evaluating physical color.
 
+config PAPERCOLOR_NATIVE_CHART_ON_BOOT
+    bool "Show native-pigment diagnostic chart at startup"
+    default n
+    help
+        Calibration-only build: show six unmixed pigments and known-coverage
+        mixtures without the photo algorithm. A returns to the normal home UI.
+        Does not change stored photos/settings or the normal photo renderer.
+
+config PAPERCOLOR_PRIMARY_WHITE_BUDGET
+    bool "Limit extra white in single-pigment photo sectors (A/B candidate)"
+    depends on PAPERCOLOR_EXPERIMENTAL_LUT
+    default n
+    help
+        For black/white plus one chromatic pigment only, preserve the target's
+        neutral-white budget. Keep two-pigment hues and neutral targets on the
+        accepted mapping. This is a rendering-policy experiment, not calibration.
+
 endmenu

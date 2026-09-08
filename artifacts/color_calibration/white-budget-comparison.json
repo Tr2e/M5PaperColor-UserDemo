@@ -1,0 +1,1837 @@
+{
+  "warning": "Nominal-code proportions, not measured color accuracy.",
+  "variants": {
+    "baseline": {
+      "patches": [
+        {
+          "name": "N.BLACK",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.WHITE",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.YELLOW",
+          "rgb": [
+            255,
+            243,
+            56
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.163,
+            "yellow": 99.837,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.RED",
+          "rgb": [
+            191,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.735,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.265,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.BLUE",
+          "rgb": [
+            100,
+            64,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.GREEN",
+          "rgb": [
+            67,
+            138,
+            28
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.408,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.592
+          }
+        },
+        {
+          "name": "RED",
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 2.982,
+            "yellow": 0.0,
+            "red": 97.018,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GREEN",
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "name": "COLOR.PURPLE",
+          "rgb": [
+            102,
+            51,
+            153
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 3.881,
+            "white": 5.923,
+            "yellow": 0.0,
+            "red": 39.052,
+            "blue": 51.144,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.CYAN",
+          "rgb": [
+            0,
+            173,
+            254
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 70.67,
+            "green": 29.33
+          }
+        },
+        {
+          "name": "COLOR.LIME",
+          "rgb": [
+            153,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.845,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.155
+          }
+        },
+        {
+          "name": "COLOR.TEAL",
+          "rgb": [
+            51,
+            153,
+            102
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 4.044,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 20.874,
+            "green": 75.082
+          }
+        },
+        {
+          "name": "COLOR.YELLOW",
+          "rgb": [
+            255,
+            204,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 81.699,
+            "red": 18.301,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.ORANGE",
+          "rgb": [
+            255,
+            102,
+            51
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 6.209,
+            "yellow": 35.417,
+            "red": 58.374,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.RED",
+          "rgb": [
+            204,
+            51,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.995,
+            "red": 81.005,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "MAGENTA",
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 18.791,
+            "yellow": 0.0,
+            "red": 22.958,
+            "blue": 58.252,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.LIGHT",
+          "rgb": [
+            153,
+            51,
+            204
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 17.77,
+            "yellow": 0.0,
+            "red": 31.046,
+            "blue": 51.185,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.DARK",
+          "rgb": [
+            76,
+            38,
+            115
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 29.412,
+            "white": 4.698,
+            "yellow": 0.0,
+            "red": 28.799,
+            "blue": 37.092,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "BLUE",
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 18.137,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 81.863,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "CYAN",
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 30.964,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 43.954,
+            "green": 25.082
+          }
+        },
+        {
+          "name": "GRAY.32",
+          "rgb": [
+            32,
+            32,
+            32
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 87.051,
+            "white": 12.949,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.96",
+          "rgb": [
+            96,
+            96,
+            96
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 61.397,
+            "white": 38.603,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.160",
+          "rgb": [
+            160,
+            160,
+            160
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 35.662,
+            "white": 64.338,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.224",
+          "rgb": [
+            224,
+            224,
+            224
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 9.967,
+            "white": 90.033,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "red_to_white_white_percent": [
+        4.025,
+        11.1,
+        17.25,
+        23.275,
+        29.9,
+        35.75,
+        42.2,
+        48.225,
+        54.375,
+        60.825,
+        66.975,
+        73.125,
+        79.65,
+        85.525,
+        93.05,
+        98.75
+      ],
+      "gray_contamination": false,
+      "deterministic": true,
+      "frame_sha256": "773a1f7808d528c37a93dfb636853db0da30606eebe6f65a5be07564d77c2b3b",
+      "ramp_sha256": "4d0f9c204e974564f6a24a6e60dbd58cb87f816a85f5bba3071a8f04c75ce416"
+    },
+    "white_budget": {
+      "patches": [
+        {
+          "name": "N.BLACK",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.WHITE",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.YELLOW",
+          "rgb": [
+            255,
+            243,
+            56
+          ],
+          "changed_pixels_vs_baseline": 7,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.204,
+            "yellow": 99.796,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.RED",
+          "rgb": [
+            191,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 35,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.776,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.224,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.BLUE",
+          "rgb": [
+            100,
+            64,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.GREEN",
+          "rgb": [
+            67,
+            138,
+            28
+          ],
+          "changed_pixels_vs_baseline": 20,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.408,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.592
+          }
+        },
+        {
+          "name": "RED",
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 73,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GREEN",
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "name": "COLOR.PURPLE",
+          "rgb": [
+            102,
+            51,
+            153
+          ],
+          "changed_pixels_vs_baseline": 1304,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 3.799,
+            "white": 5.842,
+            "yellow": 0.0,
+            "red": 39.257,
+            "blue": 51.103,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.CYAN",
+          "rgb": [
+            0,
+            173,
+            254
+          ],
+          "changed_pixels_vs_baseline": 997,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 70.629,
+            "green": 29.371
+          }
+        },
+        {
+          "name": "COLOR.LIME",
+          "rgb": [
+            153,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 1162,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.926,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.074
+          }
+        },
+        {
+          "name": "COLOR.TEAL",
+          "rgb": [
+            51,
+            153,
+            102
+          ],
+          "changed_pixels_vs_baseline": 1006,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 4.208,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 21.242,
+            "green": 74.551
+          }
+        },
+        {
+          "name": "COLOR.YELLOW",
+          "rgb": [
+            255,
+            204,
+            0
+          ],
+          "changed_pixels_vs_baseline": 650,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 81.863,
+            "red": 18.137,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.ORANGE",
+          "rgb": [
+            255,
+            102,
+            51
+          ],
+          "changed_pixels_vs_baseline": 1352,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 6.127,
+            "yellow": 35.621,
+            "red": 58.252,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.RED",
+          "rgb": [
+            204,
+            51,
+            0
+          ],
+          "changed_pixels_vs_baseline": 752,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.995,
+            "red": 81.005,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "MAGENTA",
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 1201,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 23.121,
+            "blue": 76.879,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.LIGHT",
+          "rgb": [
+            153,
+            51,
+            204
+          ],
+          "changed_pixels_vs_baseline": 1252,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 17.851,
+            "yellow": 0.0,
+            "red": 31.25,
+            "blue": 50.899,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.DARK",
+          "rgb": [
+            76,
+            38,
+            115
+          ],
+          "changed_pixels_vs_baseline": 1705,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 29.248,
+            "white": 4.534,
+            "yellow": 0.0,
+            "red": 28.799,
+            "blue": 37.418,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "BLUE",
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 709,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 17.851,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 82.149,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "CYAN",
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 1522,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 70.057,
+            "green": 29.943
+          }
+        },
+        {
+          "name": "GRAY.32",
+          "rgb": [
+            32,
+            32,
+            32
+          ],
+          "changed_pixels_vs_baseline": 537,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 87.582,
+            "white": 12.418,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.96",
+          "rgb": [
+            96,
+            96,
+            96
+          ],
+          "changed_pixels_vs_baseline": 1177,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 62.092,
+            "white": 37.908,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.160",
+          "rgb": [
+            160,
+            160,
+            160
+          ],
+          "changed_pixels_vs_baseline": 1180,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 36.479,
+            "white": 63.521,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.224",
+          "rgb": [
+            224,
+            224,
+            224
+          ],
+          "changed_pixels_vs_baseline": 460,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 10.948,
+            "white": 89.052,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "red_to_white_white_percent": [
+        1.0,
+        7.725,
+        14.05,
+        20.475,
+        27.125,
+        33.425,
+        39.95,
+        46.175,
+        52.575,
+        59.15,
+        65.375,
+        72.15,
+        78.375,
+        84.9,
+        91.5,
+        97.55
+      ],
+      "gray_contamination": false,
+      "deterministic": true,
+      "frame_sha256": "5deb753222442c3d323c204b51b1e7127586b13ed2c341ef65b033d044db12c1",
+      "ramp_sha256": "0540591455d3de120810afe7f31cf40b820f0dd304d8de292567156df6782d71"
+    },
+    "primary_budget": {
+      "patches": [
+        {
+          "name": "N.BLACK",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.WHITE",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.YELLOW",
+          "rgb": [
+            255,
+            243,
+            56
+          ],
+          "changed_pixels_vs_baseline": 1,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.204,
+            "yellow": 99.796,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.RED",
+          "rgb": [
+            191,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 25,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.776,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.224,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.BLUE",
+          "rgb": [
+            100,
+            64,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.GREEN",
+          "rgb": [
+            67,
+            138,
+            28
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.408,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.592
+          }
+        },
+        {
+          "name": "RED",
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 73,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GREEN",
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "name": "COLOR.PURPLE",
+          "rgb": [
+            102,
+            51,
+            153
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 3.881,
+            "white": 5.923,
+            "yellow": 0.0,
+            "red": 39.052,
+            "blue": 51.144,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.CYAN",
+          "rgb": [
+            0,
+            173,
+            254
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 70.67,
+            "green": 29.33
+          }
+        },
+        {
+          "name": "COLOR.LIME",
+          "rgb": [
+            153,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 692,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.763,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.237
+          }
+        },
+        {
+          "name": "COLOR.TEAL",
+          "rgb": [
+            51,
+            153,
+            102
+          ],
+          "changed_pixels_vs_baseline": 920,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 4.085,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 21.16,
+            "green": 74.755
+          }
+        },
+        {
+          "name": "COLOR.YELLOW",
+          "rgb": [
+            255,
+            204,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 81.699,
+            "red": 18.301,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.ORANGE",
+          "rgb": [
+            255,
+            102,
+            51
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 6.209,
+            "yellow": 35.417,
+            "red": 58.374,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.RED",
+          "rgb": [
+            204,
+            51,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.995,
+            "red": 81.005,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "MAGENTA",
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 18.791,
+            "yellow": 0.0,
+            "red": 22.958,
+            "blue": 58.252,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.LIGHT",
+          "rgb": [
+            153,
+            51,
+            204
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 17.77,
+            "yellow": 0.0,
+            "red": 31.046,
+            "blue": 51.185,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.DARK",
+          "rgb": [
+            76,
+            38,
+            115
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 29.412,
+            "white": 4.698,
+            "yellow": 0.0,
+            "red": 28.799,
+            "blue": 37.092,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "BLUE",
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 18.137,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 81.863,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "CYAN",
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 30.964,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 43.954,
+            "green": 25.082
+          }
+        },
+        {
+          "name": "GRAY.32",
+          "rgb": [
+            32,
+            32,
+            32
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 87.051,
+            "white": 12.949,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.96",
+          "rgb": [
+            96,
+            96,
+            96
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 61.397,
+            "white": 38.603,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.160",
+          "rgb": [
+            160,
+            160,
+            160
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 35.662,
+            "white": 64.338,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.224",
+          "rgb": [
+            224,
+            224,
+            224
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 9.967,
+            "white": 90.033,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "red_to_white_white_percent": [
+        1.0,
+        7.725,
+        14.05,
+        20.5,
+        27.025,
+        33.375,
+        39.975,
+        46.3,
+        52.475,
+        59.225,
+        65.4,
+        71.95,
+        78.45,
+        84.875,
+        92.6,
+        98.825
+      ],
+      "gray_contamination": false,
+      "deterministic": true,
+      "frame_sha256": "898fa4b5f40af6f867faaf8ad88ecaaf2c16e500c0ebab440f5c35c7045c20c9",
+      "ramp_sha256": "520aa713636e14a54886fdc0a37896f432d4786d2e41f34e62a200d5d44ba75a"
+    },
+    "primary_firmware": {
+      "patches": [
+        {
+          "name": "N.BLACK",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.WHITE",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.YELLOW",
+          "rgb": [
+            255,
+            243,
+            56
+          ],
+          "changed_pixels_vs_baseline": 1,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.204,
+            "yellow": 99.796,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.RED",
+          "rgb": [
+            191,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 25,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.776,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.224,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.BLUE",
+          "rgb": [
+            100,
+            64,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "N.GREEN",
+          "rgb": [
+            67,
+            138,
+            28
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.408,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.592
+          }
+        },
+        {
+          "name": "RED",
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "changed_pixels_vs_baseline": 73,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GREEN",
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "name": "COLOR.PURPLE",
+          "rgb": [
+            102,
+            51,
+            153
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 3.881,
+            "white": 5.923,
+            "yellow": 0.0,
+            "red": 39.052,
+            "blue": 51.144,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.CYAN",
+          "rgb": [
+            0,
+            173,
+            254
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 70.67,
+            "green": 29.33
+          }
+        },
+        {
+          "name": "COLOR.LIME",
+          "rgb": [
+            153,
+            255,
+            0
+          ],
+          "changed_pixels_vs_baseline": 692,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.763,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.237
+          }
+        },
+        {
+          "name": "COLOR.TEAL",
+          "rgb": [
+            51,
+            153,
+            102
+          ],
+          "changed_pixels_vs_baseline": 920,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 4.085,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 21.16,
+            "green": 74.755
+          }
+        },
+        {
+          "name": "COLOR.YELLOW",
+          "rgb": [
+            255,
+            204,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 81.699,
+            "red": 18.301,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.ORANGE",
+          "rgb": [
+            255,
+            102,
+            51
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 6.209,
+            "yellow": 35.417,
+            "red": 58.374,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "COLOR.RED",
+          "rgb": [
+            204,
+            51,
+            0
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.995,
+            "red": 81.005,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "MAGENTA",
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 18.791,
+            "yellow": 0.0,
+            "red": 22.958,
+            "blue": 58.252,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.LIGHT",
+          "rgb": [
+            153,
+            51,
+            204
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 17.77,
+            "yellow": 0.0,
+            "red": 31.046,
+            "blue": 51.185,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "PURPLE.DARK",
+          "rgb": [
+            76,
+            38,
+            115
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 29.412,
+            "white": 4.698,
+            "yellow": 0.0,
+            "red": 28.799,
+            "blue": 37.092,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "BLUE",
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 18.137,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 81.863,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "CYAN",
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 0.0,
+            "white": 30.964,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 43.954,
+            "green": 25.082
+          }
+        },
+        {
+          "name": "GRAY.32",
+          "rgb": [
+            32,
+            32,
+            32
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 87.051,
+            "white": 12.949,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.96",
+          "rgb": [
+            96,
+            96,
+            96
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 61.397,
+            "white": 38.603,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.160",
+          "rgb": [
+            160,
+            160,
+            160
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 35.662,
+            "white": 64.338,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "name": "GRAY.224",
+          "rgb": [
+            224,
+            224,
+            224
+          ],
+          "changed_pixels_vs_baseline": 0,
+          "sample_pixels": 2448,
+          "percent": {
+            "black": 9.967,
+            "white": 90.033,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "red_to_white_white_percent": [
+        1.0,
+        7.725,
+        14.05,
+        20.5,
+        27.025,
+        33.375,
+        39.975,
+        46.3,
+        52.475,
+        59.225,
+        65.4,
+        71.95,
+        78.45,
+        84.875,
+        92.6,
+        98.825
+      ],
+      "gray_contamination": false,
+      "deterministic": true,
+      "frame_sha256": "898fa4b5f40af6f867faaf8ad88ecaaf2c16e500c0ebab440f5c35c7045c20c9",
+      "ramp_sha256": "520aa713636e14a54886fdc0a37896f432d4786d2e41f34e62a200d5d44ba75a"
+    }
+  }
+}
