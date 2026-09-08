@@ -19,6 +19,8 @@
 #include "freertos/task.h"
 #include "qrcode.h"
 #include "apps/app_manager/app_manager.h"
+#include "display/display_metrics.h"
+#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "EzdataSlideshow";
 
@@ -56,6 +58,7 @@ static inline uint32_t millis_()
 
 static void binding_qrcode_display_cb(esp_qrcode_handle_t qrcode)
 {
+    DisplayMetricsTrace metrics("ezdata_binding_qr");
     int size  = esp_qrcode_get_size(qrcode);
     int area  = std::min(hal.Canvas->width(), hal.Canvas->height()) * 0.75f;
     int scale = area / size;
@@ -90,9 +93,12 @@ static void binding_qrcode_display_cb(esp_qrcode_handle_t qrcode)
     std::string token_label = "Token: " + hal.device_token;
     hal.Canvas->drawString(token_label.c_str(), hal.Canvas->width() / 2, text_y + 22);
 
+    metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-    hal.Canvas->pushSprite(0, 0);
+    metrics.markRefreshStarted();
+    papercolor_push_canvas(hal.Canvas, 0, 0);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    metrics.finish(true);
 }
 
 static void drawBindingQrcode()
@@ -115,12 +121,16 @@ static void drawBindingQrcode()
 
     esp_err_t ret = esp_qrcode_generate(&cfg, qr_url);
     if (ret != ESP_OK) {
+        DisplayMetricsTrace metrics("ezdata_binding_error");
         ESP_LOGE(TAG, "QRCode gen failed: %d", ret);
         hal.Canvas->fillScreen(TFT_WHITE);
         hal.Canvas->setTextColor(TFT_RED);
         hal.Canvas->setCursor(10, 10);
         hal.Canvas->printf("QRCode failed");
-        hal.Canvas->pushSprite(0, 0);
+        metrics.markRendered();
+        metrics.markRefreshStarted();
+        papercolor_push_canvas(hal.Canvas, 0, 0);
+        metrics.finish(true);
     }
 }
 
@@ -730,6 +740,7 @@ void EzdataPhotoPush::handleButtons()
 
 bool EzdataPhotoPush::displayPhoto(uint16_t index)
 {
+    DisplayMetricsTrace metrics("ezdata_photo");
     syncSettings();
 
     int image_width = 0, image_height = 0;
@@ -785,10 +796,12 @@ bool EzdataPhotoPush::displayPhoto(uint16_t index)
         }
     }
 
+    metrics.markRendered();
     if (rendered) {
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
-        hal.Canvas->pushSprite(0, 0);
+        metrics.markRefreshStarted();
+        papercolor_push_canvas(hal.Canvas, 0, 0, PaperColorRenderMode::PhotoBalanced);
         app_manager_set_refresh_in_progress(false);
         hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     } else {
@@ -798,5 +811,6 @@ bool EzdataPhotoPush::displayPhoto(uint16_t index)
     if (img_data) {
         heap_caps_free(img_data);
     }
+    metrics.finish(rendered);
     return rendered;
 }

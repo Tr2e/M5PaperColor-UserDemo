@@ -33,6 +33,7 @@
 #include "hal/hal.h"
 #include "mdns.h"
 #include "apps/app_manager/app_manager.h"
+#include "display/display_metrics.h"
 #include "hal/ezdata/hal_ezdata.h"
 
 using namespace hal_wifi;
@@ -237,6 +238,49 @@ static esp_err_t send_error_response(httpd_req_t *req, int code, const char *msg
     }
     cJSON_Delete(r);
     return ESP_FAIL;
+}
+
+static esp_err_t h_display_metrics(httpd_req_t *req)
+{
+    DisplayMetricsRecord records[16];
+    const size_t count = displayMetricsSnapshot(records, sizeof(records) / sizeof(records[0]));
+
+    cJSON *root = cJSON_CreateObject();
+    if (!root) {
+        return send_error_response(req, 500, "oom");
+    }
+    cJSON *items = cJSON_AddArrayToObject(root, "records");
+    if (!items) {
+        cJSON_Delete(root);
+        return send_error_response(req, 500, "oom");
+    }
+
+    cJSON_AddNumberToObject(root, "count", count);
+    for (size_t i = 0; i < count; ++i) {
+        const DisplayMetricsRecord& record = records[i];
+        cJSON *item = cJSON_CreateObject();
+        if (!item || !cJSON_AddItemToArray(items, item)) {
+            cJSON_Delete(item);
+            cJSON_Delete(root);
+            return send_error_response(req, 500, "oom");
+        }
+        cJSON_AddStringToObject(item, "source", record.source);
+        cJSON_AddBoolToObject(item, "success", record.success);
+        cJSON_AddNumberToObject(item, "total_us", record.total_us);
+        cJSON_AddNumberToObject(item, "render_us", record.render_us);
+        cJSON_AddNumberToObject(item, "render_to_refresh_us", record.render_to_refresh_us);
+        cJSON_AddNumberToObject(item, "panel_us", record.panel_us);
+        cJSON_AddNumberToObject(item, "internal_before", record.internal_before);
+        cJSON_AddNumberToObject(item, "internal_after", record.internal_after);
+        cJSON_AddNumberToObject(item, "internal_largest", record.internal_largest);
+        cJSON_AddNumberToObject(item, "psram_before", record.psram_before);
+        cJSON_AddNumberToObject(item, "psram_after", record.psram_after);
+        cJSON_AddNumberToObject(item, "psram_largest", record.psram_largest);
+    }
+
+    send_json_response(req, root);
+    cJSON_Delete(root);
+    return ESP_OK;
 }
 
 static esp_err_t send_file_response(httpd_req_t *req, const char *path)
@@ -1445,6 +1489,7 @@ static const httpd_uri_t routes[] = {
     {"/api/wifi/config", HTTP_POST, h_wifi_config},
     {"/api/wifi/status", HTTP_GET, h_wifi_status},
     {"/api/device/ready", HTTP_GET, h_device_ready},
+    {"/api/display/metrics", HTTP_GET, h_display_metrics},
     {"/api/wifi/disconnect", HTTP_POST, h_wifi_disconnect},
     {"/api/photos/list", HTTP_GET, h_photos_list},
     {"/api/photos/upload", HTTP_POST, h_photos_upload},

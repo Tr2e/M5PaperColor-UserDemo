@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-09-08T10:58:00+08:00",
+  "device": "M5Stack PaperColor C151",
+  "chip": "ESP32-S3 revision 0.2",
+  "device_mac": "44:1b:f6:c1:34:10",
+  "source_branch": "feat/papercolor-os",
+  "base_commit": "c6d9cbfec68a0b8159c89e804be17a0db65530cf",
+  "worktree_instrumentation": true,
+  "firmware": {
+    "path": "build/paper_color.bin",
+    "size_bytes": 3188336,
+    "sha256": "d78417e7d626015853054c43c8c3a37943530786663d0ad514e60a5c5ad868d5"
+  },
+  "transport": "USB composite CDC",
+  "sample_count": 1,
+  "notes": "Initial home_full smoke baseline; expand to repeated fixed corpus runs before optimization comparisons."
+}

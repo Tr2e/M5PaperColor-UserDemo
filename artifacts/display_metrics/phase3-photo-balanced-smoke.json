@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "record_count": 2,
+  "sources": {
+    "home_full": {
+      "count": 1,
+      "success_count": 1,
+      "failure_count": 0,
+      "total_us_p50": 18191009,
+      "total_us_p95": 18191009,
+      "panel_us_p50": 16553866,
+      "panel_us_p95": 16553866,
+      "min_internal_after": 187211,
+      "min_psram_after": 7105284
+    },
+    "local_photo": {
+      "count": 1,
+      "success_count": 1,
+      "failure_count": 0,
+      "total_us_p50": 23067715,
+      "total_us_p95": 23067715,
+      "panel_us_p50": 19312504,
+      "panel_us_p95": 19312504,
+      "min_internal_after": 140107,
+      "min_psram_after": 7105084
+    }
+  },
+  "pipeline": {
+    "mode": "photo-balanced",
+    "prepare_us": 3167658,
+    "workspace_bytes": 14496
+  }
+}

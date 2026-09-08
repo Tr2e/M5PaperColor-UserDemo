@@ -24,6 +24,8 @@
 #include "qrcode.h"
 #include "hal/utils/image/image_utils.h"
 #include "hal/storage/hal_storage.h"
+#include "display/display_metrics.h"
+#include "display/papercolor_lut_display.h"
 
 #ifndef APP_ASSETS_USE_EMBEDDED
 #define APP_ASSETS_USE_EMBEDDED 0
@@ -64,7 +66,7 @@ static uint32_t g_wifi_reconnect_last_try_ms         = 0;
 static constexpr uint32_t WIFI_RECONNECT_INTERVAL_MS = 10000;
 static bool g_wifi_reconnect_paused                  = false;
 static uint32_t g_low_power_last_activity_ms         = 0;
-static bool g_refresh_in_progress                    = false;
+static std::atomic_bool g_refresh_in_progress{false};
 static constexpr uint32_t LOW_POWER_IDLE_SHUTDOWN_MS = 60000;
 
 // ---- millis() ----
@@ -85,6 +87,7 @@ static uint32_t current_rtc_date_key()
 
 static void push_home_region(int x, int y, int width, int height)
 {
+    DisplayMetricsTrace metrics("home_region");
     // M5Canvas keeps a 600x400 backing buffer while the home UI draws through
     // rotation 1 as 400x600. pushSprite() transfers the unrotated buffer, so the
     // physical display clip must be expressed in backing-buffer coordinates.
@@ -115,11 +118,14 @@ static void push_home_region(int x, int y, int width, int height)
 
     M5.Display.setEpdMode(epd_mode_t::epd_fastest);
     M5.Display.setClipRect(display_x, display_y, display_w, display_h);
+    metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
     app_manager_set_refresh_in_progress(true);
-    hal.Canvas->pushSprite(0, 0);
+    metrics.markRefreshStarted();
+    papercolor_push_canvas(hal.Canvas, 0, 0);
     app_manager_set_refresh_in_progress(false);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    metrics.finish(true);
     M5.Display.clearClipRect();
     M5.Display.setEpdMode(epd_mode_t::epd_quality);
     app_manager_mark_activity();
@@ -127,14 +133,18 @@ static void push_home_region(int x, int y, int width, int height)
 
 static void show_home_view()
 {
+    DisplayMetricsTrace metrics("home_full");
     g_current_view = AppView::HOME;
     M5.Display.setEpdMode(epd_mode_t::epd_quality);
     papercolor_home_draw(g_current_mode, photo_slideshow, ezdata_photo_push, hal.settings.audio_muted);
+    metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
     app_manager_set_refresh_in_progress(true);
-    hal.Canvas->pushSprite(0, 0);
+    metrics.markRefreshStarted();
+    papercolor_push_canvas(hal.Canvas, 0, 0);
     app_manager_set_refresh_in_progress(false);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    metrics.finish(true);
     g_home_date_key = current_rtc_date_key();
     g_home_date_refresh_requested.store(false, std::memory_order_release);
     app_manager_mark_activity();
@@ -308,7 +318,7 @@ void app_manager_mark_activity(void)
 
 void app_manager_set_refresh_in_progress(bool in_progress)
 {
-    g_refresh_in_progress = in_progress;
+    g_refresh_in_progress.store(in_progress, std::memory_order_release);
 }
 
 bool app_manager_display_local_photo(const char* path)
@@ -329,12 +339,12 @@ static bool should_idle_power_off_in_low_power_mode()
 {
     if (!hal.lowPowerModeEnabled()) {
         g_low_power_last_activity_ms = 0;
-        g_refresh_in_progress        = false;
+        g_refresh_in_progress.store(false, std::memory_order_release);
         return false;
     }
     if (!hal.settings.auto_slideshow || hal.settings.interval_minutes <= 0) {
         g_low_power_last_activity_ms = 0;
-        g_refresh_in_progress        = false;
+        g_refresh_in_progress.store(false, std::memory_order_release);
         return false;
     }
 
@@ -352,7 +362,7 @@ static bool should_idle_power_off_in_low_power_mode()
         return false;
     }
 
-    if (g_refresh_in_progress) {
+    if (g_refresh_in_progress.load(std::memory_order_acquire)) {
         return false;
     }
 
@@ -522,6 +532,7 @@ esp_err_t app_manager_set_current_mode(const char* mode_id)
 // ---- WiFi QR code display ----
 static void wifi_qrcode_display_cb(esp_qrcode_handle_t qrcode)
 {
+    DisplayMetricsTrace metrics("wifi_qr");
     int size  = esp_qrcode_get_size(qrcode);
     int scale = 4;
     if (scale < 1) scale = 1;
@@ -538,9 +549,12 @@ static void wifi_qrcode_display_cb(esp_qrcode_handle_t qrcode)
         }
     }
 
+    metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-    hal.Canvas->pushSprite(0, 0);
+    metrics.markRefreshStarted();
+    papercolor_push_canvas(hal.Canvas, 0, 0);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    metrics.finish(true);
 }
 
 static void show_wifi_config_qrcode(const char* ap_ssid)
@@ -603,6 +617,7 @@ static void show_wifi_config_qrcode(const char* ap_ssid)
 
 void display_boot_guide_image()
 {
+    DisplayMetricsTrace metrics("boot_guide");
     int img_w = 0;
     int img_h = 0;
     int scr_w = hal.Canvas->width();
@@ -627,9 +642,12 @@ void display_boot_guide_image()
     hal.Canvas->setFont(&fonts::efontJA_24_b);
     hal.Canvas->drawString("Press to ON", 100, 540);
 
+    metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
-    hal.Canvas->pushSprite(0, 0);
+    metrics.markRefreshStarted();
+    papercolor_push_canvas(hal.Canvas, 0, 0);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
+    metrics.finish(true);
 }
 
 void app_manager_factory_reset_machine()

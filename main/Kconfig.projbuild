@@ -1,0 +1,12 @@
+menu "PaperColor experimental display pipeline"
+
+config PAPERCOLOR_EXPERIMENTAL_LUT
+    bool "Enable the experimental calibrated 5-bit color LUT"
+    default n
+    help
+        Route Canvas refreshes through the generated 32 KiB CIEDE2000 LUT.
+        This is disabled by default so production rendering remains unchanged.
+        The bundled nominal profile is for pipeline validation only; regenerate
+        the LUT from measured panel patches before evaluating physical color.
+
+endmenu

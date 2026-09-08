@@ -1,0 +1,2 @@
+source,success,total_us,render_us,render_to_refresh_us,panel_us,internal_before,internal_after,internal_largest,psram_before,psram_after,psram_largest
+home_full,1,18027825,1626205,18,16401602,191115,187215,114688,7150344,7105284,7077888

@@ -20,6 +20,8 @@
 #include "hal/utils/image/image_utils.h"
 #include "freertos/task.h"
 #include "apps/app_manager/app_manager.h"
+#include "display/display_metrics.h"
+#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "Slideshow";
 
@@ -519,6 +521,7 @@ void PhotoSlideshow::requestRefresh(uint16_t new_index)
 /* ====================== Display photo ====================== */
 bool PhotoSlideshow::displayPhoto(uint16_t index)
 {
+    DisplayMetricsTrace metrics("local_photo");
     // Web "View" / "Upload & Display" can enter here directly, without update().
     // Restore the orientation selected in the web UI before fitting the image.
     syncSettings();
@@ -562,10 +565,12 @@ bool PhotoSlideshow::displayPhoto(uint16_t index)
         }
     }
 
+    metrics.markRendered();
     if (rendered) {
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
-        hal.Canvas->pushSprite(0, 0);
+        metrics.markRefreshStarted();
+        papercolor_push_canvas(hal.Canvas, 0, 0, PaperColorRenderMode::PhotoBalanced);
         app_manager_set_refresh_in_progress(false);
         hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     } else {
@@ -576,6 +581,7 @@ bool PhotoSlideshow::displayPhoto(uint16_t index)
         M5.Display.setEpdMode(epd_mode_t::epd_quality);
     }
     hal_storage_unlock();
+    metrics.finish(rendered);
     return rendered;
 }
 

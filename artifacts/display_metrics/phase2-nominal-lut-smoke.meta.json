@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-09-08T12:35:00+08:00",
+  "device": "M5Stack PaperColor C151",
+  "usb_vid": "0x303a",
+  "usb_pid": "0x4002",
+  "firmware_branch": "feat/papercolor-os",
+  "firmware_base_commit": "c6d9cbfec68a0b8159c89e804be17a0db65530cf",
+  "firmware_binary": "/private/tmp/papercolor-lut-build/paper_color.bin",
+  "firmware_binary_sha256": "a85d1d74845a0326b08b4ed23b4bebdffaef4b2c7a9349fd2831c4f633b51611",
+  "feature_config": "CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT=y",
+  "lut": "artifacts/color_lut/nominal-5bit.lut",
+  "lut_sha256": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+  "transport": "USB TinyUSB CDC; Wi-Fi configuration unchanged",
+  "flash_scope": "application partition only",
+  "sample_count": 1,
+  "purpose": "hardware smoke test; not a performance acceptance result",
+  "baseline_total_us": 18837292,
+  "experimental_total_us": 18030218,
+  "experimental_panel_us": 16395433
+}

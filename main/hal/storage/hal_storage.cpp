@@ -9,6 +9,7 @@
 #include "esp_partition.h"
 #include "driver/gpio.h"
 #include "tinyusb.h"
+#include "tinyusb_cdc_acm.h"
 #include "tinyusb_default_config.h"
 #include "tinyusb_msc.h"
 #include "sdmmc_cmd.h"
@@ -16,6 +17,9 @@
 #include "diskio_sdmmc.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
+#include "freertos/task.h"
+#include "display/display_metrics.h"
+#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "hal_storage";
 
@@ -49,6 +53,7 @@ static hal_storage_ctx_t s_ctx = {
 };
 
 static SemaphoreHandle_t s_storage_lock = NULL;
+static TaskHandle_t s_usb_metrics_task   = NULL;
 
 static void ensure_storage_lock(void)
 {
@@ -81,19 +86,27 @@ void hal_storage_prepare_photo_fs_access(void)
 #define SD_PIN_SCLK GPIO_NUM_15
 #define SD_PIN_CS   GPIO_NUM_47
 
-#define TUSB_DESC_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_MSC_DESC_LEN)
+#define TUSB_DESC_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + TUD_MSC_DESC_LEN)
 #define BASE_PATH           "/data"
 
 static char const *string_desc_arr[] = {
     (const char[]){0x09, 0x04}, "M5Stack", "PaperColor", "", "M5Stack PaperColor",
 };
 
-enum { ITF_NUM_MSC = 0, ITF_NUM_TOTAL };
+enum {
+    ITF_NUM_CDC = 0,
+    ITF_NUM_CDC_DATA,
+    ITF_NUM_MSC,
+    ITF_NUM_TOTAL,
+};
 enum {
     EDPT_CTRL_OUT = 0x00,
     EDPT_CTRL_IN  = 0x80,
-    EDPT_MSC_OUT  = 0x01,
-    EDPT_MSC_IN   = 0x81,
+    EDPT_CDC_NOTIF = 0x81,
+    EDPT_CDC_OUT   = 0x02,
+    EDPT_CDC_IN    = 0x82,
+    EDPT_MSC_OUT   = 0x03,
+    EDPT_MSC_IN    = 0x83,
 };
 
 static tusb_desc_device_t descriptor_config = {
@@ -115,8 +128,107 @@ static tusb_desc_device_t descriptor_config = {
 
 static uint8_t const msc_fs_configuration_desc[] = {
     TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, TUSB_DESC_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),
+    TUD_CDC_DESCRIPTOR(ITF_NUM_CDC, 4, EDPT_CDC_NOTIF, 8, EDPT_CDC_OUT, EDPT_CDC_IN, 64),
     TUD_MSC_DESCRIPTOR(ITF_NUM_MSC, 0, EDPT_MSC_OUT, EDPT_MSC_IN, 64),
 };
+
+static bool cdc_write_all(const char *data, size_t size)
+{
+    while (size > 0) {
+        const size_t written = tinyusb_cdcacm_write_queue(TINYUSB_CDC_ACM_0,
+                                                           reinterpret_cast<const uint8_t *>(data), size);
+        if (written == 0) {
+            if (tinyusb_cdcacm_write_flush(TINYUSB_CDC_ACM_0, pdMS_TO_TICKS(100)) != ESP_OK) {
+                return false;
+            }
+            continue;
+        }
+        data += written;
+        size -= written;
+    }
+    return tinyusb_cdcacm_write_flush(TINYUSB_CDC_ACM_0, pdMS_TO_TICKS(100)) == ESP_OK;
+}
+
+static void usb_metrics_task(void *arg)
+{
+    while (true) {
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+
+        hal_storage_lock();
+        if (!s_ctx.driver_installed || !tinyusb_cdcacm_initialized(TINYUSB_CDC_ACM_0)) {
+            hal_storage_unlock();
+            continue;
+        }
+
+        DisplayMetricsRecord records[16];
+        const size_t count = displayMetricsSnapshot(records, sizeof(records) / sizeof(records[0]));
+        char line[384];
+        int length = snprintf(line, sizeof(line), "DisplayMetricsBegin count=%u\r\n", static_cast<unsigned>(count));
+        bool ok = length > 0 && cdc_write_all(line, static_cast<size_t>(length));
+        PaperColorPipelineStats pipeline_stats{};
+        if (ok && papercolor_pipeline_stats_snapshot(&pipeline_stats)) {
+            length = snprintf(line, sizeof(line),
+                              "PaperColorPipeline: mode=%s prepare_us=%llu workspace_bytes=%u\r\n",
+                              papercolor_render_mode_name(pipeline_stats.mode),
+                              static_cast<unsigned long long>(pipeline_stats.prepare_us),
+                              static_cast<unsigned>(pipeline_stats.workspace_bytes));
+            ok = length > 0 && static_cast<size_t>(length) < sizeof(line) &&
+                 cdc_write_all(line, static_cast<size_t>(length));
+        }
+        for (size_t i = 0; ok && i < count; ++i) {
+            const DisplayMetricsRecord& record = records[i];
+            length = snprintf(
+                line, sizeof(line),
+                "DisplayMetrics: source=%s success=%u total_us=%llu render_us=%llu render_to_refresh_us=%llu "
+                "panel_us=%llu internal_before=%u internal_after=%u internal_largest=%u psram_before=%u "
+                "psram_after=%u psram_largest=%u\r\n",
+                record.source, record.success ? 1U : 0U, static_cast<unsigned long long>(record.total_us),
+                static_cast<unsigned long long>(record.render_us),
+                static_cast<unsigned long long>(record.render_to_refresh_us),
+                static_cast<unsigned long long>(record.panel_us), static_cast<unsigned>(record.internal_before),
+                static_cast<unsigned>(record.internal_after), static_cast<unsigned>(record.internal_largest),
+                static_cast<unsigned>(record.psram_before), static_cast<unsigned>(record.psram_after),
+                static_cast<unsigned>(record.psram_largest));
+            ok = length > 0 && static_cast<size_t>(length) < sizeof(line) &&
+                 cdc_write_all(line, static_cast<size_t>(length));
+        }
+        if (ok) {
+            length = snprintf(line, sizeof(line), "DisplayMetricsEnd count=%u\r\n", static_cast<unsigned>(count));
+            if (length > 0) {
+                cdc_write_all(line, static_cast<size_t>(length));
+            }
+        }
+        hal_storage_unlock();
+    }
+}
+
+static void usb_metrics_rx_cb(int itf, cdcacm_event_t *event)
+{
+    uint8_t input[64];
+    size_t received = 0;
+    bool has_request = false;
+    do {
+        received = 0;
+        if (tinyusb_cdcacm_read(static_cast<tinyusb_cdcacm_itf_t>(itf), input, sizeof(input), &received) != ESP_OK) {
+            return;
+        }
+        has_request = has_request || received > 0;
+    } while (received == sizeof(input));
+
+    if (has_request && s_usb_metrics_task) {
+        xTaskNotifyGive(s_usb_metrics_task);
+    }
+}
+
+static esp_err_t ensure_usb_metrics_task(void)
+{
+    if (s_usb_metrics_task) {
+        return ESP_OK;
+    }
+    return xTaskCreate(usb_metrics_task, "usb_metrics", 4096, NULL, 2, &s_usb_metrics_task) == pdPASS
+               ? ESP_OK
+               : ESP_ERR_NO_MEM;
+}
 
 static void storage_mount_changed_cb(tinyusb_msc_storage_handle_t handle, tinyusb_msc_event_t *event, void *arg)
 {
@@ -171,11 +283,26 @@ static esp_err_t install_tinyusb_device_driver(void)
     tusb_cfg.descriptor.string_count      = sizeof(string_desc_arr) / sizeof(string_desc_arr[0]);
     tusb_cfg.event_cb                     = usb_event_cb;
 
-    esp_err_t ret = tinyusb_driver_install(&tusb_cfg);
-    if (ret == ESP_OK) {
-        s_ctx.driver_installed = true;
+    esp_err_t ret = ensure_usb_metrics_task();
+    ESP_RETURN_ON_ERROR(ret, TAG, "create USB metrics task");
+
+    ret = tinyusb_driver_install(&tusb_cfg);
+    ESP_RETURN_ON_ERROR(ret, TAG, "install TinyUSB driver");
+
+    const tinyusb_config_cdcacm_t cdc_cfg = {
+        .cdc_port = TINYUSB_CDC_ACM_0,
+        .callback_rx = usb_metrics_rx_cb,
+        .callback_rx_wanted_char = NULL,
+        .callback_line_state_changed = NULL,
+        .callback_line_coding_changed = NULL,
+    };
+    ret = tinyusb_cdcacm_init(&cdc_cfg);
+    if (ret != ESP_OK) {
+        tinyusb_driver_uninstall();
+        return ret;
     }
-    return ret;
+    s_ctx.driver_installed = true;
+    return ESP_OK;
 }
 
 static esp_err_t uninstall_tinyusb_device_driver(void)
@@ -184,6 +311,12 @@ static esp_err_t uninstall_tinyusb_device_driver(void)
         return ESP_OK;
     }
 
+    if (tinyusb_cdcacm_initialized(TINYUSB_CDC_ACM_0)) {
+        esp_err_t cdc_ret = tinyusb_cdcacm_deinit(TINYUSB_CDC_ACM_0);
+        if (cdc_ret != ESP_OK) {
+            return cdc_ret;
+        }
+    }
     esp_err_t ret = tinyusb_driver_uninstall();
     if (ret == ESP_OK) {
         s_ctx.driver_installed = false;

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "record_count": 1,
+  "sources": {
+    "home_full": {
+      "count": 1,
+      "success_count": 1,
+      "failure_count": 0,
+      "total_us_p50": 18837292,
+      "total_us_p95": 18837292,
+      "panel_us_p50": 17230902,
+      "panel_us_p95": 17230902,
+      "min_internal_after": 187235,
+      "min_psram_after": 7105284
+    }
+  }
+}

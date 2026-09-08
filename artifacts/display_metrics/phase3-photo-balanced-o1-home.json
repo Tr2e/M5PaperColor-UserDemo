@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "record_count": 1,
+  "sources": {
+    "home_full": {
+      "count": 1,
+      "success_count": 1,
+      "failure_count": 0,
+      "total_us_p50": 18156469,
+      "total_us_p95": 18156469,
+      "panel_us_p50": 16549571,
+      "panel_us_p95": 16549571,
+      "min_internal_after": 186887,
+      "min_psram_after": 7105284
+    }
+  },
+  "pipeline": {
+    "mode": "ui",
+    "prepare_us": 388100,
+    "workspace_bytes": 0
+  }
+}

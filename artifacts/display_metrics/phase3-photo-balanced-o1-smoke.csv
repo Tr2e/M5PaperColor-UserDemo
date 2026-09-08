@@ -1,0 +1,3 @@
+source,success,total_us,render_us,render_to_refresh_us,panel_us,internal_before,internal_after,internal_largest,psram_before,psram_after,psram_largest
+home_full,1,18156469,1606880,18,16549571,191119,186887,114688,7150344,7105284,7077888
+local_photo,1,21907699,3764619,23,18143057,140107,140107,65536,7105084,7105084,7077888

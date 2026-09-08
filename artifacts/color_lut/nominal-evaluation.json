@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "sample_space": "expanded 32x32x32 sRGB grid",
+  "sample_count": 32768,
+  "baseline": "RGB squared Euclidean nearest palette color",
+  "candidate": "5-bit CIEDE2000 LUT",
+  "metric": "CIEDE2000 against nominal profile",
+  "baseline_delta_e": {
+    "mean": 22.53148138167642,
+    "p50": 21.01072513268602,
+    "p95": 47.221393714517774,
+    "max": 78.43568871843652
+  },
+  "candidate_delta_e": {
+    "mean": 19.604481462704403,
+    "p50": 20.361325090236058,
+    "p95": 29.725025402362434,
+    "max": 35.18438546736567
+  },
+  "mean_delta_e_reduction": 2.926999918972019,
+  "mean_delta_e_reduction_percent": 12.990712281139144,
+  "mapping_disagreements": 7847,
+  "candidate_wins": 7847,
+  "ties": 24921,
+  "candidate_losses": 0
+}

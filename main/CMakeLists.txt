@@ -3,6 +3,10 @@ set(APP_ASSETS_USE_EMBEDDED 1)
 idf_component_register(
     SRCS
         "main.cpp"
+        "display/display_metrics.cpp"
+        "display/papercolor_lut.cpp"
+        "display/papercolor_photo_dither.cpp"
+        "display/papercolor_lut_display.cpp"
         "apps/app_manager/app_manager.cpp"
         "apps/papercolor_home/papercolor_home.cpp"
         "apps/app_server/app_server.cpp"
@@ -41,7 +45,21 @@ idf_component_register(
 )
 
 target_compile_definitions(${COMPONENT_LIB} PRIVATE APP_ASSETS_USE_EMBEDDED=${APP_ASSETS_USE_EMBEDDED})
+
+# Keep the application on the project's debuggable -Og profile, but compile
+# the two measured per-pixel PaperColor stages with production optimization.
+# Their behavior is covered by host equivalence/determinism tests.
+set_source_files_properties(
+    "display/papercolor_photo_dither.cpp"
+    "display/papercolor_lut_display.cpp"
+    PROPERTIES COMPILE_OPTIONS "-O2"
+)
+
 target_add_binary_data(${COMPONENT_LIB} "apps/app_server/index.html" TEXT)
 target_add_binary_data(${COMPONENT_LIB} "assets/PaperColor.png" BINARY)
 target_add_binary_data(${COMPONENT_LIB} "assets/arrowClickToPowerOn.png" BINARY)
 target_add_binary_data(${COMPONENT_LIB} "assets/papercolor_web_logo.png" BINARY)
+
+if(CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT)
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_lut/nominal-5bit.lut" BINARY)
+endif()

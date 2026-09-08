@@ -1,0 +1,2 @@
+# Overlay for a controlled LUT A/B firmware build. Production default remains off.
+CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT=y

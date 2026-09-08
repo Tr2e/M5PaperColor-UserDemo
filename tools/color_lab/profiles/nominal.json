@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "m5gfx-nominal",
+  "grid_bits": 5,
+  "description": "Nominal M5GFX ED2208 palette; replace RGB values with measured panel colors for calibrated output.",
+  "colors": [
+    {"name": "black", "native": 0, "rgb": [0, 0, 0]},
+    {"name": "white", "native": 1, "rgb": [255, 255, 255]},
+    {"name": "yellow", "native": 2, "rgb": [255, 243, 56]},
+    {"name": "red", "native": 3, "rgb": [191, 0, 0]},
+    {"name": "blue", "native": 5, "rgb": [100, 64, 255]},
+    {"name": "green", "native": 6, "rgb": [67, 138, 28]}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile": "m5gfx-nominal",
+  "profile_path": "tools/color_lab/profiles/nominal.json",
+  "grid_bits": 5,
+  "size_bytes": 32768,
+  "distance": "CIEDE2000",
+  "sha256": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+  "native_code_counts": {
+    "0": 1348,
+    "1": 4901,
+    "2": 4735,
+    "3": 4747,
+    "5": 10573,
+    "6": 6464
+  }
+}
