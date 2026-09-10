@@ -14,6 +14,7 @@
 #include "apps/ezdata_photo_push/ezdata_photo_push.h"
 #include "apps/local_photo_slideshow/local_photo_slideshow.h"
 #include "hal/wifi/hal_wifi.h"
+#include "display/papercolor_lut_display.h"
 
 #ifndef APP_ASSETS_USE_EMBEDDED
 #define APP_ASSETS_USE_EMBEDDED 0
@@ -30,6 +31,8 @@ constexpr int PHOTO_X = 16;
 constexpr int PHOTO_Y = 398;
 constexpr int PHOTO_W = 176;
 constexpr int PHOTO_H = 145;
+constexpr int LOGO_X = 306, LOGO_Y = 7, LOGO_W = 78, LOGO_H = 46;
+bool g_home_has_thumbnail = false;
 
 constexpr int GRID_DOT_SIZE = 1;
 constexpr int GRID_DOT_STEP = 6;
@@ -276,7 +279,7 @@ bool papercolor_home_draw(AppMode mode, PhotoSlideshow& local_photos, EzdataPhot
     draw_battery_gauge(43, 13, battery_mv, battery_ok);
     hal.Canvas->drawString("HOME / 01", 125, 15);
     hal.Canvas->drawString(mode_label(mode), 202, 15);
-    draw_official_logo(306, 7);
+    draw_official_logo(LOGO_X, LOGO_Y);
     dotted_hline(16, 60, 368);
 
     // Hero: RTC-backed calendar date plus a narrow live environment strip.
@@ -378,5 +381,17 @@ bool papercolor_home_draw(AppMode mode, PhotoSlideshow& local_photos, EzdataPhot
     hal.Canvas->drawString("HOME / READY", 384, 585);
     hal.Canvas->setTextDatum(top_left);
 
+    g_home_has_thumbnail = thumbnail_drawn;
     return thumbnail_drawn;
+}
+
+void papercolor_home_push(void)
+{
+    PaperColorPhotoRegion regions[2]{};
+    size_t count = 0;
+    if (g_home_has_thumbnail) regions[count++] = {PHOTO_X, PHOTO_Y, PHOTO_W, PHOTO_H};
+#if APP_ASSETS_USE_EMBEDDED
+    regions[count++] = {LOGO_X, LOGO_Y, LOGO_W, LOGO_H};
+#endif
+    papercolor_push_canvas(hal.Canvas, 0, 0, PaperColorRenderMode::UiWithPhotos, regions, count);
 }

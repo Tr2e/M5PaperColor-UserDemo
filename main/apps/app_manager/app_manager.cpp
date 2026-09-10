@@ -123,7 +123,7 @@ static void push_home_region(int x, int y, int width, int height)
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
     app_manager_set_refresh_in_progress(true);
     metrics.markRefreshStarted();
-    papercolor_push_canvas(hal.Canvas, 0, 0);
+    papercolor_home_push();
     app_manager_set_refresh_in_progress(false);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     metrics.finish(true);
@@ -142,7 +142,7 @@ static void show_home_view()
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
     app_manager_set_refresh_in_progress(true);
     metrics.markRefreshStarted();
-    papercolor_push_canvas(hal.Canvas, 0, 0);
+    papercolor_home_push();
     app_manager_set_refresh_in_progress(false);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     metrics.finish(true);

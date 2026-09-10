@@ -17,6 +17,13 @@ enum class PaperColorRenderMode : uint8_t {
     PhotoBalanced,
     PhotoDetail,
     Legacy,
+    UiWithPhotos,
+};
+
+// Coordinates in the Canvas's current logical rotation. These regions use
+// independent PhotoBalanced diffusion; pixels outside them retain UI mapping.
+struct PaperColorPhotoRegion {
+    int32_t x, y, width, height;
 };
 
 struct PaperColorPipelineStats {
@@ -35,4 +42,6 @@ bool papercolor_pipeline_stats_snapshot(PaperColorPipelineStats* stats);
  * Canvas::pushSprite() call.
  */
 void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
-                            PaperColorRenderMode mode = PaperColorRenderMode::Ui);
+                            PaperColorRenderMode mode = PaperColorRenderMode::Ui,
+                            const PaperColorPhotoRegion* photo_regions = nullptr,
+                            size_t photo_region_count = 0);

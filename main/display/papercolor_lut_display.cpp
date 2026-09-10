@@ -14,8 +14,10 @@
 #include <array>
 #include <esp_heap_caps.h>
 #include <esp_timer.h>
+#include <esp_log.h>
 
 #include "display/papercolor_photo_dither.h"
+#include "display/papercolor_region_dither.h"
 
 extern const uint8_t _binary_nominal_5bit_lut_start[] asm("_binary_nominal_5bit_lut_start");
 extern const uint8_t _binary_nominal_5bit_lut_end[] asm("_binary_nominal_5bit_lut_end");
@@ -55,6 +57,7 @@ const char* papercolor_render_mode_name(PaperColorRenderMode mode)
         case PaperColorRenderMode::PhotoBalanced: return "photo-balanced";
         case PaperColorRenderMode::PhotoDetail:   return "photo-detail";
         case PaperColorRenderMode::Legacy:        return "legacy";
+        case PaperColorRenderMode::UiWithPhotos:  return "ui-with-photos";
         default:                                  return "unknown";
     }
 }
@@ -76,7 +79,9 @@ bool papercolor_pipeline_stats_snapshot(PaperColorPipelineStats* stats)
 }
 
 void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
-                            PaperColorRenderMode mode)
+                            PaperColorRenderMode mode,
+                            const PaperColorPhotoRegion* photo_regions,
+                            size_t photo_region_count)
 {
     if (!canvas) {
         return;
@@ -84,6 +89,8 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
 
 #if !defined(CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT) || !CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT
     (void)mode;
+    (void)photo_regions;
+    (void)photo_region_count;
     canvas->pushSprite(x, y);
 #else
     if (mode == PaperColorRenderMode::Legacy) {
@@ -132,7 +139,17 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
     }
 
     const uint64_t prepare_started_us = static_cast<uint64_t>(esp_timer_get_time());
-    const size_t workspace_size = papercolor_dither_workspace_size(width, dither_mode);
+    const size_t base_workspace_size = papercolor_dither_workspace_size(width, dither_mode);
+    std::array<PaperColorRegionDither, PAPERCOLOR_MAX_PHOTO_REGIONS> regions{};
+    size_t region_workspace_size = 0;
+    if (mode != PaperColorRenderMode::UiWithPhotos) photo_region_count = 0;
+    if (photo_region_count && !papercolor_layout_photo_regions(photo_regions, photo_region_count, width, height,
+                                         canvas_rotation, regions.data(), region_workspace_size)) {
+        ESP_LOGW("PaperColor", "Invalid photo regions; retaining UI mapping");
+        photo_region_count = 0;
+        region_workspace_size = 0;
+    }
+    const size_t workspace_size = base_workspace_size + region_workspace_size;
     void* workspace = nullptr;
     if (workspace_size != 0) {
         const size_t internal_free =
@@ -158,13 +175,28 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
     papercolor_dither_state_t dither{};
     if (!papercolor_dither_init(&dither, width, dither_mode,
                                 _binary_nominal_5bit_lut_start, workspace,
-                                workspace_size)) {
+                                base_workspace_size)) {
         if (workspace) {
             heap_caps_free(workspace);
         }
         restore_canvas_state();
         canvas->pushSprite(x, y);
         return;
+    }
+
+    size_t workspace_offset = base_workspace_size;
+    for (size_t i = 0; i < photo_region_count; ++i) {
+        const size_t bytes = papercolor_dither_workspace_size(
+            regions[i].rect.width, PAPERCOLOR_DITHER_FLOYD_STEINBERG);
+        if (!papercolor_dither_init(&regions[i].dither, regions[i].rect.width,
+                PAPERCOLOR_DITHER_FLOYD_STEINBERG, _binary_nominal_5bit_lut_start,
+                static_cast<uint8_t*>(workspace) + workspace_offset, bytes)) {
+            heap_caps_free(workspace);
+            restore_canvas_state();
+            canvas->pushSprite(x, y);
+            return;
+        }
+        workspace_offset += bytes;
     }
 
     std::array<RGBColor, MAX_ROW_PIXELS> row{};
@@ -196,6 +228,11 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
             }
             papercolor_dither_process_rgb888_row(
                 &dither, rgb.data(), native_codes.data());
+        }
+        if (!papercolor_process_photo_regions_row(regions.data(), photo_region_count, row_index,
+                use_swap565_fast_path ? source_swap565 + static_cast<size_t>(row_index) * width : nullptr,
+                rgb.data(), native_codes.data())) {
+            ESP_LOGE("PaperColor", "Photo region row processing failed");
         }
         for (int32_t column = 0; column < width; ++column) {
             const uint8_t native = native_codes[column];
