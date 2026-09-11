@@ -1,0 +1,939 @@
+{
+  "baseline": "IMG_9957 cyan smooth",
+  "candidate": "native RGB565-cell representative reconstruction",
+  "warning": "Nominal targets, not measured physical colors. RGB565 cell collisions are unavoidable; neighboring cells are not snapped.",
+  "variants": {
+    "baseline": {
+      "frame_sha256": "c675e6c15855c2c809213abd63033fd74bd766a1de73027a5468e37d0cb16210",
+      "patches": [
+        {
+          "id": 1,
+          "crop_sha256": "34fa1826a0a171d2579b65040894c503d1bfc945f90690b95a979dd136dd0dfd",
+          "native_counts": {
+            "black": 4128,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 2,
+          "crop_sha256": "932de90093998614a1823ce411d9f686974decd139aebbd4380e286fe4fe9990",
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 3,
+          "crop_sha256": "14047ac6b0eac262c36748f53111a7ebdb02eebf175bbb6b4623730bd187845b",
+          "native_counts": {
+            "black": 0,
+            "white": 9,
+            "yellow": 4119,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 4,
+          "crop_sha256": "55735f168942b9f1a302d256d4ccc6dc3fb071af7f188b4ba87570ff14f93f33",
+          "native_counts": {
+            "black": 30,
+            "white": 0,
+            "yellow": 0,
+            "red": 4098,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 5,
+          "crop_sha256": "903cbe83c6ee08b94f878a68c69113ae70ed977ab072b7dc6da8f3706be95552",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        {
+          "id": 6,
+          "crop_sha256": "0cd2580a723f3580e75e7596e89cee90853620b1a8f846e5beadd669af132fe1",
+          "native_counts": {
+            "black": 16,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4112
+          }
+        },
+        {
+          "id": 7,
+          "crop_sha256": "2aa5220697a7ae78def23b3a7eaa23f8532ba27b0837fe4e5c10d1d5f23763bd",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 8,
+          "crop_sha256": "50930a6494c972cd34392a86e8e69b1e2f681d01fd96918b14adc1552df1490d",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        },
+        {
+          "id": 9,
+          "crop_sha256": "645f304492e9262db1c8180cae8a4926f76849fa22d266d4e3791aef281bd4a7",
+          "native_counts": {
+            "black": 140,
+            "white": 218,
+            "yellow": 0,
+            "red": 1572,
+            "blue": 2198,
+            "green": 0
+          }
+        },
+        {
+          "id": 10,
+          "crop_sha256": "f792550965bf61a19dd517f87a5a331e0064cababe2b00dd4fb89a08d99cb33f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2696,
+            "green": 1432
+          }
+        },
+        {
+          "id": 11,
+          "crop_sha256": "1af2da0865aa7f54e5f787a678159ebb1ee3b2b08abdc12b2f79ace7e6909075",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2475,
+            "red": 0,
+            "blue": 0,
+            "green": 1653
+          }
+        },
+        {
+          "id": 12,
+          "crop_sha256": "dd0ab9619e11fcab59a4e815e806422fa8260eabd19357f45fbab9f2064033e5",
+          "native_counts": {
+            "black": 0,
+            "white": 161,
+            "yellow": 0,
+            "red": 0,
+            "blue": 899,
+            "green": 3068
+          }
+        },
+        {
+          "id": 13,
+          "crop_sha256": "115b152aae8cd504811c8bdd6c93ae12f535e46b04472d3bdf6fe58a97e74220",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 14,
+          "crop_sha256": "ba3b67e1f5bd30322f60d268e08ef05eb5b8884acfa4631f2efa71c86eb7431c",
+          "native_counts": {
+            "black": 0,
+            "white": 467,
+            "yellow": 1385,
+            "red": 2276,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 15,
+          "crop_sha256": "fb07f4069cf5dfc079d2bfbe3726415b50b0a4c19e88ce7a2eb305aa46eb39c0",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 779,
+            "red": 3349,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 16,
+          "crop_sha256": "2b838df85126be275ec4a219e5cb7ad7218e49af753a5fdcb32093b95408350b",
+          "native_counts": {
+            "black": 0,
+            "white": 572,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1934,
+            "green": 0
+          }
+        },
+        {
+          "id": 17,
+          "crop_sha256": "458a4f986d577e140f3dbf994c174567c233ac85749fc16d13fd78c51ca64e86",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        },
+        {
+          "id": 18,
+          "crop_sha256": "d7a26ace36c7e1d388f99a52556b8046956531380fb3d0ba954e0ae9002a47de",
+          "native_counts": {
+            "black": 1184,
+            "white": 177,
+            "yellow": 0,
+            "red": 1178,
+            "blue": 1589,
+            "green": 0
+          }
+        },
+        {
+          "id": 19,
+          "crop_sha256": "903cbe83c6ee08b94f878a68c69113ae70ed977ab072b7dc6da8f3706be95552",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        {
+          "id": 20,
+          "crop_sha256": "03eff5f4152bf17b1d41b72cd532c38d233bee8e61faffbcf2ff6b339d1b0e84",
+          "native_counts": {
+            "black": 0,
+            "white": 953,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1354
+          }
+        },
+        {
+          "id": 21,
+          "crop_sha256": "e626cdb87264b62ae9c79a9df1f3a63ab78331137623475c5972e4c3599d0a07",
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 22,
+          "crop_sha256": "f95cfc82dd80ade29f474741b838f6d0792e8a05b84e31082be8c063121bb230",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 23,
+          "crop_sha256": "7abde2b91014309d8feff6a0d09c554d37920f6558edcb1413e4a985f6066391",
+          "native_counts": {
+            "black": 1469,
+            "white": 2659,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 24,
+          "crop_sha256": "6d9aacc3312a44085b3a6b5629f16455a01281d9dd5683fdf6be13ff85a1e0eb",
+          "native_counts": {
+            "black": 402,
+            "white": 3726,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      ],
+      "uniform": {
+        "N.BLACK": "dd046ccaee01de364ee5306b48d1dde4b8d06ba484eb66c2123f92f1211c30ad",
+        "N.WHITE": "3454435ac58f469e87a1fcb2c3564f8324d612e67e23ab30e2590a8c40cb3d44",
+        "RED": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8",
+        "GREEN": "9dd33f3ba84a4cc1007ce9ea793e70f26c02ac69b4f0cc67c03c11cb20e30ebe",
+        "COLOR.PURPLE": "8ab0b24747b6c5ddebfacd4722f4a326b5e3c28f6568860986ff22296ca8d89b",
+        "COLOR.CYAN": "76615606e5c029c9e1e920d70106678e0a1d9f7bbd746df8df403ccf268463bc",
+        "COLOR.LIME": "6f9cccf4766c3ccefc61152f3c2a353b68a05f3b70cc36aacdb326cace321048",
+        "COLOR.TEAL": "1de4e40c88ad92f0fb66594a848c4438d85da3d001c7b89c985752233ac6fa7e",
+        "COLOR.YELLOW": "6fb5807aa37220288ebec290a6e1e1ff2971add21d9b775ce22a3508c5d433f0",
+        "COLOR.ORANGE": "f91b5ea09cddef5ac5d2c050bb9489fc6c595d992c47acfe9d74401b8cb5326d",
+        "COLOR.RED": "61680d23cb93446989ebffe450806fd8297d7ec603333ef0d39f68ae1a0e3bdd",
+        "MAGENTA": "ebe70814ff62d1f47c18ad58ed48676e766db20e9a39bded13409b36aa68fd64",
+        "PURPLE.LIGHT": "b39169c8025d2497aa4bb7f243d899456de91f3515cbe957b4217c9345d9429b",
+        "PURPLE.DARK": "930b7242ea6f7f95b897f66753eef63143ac838e6da92faefdecd79ce2b9cd73",
+        "BLUE": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+        "CYAN": "110d4e55196547239eb71337b767773e1087e8492f3fdcae8af427cae1c88d77",
+        "GRAY.32": "63472e04bb989253de08028c947d20bb31e2ac6cf505c08239ea08c2c1d5f2c0",
+        "GRAY.96": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e",
+        "GRAY.160": "39874ac545739c2de20bd98a6f8e676f523771135234b4db20230644cb075c39",
+        "GRAY.224": "0879762b5b44897c8751f7798e0af710f30c4566fbabdb891f33ef8ea2ef7fd5"
+      },
+      "ramps": {
+        "native2_channel0": {
+          "sha256": "a25e80d7bc310376fe6f610c116c6c00d488b1098c2b863a8b8e176853e37273",
+          "counts": {
+            "black": 1216,
+            "white": 2447,
+            "yellow": 230665,
+            "red": 62,
+            "blue": 0,
+            "green": 5610
+          }
+        },
+        "native2_channel1": {
+          "sha256": "84227476179b98375597bba8f45cf12e60807cc4a8f24e0ecba3248d40422bb5",
+          "counts": {
+            "black": 0,
+            "white": 2971,
+            "yellow": 230645,
+            "red": 6384,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native2_channel2": {
+          "sha256": "f397788f4a0b7cb0f2379e3c89be9c90cab9f92f1c5b6b42ac8170a5b2b7eae3",
+          "counts": {
+            "black": 0,
+            "white": 6130,
+            "yellow": 232293,
+            "red": 1577,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel0": {
+          "sha256": "8c2b089515d2d1b43be00a5928d3f042d2fa0afad235d9b3d837224ef9702295",
+          "counts": {
+            "black": 6458,
+            "white": 0,
+            "yellow": 0,
+            "red": 233542,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel1": {
+          "sha256": "a958ef73f73cc234c52f41c469651fe8f0a32eae04259f81ece3f4f5640a8d7c",
+          "counts": {
+            "black": 4985,
+            "white": 0,
+            "yellow": 7812,
+            "red": 227203,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel2": {
+          "sha256": "1cf884bb8e0160ea83ef9506892bdaad484e4bbbeeaf7b66c68e1f0d5466154b",
+          "counts": {
+            "black": 1425,
+            "white": 0,
+            "yellow": 0,
+            "red": 233758,
+            "blue": 4817,
+            "green": 0
+          }
+        },
+        "native5_channel0": {
+          "sha256": "8ba4c57a2b754217b815f9268cecfbafbcc198611b4ebc5ed84c4d3e03d2dfad",
+          "counts": {
+            "black": 922,
+            "white": 4948,
+            "yellow": 0,
+            "red": 3183,
+            "blue": 230947,
+            "green": 0
+          }
+        },
+        "native5_channel1": {
+          "sha256": "a04d9be9bdc560e70fdcac2f43686f78a1a7374f5ad26c2ce67570accd334b6e",
+          "counts": {
+            "black": 887,
+            "white": 2476,
+            "yellow": 0,
+            "red": 207,
+            "blue": 236430,
+            "green": 0
+          }
+        },
+        "native5_channel2": {
+          "sha256": "ce98570dd9305c41b3d91c2d6d86919c46a9c17bfc7378708765792f17607f25",
+          "counts": {
+            "black": 6613,
+            "white": 3293,
+            "yellow": 0,
+            "red": 1229,
+            "blue": 228865,
+            "green": 0
+          }
+        },
+        "native6_channel0": {
+          "sha256": "b8503692f5932a10bdea1c3c4134bd6b93eff68c10438af90e4290579f2d4361",
+          "counts": {
+            "black": 12542,
+            "white": 0,
+            "yellow": 9005,
+            "red": 0,
+            "blue": 0,
+            "green": 218453
+          }
+        },
+        "native6_channel1": {
+          "sha256": "7742da21dbadbdb2475dbd25d3fb71b464155338aeaa80b73d55ca8920ea8fb5",
+          "counts": {
+            "black": 13638,
+            "white": 0,
+            "yellow": 6562,
+            "red": 0,
+            "blue": 0,
+            "green": 219800
+          }
+        },
+        "native6_channel2": {
+          "sha256": "ec81d702b5d4ea6bfe3681c89595fe2c0449ae3d7308fa8efca3d35bb1b32b47",
+          "counts": {
+            "black": 7208,
+            "white": 3987,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 228805
+          }
+        }
+      }
+    },
+    "candidate": {
+      "frame_sha256": "61b7a31855ef42f920eb37fdadd4b0f6925995c1a2be5fc6c16fad42edc6b2f1",
+      "patches": [
+        {
+          "id": 1,
+          "crop_sha256": "34fa1826a0a171d2579b65040894c503d1bfc945f90690b95a979dd136dd0dfd",
+          "native_counts": {
+            "black": 4128,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 2,
+          "crop_sha256": "932de90093998614a1823ce411d9f686974decd139aebbd4380e286fe4fe9990",
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 3,
+          "crop_sha256": "b8d4a251f15a6f204602698f8e0acbc8fadce5e1bae184a7da2da6fb3fc03a10",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 4128,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 4,
+          "crop_sha256": "2aa5220697a7ae78def23b3a7eaa23f8532ba27b0837fe4e5c10d1d5f23763bd",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 5,
+          "crop_sha256": "903cbe83c6ee08b94f878a68c69113ae70ed977ab072b7dc6da8f3706be95552",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        {
+          "id": 6,
+          "crop_sha256": "50930a6494c972cd34392a86e8e69b1e2f681d01fd96918b14adc1552df1490d",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        },
+        {
+          "id": 7,
+          "crop_sha256": "2aa5220697a7ae78def23b3a7eaa23f8532ba27b0837fe4e5c10d1d5f23763bd",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 8,
+          "crop_sha256": "50930a6494c972cd34392a86e8e69b1e2f681d01fd96918b14adc1552df1490d",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        },
+        {
+          "id": 9,
+          "crop_sha256": "645f304492e9262db1c8180cae8a4926f76849fa22d266d4e3791aef281bd4a7",
+          "native_counts": {
+            "black": 140,
+            "white": 218,
+            "yellow": 0,
+            "red": 1572,
+            "blue": 2198,
+            "green": 0
+          }
+        },
+        {
+          "id": 10,
+          "crop_sha256": "f792550965bf61a19dd517f87a5a331e0064cababe2b00dd4fb89a08d99cb33f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2696,
+            "green": 1432
+          }
+        },
+        {
+          "id": 11,
+          "crop_sha256": "538d9632b17c758a70562ef89c9740aa38a686754ed91eb6aa5412ea0d69667c",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2474,
+            "red": 0,
+            "blue": 0,
+            "green": 1654
+          }
+        },
+        {
+          "id": 12,
+          "crop_sha256": "324d9418fe9fd6d49ef6fff05b4e6ce7fc90589b87d202d4a199127c077bc7c1",
+          "native_counts": {
+            "black": 0,
+            "white": 161,
+            "yellow": 0,
+            "red": 0,
+            "blue": 900,
+            "green": 3067
+          }
+        },
+        {
+          "id": 13,
+          "crop_sha256": "115b152aae8cd504811c8bdd6c93ae12f535e46b04472d3bdf6fe58a97e74220",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 14,
+          "crop_sha256": "ba3b67e1f5bd30322f60d268e08ef05eb5b8884acfa4631f2efa71c86eb7431c",
+          "native_counts": {
+            "black": 0,
+            "white": 467,
+            "yellow": 1385,
+            "red": 2276,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 15,
+          "crop_sha256": "fb07f4069cf5dfc079d2bfbe3726415b50b0a4c19e88ce7a2eb305aa46eb39c0",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 779,
+            "red": 3349,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 16,
+          "crop_sha256": "ad278e243a6dca07e16e2758df0b664fcc36f35be493c39391c47dbc370e5e3d",
+          "native_counts": {
+            "black": 0,
+            "white": 575,
+            "yellow": 0,
+            "red": 1621,
+            "blue": 1932,
+            "green": 0
+          }
+        },
+        {
+          "id": 17,
+          "crop_sha256": "458a4f986d577e140f3dbf994c174567c233ac85749fc16d13fd78c51ca64e86",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        },
+        {
+          "id": 18,
+          "crop_sha256": "d7a26ace36c7e1d388f99a52556b8046956531380fb3d0ba954e0ae9002a47de",
+          "native_counts": {
+            "black": 1184,
+            "white": 177,
+            "yellow": 0,
+            "red": 1178,
+            "blue": 1589,
+            "green": 0
+          }
+        },
+        {
+          "id": 19,
+          "crop_sha256": "903cbe83c6ee08b94f878a68c69113ae70ed977ab072b7dc6da8f3706be95552",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        {
+          "id": 20,
+          "crop_sha256": "03eff5f4152bf17b1d41b72cd532c38d233bee8e61faffbcf2ff6b339d1b0e84",
+          "native_counts": {
+            "black": 0,
+            "white": 953,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1354
+          }
+        },
+        {
+          "id": 21,
+          "crop_sha256": "e626cdb87264b62ae9c79a9df1f3a63ab78331137623475c5972e4c3599d0a07",
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 22,
+          "crop_sha256": "f95cfc82dd80ade29f474741b838f6d0792e8a05b84e31082be8c063121bb230",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 23,
+          "crop_sha256": "7abde2b91014309d8feff6a0d09c554d37920f6558edcb1413e4a985f6066391",
+          "native_counts": {
+            "black": 1469,
+            "white": 2659,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        {
+          "id": 24,
+          "crop_sha256": "6d9aacc3312a44085b3a6b5629f16455a01281d9dd5683fdf6be13ff85a1e0eb",
+          "native_counts": {
+            "black": 402,
+            "white": 3726,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      ],
+      "uniform": {
+        "N.BLACK": "dd046ccaee01de364ee5306b48d1dde4b8d06ba484eb66c2123f92f1211c30ad",
+        "N.WHITE": "3454435ac58f469e87a1fcb2c3564f8324d612e67e23ab30e2590a8c40cb3d44",
+        "RED": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8",
+        "GREEN": "9dd33f3ba84a4cc1007ce9ea793e70f26c02ac69b4f0cc67c03c11cb20e30ebe",
+        "COLOR.PURPLE": "8ab0b24747b6c5ddebfacd4722f4a326b5e3c28f6568860986ff22296ca8d89b",
+        "COLOR.CYAN": "76615606e5c029c9e1e920d70106678e0a1d9f7bbd746df8df403ccf268463bc",
+        "COLOR.LIME": "6f9cccf4766c3ccefc61152f3c2a353b68a05f3b70cc36aacdb326cace321048",
+        "COLOR.TEAL": "1de4e40c88ad92f0fb66594a848c4438d85da3d001c7b89c985752233ac6fa7e",
+        "COLOR.YELLOW": "6fb5807aa37220288ebec290a6e1e1ff2971add21d9b775ce22a3508c5d433f0",
+        "COLOR.ORANGE": "f91b5ea09cddef5ac5d2c050bb9489fc6c595d992c47acfe9d74401b8cb5326d",
+        "COLOR.RED": "61680d23cb93446989ebffe450806fd8297d7ec603333ef0d39f68ae1a0e3bdd",
+        "MAGENTA": "ebe70814ff62d1f47c18ad58ed48676e766db20e9a39bded13409b36aa68fd64",
+        "PURPLE.LIGHT": "b39169c8025d2497aa4bb7f243d899456de91f3515cbe957b4217c9345d9429b",
+        "PURPLE.DARK": "930b7242ea6f7f95b897f66753eef63143ac838e6da92faefdecd79ce2b9cd73",
+        "BLUE": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+        "CYAN": "110d4e55196547239eb71337b767773e1087e8492f3fdcae8af427cae1c88d77",
+        "GRAY.32": "63472e04bb989253de08028c947d20bb31e2ac6cf505c08239ea08c2c1d5f2c0",
+        "GRAY.96": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e",
+        "GRAY.160": "39874ac545739c2de20bd98a6f8e676f523771135234b4db20230644cb075c39",
+        "GRAY.224": "0879762b5b44897c8751f7798e0af710f30c4566fbabdb891f33ef8ea2ef7fd5"
+      },
+      "ramps": {
+        "native2_channel0": {
+          "sha256": "6e7b8584469a53dd1f92fb1d288bfaa48ad64c7c977fbd56382b259ca3562e68",
+          "counts": {
+            "black": 1216,
+            "white": 2110,
+            "yellow": 231004,
+            "red": 60,
+            "blue": 0,
+            "green": 5610
+          }
+        },
+        "native2_channel1": {
+          "sha256": "2b4fe5e9a58d7288d6fb37e892be4626b30df4ca56398668c1c14d22b1fba515",
+          "counts": {
+            "black": 0,
+            "white": 2714,
+            "yellow": 230905,
+            "red": 6381,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native2_channel2": {
+          "sha256": "3cb11c87ea1b35c6c08b24ff3158cda285cf4a81b3054e9885e7632c56ee2190",
+          "counts": {
+            "black": 0,
+            "white": 5914,
+            "yellow": 232656,
+            "red": 1430,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel0": {
+          "sha256": "b2cb5d59c6b351936f8345d0477dd5312cc60a317520c7bf6dd6d39a5d51a1e0",
+          "counts": {
+            "black": 6084,
+            "white": 0,
+            "yellow": 0,
+            "red": 233916,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel1": {
+          "sha256": "d5ef423b5d6396deea33437c5d04b81492d646c4e3356f9097233a4657fee737",
+          "counts": {
+            "black": 4624,
+            "white": 0,
+            "yellow": 7811,
+            "red": 227565,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "native3_channel2": {
+          "sha256": "a3b9bc3b8971f3037049e9e6fdde6141c4d4621e8fe7cffb9e0a67cabe259419",
+          "counts": {
+            "black": 650,
+            "white": 0,
+            "yellow": 0,
+            "red": 234526,
+            "blue": 4824,
+            "green": 0
+          }
+        },
+        "native5_channel0": {
+          "sha256": "b11fce6127fd3ac34273129cb7e2a911a529404ad4b28b40a596b7456b43fa4a",
+          "counts": {
+            "black": 834,
+            "white": 4943,
+            "yellow": 0,
+            "red": 3100,
+            "blue": 231123,
+            "green": 0
+          }
+        },
+        "native5_channel1": {
+          "sha256": "1929ae259da7482582942fb59d4a2d0fba96cceffae9d8f628a43349db581601",
+          "counts": {
+            "black": 807,
+            "white": 2499,
+            "yellow": 0,
+            "red": 81,
+            "blue": 236613,
+            "green": 0
+          }
+        },
+        "native5_channel2": {
+          "sha256": "fc6bbf9e90a086dc1923914f192ee0edabc686388b5c528e120bd6d48140ffc4",
+          "counts": {
+            "black": 6613,
+            "white": 3292,
+            "yellow": 0,
+            "red": 1229,
+            "blue": 228866,
+            "green": 0
+          }
+        },
+        "native6_channel0": {
+          "sha256": "d0777a8892379fe7724cd54bb0135b1fe9016542bc59aacdbaa2cb16230a27bb",
+          "counts": {
+            "black": 12141,
+            "white": 0,
+            "yellow": 9005,
+            "red": 0,
+            "blue": 0,
+            "green": 218854
+          }
+        },
+        "native6_channel1": {
+          "sha256": "65308f8a32c725aef1e523938d71388b9d91a65c337131619d545130a73a495c",
+          "counts": {
+            "black": 13274,
+            "white": 0,
+            "yellow": 6339,
+            "red": 0,
+            "blue": 0,
+            "green": 220387
+          }
+        },
+        "native6_channel2": {
+          "sha256": "afd2fcffb52e71c7e8982dfb8e90a87e61bb71e997802a84edf5f0917036814d",
+          "counts": {
+            "black": 6844,
+            "white": 4039,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 229117
+          }
+        }
+      }
+    }
+  },
+  "checks": {
+    "changed_target_keys": [
+      17475,
+      25119,
+      47104,
+      65415
+    ],
+    "native_cells": {
+      "65415": 2,
+      "47104": 3,
+      "25119": 5,
+      "17475": 6
+    },
+    "rgb888_all_65536_targets_identical": true,
+    "protected_uniform_frames": 20,
+    "neighbor_edges": 191488,
+    "old_max": 59.78741637042029,
+    "new_max": 59.78741637042029,
+    "affected_old_max": 9.001085004042569,
+    "affected_new_max": 10.000976514820941,
+    "new_edges_over_30": 0,
+    "changed_frame_pixels": 4427
+  },
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "cf11f3ef3406bd970d30ecb8691ec6086d829fc1caa6facb8471ed4c9284432f",
+    "main/display/papercolor_photo_dither.h": "441a549efe777d1680e1c8a97806444b4045483d609b464a5056ede10c64408f",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_cyan_ratio.h": "2cad2d40add02120fafac377aca6af8c0b31ddecafdfb885a8de84b9b23948c8",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "tools/color_lab/probe_targets.cpp": "b6602334063e224e67fa5918ca88987afd44a495a1e68002acbbd2052d375749",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/compare_native565.py": "52096395dd5da63216d7eeb27e45479f70b5cd9cae1887f91472952cb7bcd3b0",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4"
+  }
+}

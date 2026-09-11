@@ -1,0 +1,919 @@
+{
+  "firmware_sha256": "1d9a4fa6f38da0b522c51a48f7397886d9c8899720f2c08992aea67dd2e0a37e",
+  "counts_source": "exact-pigment-comparison.json after (source and LUT hashes verified)",
+  "warning": "Nominal RGB arithmetic diagnostics only; no phone color fitting or measured physical color claim.",
+  "patches": [
+    {
+      "id": 1,
+      "name": "N.BLACK",
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        0,
+        0,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        0,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nominal_code_average_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_nominal_average_target_difference": 0.0,
+      "native_percent": {
+        "black": 100.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "N.WHITE",
+      "source_rgb": [
+        255,
+        255,
+        255
+      ],
+      "expanded_rgb565": [
+        255,
+        255,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        255,
+        255,
+        255
+      ],
+      "target_q4_rgb": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "nominal_code_average_rgb": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "max_nominal_average_target_difference": 0.0,
+      "native_percent": {
+        "black": 0.0,
+        "white": 100.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "N.YELLOW",
+      "source_rgb": [
+        255,
+        243,
+        56
+      ],
+      "expanded_rgb565": [
+        255,
+        243,
+        57
+      ],
+      "legacy_compensated_rgb": [
+        255,
+        243,
+        57
+      ],
+      "target_q4_rgb": [
+        255.0,
+        243.0,
+        57.0
+      ],
+      "nominal_code_average_rgb": [
+        255.0,
+        243.02616279069767,
+        56.43386627906977
+      ],
+      "max_nominal_average_target_difference": 0.5661337209302317,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.2180232558139535,
+        "yellow": 99.78197674418605,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "N.RED",
+      "source_rgb": [
+        191,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        189,
+        0,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        189,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        189.0,
+        0.0,
+        0.0
+      ],
+      "nominal_code_average_rgb": [
+        189.61191860465115,
+        0.0,
+        0.0
+      ],
+      "max_nominal_average_target_difference": 0.6119186046511516,
+      "native_percent": {
+        "black": 0.7267441860465116,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 99.27325581395348,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "N.BLUE",
+      "source_rgb": [
+        100,
+        64,
+        255
+      ],
+      "expanded_rgb565": [
+        99,
+        65,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        99,
+        65,
+        255
+      ],
+      "target_q4_rgb": [
+        100.0625,
+        64.0625,
+        254.875
+      ],
+      "nominal_code_average_rgb": [
+        100.0,
+        64.0,
+        255.0
+      ],
+      "max_nominal_average_target_difference": 0.125,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 100.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "N.GREEN",
+      "source_rgb": [
+        67,
+        138,
+        28
+      ],
+      "expanded_rgb565": [
+        66,
+        138,
+        24
+      ],
+      "legacy_compensated_rgb": [
+        66,
+        138,
+        24
+      ],
+      "target_q4_rgb": [
+        66.5,
+        137.0,
+        27.8125
+      ],
+      "nominal_code_average_rgb": [
+        66.72407945736434,
+        137.43168604651163,
+        27.88468992248062
+      ],
+      "max_nominal_average_target_difference": 0.43168604651162923,
+      "native_percent": {
+        "black": 0.4118217054263566,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 99.58817829457364
+      }
+    },
+    {
+      "id": 7,
+      "name": "RED",
+      "source_rgb": [
+        255,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        255,
+        0,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        255,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        191.0,
+        0.0,
+        0.0
+      ],
+      "nominal_code_average_rgb": [
+        191.0,
+        0.0,
+        0.0
+      ],
+      "max_nominal_average_target_difference": 0.0,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 100.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "name": "GREEN",
+      "source_rgb": [
+        0,
+        255,
+        0
+      ],
+      "expanded_rgb565": [
+        0,
+        255,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        0,
+        255,
+        0
+      ],
+      "target_q4_rgb": [
+        67.0,
+        138.0,
+        28.0
+      ],
+      "nominal_code_average_rgb": [
+        67.0,
+        138.0,
+        28.0
+      ],
+      "max_nominal_average_target_difference": 0.0,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 100.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "expanded_rgb565": [
+        99,
+        48,
+        156
+      ],
+      "legacy_compensated_rgb": [
+        141,
+        48,
+        145
+      ],
+      "target_q4_rgb": [
+        140.4375,
+        48.1875,
+        146.4375
+      ],
+      "nominal_code_average_rgb": [
+        140.53367248062017,
+        47.41739341085271,
+        146.71148255813952
+      ],
+      "max_nominal_average_target_difference": 0.7701065891472894,
+      "native_percent": {
+        "black": 3.512596899224806,
+        "white": 5.547480620155039,
+        "yellow": 0.0,
+        "red": 38.95348837209303,
+        "blue": 51.986434108527135,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "expanded_rgb565": [
+        0,
+        174,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        0,
+        152,
+        223
+      ],
+      "target_q4_rgb": [
+        91.25,
+        83.5625,
+        195.0
+      ],
+      "nominal_code_average_rgb": [
+        91.40455426356588,
+        83.79651162790698,
+        194.8406007751938
+      ],
+      "max_nominal_average_target_difference": 0.23401162790698038,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.09689922480620156,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 73.40116279069767,
+        "green": 26.501937984496124
+      }
+    },
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "expanded_rgb565": [
+        156,
+        255,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        156,
+        255,
+        0
+      ],
+      "target_q4_rgb": [
+        179.5625,
+        200.875,
+        44.75
+      ],
+      "nominal_code_average_rgb": [
+        179.49031007751938,
+        200.82703488372093,
+        44.75387596899225
+      ],
+      "max_nominal_average_target_difference": 0.07218992248061795,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 59.83527131782946,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 40.16472868217054
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "expanded_rgb565": [
+        49,
+        154,
+        99
+      ],
+      "legacy_compensated_rgb": [
+        49,
+        154,
+        99
+      ],
+      "target_q4_rgb": [
+        81.875,
+        127.3125,
+        85.5
+      ],
+      "nominal_code_average_rgb": [
+        81.47747093023256,
+        127.06274224806202,
+        84.96996124031008
+      ],
+      "max_nominal_average_target_difference": 0.5300387596899157,
+      "native_percent": {
+        "black": 0.0,
+        "white": 3.997093023255814,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 21.099806201550386,
+        "green": 74.90310077519379
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "expanded_rgb565": [
+        255,
+        207,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        255,
+        207,
+        0
+      ],
+      "target_q4_rgb": [
+        243.5,
+        199.4375,
+        45.9375
+      ],
+      "nominal_code_average_rgb": [
+        243.65116279069767,
+        199.90988372093022,
+        46.06976744186046
+      ],
+      "max_nominal_average_target_difference": 0.4723837209302246,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 82.26744186046511,
+        "red": 17.732558139534884,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "expanded_rgb565": [
+        255,
+        101,
+        49
+      ],
+      "legacy_compensated_rgb": [
+        223,
+        101,
+        36
+      ],
+      "target_q4_rgb": [
+        217.75,
+        102.375,
+        35.9375
+      ],
+      "nominal_code_average_rgb": [
+        217.74418604651163,
+        102.25072674418605,
+        35.1155523255814
+      ],
+      "max_nominal_average_target_difference": 0.8219476744186025,
+      "native_percent": {
+        "black": 0.0,
+        "white": 5.886627906976744,
+        "yellow": 35.901162790697676,
+        "red": 58.21220930232558,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "expanded_rgb565": [
+        206,
+        48,
+        0
+      ],
+      "legacy_compensated_rgb": [
+        206,
+        48,
+        0
+      ],
+      "target_q4_rgb": [
+        203.1875,
+        46.3125,
+        10.6875
+      ],
+      "nominal_code_average_rgb": [
+        203.07751937984497,
+        45.856831395348834,
+        10.567829457364342
+      ],
+      "max_nominal_average_target_difference": 0.45566860465116577,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 18.871124031007753,
+        "red": 81.12887596899225,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "expanded_rgb565": [
+        255,
+        0,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        255,
+        0,
+        255
+      ],
+      "target_q4_rgb": [
+        150.125,
+        85.125,
+        196.1875
+      ],
+      "nominal_code_average_rgb": [
+        149.6497093023256,
+        85.11555232558139,
+        196.99491279069767
+      ],
+      "max_nominal_average_target_difference": 0.8074127906976685,
+      "native_percent": {
+        "black": 0.0,
+        "white": 18.677325581395348,
+        "yellow": 0.0,
+        "red": 22.747093023255815,
+        "blue": 58.575581395348834,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "expanded_rgb565": [
+        156,
+        48,
+        206
+      ],
+      "legacy_compensated_rgb": [
+        193,
+        48,
+        196
+      ],
+      "target_q4_rgb": [
+        154.75,
+        77.6875,
+        177.0625
+      ],
+      "nominal_code_average_rgb": [
+        154.43556201550388,
+        77.31637596899225,
+        177.1656976744186
+      ],
+      "max_nominal_average_target_difference": 0.3711240310077528,
+      "native_percent": {
+        "black": 0.0,
+        "white": 17.199612403100776,
+        "yellow": 0.0,
+        "red": 30.523255813953487,
+        "blue": 52.27713178294574,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 18,
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "expanded_rgb565": [
+        74,
+        36,
+        115
+      ],
+      "legacy_compensated_rgb": [
+        104,
+        36,
+        107
+      ],
+      "target_q4_rgb": [
+        104.0,
+        36.1875,
+        108.0
+      ],
+      "nominal_code_average_rgb": [
+        104.23885658914729,
+        35.32146317829457,
+        108.10319767441861
+      ],
+      "max_nominal_average_target_difference": 0.8660368217054284,
+      "native_percent": {
+        "black": 28.70639534883721,
+        "white": 4.287790697674419,
+        "yellow": 0.0,
+        "red": 28.900193798449614,
+        "blue": 38.10562015503876,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 19,
+      "name": "BLUE",
+      "source_rgb": [
+        0,
+        0,
+        255
+      ],
+      "expanded_rgb565": [
+        0,
+        0,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        0,
+        0,
+        255
+      ],
+      "target_q4_rgb": [
+        100.0,
+        64.0,
+        255.0
+      ],
+      "nominal_code_average_rgb": [
+        100.0,
+        64.0,
+        255.0
+      ],
+      "max_nominal_average_target_difference": 0.0,
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 100.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "expanded_rgb565": [
+        0,
+        255,
+        255
+      ],
+      "legacy_compensated_rgb": [
+        0,
+        255,
+        255
+      ],
+      "target_q4_rgb": [
+        139.625,
+        141.6875,
+        197.75
+      ],
+      "nominal_code_average_rgb": [
+        139.56274224806202,
+        141.50096899224806,
+        198.08502906976744
+      ],
+      "max_nominal_average_target_difference": 0.33502906976744384,
+      "native_percent": {
+        "black": 0.0,
+        "white": 30.862403100775193,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 44.064922480620154,
+        "green": 25.072674418604652
+      }
+    },
+    {
+      "id": 21,
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "expanded_rgb565": [
+        33,
+        32,
+        33
+      ],
+      "legacy_compensated_rgb": [
+        33,
+        32,
+        33
+      ],
+      "target_q4_rgb": [
+        32.6875,
+        32.6875,
+        32.6875
+      ],
+      "nominal_code_average_rgb": [
+        32.06031976744186,
+        32.06031976744186,
+        32.06031976744186
+      ],
+      "max_nominal_average_target_difference": 0.627180232558139,
+      "native_percent": {
+        "black": 87.42732558139535,
+        "white": 12.57267441860465,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 22,
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "expanded_rgb565": [
+        99,
+        97,
+        99
+      ],
+      "legacy_compensated_rgb": [
+        99,
+        97,
+        99
+      ],
+      "target_q4_rgb": [
+        98.3125,
+        98.3125,
+        98.3125
+      ],
+      "nominal_code_average_rgb": [
+        98.65188953488372,
+        98.65188953488372,
+        98.65188953488372
+      ],
+      "max_nominal_average_target_difference": 0.3393895348837219,
+      "native_percent": {
+        "black": 61.31298449612403,
+        "white": 38.68701550387597,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "expanded_rgb565": [
+        165,
+        162,
+        165
+      ],
+      "legacy_compensated_rgb": [
+        165,
+        162,
+        165
+      ],
+      "target_q4_rgb": [
+        164.0,
+        164.0,
+        164.0
+      ],
+      "nominal_code_average_rgb": [
+        164.19331395348837,
+        164.19331395348837,
+        164.19331395348837
+      ],
+      "max_nominal_average_target_difference": 0.19331395348837077,
+      "native_percent": {
+        "black": 35.61046511627907,
+        "white": 64.38953488372093,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "id": 24,
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "expanded_rgb565": [
+        231,
+        227,
+        231
+      ],
+      "legacy_compensated_rgb": [
+        231,
+        227,
+        231
+      ],
+      "target_q4_rgb": [
+        229.6875,
+        229.6875,
+        229.6875
+      ],
+      "nominal_code_average_rgb": [
+        230.10537790697674,
+        230.10537790697674,
+        230.10537790697674
+      ],
+      "max_nominal_average_target_difference": 0.41787790697674154,
+      "native_percent": {
+        "black": 9.762596899224807,
+        "white": 90.2374031007752,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    }
+  ]
+}

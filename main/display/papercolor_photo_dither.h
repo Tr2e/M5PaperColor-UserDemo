@@ -31,6 +31,9 @@ typedef struct {
     struct {
         uint32_t key;
         int16_t target[3];
+        // Zero, or the non-blue pigment of an exact chromatic edge. Occupies
+        // existing struct padding; target cache remains 32 * 12 bytes.
+        uint8_t edge_pigment;
     } target_cache[32];
 } papercolor_dither_state_t;
 

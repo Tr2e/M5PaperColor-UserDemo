@@ -1,0 +1,1591 @@
+{
+  "note": "Deterministic source-grid blue-code indicator correlations, not phone image measurements or a perceptual texture score. Offsets and center windows are fixed; different mixtures change achievable patterns.",
+  "variants": {
+    "baseline": [
+      {
+        "id": 9,
+        "name": "COLOR.PURPLE",
+        "sample_xyxy": [
+          20,
+          214,
+          92,
+          248
+        ],
+        "blue_fraction": 0.5118464052287581,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.16966493611649633
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.54886920084098
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.04427008536865619
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.06394389280581599
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": -0.012363143079355531
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.3372412742389345
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.035539650253413685
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": 0.022520305523574022
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": 0.01646987728302595
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.10099998190217678
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.03758917701472976
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.013890881538895321
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": -0.0188751656381333
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.019761218340116175
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.00865466479023524
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.005136531735867601
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.029056078986168042
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.009045355288345784
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.10640340043966183
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": 0.007811466698813496
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "COLOR.CYAN",
+        "sample_xyxy": [
+          116,
+          214,
+          188,
+          248
+        ],
+        "blue_fraction": 0.738562091503268,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.3511353885315965
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.3569353039798186
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": -0.12308970062291136
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.07912292444990943
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.09705094764960595
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.26475876402586945
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.09710209433911736
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.07633100719901334
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.10846965662030973
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.2398252246407819
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.006391085200277663
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.016675514338303717
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.11088636046963526
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.07481906370788134
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.06473977451098706
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.07738936997697526
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.04140472170547867
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.0960411596087497
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.0760801508487034
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.011682264384995937
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "COLOR.TEAL",
+        "sample_xyxy": [
+          308,
+          214,
+          380,
+          248
+        ],
+        "blue_fraction": 0.2128267973856209,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.27085778979377545
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.2695687588074862
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": -0.1836249775428221
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.1832063491398137
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": -0.01997283269598008
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.3977892584296557
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.0714019013717117
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.07140497065318406
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.16112935610419005
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.23593927138447834
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.04742913139625813
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.06087007148260211
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.16286840145010295
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.32196196282218653
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.03512579328285355
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.05050186932105173
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.010749374333382362
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.19907130980565071
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.03910741361473592
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.06859628298813854
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "MAGENTA",
+        "sample_xyxy": [
+          308,
+          290,
+          380,
+          324
+        ],
+        "blue_fraction": 0.5808823529411765,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.20287726090216446
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.43757186173379653
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": -0.07803500520710034
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.04118947587691643
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.04747342007542291
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.07434747093132611
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": 0.006776265013832924
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": 0.04708845764623976
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": 0.02618468773032855
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.028977872410115926
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": 0.022620218209049803
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.031992969690387334
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": -0.04004599160548325
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.06467169791194302
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.0056684590976596
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.002382824842619322
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.0003470440348466312
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.021562722671154128
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.00756113770425154
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.006874217912074424
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "PURPLE.LIGHT",
+        "sample_xyxy": [
+          20,
+          366,
+          92,
+          400
+        ],
+        "blue_fraction": 0.5187908496732027,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.3906753561018532
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.4305486933115325
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.03903305174693661
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.0655691409694793
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.1037889655525364
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.08541082129584196
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.06857454954585204
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.08016286793874175
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.07062871265889933
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.0020361619998137573
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.01987609221066436
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.05316813505920212
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.031468824940048004
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.027547311120842136
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.0006700867539820288
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.02392198081933936
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.003262096243071837
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.004730432274876927
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.05088202214207011
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.07495455215206819
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "PURPLE.DARK",
+        "sample_xyxy": [
+          116,
+          366,
+          188,
+          400
+        ],
+        "blue_fraction": 0.3758169934640523,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.07926469019066106
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.5555059288864697
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.040667596865632906
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.03998451782988589
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.013314534588454916
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.23779887507314484
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": 0.05072021643692152
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.005710906368582718
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.005169432697438984
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.06181950018080488
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.015587325173197377
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.004338991604965186
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.006915655782131889
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.030599584283132815
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.013061242536430543
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.049934640522875814
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.04528250397460985
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.08676580671223186
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.041503171247822206
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.005428223970637481
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "CYAN",
+        "sample_xyxy": [
+          308,
+          366,
+          380,
+          400
+        ],
+        "blue_fraction": 0.43709150326797386,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.24638605484693055
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.40625561810761757
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": -0.07528161594609586
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.015343099321611979
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.03966722820689056
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.0638553021132351
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.02075543585804377
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.02778093897312305
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.07126949807977502
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.030331722868542122
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": 0.05482328713617373
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.033087686765991005
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.06528225243599027
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.0338664307898882
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.029433210296102245
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.05817829546341157
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.036639503762147786
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.07458677964193951
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.048799515878218076
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": 0.03872016028555464
+          }
+        ]
+      }
+    ],
+    "candidate": [
+      {
+        "id": 9,
+        "name": "COLOR.PURPLE",
+        "sample_xyxy": [
+          20,
+          214,
+          92,
+          248
+        ],
+        "blue_fraction": 0.5253267973856209,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.17781965175905695
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.5451208896771028
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.062120978900556026
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.07580040759976328
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": -0.014251633948611618
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.30540845140619644
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.005323368809816168
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": 0.00014386241717826814
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": 0.025844636384081264
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.09520110109668695
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.011443658380685588
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.0113609377173925
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": -0.05073285522865105
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.03806215897574368
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.01033109771227679
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.024172659680005374
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.02719742421735358
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.019774751747595947
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.010769078633758034
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": 9.846225395283688e-05
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "COLOR.CYAN",
+        "sample_xyxy": [
+          116,
+          214,
+          188,
+          248
+        ],
+        "blue_fraction": 0.6519607843137255,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.36775264260140755
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.5272117065172127
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.13938794223717116
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.17591492537786171
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.21031922366941092
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.013162737453330452
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.016857462456805906
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": 0.011984699696290617
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.06229063572627387
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.21451990908155757
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.013183953302749631
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.07027595125528294
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.018609341180894252
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.21671882721015417
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.04324476693019956
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.05706324462116545
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.022990521801546395
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.005329791595441529
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.002961976630679638
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": 0.008433213217489908
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "COLOR.TEAL",
+        "sample_xyxy": [
+          308,
+          214,
+          380,
+          248
+        ],
+        "blue_fraction": 0.2193627450980392,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.2789207929641214
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.28120680148073374
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": -0.13875385838771917
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.14668139156151638
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.12457653045250604
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.278249438330688
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.0016302631267105802
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.0021992511497367314
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.12265236797913762
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.2019336809964107
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.026825183121259023
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.021136347153992065
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.03724201976984092
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": 0.1621244200189197
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.09217246617089109
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.053684844040207944
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.12407415770501505
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.08891640783800003
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.0014257688149145963
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.02751521799386697
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "MAGENTA",
+        "sample_xyxy": [
+          308,
+          290,
+          380,
+          324
+        ],
+        "blue_fraction": 0.4383169934640523,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.2545405254748879
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.5404190215401627
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.026490682606776634
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.03591883396485136
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.09145981979305995
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.1725903751387636
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": 0.011428494552946967
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.016554304238822776
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.06215423320927212
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.03725097145808686
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.011195785610687384
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.016454852796811185
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.017283116925751713
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.09599494694244187
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.04161018473264269
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.014747453740705099
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.05297558824208628
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.03663279664776112
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.042146181044261766
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.0025920978993348083
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "PURPLE.LIGHT",
+        "sample_xyxy": [
+          20,
+          366,
+          92,
+          400
+        ],
+        "blue_fraction": 0.5102124183006536,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.4206097920994782
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.48540378651432603
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.12216872001434503
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.11196311280802904
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.1341023777848449
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.0691351157000685
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.02266384737852391
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.028898747142889453
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.056722696174499335
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.10985345190494517
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": 0.045869248952029096
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": 0.011271323435003975
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.028178745869393944
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.05134237470720144
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": 0.02511538461538462
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.03788590101833199
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.018795594580974306
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": 0.029556813392850018
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.00445257599027004
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": 0.002079482773819046
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "PURPLE.DARK",
+        "sample_xyxy": [
+          116,
+          366,
+          188,
+          400
+        ],
+        "blue_fraction": 0.38112745098039214,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.07751534957417308
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.5610214803949368
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.030400080593121364
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": 0.041263986561348026
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": -0.043464644334139865
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": 0.25612261712385165
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": 0.03135157013443317
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.004624475887005789
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.003899878407913573
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": -0.0904252925011722
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": 0.00025991724238035106
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.016853329317792667
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": -0.03521736502568059
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.0023507093450169927
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.025848390722411758
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": -0.009201623168259983
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": -0.0071853525363914875
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.03866905964962658
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": -0.05653306716472876
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.010634060511294337
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "CYAN",
+        "sample_xyxy": [
+          308,
+          366,
+          380,
+          400
+        ],
+        "blue_fraction": 0.35294117647058826,
+        "offset_correlations": [
+          {
+            "dy": 0,
+            "dx": 1,
+            "blue_indicator_correlation": -0.15426522683613336
+          },
+          {
+            "dy": 1,
+            "dx": 0,
+            "blue_indicator_correlation": -0.4228981544771021
+          },
+          {
+            "dy": 1,
+            "dx": 1,
+            "blue_indicator_correlation": 0.01537085136549258
+          },
+          {
+            "dy": 1,
+            "dx": -1,
+            "blue_indicator_correlation": -0.025160872636919834
+          },
+          {
+            "dy": 0,
+            "dx": 2,
+            "blue_indicator_correlation": 0.0022739616221653033
+          },
+          {
+            "dy": 2,
+            "dx": 0,
+            "blue_indicator_correlation": -0.22845390401384733
+          },
+          {
+            "dy": 2,
+            "dx": 2,
+            "blue_indicator_correlation": -0.05858150874434854
+          },
+          {
+            "dy": 2,
+            "dx": -2,
+            "blue_indicator_correlation": -0.04879536018394629
+          },
+          {
+            "dy": 0,
+            "dx": 3,
+            "blue_indicator_correlation": -0.0725468331846566
+          },
+          {
+            "dy": 3,
+            "dx": 0,
+            "blue_indicator_correlation": 0.34363313962674924
+          },
+          {
+            "dy": 3,
+            "dx": 3,
+            "blue_indicator_correlation": -0.041946751904452004
+          },
+          {
+            "dy": 3,
+            "dx": -3,
+            "blue_indicator_correlation": -0.03580561191287371
+          },
+          {
+            "dy": 0,
+            "dx": 4,
+            "blue_indicator_correlation": 0.05887120443814822
+          },
+          {
+            "dy": 4,
+            "dx": 0,
+            "blue_indicator_correlation": -0.10369723776845337
+          },
+          {
+            "dy": 4,
+            "dx": 4,
+            "blue_indicator_correlation": -0.03235606365350073
+          },
+          {
+            "dy": 4,
+            "dx": -4,
+            "blue_indicator_correlation": 0.08444736458615792
+          },
+          {
+            "dy": 0,
+            "dx": 8,
+            "blue_indicator_correlation": 0.005447620613688414
+          },
+          {
+            "dy": 8,
+            "dx": 0,
+            "blue_indicator_correlation": -0.036722476893457305
+          },
+          {
+            "dy": 8,
+            "dx": 8,
+            "blue_indicator_correlation": 0.03591064667687224
+          },
+          {
+            "dy": 8,
+            "dx": -8,
+            "blue_indicator_correlation": -0.019407701026423595
+          }
+        ]
+      }
+    ]
+  }
+}

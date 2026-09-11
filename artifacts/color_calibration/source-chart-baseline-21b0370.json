@@ -1,0 +1,536 @@
+{
+  "baseline": "21b0370 + primary white budget",
+  "source_sha256": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+  "frame_sha256": "898fa4b5f40af6f867faaf8ad88ecaaf2c16e500c0ebab440f5c35c7045c20c9",
+  "warning": "Native code fractions, not physical color measurements. Full RGB565 backing orientation, FS, unchanged source chart.",
+  "patches": [
+    {
+      "name": "N.BLACK",
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "sample_xyxy": [
+        20,
+        62,
+        92,
+        96
+      ],
+      "native_percent": {
+        "black": 100.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "N.WHITE",
+      "source_rgb": [
+        255,
+        255,
+        255
+      ],
+      "sample_xyxy": [
+        116,
+        62,
+        188,
+        96
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 100.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "N.YELLOW",
+      "source_rgb": [
+        255,
+        243,
+        56
+      ],
+      "sample_xyxy": [
+        212,
+        62,
+        284,
+        96
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.204,
+        "yellow": 99.796,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "N.RED",
+      "source_rgb": [
+        191,
+        0,
+        0
+      ],
+      "sample_xyxy": [
+        308,
+        62,
+        380,
+        96
+      ],
+      "native_percent": {
+        "black": 0.776,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 99.224,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "N.BLUE",
+      "source_rgb": [
+        100,
+        64,
+        255
+      ],
+      "sample_xyxy": [
+        20,
+        138,
+        92,
+        172
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 100.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "N.GREEN",
+      "source_rgb": [
+        67,
+        138,
+        28
+      ],
+      "sample_xyxy": [
+        116,
+        138,
+        188,
+        172
+      ],
+      "native_percent": {
+        "black": 0.408,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 99.592
+      }
+    },
+    {
+      "name": "RED",
+      "source_rgb": [
+        255,
+        0,
+        0
+      ],
+      "sample_xyxy": [
+        212,
+        138,
+        284,
+        172
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 100.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "GREEN",
+      "source_rgb": [
+        0,
+        255,
+        0
+      ],
+      "sample_xyxy": [
+        308,
+        138,
+        380,
+        172
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 100.0
+      }
+    },
+    {
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "sample_xyxy": [
+        20,
+        214,
+        92,
+        248
+      ],
+      "native_percent": {
+        "black": 3.881,
+        "white": 5.923,
+        "yellow": 0.0,
+        "red": 39.052,
+        "blue": 51.144,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "sample_xyxy": [
+        116,
+        214,
+        188,
+        248
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 70.67,
+        "green": 29.33
+      }
+    },
+    {
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "sample_xyxy": [
+        212,
+        214,
+        284,
+        248
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 59.763,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 40.237
+      }
+    },
+    {
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "sample_xyxy": [
+        308,
+        214,
+        380,
+        248
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 4.085,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 21.16,
+        "green": 74.755
+      }
+    },
+    {
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "sample_xyxy": [
+        20,
+        290,
+        92,
+        324
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 81.699,
+        "red": 18.301,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "sample_xyxy": [
+        116,
+        290,
+        188,
+        324
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 6.209,
+        "yellow": 35.417,
+        "red": 58.374,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "sample_xyxy": [
+        212,
+        290,
+        284,
+        324
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 18.995,
+        "red": 81.005,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "sample_xyxy": [
+        308,
+        290,
+        380,
+        324
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 18.791,
+        "yellow": 0.0,
+        "red": 22.958,
+        "blue": 58.252,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "sample_xyxy": [
+        20,
+        366,
+        92,
+        400
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 17.77,
+        "yellow": 0.0,
+        "red": 31.046,
+        "blue": 51.185,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "sample_xyxy": [
+        116,
+        366,
+        188,
+        400
+      ],
+      "native_percent": {
+        "black": 29.412,
+        "white": 4.698,
+        "yellow": 0.0,
+        "red": 28.799,
+        "blue": 37.092,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "BLUE",
+      "source_rgb": [
+        0,
+        0,
+        255
+      ],
+      "sample_xyxy": [
+        212,
+        366,
+        284,
+        400
+      ],
+      "native_percent": {
+        "black": 18.137,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 81.863,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "sample_xyxy": [
+        308,
+        366,
+        380,
+        400
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 30.964,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 43.954,
+        "green": 25.082
+      }
+    },
+    {
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "sample_xyxy": [
+        20,
+        442,
+        92,
+        476
+      ],
+      "native_percent": {
+        "black": 87.051,
+        "white": 12.949,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "sample_xyxy": [
+        116,
+        442,
+        188,
+        476
+      ],
+      "native_percent": {
+        "black": 61.397,
+        "white": 38.603,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "sample_xyxy": [
+        212,
+        442,
+        284,
+        476
+      ],
+      "native_percent": {
+        "black": 35.662,
+        "white": 64.338,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    },
+    {
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "sample_xyxy": [
+        308,
+        442,
+        380,
+        476
+      ],
+      "native_percent": {
+        "black": 9.967,
+        "white": 90.033,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      }
+    }
+  ]
+}

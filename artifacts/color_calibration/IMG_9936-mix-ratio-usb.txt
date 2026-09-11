@@ -1,0 +1,3 @@
+DisplayMetricsBegin count=1
+DisplayMetrics: source=mix_ratio_chart success=1 total_us=17620442 render_us=14231 render_to_refresh_us=1 panel_us=17606210 internal_before=190815 internal_after=190583 internal_largest=114688 psram_before=7150344 psram_after=7149888 psram_largest=7077888
+DisplayMetricsEnd count=1

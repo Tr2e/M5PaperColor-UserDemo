@@ -1,0 +1,4602 @@
+{
+  "baseline": "IMG_9934 secondary balance",
+  "candidate": "gentle secondary white reduction",
+  "warning": "Nominal target/code statistics only; physical hue must be checked on the panel.",
+  "source_sha256": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "87e5036b32eafc3f2df800c950299a248f9e0d956c1506606e8ec71b95884a62",
+    "main/display/papercolor_gamut.h": "1026936318ef61a9ba57900564c6f69e76f3cb0f9e0019e075612fe2a1655570",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/probe_targets.cpp": "b6602334063e224e67fa5918ca88987afd44a495a1e68002acbbd2052d375749",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4"
+  },
+  "variants": {
+    "baseline": {
+      "frame_sha256": "8413e5e9613575f13cf2e66fb4733a9002280654f2fa5f8cebb565fbaeade758",
+      "patches": [
+        {
+          "id": 1,
+          "name": "N.BLACK",
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "fill_pixels": 4400,
+          "native_counts": {
+            "black": 4400,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 2,
+          "name": "N.WHITE",
+          "source_rgb": [
+            255,
+            255,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 3,
+          "name": "N.YELLOW",
+          "source_rgb": [
+            255,
+            243,
+            56
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 9,
+            "yellow": 4119,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.2180232558139535,
+            "yellow": 99.78197674418605,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 4,
+          "name": "N.RED",
+          "source_rgb": [
+            191,
+            0,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 30,
+            "white": 0,
+            "yellow": 0,
+            "red": 4098,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.7267441860465116,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.27325581395348,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 5,
+          "name": "N.BLUE",
+          "source_rgb": [
+            100,
+            64,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 6,
+          "name": "N.GREEN",
+          "source_rgb": [
+            67,
+            138,
+            28
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 18,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4110
+          },
+          "native_percent": {
+            "black": 0.436046511627907,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.56395348837209
+          }
+        },
+        {
+          "id": 7,
+          "name": "RED",
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 8,
+          "name": "GREEN",
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "id": 9,
+          "name": "COLOR.PURPLE",
+          "source_rgb": [
+            102,
+            51,
+            153
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 146,
+            "white": 230,
+            "yellow": 0,
+            "red": 1563,
+            "blue": 2189,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 3.5368217054263567,
+            "white": 5.571705426356589,
+            "yellow": 0.0,
+            "red": 37.86337209302326,
+            "blue": 53.0281007751938,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 10,
+          "name": "COLOR.CYAN",
+          "source_rgb": [
+            0,
+            173,
+            254
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 5,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2693,
+            "green": 1430
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.12112403100775193,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 65.2374031007752,
+            "green": 34.64147286821706
+          },
+          "rare_code_coordinates": {
+            "black": [],
+            "white": [
+              [
+                110,
+                220
+              ],
+              [
+                110,
+                224
+              ],
+              [
+                110,
+                229
+              ],
+              [
+                109,
+                242
+              ],
+              [
+                112,
+                248
+              ]
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "name": "COLOR.LIME",
+          "source_rgb": [
+            153,
+            255,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2471,
+            "red": 0,
+            "blue": 0,
+            "green": 1657
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.85949612403101,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.14050387596899
+          }
+        },
+        {
+          "id": 12,
+          "name": "COLOR.TEAL",
+          "source_rgb": [
+            51,
+            153,
+            102
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 167,
+            "yellow": 0,
+            "red": 0,
+            "blue": 898,
+            "green": 3063
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 4.045542635658915,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 21.753875968992247,
+            "green": 74.20058139534883
+          }
+        },
+        {
+          "id": 13,
+          "name": "COLOR.YELLOW",
+          "source_rgb": [
+            255,
+            204,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3397,
+            "red": 731,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 82.29166666666667,
+            "red": 17.708333333333332,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 14,
+          "name": "COLOR.ORANGE",
+          "source_rgb": [
+            255,
+            102,
+            51
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 242,
+            "yellow": 1482,
+            "red": 2404,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 5.862403100775194,
+            "yellow": 35.901162790697676,
+            "red": 58.236434108527135,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 15,
+          "name": "COLOR.RED",
+          "source_rgb": [
+            204,
+            51,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 780,
+            "red": 3348,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.8953488372093,
+            "red": 81.1046511627907,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 16,
+          "name": "MAGENTA",
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 768,
+            "yellow": 0,
+            "red": 1531,
+            "blue": 1829,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 18.6046511627907,
+            "yellow": 0.0,
+            "red": 37.088178294573645,
+            "blue": 44.30717054263566,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 17,
+          "name": "PURPLE.LIGHT",
+          "source_rgb": [
+            153,
+            51,
+            204
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 709,
+            "yellow": 0,
+            "red": 1313,
+            "blue": 2106,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 17.175387596899224,
+            "yellow": 0.0,
+            "red": 31.80717054263566,
+            "blue": 51.01744186046512,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 18,
+          "name": "PURPLE.DARK",
+          "source_rgb": [
+            76,
+            38,
+            115
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 1180,
+            "white": 173,
+            "yellow": 0,
+            "red": 1182,
+            "blue": 1593,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 28.585271317829456,
+            "white": 4.190891472868217,
+            "yellow": 0.0,
+            "red": 28.63372093023256,
+            "blue": 38.59011627906977,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 19,
+          "name": "BLUE",
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 20,
+          "name": "CYAN",
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 1271,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1460,
+            "green": 1397
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 30.789728682170544,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 35.36821705426357,
+            "green": 33.84205426356589
+          }
+        },
+        {
+          "id": 21,
+          "name": "GRAY.32",
+          "source_rgb": [
+            32,
+            32,
+            32
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 87.42732558139535,
+            "white": 12.57267441860465,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 22,
+          "name": "GRAY.96",
+          "source_rgb": [
+            96,
+            96,
+            96
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 2532,
+            "white": 1596,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 61.33720930232558,
+            "white": 38.66279069767442,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 23,
+          "name": "GRAY.160",
+          "source_rgb": [
+            160,
+            160,
+            160
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 1469,
+            "white": 2659,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 35.58624031007752,
+            "white": 64.41375968992249,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 24,
+          "name": "GRAY.224",
+          "source_rgb": [
+            224,
+            224,
+            224
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 400,
+            "white": 3728,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 9.689922480620154,
+            "white": 90.31007751937985,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "uniform": {
+        "red": {
+          "sha256": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "green": {
+          "sha256": "9dd33f3ba84a4cc1007ce9ea793e70f26c02ac69b4f0cc67c03c11cb20e30ebe",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        "blue": {
+          "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        "native_blue": {
+          "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        "gray96": {
+          "sha256": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e",
+          "native_percent": {
+            "black": 61.46375,
+            "white": 38.53625,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "pale_red": {
+          "sha256": "1ec502df7ef9c8af74d58acfcfbea5aae08fd0a452411d0b82cc01370e99be36",
+          "native_percent": {
+            "black": 0.0,
+            "white": 63.54291666666666,
+            "yellow": 0.0,
+            "red": 36.45708333333334,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "orange": {
+          "sha256": "e024074eaca812f9da3a5f57d7bd856d8bf5124e11e6dfc5bfe786f5eb17a19c",
+          "native_percent": {
+            "black": 0.0,
+            "white": 6.18125,
+            "yellow": 35.65958333333333,
+            "red": 58.159166666666664,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "lime": {
+          "sha256": "6f9cccf4766c3ccefc61152f3c2a353b68a05f3b70cc36aacdb326cace321048",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.88375,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.11625
+          }
+        },
+        "magenta": {
+          "sha256": "e94e76f37746e20d422b5400338d9fb696b363adb1a1c9b127d842771e43ef07",
+          "native_percent": {
+            "black": 0.0,
+            "white": 18.735833333333332,
+            "yellow": 0.0,
+            "red": 37.312083333333334,
+            "blue": 43.952083333333334,
+            "green": 0.0
+          }
+        },
+        "cyan": {
+          "sha256": "e4d3da8b184eb834901ea556e71fea4b4dd34192c35b20ac1696d4f076a4149d",
+          "native_percent": {
+            "black": 0.0,
+            "white": 30.903333333333332,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 35.249583333333334,
+            "green": 33.84708333333333
+          }
+        },
+        "light_purple": {
+          "sha256": "8c9cc5ca0ac4a3c01a03273277e75f7af038bfca9e995f3790897e4b71d3b42c",
+          "native_percent": {
+            "black": 0.0,
+            "white": 17.354583333333334,
+            "yellow": 0.0,
+            "red": 31.804166666666667,
+            "blue": 50.84125,
+            "green": 0.0
+          }
+        },
+        "blue_cyan": {
+          "sha256": "76615606e5c029c9e1e920d70106678e0a1d9f7bbd746df8df403ccf268463bc",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 65.48333333333333,
+            "green": 34.516666666666666
+          }
+        },
+        "pale_magenta": {
+          "sha256": "8d2f69caff272027f457e4693d1a8f05ad1f085b77f0be2ae45dc5a9dc5615dd",
+          "native_percent": {
+            "black": 5.68875,
+            "white": 94.31125,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "pale_cyan": {
+          "sha256": "8d2f69caff272027f457e4693d1a8f05ad1f085b77f0be2ae45dc5a9dc5615dd",
+          "native_percent": {
+            "black": 5.68875,
+            "white": 94.31125,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      },
+      "ramps": {
+        "blue_black": {
+          "sha256": "0ee8d55712ef4a6b6b25577aa783e18849859bcb0c4280684852af1a44b86d04",
+          "bins": [
+            {
+              "black": 0.01,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.99,
+              "green": 0.0
+            },
+            {
+              "black": 0.08074626865671641,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9192537313432836,
+              "green": 0.0
+            },
+            {
+              "black": 0.14388059701492537,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8561194029850746,
+              "green": 0.0
+            },
+            {
+              "black": 0.20940298507462687,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7905970149253732,
+              "green": 0.0
+            },
+            {
+              "black": 0.27567164179104475,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7243283582089552,
+              "green": 0.0
+            },
+            {
+              "black": 0.3383582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6616417910447762,
+              "green": 0.0
+            },
+            {
+              "black": 0.4058955223880597,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5941044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.4684328358208955,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5315671641791044,
+              "green": 0.0
+            },
+            {
+              "black": 0.5320895522388059,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.467910447761194,
+              "green": 0.0
+            },
+            {
+              "black": 0.5961194029850746,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.40388059701492535,
+              "green": 0.0
+            },
+            {
+              "black": 0.6628358208955224,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3371641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.7270149253731343,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.27298507462686566,
+              "green": 0.0
+            },
+            {
+              "black": 0.7911194029850747,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.20888059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.8558955223880597,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.14410447761194028,
+              "green": 0.0
+            },
+            {
+              "black": 0.9217910447761194,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.07820895522388059,
+              "green": 0.0
+            },
+            {
+              "black": 1.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "blue_white": {
+          "sha256": "fe56f48ece2c974f11870370d0d8b3f5d7d436789daad68c747272a11dc92e6f",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.015970149253731344,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9840298507462687,
+              "green": 0.0
+            },
+            {
+              "black": 0.029253731343283584,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9707462686567164,
+              "green": 0.0
+            },
+            {
+              "black": 0.02664179104477612,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9733582089552238,
+              "green": 0.0
+            },
+            {
+              "black": 0.013432835820895522,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9865671641791045,
+              "green": 0.0
+            },
+            {
+              "black": 0.011268656716417911,
+              "white": 0.019253731343283582,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9694776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.005671641791044776,
+              "white": 0.08574626865671642,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9085820895522388,
+              "green": 0.0
+            },
+            {
+              "black": 0.0075373134328358205,
+              "white": 0.16529850746268657,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8271641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.009104477611940298,
+              "white": 0.2570149253731343,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7338805970149254,
+              "green": 0.0
+            },
+            {
+              "black": 0.006865671641791045,
+              "white": 0.34902985074626863,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6441044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.004850746268656716,
+              "white": 0.4513432835820895,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5438059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.003507462686567164,
+              "white": 0.5524626865671641,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.44402985074626866,
+              "green": 0.0
+            },
+            {
+              "black": 0.003955223880597015,
+              "white": 0.6671641791044776,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3288805970149254,
+              "green": 0.0
+            },
+            {
+              "black": 0.0015671641791044776,
+              "white": 0.7709701492537313,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.22746268656716417,
+              "green": 0.0
+            },
+            {
+              "black": 0.02164179104477612,
+              "white": 0.901044776119403,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0773134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.012238805970149255,
+              "white": 0.9877611940298507,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "blue_cyan": {
+          "sha256": "f785b0d28af98a2415a4fd6dc89825c46b3e6741b2fa4aff8376202cef28a043",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.04261194029850746,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9573880597014925,
+              "green": 0.0
+            },
+            {
+              "black": 0.07223880597014926,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9277611940298508,
+              "green": 0.0
+            },
+            {
+              "black": 0.09529850746268656,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9047014925373135,
+              "green": 0.0
+            },
+            {
+              "black": 0.10783582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8921641791044777,
+              "green": 0.0
+            },
+            {
+              "black": 0.1269402985074627,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8730597014925373,
+              "green": 0.0
+            },
+            {
+              "black": 0.1241044776119403,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8514925373134329,
+              "green": 0.024402985074626866
+            },
+            {
+              "black": 0.07365671641791045,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7997761194029851,
+              "green": 0.1265671641791045
+            },
+            {
+              "black": 0.01798507462686567,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7530597014925373,
+              "green": 0.22895522388059703
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7096268656716418,
+              "green": 0.2903731343283582
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.67,
+              "green": 0.33
+            },
+            {
+              "black": 0.0,
+              "white": 0.00014925373134328358,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6278358208955224,
+              "green": 0.37201492537313435
+            },
+            {
+              "black": 0.001119402985074627,
+              "white": 0.05022388059701492,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5595522388059702,
+              "green": 0.3891044776119403
+            },
+            {
+              "black": 0.0,
+              "white": 0.08813432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.507910447761194,
+              "green": 0.403955223880597
+            },
+            {
+              "black": 0.0008208955223880597,
+              "white": 0.1344776119402985,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4576865671641791,
+              "green": 0.40701492537313433
+            },
+            {
+              "black": 0.0016417910447761193,
+              "white": 0.20544776119402985,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4048507462686567,
+              "green": 0.3880597014925373
+            }
+          ]
+        },
+        "blue_magenta": {
+          "sha256": "7cdc45d233adb3d541e512013f7fde2f2c0312d04b5956ed2779827bb5527b5a",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.01798507462686567,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9820149253731343,
+              "green": 0.0
+            },
+            {
+              "black": 0.034253731343283585,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9657462686567164,
+              "green": 0.0
+            },
+            {
+              "black": 0.04283582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9571641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.04052238805970149,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9594776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.039776119402985075,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9602238805970149,
+              "green": 0.0
+            },
+            {
+              "black": 0.01962686567164179,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.029328358208955223,
+              "blue": 0.951044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.07865671641791044,
+              "blue": 0.9213432835820895,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.08044776119402985,
+              "yellow": 0.0,
+              "red": 0.2575373134328358,
+              "blue": 0.6620149253731343,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1008955223880597,
+              "yellow": 0.0,
+              "red": 0.27559701492537314,
+              "blue": 0.6235074626865672,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.11529850746268656,
+              "yellow": 0.0,
+              "red": 0.2993283582089552,
+              "blue": 0.5853731343283582,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.13022388059701492,
+              "yellow": 0.0,
+              "red": 0.31776119402985076,
+              "blue": 0.5520149253731343,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1448507462686567,
+              "yellow": 0.0,
+              "red": 0.3365671641791045,
+              "blue": 0.5185820895522388,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.15865671641791046,
+              "yellow": 0.0,
+              "red": 0.35126865671641794,
+              "blue": 0.49007462686567166,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.17298507462686566,
+              "yellow": 0.0,
+              "red": 0.36395522388059703,
+              "blue": 0.46305970149253733,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.18597014925373134,
+              "yellow": 0.0,
+              "red": 0.37082089552238806,
+              "blue": 0.4432089552238806,
+              "green": 0.0
+            }
+          ]
+        },
+        "red_white": {
+          "sha256": "3d214c2bec9a15cf86cb7ce044d93c9b9a8117e93bc87a24129adce1cdd0ae9a",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.01,
+              "yellow": 0.0,
+              "red": 0.99,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.07723880597014926,
+              "yellow": 0.0,
+              "red": 0.9227611940298508,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.14776119402985075,
+              "yellow": 0.0,
+              "red": 0.8522388059701492,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.20440298507462687,
+              "yellow": 0.0,
+              "red": 0.7955970149253732,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.2747761194029851,
+              "yellow": 0.0,
+              "red": 0.7252238805970149,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.3370149253731343,
+              "yellow": 0.0,
+              "red": 0.6629850746268656,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.40171641791044777,
+              "yellow": 0.0,
+              "red": 0.5982835820895522,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.4644776119402985,
+              "yellow": 0.0,
+              "red": 0.5355223880597015,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5275373134328358,
+              "yellow": 0.0,
+              "red": 0.47246268656716417,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5929850746268657,
+              "yellow": 0.0,
+              "red": 0.40701492537313433,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6563432835820896,
+              "yellow": 0.0,
+              "red": 0.34365671641791046,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7214179104477612,
+              "yellow": 0.0,
+              "red": 0.2785820895522388,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7861194029850747,
+              "yellow": 0.0,
+              "red": 0.21388059701492537,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8500746268656716,
+              "yellow": 0.0,
+              "red": 0.14992537313432835,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.01791044776119403,
+              "white": 0.9299253731343283,
+              "yellow": 0.0,
+              "red": 0.05216417910447761,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.010597014925373134,
+              "white": 0.9894029850746269,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "neutral": {
+          "sha256": "8c79d58905cf2f80055bca0f4b76848d62c78ddebc5a2aaba31fb69d6e256f14",
+          "bins": [
+            {
+              "black": 0.9919402985074627,
+              "white": 0.008059701492537314,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.9132835820895523,
+              "white": 0.08671641791044776,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.8502985074626865,
+              "white": 0.14970149253731344,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.79,
+              "white": 0.21,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.7227611940298507,
+              "white": 0.27723880597014927,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.6605970149253731,
+              "white": 0.33940298507462685,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.5942537313432836,
+              "white": 0.4057462686567164,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.5311940298507463,
+              "white": 0.46880597014925374,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.46865671641791046,
+              "white": 0.5313432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.4033582089552239,
+              "white": 0.5966417910447761,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.33865671641791045,
+              "white": 0.6613432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.27507462686567163,
+              "white": 0.7249253731343284,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.20970149253731343,
+              "white": 0.7902985074626866,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.14559701492537314,
+              "white": 0.8544029850746269,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.07970149253731343,
+              "white": 0.9202985074626866,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.017164179104477612,
+              "white": 0.9828358208955223,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "magenta_white": {
+          "sha256": "fea5410b31f34a235bc7439d13795c3992258da36b43b55c7e19679a39995cf2",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.20350746268656716,
+              "yellow": 0.0,
+              "red": 0.36268656716417913,
+              "blue": 0.4338059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.2588805970149254,
+              "yellow": 0.0,
+              "red": 0.33738805970149255,
+              "blue": 0.40373134328358207,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.31022388059701494,
+              "yellow": 0.0,
+              "red": 0.30791044776119403,
+              "blue": 0.381865671641791,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.3605223880597015,
+              "yellow": 0.0,
+              "red": 0.2784328358208955,
+              "blue": 0.361044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.4152985074626866,
+              "yellow": 0.0,
+              "red": 0.24537313432835822,
+              "blue": 0.33932835820895524,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.46544776119402986,
+              "yellow": 0.0,
+              "red": 0.21559701492537314,
+              "blue": 0.318955223880597,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5153731343283582,
+              "yellow": 0.0,
+              "red": 0.1867910447761194,
+              "blue": 0.2978358208955224,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5679850746268656,
+              "yellow": 0.0,
+              "red": 0.1591044776119403,
+              "blue": 0.27291044776119405,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6218656716417911,
+              "yellow": 0.0,
+              "red": 0.13156716417910447,
+              "blue": 0.2465671641791045,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6723880597014925,
+              "yellow": 0.0,
+              "red": 0.10888059701492538,
+              "blue": 0.2187313432835821,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7243283582089552,
+              "yellow": 0.0,
+              "red": 0.08738805970149253,
+              "blue": 0.18828358208955223,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7728358208955224,
+              "yellow": 0.0,
+              "red": 0.06813432835820896,
+              "blue": 0.15902985074626866,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8293283582089552,
+              "yellow": 0.0,
+              "red": 0.05014925373134328,
+              "blue": 0.12052238805970149,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8795522388059701,
+              "yellow": 0.0,
+              "red": 0.0341044776119403,
+              "blue": 0.08634328358208955,
+              "green": 0.0
+            },
+            {
+              "black": 0.0075373134328358205,
+              "white": 0.9502985074626865,
+              "yellow": 0.0,
+              "red": 0.011791044776119404,
+              "blue": 0.030373134328358208,
+              "green": 0.0
+            },
+            {
+              "black": 0.007313432835820896,
+              "white": 0.9926865671641791,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "cyan_white": {
+          "sha256": "a2a30d2a778a684b97b733bdba9c52019204a18a9939f87998f4e0d49d9afe25",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.3194029850746269,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3483582089552239,
+              "green": 0.33223880597014926
+            },
+            {
+              "black": 0.0,
+              "white": 0.3637313432835821,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.32671641791044775,
+              "green": 0.30955223880597016
+            },
+            {
+              "black": 0.0,
+              "white": 0.41074626865671643,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3061194029850746,
+              "green": 0.28313432835820895
+            },
+            {
+              "black": 0.0,
+              "white": 0.45432835820895523,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.28761194029850745,
+              "green": 0.2580597014925373
+            },
+            {
+              "black": 0.0,
+              "white": 0.49701492537313435,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.27052238805970147,
+              "green": 0.23246268656716418
+            },
+            {
+              "black": 0.0,
+              "white": 0.5436567164179105,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.2506716417910448,
+              "green": 0.20567164179104477
+            },
+            {
+              "black": 0.0,
+              "white": 0.5895522388059702,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.2303731343283582,
+              "green": 0.18007462686567163
+            },
+            {
+              "black": 0.0,
+              "white": 0.6332835820895523,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.21186567164179104,
+              "green": 0.15485074626865672
+            },
+            {
+              "black": 0.0,
+              "white": 0.6773880597014925,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.18977611940298508,
+              "green": 0.1328358208955224
+            },
+            {
+              "black": 0.0,
+              "white": 0.7211194029850746,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.16761194029850746,
+              "green": 0.1112686567164179
+            },
+            {
+              "black": 0.0,
+              "white": 0.7671641791044777,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.1432089552238806,
+              "green": 0.0896268656716418
+            },
+            {
+              "black": 0.0,
+              "white": 0.8108955223880597,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.1167910447761194,
+              "green": 0.0723134328358209
+            },
+            {
+              "black": 0.0,
+              "white": 0.8564179104477612,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.09126865671641791,
+              "green": 0.0523134328358209
+            },
+            {
+              "black": 0.0,
+              "white": 0.9008208955223881,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.06283582089552239,
+              "green": 0.036343283582089554
+            },
+            {
+              "black": 0.007164179104477612,
+              "white": 0.9590298507462687,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.021492537313432834,
+              "green": 0.012313432835820896
+            },
+            {
+              "black": 0.004850746268656716,
+              "white": 0.9951492537313433,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "magenta_black": {
+          "sha256": "601eca714bec6d0f43f257a337e849162588c3a8cd8ae862e01f469892f5d6ef",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.17171641791044776,
+              "yellow": 0.0,
+              "red": 0.38082089552238807,
+              "blue": 0.4474626865671642,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.13522388059701493,
+              "yellow": 0.0,
+              "red": 0.40873134328358207,
+              "blue": 0.456044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0891044776119403,
+              "yellow": 0.0,
+              "red": 0.43201492537313435,
+              "blue": 0.47888059701492536,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.04746268656716418,
+              "yellow": 0.0,
+              "red": 0.4508208955223881,
+              "blue": 0.5017164179104477,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.006194029850746269,
+              "yellow": 0.0,
+              "red": 0.4676865671641791,
+              "blue": 0.5261194029850746,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.472910447761194,
+              "blue": 0.5270895522388059,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.48074626865671644,
+              "blue": 0.5192537313432836,
+              "green": 0.0
+            },
+            {
+              "black": 0.04007462686567164,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.46671641791044777,
+              "blue": 0.4932089552238806,
+              "green": 0.0
+            },
+            {
+              "black": 0.16895522388059703,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.4008955223880597,
+              "blue": 0.4301492537313433,
+              "green": 0.0
+            },
+            {
+              "black": 0.27940298507462685,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.34611940298507465,
+              "blue": 0.3744776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.3984328358208955,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.28708955223880595,
+              "blue": 0.3144776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.5102985074626866,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.23298507462686568,
+              "blue": 0.25671641791044775,
+              "green": 0.0
+            },
+            {
+              "black": 0.6303731343283582,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.17477611940298507,
+              "blue": 0.19485074626865673,
+              "green": 0.0
+            },
+            {
+              "black": 0.7420149253731343,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.12216417910447762,
+              "blue": 0.13582089552238805,
+              "green": 0.0
+            },
+            {
+              "black": 0.8571641791044776,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.06365671641791044,
+              "blue": 0.07298507462686567,
+              "green": 0.006194029850746269
+            },
+            {
+              "black": 0.9929104477611941,
+              "white": 0.0070895522388059705,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "cyan_black": {
+          "sha256": "f83c4fe04d0f30e0d9e63c6292bf60d4c068aa304e5c0b5a65b996b9dcc4f513",
+          "bins": [
+            {
+              "black": 0.00014925373134328358,
+              "white": 0.2266417910447761,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3932089552238806,
+              "green": 0.38
+            },
+            {
+              "black": 0.0007462686567164179,
+              "white": 0.17746268656716419,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4153731343283582,
+              "green": 0.4064179104477612
+            },
+            {
+              "black": 0.00029850746268656717,
+              "white": 0.1232089552238806,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.44097014925373135,
+              "green": 0.4355223880597015
+            },
+            {
+              "black": 0.0,
+              "white": 0.06835820895522388,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.46686567164179105,
+              "green": 0.4647761194029851
+            },
+            {
+              "black": 0.00014925373134328358,
+              "white": 0.029029850746268657,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4824626865671642,
+              "green": 0.48835820895522386
+            },
+            {
+              "black": 0.0026865671641791043,
+              "white": 0.007313432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.478955223880597,
+              "green": 0.511044776119403
+            },
+            {
+              "black": 0.035522388059701496,
+              "white": 0.00014925373134328358,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4464179104477612,
+              "green": 0.517910447761194
+            },
+            {
+              "black": 0.10529850746268657,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4002985074626866,
+              "green": 0.4944029850746269
+            },
+            {
+              "black": 0.2217910447761194,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3415671641791045,
+              "green": 0.43664179104477613
+            },
+            {
+              "black": 0.32776119402985077,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.28828358208955224,
+              "green": 0.383955223880597
+            },
+            {
+              "black": 0.43261194029850747,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.23611940298507464,
+              "green": 0.3312686567164179
+            },
+            {
+              "black": 0.5380597014925373,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.18858208955223882,
+              "green": 0.2733582089552239
+            },
+            {
+              "black": 0.6479850746268657,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.1385820895522388,
+              "green": 0.21343283582089553
+            },
+            {
+              "black": 0.7526865671641791,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.09507462686567164,
+              "green": 0.15223880597014924
+            },
+            {
+              "black": 0.8494776119402985,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.054626865671641794,
+              "green": 0.0958955223880597
+            },
+            {
+              "black": 0.9790298507462687,
+              "white": 0.00037313432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.003582089552238806,
+              "green": 0.01701492537313433
+            }
+          ]
+        },
+        "purple_light_dark": {
+          "sha256": "dcdfea40108e441874dd238975ea77b15b97cdab62bac0b87f90635ad5573b5d",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.16238805970149253,
+              "yellow": 0.0,
+              "red": 0.31544776119402984,
+              "blue": 0.5221641791044777,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1546268656716418,
+              "yellow": 0.0,
+              "red": 0.3280597014925373,
+              "blue": 0.5173134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.13507462686567165,
+              "yellow": 0.0,
+              "red": 0.337089552238806,
+              "blue": 0.5278358208955224,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.12350746268656716,
+              "yellow": 0.0,
+              "red": 0.34559701492537315,
+              "blue": 0.5308955223880597,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.10253731343283583,
+              "yellow": 0.0,
+              "red": 0.3571641791044776,
+              "blue": 0.5402985074626866,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0805223880597015,
+              "yellow": 0.0,
+              "red": 0.3738059701492537,
+              "blue": 0.5456716417910448,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.06947761194029851,
+              "yellow": 0.0,
+              "red": 0.38223880597014925,
+              "blue": 0.5482835820895522,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.05701492537313433,
+              "yellow": 0.0,
+              "red": 0.38985074626865673,
+              "blue": 0.553134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.03723880597014925,
+              "yellow": 0.0,
+              "red": 0.40932835820895525,
+              "blue": 0.5534328358208955,
+              "green": 0.0
+            },
+            {
+              "black": 0.013507462686567164,
+              "white": 0.022388059701492536,
+              "yellow": 0.0,
+              "red": 0.4101492537313433,
+              "blue": 0.553955223880597,
+              "green": 0.0
+            },
+            {
+              "black": 0.057985074626865675,
+              "white": 0.027014925373134328,
+              "yellow": 0.0,
+              "red": 0.3864179104477612,
+              "blue": 0.5285820895522388,
+              "green": 0.0
+            },
+            {
+              "black": 0.10932835820895523,
+              "white": 0.03753731343283582,
+              "yellow": 0.0,
+              "red": 0.36328358208955225,
+              "blue": 0.4898507462686567,
+              "green": 0.0
+            },
+            {
+              "black": 0.15186567164179104,
+              "white": 0.039850746268656714,
+              "yellow": 0.0,
+              "red": 0.34186567164179105,
+              "blue": 0.4664179104477612,
+              "green": 0.0
+            },
+            {
+              "black": 0.19417910447761194,
+              "white": 0.049776119402985076,
+              "yellow": 0.0,
+              "red": 0.32119402985074624,
+              "blue": 0.4348507462686567,
+              "green": 0.0
+            },
+            {
+              "black": 0.22895522388059703,
+              "white": 0.03880597014925373,
+              "yellow": 0.0,
+              "red": 0.3119402985074627,
+              "blue": 0.42029850746268654,
+              "green": 0.0
+            },
+            {
+              "black": 0.281044776119403,
+              "white": 0.04537313432835821,
+              "yellow": 0.0,
+              "red": 0.28686567164179105,
+              "blue": 0.38671641791044775,
+              "green": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "candidate": {
+      "frame_sha256": "95f6329c0b5c37a1b6299a392066cbe7a1f775bf4f9b174d3f3ccfd1c8449028",
+      "patches": [
+        {
+          "id": 1,
+          "name": "N.BLACK",
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "fill_pixels": 4400,
+          "native_counts": {
+            "black": 4400,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 100.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 2,
+          "name": "N.WHITE",
+          "source_rgb": [
+            255,
+            255,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 100.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 3,
+          "name": "N.YELLOW",
+          "source_rgb": [
+            255,
+            243,
+            56
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 9,
+            "yellow": 4119,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.2180232558139535,
+            "yellow": 99.78197674418605,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 4,
+          "name": "N.RED",
+          "source_rgb": [
+            191,
+            0,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 30,
+            "white": 0,
+            "yellow": 0,
+            "red": 4098,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.7267441860465116,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 99.27325581395348,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 5,
+          "name": "N.BLUE",
+          "source_rgb": [
+            100,
+            64,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 6,
+          "name": "N.GREEN",
+          "source_rgb": [
+            67,
+            138,
+            28
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 16,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4112
+          },
+          "native_percent": {
+            "black": 0.3875968992248062,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 99.6124031007752
+          }
+        },
+        {
+          "id": 7,
+          "name": "RED",
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 8,
+          "name": "GREEN",
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        {
+          "id": 9,
+          "name": "COLOR.PURPLE",
+          "source_rgb": [
+            102,
+            51,
+            153
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 140,
+            "white": 218,
+            "yellow": 0,
+            "red": 1572,
+            "blue": 2198,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 3.391472868217054,
+            "white": 5.2810077519379846,
+            "yellow": 0.0,
+            "red": 38.08139534883721,
+            "blue": 53.24612403100775,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 10,
+          "name": "COLOR.CYAN",
+          "source_rgb": [
+            0,
+            173,
+            254
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 1,
+            "white": 10,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2689,
+            "green": 1428
+          },
+          "native_percent": {
+            "black": 0.02422480620155039,
+            "white": 0.24224806201550386,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 65.14050387596899,
+            "green": 34.593023255813954
+          },
+          "rare_code_coordinates": {
+            "black": [
+              [
+                110,
+                242
+              ]
+            ],
+            "white": [
+              [
+                109,
+                218
+              ],
+              [
+                109,
+                222
+              ],
+              [
+                109,
+                226
+              ],
+              [
+                109,
+                229
+              ],
+              [
+                109,
+                234
+              ],
+              [
+                109,
+                237
+              ],
+              [
+                109,
+                241
+              ],
+              [
+                109,
+                243
+              ],
+              [
+                109,
+                245
+              ],
+              [
+                109,
+                249
+              ]
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "name": "COLOR.LIME",
+          "source_rgb": [
+            153,
+            255,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2465,
+            "red": 0,
+            "blue": 0,
+            "green": 1663
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.71414728682171,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.28585271317829
+          }
+        },
+        {
+          "id": 12,
+          "name": "COLOR.TEAL",
+          "source_rgb": [
+            51,
+            153,
+            102
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 163,
+            "yellow": 0,
+            "red": 0,
+            "blue": 896,
+            "green": 3069
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 3.9486434108527133,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 21.705426356589147,
+            "green": 74.34593023255815
+          }
+        },
+        {
+          "id": 13,
+          "name": "COLOR.YELLOW",
+          "source_rgb": [
+            255,
+            204,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 82.26744186046511,
+            "red": 17.732558139534884,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 14,
+          "name": "COLOR.ORANGE",
+          "source_rgb": [
+            255,
+            102,
+            51
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 241,
+            "yellow": 1485,
+            "red": 2402,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 5.838178294573644,
+            "yellow": 35.973837209302324,
+            "red": 58.18798449612403,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 15,
+          "name": "COLOR.RED",
+          "source_rgb": [
+            204,
+            51,
+            0
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 777,
+            "red": 3351,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 18.822674418604652,
+            "red": 81.17732558139535,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 16,
+          "name": "MAGENTA",
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 574,
+            "yellow": 0,
+            "red": 1620,
+            "blue": 1934,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 13.905038759689923,
+            "yellow": 0.0,
+            "red": 39.24418604651163,
+            "blue": 46.85077519379845,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 17,
+          "name": "PURPLE.LIGHT",
+          "source_rgb": [
+            153,
+            51,
+            204
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 15.358527131782946,
+            "yellow": 0.0,
+            "red": 32.48546511627907,
+            "blue": 52.156007751937985,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 18,
+          "name": "PURPLE.DARK",
+          "source_rgb": [
+            76,
+            38,
+            115
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 1184,
+            "white": 174,
+            "yellow": 0,
+            "red": 1180,
+            "blue": 1590,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 28.68217054263566,
+            "white": 4.215116279069767,
+            "yellow": 0.0,
+            "red": 28.585271317829456,
+            "blue": 38.51744186046512,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 19,
+          "name": "BLUE",
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 20,
+          "name": "CYAN",
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 0,
+            "white": 952,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1622,
+            "green": 1554
+          },
+          "native_percent": {
+            "black": 0.0,
+            "white": 23.06201550387597,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 39.292635658914726,
+            "green": 37.645348837209305
+          }
+        },
+        {
+          "id": 21,
+          "name": "GRAY.32",
+          "source_rgb": [
+            32,
+            32,
+            32
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 87.42732558139535,
+            "white": 12.57267441860465,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 22,
+          "name": "GRAY.96",
+          "source_rgb": [
+            96,
+            96,
+            96
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 61.31298449612403,
+            "white": 38.68701550387597,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 23,
+          "name": "GRAY.160",
+          "source_rgb": [
+            160,
+            160,
+            160
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 1471,
+            "white": 2657,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 35.63468992248062,
+            "white": 64.36531007751938,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        {
+          "id": 24,
+          "name": "GRAY.224",
+          "source_rgb": [
+            224,
+            224,
+            224
+          ],
+          "fill_pixels": 4128,
+          "native_counts": {
+            "black": 402,
+            "white": 3726,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          },
+          "native_percent": {
+            "black": 9.738372093023257,
+            "white": 90.26162790697674,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      ],
+      "uniform": {
+        "red": {
+          "sha256": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 100.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "green": {
+          "sha256": "9dd33f3ba84a4cc1007ce9ea793e70f26c02ac69b4f0cc67c03c11cb20e30ebe",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 100.0
+          }
+        },
+        "blue": {
+          "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        "native_blue": {
+          "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 100.0,
+            "green": 0.0
+          }
+        },
+        "gray96": {
+          "sha256": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e",
+          "native_percent": {
+            "black": 61.46375,
+            "white": 38.53625,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "pale_red": {
+          "sha256": "1ec502df7ef9c8af74d58acfcfbea5aae08fd0a452411d0b82cc01370e99be36",
+          "native_percent": {
+            "black": 0.0,
+            "white": 63.54291666666666,
+            "yellow": 0.0,
+            "red": 36.45708333333334,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "orange": {
+          "sha256": "e024074eaca812f9da3a5f57d7bd856d8bf5124e11e6dfc5bfe786f5eb17a19c",
+          "native_percent": {
+            "black": 0.0,
+            "white": 6.18125,
+            "yellow": 35.65958333333333,
+            "red": 58.159166666666664,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "lime": {
+          "sha256": "6f9cccf4766c3ccefc61152f3c2a353b68a05f3b70cc36aacdb326cace321048",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 59.88375,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 40.11625
+          }
+        },
+        "magenta": {
+          "sha256": "ebe70814ff62d1f47c18ad58ed48676e766db20e9a39bded13409b36aa68fd64",
+          "native_percent": {
+            "black": 0.0,
+            "white": 14.05125,
+            "yellow": 0.0,
+            "red": 39.4825,
+            "blue": 46.46625,
+            "green": 0.0
+          }
+        },
+        "cyan": {
+          "sha256": "7f149813092144da80a619306dde92afdfcc7a031337bc097de86803ff19bbe5",
+          "native_percent": {
+            "black": 0.0,
+            "white": 23.137083333333333,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 39.2375,
+            "green": 37.625416666666666
+          }
+        },
+        "light_purple": {
+          "sha256": "b39169c8025d2497aa4bb7f243d899456de91f3515cbe957b4217c9345d9429b",
+          "native_percent": {
+            "black": 0.0,
+            "white": 15.493333333333334,
+            "yellow": 0.0,
+            "red": 32.50875,
+            "blue": 51.99791666666667,
+            "green": 0.0
+          }
+        },
+        "blue_cyan": {
+          "sha256": "76615606e5c029c9e1e920d70106678e0a1d9f7bbd746df8df403ccf268463bc",
+          "native_percent": {
+            "black": 0.0,
+            "white": 0.0,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 65.48333333333333,
+            "green": 34.516666666666666
+          }
+        },
+        "pale_magenta": {
+          "sha256": "8d2f69caff272027f457e4693d1a8f05ad1f085b77f0be2ae45dc5a9dc5615dd",
+          "native_percent": {
+            "black": 5.68875,
+            "white": 94.31125,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        },
+        "pale_cyan": {
+          "sha256": "8d2f69caff272027f457e4693d1a8f05ad1f085b77f0be2ae45dc5a9dc5615dd",
+          "native_percent": {
+            "black": 5.68875,
+            "white": 94.31125,
+            "yellow": 0.0,
+            "red": 0.0,
+            "blue": 0.0,
+            "green": 0.0
+          }
+        }
+      },
+      "ramps": {
+        "blue_black": {
+          "sha256": "0ee8d55712ef4a6b6b25577aa783e18849859bcb0c4280684852af1a44b86d04",
+          "bins": [
+            {
+              "black": 0.01,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.99,
+              "green": 0.0
+            },
+            {
+              "black": 0.08074626865671641,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9192537313432836,
+              "green": 0.0
+            },
+            {
+              "black": 0.14388059701492537,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8561194029850746,
+              "green": 0.0
+            },
+            {
+              "black": 0.20940298507462687,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7905970149253732,
+              "green": 0.0
+            },
+            {
+              "black": 0.27567164179104475,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7243283582089552,
+              "green": 0.0
+            },
+            {
+              "black": 0.3383582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6616417910447762,
+              "green": 0.0
+            },
+            {
+              "black": 0.4058955223880597,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5941044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.4684328358208955,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5315671641791044,
+              "green": 0.0
+            },
+            {
+              "black": 0.5320895522388059,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.467910447761194,
+              "green": 0.0
+            },
+            {
+              "black": 0.5961194029850746,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.40388059701492535,
+              "green": 0.0
+            },
+            {
+              "black": 0.6628358208955224,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3371641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.7270149253731343,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.27298507462686566,
+              "green": 0.0
+            },
+            {
+              "black": 0.7911194029850747,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.20888059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.8558955223880597,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.14410447761194028,
+              "green": 0.0
+            },
+            {
+              "black": 0.9217910447761194,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.07820895522388059,
+              "green": 0.0
+            },
+            {
+              "black": 1.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "blue_white": {
+          "sha256": "fe56f48ece2c974f11870370d0d8b3f5d7d436789daad68c747272a11dc92e6f",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.015970149253731344,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9840298507462687,
+              "green": 0.0
+            },
+            {
+              "black": 0.029253731343283584,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9707462686567164,
+              "green": 0.0
+            },
+            {
+              "black": 0.02664179104477612,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9733582089552238,
+              "green": 0.0
+            },
+            {
+              "black": 0.013432835820895522,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9865671641791045,
+              "green": 0.0
+            },
+            {
+              "black": 0.011268656716417911,
+              "white": 0.019253731343283582,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9694776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.005671641791044776,
+              "white": 0.08574626865671642,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9085820895522388,
+              "green": 0.0
+            },
+            {
+              "black": 0.0075373134328358205,
+              "white": 0.16529850746268657,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8271641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.009104477611940298,
+              "white": 0.2570149253731343,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7338805970149254,
+              "green": 0.0
+            },
+            {
+              "black": 0.006865671641791045,
+              "white": 0.34902985074626863,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6441044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.004850746268656716,
+              "white": 0.4513432835820895,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5438059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.003507462686567164,
+              "white": 0.5524626865671641,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.44402985074626866,
+              "green": 0.0
+            },
+            {
+              "black": 0.003955223880597015,
+              "white": 0.6671641791044776,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3288805970149254,
+              "green": 0.0
+            },
+            {
+              "black": 0.0015671641791044776,
+              "white": 0.7709701492537313,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.22746268656716417,
+              "green": 0.0
+            },
+            {
+              "black": 0.02164179104477612,
+              "white": 0.901044776119403,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0773134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.012238805970149255,
+              "white": 0.9877611940298507,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "blue_cyan": {
+          "sha256": "d9784c4534c18f6eed01a6412c249cefbd995cd54e77cfb5dc6cc329e7079d9a",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.04261194029850746,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9573880597014925,
+              "green": 0.0
+            },
+            {
+              "black": 0.07223880597014926,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9277611940298508,
+              "green": 0.0
+            },
+            {
+              "black": 0.09529850746268656,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9047014925373135,
+              "green": 0.0
+            },
+            {
+              "black": 0.10783582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8921641791044777,
+              "green": 0.0
+            },
+            {
+              "black": 0.1269402985074627,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8730597014925373,
+              "green": 0.0
+            },
+            {
+              "black": 0.1241044776119403,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.8514925373134329,
+              "green": 0.024402985074626866
+            },
+            {
+              "black": 0.07365671641791045,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7997761194029851,
+              "green": 0.1265671641791045
+            },
+            {
+              "black": 0.01798507462686567,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7530597014925373,
+              "green": 0.22895522388059703
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.7096268656716418,
+              "green": 0.2903731343283582
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.67,
+              "green": 0.33
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.6282089552238806,
+              "green": 0.3717910447761194
+            },
+            {
+              "black": 0.00044776119402985075,
+              "white": 0.038432835820895524,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5661194029850747,
+              "green": 0.395
+            },
+            {
+              "black": 0.00022388059701492538,
+              "white": 0.06925373134328358,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.5182835820895523,
+              "green": 0.4122388059701493
+            },
+            {
+              "black": 0.00022388059701492538,
+              "white": 0.09992537313432835,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4767164179104478,
+              "green": 0.42313432835820897
+            },
+            {
+              "black": 0.00044776119402985075,
+              "white": 0.15291044776119403,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4319402985074627,
+              "green": 0.4147014925373134
+            }
+          ]
+        },
+        "blue_magenta": {
+          "sha256": "d2e0d4c7b03eaed0252824e70f88b95fa2294194823b4bc0f7ca2586aa506710",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 1.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.01798507462686567,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9820149253731343,
+              "green": 0.0
+            },
+            {
+              "black": 0.034253731343283585,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9657462686567164,
+              "green": 0.0
+            },
+            {
+              "black": 0.04283582089552239,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9571641791044776,
+              "green": 0.0
+            },
+            {
+              "black": 0.04052238805970149,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9594776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.039776119402985075,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.9602238805970149,
+              "green": 0.0
+            },
+            {
+              "black": 0.01962686567164179,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.029328358208955223,
+              "blue": 0.951044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.07865671641791044,
+              "blue": 0.9213432835820895,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.07111940298507463,
+              "yellow": 0.0,
+              "red": 0.26044776119402985,
+              "blue": 0.6684328358208955,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.08716417910447762,
+              "yellow": 0.0,
+              "red": 0.2794776119402985,
+              "blue": 0.6333582089552239,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.09716417910447761,
+              "yellow": 0.0,
+              "red": 0.3048507462686567,
+              "blue": 0.5979850746268657,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.10649253731343283,
+              "yellow": 0.0,
+              "red": 0.32686567164179103,
+              "blue": 0.5666417910447761,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.11425373134328358,
+              "yellow": 0.0,
+              "red": 0.3484328358208955,
+              "blue": 0.5373134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.12291044776119403,
+              "yellow": 0.0,
+              "red": 0.36656716417910445,
+              "blue": 0.5105223880597015,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.13171641791044778,
+              "yellow": 0.0,
+              "red": 0.3820149253731343,
+              "blue": 0.4862686567164179,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1392537313432836,
+              "yellow": 0.0,
+              "red": 0.3923134328358209,
+              "blue": 0.4684328358208955,
+              "green": 0.0
+            }
+          ]
+        },
+        "red_white": {
+          "sha256": "3d214c2bec9a15cf86cb7ce044d93c9b9a8117e93bc87a24129adce1cdd0ae9a",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.01,
+              "yellow": 0.0,
+              "red": 0.99,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.07723880597014926,
+              "yellow": 0.0,
+              "red": 0.9227611940298508,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.14776119402985075,
+              "yellow": 0.0,
+              "red": 0.8522388059701492,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.20440298507462687,
+              "yellow": 0.0,
+              "red": 0.7955970149253732,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.2747761194029851,
+              "yellow": 0.0,
+              "red": 0.7252238805970149,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.3370149253731343,
+              "yellow": 0.0,
+              "red": 0.6629850746268656,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.40171641791044777,
+              "yellow": 0.0,
+              "red": 0.5982835820895522,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.4644776119402985,
+              "yellow": 0.0,
+              "red": 0.5355223880597015,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5275373134328358,
+              "yellow": 0.0,
+              "red": 0.47246268656716417,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5929850746268657,
+              "yellow": 0.0,
+              "red": 0.40701492537313433,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6563432835820896,
+              "yellow": 0.0,
+              "red": 0.34365671641791046,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7214179104477612,
+              "yellow": 0.0,
+              "red": 0.2785820895522388,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7861194029850747,
+              "yellow": 0.0,
+              "red": 0.21388059701492537,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8500746268656716,
+              "yellow": 0.0,
+              "red": 0.14992537313432835,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.01791044776119403,
+              "white": 0.9299253731343283,
+              "yellow": 0.0,
+              "red": 0.05216417910447761,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.010597014925373134,
+              "white": 0.9894029850746269,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "neutral": {
+          "sha256": "8c79d58905cf2f80055bca0f4b76848d62c78ddebc5a2aaba31fb69d6e256f14",
+          "bins": [
+            {
+              "black": 0.9919402985074627,
+              "white": 0.008059701492537314,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.9132835820895523,
+              "white": 0.08671641791044776,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.8502985074626865,
+              "white": 0.14970149253731344,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.79,
+              "white": 0.21,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.7227611940298507,
+              "white": 0.27723880597014927,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.6605970149253731,
+              "white": 0.33940298507462685,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.5942537313432836,
+              "white": 0.4057462686567164,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.5311940298507463,
+              "white": 0.46880597014925374,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.46865671641791046,
+              "white": 0.5313432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.4033582089552239,
+              "white": 0.5966417910447761,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.33865671641791045,
+              "white": 0.6613432835820896,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.27507462686567163,
+              "white": 0.7249253731343284,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.20970149253731343,
+              "white": 0.7902985074626866,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.14559701492537314,
+              "white": 0.8544029850746269,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.07970149253731343,
+              "white": 0.9202985074626866,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            },
+            {
+              "black": 0.017164179104477612,
+              "white": 0.9828358208955223,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "magenta_white": {
+          "sha256": "3fd7d35e3d8d9fe6f1fe36f3b11111aa0ce1999147bee2375053fd8f2f4acefc",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.1521641791044776,
+              "yellow": 0.0,
+              "red": 0.38664179104477614,
+              "blue": 0.46119402985074626,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1967910447761194,
+              "yellow": 0.0,
+              "red": 0.36522388059701494,
+              "blue": 0.43798507462686564,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.23791044776119402,
+              "yellow": 0.0,
+              "red": 0.3402985074626866,
+              "blue": 0.4217910447761194,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.28492537313432836,
+              "yellow": 0.0,
+              "red": 0.31097014925373134,
+              "blue": 0.4041044776119403,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.33686567164179104,
+              "yellow": 0.0,
+              "red": 0.2785820895522388,
+              "blue": 0.38455223880597017,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.38985074626865673,
+              "yellow": 0.0,
+              "red": 0.2462686567164179,
+              "blue": 0.36388059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.4462686567164179,
+              "yellow": 0.0,
+              "red": 0.21313432835820895,
+              "blue": 0.34059701492537314,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5034328358208955,
+              "yellow": 0.0,
+              "red": 0.18343283582089553,
+              "blue": 0.313134328358209,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.5699253731343283,
+              "yellow": 0.0,
+              "red": 0.1502238805970149,
+              "blue": 0.2798507462686567,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6324626865671642,
+              "yellow": 0.0,
+              "red": 0.12104477611940298,
+              "blue": 0.24649253731343285,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.6951492537313433,
+              "yellow": 0.0,
+              "red": 0.09619402985074627,
+              "blue": 0.20865671641791045,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.7564179104477612,
+              "yellow": 0.0,
+              "red": 0.07410447761194029,
+              "blue": 0.1694776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8211940298507463,
+              "yellow": 0.0,
+              "red": 0.051940298507462686,
+              "blue": 0.12686567164179105,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.8776865671641791,
+              "yellow": 0.0,
+              "red": 0.03455223880597015,
+              "blue": 0.08776119402985075,
+              "green": 0.0
+            },
+            {
+              "black": 0.0075373134328358205,
+              "white": 0.9505223880597015,
+              "yellow": 0.0,
+              "red": 0.012462686567164179,
+              "blue": 0.029477611940298507,
+              "green": 0.0
+            },
+            {
+              "black": 0.0073880597014925374,
+              "white": 0.9926119402985074,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "cyan_white": {
+          "sha256": "ef73c3e7ed2c49e366e1502a29f1c9b9b1fba92f56648c8bd0d2787c19fe6004",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.24007462686567163,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3896268656716418,
+              "green": 0.37029850746268655
+            },
+            {
+              "black": 0.0,
+              "white": 0.2732835820895522,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3724626865671642,
+              "green": 0.3542537313432836
+            },
+            {
+              "black": 0.0,
+              "white": 0.3161194029850746,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3537313432835821,
+              "green": 0.3301492537313433
+            },
+            {
+              "black": 0.0,
+              "white": 0.355,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3403731343283582,
+              "green": 0.30462686567164177
+            },
+            {
+              "black": 0.0,
+              "white": 0.4042537313432836,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3206716417910448,
+              "green": 0.27507462686567163
+            },
+            {
+              "black": 0.0,
+              "white": 0.4512686567164179,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.30097014925373133,
+              "green": 0.24776119402985075
+            },
+            {
+              "black": 0.0,
+              "white": 0.503731343283582,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.2792537313432836,
+              "green": 0.21701492537313433
+            },
+            {
+              "black": 0.0,
+              "white": 0.5597761194029851,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.2533582089552239,
+              "green": 0.18686567164179105
+            },
+            {
+              "black": 0.0,
+              "white": 0.6178358208955224,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.22567164179104476,
+              "green": 0.15649253731343282
+            },
+            {
+              "black": 0.0,
+              "white": 0.6740298507462686,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.1964179104477612,
+              "green": 0.12955223880597014
+            },
+            {
+              "black": 0.0,
+              "white": 0.735820895522388,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.16149253731343283,
+              "green": 0.10268656716417911
+            },
+            {
+              "black": 0.0,
+              "white": 0.7908208955223881,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.1303731343283582,
+              "green": 0.07880597014925374
+            },
+            {
+              "black": 0.0,
+              "white": 0.8471641791044776,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0958955223880597,
+              "green": 0.05694029850746268
+            },
+            {
+              "black": 0.0,
+              "white": 0.8988059701492538,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.06522388059701492,
+              "green": 0.03597014925373134
+            },
+            {
+              "black": 0.007313432835820896,
+              "white": 0.9596268656716418,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.020298507462686566,
+              "green": 0.012761194029850747
+            },
+            {
+              "black": 0.005149253731343284,
+              "white": 0.9948507462686568,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "magenta_black": {
+          "sha256": "5fa552ede2223e8b477323be7e85868166874420b0696a0d1340924de5677964",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.1258955223880597,
+              "yellow": 0.0,
+              "red": 0.4026865671641791,
+              "blue": 0.4714179104477612,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1032089552238806,
+              "yellow": 0.0,
+              "red": 0.42253731343283585,
+              "blue": 0.4742537313432836,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0682089552238806,
+              "yellow": 0.0,
+              "red": 0.4424626865671642,
+              "blue": 0.4893283582089552,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.03731343283582089,
+              "yellow": 0.0,
+              "red": 0.4558955223880597,
+              "blue": 0.5067910447761194,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.005074626865671642,
+              "yellow": 0.0,
+              "red": 0.46805970149253734,
+              "blue": 0.5268656716417911,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.47328358208955223,
+              "blue": 0.5267164179104478,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.4805223880597015,
+              "blue": 0.5194776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.03962686567164179,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.46671641791044777,
+              "blue": 0.4936567164179104,
+              "green": 0.0
+            },
+            {
+              "black": 0.1692537313432836,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.40067164179104475,
+              "blue": 0.43007462686567166,
+              "green": 0.0
+            },
+            {
+              "black": 0.27917910447761196,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.34619402985074627,
+              "blue": 0.3746268656716418,
+              "green": 0.0
+            },
+            {
+              "black": 0.3990298507462687,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.2871641791044776,
+              "blue": 0.3138059701492537,
+              "green": 0.0
+            },
+            {
+              "black": 0.5101492537313432,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.23291044776119402,
+              "blue": 0.2569402985074627,
+              "green": 0.0
+            },
+            {
+              "black": 0.6295522388059701,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.17567164179104477,
+              "blue": 0.1947761194029851,
+              "green": 0.0
+            },
+            {
+              "black": 0.7413432835820896,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.12186567164179105,
+              "blue": 0.1367910447761194,
+              "green": 0.0
+            },
+            {
+              "black": 0.8576865671641791,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.06253731343283582,
+              "blue": 0.07238805970149254,
+              "green": 0.0073880597014925374
+            },
+            {
+              "black": 0.9929850746268657,
+              "white": 0.007014925373134328,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0,
+              "green": 0.0
+            }
+          ]
+        },
+        "cyan_black": {
+          "sha256": "707718396c70208874e0a1af8f7e2d22e93a8dbd40707400bdf7caedad9c0a62",
+          "bins": [
+            {
+              "black": 0.0005970149253731343,
+              "white": 0.1691044776119403,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.42223880597014923,
+              "green": 0.40805970149253734
+            },
+            {
+              "black": 0.00029850746268656717,
+              "white": 0.13417910447761194,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4373880597014925,
+              "green": 0.42813432835820897
+            },
+            {
+              "black": 7.462686567164179e-05,
+              "white": 0.09395522388059702,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4558208955223881,
+              "green": 0.4501492537313433
+            },
+            {
+              "black": 7.462686567164179e-05,
+              "white": 0.05365671641791045,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.47440298507462686,
+              "green": 0.47186567164179105
+            },
+            {
+              "black": 7.462686567164179e-05,
+              "white": 0.023134328358208955,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.48529850746268655,
+              "green": 0.49149253731343284
+            },
+            {
+              "black": 0.0019402985074626865,
+              "white": 0.006417910447761194,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.47955223880597014,
+              "green": 0.5120895522388059
+            },
+            {
+              "black": 0.03485074626865672,
+              "white": 7.462686567164179e-05,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4469402985074627,
+              "green": 0.5181343283582089
+            },
+            {
+              "black": 0.10567164179104478,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.4001492537313433,
+              "green": 0.49417910447761193
+            },
+            {
+              "black": 0.22246268656716417,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.3408955223880597,
+              "green": 0.43664179104477613
+            },
+            {
+              "black": 0.32723880597014926,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.28880597014925374,
+              "green": 0.383955223880597
+            },
+            {
+              "black": 0.43223880597014924,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.2357462686567164,
+              "green": 0.3320149253731343
+            },
+            {
+              "black": 0.5377611940298508,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.18858208955223882,
+              "green": 0.27365671641791045
+            },
+            {
+              "black": 0.6481343283582089,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.13888059701492536,
+              "green": 0.21298507462686567
+            },
+            {
+              "black": 0.7524626865671642,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.09522388059701492,
+              "green": 0.15231343283582088
+            },
+            {
+              "black": 0.8491791044776119,
+              "white": 0.0,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.05447761194029851,
+              "green": 0.09634328358208956
+            },
+            {
+              "black": 0.9795522388059702,
+              "white": 7.462686567164179e-05,
+              "yellow": 0.0,
+              "red": 0.0,
+              "blue": 0.0038059701492537314,
+              "green": 0.016567164179104477
+            }
+          ]
+        },
+        "purple_light_dark": {
+          "sha256": "bc9b7d9ab690ce2c6347477f4d3e35fdead235b66a4555786e755ee67aea2c4e",
+          "bins": [
+            {
+              "black": 0.0,
+              "white": 0.1458955223880597,
+              "yellow": 0.0,
+              "red": 0.3214179104477612,
+              "blue": 0.5326865671641791,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.13940298507462687,
+              "yellow": 0.0,
+              "red": 0.3347761194029851,
+              "blue": 0.5258208955223881,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.1237313432835821,
+              "yellow": 0.0,
+              "red": 0.34059701492537314,
+              "blue": 0.5356716417910448,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.11447761194029851,
+              "yellow": 0.0,
+              "red": 0.34940298507462686,
+              "blue": 0.5361194029850747,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.09447761194029851,
+              "yellow": 0.0,
+              "red": 0.3611940298507463,
+              "blue": 0.5443283582089552,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.07537313432835821,
+              "yellow": 0.0,
+              "red": 0.3751492537313433,
+              "blue": 0.5494776119402985,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.06574626865671641,
+              "yellow": 0.0,
+              "red": 0.38425373134328356,
+              "blue": 0.55,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.05305970149253731,
+              "yellow": 0.0,
+              "red": 0.3917910447761194,
+              "blue": 0.5551492537313433,
+              "green": 0.0
+            },
+            {
+              "black": 0.0,
+              "white": 0.03611940298507463,
+              "yellow": 0.0,
+              "red": 0.4096268656716418,
+              "blue": 0.5542537313432836,
+              "green": 0.0
+            },
+            {
+              "black": 0.013656716417910449,
+              "white": 0.02134328358208955,
+              "yellow": 0.0,
+              "red": 0.4102985074626866,
+              "blue": 0.5547014925373134,
+              "green": 0.0
+            },
+            {
+              "black": 0.05858208955223881,
+              "white": 0.02716417910447761,
+              "yellow": 0.0,
+              "red": 0.38671641791044775,
+              "blue": 0.5275373134328358,
+              "green": 0.0
+            },
+            {
+              "black": 0.10798507462686567,
+              "white": 0.034253731343283585,
+              "yellow": 0.0,
+              "red": 0.36529850746268655,
+              "blue": 0.4924626865671642,
+              "green": 0.0
+            },
+            {
+              "black": 0.1528358208955224,
+              "white": 0.03962686567164179,
+              "yellow": 0.0,
+              "red": 0.34097014925373137,
+              "blue": 0.4665671641791045,
+              "green": 0.0
+            },
+            {
+              "black": 0.19350746268656716,
+              "white": 0.04835820895522388,
+              "yellow": 0.0,
+              "red": 0.3225373134328358,
+              "blue": 0.4355970149253731,
+              "green": 0.0
+            },
+            {
+              "black": 0.23126865671641791,
+              "white": 0.03992537313432836,
+              "yellow": 0.0,
+              "red": 0.3105970149253731,
+              "blue": 0.4182089552238806,
+              "green": 0.0
+            },
+            {
+              "black": 0.278955223880597,
+              "white": 0.04291044776119403,
+              "yellow": 0.0,
+              "red": 0.28828358208955224,
+              "blue": 0.38985074626865673,
+              "green": 0.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "continuity": {
+    "edge_count": 191488,
+    "baseline_max_step": 68.35128702153311,
+    "candidate_max_step": 68.29891790870482,
+    "max_step_increase": 2.2064178155652048,
+    "new_edges_over_30": 0,
+    "changed_targets": 22752,
+    "max_black_weight_drift": 0.002011458161016666,
+    "max_chromatic_ratio_cross_error": 0.001083057754400596,
+    "note": "Nominal RGB distance; 30 ranks diagnostic seams, not a visibility or Delta-E threshold."
+  },
+  "changed_chart_pixels": 25620
+}

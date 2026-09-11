@@ -1,0 +1,4 @@
+DisplayMetricsBegin count=1
+PaperColorPipeline: mode=photo-balanced prepare_us=1107795 workspace_bytes=14496
+DisplayMetrics: source=reference_chart success=1 total_us=17796859 render_us=418443 render_to_refresh_us=5 panel_us=17378411 internal_before=190815 internal_after=189383 internal_largest=114688 psram_before=7150344 psram_after=6651708 psram_largest=6553600
+DisplayMetricsEnd count=1

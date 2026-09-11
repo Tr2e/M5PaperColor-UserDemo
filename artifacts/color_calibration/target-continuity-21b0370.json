@@ -1,0 +1,2357 @@
+{
+  "baseline": "21b0370 + CONFIG_PAPERCOLOR_PRIMARY_WHITE_BUDGET=1",
+  "warning": "Euclidean steps in nominal gamma-encoded RGB; not Delta-E, physical color accuracy, or panel simulation. 30 is an audit ranking threshold, not a visibility threshold.",
+  "source_sha256": {
+    "main/display/papercolor_photo_dither.cpp": "b9c8ec8202ef3f6ab9efc10a7a9b8cbaae0564b244d33c78076ea09b9fd9fd28",
+    "main/display/papercolor_gamut.h": "f9b7998b706f449662f0fc9180768514e76e4e098581cd5c282777fbf99910dc",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "main/display/papercolor_photo_dither.h": "3cc3ffdec67bcf1486ef79da79611599c8577cb71aabf39b0e739a5b6bbee4c0",
+    "main/display/papercolor_lut.h": "e462d5888c6361f8f84515f557c5026cc21b9ede858efa35dab8f8155b8f816f",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "tools/color_lab/probe_targets.cpp": "b6602334063e224e67fa5918ca88987afd44a495a1e68002acbbd2052d375749",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/audit_target_continuity.py": "dc16a029f8756563fcba58d413a220d0ae615e1256b9e70317c688ee02e952c8",
+    "artifacts/color_calibration/kodim04.png": "e3b946107c5d3441c022f678d0c3caf1e224d81b1604ba840a4f88e562de61aa"
+  },
+  "ablation": "Remove only source compensation, preserving the selected hull, primary white budget and Q4 rounding; diagnostic targets only.",
+  "grid": {
+    "same_mask_same_compensation_state": {
+      "accepted": {
+        "count": 175545,
+        "mean": 4.9223,
+        "p95": 8.5835,
+        "max": 12.9363,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 175545,
+        "mean": 5.2198,
+        "p95": 8.7153,
+        "max": 12.9363,
+        "over_30": 0
+      },
+      "largest_steps": [
+        {
+          "source_step": 9.0,
+          "target_step": 12.9363,
+          "uncompensated_target_step": 12.9363,
+          "a": {
+            "rgb": [
+              255.0,
+              231.0,
+              222.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              231.0,
+              222.0
+            ],
+            "target": [
+              246.6875,
+              222.0,
+              222.0
+            ],
+            "uncompensated": [
+              246.6875,
+              222.0,
+              222.0
+            ]
+          },
+          "b": {
+            "rgb": [
+              255.0,
+              231.0,
+              231.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              231.0,
+              231.0
+            ],
+            "target": [
+              249.0,
+              231.0,
+              231.0
+            ],
+            "uncompensated": [
+              249.0,
+              231.0,
+              231.0
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 12.9363,
+          "uncompensated_target_step": 12.9363,
+          "a": {
+            "rgb": [
+              255.0,
+              166.0,
+              156.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              166.0,
+              156.0
+            ],
+            "target": [
+              230.125,
+              156.0,
+              156.0
+            ],
+            "uncompensated": [
+              230.125,
+              156.0,
+              156.0
+            ]
+          },
+          "b": {
+            "rgb": [
+              255.0,
+              166.0,
+              165.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              166.0,
+              165.0
+            ],
+            "target": [
+              232.4375,
+              165.0,
+              165.0
+            ],
+            "uncompensated": [
+              232.4375,
+              165.0,
+              165.0
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 12.9363,
+          "uncompensated_target_step": 12.9363,
+          "a": {
+            "rgb": [
+              255.0,
+              101.0,
+              90.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              101.0,
+              90.0
+            ],
+            "target": [
+              213.5625,
+              90.0,
+              90.0
+            ],
+            "uncompensated": [
+              213.5625,
+              90.0,
+              90.0
+            ]
+          },
+          "b": {
+            "rgb": [
+              255.0,
+              101.0,
+              99.0
+            ],
+            "mask": 11,
+            "compensated": [
+              255.0,
+              101.0,
+              99.0
+            ],
+            "target": [
+              215.875,
+              99.0,
+              99.0
+            ],
+            "uncompensated": [
+              215.875,
+              99.0,
+              99.0
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 12.9363,
+          "uncompensated_target_step": 12.9363,
+          "a": {
+            "rgb": [
+              247.0,
+              166.0,
+              156.0
+            ],
+            "mask": 11,
+            "compensated": [
+              247.0,
+              166.0,
+              156.0
+            ],
+            "target": [
+              230.125,
+              156.0,
+              156.0
+            ],
+            "uncompensated": [
+              230.125,
+              156.0,
+              156.0
+            ]
+          },
+          "b": {
+            "rgb": [
+              247.0,
+              166.0,
+              165.0
+            ],
+            "mask": 11,
+            "compensated": [
+              247.0,
+              166.0,
+              165.0
+            ],
+            "target": [
+              232.4375,
+              165.0,
+              165.0
+            ],
+            "uncompensated": [
+              232.4375,
+              165.0,
+              165.0
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 12.9363,
+          "uncompensated_target_step": 12.9363,
+          "a": {
+            "rgb": [
+              247.0,
+              101.0,
+              90.0
+            ],
+            "mask": 11,
+            "compensated": [
+              247.0,
+              101.0,
+              90.0
+            ],
+            "target": [
+              213.5625,
+              90.0,
+              90.0
+            ],
+            "uncompensated": [
+              213.5625,
+              90.0,
+              90.0
+            ]
+          },
+          "b": {
+            "rgb": [
+              247.0,
+              101.0,
+              99.0
+            ],
+            "mask": 11,
+            "compensated": [
+              247.0,
+              101.0,
+              99.0
+            ],
+            "target": [
+              215.875,
+              99.0,
+              99.0
+            ],
+            "uncompensated": [
+              215.875,
+              99.0,
+              99.0
+            ]
+          }
+        }
+      ]
+    },
+    "mask_change": {
+      "accepted": {
+        "count": 11755,
+        "mean": 14.4059,
+        "p95": 42.1,
+        "max": 78.8409,
+        "over_30": 1438
+      },
+      "uncompensated": {
+        "count": 11755,
+        "mean": 9.1848,
+        "p95": 18.0958,
+        "max": 28.8599,
+        "over_30": 0
+      },
+      "largest_steps": [
+        {
+          "source_step": 9.0,
+          "target_step": 78.8409,
+          "uncompensated_target_step": 5.7149,
+          "a": {
+            "rgb": [
+              123.0,
+              113.0,
+              255.0
+            ],
+            "mask": 35,
+            "compensated": [
+              123.0,
+              113.0,
+              255.0
+            ],
+            "target": [
+              132.875,
+              105.0,
+              253.125
+            ],
+            "uncompensated": [
+              132.875,
+              105.0,
+              253.125
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              113.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              113.0,
+              231.0
+            ],
+            "target": [
+              188.125,
+              142.125,
+              210.875
+            ],
+            "uncompensated": [
+              136.5625,
+              109.25,
+              254.125
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 78.0442,
+          "uncompensated_target_step": 5.7615,
+          "a": {
+            "rgb": [
+              123.0,
+              117.0,
+              255.0
+            ],
+            "mask": 35,
+            "compensated": [
+              123.0,
+              117.0,
+              255.0
+            ],
+            "target": [
+              134.8125,
+              107.4375,
+              252.75
+            ],
+            "uncompensated": [
+              134.8125,
+              107.4375,
+              252.75
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              117.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              117.0,
+              231.0
+            ],
+            "target": [
+              189.75,
+              144.8125,
+              211.8125
+            ],
+            "uncompensated": [
+              138.5,
+              111.75,
+              253.75
+            ]
+          }
+        },
+        {
+          "source_step": 8.0,
+          "target_step": 75.0871,
+          "uncompensated_target_step": 5.1258,
+          "a": {
+            "rgb": [
+              115.0,
+              105.0,
+              239.0
+            ],
+            "mask": 35,
+            "compensated": [
+              115.0,
+              105.0,
+              239.0
+            ],
+            "target": [
+              124.0,
+              97.6875,
+              237.3125
+            ],
+            "uncompensated": [
+              124.0,
+              97.6875,
+              237.3125
+            ]
+          },
+          "b": {
+            "rgb": [
+              123.0,
+              105.0,
+              239.0
+            ],
+            "mask": 43,
+            "compensated": [
+              210.0,
+              105.0,
+              216.0
+            ],
+            "target": [
+              182.1875,
+              127.5625,
+              200.4375
+            ],
+            "uncompensated": [
+              127.3125,
+              101.5,
+              238.1875
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 74.6913,
+          "uncompensated_target_step": 5.7615,
+          "a": {
+            "rgb": [
+              123.0,
+              113.0,
+              247.0
+            ],
+            "mask": 35,
+            "compensated": [
+              123.0,
+              113.0,
+              247.0
+            ],
+            "target": [
+              132.0,
+              105.6875,
+              245.3125
+            ],
+            "uncompensated": [
+              132.0,
+              105.6875,
+              245.3125
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              113.0,
+              247.0
+            ],
+            "mask": 43,
+            "compensated": [
+              218.0,
+              113.0,
+              224.0
+            ],
+            "target": [
+              187.125,
+              138.0625,
+              206.6875
+            ],
+            "uncompensated": [
+              135.6875,
+              110.0,
+              246.3125
+            ]
+          }
+        },
+        {
+          "source_step": 8.0,
+          "target_step": 74.3382,
+          "uncompensated_target_step": 5.1326,
+          "a": {
+            "rgb": [
+              115.0,
+              109.0,
+              239.0
+            ],
+            "mask": 35,
+            "compensated": [
+              115.0,
+              109.0,
+              239.0
+            ],
+            "target": [
+              125.9375,
+              100.125,
+              236.9375
+            ],
+            "uncompensated": [
+              125.9375,
+              100.125,
+              236.9375
+            ]
+          },
+          "b": {
+            "rgb": [
+              123.0,
+              109.0,
+              239.0
+            ],
+            "mask": 43,
+            "compensated": [
+              210.0,
+              109.0,
+              216.0
+            ],
+            "target": [
+              183.8125,
+              130.25,
+              201.3125
+            ],
+            "uncompensated": [
+              129.1875,
+              104.0,
+              237.8125
+            ]
+          }
+        }
+      ]
+    },
+    "compensation_on_off": {
+      "accepted": {
+        "count": 4188,
+        "mean": 22.8624,
+        "p95": 65.7343,
+        "max": 83.0401,
+        "over_30": 1341
+      },
+      "uncompensated": {
+        "count": 4188,
+        "mean": 6.7931,
+        "p95": 9.0,
+        "max": 9.0022,
+        "over_30": 0
+      },
+      "largest_steps": [
+        {
+          "source_step": 9.0,
+          "target_step": 83.0401,
+          "uncompensated_target_step": 6.3498,
+          "a": {
+            "rgb": [
+              123.0,
+              73.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              123.0,
+              73.0,
+              255.0
+            ],
+            "target": [
+              115.0625,
+              79.4375,
+              250.5625
+            ],
+            "uncompensated": [
+              115.0625,
+              79.4375,
+              250.5625
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              73.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              73.0,
+              231.0
+            ],
+            "target": [
+              171.6875,
+              115.5,
+              201.6875
+            ],
+            "uncompensated": [
+              119.5,
+              83.1875,
+              248.0
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 83.0401,
+          "uncompensated_target_step": 6.3498,
+          "a": {
+            "rgb": [
+              123.0,
+              52.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              123.0,
+              52.0,
+              255.0
+            ],
+            "target": [
+              106.375,
+              65.4375,
+              245.6875
+            ],
+            "uncompensated": [
+              106.375,
+              65.4375,
+              245.6875
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              52.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              52.0,
+              231.0
+            ],
+            "target": [
+              163.0,
+              101.5,
+              196.8125
+            ],
+            "uncompensated": [
+              110.8125,
+              69.1875,
+              243.125
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 83.013,
+          "uncompensated_target_step": 6.3131,
+          "a": {
+            "rgb": [
+              123.0,
+              89.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              123.0,
+              89.0,
+              255.0
+            ],
+            "target": [
+              121.625,
+              90.125,
+              254.25
+            ],
+            "uncompensated": [
+              121.625,
+              90.125,
+              254.25
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              89.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              89.0,
+              231.0
+            ],
+            "target": [
+              178.25,
+              126.125,
+              205.375
+            ],
+            "uncompensated": [
+              126.0625,
+              93.8125,
+              251.6875
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 83.013,
+          "uncompensated_target_step": 6.3131,
+          "a": {
+            "rgb": [
+              123.0,
+              85.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              123.0,
+              85.0,
+              255.0
+            ],
+            "target": [
+              120.0,
+              87.4375,
+              253.3125
+            ],
+            "uncompensated": [
+              120.0,
+              87.4375,
+              253.3125
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              85.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              85.0,
+              231.0
+            ],
+            "target": [
+              176.625,
+              123.4375,
+              204.4375
+            ],
+            "uncompensated": [
+              124.4375,
+              91.125,
+              250.75
+            ]
+          }
+        },
+        {
+          "source_step": 9.0,
+          "target_step": 83.013,
+          "uncompensated_target_step": 6.3131,
+          "a": {
+            "rgb": [
+              123.0,
+              81.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              123.0,
+              81.0,
+              255.0
+            ],
+            "target": [
+              118.3125,
+              84.8125,
+              252.375
+            ],
+            "uncompensated": [
+              118.3125,
+              84.8125,
+              252.375
+            ]
+          },
+          "b": {
+            "rgb": [
+              132.0,
+              81.0,
+              255.0
+            ],
+            "mask": 43,
+            "compensated": [
+              224.0,
+              81.0,
+              231.0
+            ],
+            "target": [
+              174.9375,
+              120.8125,
+              203.5
+            ],
+            "uncompensated": [
+              122.75,
+              88.5,
+              249.8125
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "ramps": {
+    "red_to_white": {
+      "start": [
+        255,
+        0,
+        0
+      ],
+      "end": [
+        255,
+        255,
+        255
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 1.4532,
+        "p95": 10.053,
+        "max": 18.0,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 1.4532,
+        "p95": 10.053,
+        "max": 18.0,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 8.94427190999916,
+        "target_step": 18.0,
+        "uncompensated_target_step": 18.0,
+        "a": {
+          "rgb": [
+            255.0,
+            231.0,
+            231.0
+          ],
+          "mask": 11,
+          "compensated": [
+            255.0,
+            231.0,
+            231.0
+          ],
+          "target": [
+            249.0,
+            231.0,
+            231.0
+          ],
+          "uncompensated": [
+            249.0,
+            231.0,
+            231.0
+          ]
+        },
+        "b": {
+          "rgb": [
+            255.0,
+            235.0,
+            239.0
+          ],
+          "mask": 3,
+          "compensated": [
+            255.0,
+            235.0,
+            239.0
+          ],
+          "target": [
+            243.0,
+            243.0,
+            243.0
+          ],
+          "uncompensated": [
+            243.0,
+            243.0,
+            243.0
+          ]
+        }
+      }
+    },
+    "black_to_red": {
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        255,
+        0,
+        0
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 0.7588,
+        "p95": 8.0,
+        "max": 13.8444,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 0.7588,
+        "p95": 8.0,
+        "max": 13.8444,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 8.0,
+        "target_step": 13.8444,
+        "uncompensated_target_step": 13.8444,
+        "a": {
+          "rgb": [
+            8.0,
+            0.0,
+            0.0
+          ],
+          "mask": 3,
+          "compensated": [
+            8.0,
+            0.0,
+            0.0
+          ],
+          "target": [
+            2.6875,
+            2.6875,
+            2.6875
+          ],
+          "uncompensated": [
+            2.6875,
+            2.6875,
+            2.6875
+          ]
+        },
+        "b": {
+          "rgb": [
+            16.0,
+            0.0,
+            0.0
+          ],
+          "mask": 111,
+          "compensated": [
+            16.0,
+            0.0,
+            0.0
+          ],
+          "target": [
+            16.0,
+            0.0,
+            0.0
+          ],
+          "uncompensated": [
+            16.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "neutral": {
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        255,
+        255,
+        255
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 1.7321,
+        "p95": 11.5831,
+        "max": 13.3151,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 1.7321,
+        "p95": 11.5831,
+        "max": 13.3151,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 13.674794331177342,
+        "target_step": 13.3151,
+        "uncompensated_target_step": 13.3151,
+        "a": {
+          "rgb": [
+            189.0,
+            190.0,
+            189.0
+          ],
+          "mask": 3,
+          "compensated": [
+            189.0,
+            190.0,
+            189.0
+          ],
+          "target": [
+            189.3125,
+            189.3125,
+            189.3125
+          ],
+          "uncompensated": [
+            189.3125,
+            189.3125,
+            189.3125
+          ]
+        },
+        "b": {
+          "rgb": [
+            198.0,
+            195.0,
+            198.0
+          ],
+          "mask": 3,
+          "compensated": [
+            198.0,
+            195.0,
+            198.0
+          ],
+          "target": [
+            197.0,
+            197.0,
+            197.0
+          ],
+          "uncompensated": [
+            197.0,
+            197.0,
+            197.0
+          ]
+        }
+      }
+    },
+    "cheek_direction": {
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        255,
+        201,
+        170
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 2.3767,
+        "p95": 12.0416,
+        "max": 17.0,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 2.3767,
+        "p95": 12.0416,
+        "max": 17.0,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 8.94427190999916,
+        "target_step": 17.0,
+        "uncompensated_target_step": 17.0,
+        "a": {
+          "rgb": [
+            107.0,
+            85.0,
+            74.0
+          ],
+          "mask": 11,
+          "compensated": [
+            107.0,
+            85.0,
+            74.0
+          ],
+          "target": [
+            107.0,
+            74.0,
+            74.0
+          ],
+          "uncompensated": [
+            107.0,
+            74.0,
+            74.0
+          ]
+        },
+        "b": {
+          "rgb": [
+            115.0,
+            89.0,
+            74.0
+          ],
+          "mask": 15,
+          "compensated": [
+            115.0,
+            89.0,
+            74.0
+          ],
+          "target": [
+            115.0,
+            89.0,
+            74.0
+          ],
+          "uncompensated": [
+            115.0,
+            89.0,
+            74.0
+          ]
+        }
+      }
+    },
+    "purple_compensation_boundary": {
+      "start": [
+        0,
+        73,
+        255
+      ],
+      "end": [
+        255,
+        73,
+        255
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 0.7553,
+        "p95": 2.4788,
+        "max": 83.0401,
+        "over_30": 2
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 0.5768,
+        "p95": 5.616,
+        "max": 6.3498,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 9.0,
+        "target_step": 83.0401,
+        "uncompensated_target_step": 6.3498,
+        "a": {
+          "rgb": [
+            123.0,
+            73.0,
+            255.0
+          ],
+          "mask": 43,
+          "compensated": [
+            123.0,
+            73.0,
+            255.0
+          ],
+          "target": [
+            115.0625,
+            79.4375,
+            250.5625
+          ],
+          "uncompensated": [
+            115.0625,
+            79.4375,
+            250.5625
+          ]
+        },
+        "b": {
+          "rgb": [
+            132.0,
+            73.0,
+            255.0
+          ],
+          "mask": 43,
+          "compensated": [
+            224.0,
+            73.0,
+            231.0
+          ],
+          "target": [
+            171.6875,
+            115.5,
+            201.6875
+          ],
+          "uncompensated": [
+            119.5,
+            83.1875,
+            248.0
+          ]
+        }
+      }
+    },
+    "warm_compensation_boundary": {
+      "start": [
+        100,
+        120,
+        64
+      ],
+      "end": [
+        255,
+        120,
+        64
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 0.6525,
+        "p95": 8.0,
+        "max": 24.7588,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 0.5162,
+        "p95": 8.0,
+        "max": 9.0,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 8.0,
+        "target_step": 24.7588,
+        "uncompensated_target_step": 8.0,
+        "a": {
+          "rgb": [
+            198.0,
+            121.0,
+            66.0
+          ],
+          "mask": 15,
+          "compensated": [
+            198.0,
+            121.0,
+            66.0
+          ],
+          "target": [
+            198.0,
+            121.0,
+            66.0
+          ],
+          "uncompensated": [
+            198.0,
+            121.0,
+            66.0
+          ]
+        },
+        "b": {
+          "rgb": [
+            206.0,
+            121.0,
+            66.0
+          ],
+          "mask": 15,
+          "compensated": [
+            180.0,
+            121.0,
+            49.0
+          ],
+          "target": [
+            180.0,
+            121.0,
+            49.0
+          ],
+          "uncompensated": [
+            206.0,
+            121.0,
+            66.0
+          ]
+        }
+      }
+    },
+    "near_neutral_mid": {
+      "start": [
+        150,
+        150,
+        150
+      ],
+      "end": [
+        182,
+        150,
+        150
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 0.137,
+        "p95": 0.0,
+        "max": 14.1437,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 0.137,
+        "p95": 0.0,
+        "max": 14.1437,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 9.0,
+        "target_step": 14.1437,
+        "uncompensated_target_step": 14.1437,
+        "a": {
+          "rgb": [
+            156.0,
+            150.0,
+            148.0
+          ],
+          "mask": 3,
+          "compensated": [
+            156.0,
+            150.0,
+            148.0
+          ],
+          "target": [
+            151.3125,
+            151.3125,
+            151.3125
+          ],
+          "uncompensated": [
+            151.3125,
+            151.3125,
+            151.3125
+          ]
+        },
+        "b": {
+          "rgb": [
+            165.0,
+            150.0,
+            148.0
+          ],
+          "mask": 111,
+          "compensated": [
+            165.0,
+            150.0,
+            148.0
+          ],
+          "target": [
+            165.0,
+            150.0,
+            148.0
+          ],
+          "uncompensated": [
+            165.0,
+            150.0,
+            148.0
+          ]
+        }
+      }
+    },
+    "near_neutral_light": {
+      "start": [
+        200,
+        200,
+        200
+      ],
+      "end": [
+        232,
+        200,
+        200
+      ],
+      "steps": 256,
+      "accepted": {
+        "count": 255,
+        "mean": 0.1582,
+        "p95": 0.0,
+        "max": 23.1283,
+        "over_30": 0
+      },
+      "uncompensated": {
+        "count": 255,
+        "mean": 0.1582,
+        "p95": 0.0,
+        "max": 23.1283,
+        "over_30": 0
+      },
+      "largest_step": {
+        "source_step": 9.0,
+        "target_step": 23.1283,
+        "uncompensated_target_step": 23.1283,
+        "a": {
+          "rgb": [
+            222.0,
+            203.0,
+            206.0
+          ],
+          "mask": 3,
+          "compensated": [
+            222.0,
+            203.0,
+            206.0
+          ],
+          "target": [
+            210.3125,
+            210.3125,
+            210.3125
+          ],
+          "uncompensated": [
+            210.3125,
+            210.3125,
+            210.3125
+          ]
+        },
+        "b": {
+          "rgb": [
+            231.0,
+            203.0,
+            206.0
+          ],
+          "mask": 11,
+          "compensated": [
+            231.0,
+            203.0,
+            206.0
+          ],
+          "target": [
+            231.0,
+            203.0,
+            203.0
+          ],
+          "uncompensated": [
+            231.0,
+            203.0,
+            203.0
+          ]
+        }
+      }
+    }
+  },
+  "portrait_sampling": "Original 512x768 pixels, RGB565 quantized, no resizing; rectangular samples are not semantic masks or the exact device framebuffer. Neighbor incidence denotes risk near a synthetic boundary, not observed image banding.",
+  "portrait": {
+    "whole_original": {
+      "xyxy": [
+        0,
+        0,
+        512,
+        768
+      ],
+      "pixels": 393216,
+      "mask_percent": {
+        "3": 3.7407,
+        "11": 37.7937,
+        "15": 42.4555,
+        "35": 0.0028,
+        "43": 12.3978,
+        "67": 0.0188,
+        "71": 0.1821,
+        "99": 0.531,
+        "111": 2.8776
+      },
+      "source_compensation_percent": 0.1124,
+      "incident_to_grid_step_over_30_percent": 0.4023,
+      "compensation_target_displacement": {
+        "count": 393216,
+        "mean": 0.0108,
+        "p95": 0.0,
+        "max": 39.2324,
+        "over_30": 24
+      },
+      "most_frequent_colors": [
+        {
+          "count": 4330,
+          "rgb": [
+            115.0,
+            93.0,
+            74.0
+          ],
+          "mask": 15,
+          "compensated": [
+            115.0,
+            93.0,
+            74.0
+          ],
+          "target": [
+            115.0,
+            93.0,
+            74.0
+          ],
+          "uncompensated": [
+            115.0,
+            93.0,
+            74.0
+          ]
+        },
+        {
+          "count": 3893,
+          "rgb": [
+            99.0,
+            97.0,
+            99.0
+          ],
+          "mask": 3,
+          "compensated": [
+            99.0,
+            97.0,
+            99.0
+          ],
+          "target": [
+            98.3125,
+            98.3125,
+            98.3125
+          ],
+          "uncompensated": [
+            98.3125,
+            98.3125,
+            98.3125
+          ]
+        },
+        {
+          "count": 3717,
+          "rgb": [
+            107.0,
+            32.0,
+            24.0
+          ],
+          "mask": 11,
+          "compensated": [
+            107.0,
+            32.0,
+            24.0
+          ],
+          "target": [
+            107.0,
+            24.0,
+            24.0
+          ],
+          "uncompensated": [
+            107.0,
+            24.0,
+            24.0
+          ]
+        }
+      ]
+    },
+    "cheek_sample": {
+      "xyxy": [
+        140,
+        365,
+        190,
+        435
+      ],
+      "pixels": 3500,
+      "mask_percent": {
+        "11": 20.6,
+        "15": 79.4
+      },
+      "source_compensation_percent": 0.0,
+      "incident_to_grid_step_over_30_percent": 0.0,
+      "compensation_target_displacement": {
+        "count": 3500,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "over_30": 0
+      },
+      "most_frequent_colors": [
+        {
+          "count": 730,
+          "rgb": [
+            123.0,
+            97.0,
+            82.0
+          ],
+          "mask": 15,
+          "compensated": [
+            123.0,
+            97.0,
+            82.0
+          ],
+          "target": [
+            123.0,
+            97.0,
+            82.0
+          ],
+          "uncompensated": [
+            123.0,
+            97.0,
+            82.0
+          ]
+        },
+        {
+          "count": 315,
+          "rgb": [
+            132.0,
+            105.0,
+            90.0
+          ],
+          "mask": 15,
+          "compensated": [
+            132.0,
+            105.0,
+            90.0
+          ],
+          "target": [
+            132.0,
+            105.0,
+            90.0
+          ],
+          "uncompensated": [
+            132.0,
+            105.0,
+            90.0
+          ]
+        },
+        {
+          "count": 306,
+          "rgb": [
+            123.0,
+            101.0,
+            82.0
+          ],
+          "mask": 15,
+          "compensated": [
+            123.0,
+            101.0,
+            82.0
+          ],
+          "target": [
+            123.0,
+            101.0,
+            82.0
+          ],
+          "uncompensated": [
+            123.0,
+            101.0,
+            82.0
+          ]
+        }
+      ]
+    },
+    "shoulder_sample": {
+      "xyxy": [
+        350,
+        610,
+        445,
+        700
+      ],
+      "pixels": 8550,
+      "mask_percent": {
+        "3": 0.0468,
+        "15": 91.3918,
+        "71": 7.9415,
+        "111": 0.6199
+      },
+      "source_compensation_percent": 0.0,
+      "incident_to_grid_step_over_30_percent": 0.0,
+      "compensation_target_displacement": {
+        "count": 8550,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "over_30": 0
+      },
+      "most_frequent_colors": [
+        {
+          "count": 492,
+          "rgb": [
+            156.0,
+            146.0,
+            123.0
+          ],
+          "mask": 15,
+          "compensated": [
+            156.0,
+            146.0,
+            123.0
+          ],
+          "target": [
+            156.0,
+            146.0,
+            123.0
+          ],
+          "uncompensated": [
+            156.0,
+            146.0,
+            123.0
+          ]
+        },
+        {
+          "count": 478,
+          "rgb": [
+            156.0,
+            150.0,
+            123.0
+          ],
+          "mask": 15,
+          "compensated": [
+            156.0,
+            150.0,
+            123.0
+          ],
+          "target": [
+            156.0,
+            150.0,
+            123.0
+          ],
+          "uncompensated": [
+            156.0,
+            150.0,
+            123.0
+          ]
+        },
+        {
+          "count": 426,
+          "rgb": [
+            148.0,
+            130.0,
+            107.0
+          ],
+          "mask": 15,
+          "compensated": [
+            148.0,
+            130.0,
+            107.0
+          ],
+          "target": [
+            148.0,
+            130.0,
+            107.0
+          ],
+          "uncompensated": [
+            148.0,
+            130.0,
+            107.0
+          ]
+        }
+      ]
+    },
+    "hat_sample": {
+      "xyxy": [
+        130,
+        60,
+        380,
+        155
+      ],
+      "pixels": 23750,
+      "mask_percent": {
+        "11": 96.9895,
+        "15": 2.8295,
+        "43": 0.1811
+      },
+      "source_compensation_percent": 0.0,
+      "incident_to_grid_step_over_30_percent": 0.9263,
+      "compensation_target_displacement": {
+        "count": 23750,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "over_30": 0
+      },
+      "most_frequent_colors": [
+        {
+          "count": 537,
+          "rgb": [
+            123.0,
+            36.0,
+            33.0
+          ],
+          "mask": 11,
+          "compensated": [
+            123.0,
+            36.0,
+            33.0
+          ],
+          "target": [
+            123.0,
+            33.0,
+            33.0
+          ],
+          "uncompensated": [
+            123.0,
+            33.0,
+            33.0
+          ]
+        },
+        {
+          "count": 502,
+          "rgb": [
+            132.0,
+            36.0,
+            33.0
+          ],
+          "mask": 11,
+          "compensated": [
+            132.0,
+            36.0,
+            33.0
+          ],
+          "target": [
+            132.0,
+            33.0,
+            33.0
+          ],
+          "uncompensated": [
+            132.0,
+            33.0,
+            33.0
+          ]
+        },
+        {
+          "count": 440,
+          "rgb": [
+            140.0,
+            44.0,
+            41.0
+          ],
+          "mask": 11,
+          "compensated": [
+            140.0,
+            44.0,
+            41.0
+          ],
+          "target": [
+            140.0,
+            41.0,
+            41.0
+          ],
+          "uncompensated": [
+            140.0,
+            41.0,
+            41.0
+          ]
+        }
+      ]
+    },
+    "pink_fabric_sample": {
+      "xyxy": [
+        410,
+        450,
+        490,
+        535
+      ],
+      "pixels": 6800,
+      "mask_percent": {
+        "3": 3.9118,
+        "11": 12.5588,
+        "43": 82.0882,
+        "111": 1.4412
+      },
+      "source_compensation_percent": 0.0,
+      "incident_to_grid_step_over_30_percent": 0.0,
+      "compensation_target_displacement": {
+        "count": 6800,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "over_30": 0
+      },
+      "most_frequent_colors": [
+        {
+          "count": 201,
+          "rgb": [
+            173.0,
+            142.0,
+            156.0
+          ],
+          "mask": 43,
+          "compensated": [
+            173.0,
+            142.0,
+            156.0
+          ],
+          "target": [
+            173.0,
+            142.0,
+            156.0
+          ],
+          "uncompensated": [
+            173.0,
+            142.0,
+            156.0
+          ]
+        },
+        {
+          "count": 164,
+          "rgb": [
+            173.0,
+            138.0,
+            156.0
+          ],
+          "mask": 43,
+          "compensated": [
+            173.0,
+            138.0,
+            156.0
+          ],
+          "target": [
+            173.0,
+            138.0,
+            156.0
+          ],
+          "uncompensated": [
+            173.0,
+            138.0,
+            156.0
+          ]
+        },
+        {
+          "count": 143,
+          "rgb": [
+            156.0,
+            93.0,
+            115.0
+          ],
+          "mask": 43,
+          "compensated": [
+            156.0,
+            93.0,
+            115.0
+          ],
+          "target": [
+            156.0,
+            93.0,
+            115.0
+          ],
+          "uncompensated": [
+            156.0,
+            93.0,
+            115.0
+          ]
+        }
+      ]
+    }
+  },
+  "uniform_frames": {
+    "pure_red": {
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "target": [
+        191.0,
+        0.0,
+        0.0
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 0.0,
+        "yellow": 0.0,
+        "red": 100.0,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        191.0,
+        0.0,
+        0.0
+      ],
+      "nominal_mean_target_distance": 0.0,
+      "frame_sha256": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8"
+    },
+    "pale_red": {
+      "source": [
+        255,
+        160,
+        160
+      ],
+      "target": [
+        231.6875,
+        162.0,
+        162.0
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 63.535,
+        "yellow": 0.0,
+        "red": 36.465,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        231.66240227434258,
+        162.01425906183368,
+        162.01425906183368
+      ],
+      "nominal_mean_target_distance": 0.03219530279293292,
+      "frame_sha256": "1ec502df7ef9c8af74d58acfcfbea5aae08fd0a452411d0b82cc01370e99be36"
+    },
+    "gray": {
+      "source": [
+        96,
+        96,
+        96
+      ],
+      "target": [
+        98.3125,
+        98.3125,
+        98.3125
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 61.45,
+        "white": 38.55,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        98.3024886727079,
+        98.3024886727079,
+        98.3024886727079
+      ],
+      "nominal_mean_target_distance": 0.017340127521126746,
+      "frame_sha256": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e"
+    },
+    "magenta": {
+      "source": [
+        255,
+        0,
+        255
+      ],
+      "target": [
+        150.125,
+        85.125,
+        196.1875
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 18.7933,
+        "yellow": 0.0,
+        "red": 23.0605,
+        "blue": 58.1462,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        150.11466662224592,
+        85.13651608031272,
+        196.19577891791045
+      ],
+      "nominal_mean_target_distance": 0.01754819886328347,
+      "frame_sha256": "3a23fe4c09532660a14ed5a4ffa5cc3c3bfbd01f6e78483e892ed2fbed870f78"
+    },
+    "cyan": {
+      "source": [
+        0,
+        255,
+        255
+      ],
+      "target": [
+        139.625,
+        141.6875,
+        197.75
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 30.9118,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 43.8672,
+        "green": 25.221
+      },
+      "nominal_mean": [
+        139.59043510127933,
+        141.70516280206112,
+        197.74834532693674
+      ],
+      "nominal_mean_target_distance": 0.038851573239281,
+      "frame_sha256": "6d9ef5e59dd218bc2e0e2d1db7b220b01b61f6e4ead5b8a10857e7a91fabee57"
+    },
+    "same_mask_same_compensation_state_a": {
+      "source": [
+        255,
+        231,
+        222
+      ],
+      "target": [
+        246.6875,
+        222.0,
+        222.0
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 87.0658,
+        "yellow": 0.0,
+        "red": 12.9342,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        246.72210376687988,
+        222.01775719616205,
+        222.01775719616205
+      ],
+      "nominal_mean_target_distance": 0.04275577988240224,
+      "frame_sha256": "41dd5c7e0165a5afcbe647c56e989b285b714a0518e5e19526b9d9c1c87bfdbb"
+    },
+    "same_mask_same_compensation_state_b": {
+      "source": [
+        255,
+        231,
+        231
+      ],
+      "target": [
+        249.0,
+        231.0,
+        231.0
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 90.5917,
+        "yellow": 0.0,
+        "red": 9.4083,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        248.97867803837954,
+        231.00879530916845,
+        231.00879530916845
+      ],
+      "nominal_mean_target_distance": 0.02468483287529971,
+      "frame_sha256": "db18bb41b831a42a465fffe0299c86467b22443d9dba692bedda9000537b1ef3"
+    },
+    "mask_change_a": {
+      "source": [
+        123,
+        113,
+        255
+      ],
+      "target": [
+        132.875,
+        105.0,
+        253.125
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.7135,
+        "white": 21.6435,
+        "yellow": 0.0,
+        "red": 0.0,
+        "blue": 77.643,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        132.83384972459132,
+        104.88235718727789,
+        253.18055370469082
+      ],
+      "nominal_mean_target_distance": 0.1364528880465893,
+      "frame_sha256": "f2eb90e6775d061f31062173f95b6bf8004091a539aaf1f314267c3ca639f601"
+    },
+    "mask_change_b": {
+      "source": [
+        132,
+        113,
+        255
+      ],
+      "target": [
+        188.125,
+        142.125,
+        210.875
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 46.6984,
+        "yellow": 0.0,
+        "red": 17.2936,
+        "blue": 36.008,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        188.11969727256573,
+        142.12612162402274,
+        210.90143590085287
+      ],
+      "nominal_mean_target_distance": 0.026985807614254415,
+      "frame_sha256": "0398868d2a4393bd229988a7ee223d261f6856b674f2b7c64fc8c3836f71fb95"
+    },
+    "compensation_on_off_a": {
+      "source": [
+        123,
+        73,
+        255
+      ],
+      "target": [
+        115.0625,
+        79.4375,
+        250.5625
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 8.6781,
+        "yellow": 0.0,
+        "red": 1.7591,
+        "blue": 89.5628,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        115.05187788734897,
+        79.44946584044065,
+        250.51439232409382
+      ],
+      "nominal_mean_target_distance": 0.050698709014298786,
+      "frame_sha256": "3d3ecc16ffbed2f6ebef35c32dc9ad43494f706eba9a9adbf28f909e43c0526b"
+    },
+    "compensation_on_off_b": {
+      "source": [
+        132,
+        73,
+        255
+      ],
+      "target": [
+        171.6875,
+        115.5,
+        201.6875
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 0.0,
+        "white": 33.9697,
+        "yellow": 0.0,
+        "red": 20.8983,
+        "blue": 45.132,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        171.6704257729211,
+        115.50714063610519,
+        201.70933835287846
+      ],
+      "nominal_mean_target_distance": 0.02862571520106675,
+      "frame_sha256": "38bbaf8bf3021ddb8c3430b96afc382eb8d40ababbcbd11590553cf96624e044"
+    },
+    "frequent_cheek": {
+      "source": [
+        123,
+        97,
+        82
+      ],
+      "target": [
+        123.0,
+        97.0,
+        82.0
+      ],
+      "interior_xyxy": [
+        32,
+        32,
+        368,
+        568
+      ],
+      "native_percent": {
+        "black": 48.4764,
+        "white": 30.4055,
+        "yellow": 8.0191,
+        "red": 13.0991,
+        "blue": 0.0,
+        "green": 0.0
+      },
+      "nominal_mean": [
+        123.00182125088841,
+        97.0202058901919,
+        82.0245702292111
+      ],
+      "nominal_mean_target_distance": 0.031863633137661114,
+      "frame_sha256": "f767ea8ff41f5e023c1e72909cd2a62ee53fad4d543b3e4ce0dc6c8bcac9bf35"
+    }
+  }
+}

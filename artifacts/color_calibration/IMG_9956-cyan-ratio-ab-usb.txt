@@ -1,0 +1,4 @@
+Identity: /dev/cu.usbmodem83301, 303A:4002, PaperColor, location 8-3.3; runtime serial None
+DisplayMetricsBegin count=1
+DisplayMetrics: source=cyan_ratio_ab_chart success=1 total_us=17580446 render_us=12865 render_to_refresh_us=4 panel_us=17567577 internal_before=189975 internal_after=189715 internal_largest=114688 psram_before=7150344 psram_after=7149888 psram_largest=7077888
+DisplayMetricsEnd count=1

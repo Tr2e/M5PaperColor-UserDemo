@@ -1,0 +1,14 @@
+IMG_9937 / unchanged candidate renderer, temporary stderr instrumentation only.
+Frame SHA-256 matches secondary-white-comparison.json: 95f6329c0b5c37a1b6299a392066cbe7a1f775bf4f9b174d3f3ccfd1c8449028
+Logical chart coordinates; Q4 values; native 0=black, 1=white.
+xy=109,218 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-149,1190,234 adjustedQ4=1268,2623,3058 native=1
+xy=109,222 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-309,1180,235 adjustedQ4=1108,2613,3059 native=1
+xy=109,226 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-189,1332,307 adjustedQ4=1228,2765,3131 native=1
+xy=109,229 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-231,1193,183 adjustedQ4=1186,2626,3007 native=1
+xy=109,234 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=48,1323,360 adjustedQ4=1465,2756,3184 native=1
+xy=109,237 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-237,1391,119 adjustedQ4=1180,2824,2943 native=1
+xy=109,241 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-269,1756,191 adjustedQ4=1148,3189,3015 native=1
+xy=109,243 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-738,1333,159 adjustedQ4=679,2766,2983 native=1
+xy=109,245 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-886,1228,178 adjustedQ4=531,2661,3002 native=1
+xy=109,249 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-576,1488,349 adjustedQ4=841,2921,3173 native=1
+xy=110,242 rgb=0,174,255 mask=99 targetQ4=1417,1433,2824 incomingQ4=-2315,-334,-413 adjustedQ4=-898,1099,2411 native=0

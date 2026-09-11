@@ -54,7 +54,24 @@ int main(){
             const auto viewer=render(crop,PaperColorRenderMode::PhotoBalanced);
             for(int y=0;y<r.height;++y)for(int x=0;x<r.width;++x)assert(viewer[y*r.width+x]==mixed[(r.y+y)*600+r.x+x]);
         }
-        c.depth=24;assert(render(c,PaperColorRenderMode::UiWithPhotos,logical[rot],2)==mixed);c.depth=16;
+        c.depth=24;
+        const auto mixed888=render(c,PaperColorRenderMode::UiWithPhotos,logical[rot],2);
+#if !defined(CONFIG_PAPERCOLOR_NATIVE_565_RECONSTRUCTION) || !CONFIG_PAPERCOLOR_NATIVE_565_RECONSTRUCTION
+        assert(mixed888==mixed);
+#endif
+        // The 24-bit stub supplies ordinary bit-expanded values. With native
+        // cell reconstruction these legitimately differ from 16-bit photo
+        // samples. Check each format against its own real viewer path.
+        const auto ui888=render(c,PaperColorRenderMode::Ui);
+        for(int y=0;y<400;++y)for(int x=0;x<600;++x)
+            if(!inside(physical[0],x,y)&&!inside(physical[1],x,y))assert(mixed888[y*600+x]==ui888[y*600+x]);
+        for(const auto&r:physical){
+            m5gfx::M5Canvas crop(r.width,r.height);crop.depth=24;
+            for(int y=0;y<r.height;++y)for(int x=0;x<r.width;++x)crop.buffer[y*r.width+x]=source[(r.y+y)*600+r.x+x];
+            const auto viewer=render(crop,PaperColorRenderMode::PhotoBalanced);
+            for(int y=0;y<r.height;++y)for(int x=0;x<r.width;++x)assert(viewer[y*r.width+x]==mixed888[(r.y+y)*600+r.x+x]);
+        }
+        c.depth=16;
         for(int y=0;y<400;++y)for(int x=0;x<600;++x)
             if(!inside(physical[0],x,y)&&!inside(physical[1],x,y))c.buffer[y*600+x]=pack(255,0,255);
         const auto changed_ui=render(c,PaperColorRenderMode::UiWithPhotos,logical[rot],2);

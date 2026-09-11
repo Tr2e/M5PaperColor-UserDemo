@@ -1,0 +1,4 @@
+DisplayMetricsBegin count=1
+PaperColorPipeline: mode=ui prepare_us=250606 workspace_bytes=0
+DisplayMetrics: source=home_full success=1 total_us=17191134 render_us=779289 render_to_refresh_us=17 panel_us=16411828 internal_before=190799 internal_after=188891 internal_largest=114688 psram_before=7150344 psram_after=7105284 psram_largest=7077888
+DisplayMetricsEnd count=1

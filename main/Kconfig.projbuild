@@ -26,4 +26,193 @@ config PAPERCOLOR_PRIMARY_WHITE_BUDGET
         neutral-white budget. Keep two-pigment hues and neutral targets on the
         accepted mapping. This is a rendering-policy experiment, not calibration.
 
+config PAPERCOLOR_PRIMARY_PEAK_PRESERVATION
+    bool "Preserve a full-scale primary peak with continuous hue falloff"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET
+    default n
+    help
+        Controlled chart candidate: prevent nearest-RGB projection from adding
+        black merely to reduce a full-scale pigment's secondary RGB components.
+        The nominal palette's blue reaches 255. Fade its correction continuously
+        with source dominance across candidate masks; preserve neutral targets
+        and equal-channel secondary hues. Leave red/green peak policies intact.
+        This is a target policy, not a measured physical panel profile.
+
+config PAPERCOLOR_BLUE_SECONDARY_BALANCE
+    bool "Rebalance blue secondary hues while retaining neutral coverage"
+    depends on PAPERCOLOR_PRIMARY_PEAK_PRESERVATION
+    default n
+    help
+        Controlled chart candidate for red/blue and green/blue mixtures. Move
+        chromatic coverage toward source chroma ratios, retaining projected
+        black and white amounts. Fade at low chroma and pigment boundaries.
+        This is a hue policy experiment, not a measured physical color profile.
+
+config PAPERCOLOR_SECONDARY_WHITE_REDUCTION
+    bool "Gently reduce white in saturated blue secondary mixtures"
+    depends on PAPERCOLOR_BLUE_SECONDARY_BALANCE
+    default n
+    help
+        Separate white-axis chart experiment: move at most one quarter of white
+        coverage into the existing chromatic mixture. Preserve its pigment ratio
+        and black target, with smooth fades at neutral and pigment boundaries.
+        This can darken colors; physical chart acceptance is required.
+
+config PAPERCOLOR_WARM_COMPENSATION_BYPASS
+    bool "Bypass legacy thresholded warm-sector source compression"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET
+    default n
+    help
+        Controlled experiment: skip only the red-yellow source compression
+        triggered at blue >= 32 and red-green >= 80. Keep target projection,
+        white reduction, blue hue policies and diffusion unchanged. This
+        removes those compensation switches but can increase white coverage
+        in orange; physical full-chart acceptance is required.
+
+config PAPERCOLOR_PURPLE_COMPENSATION_BYPASS
+    bool "Bypass legacy thresholded red boost in blue-purple sources"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET
+    default n
+    help
+        Controlled single-branch experiment: skip the red-blue compensation
+        enabled at B > R and 2R >= B. Keep green-blue compression, warm policy,
+        projection, hue balance, white reduction and diffusion unchanged.
+        Removes this switch but may darken purples and reduce red coverage;
+        full-chart physical acceptance is required.
+
+config PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH
+    bool "Smooth the legacy purple compensation activation ratio"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET && !PAPERCOLOR_PURPLE_COMPENSATION_BYPASS
+    default n
+    help
+        Replace the hard R/B=1/2 activation with a smoothstep across 2/5..5/8.
+        Preserve no gain below the interval and the original integer gain
+        above it. Other source sectors and downstream policies stay fixed.
+        Experimental transition width, not measured physical calibration.
+
+config PAPERCOLOR_CYAN_RATIO_SMOOTH
+    bool "Smooth green-to-blue coverage transfer near cyan"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET && PAPERCOLOR_BLUE_SECONDARY_BALANCE && PAPERCOLOR_SECONDARY_WHITE_REDUCTION
+    default n
+    help
+        Experimental IMG_9955 cyan B direction: transfer up to 1/16 of
+        chromatic coverage from green to blue, preserving white and black.
+        Fade smoothly with source hue, chroma and pigment availability.
+        Magenta and original blue-cyan edge targets remain unchanged.
+        Requires gradient and full-chart physical acceptance.
+
+config PAPERCOLOR_NATIVE_565_RECONSTRUCTION
+    bool "Reconstruct native pigments in their RGB565 quantization cells"
+    depends on PAPERCOLOR_EXACT_PIGMENT_ANCHOR
+    default n
+    help
+        Use the native RGB888 pigment as the representative of its exact
+        RGB565 cell before photo processing. Removes quantization-only dots
+        from native solids. Neighboring cells, RGB888 and UI nearest paths
+        remain unchanged. Source colors sharing a cell are indistinguishable;
+        this does not reconstruct arbitrary original RGB888 values.
+
+config PAPERCOLOR_EXACT_PIGMENT_ANCHOR
+    bool "Protect exact pigment targets from incoming diffusion residuals"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET
+    default n
+    help
+        Chart candidate: when the Q4 target exactly equals an allowed chromatic
+        pigment, emit that pigment and absorb this pixel's incoming residual.
+        This prevents boundary dots in representable solids. Do not snap near
+        colors or alter neutral targets; mixtures still use normal diffusion.
+
+config PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    bool "Keep exact two-pigment targets free of foreign boundary dots"
+    depends on PAPERCOLOR_EXACT_PIGMENT_ANCHOR
+    default n
+    help
+        For targets on a red-blue or green-blue pigment segment, intercept
+        attempted foreign dots, retain tangential error and choose between
+        those two pigments. Preserve compatible choices and their residuals.
+        Detect the segment before Q4 rounding; leave real black/white mixtures
+        and all other targets unchanged. This does not alter the target mapping
+        or diffusion weights. Full-chart and gradient validation is required.
+
+config PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT
+    bool "Show embedded portrait reference at startup"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET && !PAPERCOLOR_NATIVE_CHART_ON_BOOT
+    default n
+    help
+        Test-only build: display Kodak image 04 with the current PhotoBalanced
+        pipeline at startup. A returns home. Does not write photos or settings.
+
+config PAPERCOLOR_REFERENCE_CHART_ON_BOOT
+    bool "Show embedded source color chart at startup"
+    depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET && !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT
+    default n
+    help
+        Test-only build: display the canonical 400x600 source color chart with
+        PhotoBalanced at startup. Unlike the native-pigment diagnostic, this
+        exercises the photo mapping and dither. A returns home. No storage writes.
+
+config PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT
+    bool "Show controlled red/blue and green/blue mixture grids at startup"
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT
+    default n
+    help
+        Diagnostic-only chart with independent white and chromatic fractions,
+        emitted as exact native codes. A returns home. Does not alter the photo
+        algorithm or stored photos/settings. Keep the same pattern in all cells.
+
+config PAPERCOLOR_WHITE_AB_CHART_ON_BOOT
+    bool "Show same-screen PhotoBalanced white reduction A/B at startup"
+    depends on PAPERCOLOR_SECONDARY_WHITE_REDUCTION && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT
+    default n
+    help
+        Display pre-rendered native crops from the actual source-chart photo
+        pipeline with white reduction off/on. Hue policy and edge protection
+        are identical. Duplicate A/B/B/A columns reveal uneven illumination.
+        Does not change the normal photo renderer or stored photos/settings.
+
+config PAPERCOLOR_WARM_AB_CHART_ON_BOOT
+    bool "Show same-screen PhotoBalanced warm compensation A/B at startup"
+    depends on PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_SECONDARY_WHITE_REDUCTION && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT
+    default n
+    help
+        Display pre-rendered full-source-chart crops with old warm compensation
+        versus bypass. White reduction, hue policy and edge protection stay fixed.
+        Duplicate A/B/B/A columns reveal uneven illumination. A returns home.
+        Does not change the photo renderer or stored photos/settings.
+
+config PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT
+    bool "Show same-screen purple compensation transition A/B at startup"
+    depends on PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH && PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_SECONDARY_WHITE_REDUCTION && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT
+    default n
+    help
+        Diagnostic native crops from complete PhotoBalanced renders. A retains
+        the hard purple activation and B smooths it. Two new stimulus ramps
+        exercise the transition; four canonical controls retain their output.
+        Duplicate A/B/B/A columns reveal uneven illumination. A returns home.
+
+config PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT
+    bool "Show fixed-white secondary hue-ratio diagnostic at startup"
+    depends on PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH && PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_SECONDARY_WHITE_REDUCTION && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT
+    default n
+    help
+        Pre-rendered PhotoBalanced diagnostic crops: current ratio and +/-6.25
+        percentage points of colored red/green coverage, white target fixed.
+        The host-only probe changes only the two diagnostic sources. Normal
+        photo mapping and the accepted home renderer remain unchanged.
+
+config PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT
+    bool "Show same-screen smooth cyan ratio A/B at startup"
+    depends on PAPERCOLOR_CYAN_RATIO_SMOOTH && PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH && PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT
+    default n
+    help
+        Actual PhotoBalanced A/B crops: current baseline versus smoothly
+        reduced green coverage near cyan. Includes source cyan, two ramps,
+        magenta/light-purple/blue-cyan controls and native anchors.
+        A/B/B/A repeats show lighting variation. Button A returns home.
+
 endmenu

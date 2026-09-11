@@ -1,0 +1,810 @@
+{
+  "firmware_sha256": "457106f2e2dd3b39498cc4e0047c09a9ffb3ec1e07f09496bf52e1d683997c93",
+  "photo_sha256": "4bd9335793b1c46268a375abbdafe11bb7f200278d7e6f222971035d5a843b2e",
+  "target_source": "Fresh host compilation of matching current firmware helpers; only canonical patch inputs queried. No algorithm change.",
+  "counts_source": "Previously verified purple-smooth-comparison.json candidate; all source hashes checked unchanged; no fresh frame render claimed.",
+  "warning": "Nominal RGB values and native code counts, not physical color measurements.",
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "2c187f053d2c4794b69b1bbbe06fc0ed28d272a97f155d704f118d23952f51e4",
+    "main/display/papercolor_photo_dither.h": "441a549efe777d1680e1c8a97806444b4045483d609b464a5056ede10c64408f",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/probe_targets.cpp": "b6602334063e224e67fa5918ca88987afd44a495a1e68002acbbd2052d375749",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4"
+  },
+  "canonical_frame_sha256": "effced8df5883bd2e379812eee61f1215388757059c7c9aa9d8a4587a2c178ee",
+  "patches": [
+    {
+      "id": 1,
+      "name": "N.BLACK",
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        0,
+        0,
+        0
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        0,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "native_counts": {
+        "black": 4400,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "N.WHITE",
+      "source_rgb": [
+        255,
+        255,
+        255
+      ],
+      "expanded_rgb565": [
+        255,
+        255,
+        255
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        255,
+        255,
+        255
+      ],
+      "target_q4_rgb": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 4128,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 3,
+      "name": "N.YELLOW",
+      "source_rgb": [
+        255,
+        243,
+        56
+      ],
+      "expanded_rgb565": [
+        255,
+        243,
+        57
+      ],
+      "mask": 15,
+      "compensated_rgb": [
+        255,
+        243,
+        57
+      ],
+      "target_q4_rgb": [
+        255.0,
+        243.0,
+        57.0
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 9,
+        "yellow": 4119,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "N.RED",
+      "source_rgb": [
+        191,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        189,
+        0,
+        0
+      ],
+      "mask": 11,
+      "compensated_rgb": [
+        189,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        189.0,
+        0.0,
+        0.0
+      ],
+      "native_counts": {
+        "black": 30,
+        "white": 0,
+        "yellow": 0,
+        "red": 4098,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 5,
+      "name": "N.BLUE",
+      "source_rgb": [
+        100,
+        64,
+        255
+      ],
+      "expanded_rgb565": [
+        99,
+        65,
+        255
+      ],
+      "mask": 43,
+      "compensated_rgb": [
+        99,
+        65,
+        255
+      ],
+      "target_q4_rgb": [
+        100.0625,
+        64.0625,
+        254.875
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4128,
+        "green": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "N.GREEN",
+      "source_rgb": [
+        67,
+        138,
+        28
+      ],
+      "expanded_rgb565": [
+        66,
+        138,
+        24
+      ],
+      "mask": 71,
+      "compensated_rgb": [
+        66,
+        138,
+        24
+      ],
+      "target_q4_rgb": [
+        66.5,
+        137.0,
+        27.8125
+      ],
+      "native_counts": {
+        "black": 16,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4112
+      }
+    },
+    {
+      "id": 7,
+      "name": "RED",
+      "source_rgb": [
+        255,
+        0,
+        0
+      ],
+      "expanded_rgb565": [
+        255,
+        0,
+        0
+      ],
+      "mask": 11,
+      "compensated_rgb": [
+        255,
+        0,
+        0
+      ],
+      "target_q4_rgb": [
+        191.0,
+        0.0,
+        0.0
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 4128,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 8,
+      "name": "GREEN",
+      "source_rgb": [
+        0,
+        255,
+        0
+      ],
+      "expanded_rgb565": [
+        0,
+        255,
+        0
+      ],
+      "mask": 67,
+      "compensated_rgb": [
+        0,
+        255,
+        0
+      ],
+      "target_q4_rgb": [
+        67.0,
+        138.0,
+        28.0
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4128
+      }
+    },
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "expanded_rgb565": [
+        99,
+        48,
+        156
+      ],
+      "mask": 43,
+      "compensated_rgb": [
+        141,
+        48,
+        145
+      ],
+      "target_q4_rgb": [
+        139.3125,
+        48.5,
+        148.9375
+      ],
+      "native_counts": {
+        "black": 140,
+        "white": 218,
+        "yellow": 0,
+        "red": 1572,
+        "blue": 2198,
+        "green": 0
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "expanded_rgb565": [
+        0,
+        174,
+        255
+      ],
+      "mask": 99,
+      "compensated_rgb": [
+        0,
+        152,
+        223
+      ],
+      "target_q4_rgb": [
+        88.5625,
+        89.5625,
+        176.5
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 2696,
+        "green": 1432
+      }
+    },
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "expanded_rgb565": [
+        156,
+        255,
+        0
+      ],
+      "mask": 71,
+      "compensated_rgb": [
+        156,
+        255,
+        0
+      ],
+      "target_q4_rgb": [
+        179.5625,
+        200.875,
+        44.75
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 2475,
+        "red": 0,
+        "blue": 0,
+        "green": 1653
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "expanded_rgb565": [
+        49,
+        154,
+        99
+      ],
+      "mask": 99,
+      "compensated_rgb": [
+        49,
+        154,
+        99
+      ],
+      "target_q4_rgb": [
+        82.0,
+        126.6875,
+        86.9375
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 161,
+        "yellow": 0,
+        "red": 0,
+        "blue": 899,
+        "green": 3068
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "expanded_rgb565": [
+        255,
+        207,
+        0
+      ],
+      "mask": 15,
+      "compensated_rgb": [
+        255,
+        207,
+        0
+      ],
+      "target_q4_rgb": [
+        243.5,
+        199.4375,
+        45.9375
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 3396,
+        "red": 732,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "expanded_rgb565": [
+        255,
+        101,
+        49
+      ],
+      "mask": 15,
+      "compensated_rgb": [
+        255,
+        101,
+        49
+      ],
+      "target_q4_rgb": [
+        219.6875,
+        110.4375,
+        48.4375
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 467,
+        "yellow": 1385,
+        "red": 2276,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "expanded_rgb565": [
+        206,
+        48,
+        0
+      ],
+      "mask": 15,
+      "compensated_rgb": [
+        206,
+        48,
+        0
+      ],
+      "target_q4_rgb": [
+        203.1875,
+        46.3125,
+        10.6875
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 779,
+        "red": 3349,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "expanded_rgb565": [
+        255,
+        0,
+        255
+      ],
+      "mask": 43,
+      "compensated_rgb": [
+        255,
+        0,
+        255
+      ],
+      "target_q4_rgb": [
+        157.8125,
+        65.6875,
+        154.3125
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 572,
+        "yellow": 0,
+        "red": 1622,
+        "blue": 1934,
+        "green": 0
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "expanded_rgb565": [
+        156,
+        48,
+        206
+      ],
+      "mask": 43,
+      "compensated_rgb": [
+        193,
+        48,
+        196
+      ],
+      "target_q4_rgb": [
+        153.6875,
+        72.875,
+        172.0625
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 634,
+        "yellow": 0,
+        "red": 1341,
+        "blue": 2153,
+        "green": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "expanded_rgb565": [
+        74,
+        36,
+        115
+      ],
+      "mask": 43,
+      "compensated_rgb": [
+        104,
+        36,
+        107
+      ],
+      "target_q4_rgb": [
+        103.625,
+        36.25,
+        108.8125
+      ],
+      "native_counts": {
+        "black": 1184,
+        "white": 177,
+        "yellow": 0,
+        "red": 1178,
+        "blue": 1589,
+        "green": 0
+      }
+    },
+    {
+      "id": 19,
+      "name": "BLUE",
+      "source_rgb": [
+        0,
+        0,
+        255
+      ],
+      "expanded_rgb565": [
+        0,
+        0,
+        255
+      ],
+      "mask": 35,
+      "compensated_rgb": [
+        0,
+        0,
+        255
+      ],
+      "target_q4_rgb": [
+        100.0,
+        64.0,
+        255.0
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4128,
+        "green": 0
+      }
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "expanded_rgb565": [
+        0,
+        255,
+        255
+      ],
+      "mask": 99,
+      "compensated_rgb": [
+        0,
+        255,
+        255
+      ],
+      "target_q4_rgb": [
+        123.5,
+        136.125,
+        169.5625
+      ],
+      "native_counts": {
+        "black": 0,
+        "white": 951,
+        "yellow": 0,
+        "red": 0,
+        "blue": 1623,
+        "green": 1554
+      }
+    },
+    {
+      "id": 21,
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "expanded_rgb565": [
+        33,
+        32,
+        33
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        33,
+        32,
+        33
+      ],
+      "target_q4_rgb": [
+        32.6875,
+        32.6875,
+        32.6875
+      ],
+      "native_counts": {
+        "black": 3609,
+        "white": 519,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 22,
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "expanded_rgb565": [
+        99,
+        97,
+        99
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        99,
+        97,
+        99
+      ],
+      "target_q4_rgb": [
+        98.3125,
+        98.3125,
+        98.3125
+      ],
+      "native_counts": {
+        "black": 2531,
+        "white": 1597,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 23,
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "expanded_rgb565": [
+        165,
+        162,
+        165
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        165,
+        162,
+        165
+      ],
+      "target_q4_rgb": [
+        164.0,
+        164.0,
+        164.0
+      ],
+      "native_counts": {
+        "black": 1469,
+        "white": 2659,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "expanded_rgb565": [
+        231,
+        227,
+        231
+      ],
+      "mask": 3,
+      "compensated_rgb": [
+        231,
+        227,
+        231
+      ],
+      "target_q4_rgb": [
+        229.6875,
+        229.6875,
+        229.6875
+      ],
+      "native_counts": {
+        "black": 404,
+        "white": 3724,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    }
+  ]
+}

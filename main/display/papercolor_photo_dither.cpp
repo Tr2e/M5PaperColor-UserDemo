@@ -12,6 +12,9 @@
 
 #include "display/papercolor_lut.h"
 #include "display/papercolor_gamut.h"
+#if defined(CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH) && CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH
+#include "display/papercolor_cyan_ratio.h"
+#endif
 
 namespace {
 
@@ -160,6 +163,29 @@ inline void compensated_photo_target(uint8_t mask,
         target[channel] = original[channel];
     }
 
+#if !defined(CONFIG_PAPERCOLOR_PURPLE_COMPENSATION_BYPASS) || !CONFIG_PAPERCOLOR_PURPLE_COMPENSATION_BYPASS
+#if defined(CONFIG_PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH) && CONFIG_PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH
+    // Spread the old R/B=1/2 switch across [2/5,5/8]. Retain the original
+    // integer gain above the transition and no gain below it. The width is an
+    // experimental continuity policy, not a physical color calibration fit.
+    if (mask == MASK_RED_BLUE && original[2] > original[0]) {
+        const int32_t red = original[0], blue = original[2];
+        const int32_t excess = blue - red;
+        const int32_t red_delta = excess * 3 / 4, blue_delta = excess / 5;
+        if (red * 8 >= blue * 5) {
+            target[0] += red_delta;
+            target[2] -= blue_delta;
+        } else if (red * 5 > blue * 2) {
+            const float t = float(40 * red - 16 * blue) / float(9 * blue);
+            const float weight = t * t * (3.0f - 2.0f * t);
+            target[0] += static_cast<int32_t>(red_delta * weight + 0.5f);
+            target[2] -= static_cast<int32_t>(blue_delta * weight + 0.5f);
+        }
+        return;
+    }
+#else
+    // Keep the legacy red boost available as the baseline. Its 2R>=B switch
+    // creates a target jump; bypass only this branch for a separate experiment.
     if (mask == MASK_RED_BLUE && original[2] > original[0] &&
         static_cast<uint16_t>(original[0]) * 2U >= original[2]) {
         const int32_t blue_excess = original[2] - original[0];
@@ -167,6 +193,8 @@ inline void compensated_photo_target(uint8_t mask,
         target[2] = original[2] - blue_excess / 5;
         return;
     }
+#endif
+#endif
 
     if (mask == MASK_GREEN_BLUE && original[2] > original[1]) {
         target[0] = original[0] * 7 / 8;
@@ -175,17 +203,22 @@ inline void compensated_photo_target(uint8_t mask,
         return;
     }
 
+#if !defined(CONFIG_PAPERCOLOR_WARM_COMPENSATION_BYPASS) || !CONFIG_PAPERCOLOR_WARM_COMPENSATION_BYPASS
+    // Legacy warm-sector compression has hard blue>=32 and red-green>=80
+    // switches. The opt-in bypass removes only this branch for a controlled
+    // continuity/brightness experiment; blue-sector policies remain intact.
     if (mask == MASK_RED_YELLOW && original[2] >= 32 &&
         original[0] >= static_cast<int32_t>(original[1]) + 80) {
         target[0] = original[0] * 7 / 8;
         target[1] = original[1];
         target[2] = original[2] * 3 / 4;
     }
+#endif
 }
 
 inline void reachable_photo_target(papercolor_dither_state_t* state, uint8_t mask,
                                     const uint8_t original[CHANNELS],
-                                    int32_t target[CHANNELS])
+                                    int32_t target[CHANNELS], uint8_t* edge_pigment = nullptr)
 {
     const uint32_t key = 1U + (static_cast<uint32_t>(original[0]) << 16U) +
                          (static_cast<uint32_t>(original[1]) << 8U) + original[2];
@@ -203,12 +236,66 @@ inline void reachable_photo_target(papercolor_dither_state_t* state, uint8_t mas
             }
         }
 #if defined(CONFIG_PAPERCOLOR_PRIMARY_WHITE_BUDGET) && CONFIG_PAPERCOLOR_PRIMARY_WHITE_BUDGET
-        const auto p = papercolor_gamut::project_primary_white_budget(
+        auto p = papercolor_gamut::project_primary_white_budget(
 #else
-        const auto p = papercolor_gamut::project(
+        auto p = papercolor_gamut::project(
 #endif
             {static_cast<float>(source[0]), static_cast<float>(source[1]),
              static_cast<float>(source[2])}, vertices, count);
+#if defined(CONFIG_PAPERCOLOR_PRIMARY_PEAK_PRESERVATION) && CONFIG_PAPERCOLOR_PRIMARY_PEAK_PRESERVATION
+        // A primary reaching 255 can keep that requested peak. In the nominal
+        // palette this applies to blue; red/green peaks remain on the accepted
+        // white-budget policy. Fade using the unmodified source so old sector
+        // compensation switches do not create a new correction boundary.
+        int channel = 0;
+        if (original[1] > original[channel]) channel = 1;
+        if (original[2] > original[channel]) channel = 2;
+        constexpr uint8_t primaries[] = {PAPERCOLOR_NATIVE_RED,
+                                         PAPERCOLOR_NATIVE_GREEN, PAPERCOLOR_NATIVE_BLUE};
+        const uint8_t primary = primaries[channel];
+        if (mask_allows(mask, primary)) {
+            p = papercolor_gamut::preserve_fullscale_peak(
+                {float(original[0]), float(original[1]), float(original[2])}, p,
+                {float(NATIVE_SRGB[primary][0]), float(NATIVE_SRGB[primary][1]),
+                 float(NATIVE_SRGB[primary][2])}, channel);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_BLUE_SECONDARY_BALANCE) && CONFIG_PAPERCOLOR_BLUE_SECONDARY_BALANCE
+        if (mask == MASK_RED_BLUE || mask == MASK_GREEN_BLUE) {
+            const uint8_t pigment = mask == MASK_RED_BLUE ? PAPERCOLOR_NATIVE_RED : PAPERCOLOR_NATIVE_GREEN;
+            p = papercolor_gamut::balance_blue_secondary(
+                {float(original[0]), float(original[1]), float(original[2])}, p,
+                {float(NATIVE_SRGB[pigment][0]), float(NATIVE_SRGB[pigment][1]), float(NATIVE_SRGB[pigment][2])},
+                {float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][0]), float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][1]),
+                 float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][2])}, mask == MASK_RED_BLUE ? 0 : 1);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_SECONDARY_WHITE_REDUCTION) && CONFIG_PAPERCOLOR_SECONDARY_WHITE_REDUCTION
+        if (mask == MASK_RED_BLUE || mask == MASK_GREEN_BLUE) {
+            const uint8_t pigment = mask == MASK_RED_BLUE ? PAPERCOLOR_NATIVE_RED : PAPERCOLOR_NATIVE_GREEN;
+            p = papercolor_gamut::reduce_secondary_white(
+                {float(original[0]),float(original[1]),float(original[2])},p,
+                {float(NATIVE_SRGB[pigment][0]),float(NATIVE_SRGB[pigment][1]),float(NATIVE_SRGB[pigment][2])},
+                {float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][0]),float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][1]),
+                 float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][2])},mask == MASK_RED_BLUE ? 0 : 1);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH) && CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH
+        if (mask == MASK_GREEN_BLUE) {
+            p = papercolor_gamut::balance_cyan_ratio(
+                {float(original[0]),float(original[1]),float(original[2])},p);
+        }
+#endif
+        cached.edge_pigment = 0;
+#if defined(CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD) && CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD
+        if (mask == MASK_RED_BLUE || mask == MASK_GREEN_BLUE) {
+            const uint8_t pigment = mask == MASK_RED_BLUE ? PAPERCOLOR_NATIVE_RED : PAPERCOLOR_NATIVE_GREEN;
+            if (papercolor_gamut::on_chromatic_segment(p,
+                {float(NATIVE_SRGB[pigment][0]),float(NATIVE_SRGB[pigment][1]),float(NATIVE_SRGB[pigment][2])},
+                {float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][0]),float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][1]),
+                 float(NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][2])})) cached.edge_pigment = pigment;
+        }
+#endif
         cached.target[0] = static_cast<int16_t>(p.x * RGB_SCALE + 0.5f);
         cached.target[1] = static_cast<int16_t>(p.y * RGB_SCALE + 0.5f);
         cached.target[2] = static_cast<int16_t>(p.z * RGB_SCALE + 0.5f);
@@ -217,7 +304,30 @@ inline void reachable_photo_target(papercolor_dither_state_t* state, uint8_t mas
     for (size_t channel = 0; channel < CHANNELS; ++channel) {
         target[channel] = cached.target[channel];
     }
+    if (edge_pigment) *edge_pigment = cached.edge_pigment;
 }
+
+#if defined(CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD) && CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD
+inline void retain_chromatic_edge_error(uint8_t pigment, int32_t adjusted[CHANNELS])
+{
+    int32_t origin[CHANNELS], delta[CHANNELS];
+    int64_t numerator = 0, denominator = 0;
+    for (size_t c = 0; c < CHANNELS; ++c) {
+        origin[c] = NATIVE_SRGB[pigment][c] * RGB_SCALE;
+        delta[c] = NATIVE_SRGB[PAPERCOLOR_NATIVE_BLUE][c] * RGB_SCALE - origin[c];
+        numerator += static_cast<int64_t>(adjusted[c] - origin[c]) * delta[c];
+        denominator += static_cast<int64_t>(delta[c]) * delta[c];
+    }
+    // Project onto the infinite line, not the clamped segment: tangential
+    // overflow must continue diffusing to preserve pigment coverage. Absorb
+    // only the normal component that this two-pigment target cannot express.
+    const float t = static_cast<float>(numerator) / static_cast<float>(denominator);
+    for (size_t c = 0; c < CHANNELS; ++c) {
+        const float value = origin[c] + t * delta[c];
+        adjusted[c] = static_cast<int32_t>(value + (value >= 0 ? 0.5f : -0.5f));
+    }
+}
+#endif
 
 inline size_t error_index(size_t x, size_t channel)
 {
@@ -279,6 +389,23 @@ struct Swap565Source {
         rgb[0] = static_cast<uint8_t>((red5 << 3) | (red5 >> 2));
         rgb[1] = static_cast<uint8_t>((green6 << 2) | (green6 >> 4));
         rgb[2] = static_cast<uint8_t>((blue5 << 3) | (blue5 >> 2));
+#if defined(CONFIG_PAPERCOLOR_NATIVE_565_RECONSTRUCTION) && CONFIG_PAPERCOLOR_NATIVE_565_RECONSTRUCTION
+        // A 16-bit Canvas cannot retain the exact native RGB888 palette.
+        // Choose the known pigment as representative of its own quantization
+        // cell, not of neighboring cells. RGB888 and nearest/UI paths keep
+        // their original samples. All colors in the same cell are inherently
+        // indistinguishable; this is not recovery of the original image.
+        for (uint8_t pigment : NATIVE_CANDIDATES) {
+            if (pigment <= PAPERCOLOR_NATIVE_WHITE) continue;
+            const auto& native = NATIVE_SRGB[pigment];
+            if (red5 == (native[0] >> 3) && green6 == (native[1] >> 2) &&
+                blue5 == (native[2] >> 3)) {
+                for (size_t channel = 0; channel < CHANNELS; ++channel)
+                    rgb[channel] = native[channel];
+                break;
+            }
+        }
+#endif
     }
 };
 
@@ -298,7 +425,29 @@ bool process_diffused_row(papercolor_dither_state_t* state,
         source.sample(pixel, original);
         const uint8_t allowed = candidate_mask(original[0], original[1], original[2]);
         int32_t target[CHANNELS]{};
-        reachable_photo_target(state, allowed, original, target);
+        uint8_t edge_pigment = 0;
+        reachable_photo_target(state, allowed, original, target, &edge_pigment);
+#if defined(CONFIG_PAPERCOLOR_EXACT_PIGMENT_ANCHOR) && CONFIG_PAPERCOLOR_EXACT_PIGMENT_ANCHOR
+        // An exact chromatic vertex needs no spatial mixture. Residuals from
+        // adjacent regions must not introduce foreign dots into that solid.
+        // Absorb only this pixel's inherited error; leave neighboring errors
+        // and all non-vertex targets untouched. Opt-in RGB565 reconstruction
+        // above may restore the exact native vertex for its own source cell.
+        uint8_t exact_pigment = 0;
+        for (uint8_t pigment : NATIVE_CANDIDATES) {
+            if (pigment > PAPERCOLOR_NATIVE_WHITE && mask_allows(allowed, pigment) &&
+                target[0] == NATIVE_SRGB[pigment][0] * RGB_SCALE &&
+                target[1] == NATIVE_SRGB[pigment][1] * RGB_SCALE &&
+                target[2] == NATIVE_SRGB[pigment][2] * RGB_SCALE) {
+                exact_pigment = pigment;
+                break;
+            }
+        }
+        if (exact_pigment != 0) {
+            native_codes[pixel] = exact_pigment;
+            continue;
+        }
+#endif
         int32_t adjusted[CHANNELS]{};
         bool outside_lut = false;
         for (size_t channel = 0; channel < CHANNELS; ++channel) {
@@ -331,6 +480,16 @@ bool process_diffused_row(papercolor_dither_state_t* state,
                 native = nearest_allowed_native_srgb(allowed, adjusted);
             }
         }
+#if defined(CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD) && CONFIG_PAPERCOLOR_CHROMATIC_EDGE_GUARD
+        const uint8_t edge_mask = native_mask(edge_pigment) | native_mask(PAPERCOLOR_NATIVE_BLUE);
+        if (edge_pigment != 0 && !mask_allows(edge_mask,native)) {
+            // Preserve the existing quantizer and residual whenever its choice
+            // is compatible. Correct only an attempted foreign dot; projecting
+            // every edge pixel unnecessarily changes stable mixture textures.
+            retain_chromatic_edge_error(edge_pigment, adjusted);
+            native = nearest_allowed_native_srgb(edge_mask, adjusted);
+        }
+#endif
         native_codes[pixel] = native;
 
         const size_t native_index = native <= PAPERCOLOR_NATIVE_GREEN

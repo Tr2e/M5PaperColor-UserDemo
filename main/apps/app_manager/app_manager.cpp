@@ -27,6 +27,14 @@
 #include "display/display_metrics.h"
 #include "display/papercolor_lut_display.h"
 #include "display/papercolor_native_chart.h"
+#include "display/papercolor_reference_photo.h"
+#include "display/papercolor_reference_chart.h"
+#include "display/papercolor_mix_chart.h"
+#include "display/papercolor_white_ab_chart.h"
+#include "display/papercolor_warm_ab_chart.h"
+#include "display/papercolor_purple_smooth_ab_chart.h"
+#include "display/papercolor_secondary_ratio_abc_chart.h"
+#include "display/papercolor_cyan_ratio_ab_chart.h"
 
 #ifndef APP_ASSETS_USE_EMBEDDED
 #define APP_ASSETS_USE_EMBEDDED 0
@@ -988,7 +996,10 @@ esp_err_t app_manager_start()
 
     start_current_mode();
 
-    if (papercolor_show_native_chart()) {
+    if (papercolor_show_native_chart() || papercolor_show_reference_photo() ||
+        papercolor_show_reference_chart() || papercolor_show_mix_chart() ||
+        papercolor_show_white_ab_chart() || papercolor_show_warm_ab_chart() ||
+        papercolor_show_purple_smooth_ab_chart() || papercolor_show_secondary_ratio_abc_chart() || papercolor_show_cyan_ratio_ab_chart()) {
         // Reuse the existing A-to-home navigation without starting a slideshow
         // over the reference. The normal build's diagnostic is a no-op.
         g_current_view = AppView::CONFIG;

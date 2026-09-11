@@ -1,0 +1,872 @@
+{
+  "warning": "Nominal RGB preview, not physical colors. C++ supplies exact native fill codes; preview font approximates device labels.",
+  "fill_codes_sha256": "d717f98be4125a87fbf20976064341fd0ebb5d4b51500b3933504728b3b0dd17",
+  "source_sha256": "d7bc1855ad9e1258a7a61c8c486f95b83e6fee39719c7fcf23d0fcec12f293b6",
+  "tile": [
+    16,
+    8
+  ],
+  "grid_patch_count": 40,
+  "patches": [
+    {
+      "panel": "A",
+      "white_percent": 0,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        126,
+        112,
+        158
+      ],
+      "native_counts": {
+        "3": 512,
+        "5": 1536
+      },
+      "native_percent": {
+        "3": 25.0,
+        "5": 75.0
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 0,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        126,
+        180,
+        158
+      ],
+      "native_counts": {
+        "3": 768,
+        "5": 1280
+      },
+      "native_percent": {
+        "3": 37.5,
+        "5": 62.5
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 0,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        126,
+        248,
+        158
+      ],
+      "native_counts": {
+        "3": 1024,
+        "5": 1024
+      },
+      "native_percent": {
+        "3": 50.0,
+        "5": 50.0
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 0,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        126,
+        316,
+        158
+      ],
+      "native_counts": {
+        "3": 1280,
+        "5": 768
+      },
+      "native_percent": {
+        "3": 62.5,
+        "5": 37.5
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 0,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        126,
+        384,
+        158
+      ],
+      "native_counts": {
+        "3": 1536,
+        "5": 512
+      },
+      "native_percent": {
+        "3": 75.0,
+        "5": 25.0
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 12.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        170,
+        112,
+        202
+      ],
+      "native_counts": {
+        "1": 256,
+        "5": 1344,
+        "3": 448
+      },
+      "native_percent": {
+        "1": 12.5,
+        "5": 65.625,
+        "3": 21.875
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 12.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        170,
+        180,
+        202
+      ],
+      "native_counts": {
+        "1": 256,
+        "5": 1120,
+        "3": 672
+      },
+      "native_percent": {
+        "1": 12.5,
+        "5": 54.6875,
+        "3": 32.8125
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 12.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        170,
+        248,
+        202
+      ],
+      "native_counts": {
+        "1": 256,
+        "3": 896,
+        "5": 896
+      },
+      "native_percent": {
+        "1": 12.5,
+        "3": 43.75,
+        "5": 43.75
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 12.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        170,
+        316,
+        202
+      ],
+      "native_counts": {
+        "1": 256,
+        "3": 1120,
+        "5": 672
+      },
+      "native_percent": {
+        "1": 12.5,
+        "3": 54.6875,
+        "5": 32.8125
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 12.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        170,
+        384,
+        202
+      ],
+      "native_counts": {
+        "1": 256,
+        "3": 1344,
+        "5": 448
+      },
+      "native_percent": {
+        "1": 12.5,
+        "3": 65.625,
+        "5": 21.875
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 25,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        214,
+        112,
+        246
+      ],
+      "native_counts": {
+        "1": 512,
+        "5": 1152,
+        "3": 384
+      },
+      "native_percent": {
+        "1": 25.0,
+        "5": 56.25,
+        "3": 18.75
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 25,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        214,
+        180,
+        246
+      ],
+      "native_counts": {
+        "1": 512,
+        "3": 576,
+        "5": 960
+      },
+      "native_percent": {
+        "1": 25.0,
+        "3": 28.125,
+        "5": 46.875
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 25,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        214,
+        248,
+        246
+      ],
+      "native_counts": {
+        "1": 512,
+        "3": 768,
+        "5": 768
+      },
+      "native_percent": {
+        "1": 25.0,
+        "3": 37.5,
+        "5": 37.5
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 25,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        214,
+        316,
+        246
+      ],
+      "native_counts": {
+        "1": 512,
+        "3": 960,
+        "5": 576
+      },
+      "native_percent": {
+        "1": 25.0,
+        "3": 46.875,
+        "5": 28.125
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 25,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        214,
+        384,
+        246
+      ],
+      "native_counts": {
+        "1": 512,
+        "3": 1152,
+        "5": 384
+      },
+      "native_percent": {
+        "1": 25.0,
+        "3": 56.25,
+        "5": 18.75
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 37.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        258,
+        112,
+        290
+      ],
+      "native_counts": {
+        "1": 768,
+        "3": 320,
+        "5": 960
+      },
+      "native_percent": {
+        "1": 37.5,
+        "3": 15.625,
+        "5": 46.875
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 37.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        258,
+        180,
+        290
+      ],
+      "native_counts": {
+        "1": 768,
+        "3": 480,
+        "5": 800
+      },
+      "native_percent": {
+        "1": 37.5,
+        "3": 23.4375,
+        "5": 39.0625
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 37.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        258,
+        248,
+        290
+      ],
+      "native_counts": {
+        "1": 768,
+        "3": 640,
+        "5": 640
+      },
+      "native_percent": {
+        "1": 37.5,
+        "3": 31.25,
+        "5": 31.25
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 37.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        258,
+        316,
+        290
+      ],
+      "native_counts": {
+        "1": 768,
+        "3": 800,
+        "5": 480
+      },
+      "native_percent": {
+        "1": 37.5,
+        "3": 39.0625,
+        "5": 23.4375
+      }
+    },
+    {
+      "panel": "A",
+      "white_percent": 37.5,
+      "first_pigment": "red",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        258,
+        384,
+        290
+      ],
+      "native_counts": {
+        "1": 768,
+        "3": 960,
+        "5": 320
+      },
+      "native_percent": {
+        "1": 37.5,
+        "3": 46.875,
+        "5": 15.625
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 0,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        344,
+        112,
+        376
+      ],
+      "native_counts": {
+        "6": 512,
+        "5": 1536
+      },
+      "native_percent": {
+        "6": 25.0,
+        "5": 75.0
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 0,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        344,
+        180,
+        376
+      ],
+      "native_counts": {
+        "6": 768,
+        "5": 1280
+      },
+      "native_percent": {
+        "6": 37.5,
+        "5": 62.5
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 0,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        344,
+        248,
+        376
+      ],
+      "native_counts": {
+        "6": 1024,
+        "5": 1024
+      },
+      "native_percent": {
+        "6": 50.0,
+        "5": 50.0
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 0,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        344,
+        316,
+        376
+      ],
+      "native_counts": {
+        "6": 1280,
+        "5": 768
+      },
+      "native_percent": {
+        "6": 62.5,
+        "5": 37.5
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 0,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        344,
+        384,
+        376
+      ],
+      "native_counts": {
+        "6": 1536,
+        "5": 512
+      },
+      "native_percent": {
+        "6": 75.0,
+        "5": 25.0
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 12.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        388,
+        112,
+        420
+      ],
+      "native_counts": {
+        "1": 256,
+        "5": 1344,
+        "6": 448
+      },
+      "native_percent": {
+        "1": 12.5,
+        "5": 65.625,
+        "6": 21.875
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 12.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        388,
+        180,
+        420
+      ],
+      "native_counts": {
+        "1": 256,
+        "5": 1120,
+        "6": 672
+      },
+      "native_percent": {
+        "1": 12.5,
+        "5": 54.6875,
+        "6": 32.8125
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 12.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        388,
+        248,
+        420
+      ],
+      "native_counts": {
+        "1": 256,
+        "6": 896,
+        "5": 896
+      },
+      "native_percent": {
+        "1": 12.5,
+        "6": 43.75,
+        "5": 43.75
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 12.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        388,
+        316,
+        420
+      ],
+      "native_counts": {
+        "1": 256,
+        "6": 1120,
+        "5": 672
+      },
+      "native_percent": {
+        "1": 12.5,
+        "6": 54.6875,
+        "5": 32.8125
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 12.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        388,
+        384,
+        420
+      ],
+      "native_counts": {
+        "1": 256,
+        "6": 1344,
+        "5": 448
+      },
+      "native_percent": {
+        "1": 12.5,
+        "6": 65.625,
+        "5": 21.875
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 25,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        432,
+        112,
+        464
+      ],
+      "native_counts": {
+        "1": 512,
+        "5": 1152,
+        "6": 384
+      },
+      "native_percent": {
+        "1": 25.0,
+        "5": 56.25,
+        "6": 18.75
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 25,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        432,
+        180,
+        464
+      ],
+      "native_counts": {
+        "1": 512,
+        "6": 576,
+        "5": 960
+      },
+      "native_percent": {
+        "1": 25.0,
+        "6": 28.125,
+        "5": 46.875
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 25,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        432,
+        248,
+        464
+      ],
+      "native_counts": {
+        "1": 512,
+        "6": 768,
+        "5": 768
+      },
+      "native_percent": {
+        "1": 25.0,
+        "6": 37.5,
+        "5": 37.5
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 25,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        432,
+        316,
+        464
+      ],
+      "native_counts": {
+        "1": 512,
+        "6": 960,
+        "5": 576
+      },
+      "native_percent": {
+        "1": 25.0,
+        "6": 46.875,
+        "5": 28.125
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 25,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        432,
+        384,
+        464
+      ],
+      "native_counts": {
+        "1": 512,
+        "6": 1152,
+        "5": 384
+      },
+      "native_percent": {
+        "1": 25.0,
+        "6": 56.25,
+        "5": 18.75
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 37.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 25,
+      "fill_xyxy": [
+        48,
+        476,
+        112,
+        508
+      ],
+      "native_counts": {
+        "1": 768,
+        "6": 320,
+        "5": 960
+      },
+      "native_percent": {
+        "1": 37.5,
+        "6": 15.625,
+        "5": 46.875
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 37.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 37.5,
+      "fill_xyxy": [
+        116,
+        476,
+        180,
+        508
+      ],
+      "native_counts": {
+        "1": 768,
+        "6": 480,
+        "5": 800
+      },
+      "native_percent": {
+        "1": 37.5,
+        "6": 23.4375,
+        "5": 39.0625
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 37.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 50,
+      "fill_xyxy": [
+        184,
+        476,
+        248,
+        508
+      ],
+      "native_counts": {
+        "1": 768,
+        "6": 640,
+        "5": 640
+      },
+      "native_percent": {
+        "1": 37.5,
+        "6": 31.25,
+        "5": 31.25
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 37.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 62.5,
+      "fill_xyxy": [
+        252,
+        476,
+        316,
+        508
+      ],
+      "native_counts": {
+        "1": 768,
+        "6": 800,
+        "5": 480
+      },
+      "native_percent": {
+        "1": 37.5,
+        "6": 39.0625,
+        "5": 23.4375
+      }
+    },
+    {
+      "panel": "B",
+      "white_percent": 37.5,
+      "first_pigment": "green",
+      "first_share_of_chromatic_percent": 75,
+      "fill_xyxy": [
+        320,
+        476,
+        384,
+        508
+      ],
+      "native_counts": {
+        "1": 768,
+        "6": 960,
+        "5": 320
+      },
+      "native_percent": {
+        "1": 37.5,
+        "6": 46.875,
+        "5": 15.625
+      }
+    }
+  ]
+}

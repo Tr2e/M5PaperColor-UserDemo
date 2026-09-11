@@ -1,0 +1,789 @@
+{
+  "baseline": "saved primary-peak-chart-candidate policy",
+  "candidate": "same target policy plus exact chromatic pigment anchor",
+  "source_sha256": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+  "warning": "Native output counts, not measured physical RGB or Delta-E.",
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "bb47e3517f58e05098c826468b5c7fc0f1f9ba97131e31d18bdf7737dbd04f23",
+    "main/display/papercolor_gamut.h": "19da0d8a62bab40a927646119289aace7e9c930cc828ca53be474d8d07bb1882",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4"
+  },
+  "patches": [
+    {
+      "id": 1,
+      "name": "N.BLACK",
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "fill_pixels": 4400,
+      "changed_pixels": 0,
+      "before": {
+        "black": 4400,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 4400,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "N.WHITE",
+      "source_rgb": [
+        255,
+        255,
+        255
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 4128,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 4128,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 3,
+      "name": "N.YELLOW",
+      "source_rgb": [
+        255,
+        243,
+        56
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 9,
+        "yellow": 4119,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 9,
+        "yellow": 4119,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "N.RED",
+      "source_rgb": [
+        191,
+        0,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 41,
+      "before": {
+        "black": 31,
+        "white": 0,
+        "yellow": 0,
+        "red": 4097,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 30,
+        "white": 0,
+        "yellow": 0,
+        "red": 4098,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 5,
+      "name": "N.BLUE",
+      "source_rgb": [
+        100,
+        64,
+        255
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4128,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4128,
+        "green": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "N.GREEN",
+      "source_rgb": [
+        67,
+        138,
+        28
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 17,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4111
+      },
+      "after": {
+        "black": 17,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4111
+      }
+    },
+    {
+      "id": 7,
+      "name": "RED",
+      "source_rgb": [
+        255,
+        0,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 4128,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 4128,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 8,
+      "name": "GREEN",
+      "source_rgb": [
+        0,
+        255,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4128
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 4128
+      }
+    },
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 145,
+        "white": 229,
+        "yellow": 0,
+        "red": 1608,
+        "blue": 2146,
+        "green": 0
+      },
+      "after": {
+        "black": 145,
+        "white": 229,
+        "yellow": 0,
+        "red": 1608,
+        "blue": 2146,
+        "green": 0
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 4,
+        "yellow": 0,
+        "red": 0,
+        "blue": 3030,
+        "green": 1094
+      },
+      "after": {
+        "black": 0,
+        "white": 4,
+        "yellow": 0,
+        "red": 0,
+        "blue": 3030,
+        "green": 1094
+      }
+    },
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 459,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 2471,
+        "red": 0,
+        "blue": 0,
+        "green": 1657
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 2470,
+        "red": 0,
+        "blue": 0,
+        "green": 1658
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 1655,
+      "before": {
+        "black": 0,
+        "white": 163,
+        "yellow": 0,
+        "red": 0,
+        "blue": 871,
+        "green": 3094
+      },
+      "after": {
+        "black": 0,
+        "white": 165,
+        "yellow": 0,
+        "red": 0,
+        "blue": 871,
+        "green": 3092
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 3396,
+        "red": 732,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 3396,
+        "red": 732,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 243,
+        "yellow": 1482,
+        "red": 2403,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 243,
+        "yellow": 1482,
+        "red": 2403,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 9,
+      "before": {
+        "black": 0,
+        "white": 0,
+        "yellow": 778,
+        "red": 3350,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 779,
+        "red": 3349,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 2344,
+      "before": {
+        "black": 0,
+        "white": 772,
+        "yellow": 0,
+        "red": 940,
+        "blue": 2416,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 771,
+        "yellow": 0,
+        "red": 939,
+        "blue": 2418,
+        "green": 0
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 0,
+        "white": 710,
+        "yellow": 0,
+        "red": 1260,
+        "blue": 2158,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 710,
+        "yellow": 0,
+        "red": 1260,
+        "blue": 2158,
+        "green": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 1185,
+        "white": 177,
+        "yellow": 0,
+        "red": 1193,
+        "blue": 1573,
+        "green": 0
+      },
+      "after": {
+        "black": 1185,
+        "white": 177,
+        "yellow": 0,
+        "red": 1193,
+        "blue": 1573,
+        "green": 0
+      }
+    },
+    {
+      "id": 19,
+      "name": "BLUE",
+      "source_rgb": [
+        0,
+        0,
+        255
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 12,
+      "before": {
+        "black": 0,
+        "white": 12,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4116,
+        "green": 0
+      },
+      "after": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 4128,
+        "green": 0
+      },
+      "before_foreign_dot_coordinates": [
+        [
+          205,
+          362
+        ],
+        [
+          205,
+          366
+        ],
+        [
+          205,
+          370
+        ],
+        [
+          205,
+          375
+        ],
+        [
+          205,
+          380
+        ],
+        [
+          205,
+          384
+        ],
+        [
+          205,
+          388
+        ],
+        [
+          205,
+          392
+        ],
+        [
+          205,
+          395
+        ],
+        [
+          205,
+          398
+        ],
+        [
+          205,
+          401
+        ],
+        [
+          205,
+          404
+        ]
+      ]
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 2761,
+      "before": {
+        "black": 0,
+        "white": 1273,
+        "yellow": 0,
+        "red": 0,
+        "blue": 1811,
+        "green": 1044
+      },
+      "after": {
+        "black": 0,
+        "white": 1274,
+        "yellow": 0,
+        "red": 0,
+        "blue": 1819,
+        "green": 1035
+      }
+    },
+    {
+      "id": 21,
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 3609,
+        "white": 519,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 3609,
+        "white": 519,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 22,
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 2531,
+        "white": 1597,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 2531,
+        "white": 1597,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 23,
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 0,
+      "before": {
+        "black": 1470,
+        "white": 2658,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 1470,
+        "white": 2658,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "fill_pixels": 4128,
+      "changed_pixels": 116,
+      "before": {
+        "black": 401,
+        "white": 3727,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "after": {
+        "black": 403,
+        "white": 3725,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    }
+  ],
+  "controls": {
+    "red": {
+      "identical": true,
+      "sha256": "2ba01486a65e58ac4a4aea4606e7cf1db96e015182ff4c23223c6600f83f8bd8"
+    },
+    "green": {
+      "identical": true,
+      "sha256": "9dd33f3ba84a4cc1007ce9ea793e70f26c02ac69b4f0cc67c03c11cb20e30ebe"
+    },
+    "blue": {
+      "identical": true,
+      "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7"
+    },
+    "native_blue": {
+      "identical": true,
+      "sha256": "6719ff9a0772114cc20aa9adfd6d89c6581753052d607efa319c5cd4afe358e7"
+    },
+    "near_native_red": {
+      "identical": true,
+      "sha256": "c36afec13cc70b130dacb32fd971e04716f9cefb9b9b6158d4108e19e0c648c8"
+    },
+    "near_native_green": {
+      "identical": true,
+      "sha256": "a80158cd1f5b3911e7a90586ae53e05cd59e9587e916053649cbeadbe13d9680"
+    },
+    "near_native_yellow": {
+      "identical": true,
+      "sha256": "6a46c3ebef8d9671fade7669f8b46d89734adcd41a5360ddb0ac421c8b46be1b"
+    },
+    "magenta": {
+      "identical": true,
+      "sha256": "3a23fe4c09532660a14ed5a4ffa5cc3c3bfbd01f6e78483e892ed2fbed870f78"
+    },
+    "cyan": {
+      "identical": true,
+      "sha256": "6d9ef5e59dd218bc2e0e2d1db7b220b01b61f6e4ead5b8a10857e7a91fabee57"
+    },
+    "pale_red": {
+      "identical": true,
+      "sha256": "1ec502df7ef9c8af74d58acfcfbea5aae08fd0a452411d0b82cc01370e99be36"
+    },
+    "gray96": {
+      "identical": true,
+      "sha256": "815371052bbe570b69fd3069a43809ed75151b8d3559ffc9d200f0fa9ec2131e"
+    }
+  },
+  "ramps": {
+    "blue_black": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    },
+    "blue_white": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    },
+    "blue_cyan": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    },
+    "blue_magenta": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    },
+    "red_white": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    },
+    "neutral": {
+      "changed_pixels": 0,
+      "max_coverage_delta": 0
+    }
+  },
+  "frame_sha256": {
+    "before": "a8639c251613efe1ffd027a8fd04664c46e10626f83fe6918d4f466a316e3370",
+    "after": "94264cca9d83012243ee5e70de40b737448fa5db8abf0d6e523f72f32cfc8fe3"
+  },
+  "changed_pixels": 7490
+}

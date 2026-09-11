@@ -25,6 +25,22 @@ inline Point segment(Point p, Point a, Point b) {
     t=t<0 ? 0 : (t>1 ? 1 : t);
     return add(a,mul(v,t));
 }
+// Recognize the interior of a pigment edge before Q4 rounding. This tolerance
+// covers floating-point projection roundoff (under 1/1024 nominal RGB level),
+// not an artistic near-color threshold. Real white/black mixtures stay outside.
+inline bool on_chromatic_segment(Point p, Point a, Point b)
+{
+    const auto v = sub(b,a);
+    const float length = dot(v,v);
+    if (length <= 0) return false;
+    const float t = dot(sub(p,a),v)/length;
+    if (t <= 0 || t >= 1) return false;
+    const auto residual = sub(p,add(a,mul(v,t)));
+    constexpr float tolerance = 1.0f/1024;
+    return residual.x >= -tolerance && residual.x <= tolerance &&
+           residual.y >= -tolerance && residual.y <= tolerance &&
+           residual.z >= -tolerance && residual.z <= tolerance;
+}
 inline Point triangle(Point p, Point a, Point b, Point c) {
     const auto u=sub(b,a), v=sub(c,a), w=sub(p,a);
     const float uu=dot(u,u), uv=dot(u,v), vv=dot(v,v);
@@ -97,5 +113,89 @@ inline Point project_primary_white_budget(Point p, const Point* vertices, size_t
         }
     }
     return project(p, restricted, n);
+}
+
+// Restore a requested full-scale primary peak without adding white or leaving
+// the selected hull. The correction fades quadratically with source dominance,
+// across hue-mask boundaries, and is exactly zero at secondary-hue ties.
+// This is a continuous target policy, not a measured physical color profile.
+inline Point preserve_fullscale_peak(Point original, Point projected, Point pigment, int channel)
+{
+    const float source[] = {original.x, original.y, original.z};
+    const float target[] = {projected.x, projected.y, projected.z};
+    const float native[] = {pigment.x, pigment.y, pigment.z};
+    if (channel < 0 || channel > 2 || native[channel] != 255 ||
+        source[channel] <= 0 || target[channel] >= source[channel]) return projected;
+    float other = source[(channel + 1) % 3];
+    if (source[(channel + 2) % 3] > other) other = source[(channel + 2) % 3];
+    if (other >= source[channel]) return projected;
+    const float dominance = (source[channel] - other) / source[channel];
+    const float reach = (source[channel] - target[channel]) / (255 - target[channel]);
+    const float amount = reach * dominance * dominance;
+    return add(projected, mul(sub(pigment, projected), amount));
+}
+
+// Experimental hue policy for K/W plus red/blue or green/blue. Keep the
+// projected black/white amounts and redistribute only chromatic coverage.
+// Source chroma ratios are a policy, not measured pigment mixing coefficients.
+inline Point balance_blue_secondary(Point original, Point projected,
+                                     Point pigment, Point blue, int channel)
+{
+    if (channel < 0 || channel > 1) return projected;
+    const Point white{255,255,255};
+    const float det = dot(white, cross(pigment, blue));
+    if (det > -0.01f && det < 0.01f) return projected;
+    const float a = dot(white, cross(projected, blue)) / det;
+    const float b = dot(white, cross(pigment, projected)) / det;
+    // The fade vanishes at a single-pigment target, preserving native solids
+    // and avoiding a discontinuity from special-casing exact palette colors.
+    if (a <= 0 || b <= 0) return projected;
+    const float rgb[] = {original.x, original.y, original.z};
+    const float neutral = rgb[1-channel];
+    const float ca = rgb[channel] - neutral;
+    const float cb = rgb[2] - neutral;
+    const float maximum = ca > cb ? ca : cb;
+    const float minimum = ca < cb ? ca : cb;
+    // Match the existing 12-level pigment-sector and 24-level low-chroma
+    // boundaries, with zero slope at both ends of each transition.
+    if (minimum <= 12 || maximum <= 24) return projected;
+    const float hue = (minimum - 12) / (maximum - 12);
+    const float chroma = (maximum - 24) / (255 - 24);
+    const float total = a + b;
+    const float blend = hue*hue*(3-2*hue) * chroma*chroma*(3-2*chroma) *
+                        (4*a*b/(total*total));
+    const float desired = total * ca / (ca + cb);
+    const float change = (desired - a) * blend;
+    return add(projected, mul(sub(pigment, blue), change));
+}
+// Separate white-axis experiment after hue balancing. Redistribute up to a
+// quarter of existing white into the same chromatic mixture, preserving black
+// and the red/blue or green/blue ratio. The strength is an A/B policy choice,
+// not a fitted physical coefficient. Fade at neutral and pigment boundaries.
+inline Point reduce_secondary_white(Point original, Point projected,
+                                     Point pigment, Point blue, int channel)
+{
+    if (channel < 0 || channel > 1) return projected;
+    const Point white{255,255,255};
+    const float det = dot(white,cross(pigment,blue));
+    if (det > -0.01f && det < 0.01f) return projected;
+    const float w = dot(projected,cross(pigment,blue))/det;
+    const float a = dot(white,cross(projected,blue))/det;
+    const float b = dot(white,cross(pigment,projected))/det;
+    if (w <= 0 || a <= 0 || b <= 0) return projected;
+    const float rgb[] = {original.x,original.y,original.z};
+    const float neutral = rgb[1-channel];
+    const float ca = rgb[channel]-neutral, cb = rgb[2]-neutral;
+    const float maximum = ca > cb ? ca : cb;
+    const float minimum = ca < cb ? ca : cb;
+    if (minimum <= 12 || maximum <= 24) return projected;
+    const float hue = (minimum-12)/(maximum-12);
+    const float chroma = (maximum-24)/(255-24);
+    const float total = a+b;
+    const float fade = hue*hue*(3-2*hue) * chroma*chroma*(3-2*chroma) *
+                       (4*a*b/(total*total));
+    const float removed = w * 0.25f * fade;
+    const Point mixture = mul(add(mul(pigment,a),mul(blue,b)),1/total);
+    return add(projected,mul(sub(mixture,white),removed));
 }
 } // namespace papercolor_gamut
