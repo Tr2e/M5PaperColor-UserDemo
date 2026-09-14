@@ -38,9 +38,19 @@ struct FrameState {
 FrameState g_frame;
 std::atomic_bool g_busy{false};
 
-void cooperate(void*)
+struct YieldState {
+    int64_t last_yield_us;
+};
+
+void cooperate(void* context)
 {
-    vTaskDelay(pdMS_TO_TICKS(1));
+    auto& state = *static_cast<YieldState*>(context);
+    constexpr int64_t kComputeSliceUs = 20000;
+    if (esp_timer_get_time() - state.last_yield_us < kComputeSliceUs) return;
+    // One tick really blocks at both 100Hz and 1000Hz. A zero-tick yield would
+    // leave this task ready and could starve the lower-priority Idle task.
+    vTaskDelay(1);
+    state.last_yield_us = esp_timer_get_time();
 }
 
 bool canvas_layout(int* width, int* height, uint16_t** pixels, size_t* bytes)
@@ -163,10 +173,12 @@ bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
             return finish(false);
         }
         std::memcpy(snapshot, canvas_pixels, frame_bytes);
+        const uint64_t started_us = static_cast<uint64_t>(esp_timer_get_time());
+        YieldState yield_state{static_cast<int64_t>(started_us)};
         PaperColorOilOptions options{};
         options.cooperate = cooperate;
+        options.cooperate_context = &yield_state;
         PaperColorOilStats stats{};
-        const uint64_t started_us = static_cast<uint64_t>(esp_timer_get_time());
         const bool rendered = papercolor_oil_render_swap565(
             snapshot, canvas_pixels, backing_w, backing_h, backing_w,
             g_frame.rect, options, workspace, workspace_bytes, &stats);

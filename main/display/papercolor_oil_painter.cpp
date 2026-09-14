@@ -221,6 +221,7 @@ bool papercolor_oil_render_swap565(const uint16_t* source, uint16_t* destination
             directions[static_cast<size_t>(y) * size.width + x] =
                 static_cast<uint8_t>(direction | (strength << 2));
         }
+        if (options.cooperate && (y & 15) == 0) options.cooperate(options.cooperate_context);
     }
 
     // No failure path after this point. Preserve padding and all pixels outside

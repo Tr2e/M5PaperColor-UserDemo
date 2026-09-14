@@ -77,5 +77,25 @@ int main()
     papercolor_photo_effect_invalidate();
     assert(oil_test::live_allocations == 0 && !oil_test::refreshing);
     assert(!papercolor_photo_effect_is_busy());
+
+    // Fast computation must not sleep on every row. Slow computation must
+    // actually block even with the production 100Hz scheduler tick.
+    assert(oil_test::delays.empty());
+    register_photo(canvas);
+    oil_test::timer_step_us = 25000;
+    assert(papercolor_photo_effect_toggle(papercolor_photo_effect_capture_target()));
+    const size_t slow_delays = oil_test::delays.size();
+    assert(slow_delays > 0);
+    for (const auto ticks : oil_test::delays) assert(ticks == 1);
+    papercolor_photo_effect_invalidate();
+    register_photo(canvas);
+    oil_test::delays.clear();
+    oil_test::timer_step_us = 1000;
+    assert(papercolor_photo_effect_toggle(papercolor_photo_effect_capture_target()));
+    assert(!oil_test::delays.empty() && oil_test::delays.size() < slow_delays);
+    for (const auto ticks : oil_test::delays) assert(ticks == 1);
+    papercolor_photo_effect_invalidate();
+    assert(oil_test::live_allocations == 0);
     std::puts("photo effect controller: stale click, invalidation, restore, allocation failures, busy: pass");
+    std::printf("cooperative scheduling: rate-limited, nonzero delay at %uHz: pass\n", configTICK_RATE_HZ);
 }
