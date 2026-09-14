@@ -1,0 +1,11 @@
+[
+  {"id":"L1", "category":"landscape", "label":"湖山倒影 / 高细节、冷暖对比", "photo_id":417074, "author":"James Wheeler", "source":"https://www.pexels.com/photo/lake-and-mountain-417074/"},
+  {"id":"L2", "category":"landscape", "label":"沙漠夕照 / 大色面、柔和渐变", "photo_id":19316865, "author":"Henrik Le-Botos", "source":"https://www.pexels.com/photo/view-of-dunes-in-the-desert-at-sunset-19316865/"},
+  {"id":"L3", "category":"landscape", "label":"雾林 / 低对比、密集枝叶", "photo_id":29508251, "author":"Laura Chouette", "source":"https://www.pexels.com/photo/misty-forest-landscape-with-evergreen-trees-29508251/"},
+  {"id":"P1", "category":"portrait", "label":"彩色棚拍 / 近景五官、肤色", "photo_id":6643922, "author":"Harry H Brewster", "source":"https://www.pexels.com/photo/a-studio-portrait-of-a-smiling-woman-6643922/"},
+  {"id":"P2", "category":"portrait", "label":"黑白人像 / 明暗结构、面部纹理", "photo_id":14173111, "author":"MAG Photography", "source":"https://www.pexels.com/photo/portrait-of-elderly-man-in-black-and-white-14173111/"},
+  {"id":"P3", "category":"portrait", "label":"户外逆光 / 小脸部、发丝高光", "photo_id":7244127, "author":"Gilles Scherrer", "source":"https://www.pexels.com/photo/backlit-portrait-of-beautiful-young-woman-7244127/"},
+  {"id":"S1", "category":"still_life", "label":"水果玻璃碗 / 高饱和、圆形体积", "photo_id":15683363, "author":"Anna Astakhova", "source":"https://www.pexels.com/photo/fruits-in-glass-bowl-15683363/"},
+  {"id":"S2", "category":"still_life", "label":"玻璃红果 / 暗背景、透明材质", "photo_id":35769733, "author":"Valentin Ivantsov", "source":"https://www.pexels.com/photo/elegant-glass-vase-with-red-berries-still-life-35769733/"},
+  {"id":"S3", "category":"still_life", "label":"花卉茶具 / 柔光、细花纹与多物体", "photo_id":10170980, "author":"Мария", "source":"https://www.pexels.com/photo/porcelain-cup-and-a-bouquet-of-flowers-10170980/"}
+]

@@ -1,0 +1,325 @@
+{
+  "prototype_sha256": "a937ab472ce5dbc6ef2a66e6aa4fd14d3160a775c626a84d5f2973f2e51bb009",
+  "color_helpers_sha256": "2a4cfc244c8622aa76e893ff68158f9cf58204dff42f8d62c33111a6c8512119",
+  "harness_sha256": "93d067b00acb57af4a87bd2a92b0cda6437c1315fc96bb4502589ce800c6cc31",
+  "manifest_sha256": "e9897c2d379802868ca709d831f3f591e3c02db96ae396fbc44601528918be86",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-sanitize-recover=all",
+    "-fno-omit-frame-pointer",
+    "-I",
+    "/Users/xudanyang/Documents/papercolor/main",
+    "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+    "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_stacked_ppm.cpp",
+    "-o",
+    "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-nine-whmnwg4_/render"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "viewer_size": [
+    600,
+    400
+  ],
+  "normalization": "EXIF transpose; contain, no crop; RGB565; paint content only",
+  "disabled_features": [],
+  "baseline": "artifacts/oil_paint_validation",
+  "baseline_results_sha256": "a4e0d1a7a84e8339be61fca86b97666667ed0a07ee6282d498fb3e97d7e4f20c",
+  "radii": "See per-sample actual_radii",
+  "seed": "0x5041494e",
+  "stage": "Host visual prototype, not firmware or Spectra 6",
+  "samples": [
+    {
+      "id": "L1",
+      "category": "landscape",
+      "label": "湖山倒影 / 高细节、冷暖对比",
+      "photo_id": 417074,
+      "author": "James Wheeler",
+      "source": "https://www.pexels.com/photo/lake-and-mountain-417074/",
+      "content_size": [
+        594,
+        400
+      ],
+      "source_sha256": "a4891184d3f38132fb08dcb545ceb7f3ff6406714744bde7837e8a301fb3d8a6",
+      "output_sha256": "69a57351e27aba20522bba97b92d3e7bb58cf2182bc2ed41d4fe77d9bb44147b",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=26 strokes=223 candidates=228 budget=228",
+        "layer=1 radius=15 strokes=587 candidates=726 budget=726",
+        "layer=2 radius=9 strokes=804 candidates=1944 budget=1944",
+        "layer=3 radius=4 strokes=1658 candidates=9520 budget=2795",
+        "layer=4 radius=2 strokes=2160 candidates=59400 budget=2160"
+      ],
+      "strokes": 5432,
+      "actual_radii": [
+        26,
+        15,
+        9,
+        4,
+        2
+      ],
+      "download_url": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "L2",
+      "category": "landscape",
+      "label": "沙漠夕照 / 大色面、柔和渐变",
+      "photo_id": 19316865,
+      "author": "Henrik Le-Botos",
+      "source": "https://www.pexels.com/photo/view-of-dunes-in-the-desert-at-sunset-19316865/",
+      "content_size": [
+        310,
+        400
+      ],
+      "source_sha256": "10122fb54e073b6ec75e2452dbab0cdb21c5e5b9b4f85f32d7bf5d46d856e10c",
+      "output_sha256": "36d6ea5a0ab107c7ad54e08483c0585c5e3ad8dde61e1a42900ef2290634aa1a",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=20 strokes=135 candidates=192 budget=192",
+        "layer=1 radius=12 strokes=243 candidates=567 budget=567",
+        "layer=2 radius=7 strokes=279 candidates=1950 budget=1950",
+        "layer=3 radius=3 strokes=674 candidates=13699 budget=1458",
+        "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+      ],
+      "strokes": 2458,
+      "actual_radii": [
+        20,
+        12,
+        7,
+        3,
+        2
+      ],
+      "download_url": "https://images.pexels.com/photos/19316865/pexels-photo-19316865.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "L3",
+      "category": "landscape",
+      "label": "雾林 / 低对比、密集枝叶",
+      "photo_id": 29508251,
+      "author": "Laura Chouette",
+      "source": "https://www.pexels.com/photo/misty-forest-landscape-with-evergreen-trees-29508251/",
+      "content_size": [
+        267,
+        400
+      ],
+      "source_sha256": "937d0d223c13c5392a96b78cc9af3b96fb87b495f5469f4741e99929d340b818",
+      "output_sha256": "316158962582c2968ef2d4b745c5af403639ae5b021f0807a07208d0e07b23e0",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=17 strokes=176 candidates=247 budget=247",
+        "layer=1 radius=10 strokes=301 candidates=726 budget=726",
+        "layer=2 radius=6 strokes=328 candidates=2166 budget=2166",
+        "layer=3 radius=3 strokes=852 candidates=11837 budget=1256",
+        "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+      ],
+      "strokes": 2627,
+      "actual_radii": [
+        17,
+        10,
+        6,
+        3,
+        1
+      ],
+      "download_url": "https://images.pexels.com/photos/29508251/pexels-photo-29508251.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "P1",
+      "category": "portrait",
+      "label": "彩色棚拍 / 近景五官、肤色",
+      "photo_id": 6643922,
+      "author": "Harry H Brewster",
+      "source": "https://www.pexels.com/photo/a-studio-portrait-of-a-smiling-woman-6643922/",
+      "content_size": [
+        310,
+        400
+      ],
+      "source_sha256": "8d74c281b11973687fdbc793f7e7bf9e203026635f997b498527106bf17ef6cb",
+      "output_sha256": "28ed93e4615fb41b8d7f0c3355454f6f82710eba804cab81c766a3c08b0aa85c",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=20 strokes=145 candidates=192 budget=192",
+        "layer=1 radius=12 strokes=332 candidates=567 budget=567",
+        "layer=2 radius=7 strokes=637 candidates=1950 budget=1950",
+        "layer=3 radius=3 strokes=1458 candidates=13699 budget=1458",
+        "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+      ],
+      "strokes": 3699,
+      "actual_radii": [
+        20,
+        12,
+        7,
+        3,
+        2
+      ],
+      "download_url": "https://images.pexels.com/photos/6643922/pexels-photo-6643922.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "P2",
+      "category": "portrait",
+      "label": "黑白人像 / 明暗结构、面部纹理",
+      "photo_id": 14173111,
+      "author": "MAG Photography",
+      "source": "https://www.pexels.com/photo/portrait-of-elderly-man-in-black-and-white-14173111/",
+      "content_size": [
+        267,
+        400
+      ],
+      "source_sha256": "35d80b515c950958651085dfc7da6e24d2fab365e847c054ea0a41d6d9046ec6",
+      "output_sha256": "b0b3d1204a26ecc061b60e15662b812b0475bbd70a8fe76e38b35ad28730db5c",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=17 strokes=74 candidates=247 budget=247",
+        "layer=1 radius=10 strokes=98 candidates=726 budget=726",
+        "layer=2 radius=6 strokes=124 candidates=2166 budget=2166",
+        "layer=3 radius=3 strokes=267 candidates=11837 budget=1256",
+        "layer=4 radius=1 strokes=924 candidates=26600 budget=970"
+      ],
+      "strokes": 1487,
+      "actual_radii": [
+        17,
+        10,
+        6,
+        3,
+        1
+      ],
+      "download_url": "https://images.pexels.com/photos/14173111/pexels-photo-14173111.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "P3",
+      "category": "portrait",
+      "label": "户外逆光 / 小脸部、发丝高光",
+      "photo_id": 7244127,
+      "author": "Gilles Scherrer",
+      "source": "https://www.pexels.com/photo/backlit-portrait-of-beautiful-young-woman-7244127/",
+      "content_size": [
+        600,
+        383
+      ],
+      "source_sha256": "f77cd486fa5ee764cb88375b856716a5a124d195077e5e59d4ae6f3347690e7a",
+      "output_sha256": "8842bee7298245abb56bffd32a2cda32e68de1679debb873c6573db4f3527f7d",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=25 strokes=167 candidates=228 budget=228",
+        "layer=1 radius=14 strokes=437 candidates=805 budget=805",
+        "layer=2 radius=9 strokes=488 candidates=1925 budget=1925",
+        "layer=3 radius=4 strokes=1195 candidates=9240 budget=2703",
+        "layer=4 radius=2 strokes=2089 candidates=57300 budget=2089"
+      ],
+      "strokes": 4376,
+      "actual_radii": [
+        25,
+        14,
+        9,
+        4,
+        2
+      ],
+      "download_url": "https://images.pexels.com/photos/7244127/pexels-photo-7244127.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "S1",
+      "category": "still_life",
+      "label": "水果玻璃碗 / 高饱和、圆形体积",
+      "photo_id": 15683363,
+      "author": "Anna Astakhova",
+      "source": "https://www.pexels.com/photo/fruits-in-glass-bowl-15683363/",
+      "content_size": [
+        267,
+        400
+      ],
+      "source_sha256": "f90d254adbe37e6aafa7f7964137d99d5e5a1c43a034b3f311edc22efc411247",
+      "output_sha256": "a3a6d885d8e62f005dae7206cd40390689a76a9c911caa9c69d04a29d48b39b2",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=17 strokes=211 candidates=247 budget=247",
+        "layer=1 radius=10 strokes=406 candidates=726 budget=726",
+        "layer=2 radius=6 strokes=447 candidates=2166 budget=2166",
+        "layer=3 radius=3 strokes=716 candidates=11837 budget=1256",
+        "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+      ],
+      "strokes": 2750,
+      "actual_radii": [
+        17,
+        10,
+        6,
+        3,
+        1
+      ],
+      "download_url": "https://images.pexels.com/photos/15683363/pexels-photo-15683363.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "S2",
+      "category": "still_life",
+      "label": "玻璃红果 / 暗背景、透明材质",
+      "photo_id": 35769733,
+      "author": "Valentin Ivantsov",
+      "source": "https://www.pexels.com/photo/elegant-glass-vase-with-red-berries-still-life-35769733/",
+      "content_size": [
+        267,
+        400
+      ],
+      "source_sha256": "e3d4b24f1c479c260c7fa6e7073162788629c5ad13cc8fe9271f3f282f759098",
+      "output_sha256": "f8834213a87ef49bbdbda37150c20937253cf353e6ceaa773606798bff55a609",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=17 strokes=160 candidates=247 budget=247",
+        "layer=1 radius=10 strokes=273 candidates=726 budget=726",
+        "layer=2 radius=6 strokes=450 candidates=2166 budget=2166",
+        "layer=3 radius=3 strokes=1235 candidates=11837 budget=1256",
+        "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+      ],
+      "strokes": 3088,
+      "actual_radii": [
+        17,
+        10,
+        6,
+        3,
+        1
+      ],
+      "download_url": "https://images.pexels.com/photos/35769733/pexels-photo-35769733.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    },
+    {
+      "id": "S3",
+      "category": "still_life",
+      "label": "花卉茶具 / 柔光、细花纹与多物体",
+      "photo_id": 10170980,
+      "author": "Мария",
+      "source": "https://www.pexels.com/photo/porcelain-cup-and-a-bouquet-of-flowers-10170980/",
+      "content_size": [
+        267,
+        400
+      ],
+      "source_sha256": "6fae3a36cdfbbf4152c93b36a11a5f4c31aded61443bb0441d3083421255af65",
+      "output_sha256": "4b1d535ce6c873850bc4d7a7260f15316619552b79a9bf50a37fc6fe3f60ef63",
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 radius=17 strokes=157 candidates=247 budget=247",
+        "layer=1 radius=10 strokes=367 candidates=726 budget=726",
+        "layer=2 radius=6 strokes=574 candidates=2166 budget=2166",
+        "layer=3 radius=3 strokes=1089 candidates=11837 budget=1256",
+        "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+      ],
+      "strokes": 3157,
+      "actual_radii": [
+        17,
+        10,
+        6,
+        3,
+        1
+      ],
+      "download_url": "https://images.pexels.com/photos/10170980/pexels-photo-10170980.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    }
+  ]
+}

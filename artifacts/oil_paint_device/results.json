@@ -1,0 +1,151 @@
+{
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-sanitize-recover=all",
+    "-I",
+    "/Users/xudanyang/Documents/papercolor/main",
+    "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+    "/Users/xudanyang/Documents/papercolor/main/display/papercolor_stacked_painter.cpp",
+    "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_device_ppm.cpp",
+    "-o",
+    "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-device-mrdzekt9/render"
+  ],
+  "device_source_sha256": "5fa6ea9bbf73bc5ac793731e7146f035a3310bacd45591f0df8da573261ae5d9",
+  "golden_results_sha256": "d7c87069f2590d1eb9704f9c5adc002beb30f89d00f99446e3540bb6f847f5ef",
+  "samples": [
+    {
+      "id": "L1",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=223",
+        "layer=1 strokes=587",
+        "layer=2 strokes=804",
+        "layer=3 strokes=1658",
+        "layer=4 strokes=2160",
+        "workspace_bytes=3147480"
+      ]
+    },
+    {
+      "id": "L2",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=135",
+        "layer=1 strokes=243",
+        "layer=2 strokes=279",
+        "layer=3 strokes=674",
+        "layer=4 strokes=1127",
+        "workspace_bytes=1644840"
+      ]
+    },
+    {
+      "id": "L3",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=176",
+        "layer=1 strokes=301",
+        "layer=2 strokes=328",
+        "layer=3 strokes=852",
+        "layer=4 strokes=970",
+        "workspace_bytes=1414484"
+      ]
+    },
+    {
+      "id": "P1",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=145",
+        "layer=1 strokes=332",
+        "layer=2 strokes=637",
+        "layer=3 strokes=1458",
+        "layer=4 strokes=1127",
+        "workspace_bytes=1644840"
+      ]
+    },
+    {
+      "id": "P2",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=74",
+        "layer=1 strokes=98",
+        "layer=2 strokes=124",
+        "layer=3 strokes=267",
+        "layer=4 strokes=924",
+        "workspace_bytes=1414484"
+      ]
+    },
+    {
+      "id": "P3",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=167",
+        "layer=1 strokes=437",
+        "layer=2 strokes=488",
+        "layer=3 strokes=1195",
+        "layer=4 strokes=2089",
+        "workspace_bytes=3039248"
+      ]
+    },
+    {
+      "id": "S1",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=211",
+        "layer=1 strokes=406",
+        "layer=2 strokes=447",
+        "layer=3 strokes=716",
+        "layer=4 strokes=970",
+        "workspace_bytes=1414484"
+      ]
+    },
+    {
+      "id": "S2",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=160",
+        "layer=1 strokes=273",
+        "layer=2 strokes=450",
+        "layer=3 strokes=1235",
+        "layer=4 strokes=970",
+        "workspace_bytes=1414484"
+      ]
+    },
+    {
+      "id": "S3",
+      "exact_match": true,
+      "deterministic": true,
+      "sanitizer_runs": 2,
+      "stats": [
+        "layer=0 strokes=157",
+        "layer=1 strokes=367",
+        "layer=2 strokes=574",
+        "layer=3 strokes=1089",
+        "layer=4 strokes=970",
+        "workspace_bytes=1414484"
+      ]
+    }
+  ],
+  "scope": "Host execution of firmware core; not physical device verification"
+}

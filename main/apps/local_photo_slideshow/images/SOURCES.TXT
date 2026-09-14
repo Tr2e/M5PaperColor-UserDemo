@@ -1,0 +1,30 @@
+PaperColor oil-paint validation photographs
+=========================================
+These nine JPEGs are third-party photographs, NOT covered by the project's
+MIT source-code license. Use is subject to the Pexels License:
+https://www.pexels.com/license/
+People shown do not endorse this project. Retrieved 2026-09-14.
+Files are the 1200px CDN copies used by the nine-photo algorithm validation.
+No AI generation, retouching or per-photo effect tuning was applied to them.
+
+L1 417074.jpg - James Wheeler
+https://www.pexels.com/photo/lake-and-mountain-417074/
+L2 19316865.jpg - Henrik Le-Botos
+https://www.pexels.com/photo/view-of-dunes-in-the-desert-at-sunset-19316865/
+L3 29508251.jpg - Laura Chouette
+https://www.pexels.com/photo/misty-forest-landscape-with-evergreen-trees-29508251/
+P1 6643922.jpg - Harry H Brewster
+https://www.pexels.com/photo/a-studio-portrait-of-a-smiling-woman-6643922/
+P2 14173111.jpg - MAG Photography
+https://www.pexels.com/photo/portrait-of-elderly-man-in-black-and-white-14173111/
+P3 7244127.jpg - Gilles Scherrer
+https://www.pexels.com/photo/backlit-portrait-of-beautiful-young-woman-7244127/
+S1 15683363.jpg - Anna Astakhova
+https://www.pexels.com/photo/fruits-in-glass-bowl-15683363/
+S2 35769733.jpg - Valentin Ivantsov
+https://www.pexels.com/photo/elegant-glass-vase-with-red-berries-still-life-35769733/
+S3 10170980.jpg - Мария
+https://www.pexels.com/photo/porcelain-cup-and-a-bouquet-of-flowers-10170980/
+
+Original built-in imaged001.png through imaged004.png are retained unchanged.
+See doc/papercolor_stacked_brush_firmware.md for implementation and flashing.

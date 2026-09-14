@@ -2,6 +2,8 @@
 
 日期：2026-09-14
 
+后续接入更新：已验收的堆叠笔触现通过 `PAPERCOLOR_OIL_PAINT_STACKED` 接入控制器，并随固件打包九张测试照片。算法移植、资源上界、验证证据与到机烧录步骤见 [papercolor_stacked_brush_firmware.md](papercolor_stacked_brush_firmware.md)。下文旧核心规格保留为阶段记录；开关默认仍不改变 OS，实机验收仍未完成。
+
 功能分支：`codex/local-oil-paint`
 
 基线：`feat/papercolor-os` 的 `e4fd821`

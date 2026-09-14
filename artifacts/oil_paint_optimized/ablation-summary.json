@@ -1,0 +1,42 @@
+{
+  "baseline_replay_matches": 9,
+  "same_source_and_dimensions": true,
+  "variants": [
+    {
+      "variant": "validation",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 8465
+    },
+    {
+      "variant": "optimized",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 29074
+    },
+    {
+      "variant": "baseline_replay",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 8465
+    },
+    {
+      "variant": "ablation_no_detail",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 12341
+    },
+    {
+      "variant": "ablation_no_scale",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 23794
+    },
+    {
+      "variant": "ablation_no_quiet",
+      "photos": 9,
+      "sanitized_runs": 18,
+      "total_strokes": 29080
+    }
+  ]
+}
