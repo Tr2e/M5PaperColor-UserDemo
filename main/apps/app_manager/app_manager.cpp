@@ -25,6 +25,9 @@
 #include "hal/utils/image/image_utils.h"
 #include "hal/storage/hal_storage.h"
 #include "display/display_metrics.h"
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+#include "apps/photo_effects/photo_effect_controller.h"
+#endif
 
 #ifndef APP_ASSETS_USE_EMBEDDED
 #define APP_ASSETS_USE_EMBEDDED 0
@@ -132,6 +135,9 @@ static void push_home_region(int x, int y, int width, int height)
 
 static void show_home_view()
 {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_invalidate();
+#endif
     DisplayMetricsTrace metrics("home_full");
     g_current_view = AppView::HOME;
     M5.Display.setEpdMode(epd_mode_t::epd_quality);
@@ -322,15 +328,24 @@ void app_manager_set_refresh_in_progress(bool in_progress)
 
 bool app_manager_display_local_photo(const char* path)
 {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    if (!papercolor_photo_effect_try_claim_canvas()) return false;
+#endif
     if (!photo_slideshow.isRunning()) {
         photo_slideshow.start();
     }
     if (!photo_slideshow.displayPhotoByPath(path)) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+        papercolor_photo_effect_release_canvas();
+#endif
         return false;
     }
     g_photo_view_source = APP_MODE_LOCAL;
     g_current_view      = AppView::PHOTO;
     app_manager_mark_activity();
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_release_canvas();
+#endif
     return true;
 }
 
@@ -501,13 +516,22 @@ esp_err_t app_manager_disconnect_sta_keep_ap(void)
 // ---- Mode interface (web calls) ----
 esp_err_t app_manager_apply_mode(const char* mode_id)
 {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    if (!papercolor_photo_effect_try_claim_canvas()) return ESP_ERR_INVALID_STATE;
+#endif
     AppMode target = app_mode_from_mode_id(mode_id);
     if (g_current_mode == target) {
         apply_current_mode_setting();
         show_home_view();
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+        papercolor_photo_effect_release_canvas();
+#endif
         return ESP_OK;
     }
     switch_app_mode(target);
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_release_canvas();
+#endif
     return ESP_OK;
 }
 
@@ -558,6 +582,9 @@ static void wifi_qrcode_display_cb(esp_qrcode_handle_t qrcode)
 
 static void show_wifi_config_qrcode(const char* ap_ssid)
 {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_invalidate();
+#endif
     uint8_t prev_rotation = hal.Canvas->getRotation();
     hal.Canvas->setRotation(1);
 
@@ -704,6 +731,15 @@ static void app_task(void* param)
     while (1) {
         hal.update();
 
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+        // The web photo endpoint can still render on its own task. Do not let
+        // the UI task draw or change view while that task owns the Canvas.
+        if (papercolor_photo_effect_is_busy()) {
+            vTaskDelay(pdMS_TO_TICKS(10));
+            continue;
+        }
+#endif
+
         // Preserve this value across the release branch below so releasing a
         // consumed long press cannot also trigger a short-click view action.
         bool long_press_consumed = g_btn_long_pressed;
@@ -768,8 +804,15 @@ static void app_task(void* param)
                     ESP_LOGW(g_tag, "Failed to re-enable AP by long press: %s", esp_err_to_name(err));
                 } else {
                     ESP_LOGI(g_tag, "AP re-enabled by long press");
-                    g_current_view = AppView::CONFIG;
-                    show_wifi_config_qrcode(ap_name);
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                    if (papercolor_photo_effect_try_claim_canvas()) {
+#endif
+                        g_current_view = AppView::CONFIG;
+                        show_wifi_config_qrcode(ap_name);
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                        papercolor_photo_effect_release_canvas();
+                    }
+#endif
                 }
             }
         }
@@ -801,19 +844,58 @@ static void app_task(void* param)
 
             if (g_current_view == AppView::HOME && M5.BtnB.wasPressed()) {
                 audio::play_tone_from_midi(120, 0.08);
-                if (!show_photo_view()) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                const bool claimed = papercolor_photo_effect_try_claim_canvas();
+                const bool displayed = claimed && show_photo_view();
+                if (claimed) papercolor_photo_effect_release_canvas();
+#else
+                const bool displayed = show_photo_view();
+#endif
+                if (!displayed) {
                     hal.statusEventSend(OPERATION_EVENT_FAILED);
                 }
                 vTaskDelay(pdMS_TO_TICKS(10));
                 continue;
             }
 
-            if ((g_current_view == AppView::PHOTO || g_current_view == AppView::CONFIG) && M5.BtnA.wasClicked()) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+            if (g_current_view == AppView::PHOTO && M5.BtnA.wasSingleClicked()) {
                 audio::play_tone_from_midi(121, 0.08);
+                if (!papercolor_photo_effect_toggle()) {
+                    hal.statusEventSend(OPERATION_EVENT_FAILED);
+                }
+                vTaskDelay(pdMS_TO_TICKS(10));
+                continue;
+            }
+
+            if (g_current_view == AppView::PHOTO && M5.BtnA.wasDoubleClicked()) {
+                audio::play_tone_from_midi(121, 0.08);
+                if (!papercolor_photo_effect_try_claim_canvas()) continue;
                 if (g_photo_view_source == APP_MODE_LOCAL && g_current_mode != APP_MODE_LOCAL) {
                     photo_slideshow.stop();
                 }
                 show_home_view();
+                papercolor_photo_effect_release_canvas();
+                vTaskDelay(pdMS_TO_TICKS(10));
+                continue;
+            }
+#endif
+            if ((g_current_view == AppView::CONFIG
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
+                 || g_current_view == AppView::PHOTO
+#endif
+                ) && M5.BtnA.wasClicked()) {
+                audio::play_tone_from_midi(121, 0.08);
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                if (!papercolor_photo_effect_try_claim_canvas()) continue;
+#endif
+                if (g_photo_view_source == APP_MODE_LOCAL && g_current_mode != APP_MODE_LOCAL) {
+                    photo_slideshow.stop();
+                }
+                show_home_view();
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                papercolor_photo_effect_release_canvas();
+#endif
                 vTaskDelay(pdMS_TO_TICKS(10));
                 continue;
             }
@@ -886,16 +968,32 @@ static void app_task(void* param)
 
         if (g_current_view == AppView::HOME &&
             g_home_date_refresh_requested.exchange(false, std::memory_order_acq_rel)) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+            if (papercolor_photo_effect_try_claim_canvas()) {
+                refresh_home_date_now();
+                papercolor_photo_effect_release_canvas();
+            } else {
+                g_home_date_refresh_requested.store(true, std::memory_order_release);
+            }
+#else
             refresh_home_date_now();
+#endif
         }
 
         // ==================== Dual-mode update ====================
         if (g_current_view == AppView::PHOTO) {
-            if (g_photo_view_source == APP_MODE_EZDATA) {
-                ezdata_photo_push.update();
-            } else {
-                photo_slideshow.update();
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+            if (papercolor_photo_effect_try_claim_canvas()) {
+#endif
+                if (g_photo_view_source == APP_MODE_EZDATA) {
+                    ezdata_photo_push.update();
+                } else {
+                    photo_slideshow.update();
+                }
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+                papercolor_photo_effect_release_canvas();
             }
+#endif
         }
 
         vTaskDelay(pdMS_TO_TICKS(10));

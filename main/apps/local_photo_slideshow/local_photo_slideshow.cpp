@@ -21,6 +21,9 @@
 #include "freertos/task.h"
 #include "apps/app_manager/app_manager.h"
 #include "display/display_metrics.h"
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+#include "apps/photo_effects/photo_effect_controller.h"
+#endif
 
 static const char *TAG = "Slideshow";
 
@@ -455,19 +458,25 @@ bool PhotoSlideshow::isWaitingSettle() const
 /* ====================== Button handling ====================== */
 void PhotoSlideshow::handleButtons()
 {  // A 523
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     bool button_a_pressed  = M5.BtnA.wasPressed();
     bool button_a_released = M5.BtnA.wasClicked();
+#endif
     bool button_c_pressed  = M5.BtnC.wasPressed();
     bool button_b_pressed  = M5.BtnB.wasPressed();
     if (button_c_pressed) audio::play_tone_from_midi(119, 0.08);
     if (button_b_pressed) audio::play_tone_from_midi(120, 0.08);
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     if (button_a_pressed) audio::play_tone_from_midi(121, 0.08);
     if (button_a_released && !_last_btn_a) toggleRotation();
+#endif
     if (button_c_pressed && !_last_btn_c) prev();
     if (button_b_pressed && !_last_btn_b) next();
     _last_btn_c = button_c_pressed;
     _last_btn_b = button_b_pressed;
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     _last_btn_a = button_a_released;
+#endif
 }
 
 /* ============== Rescan ============== */
@@ -543,6 +552,9 @@ bool PhotoSlideshow::displayPhoto(uint16_t index)
     int draw_x  = (_scr_w - (int)(image_width * scale)) / 2;
     int draw_y  = (_scr_h - (int)(image_height * scale)) / 2;
 
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_invalidate();
+#endif
     hal.Canvas->fillScreen(TFT_WHITE);
 
     const char *fname = strrchr(path, '/');
@@ -566,6 +578,12 @@ bool PhotoSlideshow::displayPhoto(uint16_t index)
 
     metrics.markRendered();
     if (rendered) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+        papercolor_photo_effect_register(PaperColorPhotoSource::Local,
+                                         draw_x, draw_y,
+                                         static_cast<int>(image_width * scale),
+                                         static_cast<int>(image_height * scale));
+#endif
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
         metrics.markRefreshStarted();

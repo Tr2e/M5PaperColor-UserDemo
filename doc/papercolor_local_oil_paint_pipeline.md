@@ -1,10 +1,10 @@
 # PaperColor 本地油画化显示技术设计
 
-> 2026-09-14 状态：技术方案存档，尚未实现。当前生产图片路径已回到 M5GFX 官方转换；下文依赖实验 LUT/照片抖动器的接口假设需在实施前重新设计。见 `tools/color_lab/OFFICIAL_PIPELINE_ROLLBACK.md`。
+> 2026-09-14 更新：本文件保留最初设计讨论，但其中 `PhotoBalanced`、实验 LUT 和旧接口草案已不适用于当前 OS。功能分支的权威实施说明是 [papercolor_local_oil_paint_implementation.md](papercolor_local_oil_paint_implementation.md)。当前生产显示走 M5GFX 官方 `pushSprite()`，不会重新启用实验校色。
 
 ## 1. 文档状态
 
-- 状态：编码前技术指导文档
+- 状态：历史设计存档；当前实现与验收以本文开头链接的新文档为准
 - 日期：2026-09-11
 - 适用分支：`feat/papercolor-os`
 - 适用设备：M5Stack PaperColor（C151，ESP32-S3，400 x 600 Spectra 6）

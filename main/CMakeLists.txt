@@ -46,6 +46,15 @@ idf_component_register(
 
 target_compile_definitions(${COMPONENT_LIB} PRIVATE APP_ASSETS_USE_EMBEDDED=${APP_ASSETS_USE_EMBEDDED})
 
+if(CONFIG_PAPERCOLOR_OIL_PAINT)
+    target_sources(${COMPONENT_LIB} PRIVATE
+        "apps/photo_effects/photo_effect_controller.cpp"
+        "display/papercolor_oil_painter.cpp")
+    set_source_files_properties(
+        "display/papercolor_oil_painter.cpp"
+        PROPERTIES COMPILE_OPTIONS "-O2")
+endif()
+
 target_add_binary_data(${COMPONENT_LIB} "apps/app_server/index.html" TEXT)
 target_add_binary_data(${COMPONENT_LIB} "assets/PaperColor.png" BINARY)
 target_add_binary_data(${COMPONENT_LIB} "assets/arrowClickToPowerOn.png" BINARY)

@@ -20,6 +20,9 @@
 #include "qrcode.h"
 #include "apps/app_manager/app_manager.h"
 #include "display/display_metrics.h"
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+#include "apps/photo_effects/photo_effect_controller.h"
+#endif
 
 static const char *TAG = "EzdataSlideshow";
 
@@ -722,19 +725,25 @@ void EzdataPhotoPush::requestRefresh(uint16_t new_index)
 
 void EzdataPhotoPush::handleButtons()
 {
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     bool button_a_pressed  = M5.BtnA.wasPressed();
     bool button_a_released = M5.BtnA.wasClicked();
+#endif
     bool button_c_pressed  = M5.BtnC.wasPressed();
     bool button_b_pressed  = M5.BtnB.wasPressed();
     if (button_c_pressed) audio::play_tone_from_midi(119, 0.08);
     if (button_b_pressed) audio::play_tone_from_midi(120, 0.08);
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     if (button_a_pressed) audio::play_tone_from_midi(121, 0.08);
     if (button_a_released && !_last_btn_a) toggleRotation();
+#endif
     if (button_c_pressed && !_last_btn_c) prev();
     if (button_b_pressed && !_last_btn_b) next();
     _last_btn_c = button_c_pressed;
     _last_btn_b = button_b_pressed;
+#if !CONFIG_PAPERCOLOR_OIL_PAINT
     _last_btn_a = button_a_released;
+#endif
 }
 
 bool EzdataPhotoPush::displayPhoto(uint16_t index)
@@ -782,6 +791,9 @@ bool EzdataPhotoPush::displayPhoto(uint16_t index)
 
     ESP_LOGI(TAG, "Image: %dx%d, scale: %.2f, draw: (%d,%d)", image_width, image_height, scale, draw_x, draw_y);
 
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    papercolor_photo_effect_invalidate();
+#endif
     hal.Canvas->fillScreen(TFT_WHITE);
 
     bool rendered = false;
@@ -797,6 +809,12 @@ bool EzdataPhotoPush::displayPhoto(uint16_t index)
 
     metrics.markRendered();
     if (rendered) {
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+        papercolor_photo_effect_register(PaperColorPhotoSource::EzData,
+                                         draw_x, draw_y,
+                                         static_cast<int>(image_width * scale),
+                                         static_cast<int>(image_height * scale));
+#endif
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
         metrics.markRefreshStarted();

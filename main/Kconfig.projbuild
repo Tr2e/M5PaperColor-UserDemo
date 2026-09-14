@@ -1,2 +1,12 @@
-# Experimental color-calibration options were retired from production builds.
-# The pre-rollback configuration is retained on codex/color-calibration-research.
+menu "PaperColor local photo effects"
+
+config PAPERCOLOR_OIL_PAINT
+    bool "Enable offline oil-paint effect in the photo viewer"
+    default n
+    help
+        Apply a deterministic RGB565 brush renderer to the currently displayed
+        photo on the PaperColor itself. The resulting Canvas is submitted through
+        the production M5GFX/ED2208 color conversion. This does not enable the
+        retired experimental LUT or photo ditherer.
+
+endmenu

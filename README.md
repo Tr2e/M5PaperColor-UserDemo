@@ -26,6 +26,15 @@ The lower-left image tile is the entry point to the existing image viewer:
 - Hold **A** for five seconds to open the existing Wi-Fi configuration QR view;
   press **A** again to return home.
 
+The optional, default-off `PAPERCOLOR_OIL_PAINT` build adds an offline oil-paint
+effect to the current viewer image. When enabled, a single **A** click toggles
+the original/oil image and a double **A** click returns home; the five-second
+Wi-Fi hold remains unchanged. The effect modifies the RGB565 Canvas before the
+existing M5GFX Spectra 6 conversion. See
+[`doc/papercolor_local_oil_paint_implementation.md`](doc/papercolor_local_oil_paint_implementation.md)
+for build and verification details. This feature branch has not been checked on
+physical hardware yet.
+
 The non-image dashboard is deliberately black and white, while photos and the
 PaperColor web-panel wordmark keep their native color. SHT40 acquisition and
 CRC validation finish before the home surface is composed and committed in a
