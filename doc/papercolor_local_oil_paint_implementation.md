@@ -104,11 +104,20 @@ python3 tools/oil_paint_lab/render_preview.py \
 开启功能的 ESP-IDF 构建：
 
 ```bash
-./tools/idf.sh -B /private/tmp/papercolor-oil-build \
-  -D 'SDKCONFIG_DEFAULTS=sdkconfig.defaults;tools/oil_paint_lab/oil-paint-sdkconfig.defaults' build
+bash tools/oil_paint_lab/build_firmware.sh on
 ```
 
+关闭功能的回归构建：
+
+```bash
+bash tools/oil_paint_lab/build_firmware.sh off
+```
+
+脚本分别使用 `build/oil-on/sdkconfig` 和 `build/oil-off/sdkconfig`，不读取或改写工作区根目录的 `sdkconfig`；可通过第二个参数指定独立构建目录。配置生成后会验证实际的功能宏，匹配才开始编译。如果所选目录遗留了相反配置，脚本明确报错，须选择新目录或在该目录配置中调整开关。仅设置 `SDKCONFIG_DEFAULTS` 不足以覆盖已存在的关闭配置，因此不要用旧命令作为开启方法。
+
 已完成开启与默认关闭两套 ESP-IDF 构建；关闭配置的编译清单不包含油画核心和控制器。`kodim04.png` 的主机 RGB565 预览已生成并人工查看，但不代表实体六色显示效果。不得在无设备时运行 `flash`。
+
+CR 修复后的复验：控制器与核心 ASan/UBSan 测试通过，调度测试在 100Hz/1000Hz 均通过；通过上述脚本完成开/关两套固件构建，根目录 `sdkconfig` 的 SHA-256 保持一致。另以预置关闭开关的独立目录请求开启版，脚本正确报配置不匹配并在固件编译前退出。
 
 ## 7. 仍待完成的真机验收
 
