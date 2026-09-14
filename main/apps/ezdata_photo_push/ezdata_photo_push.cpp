@@ -110,6 +110,11 @@ static void drawBindingQrcode()
         return;
     }
 
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    // Both the QR callback and its error page replace the current photo.
+    papercolor_photo_effect_invalidate();
+#endif
+
     char qr_url[256];
 
     snprintf(qr_url, sizeof(qr_url), "https://EzData-PaperColor.m5stack.com/%s/login", hal.device_token.c_str());
