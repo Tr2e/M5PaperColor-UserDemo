@@ -112,6 +112,60 @@ config PAPERCOLOR_NATIVE_565_RECONSTRUCTION
         remain unchanged. Source colors sharing a cell are indistinguishable;
         this does not reconstruct arbitrary original RGB888 values.
 
+config PAPERCOLOR_GREEN_PAIR_REFINEMENT
+    bool "Refine green-dominant lime and teal mixtures"
+    depends on PAPERCOLOR_CYAN_RATIO_SMOOTH && PAPERCOLOR_NATIVE_565_RECONSTRUCTION
+    default n
+    help
+        Apply the three IMG_9959 B directions with continuous hue, chroma and
+        pigment-availability fades. Lime transfers at most 1/16 of chromatic
+        coverage from yellow to green. Green-dominant teal transfers at most
+        1/16 from green to blue and converts at most 40% of its white into the
+        corrected chromatic mixture. Preserve black and avoid overlap with the
+        accepted near-cyan correction. Full-chart physical review is required.
+
+config PAPERCOLOR_DEEP_PURPLE_WHITE_REFINEMENT
+    bool "Reduce white in a smooth mid/deep-purple window"
+    depends on PAPERCOLOR_GREEN_PAIR_REFINEMENT && PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH
+    default n
+    help
+        Apply the IMG_9961 patch-09 B direction with continuous hue,
+        saturation and source-lightness fades. Convert at most half of the
+        current white target into the existing red/blue mixture, preserving
+        its ratio and black coverage. Protect darker purple, light purple,
+        magenta and near-neutral colors. Full-chart physical review is required.
+
+config PAPERCOLOR_WARM_RATIO_REFINEMENT
+    bool "Increase red share in saturated orange mixtures"
+    depends on PAPERCOLOR_DEEP_PURPLE_WHITE_REFINEMENT && PAPERCOLOR_WARM_COMPENSATION_BYPASS
+    default n
+    help
+        Apply the IMG_9963 patch-14/15 B direction with continuous hue,
+        saturation and pigment-availability fades. Transfer at most 1/16 of
+        red/yellow chromatic coverage from yellow to red while preserving
+        white, black and total coverage. Protect warm yellow, pure red and
+        near-neutral colors. Full-chart physical review is required.
+
+config PAPERCOLOR_PHOTO_BURKES
+    bool "Use Burkes diffusion for calibrated photos"
+    depends on PAPERCOLOR_WARM_RATIO_REFINEMENT
+    default n
+    help
+        Use the physically reviewed IMG_9967 Burkes kernel for PhotoBalanced
+        rendering and home-page photo regions. Color targets, palette and
+        quantizer remain unchanged. This reduces long diagonal and herringbone
+        structures in neutral and chromatic mixtures while retaining tone.
+
+config PAPERCOLOR_PORTRAIT_WARM_REFINEMENT
+    bool "Reduce yellow-green cast in low-chroma warm photo tones"
+    depends on PAPERCOLOR_PHOTO_BURKES
+    default n
+    help
+        IMG_9970 portrait candidate. In a smooth low-chroma, moderately light
+        warm window, transfer at most 1/16 of red/yellow chromatic coverage
+        from yellow to red. Preserve black, white and total color coverage.
+        Keep disabled until the portrait A/B/C diagnostic is physically reviewed.
+
 config PAPERCOLOR_EXACT_PIGMENT_ANCHOR
     bool "Protect exact pigment targets from incoming diffusion residuals"
     depends on PAPERCOLOR_PRIMARY_WHITE_BUDGET
@@ -214,5 +268,72 @@ config PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT
         reduced green coverage near cyan. Includes source cyan, two ramps,
         magenta/light-purple/blue-cyan controls and native anchors.
         A/B/B/A repeats show lighting variation. Button A returns home.
+
+config PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT
+    bool "Show fixed-axis lime/teal A/B/C diagnostic at startup"
+    depends on PAPERCOLOR_NATIVE_565_RECONSTRUCTION && PAPERCOLOR_CYAN_RATIO_SMOOTH && PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH && PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT
+    default n
+    help
+        Host-pre-rendered A/B/C crops for patch 11 lime pigment ratio,
+        patch 12 teal pigment ratio, and patch 12 white amount. Each row
+        changes one axis while controls remain the current IMG_9958 baseline.
+        This diagnostic does not alter the production photo mapping.
+
+config PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT
+    bool "Show fixed-axis purple white A/B/C diagnostic at startup"
+    depends on PAPERCOLOR_GREEN_PAIR_REFINEMENT && PAPERCOLOR_PURPLE_COMPENSATION_SMOOTH && PAPERCOLOR_WARM_COMPENSATION_BYPASS && PAPERCOLOR_CHROMATIC_EDGE_GUARD
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT && !PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT
+    default n
+    help
+        Host-pre-rendered A/B/C crops for patch 09 deep purple. A keeps the
+        current target, B removes half its white target, and C removes all
+        white while preserving black and the red/blue ratio. Five controls
+        repeat the current candidate byte-for-byte. The normal photo mapping
+        is unchanged.
+
+config PAPERCOLOR_WARM_RATIO_ABC_CHART_ON_BOOT
+    bool "Show fixed-white warm red/yellow ratio A/B/C diagnostic at startup"
+    depends on PAPERCOLOR_DEEP_PURPLE_WHITE_REFINEMENT && PAPERCOLOR_GREEN_PAIR_REFINEMENT
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT && !PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT
+    default n
+    help
+        Host-pre-rendered A/B/C crops for patches 14 and 15. B increases
+        red's share of the chromatic red/yellow mixture by 6.25 percentage
+        points and C decreases it by the same amount, preserving white and
+        total chromatic coverage. Four controls repeat the current baseline.
+
+config PAPERCOLOR_NEUTRAL_DITHER_AB_CHART_ON_BOOT
+    bool "Show Floyd-Steinberg versus Burkes neutral-texture A/B at startup"
+    depends on PAPERCOLOR_WARM_RATIO_REFINEMENT
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT && !PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT && !PAPERCOLOR_WARM_RATIO_ABC_CHART_ON_BOOT
+    default n
+    help
+        Host-pre-rendered A/B/B/A crops comparing the existing PhotoBalanced
+        Floyd-Steinberg and Burkes paths with identical color targets. Includes
+        four neutral patches plus magenta and orange hue guards. Normal photo
+        rendering is unchanged until a physical comparison is accepted.
+
+config PAPERCOLOR_CHROMATIC_DITHER_AB_CHART_ON_BOOT
+    bool "Show Floyd-Steinberg versus Burkes chromatic-texture A/B at startup"
+    depends on PAPERCOLOR_WARM_RATIO_REFINEMENT
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT && !PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT && !PAPERCOLOR_WARM_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_NEUTRAL_DITHER_AB_CHART_ON_BOOT
+    default n
+    help
+        Host-pre-rendered A/B/B/A crops comparing the two existing kernels
+        for the nine chromatic chart patches not covered by the neutral test.
+        This isolates the possible cyan/lime texture regression seen in
+        IMG_9968. Normal photo rendering is unchanged by the diagnostic.
+
+config PAPERCOLOR_PORTRAIT_WARM_ABC_CHART_ON_BOOT
+    bool "Show low-chroma portrait warm-ratio A/B/C at startup"
+    depends on PAPERCOLOR_PHOTO_BURKES
+    depends on !PAPERCOLOR_NATIVE_CHART_ON_BOOT && !PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT && !PAPERCOLOR_REFERENCE_CHART_ON_BOOT && !PAPERCOLOR_MIX_RATIO_CHART_ON_BOOT && !PAPERCOLOR_WHITE_AB_CHART_ON_BOOT && !PAPERCOLOR_WARM_AB_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_SMOOTH_AB_CHART_ON_BOOT && !PAPERCOLOR_SECONDARY_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_CYAN_RATIO_AB_CHART_ON_BOOT && !PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT && !PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT && !PAPERCOLOR_WARM_RATIO_ABC_CHART_ON_BOOT && !PAPERCOLOR_NEUTRAL_DITHER_AB_CHART_ON_BOOT && !PAPERCOLOR_CHROMATIC_DITHER_AB_CHART_ON_BOOT
+    default n
+    help
+        Diagnostic-only Kodak-04 crops. A is the accepted IMG_9970 mapping;
+        B and C transfer at most 1/16 and 1/8 of low-chroma warm red/yellow
+        coverage from yellow to red. Black, white and total chromatic coverage
+        are fixed. Normal photo rendering remains unchanged.
 
 endmenu

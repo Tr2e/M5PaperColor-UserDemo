@@ -15,6 +15,16 @@
 #if defined(CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH) && CONFIG_PAPERCOLOR_CYAN_RATIO_SMOOTH
 #include "display/papercolor_cyan_ratio.h"
 #endif
+#if defined(CONFIG_PAPERCOLOR_GREEN_PAIR_REFINEMENT) && CONFIG_PAPERCOLOR_GREEN_PAIR_REFINEMENT
+#include "display/papercolor_green_pair_refinement.h"
+#include "display/papercolor_deep_purple_refinement.h"
+#endif
+#if defined(CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT) && CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT
+#include "display/papercolor_warm_ratio_refinement.h"
+#endif
+#if defined(CONFIG_PAPERCOLOR_PORTRAIT_WARM_REFINEMENT) && CONFIG_PAPERCOLOR_PORTRAIT_WARM_REFINEMENT
+#include "display/papercolor_portrait_warm_refinement.h"
+#endif
 
 namespace {
 
@@ -284,6 +294,36 @@ inline void reachable_photo_target(papercolor_dither_state_t* state, uint8_t mas
         if (mask == MASK_GREEN_BLUE) {
             p = papercolor_gamut::balance_cyan_ratio(
                 {float(original[0]),float(original[1]),float(original[2])},p);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_GREEN_PAIR_REFINEMENT) && CONFIG_PAPERCOLOR_GREEN_PAIR_REFINEMENT
+        if (mask == MASK_GREEN_YELLOW) {
+            p = papercolor_gamut::refine_lime_ratio(
+                {float(original[0]), float(original[1]), float(original[2])}, p);
+        } else if (mask == MASK_GREEN_BLUE) {
+            const papercolor_gamut::Point source{
+                float(original[0]), float(original[1]), float(original[2])};
+            p = papercolor_gamut::refine_teal_ratio(source, p);
+            p = papercolor_gamut::refine_teal_white(source, p);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_DEEP_PURPLE_WHITE_REFINEMENT) && \
+    CONFIG_PAPERCOLOR_DEEP_PURPLE_WHITE_REFINEMENT
+        if (mask == MASK_RED_BLUE) {
+            p = papercolor_gamut::refine_deep_purple_white(
+                {float(original[0]), float(original[1]), float(original[2])}, p);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT) && CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT
+        if (mask == MASK_RED_YELLOW) {
+            p = papercolor_gamut::refine_warm_red_yellow_ratio(
+                {float(original[0]), float(original[1]), float(original[2])}, p);
+        }
+#endif
+#if defined(CONFIG_PAPERCOLOR_PORTRAIT_WARM_REFINEMENT) && CONFIG_PAPERCOLOR_PORTRAIT_WARM_REFINEMENT
+        if (mask == MASK_RED_YELLOW) {
+            p = papercolor_gamut::refine_portrait_warm_ratio(
+                {float(original[0]), float(original[1]), float(original[2])}, p);
         }
 #endif
         cached.edge_pigment = 0;

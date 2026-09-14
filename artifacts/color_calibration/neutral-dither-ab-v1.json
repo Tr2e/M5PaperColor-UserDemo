@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "warning": "Nominal preview only; physical texture requires panel review.",
+  "columns": [
+    "A_FS",
+    "B_BURKES",
+    "B_BURKES",
+    "A_FS"
+  ],
+  "rows": [
+    {
+      "id": 21,
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "e626cdb87264b62ae9c79a9df1f3a63ab78331137623475c5972e4c3599d0a07",
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "dceaded27aec858bc7b8384143ae13e35cecc7b5f9650d343fa092d0ec360130",
+          "native_counts": {
+            "black": 3615,
+            "white": 513,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "f95cfc82dd80ade29f474741b838f6d0792e8a05b84e31082be8c063121bb230",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "588891e89384bc25d6d301934acf4f3e3a73efd2fdac8b167148a556c40bbb69",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "f7c110e3b2c084494302151f9b937c8d103fb0196eb0ab78c6327975b3234fb2",
+          "native_counts": {
+            "black": 1471,
+            "white": 2657,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "b820606655304a4b838ec0b850b4f9195756df0818e746f94c1088e133562d2e",
+          "native_counts": {
+            "black": 1463,
+            "white": 2665,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "49a32e7037b7e5386fc5d43de83849ebcfa0fca5ac774792afd67b330047429a",
+          "native_counts": {
+            "black": 402,
+            "white": 3726,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "c97d4b0a9fb68ed8f93ef5936d77614e7c24653207158c20a803e18429bdb222",
+          "native_counts": {
+            "black": 397,
+            "white": 3731,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "808cd61a33700da19769af435b9447b0cca6636c102bf8f7fc36a28ee6b8417e",
+          "native_counts": {
+            "black": 0,
+            "white": 579,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1927,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "cf0b4373b5ad3f34f84a0cd4369bba82d6e7514ec54a494c4266289809502b5c",
+          "native_counts": {
+            "black": 0,
+            "white": 577,
+            "yellow": 0,
+            "red": 1620,
+            "blue": 1931,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "7c230a5bbb54a5349e0c7afb5223387d8a1a76468225340839d995171bc6002d",
+          "native_counts": {
+            "black": 0,
+            "white": 469,
+            "yellow": 1154,
+            "red": 2505,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "4c1eef0477f6e21f78fb0e01377e6d09dc023f7440a5ae6a1d7d8b101869702d",
+          "native_counts": {
+            "black": 0,
+            "white": 460,
+            "yellow": 1157,
+            "red": 2511,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    }
+  ],
+  "frame_sha256": {
+    "A_FS": "42407c96d85fd2e70fba200c4485ae4339397a13c02f4ad378c68e22e1231a67",
+    "B_BURKES": "d0f71129301d96d340d84e6f084cf7f4e30d8371cab63e2c4b62108291cb16a4"
+  },
+  "payload_bytes": 26400,
+  "payload_sha256": "bcc7acee5336a48f374b3db40a7ef7f7e5bb73c038a8ca3ef0f6b7806d6767c3",
+  "sampler_codes_sha256": "78609704a31c07b968f8554f38c103603a957332334fc6479de030e56945ae79",
+  "production_color_algorithm_changed": false,
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "4487ed2f7ec0e56ca8f13f759412b6595166a8c943d23f489fcc894c32de5715",
+    "main/display/papercolor_photo_dither.h": "441a549efe777d1680e1c8a97806444b4045483d609b464a5056ede10c64408f",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_cyan_ratio.h": "2cad2d40add02120fafac377aca6af8c0b31ddecafdfb885a8de84b9b23948c8",
+    "main/display/papercolor_green_pair_refinement.h": "a44662391d4532c4820173c4516a585a8cc159883a57cb84ad8808a9f459dbed",
+    "main/display/papercolor_deep_purple_refinement.h": "e5c0f9afeb5dffe7a24c64dff3e8fec1e838490aac5a297b605c289d511e252e",
+    "main/display/papercolor_warm_ratio_refinement.h": "176a3198bcbb7bf5db98ad92591c18a9c627d21541be366a0fc409e25ed2aee9",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "main/display/papercolor_neutral_dither_ab_chart.h": "fc9a89cecfdfa1ac3469b97b71b5dbdba36fbbe7fdb7d5937b4c7ac385c2b0ad",
+    "main/display/papercolor_neutral_dither_ab_chart.cpp": "944bf900dc8215ea037bf2fdfcbf9ff7f6ea6d90a0ce92f4faebd531f0c5d186",
+    "tools/color_lab/probe_frame_mode.cpp": "a40323aae163d60a420e444dc9f58d585b91d01f22e03ff8c433b62ab09089c2",
+    "tools/color_lab/probe_neutral_dither_ab_chart.cpp": "6b2dae5f593842454fec5e16957b4d7cc0cadbfdc0d89f9965ebc2471c5bff34",
+    "tools/color_lab/generate_neutral_dither_ab_chart.py": "01a7bb2f569491d44e77ce7738cb906c50f18dc510f3ff77f5a7260e9bba8609",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "artifacts/color_calibration/papercolor-calibration-v1.png": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+    "artifacts/color_calibration/papercolor-calibration-v1.json": "01679b879aebc3d8fe55fd501c0d0d951af7f27b81f90e7b1506ef9855d84f2d"
+  }
+}

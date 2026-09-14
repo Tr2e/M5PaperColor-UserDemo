@@ -1,0 +1,1020 @@
+{
+  "decision": "select Burkes for PhotoBalanced and home photo regions",
+  "source_photo": "IMG_9967.HEIC",
+  "target_mapping_changed": false,
+  "full_frame": {
+    "pixels": 240000,
+    "changed_pixels": 31928,
+    "changed_percent": 13.303333333333333,
+    "sha256": {
+      "floyd_steinberg": "42407c96d85fd2e70fba200c4485ae4339397a13c02f4ad378c68e22e1231a67",
+      "burkes": "d0f71129301d96d340d84e6f084cf7f4e30d8371cab63e2c4b62108291cb16a4"
+    },
+    "native_counts": {
+      "floyd_steinberg": {
+        "black": 34130,
+        "white": 135893,
+        "yellow": 11410,
+        "red": 20868,
+        "blue": 21878,
+        "green": 15821
+      },
+      "burkes": {
+        "black": 34083,
+        "white": 135853,
+        "yellow": 11422,
+        "red": 20893,
+        "blue": 21918,
+        "green": 15831
+      }
+    }
+  },
+  "maximum_absolute_native_count_delta_in_one_patch": 27,
+  "burkes_neutral_patch_chromatic_codes": 0,
+  "patches": [
+    {
+      "id": 1,
+      "name": "N.BLACK",
+      "source_rgb": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "2e534ef0107d592d1706ac38ad58596b85ef3375d360a6d669f974792df5cb5a",
+          "native_counts": {
+            "black": 4128,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "2e534ef0107d592d1706ac38ad58596b85ef3375d360a6d669f974792df5cb5a",
+          "native_counts": {
+            "black": 4128,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "N.WHITE",
+      "source_rgb": [
+        255,
+        255,
+        255
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "d8f64006d25b5c62062a8258d4b8b229590cf45cf78577e202098ce341c772fe",
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "d8f64006d25b5c62062a8258d4b8b229590cf45cf78577e202098ce341c772fe",
+          "native_counts": {
+            "black": 0,
+            "white": 4128,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 3,
+      "name": "N.YELLOW",
+      "source_rgb": [
+        255,
+        243,
+        56
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "35a3a2ebe9d4eac4c2838ef28e41f6d58e2e58faf9155a587981c9d1939e4f4c",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 4128,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "35a3a2ebe9d4eac4c2838ef28e41f6d58e2e58faf9155a587981c9d1939e4f4c",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 4128,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "N.RED",
+      "source_rgb": [
+        191,
+        0,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "9e1f7449b79e6351e2f5ed2b8e0895e01448714dc0a9ee1dc0e3823d894e0881",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "9e1f7449b79e6351e2f5ed2b8e0895e01448714dc0a9ee1dc0e3823d894e0881",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 5,
+      "name": "N.BLUE",
+      "source_rgb": [
+        100,
+        64,
+        255
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "409422da935199246faf34068e84811798c77319268645d3db9daac1777ed1c4",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "409422da935199246faf34068e84811798c77319268645d3db9daac1777ed1c4",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "N.GREEN",
+      "source_rgb": [
+        67,
+        138,
+        28
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "b3af93bf666c05003d3ea279b447d821dcb134e98afcb73e5d5bb1e3a0d04e04",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        },
+        "burkes": {
+          "sha256": "b3af93bf666c05003d3ea279b447d821dcb134e98afcb73e5d5bb1e3a0d04e04",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "RED",
+      "source_rgb": [
+        255,
+        0,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "9e1f7449b79e6351e2f5ed2b8e0895e01448714dc0a9ee1dc0e3823d894e0881",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "9e1f7449b79e6351e2f5ed2b8e0895e01448714dc0a9ee1dc0e3823d894e0881",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 4128,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 8,
+      "name": "GREEN",
+      "source_rgb": [
+        0,
+        255,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "b3af93bf666c05003d3ea279b447d821dcb134e98afcb73e5d5bb1e3a0d04e04",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        },
+        "burkes": {
+          "sha256": "b3af93bf666c05003d3ea279b447d821dcb134e98afcb73e5d5bb1e3a0d04e04",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 4128
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "5de5f45c8c78e3f33b3515a99043f1ec38a25d56402a05afc5fb37f8d1683281",
+          "native_counts": {
+            "black": 142,
+            "white": 102,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 2262,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "41dad610e08466dc9776eea8ceb8821630434d306f016733e519d6f0a2411db4",
+          "native_counts": {
+            "black": 119,
+            "white": 81,
+            "yellow": 0,
+            "red": 1639,
+            "blue": 2289,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": -23,
+        "white": -21,
+        "yellow": 0,
+        "red": 17,
+        "blue": 27,
+        "green": 0
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "f1b74859289aa4e30371a7205a16afbbb1cc9edf74629fa4bfae8e024afb7344",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2699,
+            "green": 1429
+          }
+        },
+        "burkes": {
+          "sha256": "d1c6f3d591efae3e1453f6d3332c5859497752fc3afcc83f31eae3bdff1dd21f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2690,
+            "green": 1438
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": -9,
+        "green": 9
+      }
+    },
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "b6716853b0c48f60c29cd0d15737029a0e18c30eff8d0c937b64640c4450605f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2214,
+            "red": 0,
+            "blue": 0,
+            "green": 1914
+          }
+        },
+        "burkes": {
+          "sha256": "7d4e3c57426add2fd4e87d1ebcf67bf4e4f3e3ea32f8bdf32fc754298e350c62",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2217,
+            "red": 0,
+            "blue": 0,
+            "green": 1911
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 3,
+        "red": 0,
+        "blue": 0,
+        "green": -3
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "07ceaf48696e3c06c860b3c3e7844496051d4e33b7c7ecc07b3350f729ae0540",
+          "native_counts": {
+            "black": 0,
+            "white": 92,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1170,
+            "green": 2866
+          }
+        },
+        "burkes": {
+          "sha256": "1193e8306b37ee69e394524f68551132886cfccf5ea8eb0ef53ae6006a46f9be",
+          "native_counts": {
+            "black": 0,
+            "white": 87,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1169,
+            "green": 2872
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": -5,
+        "yellow": 0,
+        "red": 0,
+        "blue": -1,
+        "green": 6
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "67ed927a0da95fcbc0e1077eb92dd1bf9b8bd9e83b6171ea03a4c4fe3bd5b8ba",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "476e4fea3600b109cbcbb24ac551d89b27c8d0c41d3b95441b0b620bc3a8210f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3404,
+            "red": 724,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 8,
+        "red": -8,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "ecbf5b2a6709d5f3f3fdb0c7aa49bc5984c4bb1bb9368960085ed1bd4babb853",
+          "native_counts": {
+            "black": 0,
+            "white": 469,
+            "yellow": 1154,
+            "red": 2505,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "97a2977ce764c167d1f1ea7e82590336c767004523868c0d7a227c02fdc96f87",
+          "native_counts": {
+            "black": 0,
+            "white": 460,
+            "yellow": 1157,
+            "red": 2511,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": -9,
+        "yellow": 3,
+        "red": 6,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "bf27b0f3041843a98d8750a0a8d382534b8224495e52e14befd313c5cbcf8c03",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 518,
+            "red": 3610,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "dea3a79ce5537774883614436ae1902ed78b964bc6a9f2e3e1cd601b9a1a7902",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 516,
+            "red": 3612,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": -2,
+        "red": 2,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "7a6153dcd1faed48e9c1d201193ef04b6a0837489087c56223d765ab68125d59",
+          "native_counts": {
+            "black": 0,
+            "white": 579,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1927,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "327512749fb579e2010f7d778405fc7f6dbf6191d1bd069df31aa932ead66154",
+          "native_counts": {
+            "black": 0,
+            "white": 577,
+            "yellow": 0,
+            "red": 1620,
+            "blue": 1931,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": -2,
+        "yellow": 0,
+        "red": -2,
+        "blue": 4,
+        "green": 0
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "9e593c7c47b5e1706781322d3ae0b0e2219a89be3ae6a4c62636146cf3eb6549",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "25a46257d61ac99033e1dba409722d9567379eb5e63b8910ead63f94a5700271",
+          "native_counts": {
+            "black": 0,
+            "white": 629,
+            "yellow": 0,
+            "red": 1342,
+            "blue": 2157,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": -5,
+        "yellow": 0,
+        "red": 1,
+        "blue": 4,
+        "green": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "24d5166b9c6fe9e2810db33c757b5ecbb376d08ac0bbbd1efd9e77ee46788b8e",
+          "native_counts": {
+            "black": 1184,
+            "white": 174,
+            "yellow": 0,
+            "red": 1180,
+            "blue": 1590,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "3f887c6f9364df67c7c5ea14dd2637faf50854d636e1f704fbe25a035262ccd3",
+          "native_counts": {
+            "black": 1173,
+            "white": 163,
+            "yellow": 0,
+            "red": 1189,
+            "blue": 1603,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": -11,
+        "white": -11,
+        "yellow": 0,
+        "red": 9,
+        "blue": 13,
+        "green": 0
+      }
+    },
+    {
+      "id": 19,
+      "name": "BLUE",
+      "source_rgb": [
+        0,
+        0,
+        255
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "409422da935199246faf34068e84811798c77319268645d3db9daac1777ed1c4",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "409422da935199246faf34068e84811798c77319268645d3db9daac1777ed1c4",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 4128,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "61f91f52091605592427b2c069cb66e6ad47d376ffaaa588388709e7e90d9065",
+          "native_counts": {
+            "black": 0,
+            "white": 951,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1356
+          }
+        },
+        "burkes": {
+          "sha256": "bed3b45da5dc7018c6e41fd06d1d19515c8d7a8cad600db8fe753dae5957e19f",
+          "native_counts": {
+            "black": 0,
+            "white": 951,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1823,
+            "green": 1354
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 2,
+        "green": -2
+      }
+    },
+    {
+      "id": 21,
+      "name": "GRAY.32",
+      "source_rgb": [
+        32,
+        32,
+        32
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "b0d446765c7a25d2ddec33c1adecc660f9225af03e275cda79bd572353e14464",
+          "native_counts": {
+            "black": 3609,
+            "white": 519,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "72f9a07d68e339d7ff4c7de19700a813447d449a9c8f0d8f31e296a13c3053fd",
+          "native_counts": {
+            "black": 3615,
+            "white": 513,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 6,
+        "white": -6,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 22,
+      "name": "GRAY.96",
+      "source_rgb": [
+        96,
+        96,
+        96
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "049e737b7269057413120a509cbb192461535e1a20e906e58bb2274c3355a911",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "16950e99ff82811454cbe2468982605d829c4e2d64a0d8e9c5de36883078deb0",
+          "native_counts": {
+            "black": 2531,
+            "white": 1597,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": 0,
+        "white": 0,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 23,
+      "name": "GRAY.160",
+      "source_rgb": [
+        160,
+        160,
+        160
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "d49cde0a5afe649a20b401a8c13e20c543b00b647cf4a87c229eb4350278a9c1",
+          "native_counts": {
+            "black": 1471,
+            "white": 2657,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "1460073e0dc1b2f39fba81f803f79d755cd5bc8ad195dee60ee3990373226df9",
+          "native_counts": {
+            "black": 1463,
+            "white": 2665,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": -8,
+        "white": 8,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "GRAY.224",
+      "source_rgb": [
+        224,
+        224,
+        224
+      ],
+      "variants": {
+        "floyd_steinberg": {
+          "sha256": "eddf8716c97f1042d58c8fd0da1b41aaf0e45d6e24936cb62680f3f31b9777ac",
+          "native_counts": {
+            "black": 402,
+            "white": 3726,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "burkes": {
+          "sha256": "72f9c9fb114270e804cc9a038e8f7fb2b1c4adbbde58863723a241598d6c62ce",
+          "native_counts": {
+            "black": 397,
+            "white": 3731,
+            "yellow": 0,
+            "red": 0,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      },
+      "burkes_minus_floyd_steinberg": {
+        "black": -5,
+        "white": 5,
+        "yellow": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    }
+  ]
+}

@@ -133,7 +133,7 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
 
     papercolor_dither_mode_t dither_mode = PAPERCOLOR_DITHER_NEAREST;
     if (mode == PaperColorRenderMode::PhotoBalanced) {
-        dither_mode = PAPERCOLOR_DITHER_FLOYD_STEINBERG;
+        dither_mode = papercolor_balanced_dither_mode();
     } else if (mode == PaperColorRenderMode::PhotoDetail) {
         dither_mode = PAPERCOLOR_DITHER_BURKES;
     }
@@ -187,9 +187,9 @@ void papercolor_push_canvas(m5gfx::M5Canvas* canvas, int32_t x, int32_t y,
     size_t workspace_offset = base_workspace_size;
     for (size_t i = 0; i < photo_region_count; ++i) {
         const size_t bytes = papercolor_dither_workspace_size(
-            regions[i].rect.width, PAPERCOLOR_DITHER_FLOYD_STEINBERG);
+            regions[i].rect.width, papercolor_balanced_dither_mode());
         if (!papercolor_dither_init(&regions[i].dither, regions[i].rect.width,
-                PAPERCOLOR_DITHER_FLOYD_STEINBERG, _binary_nominal_5bit_lut_start,
+                papercolor_balanced_dither_mode(), _binary_nominal_5bit_lut_start,
                 static_cast<uint8_t*>(workspace) + workspace_offset, bytes)) {
             heap_caps_free(workspace);
             restore_canvas_state();

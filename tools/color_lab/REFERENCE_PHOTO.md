@@ -1,5 +1,27 @@
 # Portrait photo regression (Kodak 04)
 
+## 2026-09-11 calibrated Burkes candidate
+
+After the 24-color target work and IMG_9967/IMG_9969 texture acceptance, a new
+portrait regression build applies every physically accepted color policy and
+uses Burkes for `PhotoBalanced`. The original Kodak PNG, device PNG decoder,
+0.78125 scale, RGB565 Canvas, rotation and isolated startup helper are unchanged.
+This build is intended to assess face/neck tone, red-hat shading, pale
+pink/purple fabric and hair/textile texture before any portrait-local policy.
+
+Frozen application: `.cache/firmware/calibrated-reference-photo/paper_color.bin`,
+3,878,224 bytes, SHA-256
+`82fb97d2251e15e50f59063946d24f723460b7ded0236bb32007f4e16c297962`.
+ESP32-S3 checksum `6d` and validation hash
+`b8bf45a2996bd12138fd02a133c74c71e33fcd2722e78485c7501bc890125a59`
+are valid. The build enables only the reference portrait startup page and all
+accepted color/Burkes flags. After matching Color USB serial and chip MAC
+`44:1B:F6:C1:34:10`, the application alone was written to `0x10000` through
+`/dev/cu.usbmodem83301`: 3,878,224 bytes in 32.3 seconds, followed by device-side
+hash verification and an RTS hard reset. The stopwatch was not enumerated and
+no other serial port or storage partition was accessed. Physical portrait
+review is pending.
+
 ## 2026-09-09 repeat flash
 
 User explicitly selected the red-hat portrait test. Reused the verified original

@@ -16,6 +16,12 @@ idf_component_register(
         "display/papercolor_purple_smooth_ab_chart.cpp"
         "display/papercolor_secondary_ratio_abc_chart.cpp"
         "display/papercolor_cyan_ratio_ab_chart.cpp"
+        "display/papercolor_green_pair_abc_chart.cpp"
+        "display/papercolor_purple_white_abc_chart.cpp"
+        "display/papercolor_warm_ratio_abc_chart.cpp"
+        "display/papercolor_neutral_dither_ab_chart.cpp"
+        "display/papercolor_chromatic_dither_ab_chart.cpp"
+        "display/papercolor_portrait_warm_abc_chart.cpp"
         "apps/app_manager/app_manager.cpp"
         "apps/papercolor_home/papercolor_home.cpp"
         "apps/app_server/app_server.cpp"
@@ -71,6 +77,95 @@ target_add_binary_data(${COMPONENT_LIB} "assets/papercolor_web_logo.png" BINARY)
 
 if(CONFIG_PAPERCOLOR_EXPERIMENTAL_LUT)
     target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_lut/nominal-5bit.lut" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_GREEN_PAIR_ABC_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/green-pair-abc-v1.sha256" GREEN_PAIR_ABC_INPUTS)
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/green-pair-abc-v1.sha256")
+    foreach(ENTRY IN LISTS GREEN_PAIR_ABC_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+            "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}")
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale green pair A/B/C input ${INPUT_PATH}; run tools/color_lab/generate_green_pair_abc_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/green-pair-abc-v1.bin" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_PURPLE_WHITE_ABC_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/purple-white-abc-v1.sha256" PURPLE_WHITE_ABC_INPUTS)
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/purple-white-abc-v1.sha256")
+    foreach(ENTRY IN LISTS PURPLE_WHITE_ABC_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+            "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}")
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale purple white A/B/C input ${INPUT_PATH}; run tools/color_lab/generate_purple_white_abc_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/purple-white-abc-v1.bin" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_WARM_RATIO_ABC_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/warm-ratio-abc-v1.sha256" WARM_RATIO_ABC_INPUTS)
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/warm-ratio-abc-v1.sha256")
+    foreach(ENTRY IN LISTS WARM_RATIO_ABC_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}")
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale warm ratio A/B/C input ${INPUT_PATH}; run tools/color_lab/generate_warm_ratio_abc_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/warm-ratio-abc-v1.bin" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_NEUTRAL_DITHER_AB_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/neutral-dither-ab-v1.sha256" NEUTRAL_DITHER_AB_INPUTS)
+    foreach(ENTRY IN LISTS NEUTRAL_DITHER_AB_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale neutral dither A/B input ${INPUT_PATH}; run tools/color_lab/generate_neutral_dither_ab_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/neutral-dither-ab-v1.bin" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_CHROMATIC_DITHER_AB_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/chromatic-dither-ab-v1.sha256" CHROMATIC_DITHER_AB_INPUTS)
+    foreach(ENTRY IN LISTS CHROMATIC_DITHER_AB_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale chromatic dither A/B input ${INPUT_PATH}; run tools/color_lab/generate_chromatic_dither_ab_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/chromatic-dither-ab-v1.bin" BINARY)
+endif()
+
+if(CONFIG_PAPERCOLOR_PORTRAIT_WARM_ABC_CHART_ON_BOOT)
+    file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/../artifacts/color_calibration/portrait-warm-abca-v2.sha256" PORTRAIT_WARM_ABC_INPUTS)
+    foreach(ENTRY IN LISTS PORTRAIT_WARM_ABC_INPUTS)
+        string(SUBSTRING "${ENTRY}" 0 64 EXPECTED_HASH)
+        string(SUBSTRING "${ENTRY}" 65 -1 INPUT_PATH)
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/../${INPUT_PATH}" ACTUAL_HASH)
+        if(NOT ACTUAL_HASH STREQUAL EXPECTED_HASH)
+            message(FATAL_ERROR "Stale portrait warm A/B/C input ${INPUT_PATH}; run tools/color_lab/generate_portrait_warm_abc_chart.py")
+        endif()
+    endforeach()
+    target_add_binary_data(${COMPONENT_LIB} "../artifacts/color_calibration/portrait-warm-abca-v2.bin" BINARY)
 endif()
 
 if(CONFIG_PAPERCOLOR_REFERENCE_PHOTO_ON_BOOT)

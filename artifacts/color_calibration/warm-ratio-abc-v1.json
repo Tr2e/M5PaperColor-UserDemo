@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "warning": "Nominal preview only; physical hue and texture require panel review.",
+  "columns": [
+    "A",
+    "B",
+    "C",
+    "A"
+  ],
+  "rows": [
+    {
+      "id": 14,
+      "name": "COLOR.ORANGE",
+      "source_rgb": [
+        255,
+        102,
+        51
+      ],
+      "modes": [
+        0,
+        1,
+        2
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "3993e04500fae6b2a7e483831c6d1b0f910fa63f6c4f6111bf267bc78cf93e64",
+          "native_counts": {
+            "black": 0,
+            "white": 468,
+            "yellow": 1385,
+            "red": 2275,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "7c230a5bbb54a5349e0c7afb5223387d8a1a76468225340839d995171bc6002d",
+          "native_counts": {
+            "black": 0,
+            "white": 469,
+            "yellow": 1154,
+            "red": 2505,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "8e33317f3ae9496959fb1522cb9a1ef31d34a125863421ce123ee8808afda99c",
+          "native_counts": {
+            "black": 0,
+            "white": 472,
+            "yellow": 1605,
+            "red": 2051,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "modes": [
+        0,
+        1,
+        2
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "c4195928cd1143c341f40154d20519c2433ba0fa813070752697429c18913ba0",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 777,
+            "red": 3351,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "7d0a0f1433ff92bf7684f5f94eddb204ca7164e9589f351c1ea014a127ef8d94",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 518,
+            "red": 3610,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "1f9a8c2f46002b7d1a3fb11f67e220c43d1bb8cee47a9c951be66faf1fef6d50",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 1043,
+            "red": 3085,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "4d1b7fc4e1fd8c6a345d087ab63489912bafbe640d6e78e9bdf132552d3624a8",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "4d1b7fc4e1fd8c6a345d087ab63489912bafbe640d6e78e9bdf132552d3624a8",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "4d1b7fc4e1fd8c6a345d087ab63489912bafbe640d6e78e9bdf132552d3624a8",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 3396,
+            "red": 732,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "6699d7f269caba5694e29f658570266b556938be48c9bdf5d1745233c2178f7b",
+          "native_counts": {
+            "black": 142,
+            "white": 102,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 2262,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "6699d7f269caba5694e29f658570266b556938be48c9bdf5d1745233c2178f7b",
+          "native_counts": {
+            "black": 142,
+            "white": 102,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 2262,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "6699d7f269caba5694e29f658570266b556938be48c9bdf5d1745233c2178f7b",
+          "native_counts": {
+            "black": 142,
+            "white": 102,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 2262,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "5cc3264071ca2f5d53843429e75111be2c1cfeadd6816236d7c72df086773779",
+          "native_counts": {
+            "black": 0,
+            "white": 93,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1169,
+            "green": 2866
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "5cc3264071ca2f5d53843429e75111be2c1cfeadd6816236d7c72df086773779",
+          "native_counts": {
+            "black": 0,
+            "white": 93,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1169,
+            "green": 2866
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "5cc3264071ca2f5d53843429e75111be2c1cfeadd6816236d7c72df086773779",
+          "native_counts": {
+            "black": 0,
+            "white": 93,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1169,
+            "green": 2866
+          }
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "MAGENTA",
+      "source_rgb": [
+        255,
+        0,
+        255
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "046928ef09a4394cd24e575e2d5842e8a9b72f1e61f4d6a942a2776e5faa3257",
+          "native_counts": {
+            "black": 0,
+            "white": 576,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1930,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "046928ef09a4394cd24e575e2d5842e8a9b72f1e61f4d6a942a2776e5faa3257",
+          "native_counts": {
+            "black": 0,
+            "white": 576,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1930,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "046928ef09a4394cd24e575e2d5842e8a9b72f1e61f4d6a942a2776e5faa3257",
+          "native_counts": {
+            "black": 0,
+            "white": 576,
+            "yellow": 0,
+            "red": 1622,
+            "blue": 1930,
+            "green": 0
+          }
+        }
+      }
+    }
+  ],
+  "frame_sha256": {
+    "0": "72db7bef3746af85f7f8d647899bd4f610351d5d21eaaf8ce69e4d6f08477cfc",
+    "1": "42407c96d85fd2e70fba200c4485ae4339397a13c02f4ad378c68e22e1231a67",
+    "2": "a3774009108a482205e829b381ee03637098827bcb682206cf7741cf7f0c8846"
+  },
+  "payload_bytes": 39600,
+  "payload_sha256": "314b7a066e8eb794bc33bf1173b00416df3a86b439a997efd0c4b4a1d9f1c57a",
+  "sampler_codes_sha256": "c0a9c119ec6fa853b5fb4584c73e06b4de9e414117df85811376994d6064b6bd",
+  "production_color_algorithm_changed": false,
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "28ac47c7cf719ab77bdbc55a015c961fcc09fd30647e4e340359153b192e72a0",
+    "main/display/papercolor_photo_dither.h": "441a549efe777d1680e1c8a97806444b4045483d609b464a5056ede10c64408f",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_cyan_ratio.h": "2cad2d40add02120fafac377aca6af8c0b31ddecafdfb885a8de84b9b23948c8",
+    "main/display/papercolor_green_pair_refinement.h": "a44662391d4532c4820173c4516a585a8cc159883a57cb84ad8808a9f459dbed",
+    "main/display/papercolor_deep_purple_refinement.h": "e5c0f9afeb5dffe7a24c64dff3e8fec1e838490aac5a297b605c289d511e252e",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "main/display/papercolor_warm_ratio_abc_chart.h": "fbd0d30b856806ffe66d962c949433a6e5f1d8c4fc195c109d8155b0085be055",
+    "main/display/papercolor_warm_ratio_abc_chart.cpp": "64e62c27ae84619c9952b37734d5f0fafc46ceda3e33225131b836ad96499ce6",
+    "tools/color_lab/warm_ratio_probe.h": "4c8f2a6cb48798efa39dc06f502658d725a5ccaa0fdf18e08e00270adbbf5b0f",
+    "tools/color_lab/generate_warm_ratio_abc_chart.py": "b7f35dc9e34aea0d37dae911f2ebdcfd5ebfdf0cca11cfbfacfc1dbab09fb318",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/probe_warm_ratio_abc_chart.cpp": "f8091589662a2d724ff421ec23ead98f8c9195abc63b08c8ae36e882a4f4f235",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "artifacts/color_calibration/papercolor-calibration-v1.png": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+    "artifacts/color_calibration/papercolor-calibration-v1.json": "01679b879aebc3d8fe55fd501c0d0d951af7f27b81f90e7b1506ef9855d84f2d"
+  }
+}

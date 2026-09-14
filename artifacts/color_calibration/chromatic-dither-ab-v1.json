@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "warning": "Physical texture decision requires same-screen panel review.",
+  "columns": [
+    "A_FS",
+    "B_BURKES",
+    "B_BURKES",
+    "A_FS"
+  ],
+  "rows": [
+    {
+      "id": 9,
+      "name": "COLOR.PURPLE",
+      "source_rgb": [
+        102,
+        51,
+        153
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "e855a93bf6f4408d88574fd1be48f3c60c495818083b9e8524f2a7e4c333280b",
+          "native_counts": {
+            "black": 161,
+            "white": 72,
+            "yellow": 0,
+            "red": 1077,
+            "blue": 1506,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "17832633df3a6d834da6c4181dd0a67a25edf5d0deee01db1192110d27610207",
+          "native_counts": {
+            "black": 152,
+            "white": 61,
+            "yellow": 0,
+            "red": 1085,
+            "blue": 1518,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "f83d2328eaa6c0a59b9f55f0b7bee4485b9ce0d91d7c0e279365ec621870de1a",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1796,
+            "green": 956
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "b1337c920653e1f5bb5fb5ea11fdcd84763404b8f523868e5d33452f7493e64e",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1799,
+            "green": 953
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "e09fa271918082d1d487030f0ff334214a33deda4547896ec11b45703e9f092b",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 1480,
+            "red": 0,
+            "blue": 0,
+            "green": 1272
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "69d616b849a25b411408ab18bde9d815975e2c920683953d165a05782c65f83e",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 1479,
+            "red": 0,
+            "blue": 0,
+            "green": 1273
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "6d3df18fb866237a6cdc4c15c78f46627bd9ccab86fbf80f11f8e563d97b8a82",
+          "native_counts": {
+            "black": 64,
+            "white": 64,
+            "yellow": 0,
+            "red": 0,
+            "blue": 778,
+            "green": 1910
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "31b1db063b5749a16a037d4f3ceab9437c045596024e32e3020e807947df75b4",
+          "native_counts": {
+            "black": 64,
+            "white": 62,
+            "yellow": 0,
+            "red": 0,
+            "blue": 777,
+            "green": 1913
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "COLOR.YELLOW",
+      "source_rgb": [
+        255,
+        204,
+        0
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "a5da843a69835a8b3965ab7e72a57a231b3eac99d23d485322c5bb92ed50a8c6",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 2266,
+            "red": 486,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "8fbd484f3d1022fead9524a547002474b8b564b204efd6ce04319d0a40ab1e24",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 2281,
+            "red": 471,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "COLOR.RED",
+      "source_rgb": [
+        204,
+        51,
+        0
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "b473a57728bc183d8324d79b1a7920e49c31f96ab8dc933c65bf18214d08fe47",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 345,
+            "red": 2407,
+            "blue": 0,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "afbd887daa1d98b2c4456523e78e651674deb5eafedca283dd8de21eca987a07",
+          "native_counts": {
+            "black": 64,
+            "white": 0,
+            "yellow": 348,
+            "red": 2404,
+            "blue": 0,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "da426b89aedc084d2ca66b2b3b6b6a0554f77a3bc769903afc47385d96420ee6",
+          "native_counts": {
+            "black": 64,
+            "white": 421,
+            "yellow": 0,
+            "red": 893,
+            "blue": 1438,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "36bd039933a3f8436fb31da19ef1dc8c531aad0ff0da5f40e66c51989792b59e",
+          "native_counts": {
+            "black": 64,
+            "white": 422,
+            "yellow": 0,
+            "red": 897,
+            "blue": 1433,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "PURPLE.DARK",
+      "source_rgb": [
+        76,
+        38,
+        115
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "4d7a48d69ed1e63d58a089cced63637315a33e6273808904f55ec9c491b08107",
+          "native_counts": {
+            "black": 861,
+            "white": 117,
+            "yellow": 0,
+            "red": 780,
+            "blue": 1058,
+            "green": 0
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "569fe6c81c97bf66d1731743e39136ddf0978f312f4765b881eaba20532e6530",
+          "native_counts": {
+            "black": 850,
+            "white": 118,
+            "yellow": 0,
+            "red": 789,
+            "blue": 1059,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "variants": {
+        "A_FS": {
+          "crop_sha256": "50d4dab5a467243c2ecae03b7588c4dbe535d6390bd3d888cdb2976d8f196b98",
+          "native_counts": {
+            "black": 64,
+            "white": 638,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1211,
+            "green": 903
+          }
+        },
+        "B_BURKES": {
+          "crop_sha256": "e7790647b98f3cce7a09d35ab2deac8e241e214c645f3a172ca0b96b3e0ba16a",
+          "native_counts": {
+            "black": 64,
+            "white": 633,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1217,
+            "green": 902
+          }
+        }
+      }
+    }
+  ],
+  "frame_sha256": {
+    "A_FS": "42407c96d85fd2e70fba200c4485ae4339397a13c02f4ad378c68e22e1231a67",
+    "B_BURKES": "d0f71129301d96d340d84e6f084cf7f4e30d8371cab63e2c4b62108291cb16a4"
+  },
+  "payload_bytes": 25344,
+  "payload_sha256": "3e5c846d7fe0f87c47cf339f1d9f2ef9a4a5d906543572e936182cce4623433f",
+  "sampler_codes_sha256": "855642ec2a7f356886db2d6de4d36b46a40bb7d8dd7a5146e1075a0882d3b9e1",
+  "production_color_algorithm_changed": false,
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "4487ed2f7ec0e56ca8f13f759412b6595166a8c943d23f489fcc894c32de5715",
+    "main/display/papercolor_photo_dither.h": "ae42251fea6cf60da1a478c5d1859d85646ece03860b4d19a3bc0b7cfe2e52da",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_cyan_ratio.h": "2cad2d40add02120fafac377aca6af8c0b31ddecafdfb885a8de84b9b23948c8",
+    "main/display/papercolor_green_pair_refinement.h": "a44662391d4532c4820173c4516a585a8cc159883a57cb84ad8808a9f459dbed",
+    "main/display/papercolor_deep_purple_refinement.h": "e5c0f9afeb5dffe7a24c64dff3e8fec1e838490aac5a297b605c289d511e252e",
+    "main/display/papercolor_warm_ratio_refinement.h": "176a3198bcbb7bf5db98ad92591c18a9c627d21541be366a0fc409e25ed2aee9",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "main/display/papercolor_chromatic_dither_ab_chart.h": "a3132541431285662c2f19776ae23563524a28535628109ab9996a42e86dd2ee",
+    "main/display/papercolor_chromatic_dither_ab_chart.cpp": "9ef94ae67def750d3aa5f2d13555cdb9af03334b62c024cf96e74088e6c2037f",
+    "tools/color_lab/probe_frame_mode.cpp": "a40323aae163d60a420e444dc9f58d585b91d01f22e03ff8c433b62ab09089c2",
+    "tools/color_lab/probe_chromatic_dither_ab_chart.cpp": "08528894925f8cf7b9828a12c8eac18f75355040e87992aa1aab39aabd13a546",
+    "tools/color_lab/generate_chromatic_dither_ab_chart.py": "b1f281f674e444da84a8334fbb4886c169352a146ea0fa5390f3a3de850b57c9",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "artifacts/color_calibration/papercolor-calibration-v1.png": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+    "artifacts/color_calibration/papercolor-calibration-v1.json": "01679b879aebc3d8fe55fd501c0d0d951af7f27b81f90e7b1506ef9855d84f2d"
+  }
+}

@@ -19,6 +19,16 @@ typedef enum {
     PAPERCOLOR_DITHER_BURKES,
 } papercolor_dither_mode_t;
 
+/** Dither kernel selected for the calibrated photo path. */
+static inline papercolor_dither_mode_t papercolor_balanced_dither_mode(void)
+{
+#if defined(CONFIG_PAPERCOLOR_PHOTO_BURKES) && CONFIG_PAPERCOLOR_PHOTO_BURKES
+    return PAPERCOLOR_DITHER_BURKES;
+#else
+    return PAPERCOLOR_DITHER_FLOYD_STEINBERG;
+#endif
+}
+
 typedef struct {
     size_t width;
     size_t row;

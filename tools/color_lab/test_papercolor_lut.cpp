@@ -562,10 +562,15 @@ void test_warm_bypass(const std::vector<uint8_t>& lut)
         assert(papercolor_dither_init(&state,W,mode,lut.data(),work.data(),work.size()*4));
         const auto counts=assert_uniform_region_uses_only(&state,{255,101,49},
             {false,true,true,true,false,false,false},W,H);
-        // Independent nominal decomposition of the uncompensated projected
-        // orange; the previous branch produces only about 6% white.
+        // Independent nominal decomposition of the projected orange. The
+        // warm-ratio candidate preserves white and total chromatic coverage,
+        // then transfers 1/16 of the chromatic share from yellow to red.
         assert(counts[1]>W*H*10/100 && counts[1]<W*H*13/100);
+#if defined(CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT) && CONFIG_PAPERCOLOR_WARM_RATIO_REFINEMENT
+        assert(counts[3]>W*H*59/100 && counts[3]<W*H*63/100);
+#else
         assert(counts[3]>W*H*53/100 && counts[3]<W*H*57/100);
+#endif
     }
     std::cout << "warm-bypass/orange-coverage/both-filters: pass\n";
 #else

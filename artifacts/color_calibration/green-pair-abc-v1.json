@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "warning": "Nominal preview only; physical hue/texture requires panel review.",
+  "columns": [
+    "A",
+    "B",
+    "C",
+    "A"
+  ],
+  "rows": [
+    {
+      "id": 11,
+      "name": "COLOR.LIME",
+      "source_rgb": [
+        153,
+        255,
+        0
+      ],
+      "modes": [
+        0,
+        1,
+        2
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "538d9632b17c758a70562ef89c9740aa38a686754ed91eb6aa5412ea0d69667c",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2474,
+            "red": 0,
+            "blue": 0,
+            "green": 1654
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "e4458a4a9b7427a35fbec959b7840d57158db2945d55fea4d31bf7370c747d1c",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2214,
+            "red": 0,
+            "blue": 0,
+            "green": 1914
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "e44d442b14ca32432d24fffedcc3e02c8906df7e38ed409d9f80c6d02bfacc03",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 2734,
+            "red": 0,
+            "blue": 0,
+            "green": 1394
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "modes": [
+        0,
+        3,
+        4
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "324d9418fe9fd6d49ef6fff05b4e6ce7fc90589b87d202d4a199127c077bc7c1",
+          "native_counts": {
+            "black": 0,
+            "white": 161,
+            "yellow": 0,
+            "red": 0,
+            "blue": 900,
+            "green": 3067
+          }
+        },
+        "B": {
+          "mode": 3,
+          "crop_sha256": "1391b350f6ef5ce5b8def268a8d9794db68c2b131d295d82b3bb981eebf61a94",
+          "native_counts": {
+            "black": 0,
+            "white": 161,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1151,
+            "green": 2816
+          }
+        },
+        "C": {
+          "mode": 4,
+          "crop_sha256": "be7bd255516daa16204fd076209abbcca98fc7bf20a12901510531cba5b0a8c6",
+          "native_counts": {
+            "black": 0,
+            "white": 160,
+            "yellow": 0,
+            "red": 0,
+            "blue": 652,
+            "green": 3316
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "COLOR.TEAL",
+      "source_rgb": [
+        51,
+        153,
+        102
+      ],
+      "modes": [
+        0,
+        5,
+        6
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "324d9418fe9fd6d49ef6fff05b4e6ce7fc90589b87d202d4a199127c077bc7c1",
+          "native_counts": {
+            "black": 0,
+            "white": 161,
+            "yellow": 0,
+            "red": 0,
+            "blue": 900,
+            "green": 3067
+          }
+        },
+        "B": {
+          "mode": 5,
+          "crop_sha256": "ac5341331dcaca1d60c65e213f50791e88ad8bab5539164ae9510f8b7b11fba4",
+          "native_counts": {
+            "black": 0,
+            "white": 74,
+            "yellow": 0,
+            "red": 0,
+            "blue": 921,
+            "green": 3133
+          }
+        },
+        "C": {
+          "mode": 6,
+          "crop_sha256": "3d8a182f6e8f125f13a1aa6218f42de640d3b106ec3de306e1bf8f97e0dc0042",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 932,
+            "green": 3196
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "COLOR.CYAN",
+      "source_rgb": [
+        0,
+        173,
+        254
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "f792550965bf61a19dd517f87a5a331e0064cababe2b00dd4fb89a08d99cb33f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2696,
+            "green": 1432
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "f792550965bf61a19dd517f87a5a331e0064cababe2b00dd4fb89a08d99cb33f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2696,
+            "green": 1432
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "f792550965bf61a19dd517f87a5a331e0064cababe2b00dd4fb89a08d99cb33f",
+          "native_counts": {
+            "black": 0,
+            "white": 0,
+            "yellow": 0,
+            "red": 0,
+            "blue": 2696,
+            "green": 1432
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "CYAN",
+      "source_rgb": [
+        0,
+        255,
+        255
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "03eff5f4152bf17b1d41b72cd532c38d233bee8e61faffbcf2ff6b339d1b0e84",
+          "native_counts": {
+            "black": 0,
+            "white": 953,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1354
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "03eff5f4152bf17b1d41b72cd532c38d233bee8e61faffbcf2ff6b339d1b0e84",
+          "native_counts": {
+            "black": 0,
+            "white": 953,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1354
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "03eff5f4152bf17b1d41b72cd532c38d233bee8e61faffbcf2ff6b339d1b0e84",
+          "native_counts": {
+            "black": 0,
+            "white": 953,
+            "yellow": 0,
+            "red": 0,
+            "blue": 1821,
+            "green": 1354
+          }
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "PURPLE.LIGHT",
+      "source_rgb": [
+        153,
+        51,
+        204
+      ],
+      "modes": [
+        0,
+        0,
+        0
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "458a4f986d577e140f3dbf994c174567c233ac85749fc16d13fd78c51ca64e86",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 0,
+          "crop_sha256": "458a4f986d577e140f3dbf994c174567c233ac85749fc16d13fd78c51ca64e86",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 0,
+          "crop_sha256": "458a4f986d577e140f3dbf994c174567c233ac85749fc16d13fd78c51ca64e86",
+          "native_counts": {
+            "black": 0,
+            "white": 634,
+            "yellow": 0,
+            "red": 1341,
+            "blue": 2153,
+            "green": 0
+          }
+        }
+      }
+    }
+  ],
+  "frame_sha256": {
+    "0": "61b7a31855ef42f920eb37fdadd4b0f6925995c1a2be5fc6c16fad42edc6b2f1",
+    "1": "63f8ff33a8887a789c166ae7d72d9cf964bda737c885f33bb8f1fcd272a640d7",
+    "2": "fefce4994423f61b69dd801c204be4d2c85cc4231b0df0eac215dc2694f0480a",
+    "3": "4f079aa5b99d5da8df71c20c417668187a5ff4d06f0e7f3eeb896c54dbfa21fc",
+    "4": "e847a4115e44802ed4fbfe329f9e3a72a9b7fb1cc6e943ac74e5960577f6e920",
+    "5": "05078bf274f2a278b6951d04fea228f2d0522460c079af2c078c914e41e8dbe4",
+    "6": "1a0b36aff0296864356ab254c0bcdbab22950c3e43f1ceb71c17b63521fb7786"
+  },
+  "payload_bytes": 39600,
+  "payload_sha256": "cb819954b55337db2b4c1b778241fb070eba8b03c32a539185dd20f8e9141b36",
+  "sampler_codes_sha256": "405203861c9cac68ef80ab6f195c741ef52f4cb5de4fd83daee48141f095eab0",
+  "production_color_algorithm_changed": false,
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "cf11f3ef3406bd970d30ecb8691ec6086d829fc1caa6facb8471ed4c9284432f",
+    "main/display/papercolor_photo_dither.h": "441a549efe777d1680e1c8a97806444b4045483d609b464a5056ede10c64408f",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_cyan_ratio.h": "2cad2d40add02120fafac377aca6af8c0b31ddecafdfb885a8de84b9b23948c8",
+    "main/display/papercolor_lut.cpp": "68dd5807d57948ceb012fe78b5342d141165733655c331a335d085aebe5b1f4d",
+    "main/display/papercolor_green_pair_abc_chart.h": "e736af8145f47340699263f3aff09b74027a79869dcfbe66d315c01278d5a8fb",
+    "main/display/papercolor_green_pair_abc_chart.cpp": "8413e8cc2ecd8d60e899143499f3c08ab3b25c7f7e973af13d26f7097675c301",
+    "tools/color_lab/green_pair_probe.h": "9bce4e6f1c78082be0f69055682292d0cfdcc9ad45446c1440beafa1ed11afe4",
+    "tools/color_lab/generate_green_pair_abc_chart.py": "c2d7da441dec79600deb9ba24af70bf9af71c76f03af2656cc89c3100b5a5ca1",
+    "tools/color_lab/probe_frame.cpp": "db57b63685e5f620f507c6a818a2f009d8c2e19dcb258cdc93b7f41bbabf05f9",
+    "tools/color_lab/probe_green_pair_abc_chart.cpp": "0717d6dfa8fc571bc48afafde73511a22b2fa21df3106e57c7a17012eea2a9a8",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "artifacts/color_calibration/papercolor-calibration-v1.png": "044e72b6fa88dfaa43e18ba8dba58fae4161806872e24725b473a23169191c74",
+    "artifacts/color_calibration/papercolor-calibration-v1.json": "01679b879aebc3d8fe55fd501c0d0d951af7f27b81f90e7b1506ef9855d84f2d"
+  }
+}

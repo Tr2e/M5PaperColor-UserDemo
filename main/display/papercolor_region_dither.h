@@ -40,7 +40,8 @@ inline bool papercolor_layout_photo_regions(const PaperColorPhotoRegion* input,
             if (p.x < q.x+q.width && q.x < p.x+p.width &&
                 p.y < q.y+q.height && q.y < p.y+p.height) return false;
         }
-        workspace_bytes += papercolor_dither_workspace_size(p.width, PAPERCOLOR_DITHER_FLOYD_STEINBERG);
+        workspace_bytes += papercolor_dither_workspace_size(
+            p.width, papercolor_balanced_dither_mode());
     }
     return true;
 }

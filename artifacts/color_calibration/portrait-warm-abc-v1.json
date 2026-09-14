@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "warning": "Nominal preview only; physical hue and texture require panel review.",
+  "source_resize": "Pillow bilinear 512x768 to 400x600 for same-screen relative A/B/C only",
+  "columns": [
+    "A",
+    "B",
+    "C"
+  ],
+  "rows": [
+    {
+      "name": "eye_upper_face",
+      "rect_xyxy": [
+        135,
+        180,
+        255,
+        260
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "b96735d8891fb046a0c40c40739060feaea035315f1a40a92fe70dd7d252b8ad",
+          "native_counts": {
+            "black": 5194,
+            "white": 2250,
+            "yellow": 921,
+            "red": 1018,
+            "blue": 85,
+            "green": 132
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "c1e02df2d78898073e379dfd2e95ac5fc2860583fdf5560abe62ad53f53c499b",
+          "native_counts": {
+            "black": 5195,
+            "white": 2266,
+            "yellow": 859,
+            "red": 1069,
+            "blue": 80,
+            "green": 131
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "f33446691cdc7eb2ae17dabd1992ae1b744efc0674483d0b7878039eac7ff454",
+          "native_counts": {
+            "black": 5197,
+            "white": 2243,
+            "yellow": 816,
+            "red": 1120,
+            "blue": 85,
+            "green": 139
+          }
+        }
+      }
+    },
+    {
+      "name": "cheek_mouth",
+      "rect_xyxy": [
+        145,
+        310,
+        265,
+        390
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "afe8122aaa8be3a03bc4beae9d1fb7781361cd37457634a3cd356c74da267cba",
+          "native_counts": {
+            "black": 3918,
+            "white": 3464,
+            "yellow": 691,
+            "red": 1336,
+            "blue": 67,
+            "green": 124
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "1c0401cd05b69b9b3cd12ec300fbd20f72fbc989edca679e5498e54307a81424",
+          "native_counts": {
+            "black": 3911,
+            "white": 3456,
+            "yellow": 623,
+            "red": 1408,
+            "blue": 72,
+            "green": 130
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "300d7f7a47de9c3ed707ed5a0ef5306f46598e2198c1c678b76e5525d0165af8",
+          "native_counts": {
+            "black": 3906,
+            "white": 3459,
+            "yellow": 540,
+            "red": 1494,
+            "blue": 72,
+            "green": 129
+          }
+        }
+      }
+    },
+    {
+      "name": "neck_chest",
+      "rect_xyxy": [
+        220,
+        430,
+        340,
+        510
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "08ef7541fed65474758a2494b4bf606fd39cb114bd0e20111c8121c29a604212",
+          "native_counts": {
+            "black": 3150,
+            "white": 4019,
+            "yellow": 713,
+            "red": 1028,
+            "blue": 228,
+            "green": 462
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "8ffcbd3fa5bfdf7888e54b6f8a2e72c6e968cb14d69c579449b613dddf152424",
+          "native_counts": {
+            "black": 3155,
+            "white": 4023,
+            "yellow": 634,
+            "red": 1094,
+            "blue": 220,
+            "green": 474
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "0851e4496159ac430f1ccfe66b25621eadc8a47391185906254f8e9bc9d82844",
+          "native_counts": {
+            "black": 3145,
+            "white": 4016,
+            "yellow": 581,
+            "red": 1161,
+            "blue": 227,
+            "green": 470
+          }
+        }
+      }
+    },
+    {
+      "name": "red_hat_control",
+      "rect_xyxy": [
+        130,
+        20,
+        250,
+        100
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "12f4c41e0b0e9b73a3b209846dc29d5d310dc67ecd7d484357e5de80b82eb0bd",
+          "native_counts": {
+            "black": 2000,
+            "white": 1912,
+            "yellow": 20,
+            "red": 5651,
+            "blue": 17,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "09e8ca4360dba2215096e6bcec1d6af3ac8e7d28b05b9b539f2ec17cef00aba4",
+          "native_counts": {
+            "black": 1999,
+            "white": 1911,
+            "yellow": 19,
+            "red": 5651,
+            "blue": 20,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "5065c12bd5ae3e5c56a2af0ffedb3f81e72d2067fc27bbc076856e5a228c76d8",
+          "native_counts": {
+            "black": 2008,
+            "white": 1910,
+            "yellow": 17,
+            "red": 5649,
+            "blue": 16,
+            "green": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "pink_fabric_control",
+      "rect_xyxy": [
+        280,
+        150,
+        400,
+        230
+      ],
+      "variants": {
+        "A": {
+          "mode": 0,
+          "crop_sha256": "cf727038fa54817d89b728526ca2ba8bd38f0c8d9fb801becceb3f17a5a5b5b9",
+          "native_counts": {
+            "black": 4398,
+            "white": 2149,
+            "yellow": 732,
+            "red": 2314,
+            "blue": 7,
+            "green": 0
+          }
+        },
+        "B": {
+          "mode": 1,
+          "crop_sha256": "0b1c941892b6193b81ea58362a94fcf7d4098db4e5e9584d646ffe8a1006d4fb",
+          "native_counts": {
+            "black": 4397,
+            "white": 2154,
+            "yellow": 697,
+            "red": 2344,
+            "blue": 8,
+            "green": 0
+          }
+        },
+        "C": {
+          "mode": 2,
+          "crop_sha256": "2846f940baae6971c66eabc968e0855a66175f7c8f4d8e0bb4a3848259351649",
+          "native_counts": {
+            "black": 4398,
+            "white": 2151,
+            "yellow": 661,
+            "red": 2383,
+            "blue": 7,
+            "green": 0
+          }
+        }
+      }
+    }
+  ],
+  "frame_sha256": {
+    "0": "cd577513400bd7b3103c814d48ec9de008acfcfc75e14b70fa9e301c0ba04dd9",
+    "1": "03635d682e97a2e0519a385f84c25f39077cd05c3d994c82958e50eb8fc8828b",
+    "2": "81a5a94ef2ba6d121d022d054915463c8679f4fa93e43a90a6951a5442b23f6d"
+  },
+  "payload_bytes": 72000,
+  "payload_sha256": "35d22fbb7941ab03928100780c5d270816945977e9ffdbaa58ef93406e7de2ae",
+  "sampler_codes_sha256": "6e66780d17bee0ac0999c26345fa3fe45ada73c0c5e3fcad0bdeceecc4621c33",
+  "production_color_algorithm_changed": false,
+  "source_hashes": {
+    "main/display/papercolor_photo_dither.cpp": "cd33bffe3c9c047118b52a9cbbc43234472af5e603046b2923e8ae360179b817",
+    "main/display/papercolor_photo_dither.h": "ae42251fea6cf60da1a478c5d1859d85646ece03860b4d19a3bc0b7cfe2e52da",
+    "main/display/papercolor_gamut.h": "c09913cef28197aa878cdca95b7662888e599011da3806219cceaaeb43680ef1",
+    "main/display/papercolor_warm_ratio_refinement.h": "176a3198bcbb7bf5db98ad92591c18a9c627d21541be366a0fc409e25ed2aee9",
+    "main/display/papercolor_portrait_warm_refinement.h": "20401cc1292d2134517332e24135a65d79dbe5ac054cb6b7e29886802b22f86e",
+    "main/display/papercolor_portrait_warm_abc_chart.h": "286e898fb1b76ce199250310be6e61de5ff3f885fd4fa71b2a7085df7d504486",
+    "main/display/papercolor_portrait_warm_abc_chart.cpp": "737440e35030caf1d7ee9f078707c779c953c84c652091734c98aab6a4965a1f",
+    "tools/color_lab/portrait_warm_probe.h": "340ac34460b7bdf46e59f1fd9db674ce1f03b20b26d5629b0162eb8f9fe34f7b",
+    "tools/color_lab/probe_frame_mode.cpp": "a40323aae163d60a420e444dc9f58d585b91d01f22e03ff8c433b62ab09089c2",
+    "tools/color_lab/probe_portrait_warm_abc_chart.cpp": "292ba21bc4a7ba1092057967083cd4b9353169a8cbe0fb4d35385faac5ab0403",
+    "tools/color_lab/generate_portrait_warm_abc_chart.py": "b62d4f42c019d6cd5b5ae50f0dedf82c9f5a5b69a5c9e68a085b5744701f0db3",
+    "artifacts/color_lut/nominal-5bit.lut": "b15a687e34aefb3eee93e93b2e1f7889ff0b46543a471249ba1652fc2a2cf9b4",
+    "artifacts/color_calibration/kodim04.png": "e3b946107c5d3441c022f678d0c3caf1e224d81b1604ba840a4f88e562de61aa"
+  }
+}
