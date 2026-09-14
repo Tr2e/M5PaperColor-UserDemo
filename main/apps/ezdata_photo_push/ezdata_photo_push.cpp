@@ -20,7 +20,6 @@
 #include "qrcode.h"
 #include "apps/app_manager/app_manager.h"
 #include "display/display_metrics.h"
-#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "EzdataSlideshow";
 
@@ -96,7 +95,7 @@ static void binding_qrcode_display_cb(esp_qrcode_handle_t qrcode)
     metrics.markRendered();
     hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
     metrics.markRefreshStarted();
-    papercolor_push_canvas(hal.Canvas, 0, 0);
+    hal.Canvas->pushSprite(0, 0);
     hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     metrics.finish(true);
 }
@@ -129,7 +128,7 @@ static void drawBindingQrcode()
         hal.Canvas->printf("QRCode failed");
         metrics.markRendered();
         metrics.markRefreshStarted();
-        papercolor_push_canvas(hal.Canvas, 0, 0);
+        hal.Canvas->pushSprite(0, 0);
         metrics.finish(true);
     }
 }
@@ -801,7 +800,7 @@ bool EzdataPhotoPush::displayPhoto(uint16_t index)
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
         metrics.markRefreshStarted();
-        papercolor_push_canvas(hal.Canvas, 0, 0, PaperColorRenderMode::PhotoBalanced);
+        hal.Canvas->pushSprite(0, 0);
         app_manager_set_refresh_in_progress(false);
         hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     } else {

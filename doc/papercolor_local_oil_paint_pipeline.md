@@ -1,5 +1,7 @@
 # PaperColor 本地油画化显示技术设计
 
+> 2026-09-14 状态：技术方案存档，尚未实现。当前生产图片路径已回到 M5GFX 官方转换；下文依赖实验 LUT/照片抖动器的接口假设需在实施前重新设计。见 `tools/color_lab/OFFICIAL_PIPELINE_ROLLBACK.md`。
+
 ## 1. 文档状态
 
 - 状态：编码前技术指导文档

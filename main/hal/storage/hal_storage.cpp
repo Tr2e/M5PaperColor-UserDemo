@@ -19,7 +19,6 @@
 #include "freertos/semphr.h"
 #include "freertos/task.h"
 #include "display/display_metrics.h"
-#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "hal_storage";
 
@@ -165,16 +164,6 @@ static void usb_metrics_task(void *arg)
         char line[384];
         int length = snprintf(line, sizeof(line), "DisplayMetricsBegin count=%u\r\n", static_cast<unsigned>(count));
         bool ok = length > 0 && cdc_write_all(line, static_cast<size_t>(length));
-        PaperColorPipelineStats pipeline_stats{};
-        if (ok && papercolor_pipeline_stats_snapshot(&pipeline_stats)) {
-            length = snprintf(line, sizeof(line),
-                              "PaperColorPipeline: mode=%s prepare_us=%llu workspace_bytes=%u\r\n",
-                              papercolor_render_mode_name(pipeline_stats.mode),
-                              static_cast<unsigned long long>(pipeline_stats.prepare_us),
-                              static_cast<unsigned>(pipeline_stats.workspace_bytes));
-            ok = length > 0 && static_cast<size_t>(length) < sizeof(line) &&
-                 cdc_write_all(line, static_cast<size_t>(length));
-        }
         for (size_t i = 0; ok && i < count; ++i) {
             const DisplayMetricsRecord& record = records[i];
             length = snprintf(

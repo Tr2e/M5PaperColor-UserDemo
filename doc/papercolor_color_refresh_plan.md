@@ -1,5 +1,7 @@
 # PaperColor 色彩与刷新优化行动计划
 
+> 历史计划。2026-09-14 起生产图片算法使用 M5GFX 官方路径；校色实验移至 `codex/color-calibration-research`，当前决策和重新启用的验收标准见 `tools/color_lab/OFFICIAL_PIPELINE_ROLLBACK.md`。
+
 ## 1. 范围与结论
 
 基线分支：`feat/papercolor-os`

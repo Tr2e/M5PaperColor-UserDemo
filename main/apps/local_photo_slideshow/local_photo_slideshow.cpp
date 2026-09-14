@@ -21,7 +21,6 @@
 #include "freertos/task.h"
 #include "apps/app_manager/app_manager.h"
 #include "display/display_metrics.h"
-#include "display/papercolor_lut_display.h"
 
 static const char *TAG = "Slideshow";
 
@@ -570,7 +569,7 @@ bool PhotoSlideshow::displayPhoto(uint16_t index)
         hal.statusEventSend(OPERATION_EVENT_REFRESH_START);
         app_manager_set_refresh_in_progress(true);
         metrics.markRefreshStarted();
-        papercolor_push_canvas(hal.Canvas, 0, 0, PaperColorRenderMode::PhotoBalanced);
+        hal.Canvas->pushSprite(0, 0);
         app_manager_set_refresh_in_progress(false);
         hal.statusEventSend(OPERATION_EVENT_REFRESH_COMPLETE);
     } else {

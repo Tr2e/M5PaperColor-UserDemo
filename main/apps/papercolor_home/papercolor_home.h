@@ -36,6 +36,6 @@ void papercolor_home_draw_audio_state(bool audio_muted);
 /** @brief Redraws only the monochrome RTC date panel on the home canvas. */
 void papercolor_home_draw_date(void);
 
-/** Push the composed home canvas once, with photo color mapping confined to
- * its decoded thumbnail and embedded color logo. Honors the display clip. */
+/** Push the composed home canvas through the official M5GFX panel conversion.
+ * Uses the caller's EPD mode and physical clip. */
 void papercolor_home_push(void);
