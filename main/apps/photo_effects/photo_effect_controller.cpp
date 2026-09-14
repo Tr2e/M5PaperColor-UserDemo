@@ -16,6 +16,9 @@
 #include "apps/photo_effects/photo_frame_geometry.h"
 #include "display/display_metrics.h"
 #include "display/papercolor_oil_painter.h"
+#if CONFIG_PAPERCOLOR_OIL_PAINT_STACKED
+#include "display/papercolor_stacked_painter.h"
+#endif
 #include "hal/hal.h"
 
 namespace {
@@ -159,7 +162,11 @@ bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
         free_original();
         ESP_LOGI(kTag, "Restored original frame generation=%u", static_cast<unsigned>(g_frame.generation));
     } else {
+#if CONFIG_PAPERCOLOR_OIL_PAINT_STACKED
+        const size_t workspace_bytes = papercolor_stacked_workspace_size(
+#else
         const size_t workspace_bytes = papercolor_oil_workspace_size(
+#endif
             g_frame.rect.width, g_frame.rect.height);
         if (!workspace_bytes) return finish(false);
         uint16_t* snapshot = static_cast<uint16_t*>(heap_caps_malloc(
@@ -175,11 +182,20 @@ bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
         std::memcpy(snapshot, canvas_pixels, frame_bytes);
         const uint64_t started_us = static_cast<uint64_t>(esp_timer_get_time());
         YieldState yield_state{static_cast<int64_t>(started_us)};
+#if CONFIG_PAPERCOLOR_OIL_PAINT_STACKED
+        PaperColorStackedOptions options{};
+#else
         PaperColorOilOptions options{};
+#endif
         options.cooperate = cooperate;
         options.cooperate_context = &yield_state;
+#if CONFIG_PAPERCOLOR_OIL_PAINT_STACKED
+        PaperColorStackedStats stats{};
+        const bool rendered = papercolor_stacked_render_swap565(
+#else
         PaperColorOilStats stats{};
         const bool rendered = papercolor_oil_render_swap565(
+#endif
             snapshot, canvas_pixels, backing_w, backing_h, backing_w,
             g_frame.rect, options, workspace, workspace_bytes, &stats);
         heap_caps_free(workspace);
@@ -192,6 +208,14 @@ bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
         g_frame.original = snapshot;
         g_frame.original_bytes = frame_bytes;
         g_frame.oil = true;
+#if CONFIG_PAPERCOLOR_OIL_PAINT_STACKED
+        ESP_LOGI(kTag, "Stacked render generation=%u compute_us=%llu strokes=%u/%u/%u/%u/%u workspace=%u",
+                 static_cast<unsigned>(g_frame.generation),
+                 static_cast<unsigned long long>(esp_timer_get_time() - started_us),
+                 static_cast<unsigned>(stats.strokes[0]), static_cast<unsigned>(stats.strokes[1]),
+                 static_cast<unsigned>(stats.strokes[2]), static_cast<unsigned>(stats.strokes[3]),
+                 static_cast<unsigned>(stats.strokes[4]), static_cast<unsigned>(stats.workspace_bytes));
+#else
         ESP_LOGI(kTag, "Oil render generation=%u compute_us=%llu strokes=%u/%u/%u workspace=%u",
                  static_cast<unsigned>(g_frame.generation),
                  static_cast<unsigned long long>(esp_timer_get_time() - started_us),
@@ -199,6 +223,7 @@ bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
                  static_cast<unsigned>(stats.medium_strokes),
                  static_cast<unsigned>(stats.detail_strokes),
                  static_cast<unsigned>(stats.workspace_bytes));
+#endif
     }
 
     metrics.markRendered();

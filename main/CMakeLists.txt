@@ -55,6 +55,12 @@ if(CONFIG_PAPERCOLOR_OIL_PAINT)
         PROPERTIES COMPILE_OPTIONS "-O2")
 endif()
 
+if(CONFIG_PAPERCOLOR_OIL_PAINT_STACKED)
+    target_sources(${COMPONENT_LIB} PRIVATE "display/papercolor_stacked_painter.cpp")
+    set_source_files_properties("display/papercolor_stacked_painter.cpp"
+        PROPERTIES COMPILE_OPTIONS "-O2;-ffp-contract=off;-fstack-usage")
+endif()
+
 target_add_binary_data(${COMPONENT_LIB} "apps/app_server/index.html" TEXT)
 target_add_binary_data(${COMPONENT_LIB} "assets/PaperColor.png" BINARY)
 target_add_binary_data(${COMPONENT_LIB} "assets/arrowClickToPowerOn.png" BINARY)

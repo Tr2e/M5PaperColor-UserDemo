@@ -9,4 +9,12 @@ config PAPERCOLOR_OIL_PAINT
         the production M5GFX/ED2208 color conversion. This does not enable the
         retired experimental LUT or photo ditherer.
 
+config PAPERCOLOR_OIL_PAINT_STACKED
+    bool "Use accepted stacked-brush renderer"
+    depends on PAPERCOLOR_OIL_PAINT
+    default y
+    help
+        Five-pass detail-preserving renderer, with caller-owned PSRAM workspace
+        and cooperative scheduling. Disable to retain the legacy oil renderer.
+
 endmenu

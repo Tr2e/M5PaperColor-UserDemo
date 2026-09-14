@@ -41,6 +41,11 @@ if [[ "$enabled" != "$variant" ]]; then
     echo "Use a fresh build directory or adjust ${build_dir}/sdkconfig with menuconfig." >&2
     exit 1
 fi
+if [[ "$variant" == on ]] && ! grep -q '^#define CONFIG_PAPERCOLOR_OIL_PAINT_STACKED 1$' "$header"; then
+    echo "The ready-to-flash oil build must enable the accepted stacked renderer." >&2
+    echo "Use a fresh build directory or enable PAPERCOLOR_OIL_PAINT_STACKED in its sdkconfig." >&2
+    exit 1
+fi
 
 echo "Verified oil-paint=$enabled with isolated config ${build_dir}/sdkconfig"
 "${project_dir}/tools/idf.sh" -B "$build_dir" build
