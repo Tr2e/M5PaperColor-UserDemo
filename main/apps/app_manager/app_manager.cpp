@@ -721,6 +721,9 @@ static void app_task(void* param)
 {
     static uint32_t s_led_blink_timer = 0;
     static bool s_led_state           = false;
+#if CONFIG_PAPERCOLOR_OIL_PAINT
+    PaperColorPhotoTarget pending_oil_target{};
+#endif
 
     // Generate AP name once (based on MAC)
     uint8_t mac[6];
@@ -732,9 +735,18 @@ static void app_task(void* param)
         hal.update();
 
 #if CONFIG_PAPERCOLOR_OIL_PAINT
+        if (M5.BtnA.wasPressed()) {
+            pending_oil_target = g_current_view == AppView::PHOTO
+                ? papercolor_photo_effect_capture_target() : PaperColorPhotoTarget{};
+        }
+        if (M5.BtnA.wasHold() ||
+            (M5.BtnA.wasDecideClickCount() && !M5.BtnA.wasSingleClicked())) {
+            pending_oil_target = {};
+        }
         // The web photo endpoint can still render on its own task. Do not let
         // the UI task draw or change view while that task owns the Canvas.
         if (papercolor_photo_effect_is_busy()) {
+            pending_oil_target = {};
             vTaskDelay(pdMS_TO_TICKS(10));
             continue;
         }
@@ -860,8 +872,10 @@ static void app_task(void* param)
 
 #if CONFIG_PAPERCOLOR_OIL_PAINT
             if (g_current_view == AppView::PHOTO && M5.BtnA.wasSingleClicked()) {
+                const PaperColorPhotoTarget target = pending_oil_target;
+                pending_oil_target = {};
                 audio::play_tone_from_midi(121, 0.08);
-                if (!papercolor_photo_effect_toggle()) {
+                if (!papercolor_photo_effect_toggle(target)) {
                     hal.statusEventSend(OPERATION_EVENT_FAILED);
                 }
                 vTaskDelay(pdMS_TO_TICKS(10));

@@ -118,7 +118,15 @@ void papercolor_photo_effect_release_canvas()
     g_busy.store(false, std::memory_order_release);
 }
 
-bool papercolor_photo_effect_toggle()
+PaperColorPhotoTarget papercolor_photo_effect_capture_target()
+{
+    if (!papercolor_photo_effect_try_claim_canvas()) return {};
+    const PaperColorPhotoTarget target{g_frame.generation, g_frame.valid};
+    papercolor_photo_effect_release_canvas();
+    return target;
+}
+
+bool papercolor_photo_effect_toggle(PaperColorPhotoTarget target)
 {
     if (!papercolor_photo_effect_try_claim_canvas()) return false;
     const auto finish = [](bool result) {
@@ -129,7 +137,8 @@ bool papercolor_photo_effect_toggle()
     int backing_w = 0, backing_h = 0;
     uint16_t* canvas_pixels = nullptr;
     size_t frame_bytes = 0;
-    if (!g_frame.valid || !canvas_layout(&backing_w, &backing_h, &canvas_pixels, &frame_bytes) ||
+    if (!target.valid || !g_frame.valid || target.generation != g_frame.generation ||
+        !canvas_layout(&backing_w, &backing_h, &canvas_pixels, &frame_bytes) ||
         backing_w != g_frame.width || backing_h != g_frame.height ||
         (hal.Canvas->getRotation() & 3U) != g_frame.rotation) return finish(false);
 
