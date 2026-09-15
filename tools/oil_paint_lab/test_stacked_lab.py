@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Sanitized CLI and invariant tests for the host-only stacked brush renderer."""
+import argparse
 import re
 import subprocess
 import tempfile
@@ -9,6 +10,9 @@ from PIL import Image
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--prototype', type=Path, default=Path(__file__).with_name('render_stacked_ppm.cpp'))
+    args = parser.parse_args()
     project = Path(__file__).resolve().parents[2]
     cases = 0
     with tempfile.TemporaryDirectory(prefix='papercolor-lab-test-') as directory:
@@ -18,7 +22,7 @@ def main():
                         '-fsanitize=address,undefined', '-fno-sanitize-recover=all',
                         '-fno-omit-frame-pointer', '-I', str(project / 'main'),
                         str(project / 'main/display/papercolor_oil_painter.cpp'),
-                        str(Path(__file__).with_name('render_stacked_ppm.cpp')), '-o', str(binary)], check=True)
+                        str(args.prototype), '-o', str(binary)], check=True)
         for size in [(1, 1), (1, 37), (37, 1), (2, 2), (7, 11), (267, 400), (600, 400), (400, 600), (600, 600)]:
             for color in [(0, 0, 0), (255, 255, 255), (99, 130, 181)]:
                 before = Image.new('RGB', size, color)
@@ -50,6 +54,37 @@ def main():
             subprocess.run([str(binary), str(directory / 'input.ppm'), str(directory / 'out.ppm')], check=True, capture_output=True)
             with Image.open(directory / 'out.ppm') as after:
                 assert after.size == size
+            cases += 1
+        # Gradation, a thin line in a flat field, and a soft transition. These
+        # stress the study's tiny confidence map and preserve both axis borders.
+        for pattern in ('gradient', 'line', 'soft_edge'):
+            size = (101, 79)
+            before = Image.new('RGB', size)
+            values = []
+            for y in range(size[1]):
+                for x in range(size[0]):
+                    if pattern == 'gradient':
+                        c = (x * 255 // 100, y * 255 // 78, (x + y) * 255 // 178)
+                    elif pattern == 'line':
+                        c = (20, 30, 40) if x == 50 else (180, 180, 180)
+                    else:
+                        value = min(230, max(20, (x - 30) * 7 + 20))
+                        c = (value, value, value)
+                    values.append(c)
+            before.putdata(values)
+            before.save(directory / 'input.ppm')
+            outputs = []
+            for name in ('out', 'repeat'):
+                subprocess.run([str(binary), str(directory / 'input.ppm'), str(directory / (name + '.ppm'))],
+                               check=True, capture_output=True)
+                outputs.append((directory / (name + '.ppm')).read_bytes())
+            assert outputs[0] == outputs[1]
+            with Image.open(directory / 'out.ppm') as after:
+                assert after.size == size
+                if pattern == 'line':
+                    # Broad protection against swallowing a one-pixel contour;
+                    # not a promise of photographic reconstruction fidelity.
+                    assert after.getpixel((50, 39))[0] + 30 < after.getpixel((15, 39))[0]
             cases += 1
         for data in [b'', b'P3\n1 1\n255\n0 0 0', b'P6\n0 1\n255\n', b'P6\n-1 1\n255\n',
                      b'P6\n601 1\n255\n', b'P6\n1 601\n255\n', b'P6\n1 1\n256\nabc', b'P6\n1 1\n255\nx']:

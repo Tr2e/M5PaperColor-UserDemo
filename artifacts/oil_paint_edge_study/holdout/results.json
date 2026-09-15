@@ -1,0 +1,384 @@
+{
+  "suite": "holdout",
+  "prototype_sha256": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "accepted_sha256": "a937ab472ce5dbc6ef2a66e6aa4fd14d3160a775c626a84d5f2973f2e51bb009",
+  "core_sha256": "2a4cfc244c8622aa76e893ff68158f9cf58204dff42f8d62c33111a6c8512119",
+  "harness_sha256": "cd966208c3c85c062aa9c2b7281f69bdc9bab012cd2d899514a92624cd241a40",
+  "manifest_sha256": "ae26a1db1a16555212a9108120b13a7b7bc0ebd1354b1e58f4d1c166ad1ea9f1",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "commands": {
+    "accepted": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-lf6p5_2b/accepted"
+    ],
+    "background": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-lf6p5_2b/background"
+    ],
+    "soft": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-lf6p5_2b/soft"
+    ],
+    "combined": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-lf6p5_2b/combined"
+    ],
+    "original": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_stacked_ppm.cpp",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-lf6p5_2b/original"
+    ]
+  },
+  "samples": [
+    {
+      "id": "H1",
+      "category": "landscape",
+      "label": "雾湖小舟 / 弱反差背景与孤立主体",
+      "photo_id": 20116680,
+      "author": "Arun kachhwaha",
+      "source": "https://www.pexels.com/photo/fog-over-boat-20116680/",
+      "source_sha256": "eae9dcffdb20bbfe0c2cff81f2d25b486c62f0abbbb4cbe7ce54c3951bcc2b47",
+      "content_size": [
+        300,
+        400
+      ],
+      "quiet_map_payload_bytes": 13400,
+      "source_metrics": {
+        "quiet_pixels": 97274,
+        "edge_pixels": 5717,
+        "quiet_gradient_mean": 0.3821781771079631,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 97274,
+          "edge_pixels": 5717,
+          "quiet_gradient_mean": 0.33140407508686803,
+          "edge_rgb_mae": 20.428954579907877,
+          "strokes": 2206,
+          "stats": [
+            "layer=0 radius=20 strokes=48 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=131 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=172 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=765 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "eb08919b88411cabb90f1caf1dca56e141d6344b9e0cb69674dcca7c8ab85d63"
+        },
+        "background": {
+          "quiet_pixels": 97274,
+          "edge_pixels": 5717,
+          "quiet_gradient_mean": 0.35009355017784816,
+          "edge_rgb_mae": 20.45361786484753,
+          "strokes": 2200,
+          "stats": [
+            "layer=0 radius=20 strokes=48 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=125 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=172 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=765 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "b7a1f496645ecc258ef9ff466ceb7e18fe70d9cbc24415f922307dac1c2937c6"
+        },
+        "soft": {
+          "quiet_pixels": 97274,
+          "edge_pixels": 5717,
+          "quiet_gradient_mean": 0.3397207886999609,
+          "edge_rgb_mae": 20.38959827415311,
+          "strokes": 2206,
+          "stats": [
+            "layer=0 radius=20 strokes=47 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=131 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=175 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=763 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "2b7d2bce7105f5273f52baf0f8a92ba742a0a7139de43e9fdbeea74d6c552143"
+        },
+        "combined": {
+          "quiet_pixels": 97274,
+          "edge_pixels": 5717,
+          "quiet_gradient_mean": 0.35672430454180976,
+          "edge_rgb_mae": 20.407498105066757,
+          "strokes": 2200,
+          "stats": [
+            "layer=0 radius=20 strokes=47 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=126 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=173 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=764 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "04a37821be2a83dfab811abedd9f0a76bc21411529eed01f2257acef4a7e3dba"
+        }
+      }
+    },
+    {
+      "id": "H2",
+      "category": "portrait",
+      "label": "灰底黑白近像 / 眼唇与面部柔和转折",
+      "photo_id": 13683865,
+      "author": "shahin khalaji",
+      "source": "https://www.pexels.com/photo/portrait-of-beautiful-woman-on-grey-background-13683865/",
+      "source_sha256": "8df6b01fba24c5796b0dea141a0ad338d7c68abb134230aae00850504bad95ad",
+      "content_size": [
+        600,
+        378
+      ],
+      "quiet_map_payload_bytes": 25200,
+      "source_metrics": {
+        "quiet_pixels": 131045,
+        "edge_pixels": 7475,
+        "quiet_gradient_mean": 1.3463543057728262,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 131045,
+          "edge_pixels": 7475,
+          "quiet_gradient_mean": 0.9671181655156625,
+          "edge_rgb_mae": 16.500022296544035,
+          "strokes": 3445,
+          "stats": [
+            "layer=0 radius=25 strokes=132 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=280 candidates=770 budget=770",
+            "layer=2 radius=9 strokes=352 candidates=1870 budget=1870",
+            "layer=3 radius=4 strokes=620 candidates=9120 budget=2668",
+            "layer=4 radius=2 strokes=2061 candidates=56700 budget=2061"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "fb756e88808d9c32ff0a25713daf2fe0e2fefcfb4bc6a9b3688986730baf7f01"
+        },
+        "background": {
+          "quiet_pixels": 131045,
+          "edge_pixels": 7475,
+          "quiet_gradient_mean": 1.0225800297607692,
+          "edge_rgb_mae": 16.403968784838348,
+          "strokes": 3436,
+          "stats": [
+            "layer=0 radius=25 strokes=123 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=269 candidates=770 budget=770",
+            "layer=2 radius=9 strokes=353 candidates=1870 budget=1870",
+            "layer=3 radius=4 strokes=630 candidates=9120 budget=2668",
+            "layer=4 radius=2 strokes=2061 candidates=56700 budget=2061"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "f28d1c0c83a76ecd97f04d016fd107b0bdb584b7bc2c0fa5c7841de81eed2615"
+        },
+        "soft": {
+          "quiet_pixels": 131045,
+          "edge_pixels": 7475,
+          "quiet_gradient_mean": 0.9627532526994543,
+          "edge_rgb_mae": 16.46586399108138,
+          "strokes": 3425,
+          "stats": [
+            "layer=0 radius=25 strokes=132 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=272 candidates=770 budget=770",
+            "layer=2 radius=9 strokes=331 candidates=1870 budget=1870",
+            "layer=3 radius=4 strokes=629 candidates=9120 budget=2668",
+            "layer=4 radius=2 strokes=2061 candidates=56700 budget=2061"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "939c15ebdbd03d79ca61c69d88fce2341886be1daff28e56a9f1d5929ab9c24b"
+        },
+        "combined": {
+          "quiet_pixels": 131045,
+          "edge_pixels": 7475,
+          "quiet_gradient_mean": 1.0142851692166812,
+          "edge_rgb_mae": 16.419397993311037,
+          "strokes": 3412,
+          "stats": [
+            "layer=0 radius=25 strokes=124 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=261 candidates=770 budget=770",
+            "layer=2 radius=9 strokes=332 candidates=1870 budget=1870",
+            "layer=3 radius=4 strokes=634 candidates=9120 budget=2668",
+            "layer=4 radius=2 strokes=2061 candidates=56700 budget=2061"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "a53475bd26369e7815d1f0a48de6bf163b3b348f8c4eb67c16243dc73a60652f"
+        }
+      }
+    },
+    {
+      "id": "H3",
+      "category": "still_life",
+      "label": "暖光陶罐绿植 / 纸纹、投影与细叶",
+      "photo_id": 14354875,
+      "author": "Hamna Nasir",
+      "source": "https://www.pexels.com/photo/still-life-with-a-plant-in-a-ceramic-vase-against-paper-texture-14354875/",
+      "source_sha256": "f7f8114c29726b7e368b5256144147bddf3465cfa6468476068cfd413dd9e322",
+      "content_size": [
+        300,
+        400
+      ],
+      "quiet_map_payload_bytes": 13400,
+      "source_metrics": {
+        "quiet_pixels": 8738,
+        "edge_pixels": 5490,
+        "quiet_gradient_mean": 5.159876401922637,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 8738,
+          "edge_pixels": 5490,
+          "quiet_gradient_mean": 2.710803387502861,
+          "edge_rgb_mae": 13.254766241651486,
+          "strokes": 3156,
+          "stats": [
+            "layer=0 radius=20 strokes=177 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=437 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=400 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=1052 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "775ffd4a242a910afc70aff66c30b87e0730e45ad6ea96c9964c3c494dbcdc59"
+        },
+        "background": {
+          "quiet_pixels": 8738,
+          "edge_pixels": 5490,
+          "quiet_gradient_mean": 2.712863355458915,
+          "edge_rgb_mae": 13.219307832422587,
+          "strokes": 3119,
+          "stats": [
+            "layer=0 radius=20 strokes=175 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=407 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=404 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=1043 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "50083b3be1d1587575497f9c382aa89a2ecc9f41d3204c85f8f5410d05d7497c"
+        },
+        "soft": {
+          "quiet_pixels": 8738,
+          "edge_pixels": 5490,
+          "quiet_gradient_mean": 2.593728542000458,
+          "edge_rgb_mae": 13.257255616272012,
+          "strokes": 3133,
+          "stats": [
+            "layer=0 radius=20 strokes=177 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=430 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=399 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=1037 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "76863be3df24daf7ef7ae661269bfd3766a7d82b6e0f305cd6535994cc891ccb"
+        },
+        "combined": {
+          "quiet_pixels": 8738,
+          "edge_pixels": 5490,
+          "quiet_gradient_mean": 2.6480888075074387,
+          "edge_rgb_mae": 13.25324833029751,
+          "strokes": 3111,
+          "stats": [
+            "layer=0 radius=20 strokes=175 candidates=192 budget=192",
+            "layer=1 radius=11 strokes=407 candidates=713 budget=713",
+            "layer=2 radius=7 strokes=400 candidates=1850 budget=1850",
+            "layer=3 radius=3 strokes=1039 candidates=13300 budget=1411",
+            "layer=4 radius=2 strokes=1090 candidates=30000 budget=1090"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "183a8a5ff92f059afeddf69ab29595074591f69959819afe47f34c62f58eef7d"
+        }
+      }
+    }
+  ],
+  "freeze_check": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "stage": "Host RGB565 only; no firmware, six-color, real-time, power or aesthetic acceptance claim",
+  "metrics": "Source-only masks: max 7x7 RGB neighbour gradient <12 for quiet; gradient >=40 for edges. Quiet gradient and edge RGB MAE are diagnostics, not artistic quality scores."
+}

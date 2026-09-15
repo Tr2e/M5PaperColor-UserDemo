@@ -1,0 +1,20 @@
+PaperColor offline edge study: three held-out evaluation photographs.
+These files are NOT in the firmware filesystem image or accepted photo corpus.
+Retrieved 2026-09-14 from Pexels for image-processing evaluation.
+Photo license: https://www.pexels.com/license/
+No endorsement by the photographers or models is implied.
+
+20116680.jpg — Arun kachhwaha
+https://www.pexels.com/photo/fog-over-boat-20116680/
+
+13683865.jpg — shahin khalaji
+https://www.pexels.com/photo/portrait-of-beautiful-woman-on-grey-background-13683865/
+
+14354875.jpg — Hamna Nasir
+https://www.pexels.com/photo/still-life-with-a-plant-in-a-ceramic-vase-against-paper-texture-14354875/
+
+Download template:
+https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg?auto=compress&cs=tinysrgb&w=1200
+
+Source checksums and derivative checksums: ../holdout/results.json
+Holdouts are a small purposive visual check, not a statistical proof of generalization.

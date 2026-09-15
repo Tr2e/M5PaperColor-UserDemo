@@ -1,0 +1,36 @@
+{
+  "prototype_sha256": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "suites": {
+    "develop_v2": {
+      "stroke_totals": {
+        "accepted": 29074,
+        "background": 28766,
+        "soft": 28972,
+        "combined": 28708
+      },
+      "combined_stroke_change_percent": -1.2588567104629522,
+      "quiet_gradient_improved": 2,
+      "image_count": 9,
+      "largest_edge_mae_increase": 0.09101396935269435
+    },
+    "holdout": {
+      "stroke_totals": {
+        "accepted": 8807,
+        "background": 8755,
+        "soft": 8764,
+        "combined": 8723
+      },
+      "combined_stroke_change_percent": -0.9537867605313943,
+      "quiet_gradient_improved": 1,
+      "image_count": 3,
+      "largest_edge_mae_increase": -0.0015179113539769418
+    }
+  },
+  "host_sum_of_image_medians_ms": {
+    "accepted": 890.4192929999971,
+    "background": 1079.3291240000008,
+    "soft": 970.4701659999967,
+    "combined": 1113.1137919999949
+  },
+  "host_combined_vs_accepted": 1.2501007118227374
+}

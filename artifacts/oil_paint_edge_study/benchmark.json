@@ -1,0 +1,479 @@
+{
+  "platform": "macOS-15.7.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "commands": {
+    "accepted": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edge-bench-fe014wjo/accepted"
+    ],
+    "background": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edge-bench-fe014wjo/background"
+    ],
+    "soft": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edge-bench-fe014wjo/soft"
+    ],
+    "combined": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edge-bench-fe014wjo/combined"
+    ]
+  },
+  "prototype_sha256": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "harness_sha256": "1eaada20ff94da30ef2c5dca6d8723ef8965e4be4c414abcb13c5190b39542b5",
+  "input_runs": {
+    "artifacts/oil_paint_edge_study/develop_v2": "14c6f21cc4958e8b5f90a493daabdbed9a3a8d3547e59c0be909e17333d7ebe6",
+    "artifacts/oil_paint_edge_study/holdout": "b92e371e66ff5daf95dc1b5cdc2c6578247e059e8345d00e3861786e37968038"
+  },
+  "samples": [
+    {
+      "id": "L1",
+      "measured_ms": {
+        "accepted": [
+          147.25804199999982,
+          156.5813330000001,
+          157.130875
+        ],
+        "background": [
+          174.17574999999985,
+          183.15695800000054,
+          171.84020899999996
+        ],
+        "soft": [
+          182.49350000000052,
+          159.36583399999992,
+          160.81900000000005
+        ],
+        "combined": [
+          169.4893329999996,
+          172.73804100000058,
+          174.07616599999986
+        ]
+      },
+      "median_ms": {
+        "accepted": 156.5813330000001,
+        "background": 174.17574999999985,
+        "soft": 160.81900000000005,
+        "combined": 172.73804100000058
+      },
+      "combined_vs_accepted": 1.1031841260413875,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "L2",
+      "measured_ms": {
+        "accepted": [
+          58.05449999999901,
+          61.90500000000121,
+          58.326499999999726
+        ],
+        "background": [
+          74.17337500000087,
+          73.9785830000006,
+          70.82337500000158
+        ],
+        "soft": [
+          66.29195800000076,
+          67.65912499999871,
+          66.89633299999898
+        ],
+        "combined": [
+          72.50916699999976,
+          77.90220800000114,
+          72.76466599999942
+        ]
+      },
+      "median_ms": {
+        "accepted": 58.326499999999726,
+        "background": 73.9785830000006,
+        "soft": 66.89633299999898,
+        "combined": 72.76466599999942
+      },
+      "combined_vs_accepted": 1.2475404147342934,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "L3",
+      "measured_ms": {
+        "accepted": [
+          58.23237499999934,
+          59.22262499999853,
+          59.64108299999893
+        ],
+        "background": [
+          68.98491699999987,
+          71.53812500000001,
+          85.19725000000022
+        ],
+        "soft": [
+          61.030417000001336,
+          63.656416000000604,
+          64.88612500000102
+        ],
+        "combined": [
+          67.36045799999957,
+          139.9789579999986,
+          72.6496670000003
+        ]
+      },
+      "median_ms": {
+        "accepted": 59.22262499999853,
+        "background": 71.53812500000001,
+        "soft": 63.656416000000604,
+        "combined": 72.6496670000003
+      },
+      "combined_vs_accepted": 1.226721493685937,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "P1",
+      "measured_ms": {
+        "accepted": [
+          72.56445900000053,
+          75.13670900000058,
+          72.56070800000103
+        ],
+        "background": [
+          85.53429200000018,
+          86.92691599999947,
+          89.32033300000164
+        ],
+        "soft": [
+          78.5970840000001,
+          79.82041699999876,
+          80.69916600000049
+        ],
+        "combined": [
+          86.69174999999996,
+          88.96708400000009,
+          86.00083400000003
+        ]
+      },
+      "median_ms": {
+        "accepted": 72.56445900000053,
+        "background": 86.92691599999947,
+        "soft": 79.82041699999876,
+        "combined": 86.69174999999996
+      },
+      "combined_vs_accepted": 1.1946860928157588,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "P2",
+      "measured_ms": {
+        "accepted": [
+          33.85341599999947,
+          32.6981669999995,
+          32.0582500000004
+        ],
+        "background": [
+          48.757124999999846,
+          50.3853749999994,
+          46.919666999999166
+        ],
+        "soft": [
+          37.512624999999744,
+          39.7829999999999,
+          35.9512500000001
+        ],
+        "combined": [
+          47.8269169999983,
+          49.059749999999624,
+          68.90154100000068
+        ]
+      },
+      "median_ms": {
+        "accepted": 32.6981669999995,
+        "background": 48.757124999999846,
+        "soft": 37.512624999999744,
+        "combined": 49.059749999999624
+      },
+      "combined_vs_accepted": 1.5003822691345474,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "P3",
+      "measured_ms": {
+        "accepted": [
+          118.06670900000071,
+          121.67795799999936,
+          118.23645800000016
+        ],
+        "background": [
+          139.12483300000034,
+          141.75587499999943,
+          138.8367499999994
+        ],
+        "soft": [
+          129.08479100000037,
+          127.9049170000004,
+          122.33883299999881
+        ],
+        "combined": [
+          158.36179099999902,
+          144.62033299999888,
+          142.1278749999999
+        ]
+      },
+      "median_ms": {
+        "accepted": 118.23645800000016,
+        "background": 139.12483300000034,
+        "soft": 127.9049170000004,
+        "combined": 144.62033299999888
+      },
+      "combined_vs_accepted": 1.2231450049019457,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "S1",
+      "measured_ms": {
+        "accepted": [
+          64.19099999999922,
+          65.79629199999992,
+          64.75537500000073
+        ],
+        "background": [
+          72.19462499999985,
+          74.64683299999919,
+          73.85108300000098
+        ],
+        "soft": [
+          66.73629199999986,
+          73.11154199999947,
+          70.63616699999997
+        ],
+        "combined": [
+          72.86079200000017,
+          78.10420800000095,
+          74.96612499999955
+        ]
+      },
+      "median_ms": {
+        "accepted": 64.75537500000073,
+        "background": 73.85108300000098,
+        "soft": 70.63616699999997,
+        "combined": 74.96612499999955
+      },
+      "combined_vs_accepted": 1.157681891271554,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "S2",
+      "measured_ms": {
+        "accepted": [
+          80.43220800000128,
+          55.785249999999564,
+          58.45091699999827
+        ],
+        "background": [
+          67.0843750000003,
+          68.6414589999984,
+          69.41237499999886
+        ],
+        "soft": [
+          59.949499999998324,
+          106.28524999999911,
+          61.89362499999973
+        ],
+        "combined": [
+          69.23224999999888,
+          69.14554200000111,
+          69.77970799999866
+        ]
+      },
+      "median_ms": {
+        "accepted": 58.45091699999827,
+        "background": 68.6414589999984,
+        "soft": 61.89362499999973,
+        "combined": 69.23224999999888
+      },
+      "combined_vs_accepted": 1.184451049758568,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "S3",
+      "measured_ms": {
+        "accepted": [
+          62.47045799999995,
+          61.55029199999973,
+          60.496416999999525
+        ],
+        "background": [
+          76.16412499999825,
+          74.86145800000088,
+          73.88162499999851
+        ],
+        "soft": [
+          69.44429200000002,
+          65.5876250000027,
+          66.55483399999795
+        ],
+        "combined": [
+          74.78499999999855,
+          71.87462500000308,
+          76.48041699999908
+        ]
+      },
+      "median_ms": {
+        "accepted": 61.55029199999973,
+        "background": 74.86145800000088,
+        "soft": 66.55483399999795,
+        "combined": 74.78499999999855
+      },
+      "combined_vs_accepted": 1.2150226679671783,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "H1",
+      "measured_ms": {
+        "accepted": [
+          38.90025000000108,
+          38.58520800000065,
+          39.68691699999738
+        ],
+        "background": [
+          55.9946250000003,
+          56.68504199999802,
+          55.498417000002576
+        ],
+        "soft": [
+          43.03533299999884,
+          43.93224999999745,
+          43.88879100000054
+        ],
+        "combined": [
+          60.56849999999869,
+          57.74716699999871,
+          57.14004100000025
+        ]
+      },
+      "median_ms": {
+        "accepted": 38.90025000000108,
+        "background": 55.9946250000003,
+        "soft": 43.88879100000054,
+        "combined": 57.74716699999871
+      },
+      "combined_vs_accepted": 1.4844934672655603,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "H2",
+      "measured_ms": {
+        "accepted": [
+          88.09341699999962,
+          87.89562499999803,
+          92.82354100000134
+        ],
+        "background": [
+          118.86062499999994,
+          112.50224999999858,
+          140.4734999999988
+        ],
+        "soft": [
+          100.19912499999961,
+          97.14250000000035,
+          104.25150000000016
+        ],
+        "combined": [
+          114.93883300000007,
+          113.78216600000002,
+          114.70670900000002
+        ]
+      },
+      "median_ms": {
+        "accepted": 88.09341699999962,
+        "background": 118.86062499999994,
+        "soft": 100.19912499999961,
+        "combined": 114.70670900000002
+      },
+      "combined_vs_accepted": 1.3021030731501824,
+      "release_matches_sanitized": true
+    },
+    {
+      "id": "H3",
+      "measured_ms": {
+        "accepted": [
+          81.03949999999926,
+          75.97516699999929,
+          124.4618339999981
+        ],
+        "background": [
+          92.95216699999997,
+          87.99045800000016,
+          92.6185420000003
+        ],
+        "soft": [
+          91.24420800000266,
+          90.68791600000026,
+          83.63549999999975
+        ],
+        "combined": [
+          123.15233400000025,
+          92.83962499999987,
+          129.2494999999967
+        ]
+      },
+      "median_ms": {
+        "accepted": 81.03949999999926,
+        "background": 92.6185420000003,
+        "soft": 90.68791600000026,
+        "combined": 123.15233400000025
+      },
+      "combined_vs_accepted": 1.5196581173378583,
+      "release_matches_sanitized": true
+    }
+  ],
+  "method": "1 discarded warm-up + 3 interleaved CLI wall times per image/variant; includes process and PPM I/O. No sanitizers in timed binaries. Every render checked against sanitized golden pixels. Host diagnostics only, not ESP32 performance, power, or latency predictions."
+}

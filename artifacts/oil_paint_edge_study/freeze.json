@@ -1,0 +1,6 @@
+{
+  "prototype_sha256": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "development_run": "develop_v2/results.json",
+  "holdout_ids": ["H1", "H2", "H3"],
+  "policy": "Created after inspecting two development iterations, before the first rendering or viewing of any holdout. No parameter or prototype changes after this freeze. Holdout is a small purposive visual check, not statistical proof."
+}

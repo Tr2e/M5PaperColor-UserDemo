@@ -1,0 +1,924 @@
+{
+  "suite": "develop",
+  "prototype_sha256": "cfc6d9370fac78bee01a491cceee32e025e4d48b41d7899a2fd708f715557d80",
+  "accepted_sha256": "a937ab472ce5dbc6ef2a66e6aa4fd14d3160a775c626a84d5f2973f2e51bb009",
+  "core_sha256": "2a4cfc244c8622aa76e893ff68158f9cf58204dff42f8d62c33111a6c8512119",
+  "harness_sha256": "cd966208c3c85c062aa9c2b7281f69bdc9bab012cd2d899514a92624cd241a40",
+  "manifest_sha256": "e9897c2d379802868ca709d831f3f591e3c02db96ae396fbc44601528918be86",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "commands": {
+    "accepted": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-glpuya36/accepted"
+    ],
+    "background": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=0",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-glpuya36/background"
+    ],
+    "soft": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=0",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-glpuya36/soft"
+    ],
+    "combined": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_edge_study_ppm.cpp",
+      "-DPAINT_BACKGROUND_CONTROL=1",
+      "-DPAINT_SOFT_EDGES=1",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-glpuya36/combined"
+    ],
+    "original": [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "-I",
+      "/Users/xudanyang/Documents/papercolor/main",
+      "/Users/xudanyang/Documents/papercolor/main/display/papercolor_oil_painter.cpp",
+      "/Users/xudanyang/Documents/papercolor/tools/oil_paint_lab/render_stacked_ppm.cpp",
+      "-o",
+      "/var/folders/xb/kjy7gz3d3g540g65b46lg0gc0000gn/T/papercolor-edges-glpuya36/original"
+    ]
+  },
+  "samples": [
+    {
+      "id": "L1",
+      "category": "landscape",
+      "label": "湖山倒影 / 高细节、冷暖对比",
+      "photo_id": 417074,
+      "author": "James Wheeler",
+      "source": "https://www.pexels.com/photo/lake-and-mountain-417074/",
+      "source_sha256": "a4891184d3f38132fb08dcb545ceb7f3ff6406714744bde7837e8a301fb3d8a6",
+      "content_size": [
+        594,
+        400
+      ],
+      "quiet_map_payload_bytes": 26532,
+      "source_metrics": {
+        "quiet_pixels": 88957,
+        "edge_pixels": 14512,
+        "quiet_gradient_mean": 4.367896849039424,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 88957,
+          "edge_pixels": 14512,
+          "quiet_gradient_mean": 3.4801196083501016,
+          "edge_rgb_mae": 18.73819367879456,
+          "strokes": 5432,
+          "stats": [
+            "layer=0 radius=26 strokes=223 candidates=228 budget=228",
+            "layer=1 radius=15 strokes=587 candidates=726 budget=726",
+            "layer=2 radius=9 strokes=804 candidates=1944 budget=1944",
+            "layer=3 radius=4 strokes=1658 candidates=9520 budget=2795",
+            "layer=4 radius=2 strokes=2160 candidates=59400 budget=2160"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "69a57351e27aba20522bba97b92d3e7bb58cf2182bc2ed41d4fe77d9bb44147b"
+        },
+        "background": {
+          "quiet_pixels": 88957,
+          "edge_pixels": 14512,
+          "quiet_gradient_mean": 3.4997920343536766,
+          "edge_rgb_mae": 18.72487137081955,
+          "strokes": 5405,
+          "stats": [
+            "layer=0 radius=26 strokes=221 candidates=228 budget=228",
+            "layer=1 radius=15 strokes=567 candidates=726 budget=726",
+            "layer=2 radius=9 strokes=793 candidates=1944 budget=1944",
+            "layer=3 radius=4 strokes=1664 candidates=9520 budget=2795",
+            "layer=4 radius=2 strokes=2160 candidates=59400 budget=2160"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "273bf2bcbf2d2efdc4f53a4a8569f592cb801820fe65cd549a05f756ee3204d2"
+        },
+        "soft": {
+          "quiet_pixels": 88957,
+          "edge_pixels": 14512,
+          "quiet_gradient_mean": 3.537900333869173,
+          "edge_rgb_mae": 18.760037669974274,
+          "strokes": 5428,
+          "stats": [
+            "layer=0 radius=26 strokes=222 candidates=228 budget=228",
+            "layer=1 radius=15 strokes=581 candidates=726 budget=726",
+            "layer=2 radius=9 strokes=798 candidates=1944 budget=1944",
+            "layer=3 radius=4 strokes=1667 candidates=9520 budget=2795",
+            "layer=4 radius=2 strokes=2160 candidates=59400 budget=2160"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "d9751ac7b583dcaaf7349c575db0508b53c5ba9a31c17ca8ae63eaa8e07b374e"
+        },
+        "combined": {
+          "quiet_pixels": 88957,
+          "edge_pixels": 14512,
+          "quiet_gradient_mean": 3.5478602021201255,
+          "edge_rgb_mae": 18.758475744211687,
+          "strokes": 5398,
+          "stats": [
+            "layer=0 radius=26 strokes=219 candidates=228 budget=228",
+            "layer=1 radius=15 strokes=556 candidates=726 budget=726",
+            "layer=2 radius=9 strokes=792 candidates=1944 budget=1944",
+            "layer=3 radius=4 strokes=1671 candidates=9520 budget=2795",
+            "layer=4 radius=2 strokes=2160 candidates=59400 budget=2160"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "4f134758bbfe9399cc15d042279f674a06db646c40bf725e4fa53f54b00247ec"
+        }
+      }
+    },
+    {
+      "id": "L2",
+      "category": "landscape",
+      "label": "沙漠夕照 / 大色面、柔和渐变",
+      "photo_id": 19316865,
+      "author": "Henrik Le-Botos",
+      "source": "https://www.pexels.com/photo/view-of-dunes-in-the-desert-at-sunset-19316865/",
+      "source_sha256": "10122fb54e073b6ec75e2452dbab0cdb21c5e5b9b4f85f32d7bf5d46d856e10c",
+      "content_size": [
+        310,
+        400
+      ],
+      "quiet_map_payload_bytes": 13936,
+      "source_metrics": {
+        "quiet_pixels": 74785,
+        "edge_pixels": 4903,
+        "quiet_gradient_mean": 4.03189142207662,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 74785,
+          "edge_pixels": 4903,
+          "quiet_gradient_mean": 2.87830447282209,
+          "edge_rgb_mae": 11.955537426065675,
+          "strokes": 2458,
+          "stats": [
+            "layer=0 radius=20 strokes=135 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=243 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=279 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=674 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "36d6ea5a0ab107c7ad54e08483c0585c5e3ad8dde61e1a42900ef2290634aa1a"
+        },
+        "background": {
+          "quiet_pixels": 74785,
+          "edge_pixels": 4903,
+          "quiet_gradient_mean": 2.7958280403824296,
+          "edge_rgb_mae": 11.944591746549731,
+          "strokes": 2399,
+          "stats": [
+            "layer=0 radius=20 strokes=127 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=205 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=271 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=669 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "d74daf8f8e47af073eb3fee2779a867fd32bfe235b82dbc90c4cadb1f5e8cc90"
+        },
+        "soft": {
+          "quiet_pixels": 74785,
+          "edge_pixels": 4903,
+          "quiet_gradient_mean": 2.842989904392592,
+          "edge_rgb_mae": 11.839146101026582,
+          "strokes": 2421,
+          "stats": [
+            "layer=0 radius=20 strokes=134 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=229 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=264 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=667 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "bd3742541f88843cd71fb1ae5b4e53473dfe2f2ca95f263e0b8a16cceef3cbd8"
+        },
+        "combined": {
+          "quiet_pixels": 74785,
+          "edge_pixels": 4903,
+          "quiet_gradient_mean": 2.8723941966971984,
+          "edge_rgb_mae": 11.8663403358488,
+          "strokes": 2387,
+          "stats": [
+            "layer=0 radius=20 strokes=125 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=200 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=266 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=669 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "6e0d493672317dca5fbfb15238f7f12f3307aeb84d2e19e13b2a897fd4b119e5"
+        }
+      }
+    },
+    {
+      "id": "L3",
+      "category": "landscape",
+      "label": "雾林 / 低对比、密集枝叶",
+      "photo_id": 29508251,
+      "author": "Laura Chouette",
+      "source": "https://www.pexels.com/photo/misty-forest-landscape-with-evergreen-trees-29508251/",
+      "source_sha256": "937d0d223c13c5392a96b78cc9af3b96fb87b495f5469f4741e99929d340b818",
+      "content_size": [
+        267,
+        400
+      ],
+      "quiet_map_payload_bytes": 11926,
+      "source_metrics": {
+        "quiet_pixels": 39724,
+        "edge_pixels": 6896,
+        "quiet_gradient_mean": 3.6012234417480617,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 39724,
+          "edge_pixels": 6896,
+          "quiet_gradient_mean": 2.1720874030812607,
+          "edge_rgb_mae": 20.05979311678268,
+          "strokes": 2627,
+          "stats": [
+            "layer=0 radius=17 strokes=176 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=301 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=328 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=852 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "316158962582c2968ef2d4b745c5af403639ae5b021f0807a07208d0e07b23e0"
+        },
+        "background": {
+          "quiet_pixels": 39724,
+          "edge_pixels": 6896,
+          "quiet_gradient_mean": 2.3359178330480312,
+          "edge_rgb_mae": 19.995794663573086,
+          "strokes": 2597,
+          "stats": [
+            "layer=0 radius=17 strokes=163 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=277 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=315 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=872 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "b4ceb0c08a604bc17421294843f25b3c2738921f7dc20cb698bb14c203382990"
+        },
+        "soft": {
+          "quiet_pixels": 39724,
+          "edge_pixels": 6896,
+          "quiet_gradient_mean": 2.218407008357668,
+          "edge_rgb_mae": 19.977474864655843,
+          "strokes": 2631,
+          "stats": [
+            "layer=0 radius=17 strokes=175 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=300 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=326 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=860 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "f93da1e08eeb346518b86930326a80b6ca318337c2fe57a9efb12d1fcbb5be74"
+        },
+        "combined": {
+          "quiet_pixels": 39724,
+          "edge_pixels": 6896,
+          "quiet_gradient_mean": 2.4152401570838786,
+          "edge_rgb_mae": 19.952387857695282,
+          "strokes": 2598,
+          "stats": [
+            "layer=0 radius=17 strokes=160 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=275 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=320 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=873 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "8ddaf0ea59d4e8f4eb714856eeeaf24152e3918052f22cb8e29cab255d0b0dbc"
+        }
+      }
+    },
+    {
+      "id": "P1",
+      "category": "portrait",
+      "label": "彩色棚拍 / 近景五官、肤色",
+      "photo_id": 6643922,
+      "author": "Harry H Brewster",
+      "source": "https://www.pexels.com/photo/a-studio-portrait-of-a-smiling-woman-6643922/",
+      "source_sha256": "8d74c281b11973687fdbc793f7e7bf9e203026635f997b498527106bf17ef6cb",
+      "content_size": [
+        310,
+        400
+      ],
+      "quiet_map_payload_bytes": 13936,
+      "source_metrics": {
+        "quiet_pixels": 41008,
+        "edge_pixels": 10528,
+        "quiet_gradient_mean": 3.7532676550916895,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 41008,
+          "edge_pixels": 10528,
+          "quiet_gradient_mean": 1.6765021459227467,
+          "edge_rgb_mae": 17.99404761904762,
+          "strokes": 3699,
+          "stats": [
+            "layer=0 radius=20 strokes=145 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=332 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=637 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=1458 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "28ed93e4615fb41b8d7f0c3355454f6f82710eba804cab81c766a3c08b0aa85c"
+        },
+        "background": {
+          "quiet_pixels": 41008,
+          "edge_pixels": 10528,
+          "quiet_gradient_mean": 1.7365392118611003,
+          "edge_rgb_mae": 17.92344224924012,
+          "strokes": 3677,
+          "stats": [
+            "layer=0 radius=20 strokes=140 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=322 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=630 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=1458 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "e00a157efabf8770bf20fc635bd42fba6c939d6eccddde36a22cb9cd95e22aea"
+        },
+        "soft": {
+          "quiet_pixels": 41008,
+          "edge_pixels": 10528,
+          "quiet_gradient_mean": 1.6920113148653921,
+          "edge_rgb_mae": 18.053508105369804,
+          "strokes": 3683,
+          "stats": [
+            "layer=0 radius=20 strokes=144 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=327 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=627 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=1458 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "5c448b02415baab4939468e4b716fc4ee8ffdeb0102b7794024c139751d4243f"
+        },
+        "combined": {
+          "quiet_pixels": 41008,
+          "edge_pixels": 10528,
+          "quiet_gradient_mean": 1.7726297307842371,
+          "edge_rgb_mae": 18.038025582573457,
+          "strokes": 3670,
+          "stats": [
+            "layer=0 radius=20 strokes=139 candidates=192 budget=192",
+            "layer=1 radius=12 strokes=316 candidates=567 budget=567",
+            "layer=2 radius=7 strokes=630 candidates=1950 budget=1950",
+            "layer=3 radius=3 strokes=1458 candidates=13699 budget=1458",
+            "layer=4 radius=2 strokes=1127 candidates=31000 budget=1127"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "ca7664e22ca90cc16b5bfa95cced6abfadcb26696d517338ddec8e0de8254a00"
+        }
+      }
+    },
+    {
+      "id": "P2",
+      "category": "portrait",
+      "label": "黑白人像 / 明暗结构、面部纹理",
+      "photo_id": 14173111,
+      "author": "MAG Photography",
+      "source": "https://www.pexels.com/photo/portrait-of-elderly-man-in-black-and-white-14173111/",
+      "source_sha256": "35d80b515c950958651085dfc7da6e24d2fab365e847c054ea0a41d6d9046ec6",
+      "content_size": [
+        267,
+        400
+      ],
+      "quiet_map_payload_bytes": 11926,
+      "source_metrics": {
+        "quiet_pixels": 78342,
+        "edge_pixels": 1646,
+        "quiet_gradient_mean": 0.7014500523346353,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 78342,
+          "edge_pixels": 1646,
+          "quiet_gradient_mean": 0.4148094253401751,
+          "edge_rgb_mae": 18.20190360469826,
+          "strokes": 1487,
+          "stats": [
+            "layer=0 radius=17 strokes=74 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=98 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=124 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=267 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=924 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "b0b3d1204a26ecc061b60e15662b812b0475bbd70a8fe76e38b35ad28730db5c"
+        },
+        "background": {
+          "quiet_pixels": 78342,
+          "edge_pixels": 1646,
+          "quiet_gradient_mean": 0.43109698501442395,
+          "edge_rgb_mae": 18.17861482381531,
+          "strokes": 1466,
+          "stats": [
+            "layer=0 radius=17 strokes=71 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=89 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=120 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=269 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=917 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "044d0a1668766fcd2af83fe2830ad1c432633e5442f12cef82d64cb361831652"
+        },
+        "soft": {
+          "quiet_pixels": 78342,
+          "edge_pixels": 1646,
+          "quiet_gradient_mean": 0.3989175665671032,
+          "edge_rgb_mae": 18.094370190360472,
+          "strokes": 1486,
+          "stats": [
+            "layer=0 radius=17 strokes=71 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=96 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=120 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=276 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=923 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "b8cbb3e9d897d6ecf0cd3b3cb26b9f83bfeaf3903754b94475d21efb86f4d976"
+        },
+        "combined": {
+          "quiet_pixels": 78342,
+          "edge_pixels": 1646,
+          "quiet_gradient_mean": 0.4302417604860739,
+          "edge_rgb_mae": 18.06946132037262,
+          "strokes": 1475,
+          "stats": [
+            "layer=0 radius=17 strokes=70 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=90 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=114 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=277 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=924 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "e1ce71319420ab0dcf656edb168869749fd62333df6b2ad31825ca13252dee63"
+        }
+      }
+    },
+    {
+      "id": "P3",
+      "category": "portrait",
+      "label": "户外逆光 / 小脸部、发丝高光",
+      "photo_id": 7244127,
+      "author": "Gilles Scherrer",
+      "source": "https://www.pexels.com/photo/backlit-portrait-of-beautiful-young-woman-7244127/",
+      "source_sha256": "f77cd486fa5ee764cb88375b856716a5a124d195077e5e59d4ae6f3347690e7a",
+      "content_size": [
+        600,
+        383
+      ],
+      "quiet_map_payload_bytes": 25600,
+      "source_metrics": {
+        "quiet_pixels": 132861,
+        "edge_pixels": 13291,
+        "quiet_gradient_mean": 3.1945717704969856,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 132861,
+          "edge_pixels": 13291,
+          "quiet_gradient_mean": 2.6589744168717684,
+          "edge_rgb_mae": 20.115115491686105,
+          "strokes": 4376,
+          "stats": [
+            "layer=0 radius=25 strokes=167 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=437 candidates=805 budget=805",
+            "layer=2 radius=9 strokes=488 candidates=1925 budget=1925",
+            "layer=3 radius=4 strokes=1195 candidates=9240 budget=2703",
+            "layer=4 radius=2 strokes=2089 candidates=57300 budget=2089"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "8842bee7298245abb56bffd32a2cda32e68de1679debb873c6573db4f3527f7d"
+        },
+        "background": {
+          "quiet_pixels": 132861,
+          "edge_pixels": 13291,
+          "quiet_gradient_mean": 2.679130820933156,
+          "edge_rgb_mae": 20.173601183758432,
+          "strokes": 4344,
+          "stats": [
+            "layer=0 radius=25 strokes=163 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=412 candidates=805 budget=805",
+            "layer=2 radius=9 strokes=487 candidates=1925 budget=1925",
+            "layer=3 radius=4 strokes=1193 candidates=9240 budget=2703",
+            "layer=4 radius=2 strokes=2089 candidates=57300 budget=2089"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "02616c7b11db3d4c38dee15e6280335a8a0f03a08f7f1e90315ff8de7d01d8cd"
+        },
+        "soft": {
+          "quiet_pixels": 132861,
+          "edge_pixels": 13291,
+          "quiet_gradient_mean": 2.671506311107097,
+          "edge_rgb_mae": 20.232588468387128,
+          "strokes": 4360,
+          "stats": [
+            "layer=0 radius=25 strokes=165 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=429 candidates=805 budget=805",
+            "layer=2 radius=9 strokes=478 candidates=1925 budget=1925",
+            "layer=3 radius=4 strokes=1199 candidates=9240 budget=2703",
+            "layer=4 radius=2 strokes=2089 candidates=57300 budget=2089"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "777936c26f0dad866f5f4124c7949c1d55acd7794536efc0a15b8cc2792200e5"
+        },
+        "combined": {
+          "quiet_pixels": 132861,
+          "edge_pixels": 13291,
+          "quiet_gradient_mean": 2.6951475602321224,
+          "edge_rgb_mae": 20.2061294610388,
+          "strokes": 4327,
+          "stats": [
+            "layer=0 radius=25 strokes=162 candidates=228 budget=228",
+            "layer=1 radius=14 strokes=399 candidates=805 budget=805",
+            "layer=2 radius=9 strokes=477 candidates=1925 budget=1925",
+            "layer=3 radius=4 strokes=1200 candidates=9240 budget=2703",
+            "layer=4 radius=2 strokes=2089 candidates=57300 budget=2089"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "e6ea35c93815ad9ce1b731e34e8eccfd5394b960e1c5d07ddb224fb6ec2ddb05"
+        }
+      }
+    },
+    {
+      "id": "S1",
+      "category": "still_life",
+      "label": "水果玻璃碗 / 高饱和、圆形体积",
+      "photo_id": 15683363,
+      "author": "Anna Astakhova",
+      "source": "https://www.pexels.com/photo/fruits-in-glass-bowl-15683363/",
+      "source_sha256": "f90d254adbe37e6aafa7f7964137d99d5e5a1c43a034b3f311edc22efc411247",
+      "content_size": [
+        267,
+        400
+      ],
+      "quiet_map_payload_bytes": 11926,
+      "source_metrics": {
+        "quiet_pixels": 64115,
+        "edge_pixels": 2886,
+        "quiet_gradient_mean": 2.9323247290025733,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 64115,
+          "edge_pixels": 2886,
+          "quiet_gradient_mean": 3.1628636044607346,
+          "edge_rgb_mae": 13.389004389004388,
+          "strokes": 2750,
+          "stats": [
+            "layer=0 radius=17 strokes=211 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=406 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=447 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=716 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "a3a6d885d8e62f005dae7206cd40390689a76a9c911caa9c69d04a29d48b39b2"
+        },
+        "background": {
+          "quiet_pixels": 64115,
+          "edge_pixels": 2886,
+          "quiet_gradient_mean": 3.0478047258831786,
+          "edge_rgb_mae": 13.394432894432896,
+          "strokes": 2683,
+          "stats": [
+            "layer=0 radius=17 strokes=200 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=360 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=430 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=723 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "a3051a679c5bd3fd88d697682aef30fc438c6ffc378dcabcf2dd49a67540dc98"
+        },
+        "soft": {
+          "quiet_pixels": 64115,
+          "edge_pixels": 2886,
+          "quiet_gradient_mean": 3.084831942603135,
+          "edge_rgb_mae": 13.381496881496881,
+          "strokes": 2714,
+          "stats": [
+            "layer=0 radius=17 strokes=209 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=391 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=433 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=711 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "555a531f4abe737dcacd28d99e7e9a44c2d9a9a98b0d0d6cea11dfb096e030d1"
+        },
+        "combined": {
+          "quiet_pixels": 64115,
+          "edge_pixels": 2886,
+          "quiet_gradient_mean": 3.0495827809404976,
+          "edge_rgb_mae": 13.426079926079927,
+          "strokes": 2664,
+          "stats": [
+            "layer=0 radius=17 strokes=200 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=345 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=431 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=718 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "c470bf1fca828a6490eeaddd810747539114bc7878dfb619bc2f7d3f611102e7"
+        }
+      }
+    },
+    {
+      "id": "S2",
+      "category": "still_life",
+      "label": "玻璃红果 / 暗背景、透明材质",
+      "photo_id": 35769733,
+      "author": "Valentin Ivantsov",
+      "source": "https://www.pexels.com/photo/elegant-glass-vase-with-red-berries-still-life-35769733/",
+      "source_sha256": "e3d4b24f1c479c260c7fa6e7073162788629c5ad13cc8fe9271f3f282f759098",
+      "content_size": [
+        267,
+        400
+      ],
+      "quiet_map_payload_bytes": 11926,
+      "source_metrics": {
+        "quiet_pixels": 31882,
+        "edge_pixels": 8637,
+        "quiet_gradient_mean": 4.680070259080359,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 31882,
+          "edge_pixels": 8637,
+          "quiet_gradient_mean": 1.041967254250047,
+          "edge_rgb_mae": 18.400524873605804,
+          "strokes": 3088,
+          "stats": [
+            "layer=0 radius=17 strokes=160 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=273 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=450 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1235 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "f8834213a87ef49bbdbda37150c20937253cf353e6ceaa773606798bff55a609"
+        },
+        "background": {
+          "quiet_pixels": 31882,
+          "edge_pixels": 8637,
+          "quiet_gradient_mean": 1.0824289567781193,
+          "edge_rgb_mae": 18.474586083130713,
+          "strokes": 3051,
+          "stats": [
+            "layer=0 radius=17 strokes=146 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=259 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=445 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1231 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "5a27cf95eb168b5fb069100629b9d8171c5df67d073bace0c930bb0fc6d512ff"
+        },
+        "soft": {
+          "quiet_pixels": 31882,
+          "edge_pixels": 8637,
+          "quiet_gradient_mean": 1.0727369675679066,
+          "edge_rgb_mae": 18.424259966809466,
+          "strokes": 3109,
+          "stats": [
+            "layer=0 radius=17 strokes=164 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=272 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=454 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1249 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "396dc2f375139c3e5101db63869b22a683031bc53645256c86522e816fec9a0d"
+        },
+        "combined": {
+          "quiet_pixels": 31882,
+          "edge_pixels": 8637,
+          "quiet_gradient_mean": 1.1059532024339753,
+          "edge_rgb_mae": 18.460846744625833,
+          "strokes": 3065,
+          "stats": [
+            "layer=0 radius=17 strokes=144 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=257 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=449 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1245 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "c9f3c661c2c44ef1d89307b2bdd3ee3d87b1fcb483a40cc632de8fe8cba36326"
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "category": "still_life",
+      "label": "花卉茶具 / 柔光、细花纹与多物体",
+      "photo_id": 10170980,
+      "author": "Мария",
+      "source": "https://www.pexels.com/photo/porcelain-cup-and-a-bouquet-of-flowers-10170980/",
+      "source_sha256": "6fae3a36cdfbbf4152c93b36a11a5f4c31aded61443bb0441d3083421255af65",
+      "content_size": [
+        267,
+        400
+      ],
+      "quiet_map_payload_bytes": 11926,
+      "source_metrics": {
+        "quiet_pixels": 50780,
+        "edge_pixels": 4186,
+        "quiet_gradient_mean": 5.278554549035054,
+        "edge_rgb_mae": 0.0
+      },
+      "variants": {
+        "accepted": {
+          "quiet_pixels": 50780,
+          "edge_pixels": 4186,
+          "quiet_gradient_mean": 2.959098070106341,
+          "edge_rgb_mae": 11.456681000159262,
+          "strokes": 3157,
+          "stats": [
+            "layer=0 radius=17 strokes=157 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=367 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=574 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1089 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "4b1d535ce6c873850bc4d7a7260f15316619552b79a9bf50a37fc6fe3f60ef63"
+        },
+        "background": {
+          "quiet_pixels": 50780,
+          "edge_pixels": 4186,
+          "quiet_gradient_mean": 3.0437770775896023,
+          "edge_rgb_mae": 11.31923873228221,
+          "strokes": 3144,
+          "stats": [
+            "layer=0 radius=17 strokes=155 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=348 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=577 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1094 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "72b2b9f2313488557a29ba92cde7e6f18f2b790c0ae838af3a11db55c15c901c"
+        },
+        "soft": {
+          "quiet_pixels": 50780,
+          "edge_pixels": 4186,
+          "quiet_gradient_mean": 3.0534068530917686,
+          "edge_rgb_mae": 11.399904443382704,
+          "strokes": 3140,
+          "stats": [
+            "layer=0 radius=17 strokes=158 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=361 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=565 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1086 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "e343d17b60e3e5bf9f2fb9be227cc909fbc694e36e261beec929ad62ed7f8e0c"
+        },
+        "combined": {
+          "quiet_pixels": 50780,
+          "edge_pixels": 4186,
+          "quiet_gradient_mean": 3.115833005120126,
+          "edge_rgb_mae": 11.340818601688166,
+          "strokes": 3124,
+          "stats": [
+            "layer=0 radius=17 strokes=155 candidates=247 budget=247",
+            "layer=1 radius=10 strokes=344 candidates=726 budget=726",
+            "layer=2 radius=6 strokes=571 candidates=2166 budget=2166",
+            "layer=3 radius=3 strokes=1084 candidates=11837 budget=1256",
+            "layer=4 radius=1 strokes=970 candidates=26600 budget=970"
+          ],
+          "deterministic": true,
+          "sanitizer_runs": 2,
+          "output_sha256": "f8b00dcfc5d7e1759a7da7be794f0362b83261a9b6f837d4d8e49b693b583c27"
+        }
+      }
+    }
+  ],
+  "freeze_check": null,
+  "stage": "Host RGB565 only; no firmware, six-color, real-time, power or aesthetic acceptance claim",
+  "metrics": "Source-only masks: max 7x7 RGB neighbour gradient <12 for quiet; gradient >=40 for edges. Quiet gradient and edge RGB MAE are diagnostics, not artistic quality scores."
+}

@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>PaperColor 离线柔边实验</title>
+<style>body{font:17px system-ui;max-width:1248px;margin:40px auto;padding:0 20px;background:#f3f1ed;color:#222;line-height:1.7}img{width:100%;height:auto}a{color:#285a70}</style>
+<h1>PaperColor · 背景与柔边实验</h1>
+<p>结论：局部改善，尚不足以默认替换已验收版。天空、幕布有所收敛；雾区色阶带和低反差五官没有解决。所有图是实际 C++ 算法输出，未使用 AI 生成或后期修图。</p>
+<p><a href="develop_v2/index.html">九张开发回归图：原图 / 已验收 / 实验 + 四组消融</a><br>
+<a href="holdout/index.html">三张新照片：冻结参数后验证</a><br>
+<a href="../../doc/papercolor_stacked_brush_edge_study.md">技术记录与限制</a> ·
+<a href="summary.json">指标摘要</a> · <a href="benchmark.json">主机计时</a></p>
+<p>以下局部包含改善与遗留问题。裁切仅用于看清差异，不是算法输入，也未用于指标评分。全图见上述图册。</p>
+<img src="focus.png" alt="原图、已验收版、实验版的四组局部对比">
+<p>这是 RGB565 阶段，不是 Spectra 6 实屏效果。四组测试均可复现且通过 ASan/UBSan，但不代表审美验收。
+主机计时包含进程启动和文件读写，不能推算设备耗时。固件、烧录包和 OS 分支未更改。</p>
+<p>实验过程：<a href="develop/index.html">第一轮（未采用）</a> → <a href="develop_v2/index.html">第二轮</a> →
+<a href="freeze.json">冻结</a> → <a href="holdout/index.html">新图验证</a>。照片来源与作者见各图册。</p></html>
