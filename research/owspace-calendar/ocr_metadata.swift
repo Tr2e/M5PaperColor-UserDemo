@@ -8,6 +8,7 @@ struct Line: Codable {
     let confidence: Float
     let x: Double
     let y: Double
+    let height: Double
 }
 
 while let input = readLine() {
@@ -38,7 +39,8 @@ while let input = readLine() {
                 return (request.results ?? []).compactMap { obs -> Line? in
                 guard let c = obs.topCandidates(1).first else { return nil }
                 return Line(text: c.string, confidence: c.confidence,
-                            x: obs.boundingBox.minX, y: top + (1 - obs.boundingBox.midY) * (bottom - top))
+                            x: obs.boundingBox.minX, y: top + (1 - obs.boundingBox.midY) * (bottom - top),
+                            height: obs.boundingBox.height * (bottom - top))
                 }
             }
             let lower: Double
@@ -72,14 +74,29 @@ while let input = readLine() {
                 $0.y >= lower && $0.y <= upper && !(year == 2021 && $0.x < 0.28)
             }
             let sourceLines = year == 2022 ? try recognize(top: 0.51, bottom: 0.795) : attribution
-            let sources = sourceLines.filter {
+            var sources = sourceLines.filter {
                 $0.y > (year == 2022 ? 0.52 : lower - 0.025) && $0.y < upper &&
                 ($0.text.contains("《") || $0.text.contains("〈"))
             }.compactMap { line -> Line? in
                 // Source titles only; never return surrounding body text here.
                 let pattern = "[《〈][^》〉]{1,100}[》〉]"
                 guard let range = line.text.range(of: pattern, options: .regularExpression) else { return nil }
-                return Line(text: String(line.text[range]), confidence: line.confidence, x: line.x, y: line.y)
+                return Line(text: String(line.text[range]), confidence: line.confidence, x: line.x, y: line.y, height: line.height)
+            }
+            if year == 2022 && sources.isEmpty {
+                // English song/book titles use the small source font without
+                // Chinese book-title brackets. Body-size text is excluded.
+                let candidates = sourceLines.filter {
+                    $0.y > 0.60 && $0.y < 0.79 && $0.height < 0.024 &&
+                    $0.text.count > 3 && $0.text.count <= 90 &&
+                    $0.text.range(of: "[A-Za-z]", options: .regularExpression) != nil &&
+                    $0.text.range(of: "[㐀-鿿。！？!?]", options: .regularExpression) == nil
+                }
+                if let line = candidates.last {
+                    let title = line.text.replacingOccurrences(of: "\\s+[BMⓂⒷ]$", with: "", options: .regularExpression)
+                    sources.append(Line(text: "《" + title + "》", confidence: line.confidence,
+                                        x: line.x, y: line.y, height: line.height))
+                }
             }
             let result = ["titles": titles, "attribution": attribution, "sources": sources]
             let data = try JSONEncoder().encode(result)
