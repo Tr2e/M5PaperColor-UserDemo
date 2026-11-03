@@ -102,6 +102,34 @@ def parse_metadata(ocr):
     confidence += [r["confidence"] for r in titles + ocr.get("sources", [])]
     if confidence and min(confidence) < .5:
         flags.append("low_ocr_confidence")
+    excerpt_lines = ocr.get("excerptLines", [])
+    excerpt = None
+    if not question_page and excerpt_lines:
+        # Drop source-title lines (《…》/〈…〉) and icon/footer noise that can be
+        # swept into the body band on tight layouts, then join remaining body
+        # text in reading order.
+        body_lines = [
+            l for l in excerpt_lines
+            if not SOURCE_RE.search(l["text"])
+            and not re.search(r"[®©@™℠]", l["text"])
+        ]
+        # Vision can return two overlapping boxes for the same visual line;
+        # collapse near-coincident rows, keeping the higher-confidence reading.
+        body_lines.sort(key=lambda l: l["y"])
+        dedup = []
+        for l in body_lines:
+            if dedup and abs(l["y"] - dedup[-1]["y"]) < 0.017:
+                if l["confidence"] > dedup[-1]["confidence"]:
+                    dedup[-1] = l
+                continue
+            dedup.append(l)
+        if dedup:
+            # Chinese body text carries no spaces; English quotations need them.
+            seen_han = any(re.search(r"[\u4e00-\u9fff]", l["text"]) for l in dedup)
+            text = "".join(l["text"] for l in dedup)
+            if seen_han:
+                text = re.sub(r"\s+", "", text)
+            excerpt = text.strip() or None
     return {
         "title": title,
         "title_kind": title[0] if title else "问答" if question_page else None,
@@ -110,6 +138,7 @@ def parse_metadata(ocr):
         "source": "；".join(dict.fromkeys(sources)) or None,
         "author": "；".join(people) or None,
         "author_roles": list(dict.fromkeys(roles)),
+        "excerpt": excerpt,
         "ocr_confidence_min": min(confidence) if confidence else None,
         "review_flags": list(dict.fromkeys(flags)),
         "review_status": "machine_extracted_not_human_verified",

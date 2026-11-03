@@ -49,6 +49,7 @@ audit={
     'duplicate_image_groups':[dates for dates in hashes.values() if len(dates)>1],
     'confirmed_image_date_mismatches':[{k:r[k] for k in ['date','printed_date','url']} for r in rows if r.get('date_verification')=='visually_checked_mismatch'],
     'field_counts':{key:sum(bool(r.get(key)) for r in indexed) for key in ['title','author','source']},
+    'excerpt_field_counts':{key:sum(bool(r.get(key)) for r in indexed) for key in ['excerpt']},
     'title_kind_counts':dict(Counter(r.get('title_kind') for r in indexed)),
     'visually_verified_metadata_samples':sum(r.get('review_status')=='sample_metadata_verified' for r in rows),
     'review_flag_counts':dict(Counter(flag for r in rows for flag in r.get('review_flags',[]))),

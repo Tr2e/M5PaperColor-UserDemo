@@ -14,6 +14,7 @@ struct MetadataResult: Codable {
     let titles: [Line]
     let attribution: [Line]
     let sources: [Line]
+    let excerptLines: [Line]
     let layout_variant: String?
 }
 
@@ -130,7 +131,32 @@ while let input = readLine() {
                                         x: line.x, y: line.y, height: line.height))
                 }
             }
-            let result = MetadataResult(titles: titles, attribution: attribution, sources: sources, layout_variant: layoutVariant)
+            // Excerpt: the quotation body between the title band and the
+            // bibliographic footer. Position and font size vary by year, so the
+            // band is year-keyed and big day numerals / footer small print are
+            // excluded by height. Reader-question pages carry question/body text
+            // rather than a structured quotation and are left empty here.
+            let excerptBand: (Double, Double)
+            switch year {
+            case 2015...2018: excerptBand = (titleBand.1, 0.910)
+            case 2019: excerptBand = (titleBand.1, 0.910)
+            case 2020: excerptBand = (titleBand.1, 0.905)
+            case 2021: excerptBand = (titleBand.1, 0.860)
+            case 2022: excerptBand = (0.535, 0.635)
+            case 2023: excerptBand = (titleBand.1, 0.880)
+            case 2024: excerptBand = (titleBand.1, 0.755)
+            default: excerptBand = (titleBand.1, 0.870)
+            }
+            var excerptLines: [Line] = []
+            if layoutVariant == nil {
+                let excerptRaw = year <= 2020 ? allLines : try recognize(top: excerptBand.0, bottom: excerptBand.1)
+                excerptLines = excerptRaw.filter {
+                    $0.y >= excerptBand.0 && $0.y <= excerptBand.1 &&
+                    $0.height >= 0.022 && $0.height <= 0.11 &&
+                    $0.text.range(of: "[一-鿿A-Za-z]", options: .regularExpression) != nil
+                }.sorted { $0.y < $1.y }
+            }
+            let result = MetadataResult(titles: titles, attribution: attribution, sources: sources, excerptLines: excerptLines, layout_variant: layoutVariant)
             let data = try JSONEncoder().encode(result)
             print(String(decoding: data, as: UTF8.self))
             fflush(stdout)

@@ -36,7 +36,7 @@ body{max-width:1180px;margin:44px auto;padding:0 24px;color:#202020;background:#
 h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size:20px;margin-top:34px}p{max-width:920px}a{color:#175e86}table{width:100%;border-collapse:collapse;margin:18px 0 30px;font-size:14px;table-layout:fixed}th,td{padding:10px 11px;vertical-align:top;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#f1f3f4;color:#111}tr:nth-child(even){background:#fafafa}.date{width:104px}.title{width:145px}.author{width:180px}.state{width:140px}.muted{color:#626262;font-size:13px}.missing{color:#666}.nav{display:flex;gap:18px;flex-wrap:wrap}input{font:inherit;padding:8px 12px;width:min(460px,90%);border:1px solid #999}button{font:inherit;padding:8px 12px;margin-left:8px}caption{text-align:left;font-weight:600;padding:8px 0}.year{scroll-margin-top:20px}.month{scroll-margin-top:20px}@media print{body{margin:0;padding:0;font-size:10pt}h2{break-before:page}.controls,.nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}a{color:#222;text-decoration:none}table{font-size:8pt}}
 </style><main><h1>单向历 2015 至 2025 年历史内容索引</h1>"""]
     out.append(f"<p>按年分析版式、按月整理的历史元数据索引。覆盖 <strong>{len(rows):,}</strong> 个日期，其中 <strong>{len(indexed):,}</strong> 个标准地址返回可识别图片，<strong>{missing}</strong> 个返回 404 或 410。查询日期为 2026 年 11 月 3 日。</p>")
-    out.append("<p>本索引收录日期、宜忌短标题、作者、出处和官方图片链接，不收录完整选句。字段为机器提取，尚未逐条人工校对；空值不等同于原图没有该信息。日期来自请求地址，图片内日期尚未逐张确认。链接失效只说明测试的标准地址不可读取。</p>")
+    out.append("<p>本索引收录日期、宜忌短标题、作者、出处和官方图片链接，并对已人工核对的样本补充内容摘录（excerpt）字段。摘录为机器提取、尚未逐条校对，不保留完整引文全文。字段为机器提取，尚未逐条人工校对；空值不等同于原图没有该信息。日期来自请求地址，图片内日期尚未逐张确认。链接失效只说明测试的标准地址不可读取。</p>")
     conflicts=[r for r in rows if r.get('date_verification')=='visually_checked_mismatch']
     out.append(f'<p><strong>已确认 {len(conflicts)} 条日期冲突。</strong>这些地址返回了其他日期的图片，索引保留服务器实际返回的书目字段并标记，不能视为目标日期的内容。</p><details><summary>查看日期冲突清单</summary><ul>'+''.join(f'<li>{E(r["date"])} 地址 → 图内日期 {E(r["printed_date"])}</li>' for r in conflicts)+'</ul></details>')
     out.append('<nav class="nav">' + ' '.join(f'<a href="#year-{r["year"]}">{r["year"]}</a>' for r in reviews) + '</nav>')
@@ -53,7 +53,7 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
         for key, batch in months.items():
             if not key.startswith(str(year)):
                 continue
-            out.append(f'<section class="month"><h3 id="month-{key}">{key}</h3><table><thead><tr><th class="date">日期及原图</th><th class="title">宜忌标题</th><th class="author">作者</th><th>出处</th><th class="state">识别状态</th></tr></thead><tbody>')
+            out.append(f'<section class="month"><h3 id="month-{key}">{key}</h3><table><thead><tr><th class="date">日期及原图</th><th class="title">宜忌标题</th><th class="author">作者</th><th>出处</th><th>内容摘录</th><th class="state">识别状态</th></tr></thead><tbody>')
             for row in batch:
                 status = row['status']
                 if status == 'indexed':
@@ -65,9 +65,9 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
                     state = f'标准地址 HTTP {row["http_status"]}'
                 else:
                     state = '处理异常 ' + status
-                search = ' '.join(str(row.get(k) or '') for k in ['date','title','author','source'])
+                search = ' '.join(str(row.get(k) or '') for k in ['date','title','author','source','excerpt'])
                 title_display = row.get('title') or ('问答页（无宜忌）' if row.get('layout_variant')=='reader_question' else None)
-                out.append(f'<tr class="record" data-search="{E(search.lower())}"><td><a href="{E(row["url"])}" target="_blank" rel="noopener noreferrer">{E(row["date"])}</a></td><td>{E(title_display)}</td><td>{E(row.get("author"))}</td><td>{E(row.get("source"))}</td><td class="muted">{E(state)}</td></tr>')
+                out.append(f'<tr class="record" data-search="{E(search.lower())}"><td><a href="{E(row["url"])}" target="_blank" rel="noopener noreferrer">{E(row["date"])}</a></td><td>{E(title_display)}</td><td>{E(row.get("author"))}</td><td>{E(row.get("source"))}</td><td>{E(row.get("excerpt"))}</td><td class="muted">{E(state)}</td></tr>')
             out.append('</tbody></table></section>')
         out.append('</section>')
     out.append('''<h2>来源及复核方法</h2><p>数据来源为单向空间公开图片服务器。每条日期链接指向其标准 JPG 地址；索引保存请求状态、图像哈希和检查时间，可与按月 JSONL 数据核对。原图仅用于临时识别，未纳入仓库。</p><p>要分析选材或作者分布，应先逐条核对所用样本的作者与出处。宜忌比例只能描述标题形式，无法单独证明情绪倾向；本索引不包含选句，因此不能据此完成全文语义分析。</p></main><script>
@@ -114,7 +114,7 @@ def make_docx(months, reviews, layouts):
     available=sum(r['status_counts'].get('indexed',0) for r in reviews)
     missing=sum(r['status_counts'].get('missing_at_tested_url',0) for r in reviews)
     doc.add_paragraph(f'本研究按年分析日历版式，再按月提取日期、宜忌短标题、作者与出处，并附官方图片链接。共检查 {total:,} 个日期，取得 {available:,} 个可读取页面，另有 {missing} 个标准地址返回 404 或 410。完整逐日记录见同目录的离线 HTML 索引文档。')
-    doc.add_paragraph('索引不含完整选句。所有自动识别字段均需核对原图后用于严谨统计；字段非空率不等于识别准确率。检查日期为 2026 年 11 月 3 日。')
+    doc.add_paragraph('索引对已人工核对的样本补充内容摘录字段，摘录本身为机器提取、尚未逐条校对；不保留完整引文全文。所有自动识别字段均需核对原图后用于严谨统计；字段非空率不等于识别准确率。检查日期为 2026 年 11 月 3 日。')
     doc.add_heading('年度覆盖情况',level=1)
     table=doc.add_table(rows=1, cols=6)
     for c,t in zip(table.rows[0].cells,['年份','日期数','图片可读','标题','作者','出处']): c.text=t
@@ -138,7 +138,7 @@ def make_docx(months, reviews, layouts):
       ('逐年定位','先查看当年跨季度样本，记录标题与页脚的位置。版式规则单独保存，完成本年覆盖检查后才进入下一年。'),
       ('逐月保存','每月按真实日历生成全部日期，逐日查询标准图片地址。成功、缺失和错误均保留记录，每月单独提交。网络异常与图片缺失分别记录。'),
       ('书目拆分','从标题区域提取以宜或忌开头的短标题，从对应年份的署名区域拆分作者与书名。职业前缀可以缺省，同排多个 OCR 片段按位置合并。'),
-      ('原图链接','每条记录保存官方地址、HTTP 状态、检查时间和图像 SHA-256。临时图像在识别后删除，不把原图或完整选句加入资料集。'),
+      ('原图链接','每条记录保存官方地址、HTTP 状态、检查时间和图像 SHA-256。临时图像在识别后删除，不把原图或完整引文全文加入资料集。'),
       ('人工核对','本报告完成日期覆盖与字段结构检查，没有逐条确认四千余张图片的文字。尤其是罕见人名、外文、书名号和相近汉字，仍可能误识。低置信度标记用于优先复核，未标记不代表无误。'),
       ('缺失的含义','标准地址返回 404 或 410，不等于当日没有发行。地址可能变化，也可能是图片未上传。作者或出处空白也不能直接断言原图没有署名。'),
       ('统计解释','日期由 URL 推导，尚未逐张核对图内日期。作者分布应先校正异体、错字和译名；宜忌比例仅描述标题形式，不是情感分类或编辑决策的证据。')]
@@ -167,7 +167,7 @@ def make_docx(months, reviews, layouts):
         ('日期可以成为选材线索','2021 年的部分日期栏标注人物诞辰，2022 年的肖像页补充人物生平。这说明至少部分页面把日历日期与人物信息关联起来；尚不能推断所有节日或纪念日都按同一规则选材。'),
         ('读者问题成为另一种入口','2023 年 1 月 22 日、2 月 8 日、3 月 12 日等抽查页，将读者问题与作品片段对应，替代普通页的宜忌标题。这些页面的标题空值属于版式差异，不能计作识别失败。'),
         ('媒介来源不限于图书','抽查署名可见文学作品、电影和歌曲。2022 年还区分词作者和原唱，因此人物统计应保留角色，避免把不同创作职责混为一谈。'),
-        ('可继续检验的假设','可选取已核对样本，比较节假日与普通日的标题主题、某作者出现的间隔、同一作品跨年复用情况。当前索引未保存引文，无法检验句子重用、全文主题或篇幅节奏；这些结论需要另行阅读原图和编码样本。')]
+        ('可继续检验的假设','可选取已核对样本，比较节假日与普通日的标题主题、某作者出现的间隔、同一作品跨年复用情况。当前索引仅对已核对样本保留机器摘录，未覆盖全文，因此仍无法检验句子重用、全文主题或篇幅节奏；这些结论需要另行阅读原图和编码样本。')]
     for title,body in observations:
         doc.add_heading(title,level=2);doc.add_paragraph(body)
     verified=sum(r['visually_verified_samples'] for r in reviews)
