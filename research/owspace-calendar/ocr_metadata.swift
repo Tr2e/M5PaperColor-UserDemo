@@ -70,8 +70,14 @@ while let input = readLine() {
                 return s.count <= 18 && (s.hasPrefix("宜") || s.hasPrefix("忌"))
             }
             let footerLines = year <= 2020 ? allLines : try recognize(top: lower - 0.015, bottom: upper)
-            let attribution = footerLines.filter {
+            var attribution = footerLines.filter {
                 $0.y >= lower && $0.y <= upper && !(year == 2021 && $0.x < 0.28)
+            }
+            if year == 2022 {
+                let portrait = try recognize(top: 0.735, bottom: 0.815).filter {
+                    $0.height > 0.025 && $0.text.range(of: "^(作家|诗人|歌手|导演|演员|音乐家|艺术家|哲学家|剧作家|词作者|词曲作者|乐队|记者|画家|科学家|人类学家)", options: .regularExpression) != nil
+                }
+                if !portrait.isEmpty { attribution = portrait }
             }
             let sourceLines = year == 2022 ? try recognize(top: 0.51, bottom: 0.795) : attribution
             var sources = sourceLines.filter {

@@ -75,16 +75,21 @@ def parse_metadata(ocr):
             continue
         text = clean(text)
         confidence.append(row["confidence"])
+        has_role = bool(ROLE_RE.search(text))
         roles.extend(ROLE_RE.findall(text))
         text = ROLE_RE.sub("", text)
-        text = re.sub(r"[A-Za-z][A-Za-z\s.'’\-]*", "", text)
+        has_chinese_name = bool(re.search(r"[\u3400-\u9fff]", text))
+        if has_chinese_name:
+            text = re.sub(r"[A-Za-z][A-Za-z\s.'’\-]*", "", text)
+        elif not has_role:
+            continue
         text = clean(text).strip(" ，,、；;：:")
         if re.fullmatch(r"[\u3400-\u9fff]{0,5}(民谣|谚语|俗语|格言)", text):
             sources.append(text)
             continue
         if text in ("电影", "电视剧", "纪录片", "歌曲", "小说", "诗歌", "单向空间"):
             continue
-        if text and len(text) <= 24:
+        if text and len(text) <= (24 if has_chinese_name else 55):
             normalized = clean_author_footer(text)
             if normalized:
                 people.append(normalized)
@@ -196,10 +201,19 @@ def run(args):
                 target = directory / f"{key}.jsonl"
                 rows = {r["date"]: r for r in map(json.loads, target.read_text().splitlines())} if target.exists() else {}
                 dates = [dt.date(year, month, day) for day in range(1, calendar.monthrange(year, month)[1] + 1)]
-                todo = [d for d in dates if args.refresh or str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error", "unexpected_response")]
+                todo = [d for d in dates if args.refresh or str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error", "unexpected_response") or
+                        (args.retry_missing_authors and rows[str(d)].get("status") == "indexed" and not rows[str(d)].get("author") and rows[str(d)].get("review_status") != "sample_metadata_verified")]
                 futures = {pool.submit(one, d, args): d for d in todo}
                 for future in concurrent.futures.as_completed(futures):
                     result = future.result()
+                    old = rows.get(result["date"])
+                    if args.retry_missing_authors and old and result.get("status") == "indexed":
+                        for field in ("title", "title_kind", "source"):
+                            result[field] = old.get(field)
+                        if result.get("title"):
+                            result["review_flags"] = [f for f in result["review_flags"] if f != "title_unresolved"]
+                        if result.get("source"):
+                            result["review_flags"] = [f for f in result["review_flags"] if f != "source_not_detected"]
                     rows[result["date"]] = result
                     temporary = target.with_suffix(".tmp")
                     temporary.write_text("".join(json.dumps(rows[d], ensure_ascii=False) + "\n" for d in sorted(rows)), encoding="utf-8")
@@ -227,4 +241,5 @@ if __name__ == "__main__":
     p.add_argument("--interval", type=float, default=.25, help="Global minimum seconds between HTTP requests")
     p.add_argument("--commit", action="store_true")
     p.add_argument("--refresh", action="store_true", help="Re-extract an existing month after changing annual rules")
+    p.add_argument("--retry-missing-authors", action="store_true")
     run(p.parse_args())

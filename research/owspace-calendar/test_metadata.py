@@ -34,6 +34,10 @@ class MetadataTests(unittest.TestCase):
         self.assertIsNone(clean_author_footer('影像展上海长宁来福士钟楼'))
         self.assertEqual(clean_author_footer('Charles Dickens'), 'Charles Dickens')
 
+    def test_latin_band_name(self):
+        self.assertEqual(parse_metadata({'attribution':[line('乐队，U2')]})['author'],'U2')
+        self.assertEqual(parse_metadata({'attribution':[line('乐队，Schoolgirl Byebye')]})['author'],'Schoolgirl Byebye')
+
 
 if __name__ == "__main__":
     unittest.main()
