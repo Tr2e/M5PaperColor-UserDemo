@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Backfill the quotation excerpt for visually verified metadata samples.
+"""Backfill the quotation excerpt for every readable (indexed) date.
 
-Scope is intentionally narrow: only dates already listed in verified_samples.json
-get an `excerpt` field. Each month is committed separately so Git history stays
-month-keyed, matching the existing convention. Standard metadata (title/author/
-source) is left untouched; this script only adds the `excerpt` field.
+Each month is committed separately so Git history stays month-keyed, matching
+the existing convention. Standard metadata (title/author/source) is left
+untouched; this script only adds the `excerpt` field. Dates already carrying an
+`excerpt` are skipped, making the run idempotent and resumable.
 """
 import argparse
 import json
@@ -66,16 +66,21 @@ def extract_one(date, url):
 def run(args):
     if args.commit and git("branch", "--show-current") != BRANCH:
         raise SystemExit("Unexpected branch")
-    verified = json.loads((ROOT / "verified_samples.json").read_text())
-    # Group verified dates by month.
+    # Backfill an excerpt for every readable (indexed) date, not just the
+    # human-verified sample. Group by month to keep the commit history
+    # month-keyed, matching the existing convention.
     by_month = {}
-    for date in verified:
-        by_month.setdefault(date[:7], []).append(date)
+    for path in sorted((ROOT / "months").glob("*-*.jsonl")):
+        month = path.stem
+        rows = [json.loads(l) for l in path.read_text().splitlines()]
+        targets = [r for r in rows if r["status"] == "indexed" and not r.get("excerpt")]
+        if targets:
+            by_month[month] = targets
 
     for month in sorted(by_month):
         path = ROOT / "months" / f"{month}.jsonl"
         rows = [json.loads(l) for l in path.read_text().splitlines()]
-        targets = {d: r for d in by_month[month] for r in rows if r["date"] == d and r["status"] == "indexed"}
+        targets = {r["date"]: r for r in by_month[month]}
         results = {}
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures = {pool.submit(extract_one, d, r["url"]): d for d, r in targets.items()}
@@ -101,7 +106,7 @@ def run(args):
                 git("add", "--", rel)
                 if git("diff", "--cached", "--name-only", "--", rel):
                     git("commit", "--only", "-m",
-                        f"data(owspace): add verified-sample excerpts in {path.stem}", "--", rel)
+                        f"data(owspace): extract excerpts in {path.stem}", "--", rel)
         else:
             print(f"{path.stem}: no changes", flush=True)
 
