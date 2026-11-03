@@ -1,0 +1,192 @@
+#!/usr/bin/env python3
+"""Build a dated bibliographic index. Does not archive images or quotation text."""
+import argparse
+import calendar
+import concurrent.futures
+import datetime as dt
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import tempfile
+import threading
+import time
+import urllib.error
+import urllib.request
+
+ROOT = Path(__file__).resolve().parent
+BRANCH = "codex/owspace-calendar-index-2015-2025"
+BASE = "https://img.owspace.com/Public/uploads/Download"
+ROLES = ("作家", "诗人", "哲学家", "演员", "导演", "编剧", "记者", "主持人", "歌手", "乐队", "音乐人", "音乐家", "艺术家", "画家", "摄影师", "思想家", "学者", "科学家", "数学家", "物理学家", "心理学家", "社会学家", "历史学家", "文学家", "评论家", "小说家", "散文家", "剧作家", "翻译家", "编辑", "政治家", "教育家", "建筑师", "设计师", "经济学家", "人类学家", "艺术团体", "旅行家", "探险家", "舞蹈家", "运动员", "革命家", "博物学家", "法学家", "神学家", "出版人", "词人", "词作家", "曲作家", "作曲家", "喜剧演员", "脱口秀演员")
+ROLE_RE = re.compile("|".join(sorted(ROLES, key=len, reverse=True)))
+SOURCE_RE = re.compile(r"[《〈]([^》〉]{1,100})[》〉]")
+local = threading.local()
+rate_lock = threading.Lock()
+last_request = 0.0
+processes = []
+
+
+def clean(text):
+    text = text.replace("•", "·").replace("・", "·")
+    text = re.sub(r"\s*·\s*", "·", text)
+    text = re.sub(r"(?<=[\u3400-\u9fff])\s+(?=[\u3400-\u9fff])", "", text)
+    return re.sub(r"\s+", " ", text).strip(" ，,；;。")
+
+
+def parse_metadata(ocr):
+    flags = []
+    titles = ocr.get("titles", [])
+    title = clean(titles[0]["text"]).replace(" ", "") if len(titles) == 1 else None
+    if not title:
+        flags.append("title_unresolved")
+    if len(titles) > 1:
+        flags.append("multiple_title_candidates")
+    sources = list(dict.fromkeys(clean(m.group(1)) for line in ocr.get("sources", [])
+                                 for m in SOURCE_RE.finditer(line["text"])))
+    rows = sorted(ocr.get("attribution", []), key=lambda x: (round(x["y"] / .012), x["x"]))
+    people, roles, confidence = [], [], []
+    for row in rows:
+        text = clean(SOURCE_RE.sub("", row["text"]))
+        # Only role-bearing attribution lines may supply author names. Uncertain
+        # free text is discarded rather than saved as a potential quotation.
+        if not ROLE_RE.search(text):
+            continue
+        confidence.append(row["confidence"])
+        roles.extend(ROLE_RE.findall(text))
+        text = ROLE_RE.sub("", text)
+        text = re.sub(r"\b[A-Za-z][A-Za-z\s.'’\-]*", "", text)
+        text = clean(text).strip(" ，,、；;：:")
+        if text and len(text) <= 55 and not re.search(r"[。！？!?]", text):
+            people.append(text)
+        else:
+            flags.append("author_unresolved")
+    people = list(dict.fromkeys(people))
+    if not people:
+        flags.append("author_unresolved")
+    if not sources:
+        flags.append("source_not_detected")
+    confidence += [r["confidence"] for r in titles + ocr.get("sources", [])]
+    if confidence and min(confidence) < .5:
+        flags.append("low_ocr_confidence")
+    return {
+        "title": title,
+        "title_kind": title[0] if title else None,
+        "source": "；".join(sources) or None,
+        "author": "；".join(people) or None,
+        "author_roles": list(dict.fromkeys(roles)),
+        "ocr_confidence_min": min(confidence) if confidence else None,
+        "review_flags": list(dict.fromkeys(flags)),
+        "review_status": "machine_extracted_not_human_verified",
+        "quotation_status": "not_collected",
+    }
+
+
+def fetch(url, interval):
+    global last_request
+    for attempt in range(3):
+        with rate_lock:
+            time.sleep(max(0, interval - (time.monotonic() - last_request)))
+            last_request = time.monotonic()
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "OWSpaceMetadataResearch/1.0"})
+            with urllib.request.urlopen(req, timeout=25) as response:
+                body = response.read(6_000_001)
+                return response.status, body, response.headers.get("Content-Type", ""), response.headers.get("Last-Modified"), None
+        except urllib.error.HTTPError as exc:
+            if exc.code in (404, 410):
+                return exc.code, None, None, None, None
+            if attempt == 2:
+                return exc.code, None, None, None, str(exc)
+            time.sleep(2 ** (attempt + 1))
+        except Exception as exc:
+            if attempt == 2:
+                return None, None, None, None, str(exc)
+            time.sleep(2 ** (attempt + 1))
+
+
+def one(date, args):
+    url = f"{BASE}/{date.year}/{date:%m%d}.jpg"
+    record = {"date": str(date), "url": url, "checked_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")}
+    status, body, content_type, modified, error = fetch(url, args.interval)
+    record.update(http_status=status, content_type=content_type)
+    if body is None:
+        record.update(status="missing_at_tested_url" if status in (404, 410) else "request_error", error=error,
+                      title=None, source=None, author=None, quotation_status="not_collected")
+        return record
+    if not body.startswith(b"\xff\xd8") or len(body) > 6_000_000:
+        record.update(status="unexpected_response", error="Expected a JPEG smaller than 6 MB", quotation_status="not_collected")
+        return record
+    record.update(image_sha256=hashlib.sha256(body).hexdigest(), image_bytes=len(body), last_modified=modified)
+    path = None
+    try:
+        with tempfile.NamedTemporaryFile(prefix="owspace-meta-", suffix=".jpg", delete=False) as tmp:
+            tmp.write(body)
+            path = tmp.name
+        if not hasattr(local, "ocr"):
+            local.ocr = subprocess.Popen([args.ocr], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
+            processes.append(local.ocr)
+        local.ocr.stdin.write(json.dumps({"path": path, "year": date.year}) + "\n")
+        local.ocr.stdin.flush()
+        ocr = json.loads(local.ocr.stdout.readline())
+        if "error" in ocr:
+            raise RuntimeError(ocr["error"])
+        record.update(parse_metadata(ocr), status="indexed")
+    except Exception as exc:
+        record.update(status="ocr_error", error=str(exc), quotation_status="not_collected")
+    finally:
+        if path:
+            Path(path).unlink(missing_ok=True)
+    return record
+
+
+def git(*args):
+    return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
+
+
+def run(args):
+    if args.commit and git("branch", "--show-current") != BRANCH:
+        raise SystemExit("Refusing to commit on an unexpected branch")
+    directory = ROOT / "months"
+    directory.mkdir(exist_ok=True)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for year in range(2015, 2026):
+            for month in range(1, 13):
+                key = f"{year}-{month:02d}"
+                if key < args.start or key > args.end:
+                    continue
+                target = directory / f"{key}.jsonl"
+                rows = {r["date"]: r for r in map(json.loads, target.read_text().splitlines())} if target.exists() else {}
+                dates = [dt.date(year, month, day) for day in range(1, calendar.monthrange(year, month)[1] + 1)]
+                todo = [d for d in dates if str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error")]
+                futures = {pool.submit(one, d, args): d for d in todo}
+                for future in concurrent.futures.as_completed(futures):
+                    result = future.result()
+                    rows[result["date"]] = result
+                    temporary = target.with_suffix(".tmp")
+                    temporary.write_text("".join(json.dumps(rows[d], ensure_ascii=False) + "\n" for d in sorted(rows)), encoding="utf-8")
+                    temporary.replace(target)
+                statuses = {s: sum(r["status"] == s for r in rows.values()) for s in sorted({r["status"] for r in rows.values()})}
+                print(json.dumps({"month": key, "records": len(rows), "statuses": statuses}, ensure_ascii=False), flush=True)
+                if args.commit:
+                    if git("branch", "--show-current") != BRANCH:
+                        raise SystemExit("Branch changed during indexing")
+                    rel = str(target.relative_to(ROOT))
+                    git("add", "--", rel)
+                    if git("diff", "--cached", "--name-only", "--", rel):
+                        git("commit", "--only", "-m", f"data(owspace): index {key} calendar metadata", "--", rel)
+    for process in processes:
+        process.stdin.close()
+        process.wait(timeout=10)
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--start", default="2015-01")
+    p.add_argument("--end", default="2025-12")
+    p.add_argument("--ocr", default="/tmp/owspace-research/ocr_metadata")
+    p.add_argument("--workers", type=int, default=3)
+    p.add_argument("--interval", type=float, default=.25, help="Global minimum seconds between HTTP requests")
+    p.add_argument("--commit", action="store_true")
+    run(p.parse_args())
