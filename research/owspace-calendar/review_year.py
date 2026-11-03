@@ -42,6 +42,7 @@ def review(year):
         "missing_dates": [r["date"] for r in rows if r["status"] == "missing_at_tested_url"],
         "error_dates": [r["date"] for r in rows if r["status"] not in ("indexed", "missing_at_tested_url")],
         "identical_image_groups": [dates for dates in hashes.values() if len(dates) > 1],
+        "image_date_mismatches": [{"requested_date": r['date'], "printed_date": r['printed_date']} for r in indexed if r.get('date_verification')=='visually_checked_mismatch'],
         "top_authors_machine_extracted": Counter(r["author"] for r in indexed if r.get("author")).most_common(12),
         "top_sources_machine_extracted": Counter(r["source"] for r in indexed if r.get("source")).most_common(12),
         "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
