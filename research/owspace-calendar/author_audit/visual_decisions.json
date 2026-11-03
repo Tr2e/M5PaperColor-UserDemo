@@ -1,0 +1,3086 @@
+{
+  "2015-02-26": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "62f124ef8d4a432cc0d4318fb3b3230d9429431c5e6c9c6f054ff25ecf0eafce",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-03-16": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "832ecd94f8b3593cee99198b937312ec7ad5e42319ac614edeaa5675047cfd87",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-03-20": {
+    "author": "阿乙",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e8bb60138b4348f567b725d3a614c121595374f9a29e300004ecade01e6ad27b",
+    "note": "从“阿乙谈网络小说”中分离姓名，保留其余字段。"
+  },
+  "2015-03-27": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "c721ced16a2c636973e8cc67e59f5212a4cfda7e28e493b18f1337298671b321",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-03-30": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "ec9be4147deff4780e16ae574f627ea0b79909142769b6886b728b248ec9f360",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-04-01": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "f586b726a227461b9ffbaec8b9360b3526d11a77dcd622c345e52d0914aec358",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-04-02": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "9760c5600cba383013a4c68e432ddfd22a364606d641db33e38a0b8ff0ffc398",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-04-06": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "247720c3ee235dc44ec07a725cf57e6d55a6a0de2966dd395b28ebe1fc851a2b",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-04-09": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "f1e3b71f2c02a8d52fe38849a4b95d8f7b074969f1d1763025a802ae053ea556",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-04-26": {
+    "author": "圣·奥古斯丁",
+    "method": "visual_attribution_crop",
+    "image_sha256": "305407b9da377b66d2bcaafa1b0f0c0317cc1fe4bdf87f2b27e8b314b8be4613",
+    "note": "原图中文署名圣·奥古斯丁，外文却印为 Albert Camus；保留原图并标记中外文不一致。",
+    "author_foreign_name": "Albert Camus",
+    "source_name_conflict": true
+  },
+  "2015-05-10": {
+    "author": "你的娃",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee8e4304b9d0f82d908bddd9b98fec5396e012f88f14fe69b35ac6f89f80743a",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-05-11": {
+    "author": "猫则动",
+    "method": "visual_attribution_crop",
+    "image_sha256": "730bd76bd1f8a40d8da207fc546b1336f81187bb88001c20799e00bc2315e682",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-05-12": {
+    "author": "吉姆·莫里森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e84b1839ed54cdf856bcd1a402bac5cd072091f184be34e8c8cffa63c992a051",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Jim Morrison"
+  },
+  "2015-05-26": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "fdc5f44a75dcbf8eea139f8c1ca429404936298edb51c13f8acb23270767cdb1",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-05-27": {
+    "author": "奥斯卡·王尔德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "55ccb9744541d491e63535d83fffdda2b1457cb8c0b3713f8372c43635766c85",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Oscar Wilde"
+  },
+  "2015-06-12": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "d63875493e5d53e97810939944166b216886950514b452dc2ddf18014169a1b1",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-06-20": {
+    "author": "布莱恩·阿瑟",
+    "method": "visual_attribution_crop",
+    "image_sha256": "eff78ee1225610bde522416dda3585dc85c24e4ef0fee473e1e95d8e139c087a",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-06-25": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "be9bbef9752dfed07ba86614d5c9fd11fb53d901a7f595d2a07e9d5169fba3e7",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-06-26": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "fb08a46597b8ea7614d10f362613623f975241b3c3a94fc83a164e1885fbbf3d",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-06-27": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "db2fc9dab239be3db16c3621eed92e07979c9b78e86e5b5bb882711a92634e02",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-07-22": {
+    "author": "奥斯特洛夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6b543a0e63830f88b8eb14e92526c92f7b8f4a7b8df1aa804e3c4da5cdc2d04c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Островский"
+  },
+  "2015-08-15": {
+    "author": "杰罗姆·K·杰罗姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "14c0c88c2ef88ab76e3f319e34cfd2c71c52aba306d488f223705f3d0a261be3",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Jerome K. Jerome"
+  },
+  "2015-09-11": {
+    "author": "戴维·赫伯特·劳伦斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bacd1e4203a84db625e2748199813963fead15105491aaa68f641fded0e2868b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "David Herbert Lawrence"
+  },
+  "2015-09-19": {
+    "author": "沙士比亚",
+    "method": "visual_attribution_crop",
+    "image_sha256": "70301081d772c79e422e8dec17ffea435fae06c3c1dc242e83c01af5837d6f52",
+    "note": "原图中文印作“沙士比亚”，仅纠正末字“业”为“亚”。",
+    "author_foreign_name": "Shakespeare"
+  },
+  "2015-10-10": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "4ce97a64a7c247dbb76b12ef1f8cd0a53c27543b3f804b3103c16f34ed27252b",
+    "note": "“动漫”是作品类别，署名区没有作者姓名，不从书名猜填。"
+  },
+  "2015-10-11": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "96afc6ca038d0dfea87656694e8547015b4b0797d450f571de66de8ac6fe7059",
+    "note": "“小说”是作品类别，署名区没有作者姓名，不从书名猜填。"
+  },
+  "2015-10-28": {
+    "author": "罗贝托·波拉尼奥",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dc1ff22f06364dc77499f483a0e8e1dc100e2a38c5e4cd6deac22f3f8b28b650",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ROBERTO BOLAÑO"
+  },
+  "2015-10-30": {
+    "author": "魏小河",
+    "method": "visual_attribution_crop",
+    "image_sha256": "021784a2b29724f352ccb7d816b1edf76fc28847e25203c0e59cc136fe7c610f",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-10-31": {
+    "author": "塞斯·诺特博姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c9c77d5549bc46bf9875d4d494df4d9c8416599e73302e0811b47cff5e2be939",
+    "note": "外文按原图印刷值保留。",
+    "author_foreign_name": "NOTTEBOHM"
+  },
+  "2015-11-04": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "e3bf8faeffa41b068021c9fc19ee1a11cd1105f2cff5e1984a3985d67b7d47f1",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-11-06": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "2017166d09613b67bea0f303ca454f6c4bd269f009b2ef0bcdebd556091bb467",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-11-15": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "c8de8178146e62f83db3f14038f9eb7ba96eba32b9ee206e3cbdc79bd5bc0770",
+    "note": "原图为“For 巴黎”，属于献语而非作者姓名。"
+  },
+  "2015-11-17": {
+    "author": "罗丹",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a4ff07e0634b32e4df8fb7521ad0a48d2e6f3099e5b829bbc097fe418b79b824",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Auguste Rodin"
+  },
+  "2015-11-23": {
+    "author": "艾伦·金斯伯格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c1e3c248b7e874e9e2d7bdf5731af02113031d4f8ac2cca67967ea580b050262",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Allen Ginsberg"
+  },
+  "2016-01-24": {
+    "author": "弗兰茨·卡夫卡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4f42aed241b716953a613546275be0974e7aac1ff08c9642d8c229f9481f6596",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Franz Kafka"
+  },
+  "2016-01-27": {
+    "author": "杰罗姆·大卫·塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "858a84d36977ea3cc7fbfedc4b2fb561274081ab4f8b321ab58ae7c274fb9382",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Jerome David Salinger"
+  },
+  "2016-02-12": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "f53d2393371bab9430411858409d9afa51c985b92e6ec76765c581d77d2438ce",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-02-25": {
+    "author": "埃尔弗里德·耶利内克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bf8ced0495e93b875e98fd39085e594db6f0d139331d41ec1843ff5bf339eac3",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Elfriede Jelinek"
+  },
+  "2016-03-09": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "1df5445a8db6bfe117e6ddf66420eb379264ec3abc7ef26211db233530557897",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-05-06": {
+    "author": "西格蒙德·弗洛伊德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9cc69fdfc519b7a2b5f7d29c37800d3819ee24ad0b6d5e92449afc4ca5a91ecb",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Sigmund Freud"
+  },
+  "2016-05-17": {
+    "author": "西尔万·泰松",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7affb2ac209c4d810a17752c866a9ce8dc54a0d0105013d01a41de5d9eb7fb44",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Sylvain Tesson"
+  },
+  "2016-06-04": {
+    "author": "玛丽莲·梦露",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8050eaaaa667f6bb52453c51e9f84300c8ef3dd98352b9d18cbe5f8f7cbc0648",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "MARILYN MONROE"
+  },
+  "2016-06-06": {
+    "author": "卡尔·荣格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7676b2b8e8a18f34ecda3a970a643fcb17504f2bcbc3612360be6408102c8068",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "CARL GUSTAV JUNG"
+  },
+  "2016-07-02": {
+    "author": "弗拉基米尔·纳博科夫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5109a21049e49157e6fd3c0ff363e4da99400dcf332e3412e08b9c0b7e80068b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ВЛАДИМИР ВЛАДИМИРОВИЧ НАБОКОВ"
+  },
+  "2016-07-04": {
+    "author": "茅盾",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d7874eaee5f950a082761809d2f465d32661cc23cf3d9b9b14f8cd6a6f67d4cb",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-07-09": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "48cd5cb4283dabeae65b55fd01bab702eccd321b6151636549c72e578aa95aed",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-07-20": {
+    "author": "保尔·瓦雷里",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b32e3a3977ff5aea627f07b5eed7924232518bad6641ce0d5132a1cb7916bb73",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "PAUL VALERY"
+  },
+  "2016-08-14": {
+    "author": "约瑟夫·康拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cdeb34ef1d0b4bf95fe78d57ebadc563cacd80c2fbb5321e7e636aa8b4a5bccd",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "JOSEPH CONRAD"
+  },
+  "2016-08-24": {
+    "author": "今敏",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6878c3e72ff1d16b2d00753327848c917e53e285ddf5a753b17781f1f3214ba7",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-08-27": {
+    "author": "西奥多·德莱塞",
+    "method": "visual_attribution_crop",
+    "image_sha256": "842a154813e24bab40a8f0d5599b75eec685562da1fa5c0f56128eb897d22d21",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Theodore Dreiser"
+  },
+  "2016-09-02": {
+    "author": "J·R·R·托尔金",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b9bf4190c46d0ff33e2452ecc93ca530aae29cccefc54ac1b842cd63f393fb2c",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-09-20": {
+    "author": "斯坦利·摩斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aa585cbb3844f1914ea00304404a444bfa869686061344cca730c8fc9b578ddd",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-10-18": {
+    "author": "托马斯·爱迪生",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9d278bdf02fe78447a58e5aaa89e84330ff8a382e856d0bb3c240d25f87e8b4a",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-02": {
+    "author": "费孝通",
+    "method": "visual_attribution_crop",
+    "image_sha256": "db46652dffa445282782ded5e5013a7a6444c108fa9121ca7528018560ca74bd",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-03": {
+    "author": "伊凡·克里玛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "55ca65cea1c4fadf587c9ceb4dba15899a93396504688af66048560f3fdcc81f",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-04": {
+    "author": "维罗尼克·普兰",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc291c21e5cfdd854e05baf7b7f22dae6ef644327e43a6a44b90ea4076a7be87",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-11": {
+    "author": "陀思妥耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "820518bf673647d2aac391dcac9eb8014f85ecfdf4c798caa495942e4ee88f86",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-12": {
+    "author": "乔治·R·R·马丁",
+    "method": "visual_attribution_crop",
+    "image_sha256": "29e7fe81d461b2de2b47ee0889f1f03c65a1b57c74498a84898eb3d9032840ba",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-11-13": {
+    "author": "罗伯特·路易斯·史蒂文森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "94e149016c422f801a32633fc8c693807458059864c337e9d790c204c6f6731a",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-12-06": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "7aa9b96e42cc30e83a988c8ed9e46c9123886c4b4812380e7faa9973111810a0",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-12-24": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "a493eddf93f1944ca92316f0432757c0bb91133985b80d93611b7d01244d55f1",
+    "note": "对照原图署名区核对。"
+  },
+  "2016-12-29": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "f6f78de5cc563d9137af3311d1e5cbc59f349bb1d52810fc559a012b4880c7d7",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-02": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "29263b47df6913f29d65b7b0b8df89460f29388db662f49db565ccc9bbc270f9",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-08": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "1f767f5ee2e3d7e5b438e51a2dcebea3dda25d15653bf2218b8dc29998d1802f",
+    "note": "原图说明是电影《万物理论》中“霍金”的台词，未署作者；不把角色名当作作者实名。"
+  },
+  "2017-01-09": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "4ee5f816270b96d8d6ba31f1857c175fadc298f7542e44a8d216e0ee1c2bc699",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-11": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "bd04d3b15276215ed31a970b48e502e218d8fac11baace9f7bf04c91044039f2",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-13": {
+    "author": "塞巴斯蒂安·巴里",
+    "method": "visual_attribution_crop",
+    "image_sha256": "24bf1eb2f03b6844831c6e0df2432f2c1485d8a631b17272dc756bf607fa9d73",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-18": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "d829a3f61f316a22748faf1ef3a8b091f0783b7f02882f31a50d31308eb4f2c1",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-21": {
+    "author": "帕特里夏·海史密斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9dfae5f2221b2a093008a90748916ed0d6bd010617e5375f4c71a9cd64629de5",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-01-27": {
+    "author": "赵翼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "02c10878fca24d80663edd5618c8634e1b1054101e08f4b7ab4cc1449c59bc15",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-02-08": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "4cbe0a71649d75081cf142398509b2ec629492c9987240a9d84d255eeed4d8fd",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-02-09": {
+    "author": "夏目漱石",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bf99cc8a5f19c9b07e7bd9879a3ddc3e5e44b3b89f3e7963cec22929fd1849f0",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-02-13": {
+    "author": "艾默生",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b473b31acc09e49eccf63a1a9c789a8f627da0b803449c8f79ed40b9068c7b6f",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-03-01": {
+    "author": "阿尔蒂尔·兰波",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3fb4f92244fb1e7a622a804ec205bbd995d7364326006dd1740d5f1cd3f06cf2",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-03-17": {
+    "author": "果尔达·梅厄",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7ec7e85d018b55129e8b1a6c6d8db789f0a90c2415412979b93251cfebc79a9a",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-04-05": {
+    "author": "卡雷尔·恰佩克",
+    "method": "visual_full_image",
+    "image_sha256": "a5f500ae05241175f548e309585e4fb96f531fc7cf7923f4c98d41c9e23419cb",
+    "note": "特殊版式：已查看全图，署名在常规页脚区域之外。",
+    "author_foreign_name": "KAREL CAPEK"
+  },
+  "2017-05-14": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "5b2723d8c9f958a59f592089628d84ca4a07125bc9216529125aa27a4976184b",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-05-21": {
+    "author": "松龙高",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6a39453ebf6847cbebfcdf1f41f5234b2df89c20e546cd0e859963c6bc5c8be1",
+    "note": "原图确实印作“松龙高”，暂不按猜测替换，列为来源署名待查。",
+    "source_name_suspect": true
+  },
+  "2017-06-01": {
+    "author": "亨利·戴维·梭罗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "972617995f3a40ce70260dcf2ef2676b09b6cc8f42024b90ac93657d5a6c35e4",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-06-18": {
+    "author": "于威",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7cf0b1de617452fab2dfe5003f712ad296718f490dee5a68c61af3b0f4c4b6d0",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-06-23": {
+    "author": "松龙高",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c09a44a8eaa8da89390daf38d8e1a7be976ac59f4cecf0105f1fd5f9df38cb96",
+    "note": "原图确实印作“松龙高”，暂不按猜测替换，列为来源署名待查。",
+    "source_name_suspect": true
+  },
+  "2017-06-24": {
+    "author": "森淳一",
+    "method": "visual_attribution_crop",
+    "image_sha256": "29318e92da015e95a79ce37f208a7ccc857b2bc2d5c5ab924a3095e87d258cb2",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-06-25": {
+    "author": "柯罗杰等",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e39b38279cfa2f16bb9ac6755a58bba1b49c152d590d62a3f16a1e14761def9f",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-06-27": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "fca272484a96b767979c3638fd3152311c4432d503dff5cc9db6e53f22822843",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-06": {
+    "author": "珊达·莱姆斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3dce6fe3ba72853627bfd6c2616649819990cd781ab59295b2b14dea08a79e3a",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-10": {
+    "author": "小林薰",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7698c425068207631ce7973f435d0d348d53284518630d5c8047d0d61328d814",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-11": {
+    "author": "木心、陈丹青",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a36087b6ae76dad2129f3eaa6b90636561c87845162c250b6570ea054ba52e7d",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-18": {
+    "author": "纳尔逊·罗利赫拉赫拉·曼德拉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "63d55284a83d64bc59cfa024559defb654f764a02036214c121a96704bf8a483",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-27": {
+    "author": "弗雷德里克·维杜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f79340ca6e778d1e8fa6311c5ab4a8622291fdff43083d40a964578909e466ce",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-07-30": {
+    "author": "阿道司·赫胥黎",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0bf12f54d08855c47b77eb844651af026e2cc5e12ea12c3e23f642f9c35e4e1b",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-01": {
+    "author": "LENS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "eb896bb14f50dd567b4f49009ce32cd3f86843ea3df623504a553bdafc050dbf",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-08": {
+    "author": "徐童",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4afd5f4379cb4541b3e2a5e7828f8c42455ec471cace4bde7799f1d15e160d42",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-09": {
+    "author": "周浩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7a0c309520ca8a21ffd5a7292a938e9b2da41fd196444af4a2f5dbba24312a62",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-12": {
+    "author": "左小祖咒",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3e45a4e63f8672750c99f3fac5eae0fda047c30a6868bf6bb8ab75556b443c40",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-14": {
+    "author": "张楚",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c46983d60d0a7fd5c83835feb45d69478904cc2e7c155e08ef69f67319f73449",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-23": {
+    "author": "彼得·布鲁克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d688a1c4db5f21d122f3e2e231cc374d57707beaddf222e0bdeea491130d4b08",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-08-24": {
+    "author": "罗比特·布列松",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bb558920f04a81a7541aa684201ec8184dcec99373ce24c8888aa86f103927c1",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-09-01": {
+    "author": "理查德·道金斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "df773e99ba21fe0e312f958acb6a70010c8b0fd2bdad30a3fd7c19e03b5b95a8",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-10-21": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "943dbdaa9e46debb1c3751c9df2ff711ce9bd712f014265b5a02c473e0961d47",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-11-08": {
+    "author": "奥利维娅·莱恩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "096fad3dfa03a8838f2e6c0d8350846a69c02ecfe23504cd0f4154732198e30b",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-11-23": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "4ac2ae7a657587321412e38920a4627865549d59fc9ec6697700705128180b82",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-11-28": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "7a5aae2122d9ef46b647b5015869dc807b346926187a40cc358ce33bfec22502",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-11-29": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "3dffd3c956ea7a864bf6c38e1021148b2a2ddd770fafc84d25ad9594860b6e3c",
+    "note": "对照原图署名区核对。"
+  },
+  "2017-12-29": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e54d3a76b3802c62e5c8c9ee80b4bc1ceb79c05a043f4be96e06137861a078a",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-01-02": {
+    "author": "北川悦吏子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "48624f643accb410d60a1bcc29891aacf1cedfa350d34fa127a9ecc297513c6a",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-01-15": {
+    "author": "渡边淳一",
+    "method": "visual_attribution_crop",
+    "image_sha256": "88a7e92aa8bf98dd362b91a75955fd2b98c86d2735c03ec5c7cab3125e664370",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-01-16": {
+    "author": "奥维德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5ce23fbc3a8907360b6df1aeeb5952980792e6695278d25dd29da5b4720e2803",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-01-23": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "1050db28e57f6c44d2f01296024a7313c75de5e0c334ff1b71de168914565d1d",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-01-28": {
+    "author": "林阿P",
+    "method": "visual_attribution_crop",
+    "image_sha256": "97ee0d5807878fed04502c93f29e48a95e891b40c08aa1e88eaf8fe2a347f011",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-02-12": {
+    "author": "P.K.14",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ce54c37453e802dc8d576e22c137ec146dccf7fc4151a4165e44de22096906b2",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-02-22": {
+    "author": "空知英秋",
+    "method": "visual_attribution_crop",
+    "image_sha256": "347fda34501ce62cfadd0ebe06fc464b12a5397e4ba8ce326f71aac3c7dc9163",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-03-02": {
+    "author": "蔡澜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "19ac0a486cac5bfb430e8b2dbc3fede6d9c356cc80b0004975e043830d921a84",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-03-11": {
+    "author": "萨义德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "31f2cdafd24fea6d24d6916698d70049fc1dd7d95bdb32aca057731c016c27ae",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-03-31": {
+    "author": "小奥利弗·W·霍姆斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2500f1f3fc3ecd15f60f9805d164c13f4e58be4a75ff9f8f01c466a907c7787b",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-05-16": {
+    "author": "荒木丰久",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f5fa4ec3db676574672e9d5c26e0514b1e15351ec3006856194b9d8f664fe7e0",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-05-20": {
+    "author": "黄伟文",
+    "method": "visual_attribution_crop",
+    "image_sha256": "64a549a054a4de9cbf80bfd04e0507d2c0dc8de53157083f31af2e02ca3c6598",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-05-24": {
+    "author": "沃尔特·艾萨克森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "785001e62cc1f5aa8b3ebd8fd31cc5958fe43874215bf9c53ac464ff19dfa695",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-06-05": {
+    "author": "蕾切尔·卡逊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c93e503f4911b48320c10c13a3db04f3c76a3a76e030437a773bf7e58fcba44a",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-06-07": {
+    "author": "何勇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "861cf8e7a0c6c3301ce8794c087be4ab98986bc591414a0a30a5e5b5d8c559dc",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-06-09": {
+    "author": "休斯顿·史密斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a0314beb62264d3bda3a445213f152003028ea362f21e9435c283c56c2936a1c",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-06-19": {
+    "author": "安赫菜斯·多尼亚特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c06d1a40a79b88cbc8c6b0c6189f39a152edcb5df81bcf56bcf2763d8b2483d5",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-09": {
+    "author": "毛姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e7b30cc0159ef2c34ab7e6432592a18e5766304b6ec658bcb773899630c9a2c0",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-15": {
+    "author": "渡边淳一",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc1595f248003a04822f66bcb95fd1e8114cbc4be42e9514709caacd4abf9e18",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-18": {
+    "author": "森山大道",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f9010a15f18c25a4576b86f51f0ba5292673582e9477dfb5cbff648fe7ce0327",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-22": {
+    "author": "埃莱娜·费兰特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0937e44183948914f7083c32901daa6dd4b3eb65cde71ac19f0b267ef867f9b6",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-23": {
+    "author": "玛赞·莎塔碧",
+    "method": "visual_attribution_crop",
+    "image_sha256": "491c8782107d889b4eedc3047d12d974f94d8d496b8eb03704fffeb8dfbbd850",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-07-26": {
+    "author": "沃尔特·李普曼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "188b6811860a3d8d95ecec191f60743e7e54f0879685ef3eb1892595e10cadb5",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-08-04": {
+    "author": "金·戈登",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c83cfbb419a91d735cabb9f4da5b2723d6ee7325725415ee751a5fff1f908f13",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-08-07": {
+    "author": "顾不白",
+    "method": "visual_attribution_crop",
+    "image_sha256": "79bca2b31c6c16e7d26c4d8f91229e052a10ede791ebe2524fb877730f1fa4f1",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-08-12": {
+    "author": "曹天元",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f29b4f23e0249bc4bece34445ead42ed8187eaf4992b759fbb1c70310c07d34b",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-08-15": {
+    "author": "佐野洋子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7aae79cb01d011e2d71282761867795b4d0e19d7cb5b3566ae3816f6cbdc9988",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-03": {
+    "author": "詹宏志",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3cf5fa32e62094c14a31ed9dca6fe0267400591a94d563dc2e090d6fe729c076",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-04": {
+    "author": "瑞·蒙克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "122c51f046bec4a94cdcc7f381f3021d1283316affaca0cf1de261e5d3d45f2e",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-09": {
+    "author": "契诃夫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ac76bf812f2ac98070815e8630df6ca544b172b5772bc10c3152fbf0ca56f98e",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-11": {
+    "author": "菲利普·拉金",
+    "method": "visual_attribution_crop",
+    "image_sha256": "eb1798cb124dc53a0f077186fde1208972b2f843dc6179a8e04b44b2e4638d38",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-12": {
+    "author": "伊恩·麦克尤恩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e1d30fc663884083358cfe26cb7dec2f1d7516e20026a51fe3d6cd6b60fd5d3a",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-13": {
+    "author": "姬赓",
+    "method": "visual_attribution_crop",
+    "image_sha256": "60b1abec310c617d1c7c3cd52a19fd699df9230029846692384da70400df1835",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-16": {
+    "author": "雷蒙德·卡佛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "010e4d51c97fd64d04ea63f65112c92f4302abfecabd5a225fa0f431698c200b",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-18": {
+    "author": "切斯瓦夫·米沃什",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d2e2735be2d351d7349fb8469907df85fe36f099c5a5f9bbea96e863625e8da7",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-20": {
+    "author": "司汤达",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3500cf28e1c70472000ebaec63d8337cca9482f6922f876eea06cfe83210cf4d",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-21": {
+    "author": "罗贝托·波拉尼奥",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c9892f2419d657267a9ca650edd673710ce7afda3ea373829c99ad5482ce3523",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-22": {
+    "author": "卡瓦菲斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b85765c6969ef6272b370f3e337c6f80003e0326525a065e84254a3a9e4f0741",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-25": {
+    "author": "赫尔岑",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7947fae9a25bf840ff3e8beb02f43c692ac21b2e6e8df875d2c3642c02bd88bf",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-27": {
+    "author": "第欧根尼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a1c95967cd247c9e872768ece0376a3154b257e1bd84cea798f27ed008f0e8a3",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-09-30": {
+    "author": "亨利·戴维·梭罗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0c64998c47418ff630d9d59bba34782406ccc4f0cd0782742dde0ed702e8ea0b",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-10-01": {
+    "author": "鲍里斯·帕斯捷尔纳克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e0022a67f49f15ae84cd2d589ddda1b60b34b5ef0411830f9ed951f6ce1477f",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-10-07": {
+    "author": "胡利奥·科塔萨尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c48d31306f8a9171604fb5efcb73768492224553ad1982da2f5d6b11ab399941",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-11-04": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "586b3df268ef71a9dc5cf267214e556cdd45659088942ad5822bcd5676016ad6",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-11-17": {
+    "author": "帕·聚斯金德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a0bb318c3d8e4354ddbdedadcf719eafe6f32340c68f9a5ca1e39fe6b4257b45",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-11-19": {
+    "author": "王朔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "765bea6f9f460b14192d15de9c72b3a4c8c1e5d8ff71da14e079eeb15e18fbb5",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-11-30": {
+    "author": "穆旦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5074cdd2367dbe1f432768bf9060782fd4dbfd2cf618ee7f300de43afe158d41",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-12-03": {
+    "author": "空知英秋",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1b18878a7423074a106e086e950edda5eb7d5b30fcd342103e882885c535b56f",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-12-07": {
+    "author": "包慧怡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b33382cc7b78ed2493f03d4313fd37a722ebbe930217ed704d3806c08830ff85",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-12-10": {
+    "author": "莱奥·卡拉克斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "43e77cd461a5092332487a541c5d2f168bbee4229125988042b69dd2bf70a92e",
+    "note": "对照原图署名区核对。"
+  },
+  "2018-12-18": {
+    "author": "埃莱娜·费兰特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2951d34a3bd43e1caf01471d05f1ff7b5004f1cb6b593de82fce9ecb8559ba4e",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-01-08": {
+    "author": "陈乐融",
+    "method": "visual_attribution_crop",
+    "image_sha256": "25fc6f615fedcbdeec55f6db7a86d1f2823dc61b2c5090e8874e7e455145b0fd",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "CHENLERONG"
+  },
+  "2019-01-19": {
+    "author": "陆庆屹",
+    "method": "visual_attribution_crop",
+    "image_sha256": "96ebe14f835389e7e66c747635caed3f4debd1236ff5ee0763d198a466ed0f6d",
+    "note": "原图中文陆庆屹，外文却印 PANQINGYI；保留原始署名并标记冲突。",
+    "author_foreign_name": "PANQINGYI",
+    "source_name_conflict": true
+  },
+  "2019-01-20": {
+    "author": "侯德健",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0dc05bd4e8b899201b5b27480f4d24909f31fb61b14f2839d19cb3421efb842b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "HOUDEJIAN"
+  },
+  "2019-02-02": {
+    "author": "伊莱娜·内米洛夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2536802f2bc9b19a6dd8484844f775654fd78563493e6bf1babd5b7a7a79eab6",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "IRENE NEMIROVSKY"
+  },
+  "2019-02-12": {
+    "author": "荒木经惟",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bd49a6872b8e6dd20bb0869389d1e083e627b200963eaf16503492d50bce255c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ARAKI NOBUYOSHI"
+  },
+  "2019-03-11": {
+    "author": "乔治·奥威尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a9894e881a77ace81e1f786149207e8153a8336926ec186a93f76b26ed9d2cc4",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "GEORGE ORWELL"
+  },
+  "2019-05-05": {
+    "author": "尚塔尔·托马",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f4ed574b277bc945834540cc01200ff3b586cc3c1cd8014f8bd64c78adb6d56d",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "CHANTAL THOMAS"
+  },
+  "2019-05-14": {
+    "author": "P.K.14",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6ac9d33daaa44a0475cab2c8038ffa61a4bd1ec5f8f1a21ed978beabd342c09b",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-05-27": {
+    "author": "阿尔伯特·爱因斯坦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "596ebfbe64c8bdd9934d40baf490f8100e6464d9faf89602a1aad7b40f6b927c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ALBERT EINSTEIN"
+  },
+  "2019-05-28": {
+    "author": "乔韩·瑞克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f3116601f934c1ff6608054c6c56ac8e0ddc0364af70c5b84dcb529813062a28",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "JOHAN RENCK"
+  },
+  "2019-06-01": {
+    "author": "几米",
+    "method": "visual_attribution_crop",
+    "image_sha256": "32ba0b74382fa05929651ea19117dce3baaa57d5bb7da3d48993c9abf17ecb57",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-06-02": {
+    "author": "MY LITTLE AIRPORT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "91482de7eec5f2217141a9b01e194c852375aa8bee70f3c3dfaac0412d46e6c6",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-06-07": {
+    "author": "方文山",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a5e6a12335e0e20f2be34d159a10589cae354b563bee4d8927d79884f05a189c",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-06-08": {
+    "author": "E·M·福斯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ef48353f8ff5f8cc074f687fc90418b09646a3264f47cda53c618ee4133d5e51",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "EDWARD MORGAN FORSTER"
+  },
+  "2019-06-11": {
+    "author": "林振强",
+    "method": "visual_attribution_crop",
+    "image_sha256": "622a604aee4cf5d6c2c3c81f41386a2d241f1c2a54d29f5081845adc5f9ec751",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-06-22": {
+    "author": "D·H·劳伦斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "554ad26bd545894583beccfc97ea7413f080d5bc1962944b6e19b46c109963eb",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "D. H. LAWRENCE"
+  },
+  "2019-07-14": {
+    "author": "黄莺莺",
+    "method": "visual_attribution_crop",
+    "image_sha256": "923d3ccd4b34b3140296e5fa190e549a2837b4d4a0f7e0e14dbb5bdf5cf633bc",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-08-12": {
+    "author": "朱迪丝·N·施克莱",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a54cd730ac8b4ae26236619322c9f5b8692079b5e70055c4e4c34cdb4cc3dfc7",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-08-16": {
+    "author": "纪伯伦",
+    "method": "visual_full_image",
+    "image_sha256": "a6c1d020bb473cac3b78cd3039522bb0b9bfeb3b3738b61d7e1b4bd889decdac",
+    "note": "特殊版式：已查看全图，署名在常规页脚区域之外。",
+    "author_foreign_name": null
+  },
+  "2019-09-26": {
+    "author": "尼尔·杨",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5bd0e0c4a93b5366d7bf8c13788e6a029fddf31feebdccc618ec6a9df8ff305c",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-10-24": {
+    "author": "韦建",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6fb0c03864f8d2e52bb03d371918bd406e99b302631d757e773ee7180047f2e9",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-11-08": {
+    "author": "奥利维娅·菜恩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0c1ee7dc8da9fee6616823565b87b2b590321ae3215af1a1df854041b7debd97",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "OLIVIA LAING"
+  },
+  "2019-11-30": {
+    "author": "卢·里德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c54f2eeff8495b6d9a653d640265225a5e8ebf5de5c84ad816ac77463ec4f6db",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "LOU REED"
+  },
+  "2019-12-05": {
+    "author": "爱德华·斯诺登",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8905d71084128a1dd0215205840c7d118d5f26feddfc63f329975e67d854dd76",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "EDWARD SNOWDEN"
+  },
+  "2019-12-06": {
+    "author": "苏打绿",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4f8cd570aad4432ab06bc03defe746f7a1a7b7fc0ba548571d37186b1b0504dd",
+    "note": "对照原图署名区核对。"
+  },
+  "2019-12-16": {
+    "author": "刁亦男",
+    "method": "visual_attribution_crop",
+    "image_sha256": "81c3ff7e5bfffcf9aa79ebc4443a4cf51e3155d62581f841c0fca0f334929cca",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-01-23": {
+    "author": "布雷特·安德森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "15444b836c4c5615c67a1a1c185ce8b3b18a6f08d8ab0c364fe1ca77f71ce491",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-01-31": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "13d0072f234218b086f2858d147bb92708644f454f00fcd543386dcdd33448b0",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-02-01": {
+    "author": "World Health Organization (WHO)",
+    "method": "visual_attribution_crop",
+    "image_sha256": "edb58762133719785971295d7de3884413982e148ba5faad0b7c277227396f4a",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-02-04": {
+    "author": "阿尔贝·加缪",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5394677a1f1e02579e0a30f98f845807a054a0c7d5214730fdbd3e2a9ec35e1a",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-02-18": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "dbdc9336e8ac44c25583eb658b19e496c1c64961270cfcf7ba15cc88512d4ff9",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-02-19": {
+    "author": null,
+    "method": "visual_attribution_crop",
+    "image_sha256": "f833254bb78cc35a5d15a724a20adcd315d5f9e878bdc2bc053e59baad9d44f4",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-02-20": {
+    "author": "海莲·汉芙",
+    "method": "visual_attribution_crop",
+    "image_sha256": "23ff3cd3b94b6b391c89633068965fe641ce64ba64ee03d23ca66e28d6c54a1b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "HELENE HANFF"
+  },
+  "2020-03-01": {
+    "author": "鲁伯特·艾弗雷特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4b1666e8b694d0bd40449c0e42bb59d8c6abe5fc3c17d93421eea39446693829",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-03-03": {
+    "author": "陈嘉映",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f9bb1189b1c9f9822e28bcceab1a10a8cfac93538562d0f96c481dc63a874654",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-03-04": {
+    "author": "安东尼·马拉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3b1e3936d979331f53216fd1a2c3da521f757560595a37c9ae1bba9e6f4504f9",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-03-22": {
+    "author": "维托里舆·德西卡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc1058f8aaee721f4d0ad46fef407103d2ab4d75ab5e5454e958ce94fb61c0cc",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-04-01": {
+    "author": "雷·布拉德伯里",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5dca07c1edb4940bce8319d42c8443f1f66387cf4e59b5c89cc0a6e91ce537f5",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Ray Bradbury"
+  },
+  "2020-04-02": {
+    "author": "F·S·菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "74a4153ed200cf3bec1ab7f32c4491b465e48505f384ad0b584e5fa757ab981c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "F·S·FITZGERALD"
+  },
+  "2020-04-06": {
+    "author": "W·H·奥登",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e1c0241894722c5f7a65a03e8fc7e52e36a0346abd3278d708894ebf213dce6",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-04-09": {
+    "author": "塞巴斯蒂亚诺·托马/洛伦佐·托马",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d55e5b1cf79502970aa1b67badaa012b1a4916903958d2d390d4f3bc7c732956",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-04-17": {
+    "author": "埃莱娜·费兰特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "316ac61cec29e03b10e1a738016d95fa20178479829c3e8e9a4bc586e18cd514",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-04-19": {
+    "author": "本·泰勒/凯特·赫伦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9fa83b55a9dceb75d3e019bea2b70b065cbab0dcd67129452d16e0ff0160d4f2",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-04-22": {
+    "author": "阿巴斯·基阿鲁斯达米",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f88a300adddde86bc054a1c4566a6b46639494d78777f15f66f2605e92d499c6",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ABBAS KIAROSTAMI"
+  },
+  "2020-04-28": {
+    "author": "松尾芭蕉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bca6fa4987334b845389cb668874b403c40ca9c01a7cb70f83fef2907b2d3549",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-05-01": {
+    "author": "波德菜尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d527bd6391e2cab83401fe4faf0bbef18951b31ea887853fd1360163866dc274",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-05-16": {
+    "author": "荒木经惟",
+    "method": "visual_attribution_crop",
+    "image_sha256": "480d137fd4a78f2cef5c7c8e8955a01deb125e40a4a542fbb0d5dc220d5aa60e",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-05-18": {
+    "author": "罗贝托·波拉尼奥",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b2870882a8eb0b5f98613a207a0744bea2d492f3fa4ead15f5f5d5860de91f26",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ROBERTO BOLAÑO"
+  },
+  "2020-06-11": {
+    "author": "翁贝托·埃科",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b4e2e4142cc4e8679d275dee699f1e145bcb0d5e6b643646aba0f4bcb5191004",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-07-04": {
+    "author": "外外",
+    "method": "visual_attribution_crop",
+    "image_sha256": "daeb802e5b5b2fd647aada85fe3374b30b6207c6ec084d3be7e2709751fad8d6",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-07-07": {
+    "author": "巴克敏斯特·富勒",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fcd2ebaa546fe82302a36bf4239d8bbad9711b7e3093f16371c23c4201718486",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-07-10": {
+    "author": "李静容",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f1b257b9086dc742101dc94cd23e396549328ecf01cd358398d2c15899c236e5",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-07-15": {
+    "author": "伊丽莎白·吉尔伯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "46ced6a9edcc3aad61e9ff7834d4a6699bdcbd9301c710760d2dbe3a3b003b41",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ELIZABETH GILBERT"
+  },
+  "2020-07-20": {
+    "author": "乔阳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ffa28cd7b47c8bfc464679e3ff213602666f47b0b03cbc204535701e08e46d32",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-08-07": {
+    "author": "翁贝托·埃科",
+    "method": "visual_attribution_crop",
+    "image_sha256": "99e4a0310380df8a4064dad8bbac8b1cb810f095b12e2aba03099f12dd194cad",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-08-13": {
+    "author": "普鲁斯特",
+    "method": "visual_full_image",
+    "image_sha256": "56c54a47736d868f3a461f385ccbb7e1f68010d71b90eda277a46af756b23bc2",
+    "note": "特殊版式：已查看全图，署名在常规页脚区域之外。",
+    "author_foreign_name": null
+  },
+  "2020-08-18": {
+    "author": "詹姆斯·伍德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0c49ce8c654855abd0359673d1e567cefc0e89d61d1661cc9ff28cd033f820cc",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-09-16": {
+    "author": "鲁斯·巴德·金斯伯格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "10ec0f5d87dc4956b1c55bb4b149c125f64fa3328e04d617bcc3d015e78b1478",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-09-20": {
+    "author": "鲁斯·巴德·金斯伯格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "94b04c7e7289a39d7e2520bf18c4d10a38aedcc971ef1df05c2a211b1eeccd06",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-09-22": {
+    "author": "亚历山大·小仲马",
+    "method": "visual_attribution_crop",
+    "image_sha256": "759be84ef157229771e7c96b230fabe109b6264a1bdb29a84faeff1d50206952",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-09-24": {
+    "author": "杰弗里·迈耶斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "182b92413e1d9980d037ffb22c35dc9225313b18e9c17e9999af522f8cc966af",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-10-02": {
+    "author": "周作人",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3dfa16aad61564b1569d339edc94bcd17665d5de4be28e494d5ff391e0c1b8aa",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-10-03": {
+    "author": "阿摩司·奥兹",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e03f2090a06fd92f678e2c49718f1e72def6688b14a5cc652ecd21e21841778a",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-10-18": {
+    "author": "查理·卓别林",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1e84dc39979007cb9afcac92b8e80c75239c9cb7d1d84f995c1c929b1093bd83",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Charlie Chaplin"
+  },
+  "2020-10-20": {
+    "author": "艾瑞克·弗洛姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9c7d74bfec56d7543c11e46cc0b79fdc77ed04ebe5f847531ad49cbcdc5e3716",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Erich Fromm"
+  },
+  "2020-10-22": {
+    "author": "弗里德里希·荷尔德林",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fa252fd62145d4f6b0666f66ad99aa78bef86b1314816349645c266f826cf986",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Johann Christian Friedrich Hölderlin"
+  },
+  "2020-12-03": {
+    "author": "包慧怡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a06b3f79368428db07474f53525ab609645da3e05a1673ce97a7a8661946396b",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-12-07": {
+    "author": "日本NHK特别节目录制组",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7fd014ec5cff479784fd6c3acf8432de04b4d80facab13b285f763268b93abae",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-12-17": {
+    "author": "J·D·塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c9fff4e54e55885a106334b00dc6a215d2af49f41b80d0e8d791275b2a4151d4",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-12-25": {
+    "author": "Hurts",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2a821fcd36c974063986dbfd24a9be83f6d05d08fb04979dabeb0ac9dcd1ac51",
+    "note": "对照原图署名区核对。"
+  },
+  "2020-12-27": {
+    "author": "保罗·策兰",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc10f237b00cc8857e30a7630818c9d6f9273ca960b89410e9f04140635da245",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-01-18": {
+    "author": "费奥多尔·陀思妥耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2d57053eb59001ef36084de39e1f12da7540eca333aeb42dbb0842e9810eb532",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-02-11": {
+    "author": "费奥多尔·陀思妥耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1d888bbf02bec75dfa7696ef71e08cf252d276ba37727281fe24e48f0dda849e",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-02-19": {
+    "author": "马塞尔·普鲁斯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7c32940a0d3c93c670f03fe27597b4b2c3517781da8d3bdebcc99fd8273e1963",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Marcel Proust"
+  },
+  "2021-02-28": {
+    "author": "乔纳森·弗兰岁",
+    "method": "visual_attribution_crop",
+    "image_sha256": "30bffc277a9acac60e645a022648cd230f6ee519f1dcdb67b9a2ba9a08fe01a1",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-03-07": {
+    "author": "张国荣",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6f4f40e86c3d85bc3d24f7bbcd826d1640f2b778089fdbd68c07c271660fedb8",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-03-10": {
+    "author": "李盆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d2c7f842676649f7d8849c02c0d84e5d47612f01d0fd535158f320005460259a",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-03-22": {
+    "author": "阿尔贝·加缪",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9761cb87ee304bbd1b4894eef3b3481cd607467862b23a8a417a0e8ed97d8d4b",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-03-29": {
+    "author": "奥维德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "97b0893cee9e8f17a615bfca28691e00dc57fcb5e98f81fc206949c7b3ddcc7c",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-04-25": {
+    "author": "娄·里德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "afb95c6e29d770594dfcc2247f89ba16cce18d14b7706b0c789fa3d219e394a5",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-05-03": {
+    "author": "威廉·莎士比亚",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bf8868112b95274336a7f53b2f786ee0424ac9cbaa59f5f86b555b2d2f4ed9f3",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-05-09": {
+    "author": "施特利戈兰·吉利伦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "38c72426b6ac5b55267fe5b15f9fd85ace0ab2035526258e9ac2b9782b15860d",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-05-23": {
+    "author": "亨利克·易卜生",
+    "method": "visual_attribution_crop",
+    "image_sha256": "408f79637e2b38786ee220e5848ae13524b69f2f91b751273b386d36519848f7",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-05-24": {
+    "author": "鲍勃·迪伦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "67e728f5d852d632b05a0d7cd589fc8bb7a1bb921f1efb2bc2fc382d703653f6",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-06-01": {
+    "author": "宫崎骏",
+    "method": "visual_attribution_crop",
+    "image_sha256": "93ee3cefc63eb38dac8d65f0cba4bc835bfe38f88fca7fe1c15cd90afb8b6aeb",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-06-15": {
+    "author": "穆旦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5e5ca9d07c86be2d53b4dfe5c37efee2b79d1496f0f66640a4b8a65d128ab5cd",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-06-22": {
+    "author": "卢·里德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "75a3d040200d06320a5250aaa3c328f9ad4c2eb2457be1e0fdd76998c6755153",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-07-04": {
+    "author": "埃斯库罗斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1db5ee078f761dcb307ca8627d5639753eb04fccb417452ccb300965f01b46c3",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-07-06": {
+    "author": "鲁伯特·艾弗雷特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6573c446387a39c5958ee9679318ff76ae1115c34af0b41bd309fe8b2d2f7a4a",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-07-12": {
+    "author": "巴勃罗·聂鲁达",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e5c28f26a820a2f157eb60f266de56a93e32b154822a0ec959c32829733ddbea",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-07-16": {
+    "author": "罗兰·英格斯·怀德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1176215d08cf6c2740a86f277f282be33db2ce760d13440d1c881d55ad41ccc1",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Laura Ingalls Wilder"
+  },
+  "2021-07-22": {
+    "author": "亚历山大·素尔仁尼琴",
+    "method": "visual_attribution_crop",
+    "image_sha256": "15f1c12073e75a2d266f17f111705ed337a451f38e4db2ab05b57b2084769001",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-07-26": {
+    "author": "约翰·沃尔夫冈·冯·歌德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "76cd82bca9b334313f718ad8b7bf45b2cde09887b9df6cc667361fd74624057c",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-08-06": {
+    "author": "亚历山大·素尔仁尼琴",
+    "method": "visual_attribution_crop",
+    "image_sha256": "65d9539358e65eb9cb81744645ebf49f2e04489a79dd5a5295b7a83f1196bb63",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-09-09": {
+    "author": "陈嘉玲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9c0f711a076d8859705250d52c2d7960c8744ba6c833e7426ea50c2e0b95973e",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-09-13": {
+    "author": "昆汀·塔伦蒂诺",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8fb9b49a47a0a664ce82e949ac9cb19d099604976cc6422b4bdbf38bf8a6afe2",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-09-14": {
+    "author": "威廉·M·埃克斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8d5d065fb19507a36cc11b8175008028211be6de83453d232a244fe09b3a6da7",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-09-21": {
+    "author": "郭爽",
+    "method": "visual_attribution_crop",
+    "image_sha256": "58a3fc705618ae1516656273e3d3540b4699cb13b4f2f5c5aef4a0a7d584fd5a",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-10-02": {
+    "author": "乔治·斯坦纳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "62858e0742c59ab814f424f37d52b8e96817a6f7e14c41897337092ad9f9a43c",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-10-07": {
+    "author": "菲利普·拉金",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7c63294143e7c0020a7ac882f2dbe51ec253f74afcce84bc5debe311ecba3d61",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-10-13": {
+    "author": "安德烈·巴赞",
+    "method": "visual_attribution_crop",
+    "image_sha256": "51b94d4ff7b80359d9df8055a469c9492e83b1bf1679cdc2b713761ac0e8dd40",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "André Bazin"
+  },
+  "2021-10-29": {
+    "author": "詹姆斯·邦德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0a1f247f95bb3978ceba39a98922210bea31d350c7e7c8846cfdfea113b70a63",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-10-31": {
+    "author": "玛格利特·米切尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4668aac28592d97632239fc2b99d7ba0a5d340751b02fc8d6598aa9a092e9204",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-11-02": {
+    "author": "弗兰克·赫伯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0142e7d3cb692c5f285cc58b7936fbab978d4c36976c11cb0833e027c0251fb2",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-11-12": {
+    "author": "斯坦·李",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c91aae32c97a4ae4dfa69d7c4bbf264ed8e136cddb1d5adbc22ee648b93af9dd",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-11-22": {
+    "author": "巴勃罗·聂鲁达",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b978bffe1d09b20ae0d77f994480d36607327bd0223cd44cadf07c41bcbb0493",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-09": {
+    "author": "安德烈·卡瓦祖缇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "082153834f26a7e870d4c17d4f3a96d464bb3ed509ee3428c8eec77d736db461",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-10": {
+    "author": "卡克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b70cfc4f33e5bb91b682fbb377dc82a1d73abfe384a63ba0432475a874ce8321",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-15": {
+    "author": "老安",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c048ae1af1545f74435513fb1b3f7b8e55f9005d456d30e0019daa4250760b62",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-20": {
+    "author": "李沧东",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d1dbfa50571882dae7579dfd69ec16c7a9780664dcb540eccb394f92c3ada902",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-21": {
+    "author": "林清玄",
+    "method": "visual_attribution_crop",
+    "image_sha256": "27fc6451d55fadc93fc45f0a5854c8fe598fc64b92a81e84015a6bc80a1bc761",
+    "note": "对照原图署名区核对。"
+  },
+  "2021-12-28": {
+    "author": "若泽·爱德华多·阿瓜卢萨",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1f14dee44f72e5156faac8b7ab77dcee96cf2aa3ff55457b8fcd6443daafcb07",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "José Eduardo Agualusa"
+  },
+  "2022-01-10": {
+    "author": "裴秀",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ff395429df9e5d5e6fc1e4125c9cc624591aa10d3f94130b52e02ca6e7fa4a22",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-01-11": {
+    "author": "安妮·弗兰克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "df1fc76facd94b549fe792a33a70e6082c5caa26d692aed3acdc209c0f6205b0",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Anne Frank"
+  },
+  "2022-01-31": {
+    "author": "黄嘉谟、周璇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fd4879e04cd6d287ab3bbb36c0eb02c7ff7eaa0e24c56309da4f18d86947c455",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-02-12": {
+    "author": "胡安·何塞·阿雷奥拉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b1ce9996ab00c2819cd052c7348ac5feef00f7ddd9fd1f7646673981920240d9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-02-13": {
+    "author": "莉兹·克里莫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "89566f542d8b9392603f454b2da7cf835ee6c4e1ddb7d69c9e682b650bd96b91",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-02-19": {
+    "author": "伯特·巴卡拉克、比利乔·托马斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8cd1870922036329aecbb5b9e5eb168025f4c23e37f1ce46b48c107df4298308",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Burt Bacharach; B.J.Thomas"
+  },
+  "2022-02-20": {
+    "author": "朱利安·巴吉尼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3e72cc9aa38e28a73bf89d72e292c70e98f542443612f981a8e170811e3273ce",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-02-24": {
+    "author": "朱光潜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "affd024bee530d7eafb3e90a5f7f536b181aada6b8fd8646039d946a8497b3d1",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-03-11": {
+    "author": "席慕蓉、蔡琴",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ebeb956cd894e40beabb5f7ca153bec7bc53161d8d063fd56ecb0c17c52745c9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-03-14": {
+    "author": "J.K.杰罗姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "64e92e388907ffcf59a4605f948e97dfebf937f9478ecba5461d3d755889dd18",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-03-28": {
+    "author": "乔治·斯坦纳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "880af46187e5ef42128654d76308709b83894429c9b4828206625c1c18efb354",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-04-06": {
+    "author": "上海彩虹室内合唱团",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bfb3b35cf4b1557080c43c864d319aa26395b1114853e878adb593c26e6677e2",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-04-08": {
+    "author": "陈蝶衣、姚莉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "02eb31c3beb565085fc978e2cfa68e2981991a1c748ebf2c3adca6d9f8fb7746",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-04-10": {
+    "author": "苏来、陈明韶",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f685df081981781ed33db3b3ce25543c3bde9bccd233a923072f54f0c146f930",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-05-08": {
+    "author": "邓丽君、陈颂",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a07b2e88975513df585205fa2a29d36d41e32008e15bf34960c056a06d35957a",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-05-09": {
+    "author": "本·阿弗菜克、马特·达蒙",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a70ec048cae7587dafee785f42029992f77bf4e2229cb91250d35937ab8f0aad",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Ben Affleck & Matt Damon"
+  },
+  "2022-05-10": {
+    "author": "U2",
+    "method": "visual_attribution_crop",
+    "image_sha256": "45aba856350369bf7ff61fa865008563bc8e0124aa66f077a6efebbfc5364bc9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-05-20": {
+    "author": "Humbert Humbert",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1e42c6b72b9886b0597cf9027a332d958d3df720d35eb99c9c706e7c3347689f",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ハンバート ハンバート"
+  },
+  "2022-06-09": {
+    "author": "莉迪亚·戴维斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "559ec2a83b8815c7b8fda30542ee0c9fe8c2742cda71697f0b8b1391f1a5cbf4",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-06-30": {
+    "author": "朱光潜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b2710046062f15ab1d6687d81077d66e75c79d2d2f252c4d56013eec6e5ee7a1",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-07-05": {
+    "author": "布阿莱姆·拉姆尼、乔恩·巴蒂斯特等",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b3b9b4bed346c66168af65e4d5adcff909ef76d782c7c49815d02b201662e046",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Boualem Lamhene; Jon Batiste etc."
+  },
+  "2022-07-08": {
+    "author": "黄伟文、陈晓东",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc2aacb8f8197d73928bb2601b0f6c073895ce595a359862931032c96ec86ac9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-08-01": {
+    "author": "诺曼·金贝尔、佩里·里贝罗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a67bcab3809956fcb6e8b6097cd12aed91b96f9e85c23cf32fb17bfa5b86e1e0",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Norman Gimbel; Perry Ribeiro"
+  },
+  "2022-08-02": {
+    "author": "岸见一郎、古贺史健",
+    "method": "visual_full_image",
+    "image_sha256": "c27a0094e93bd944d3e4819096d94269ef6bf08bc2f9d31db08e8fab5ebe1478",
+    "note": "特殊版式：已查看全图，署名在常规页脚区域之外。",
+    "author_foreign_name": "きしみいちろう・こがふみたけ"
+  },
+  "2022-08-19": {
+    "author": "唐书琛、卢冠廷、莫文蔚",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b1342a338a05448f352bbb0b0eed279cbcdaccf658ccab2fa9b75944def8bbc0",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-08-24": {
+    "author": "老舍",
+    "method": "visual_attribution_crop",
+    "image_sha256": "98b9e44c93cde2804908c0fe73d55215d776813f4611296baa78d36aba9a02fc",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-08-28": {
+    "author": "冰心",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5f9dba430e42f4b5b5f1ced4d20509d07b44b7e914285737323d40e4b7a8b626",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-08-29": {
+    "author": "迈克尔·杰克逊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b5c23cb408d6c646cc434d2c0ddc1d1c5ebba4a51fe0b9255ec2d26eaefac009",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-09-03": {
+    "author": "罗大佑、王洛宾",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f119742b67781aaa8ab772c5ee0ef7c67179baf98829565cb5fbbeb71e012fa9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-09-10": {
+    "author": "范烟桥、周璇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dde2ce8b09e8f8bf661c13987ed054fb0d2ecca9a744730d736a1490323759f4",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-09-13": {
+    "author": "英格褒·巴赫曼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2f4d69e8c3b965b50cb3925cfd6b239735b702b9d73d8e3f076bb8c1db14adb4",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-09-17": {
+    "author": "岸见一郎、古贺史健",
+    "method": "visual_full_image",
+    "image_sha256": "fa27a014707c8b9633ae74f8f301350b537e0fe156fec4b5f0bc81d7c2b2c41f",
+    "note": "特殊版式：已查看全图，署名在常规页脚区域之外。",
+    "author_foreign_name": "きしみいちろう・こがふみたけ"
+  },
+  "2022-09-20": {
+    "author": "夏尔·皮埃尔·波德莱尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "479def6f26a9a1749ddf36ed1a040a361185dae583c2a2a68277c9caed9494bc",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-10-09": {
+    "author": "约翰·列侬",
+    "method": "visual_attribution_crop",
+    "image_sha256": "da7aaa17fc1af8cb5785dcbdcd34b42d1172578f262cb67727d4150ff11c32f3",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-10-15": {
+    "author": "罗大佑、张艾嘉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e5de0d72e9ee2d4223430774808310655206823cd11325fbb990b01f48873fce",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-11-19": {
+    "author": "詹姆斯·里班克斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4666e62bb6e32d96bf547efca7d3995a980427f55d2862fa26cea98051fe98d3",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-11-20": {
+    "author": "Humbert Humbert",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d2fa9116897fb5979c9c041ded7b53e4324d22d1b1572b4c5ccff2c19f105b2b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "ハンバート ハンバート"
+  },
+  "2022-11-22": {
+    "author": "黄霑、钟镇涛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a829bb6dea7f9addc53fcfa76eaef2e2b86d17891af77324d57e37675f627f59",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-11-23": {
+    "author": "周学普",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1e6400f2a47eecf8619e49f920d5bf399e3d02ed56f99d2af44b583c4b724af9",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-12-09": {
+    "author": "乔丹·彼得森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a214b9d978e2370ad9d6435ad752ff3b4de0134935ed8ee862cef36f566dd2b2",
+    "note": "对照原图署名区核对。"
+  },
+  "2022-12-28": {
+    "author": "许冠杰、黎彼得",
+    "method": "visual_attribution_crop",
+    "image_sha256": "16f36614eb930bac7abc27f0451c7ae295c045a2b8eab43af661d8879ae70acf",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-01-05": {
+    "author": "任大炯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1bebbddf8910763332c9121ec1470d4112cd7da5e3567c36d9b07c1c89b65321",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "임대형"
+  },
+  "2023-01-21": {
+    "author": "亚莫尔·托欧斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "99ccc8c3fe7df14964f32eabb7658ff9ec020ba81da793d9fe9c0cf97863a8f8",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Amor Towles"
+  },
+  "2023-01-25": {
+    "author": "任宁",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0a88f913386d920a2e85ce03343561a72ad85169249b0b7f2b17f89387017269",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-02-02": {
+    "author": "包慧怡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a2c3a2aad82ce0e1f604f979a7b489440348b0fe3f8f262da0e76d670fa3bcbb",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-02-11": {
+    "author": "丟莱卡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7bf681c41dc17aa318c568c8af37d5ba930aff1c63c0a8b81854b5ef774ed587",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Wasted LAIKA"
+  },
+  "2023-02-15": {
+    "author": "洛莉·戈特利布",
+    "method": "visual_attribution_crop",
+    "image_sha256": "adba637ea1e873295e10e333145365b91b4a3f1b290199c89caae06cd2e63014",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Lori Gottlieb"
+  },
+  "2023-02-19": {
+    "author": "韩江",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8e8992128d311bec755b5328363a805feca59ce3da9d17dba37772c3f594f744",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "한 강"
+  },
+  "2023-03-07": {
+    "author": "李沧东",
+    "method": "visual_attribution_crop",
+    "image_sha256": "483d28b779d74bd96b0dcf48f81c5548f6ff753dc1b41801f278f2575035027d",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "이창동"
+  },
+  "2023-03-08": {
+    "author": "赵南柱",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b7fff2695b5052a78a8670d1a8a507e85b220795a37f2cd85f143c3df4eae877",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "조남주"
+  },
+  "2023-03-19": {
+    "author": "大原扁理",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b75b7270ecb3031b598a6dec848ae6bfb465e916657703216473738227eed324",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "おおはら へんり"
+  },
+  "2023-03-20": {
+    "author": "新宫晋",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cc7ee0c6bba3c2867a9c584393389a5fcf0d371ebe94c004921d8769cda45a29",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "しんぐう すすむ"
+  },
+  "2023-05-02": {
+    "author": "杨潇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e0535ebed18c8deba61bb4793c2c677b008d6e804c2950021c1d2b7bd0324f0e",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-05-09": {
+    "author": "阮义忠",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b87c832bb872ac817f3714056c8ebec792b1b4e34f183d44bd30e224e33c1937",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-05-23": {
+    "author": "胡仔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0a98c2287519d72283430c8e0a07eb8d6ad6827fa60dcbf35ead8b72dadfe904",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-05-28": {
+    "author": "费奥多尔·米哈伊洛维奇·陀思妥耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6f1f6eb004ce4cdc393a5962633b95886ece8f087cb07498746364458ab14446",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Фёдор Михайлович Достоевский"
+  },
+  "2023-05-31": {
+    "author": "保罗·卡拉尼什",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e9eaa9dba6132ebd693e50d9a0464a25e786cd13ed55eaea91b4d24944a507a",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Paul Kalanithi"
+  },
+  "2023-06-10": {
+    "author": "迈克尔·波伦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a78131e5fd6c8395fd350947ec13a9daa67129b434fb88217c9deb78dd978e60",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Michael Pollan"
+  },
+  "2023-06-21": {
+    "author": "克里斯·桑德斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f10af1808f77f533ee98e0ba1725a4d97ad0aa559b393d3fd4c94f407f0ec203",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Chris Sanders"
+  },
+  "2023-06-26": {
+    "author": "韩江",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0613a6d94e6dd9ac9a92f7525a1b443bf947982ce819cca1389c1c9625ecb2ff",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "한 강"
+  },
+  "2023-08-02": {
+    "author": "克雷格·汤姆斯、卡特·贝斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6626f58145976a62c3051b214568573244dca2b22492d3b8c78b4bd4f5735da3",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Craig Thomas & Carter Bays"
+  },
+  "2023-09-10": {
+    "author": "黄灯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "475edaceff2ce0439d9ccada005e6cc2436f0e85a50e9a131954b804117c8574",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-09-15": {
+    "author": "汤问棘",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9286f84eb3a9da265723e2afc7a831cd9b43275cd505d9b59058e45fe5530711",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-10-04": {
+    "author": "查尔斯·约翰·赫芬姆·狄更斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "929fbf395693894c80240ff2c476bca997e1a3dc221bceb53a9caedd7b209af4",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Charles John Huffam Dickens"
+  },
+  "2023-10-09": {
+    "author": "中村恒子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "db7a8c233a4f8b5c202828d1d39f3fa3ef28bbd1ae69b6c060c2e553e10f2aca",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "なかむら つねこ"
+  },
+  "2023-10-10": {
+    "author": "李静睿",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4d2bb1ee67442f7298d6e5873c3fecbc91afe202a76fe7742165b8bf77592e35",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-10-17": {
+    "author": "巴勃罗·聂鲁达",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5be82f294a75da80e185ec844080a0cf7a1bda1718a35115eae14f3dc1c2f98b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Pablo Neruda"
+  },
+  "2023-10-20": {
+    "author": "萨曼莎·克里斯托弗雷蒂",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0039e5d71f4379d43a815bb906b9e481589a224438a313fb64ce908a768af34c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Samantha Cristoforetti"
+  },
+  "2023-10-28": {
+    "author": "费奥多尔·米哈伊洛维奇·陀思妥耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ac5bda3d6334929c8e71cd50e7071c97dcf0cc7b04b52969d1eb2f919c68c10b",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Фёдор Михайлович Достоевский"
+  },
+  "2023-11-11": {
+    "author": "迈克·维金",
+    "method": "visual_attribution_crop",
+    "image_sha256": "82d39de4dbe229c61bfae8fc6c097139dc798403344be7a81346cf954226853a",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Meik Wiking"
+  },
+  "2023-11-24": {
+    "author": "羽生结弦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "63c12185ce9d5615ece27db36289cf42438b574ec31304759a57f4ff4bf00716",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "はにゅう ゆづる"
+  },
+  "2023-12-08": {
+    "author": "约瑟夫·布罗茨基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "345d858a75890b06fb8c9c28b9009840cca160280b0f92f13d6878a191ff2dd0",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Иосиф Бродский"
+  },
+  "2023-12-12": {
+    "author": "玛赞·莎塔碧",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1e4c0eb5136cb8c599ce5d700d296abf34bb97e3af8c8b898dd1ddd92a6e2df5",
+    "note": "对照原图署名区核对。"
+  },
+  "2023-12-22": {
+    "author": "李·昂克里奇、阿德里安·莫利纳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ac251e506f3e64502ad44e2b77f2163127fd2c37a8b1117a66e17933fe7ac6ad",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Lee Unkrich, Adrian Molina"
+  },
+  "2024-01-19": {
+    "author": "拿单·扎赫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6ca8cbfa84d3b88967e2e34fae1581cdbaf5f1d5d54c7d6dc4910121ca15d01b",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-02-08": {
+    "author": "惘闻",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9c0aad8ec2efbfdfc0f659be4449f4a0b1aec2a33388b3060779577793ff86c4",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-02-25": {
+    "author": "陆忆敏",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c7f45dd735149cb550eff57a18d548f9e67f73f3393357f768a716a1670e5859",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-03-04": {
+    "author": "陆茵茵",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f706211f7df873642b9295556365ea204d230bc158a5db680621c4a2d80c964a",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-03-24": {
+    "author": "海子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1c8240f9f6bff9bef2f9651d47e26d2d335425f8413f701dc83391f30259ebef",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-03-25": {
+    "author": "舞城王太郎",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5e5d32c85af7c926d2d2249bbcade81b6eaca50b817ac9bdc99a129ed855b99e",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-03-29": {
+    "author": "韩炳哲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4a3cfa1e957fe2deca6909bad9217c866bb538399997d6270ec6e4f2ed7e5f43",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-03-30": {
+    "author": "维斯拉瓦·辛波斯卡",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d4b52fac5194293ed4a891a1b106e7504d64ca4170a221a2cf9452f6a83689b5",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-04-02": {
+    "author": "坂本龙一",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6563a7f32ec6c3cf72266027cf66291abec7f8acfb3647fe09a16fd99852a46d",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-04-14": {
+    "author": "秦立彦",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8693e4834ae42f4cec5b2c04baed86c7dd0bd72953ab9e6f541449a6ab224979",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-04-28": {
+    "author": "张天翼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0bb044809cc8b1161edf361b92e535dbcf7f022b9e660c24032dc72d003a107a",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-05-07": {
+    "author": "美国《巴黎评论》编辑部",
+    "method": "visual_attribution_crop",
+    "image_sha256": "da59606a7435323186a1e90e7e726db27cb5e1838d6891b972c2bf1c76cb926c",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-05-08": {
+    "author": "弗拉基米尔·纳博科夫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f1ba16f6a883c775b2c4043e78f3456062ca5474c15cc8442553620de0db1814",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-05-28": {
+    "author": "弗拉基米尔·纳博科夫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9b6e34077638aeb24abe0bc680ad029f8e9e182ddbe55f6bdc460b84c5914d78",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-04": {
+    "author": "金爱烂",
+    "method": "visual_attribution_crop",
+    "image_sha256": "eecfd198b5ff8b04bfc8aad83d5fd9b55ee8931f6add259b6ea4744ba2e44233",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-06": {
+    "author": "戴锦华",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5cb0c7712bad107e23955eb7155386fb7e24517f24987f9bad1e69ae198eab6a",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-10": {
+    "author": "巴哑哑",
+    "method": "visual_attribution_crop",
+    "image_sha256": "68626de223a638f43d0e3de556a45790b38d9e83a15c9616634dc462f803c210",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-17": {
+    "author": "E·M·齐奥朗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c08bb4259614dbbf7eff2f0de31744df8ca8f43a8f1c13c0de6555520b83a938",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-23": {
+    "author": "韩炳哲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8ff59bb875ae34c34ca60515d9d64f0fed5259f1e77850998e3ff756f2c6bb77",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-26": {
+    "author": "韩炳哲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "88832d5f78da79065e47aea60f3aa17be053d543d0e25a84732d7efb1cfcf2cd",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-06-29": {
+    "author": "保尔·艾吕雅",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e24ee3475538bc2e2d97bc8ee8023f31ffd407fd0d0554b8c48a224727315372",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Paul Éluard"
+  },
+  "2024-07-02": {
+    "author": "阿冷来、笛佬斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e78168452f2bb8535ec44e1da53b2a1559771e70e3e002556569f60e10a77afa",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-07-04": {
+    "author": "朱利安·费罗斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "66a9e8aae49832297fd1924463e2201a9a78f9763edd994862a76eca8ebc6084",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-07-05": {
+    "author": "韩炳哲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "00aa1f61cf604ac83fa492d37b3408b05c36a7a06999b58a6598317c244ee3c7",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-07-16": {
+    "author": "大卫·莱特曼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bd9bd86aba2ffcc00f5852ed655559467fa80034407cc0baab0746fe544f9719",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-07-19": {
+    "author": "胡波",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d20b2078f4007e0825ac621a30655a8ff391e1c44933ac432f1cc9abe57022a8",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-07-20": {
+    "author": "朱光潜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fa184891995a19847dd7cbef254b8e372b11be0f1aa11eba8ed5799ccf10e8e5",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-08-03": {
+    "author": "让·克罗德·艾列纳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a727d51d6be94bc766dd5f862c06fcdd496d3412da075de01f2e2f0d744a35b9",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-08-09": {
+    "author": "陈以侃",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8c29ede774de0e8e99ea7641d311ba52fc699f5c49d28246ea0578c3c9188a7e",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-08-22": {
+    "author": "斯特凡诺·曼库索/亚历山德拉·维奥拉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aaa46fa9f6e62fa62d205e41b80be7401cfb00a12fc025e0465c53966475d223",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-09-22": {
+    "author": "阿来",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a4e81bf8058114c9a594eec0e78c2bd36d4301daa8c3e463d87317bbc1eae63a",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-09-23": {
+    "author": "科伦·麦凯恩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0c11625b2911dd11433adc02f238dcd55ff82e9f3cf1e5c61ce6e824dc352807",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-09-26": {
+    "author": "吉米·哈利",
+    "method": "visual_attribution_crop",
+    "image_sha256": "929a3b3fdf112e465a89bc4326d48603b2f7507fd1fe8e27f6a18beb0409238a",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-04": {
+    "author": "保罗·艾伯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e164250bf99e39aa412e90d0f195ba09a3f5dc9d7decde9baf021f00db83b126",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-08": {
+    "author": "三岛由纪夫",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e7ebd5cbeb6f90828987694a3dc52265dcd53e43e88318ef78cf03b25b5b4d8",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-09": {
+    "author": "美国《巴黎评论》编辑部",
+    "method": "visual_attribution_crop",
+    "image_sha256": "32a19943ce7c57399a573781e17cbede314569446085ad0993d7e2ec93e39d28",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-16": {
+    "author": "于尔克·舒比格/罗特劳特·苏珊娜·贝尔纳",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d6a68d0ab865c88321f85af7472c5d97606d7e0d5ede3d7da9ab62c049262ef3",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Jürg Schubiger / Rotraut Susanne Berner"
+  },
+  "2024-10-18": {
+    "author": "让·安泰尔姆·布里亚·萨瓦兰",
+    "method": "visual_attribution_crop",
+    "image_sha256": "31ddf1d42a1bc4a96b3c421e78ed61a2e3a7ef64a113862a2926412e829f281e",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-27": {
+    "author": "美国《巴黎评论》编辑部",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2c590ed543f3630841e349776aeff0d684170fed9b996f8526fb019b6b194a48",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-28": {
+    "author": "余光中",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3970fd4dec4e968e65418d279d94210af5fb87b7db0ab82ad8cd1b420a2dc9c0",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-10-30": {
+    "author": "沈大成",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f5b3a46a6e626d154c15eb6b77b7c2ea35daa023d9c7ff01c9ff84fa26f62eaa",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-01": {
+    "author": "简嫃",
+    "method": "visual_attribution_crop",
+    "image_sha256": "58401bca6b265fd599eb8cef049f8f62a693f885e1dec5cbcab59095e96ac001",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-04": {
+    "author": "威廉·萨默塞特·毛姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "80f39819b1beb415d00db679fb65ba93e527266197da00ede453dc168d14c4ab",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-08": {
+    "author": "米洛·德·安杰利斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3957bbd3488fd0e2d8d118958d31c068ea6703152bcc9eadb2c2136a9a3d8820",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-19": {
+    "author": "耶胡达·阿米亥",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bce6af70b140e0b9b1f297bbc0b35f984dd507541ba7b81243881e10e1822bd6",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-20": {
+    "author": "顾城",
+    "method": "visual_attribution_crop",
+    "image_sha256": "81d24162bd5cb794c8474328348e3ad595eecd1d172182ba555db8ba480cdda1",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-21": {
+    "author": "罗杰·埃伯特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e0a3f676505f6b0f9fcad549aa6b53c8901fdeece6eb6da6fdad7d7fffd8803",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-27": {
+    "author": "J.K.杰罗姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f7c77585987789d52778339fd2a050df2525de9e40bf3fb4728f49435437b069",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-11-29": {
+    "author": "露西亚·伯林",
+    "method": "visual_attribution_crop",
+    "image_sha256": "56d5edacd5d6686d2f717b4bb66555cc610b4ad699f50731f1714844f81a7003",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-12-20": {
+    "author": "T.S.艾略特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2f7acf6b026cca91952b25e6f8e4b9c1517035e9210190373a2591dac0709fac",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-12-24": {
+    "author": "约翰·契弗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e33f3d5036d31f3356485315a03e525f36dc1523d8f1f173baad9c801974bf29",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-12-26": {
+    "author": "张春",
+    "method": "visual_attribution_crop",
+    "image_sha256": "90b1efcdb5855dcdd79bb2283f2fddf79ac5101da2dd238bd65837ba4a194117",
+    "note": "对照原图署名区核对。"
+  },
+  "2024-12-28": {
+    "author": "贝阿特丽丝·穆斯利",
+    "method": "visual_attribution_crop",
+    "image_sha256": "18b7febe49d63f08bbb0f2bc715b723b1164c48ed6a40726b87fab5d9dda954d",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-01-05": {
+    "author": "之；切障雷·帕韦洋",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f4aa781d0b7667b6993307209c71ada0840835114382101dd1b7b96e57b99e75",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-01-08": {
+    "author": "塞萨尔·巴列霍",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a8fec45347b174dac62d924af7d33975f7a8da04072f6c21ef7f1e484b9a0ebe",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "César Vallejo"
+  },
+  "2025-01-13": {
+    "author": "丹尼斯·约翰逊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "856a968b3ec4422635858d7e052aea7eae2df26f5c409c0fdd3b43dc64b53ca9",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-01-23": {
+    "author": "盖尔·考德威尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6ec96bba3f43ab4f926a4592fcf1624ed01f8b1f0142972634a1732df7cc4031",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-01-30": {
+    "author": "理查德·布劳提根",
+    "method": "visual_attribution_crop",
+    "image_sha256": "61f837a64c01f1bcab348fba0a32ce3288615a1eab08b5f4d944a7ed2c0d0389",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-01": {
+    "author": "让·阿努伊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2aec6f0d451547d1067ed31e5c34fa69f960295ee29f969f5843f28d30494637",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-08": {
+    "author": "亨利·希金斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "177b7482488c3b9da9d8581caf9f7baf13f7879f95d9eeaa1d065271a227844a",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-10": {
+    "author": "英格博格·巴赫曼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8ff1e3004600d2f58aa7e272d1c5ceaf09c6333168bd1e46223b3d8e57c18bac",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-16": {
+    "author": "谢默斯·希尼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cabdad68bfef5d5b40019580063ed9d7a9fe0ad56ead815e716137013a741e40",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-20": {
+    "author": "卡尔·萨根",
+    "method": "visual_attribution_crop",
+    "image_sha256": "29b766cca92d2f9ea8c08577f9b87e43d7a4fe67a7dae91cf572fd410c7d9cd9",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-02-27": {
+    "author": "纳泽姆·希克梅特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7d9367037e7262b888084ebb06b79a1131ddd88cbfd006a6dfc3f1649f5098eb",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Nâzım Hikmet"
+  },
+  "2025-03-09": {
+    "author": "小笠原惠子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "673cf3b5d8ffb6c5b32c9153d629a76f769268930d04a041e28843288b94bab5",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-03-16": {
+    "author": "谢默斯·希尼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4281ae2ba86203737f40e8fd1d5abe7d2a1160f896fca9a20ea2f75c0c198639",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-03-21": {
+    "author": "厄休拉·勒古恩",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1763f722e2c3a4ef92420606350870baa3d1c2ec111e77ae2ca5446c144b2bb0",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Ursula K.Le Guin"
+  },
+  "2025-03-25": {
+    "author": "德瑞克·沃尔科特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c60b20290aa9a29894609fefdaf8ef2cbbc97d0cff8a24224b59a64c8598b53d",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-03-26": {
+    "author": "保罗·策兰",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ae866ea74eaee64d23bb897414f3bd07f29e7b7e8ae05d2f15870d985243eb35",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-03-29": {
+    "author": "理查德·耶茨",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee316b6fb21f849ed36e84a3c86918b2f229712a28a916b7cbfe2d3bfc175ad1",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-04-01": {
+    "author": "张国荣",
+    "method": "visual_attribution_crop",
+    "image_sha256": "60561da4f8ed5df897c5c11e14e73f2ff3e2a38c6bc3167fbe92285111dc9e42",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-04-02": {
+    "author": "塞萨尔·巴列霍",
+    "method": "visual_attribution_crop",
+    "image_sha256": "15bd0866f095fda5d84afddab64b2ef195ab2195332f0db4099d4d4a1c841a5d",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "César Vallejo"
+  },
+  "2025-04-04": {
+    "author": "吉姆·莫里森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cf93fde641a68b3ddab3daabf4b1a23cbd4cb4c6d035c3c8b0c1bb33679c6baf",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-04-08": {
+    "author": "让·波德里亚",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7f57ec49cd761ba598c1052355de41bcea801c7d0f0c033ca6db8e797cc81951",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-04-13": {
+    "author": "玛丽·劳森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1ec1a070c0297ab6551b1c56935b138014e089146994527288dcf79521a1def8",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-04-21": {
+    "author": "韩江",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2738a923771450a06febbc9a09e7a04ffcb60f961f79f9d4ca4b858a430e07f7",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "한강"
+  },
+  "2025-04-23": {
+    "author": "罗贝托·波拉尼奥",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1413fa2185d63a8cc276f82bb4295fdefded6ef801da278ecdb925afe7809e31",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Roberto Bolaño"
+  },
+  "2025-05-04": {
+    "author": "巴瑞·莱文森",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c1f9fbcba048e0fbe28e2d7f75fff9e71897f7e7bd009f4eeb6ae877e7e9b6c2",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Barry Levinson"
+  },
+  "2025-05-05": {
+    "author": "王小妮",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3c67facafd747200ece794982167079b2f6a9042c5fc6f8f6aeb9fe937df062b",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-05-16": {
+    "author": "菲比·沃勒·布里奇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "39a4bcb48b500f4ca284196462e16585c8fbc4b74b4cd93cdeae1b596caa208a",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-05-17": {
+    "author": "斯坦尼斯瓦夫·莱姆",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a80d68b90bb8fd2d418f063fd65cfe7228e793145b3845d6c56d7a70020252b2",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-05-21": {
+    "author": "佐野洋子",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3e47be0828885084dc5c70566ef35299c38ac84320f4271fc917287aa672144d",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-05-25": {
+    "author": "雷蒙德·卡佛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cb7511d313e102962be947dc57d53f8c5b24a61002195cf5e307c5eacff436c3",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-05-28": {
+    "author": "阿尔瓦罗·穆蒂斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "34fdb1bbeee6e51180d48b827745670bbc2a7f3dc9109b2bf4e5d32ca5abc464",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Álvaro Mutis"
+  },
+  "2025-05-31": {
+    "author": "李沧东",
+    "method": "visual_attribution_crop",
+    "image_sha256": "12aad99dc839ed7fa274701254ebf981ba3ed5ac0a63292854b5d217b919384c",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "이창동"
+  },
+  "2025-06-01": {
+    "author": "幾米",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f8eae4fb8117a0c639a30ddbc533e57c81795a982425492d8d7b29f0a006324f",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-03": {
+    "author": "罗宾·沃尔·基默尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fcb3cc206a224d4bf4aba4210e68ed05246a5864e24e8735f440bf5620c56cc8",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-13": {
+    "author": "威廉·巴特勒·叶芝",
+    "method": "visual_attribution_crop",
+    "image_sha256": "976bd12d16c5852dfb6b8674e65b354c4b40aa831855bdf292aac28162c92993",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-17": {
+    "author": "金爱烂",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1945bc929588a745c608c549956908c83883fea7d25b556b77c43e2261a22879",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "김애란"
+  },
+  "2025-06-18": {
+    "author": "卡瓦菲斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "97f339383a85ff3f053d91c1284406dbbe238cb48aed38a7235804df0dc4b17e",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-20": {
+    "author": "安娜·阿赫玛托娃",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8d4ad22fe0784128e0aefab621e11ed7f825f755273d455af8d683078d266483",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-22": {
+    "author": "雪莉·杰克逊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ac6e619b898032fa35dd74e0c021a9a79238ef75a873e24d1779e99b65a5c1e8",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-06-28": {
+    "author": "胡里奥·科塔萨尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f4b68e9cf151942278b25696fa8f650edeca2515c0e562f3c966af98502c0e03",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Julio Cortázar"
+  },
+  "2025-07-03": {
+    "author": "奥利弗·萨克斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7748cd880ee7ef8e986f611dd3ac0e99da65600b7881dd02d21d4757b91f0b82",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-07-06": {
+    "author": "奥斯卡·王尔德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "545df95eef3b97d07471b6d8dcd908a1a5363fd486945bc2ac058549df30f113",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-07-22": {
+    "author": "马克·斯特兰德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fa224f1fcc7272b0f3f50cd0589495bfb3c04295652a3e6bd33e8bc4b5a11019",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-07-23": {
+    "author": "丹尼斯·约翰逊",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c4bba363b59b1bfb5d7856b74d28c61d838a8002a5c34d36db35d8e228a450e4",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-07-26": {
+    "author": "路易斯·塞尔努达",
+    "method": "visual_attribution_crop",
+    "image_sha256": "27539b46eb37b48a2cf41f27ad5eba8a84ae3b37e2daacceb59a455df54e1667",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-08-08": {
+    "author": "亚当·扎加耶夫斯基",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e7c042907b6c862ff737a1bfc31df58008d9ce5e86df09e1a8eaf69e47a9bb91",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-08-12": {
+    "author": "阿尔瓦罗·穆蒂斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "34fdb1bbeee6e51180d48b827745670bbc2a7f3dc9109b2bf4e5d32ca5abc464",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Álvaro Mutis"
+  },
+  "2025-08-13": {
+    "author": "路易斯·C.K.",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7491d5ad0bd3447842031e0e041ca33eae427c89feddf8ff5d7c3ab65b02ea90",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Louis C.K."
+  },
+  "2025-08-16": {
+    "author": "雷蒙德·卡佛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cb7511d313e102962be947dc57d53f8c5b24a61002195cf5e307c5eacff436c3",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-08-24": {
+    "author": "豪尔赫·路易斯·博尔赫斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d33917e63029b62781980cb1b36ccb47cd0e5fcff5a24f7a22e7d347cff71961",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-08-26": {
+    "author": "丹·布朗",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c3cc7a17630fc60f9f28dc32723755d29a02d06c47474901372495e7dca9da88",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-01": {
+    "author": "胡安·赫尔曼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0892f68cb08d57cc8c8a83f86ee2044f88d7d7040ece8658498ea0bc2769cd1b",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-06": {
+    "author": "鲁迅",
+    "method": "visual_attribution_crop",
+    "image_sha256": "70ba0d6643a1c4fc120abcd3da74aa971f58150372a048479c0d1a8cf01a5c45",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-07": {
+    "author": "鲁迅",
+    "method": "visual_attribution_crop",
+    "image_sha256": "70ba0d6643a1c4fc120abcd3da74aa971f58150372a048479c0d1a8cf01a5c45",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-08": {
+    "author": "之，张爱玲",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2e9a7d4fc639ee5fa25b433ac5bea301bdf1b81b3264f7ecacda123811d8c010",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-23": {
+    "author": "张枣",
+    "method": "visual_attribution_crop",
+    "image_sha256": "79cec1451f78ee87c59d51807fa77fba3bb83c0b886f681154695f0c38639f5b",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-09-29": {
+    "author": "斯蒂芬·韦斯塔比",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c654f9a8642a0d0be3e7da6b2acdabf83b7561ccf15af719f96cde4f29a8d37b",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-02": {
+    "author": "胡里奥·科塔萨尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "11f5cf98515b455d55d8e69b12f1887a1fc3c4c45c9cb813bfc2c3e506cf4f73",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Julio Cortázar"
+  },
+  "2025-10-03": {
+    "author": "之，米洛·德·安杰利斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "62b1575df8b26fa5ac161a49d69b58ce3326886f16df01ad4a244cd4c427a7b1",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-08": {
+    "author": "阿蒂尔·兰波",
+    "method": "visual_attribution_crop",
+    "image_sha256": "09a6687252cf80d401c956abdab0f8235c0793d965cfb4044eb55443cb2a62df",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-09": {
+    "author": "西谷弘",
+    "method": "visual_attribution_crop",
+    "image_sha256": "10443eaf91d7294fba1c8551f46975961213b6cbf93f350bbd629621bc4f297e",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-10": {
+    "author": "林语堂",
+    "method": "visual_attribution_crop",
+    "image_sha256": "36a472d266514a735a06aad461a3d62fd5a91ca97e285232fde37c61c6e7ed01",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-21": {
+    "author": "保罗·克罗宁、维尔纳·赫尔佐格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7dca2cc0e7d6925125fcc22b46e51491f944f0d44a0ca5ea3027fd62642fbcd1",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "Paul Cronin, Werner Herzog"
+  },
+  "2025-10-23": {
+    "author": "A.司各特·伯格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3ad9d5d503d5f977967795e8fe1ba0f1c61255614ee448fc32b4816ba6c7e9e6",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-24": {
+    "author": "渡边淳一",
+    "method": "visual_attribution_crop",
+    "image_sha256": "07bbf1061768b1fc35090cc62321fcf604cbdb07f2b4c31493cd666cdb8d9635",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-25": {
+    "author": "欧内斯特·海明威",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1907084b141a9af83dfd70f6f52fd29ed75d74c932c3c5c78a937f5ac74ecc5a",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-27": {
+    "author": "安藤忠雄",
+    "method": "visual_attribution_crop",
+    "image_sha256": "59159412d8802ba509366785d0d0e54b590d1f02e3615f407f51299894bd1fef",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-10-31": {
+    "author": "约翰·济慈",
+    "method": "visual_attribution_crop",
+    "image_sha256": "313594684127e0154702de1a063b2305d0ea325bb5c5f3de9c59d0e85261ece9",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-11-02": {
+    "author": "皮耶尔·保罗·帕索里尼",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b8bd0b92ea1eed3ceaa829b15a41beb0d527fcae17caaf208e71b0c9c359fcec",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-11-05": {
+    "author": "陈东东",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e012bca1500b0d0b5b7ad15a22bcadbca48a47a6840baf3eae3e2c2e2472248",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-11-11": {
+    "author": "弗诺·文奇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5df6c139e03e01aa4e303a7fd778b58fe8fcb0d40799ee7bee764fe22570550f",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-11-12": {
+    "author": "特德·姜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "577393876628361ea713f2b2696570002d0457b684c97f5499d76940fe2bfa8c",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-11-15": {
+    "author": "金荷娜",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bba64be3a39adddfb7368afa350c39062feeb2e841d7254296d20352a502b7cb",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "김하나"
+  },
+  "2025-11-17": {
+    "author": "道格拉斯·亚当斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "67837de571d43d0c150672c65354a2229edf2efd9f88d0e0b6e812e2f27dea35",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-12-01": {
+    "author": "姜禾吉",
+    "method": "visual_attribution_crop",
+    "image_sha256": "986ab8d38ac9d7ee263340b93d3196ad46e870e0210b87b9caef41fb300f9193",
+    "note": "对照原图署名区核对。",
+    "author_foreign_name": "강화길"
+  },
+  "2025-12-02": {
+    "author": "伯特兰·罗素",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d352d0080ed6993f8b0a259d4a56dbeda5035afc0cc5ad4bea0e83b319101941",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-12-17": {
+    "author": "年森瑛",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d62cb64ec9d9ae20d83e8b2aaa0dbbb0f275ebabbe8069f22d0847f00e172a46",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-12-21": {
+    "author": "威廉·卡洛斯·威廉斯",
+    "method": "visual_attribution_crop",
+    "image_sha256": "56d6c711923058f039b6f09a947afc11506a4e237e810ef8f90b49785b689da1",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-12-27": {
+    "author": "王计兵",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b5866e8e58df3eba42da42ded9adbebf3f602036a1a113b3a42f8056d3a73653",
+    "note": "对照原图署名区核对。"
+  },
+  "2015-12-21": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d39e9a5e18aae77f9cc409574124d73ddfea01246cb90dce9111c0490bf9b302",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2019-11-16": {
+    "author": "T.S.艾略特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2dd00f2de6322f4b909c42ce4916a5537be7eaeb115652feb48fd7f54d0fb5dd",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2020-01-08": {
+    "author": "W.S.默温",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9ebffd45e48266fa01f82dc35a7d5facefbbe457955b9a8d41763897a8e6357d",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2020-03-31": {
+    "author": "J.A.贝克",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1dde49cf1cd120fd992462600bdb136ec11870eead7129a5a4395771135330ef",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2020-04-10": {
+    "author": "V.S.奈保尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5cd95b471cb80c6a02d4ee5fa741b14cb050d3fe1bed2e0e7691c67ac1f01dd6",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2020-10-13": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cda91f64fabdd744efd93a3d8aa315ee862d1cd485968c428a48687a72ee4bf8",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2021-05-26": {
+    "author": "V.S.奈保尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "646789d6d28b52f9c12784f3da07cb81e85dec10184507845581b782053fc2ab",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2021-09-26": {
+    "author": "T.S.艾略特",
+    "method": "visual_attribution_crop",
+    "image_sha256": "28d69c9bcb471a4d7baa2d094c7e5903b757757840176f4562277080bf61dcec",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2021-12-19": {
+    "author": "W.S.默温",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8b22d274c14e8a4d3a44e49d948b9ca0fac59ed03e1d5fe86b0b882c44d63016",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2022-05-12": {
+    "author": "J.M.库切",
+    "method": "visual_attribution_crop",
+    "image_sha256": "843aa6da22b323e40f087234ee3207faedb12e7184a5b167a0085507be9122a5",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2022-05-15": {
+    "author": "J.D.塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "028ce085f85005ddc21bbfa42f09bcd1ceea128847773e236b344abb75cc42c2",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2022-05-29": {
+    "author": "J.D.塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "78c18f89de5e57f0e66d5f5cb8c17de3331060552b6caf77c865d233e8b4adb4",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-01-04": {
+    "author": "J.D.塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "67942ed4cc6874530b3aa745a8806ad6330ef98c8d7e1535b152221b61073f59",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-03-13": {
+    "author": "S.A.阿列克谢耶维奇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d34d27ad141cbdb8dae38d0169f2c8515d376eb47f123b54acf1a37fc503dc4e",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-03-21": {
+    "author": "V.S.奈保尔",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b1fc036ac6841295dd3b13ecb6b427b52dc5a7f7d21c48cc0bedabb8ece31600",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-04-27": {
+    "author": "S.A.阿列克谢耶维奇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e80a9e2f1c407fbd8442f3b1a464100cc3814d925696ae49d9ed77e45c5096e4",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-05-15": {
+    "author": "S.A.阿列克谢耶维奇",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bd53591d3364eb0eb70c2f0f861dffc06a0dca715c971a076b3e1c94022afd8f",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-06-19": {
+    "author": "J.D.塞林格",
+    "method": "visual_attribution_crop",
+    "image_sha256": "75141ef8e5060411f1839ccd0faf77a18a85a879f4cbdc99a7e1424d2a395b8c",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-07-03": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "74694af19888b9581b160a0febbdee8bf1b6ae496bab5861f8328109b13000f0",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-07-06": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a20782e1f8b4a2269fc03b6a885c095ba0dfd41424dcf04530ccc019642d0878",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-07-08": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c0af893c02edb1ed8af0987080f558f11874f661b6ac240b983c262f8e9e2cd3",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2024-11-23": {
+    "author": "F.S.菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "39f97c1e2e2404a34021aacc54d1827933d6f566c342ef446c95a33c7d8ac3dc",
+    "note": "原图姓名包含缩写，旧解析丢失字母前缀；已逐张核对补全。"
+  },
+  "2022-11-28": {
+    "author": "F.斯科特·菲茨杰拉德",
+    "method": "visual_attribution_crop",
+    "image_sha256": "adaa786052e4636b058916d7d959d9d7a6b511fef3772d8249b2494820c62f7a",
+    "note": "原图缩写 F. 被遗漏，已核对补全。"
+  }
+}

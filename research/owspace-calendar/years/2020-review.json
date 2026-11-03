@@ -1,6 +1,6 @@
 {
   "year": 2020,
-  "reviewed_at": "2026-11-03T03:22:51+00:00",
+  "reviewed_at": "2026-11-03T06:29:30+00:00",
   "date_coverage_pass": true,
   "expected_days": 366,
   "record_count": 366,
@@ -12,7 +12,7 @@
   "field_counts": {
     "title": 366,
     "source": 347,
-    "author": 361
+    "author": 363
   },
   "visually_verified_samples": 9,
   "title_kind_counts": {
@@ -23,13 +23,15 @@
   "review_flag_counts": {
     "low_ocr_confidence": 57,
     "source_not_detected": 18,
-    "author_format_review": 22,
-    "author_unresolved": 5
+    "author_not_credited_in_reviewed_region": 3
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
   "image_date_mismatches": [],
+  "image_date_ocr_status_counts": {
+    "not_checked": 366
+  },
   "top_authors_machine_extracted": [
     [
       "项飙",
@@ -76,7 +78,7 @@
       2
     ],
     [
-      "约翰-伯格",
+      "阿尔贝·加缪",
       2
     ]
   ],

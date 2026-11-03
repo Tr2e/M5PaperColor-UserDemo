@@ -1,6 +1,6 @@
 {
   "year": 2017,
-  "reviewed_at": "2026-11-03T03:22:49+00:00",
+  "reviewed_at": "2026-11-03T06:29:30+00:00",
   "date_coverage_pass": true,
   "expected_days": 365,
   "record_count": 365,
@@ -20,15 +20,18 @@
     "忌": 130
   },
   "review_flag_counts": {
-    "author_unresolved": 13,
+    "author_not_credited_in_reviewed_region": 13,
     "low_ocr_confidence": 93,
     "source_not_detected": 142,
-    "author_format_review": 9
+    "source_name_suspect": 2
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
   "image_date_mismatches": [],
+  "image_date_ocr_status_counts": {
+    "not_checked": 365
+  },
   "top_authors_machine_extracted": [
     [
       "海子",
@@ -43,7 +46,15 @@
       2
     ],
     [
+      "彼得·布鲁克",
+      2
+    ],
+    [
       "东野圭吾",
+      2
+    ],
+    [
+      "夏目漱石",
       2
     ],
     [
@@ -68,14 +79,6 @@
     ],
     [
       "萨特",
-      2
-    ],
-    [
-      "萨尔瓦多·达利",
-      2
-    ],
-    [
-      "亚历桑德罗·佐杜洛夫斯基",
       2
     ]
   ],

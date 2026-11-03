@@ -1,6 +1,6 @@
 {
   "year": 2016,
-  "reviewed_at": "2026-11-03T03:22:49+00:00",
+  "reviewed_at": "2026-11-03T06:29:30+00:00",
   "date_coverage_pass": true,
   "expected_days": 366,
   "record_count": 366,
@@ -22,13 +22,16 @@
   "review_flag_counts": {
     "source_not_detected": 238,
     "low_ocr_confidence": 198,
-    "author_format_review": 14,
-    "author_unresolved": 6
+    "source_name_suspect": 2,
+    "author_not_credited_in_reviewed_region": 6
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
   "image_date_mismatches": [],
+  "image_date_ocr_status_counts": {
+    "not_checked": 366
+  },
   "top_authors_machine_extracted": [
     [
       "王小波",
@@ -48,6 +51,10 @@
     ],
     [
       "乔治·戈登·拜伦",
+      2
+    ],
+    [
+      "弗拉基米尔·纳博科夫",
       2
     ],
     [
@@ -72,10 +79,6 @@
     ],
     [
       "赛珍珠",
-      2
-    ],
-    [
-      "汉斯·克里斯汀·安徒生",
       2
     ]
   ],

@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "reviewed_at": "2026-11-03T03:35:00+00:00",
+  "reviewed_at": "2026-11-03T06:29:30+00:00",
   "date_coverage_pass": true,
   "expected_days": 366,
   "record_count": 366,
@@ -22,8 +22,7 @@
   "review_flag_counts": {
     "low_ocr_confidence": 67,
     "source_not_detected": 2,
-    "image_date_mismatch": 2,
-    "author_format_review": 15
+    "image_date_mismatch": 2
   },
   "missing_dates": [],
   "error_dates": [],
@@ -73,15 +72,19 @@
       4
     ],
     [
+      "金爱烂",
+      4
+    ],
+    [
       "帕特里克·莫迪亚诺",
       4
     ],
     [
-      "韩哲",
+      "韩炳哲",
       4
     ],
     [
-      "菲茨杰拉德",
+      "F.S.菲茨杰拉德",
       4
     ],
     [
@@ -94,10 +97,6 @@
     ],
     [
       "道格拉斯·亚当斯",
-      3
-    ],
-    [
-      "阿多尼斯",
       3
     ]
   ],

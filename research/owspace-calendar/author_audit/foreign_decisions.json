@@ -1,0 +1,2627 @@
+{
+  "2015-02-18": {
+    "author_foreign_name": "Wislawa Szymborska",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7fd33b346b18a99afdc00de8272d312112902ddea4b279e03a4ea35eca95a945",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-03": {
+    "author_foreign_name": "Friedrich Wilhelm Nietzsche",
+    "method": "visual_attribution_crop",
+    "image_sha256": "849eb26bfc2729215a0332e5a6041c8d31942e13334ae8390e0d147b140a45bc",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-04": {
+    "author_foreign_name": "Virginia Woolf",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aa9498f1436a3074434d9373819b6f9406f458e3c767f49b39b6e71913b70fa6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-06": {
+    "author_foreign_name": "Patti Smith",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0926e81d1fd46cdaf1f448754a183152ef73ac6b8b333247c25694cde596c879",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-08": {
+    "author_foreign_name": "Patti Smith",
+    "method": "visual_attribution_crop",
+    "image_sha256": "de99ba398f24d029a022e4c18a64a75cc66066631c065c2f78bbd7727fffd600",
+    "note": "原图中文希拉里·克林顿，外文 Patti Smith；源图署名冲突。",
+    "source_name_conflict": true
+  },
+  "2015-03-12": {
+    "author_foreign_name": "Albert Camus",
+    "method": "visual_attribution_crop",
+    "image_sha256": "299cb119a2cb65d3fda09bb16a7cedb46c79698a9e3b669e7f20ee99099f9a9a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-13": {
+    "author_foreign_name": "Wislawa Szymborska",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6d573f1c1ad625c6eb1e68bdfae5359cf12e89a74a64de7d199a5ac7ac3fb7d7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-15": {
+    "author_foreign_name": "Albert Camus",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b04cd1987bcf352641c8757629147b467084f156248ae16abf862bcb1bbebf45",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-17": {
+    "author_foreign_name": "Susan Sontag",
+    "method": "visual_attribution_crop",
+    "image_sha256": "487eaa8aef95c1b72834a1250409ae47e6250ed2f307f765482ec4c80d883bb3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-21": {
+    "author_foreign_name": "Georg Trakl",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b074abe200db695c064f685e8a699238ae327cd05702eaaf430ccbb4da2912d0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-22": {
+    "author_foreign_name": "Walter Benjamin",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b545c56d5aa91996c076163317d801178fba96300b391b93d8425a502c7b5c40",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-26": {
+    "author_foreign_name": "Leonardo Di Serpiero Da Vinci",
+    "method": "visual_attribution_crop",
+    "image_sha256": "280435bf7615a040f420c6b357084f46751ec60c1979c8b26e692ef212066741",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-03-28": {
+    "author_foreign_name": "Pablo Neruda",
+    "method": "visual_attribution_crop",
+    "image_sha256": "772cc9c229cf003f39dbfa314e9781bb0c09467cb4cc64aeba0f702cf8f9f0a7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-07": {
+    "author_foreign_name": "Paul Valery",
+    "method": "visual_attribution_crop",
+    "image_sha256": "95ba34bd1d9aeec181bc01bed7362da89d9776fd230f07a3ea82cd6292c6a4fc",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-14": {
+    "author_foreign_name": "Franklin D.Roosevelt",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4ab785004d3fc24ed0bce102bbb656caf198453d5874c3a26684427a23c67de9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-18": {
+    "author_foreign_name": "Jean Nicolas Arthur Rimbaud",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f89d790f391b9ceb16496c2abbceb45096fa636c58377a0fc34bce965fdd5f19",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-19": {
+    "author_foreign_name": "Albert Einstein",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0f0d9c7ebf54ef6a7066acf8ce05736b9bbe58db3cb39983ff9a0c17ca538a1e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-22": {
+    "author_foreign_name": "Barack Hussein Obama",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cac056bf49e3dc01c8daac8f9fc6b08171c49aa0f31ad3a557c4e8caeb026986",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-23": {
+    "author_foreign_name": "Milan Kundera",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cf57a48bc8ce2118c2383e1322ac91a34ff4f19ffeb8f0bf1b7c7ff418da7048",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-28": {
+    "author_foreign_name": "Gabriel García Márquez",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dd8cdb40b4f10b71eef6d3b5ee930e3be2ab4c467fb71e074a46f7dafc57c6cb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-04-29": {
+    "author_foreign_name": "Albert Einstein",
+    "method": "visual_attribution_crop",
+    "image_sha256": "270f0bcdcb18452ecac3a98aa6fe16f524f132d7eec990b17cb53d89407fdb2c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-02": {
+    "author_foreign_name": "goethe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aa011f4d183f616def25d796cba4b4d62086933de4657a0ee22966d9f4238bb3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-07": {
+    "author_foreign_name": "George Orwell",
+    "method": "visual_attribution_crop",
+    "image_sha256": "be277d5e55aa0a9666a138ea13a1bd85fcd610afaa3a4ce1ee46677ff5dace00",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-14": {
+    "author_foreign_name": "Charles Bukowski",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5898e6906198d769a6fbaee84cc6b7200685c4e951fbb920de0026187843fe56",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-15": {
+    "author_foreign_name": "Allen Ginsberg",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5598395dcbcaa6bb38f92b6a939945b712a0fca96b0c4a91d49c14c10e000dc3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-21": {
+    "author_foreign_name": "Oscar Wilde",
+    "method": "visual_attribution_crop",
+    "image_sha256": "11c2c74091b8f6d947adfc513d6e518c45559e708def367746ef8ae9133d37e1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-05-25": {
+    "author_foreign_name": "John Forbes Nash",
+    "method": "visual_attribution_crop",
+    "image_sha256": "75c787927d9062df88a12521d35060da4c6bc3fee9456efcfcfa7a3d61dc7ad8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-06-01": {
+    "author_foreign_name": "Julian Barnes",
+    "method": "visual_attribution_crop",
+    "image_sha256": "46e16df23f4f47aedc173e1d519fe49be985dbca05f18a2eeebcd219726b214a",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "朱利安·巴因斯"
+  },
+  "2015-06-10": {
+    "author_foreign_name": "Allen Ginsberg",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3c0e74727a2758664a2607d2be9a94150560a512bc8cca20c2eb6446e022765c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-06-15": {
+    "author_foreign_name": "Wilde",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e06de7813a0c2577a9473d3f39ea2e9859035966ff06861ef5489cffe9b5bd25",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-01": {
+    "author_foreign_name": "Leibniz",
+    "method": "visual_attribution_crop",
+    "image_sha256": "91327c1b6edb496a110c30a8723901e8166c0dd2955035a279cd044ab3fc3bd3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-03": {
+    "author_foreign_name": "Kafka",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cbb29e5384c4c37d6c78ce4bada2cde570fdee0efdfb2ce9f15e29c521d091d8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-05": {
+    "author_foreign_name": "Vincent van Gogh",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ce48384cf37dcf6eee0760905207710b4b7833a1bedf64b869d81237bfe53e7b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-11": {
+    "author_foreign_name": "Chekhov",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f104ea748248d347240d01920333ef8667262c0418095a0ee5aff78c680e9822",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-15": {
+    "author_foreign_name": "Лев Толстой",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3a6844abfedf2f57b0bfbfd9668560d37368ecfede5cf422f977aed278ddc18d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-20": {
+    "author_foreign_name": "Turgeneve",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5d5348b88d558b3a7295ed6e70d58816ba9edecb603080a861eedd8f7c45d954",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-23": {
+    "author_foreign_name": "Thoreau",
+    "method": "visual_attribution_crop",
+    "image_sha256": "68dd18a1bc3e6cab10d59a545c98520b590be0829d8e676058e538e91e01680d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-24": {
+    "author_foreign_name": "Oscar Wilde",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8318de8516b5ae97d9b7027347efecb15940416731bf800ea361cfb4e845e310",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-28": {
+    "author_foreign_name": "Tagore",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e38513bba9f61069b1b625e2c4c21757489ef862201cfac4769b9ba8761b38e2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-07-30": {
+    "author_foreign_name": "Arthur Conan Doyle",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3d212abe2bf1af4a2ae44875e6d2ca26f6b883c155c117a5fe1e617be08a7b08",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-11": {
+    "author_foreign_name": "Pushkin",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0cfc586aebf0b66e3f77d588821bd6883686ec0e89c9e0d62320229162835f33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-12": {
+    "author_foreign_name": "Thomas Mann",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c093ac54e4974dfe1a348a62d1fe7824077f636611a9979982682c8831016be2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-18": {
+    "author_foreign_name": "Balzac",
+    "method": "visual_attribution_crop",
+    "image_sha256": "36f86946eb7c134ac8388f20f1932b6d69ad6b58e9dc8b95d053d4fca70f25e2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-20": {
+    "author_foreign_name": "Marguerite Duras",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5e45a8f53b73925e2a8dd3f10eda7e8f2b1f9cc788ca1a3e7ceff774627ae95c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-23": {
+    "author_foreign_name": "Bernard Shaw",
+    "method": "visual_attribution_crop",
+    "image_sha256": "16f255ad0ea937ce5b4e432409e20734593be61b754327cd1cf1a359abe706ff",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-25": {
+    "author_foreign_name": "Nietzsche",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d04e5dae62d052dd0a073b00d8d4dd6ef4b1d46b3874b7d3e59b229adb62254a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-28": {
+    "author_foreign_name": "Goethe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b79e1416ca388b19589721641ed3778d5c1a2a34ff06633e3a7b5f2e72fec325",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-08-30": {
+    "author_foreign_name": "Marquez",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2df33ea0f6629d0ca97c1cf5f0931b1420eacd9a086f9ace92c63e101d293883",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-01": {
+    "author_foreign_name": "Szymborska",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5fdf4e8e1f39a0acd08e3519ffed470757fc60eb5c4aa03cf23312dea5fdfdb1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-03": {
+    "author_foreign_name": "Cummings",
+    "method": "visual_attribution_crop",
+    "image_sha256": "47769621d6955b058968bad91bd9d85c93f8c7aa891e34d31f96c3772aa50112",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-04": {
+    "author_foreign_name": "Rimbaud",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f4c850470ea2e523290513282773e962dcc62370ddafea9650f454ca08efd272",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-05": {
+    "author_foreign_name": "Tagore",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2fb4a08ba73f2cab2218ac112ac42b2302c694f74a7f046c135bb40b0ff2b9e2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-15": {
+    "author_foreign_name": "Bruno Nuytten",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a9edcecd70283ac4e1552d6136dff5a561e646b977c9bd214991e15877d3857f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-16": {
+    "author_foreign_name": "Balzac",
+    "method": "visual_attribution_crop",
+    "image_sha256": "558b3533482e1e4e2e0c94247cb3bf53b1bf066bc9bef02e0d0f5425b078e940",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-17": {
+    "author_foreign_name": "Beauvoir",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7efba57e942f4f2c7a11ceb61f9d6c62c792ed6e7b4d2f808e9bc85a62d6ef06",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-21": {
+    "author_foreign_name": "Leonard Cohen",
+    "method": "visual_attribution_crop",
+    "image_sha256": "005b0686d4c7df82a40ecf99ddeb7fd78112a44b80435807d6a31646cbc58f75",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-23": {
+    "author_foreign_name": "Neruda",
+    "method": "visual_attribution_crop",
+    "image_sha256": "64aa6e6b08b0b2c3c2faefc1ead81b36eb19e38d6ba652d7c1abd82b71964308",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-09-29": {
+    "author_foreign_name": "Goethe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e5c3d76426f8cd456e98fd7ede0fa1f29b1a22d725b89014ed0742b319d0c990",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-02": {
+    "author_foreign_name": "SHUNTAROU TANIKAWA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "50a645c56b6a39ff87aaeff47df1453d67cd2f89348be9b1e60f5cc44c20eb38",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-04": {
+    "author_foreign_name": "EVELYN WAUGH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "66010122e6c5f73bf86665571503ed128ea7bb917e7c130efe58ce5f6b9e68b4",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-05": {
+    "author_foreign_name": "СЕРГЕЙ АЛЕКСАНДРОВИЧ ЕСЕНИН",
+    "method": "visual_attribution_crop",
+    "image_sha256": "edef31fac79c2dc8e55a3640c9900066b7aeade4dd3853d5af207826d6eb76c7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-12": {
+    "author_foreign_name": "JOHN DENVER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4c9d6e48954297843733b839835dffc4f4407a39c3b7543da5714d3b4630a26b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-15": {
+    "author_foreign_name": "FRIEDRICH WILHELM NIETZSCHE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "896b51823a039792e13a4a33b7515a0f885459e69a3fd4f3cc668a2072445819",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-19": {
+    "author_foreign_name": "MIGUEL ÁNGEL ASTURIAS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a2de0a8dd132cea0d1dde4d2921280aa99c11d664ec5c6dd817d7ee7706d4b33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-20": {
+    "author_foreign_name": "ELFRIEDE JELINEK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6c87dff7e05fefff00469be98739c87db6c45a3491e8b34d76a54d3bc764f597",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-24": {
+    "author_foreign_name": "JAMES JOYCE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b8b6dcc850ebc5ae7803bbfbb27fdb5b1479c1b57e41506d96ec0500183e4032",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-10-27": {
+    "author_foreign_name": "ЦВЕТАЕВА МАРИНА ИВАНОВНА",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0f34992f69f2f1a8bb5e9010bbbc90e724731fa5d65c9140ccfa5a445f560318",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-09": {
+    "author_foreign_name": "Иван Сергеевич Тургенев",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a0fdbe323a0839277cc584da6ffd2aeb54303927d51c81e21c3b68ff2e0b1d7e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-13": {
+    "author_foreign_name": "Saint Aurelius Augustinus",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7b19324c00134536742925e979982df9eb11e79d6036f7c7891878abb5a3456a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-14": {
+    "author_foreign_name": "G. W. F. Hegel",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c5071a64732d637e53c4a1c84f980d2111e22ea16c08496ac871360ef3462b33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-16": {
+    "author_foreign_name": "José Saramago",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2e8ea92cf23393413b58c887c5cf24d7aae8ee6cf359affc08ebfca6f9a98465",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-19": {
+    "author_foreign_name": "Hermann Hesse",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7e846da808752ba745cccf06987e06b80a98490fd4028cce0a0bbc132c05727a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-20": {
+    "author_foreign_name": "Лев Николаевич Толстой",
+    "method": "visual_attribution_crop",
+    "image_sha256": "92737bd0071886e745c7b93776bd8921148c92a6f2250596ec81249902a0835f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-22": {
+    "author_foreign_name": "Andre Gide",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3c94b0c8deab97f5bbe402c5901ffbcef1a07541b2671a44dee9c3ef91cc4e68",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-25": {
+    "author_foreign_name": "Yukio Mishima",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6b4acb0808de6125825ff3a66e7cfe0831f90bcc4c056beb2584c0e7a93dd47d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-11-30": {
+    "author_foreign_name": "Oscar Wilde",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9fd317c0c1de8c6e2493b5edd2b08585cc9cb848c6e1a3c66a331700b127e043",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-03": {
+    "author_foreign_name": "Jean-Luc Godard",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5d89dc3f8f3dc4dfd79e6a9b8347d91b1d810190c1acf5d38ece1dbd80eef382",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-05": {
+    "author_foreign_name": "Mozart",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f022ef06fdd1ca7a7c7d7a17aea512d1c05fe639e7670f8e136753dfdec64ddb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-08": {
+    "author_foreign_name": "James Thurber",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e08b45fd83d6eef787ad09d37d2936df24eea6008454af59bb09c9b484bf8076",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-11": {
+    "author_foreign_name": "Pasternak",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d67ac13e35e516407d4f8fe3bad91f6be91df978181d1898ae2e44f29c58f45f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-12": {
+    "author_foreign_name": "André Breton",
+    "method": "visual_attribution_crop",
+    "image_sha256": "894202a317e764ea852e1a57eaa8f207d53d290f16cf93c64f91b193bd5f3cd2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-16": {
+    "author_foreign_name": "Jane Austine",
+    "method": "visual_attribution_crop",
+    "image_sha256": "be6ed624cc55bbdddcd8d0c6fd4411a1d1d6e5c0c3fcbc11c94baec6836c23a0",
+    "note": "原图确实印为 Jane Austine，保留源图拼写并标记疑误。",
+    "source_name_suspect": true
+  },
+  "2015-12-22": {
+    "author_foreign_name": "Orhan Pamuk",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9da1ef8e5c77818615e5bf727fcd7b38af42b2a4e1403d07e0c22506acc02108",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-26": {
+    "author_foreign_name": "Wislawa Szymborska",
+    "method": "visual_attribution_crop",
+    "image_sha256": "50f1936ff9aef8af6db27c2f318a19134a9a7bdf4b51805cc1f1c4c69f4bc7eb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-27": {
+    "author_foreign_name": "Susan Sontag",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c2f2018a85f03b04d4fd243c09d809ab87539974f1c2d3428e5c6d81fe81e305",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-29": {
+    "author_foreign_name": "Susan Sontag",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0f8658f4b02794486f4bd881dd607d38f9c588b40f24c97a95b4a5b2bb55d928",
+    "note": "原图中文罗曼·罗兰，外文 Susan Sontag；源图署名冲突。",
+    "source_name_conflict": true
+  },
+  "2015-12-30": {
+    "author_foreign_name": "Colm Toibin",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cec0e62788edc45502debc591aead2349f251ca8f257ba1f999dc7c1a007e7d0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2015-12-31": {
+    "author_foreign_name": "Italo Calvino",
+    "method": "visual_attribution_crop",
+    "image_sha256": "28683fd5aba1fcc5a2756d41ae9d9088fe8f46d4c64d7fc8b1cc2e957bbb2778",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-02": {
+    "author_foreign_name": "Petőfi Sándor",
+    "method": "visual_attribution_crop",
+    "image_sha256": "46d2ced7037045bbab7360b54c24f7707b2fecb715c5b88da8bd1142009409e3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-03": {
+    "author_foreign_name": "Jaroslav Hašek",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e4bd351f4b31979a00c8e67e814ffb9db09a06cccb58ac7fc0529a701dc6b0cf",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-10": {
+    "author_foreign_name": "Sylvia Plath",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cc886e4a04950305878e35f691e646fcfcd764b36ad249fdbbe495f2253bbf82",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-11": {
+    "author_foreign_name": "William James",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f5cb6b0553abd008c9b9ef4ffe448e31296cdf23925d938cbcdb07629c1ca407",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-12": {
+    "author_foreign_name": "David Bowie",
+    "method": "visual_attribution_crop",
+    "image_sha256": "530f21ba9e4447dec3fd91abf6237d6bd5afb63e78b8cb0a88b1f3e5bf19f7f5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-13": {
+    "author_foreign_name": "James Joyce",
+    "method": "visual_attribution_crop",
+    "image_sha256": "65bd108aa399a59d31d8f94a1703203dffa68e3b18b58ad0a9309acd5fd64d6e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-14": {
+    "author_foreign_name": "Mishima Yukio",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e168bbc89eea207deb68bb989aaf0dff046c5bdcfa62038c2a7d88846ec0ce7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-18": {
+    "author_foreign_name": "Ilya Kaminsky",
+    "method": "visual_attribution_crop",
+    "image_sha256": "35a0430cc3c6349f1d6dc400204c17e46de5b35e3c1249dd86ed0ad165111c51",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-19": {
+    "author_foreign_name": "Edgar Allan Poe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "79e3838e984506a35913ffb6d0f4ca1e77cca069a89d3e70a9ae52779e866763",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-20": {
+    "author_foreign_name": "Michel Tournier",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2c93c8c74378b9ad73d165061b7ac2242b3966560b0a32df3d5b194fdef159fe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-21": {
+    "author_foreign_name": "Angela Carter",
+    "method": "visual_attribution_crop",
+    "image_sha256": "58e74e25ab5228b7d4de5cfb7be67fe62dabf091e6b5080061f2bb1c412b7c66",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-22": {
+    "author_foreign_name": "George Gordon Byron",
+    "method": "visual_attribution_crop",
+    "image_sha256": "54414aea3e0995b29e1e07344014f74fef313456d3109a46bf7b486a99569523",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-23": {
+    "author_foreign_name": "John Maxwell Coetzee",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ff5f2c492ce01b37c5b14ace5041479e4408b470a9a88ace53b7732bee9318c7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-25": {
+    "author_foreign_name": "William Somerset Maugham",
+    "method": "visual_attribution_crop",
+    "image_sha256": "115f380abeba11091ee765ffc58d726504ecb7ccf1e0197436159642657a274b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-28": {
+    "author_foreign_name": "William Butler Yeats",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4b7a8486dfc4faaa18c320fb7a8ce1a5a05beb7fd9b33085a6a66f9ef0d82d44",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-01-30": {
+    "author_foreign_name": "Luis Cernuda",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b6610b73f46d194c178649be53f9ec72015b13c17642bc48fee8d2fa21792ca7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-02": {
+    "author_foreign_name": "Bertrand Rssell",
+    "method": "visual_attribution_crop",
+    "image_sha256": "73c6baeeccfc4ddf7b30e79806112b0ce1cb1c17f538a40dab47b2cea29a6361",
+    "note": "原图印为 Bertrand Rssell，疑似缺字，未替换为推断拼写。",
+    "source_name_suspect": true
+  },
+  "2016-02-04": {
+    "author_foreign_name": "Pablo Neruda",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4abe6775add11fb0b626a1f958b455eb386e19a446e281d8c356d528b7666f5a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-08": {
+    "author_foreign_name": "Evelyn Waugh",
+    "method": "visual_attribution_crop",
+    "image_sha256": "22813375ceb0360649d1562a17a0a50697d367b0a55a7d32b57c099a611b4330",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-16": {
+    "author_foreign_name": "Charles Bukowski",
+    "method": "visual_attribution_crop",
+    "image_sha256": "de7b4d94d500be187e58ebe67524df98705dc91dd63d68ae116399c57d0bae47",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-18": {
+    "author_foreign_name": "Yoko Ono Lennon",
+    "method": "visual_attribution_crop",
+    "image_sha256": "232bf1606abcbb4ccf4bfaee5f86f6ffe4c129f07964679b1040cbe81ee553f2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-19": {
+    "author_foreign_name": "Andre Gide",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dca7e45bcbc90f13ad530b07d79e637d7a0a6c64916414e4abb435264725729f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-20": {
+    "author_foreign_name": "Kurt Cobain",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9160ddbd8d72ac9efa6be7348ba67ba6f63d034f111a87586abf50e2b3bd2d55",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-21": {
+    "author_foreign_name": "Umberto Ecco",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a14a38f4d3113b405b6ff99eee7b5c0f7ff065ea7e475a7744bf76b46b1c3b21",
+    "note": "原图印为 Umberto Ecco，保留源图拼写。",
+    "source_name_suspect": true
+  },
+  "2016-02-22": {
+    "author_foreign_name": "Andy Warhol",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e2038fc88254cb694cd05aba7651576155660122215e515f1ececaf1776a109a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-26": {
+    "author_foreign_name": "Victor Hugo",
+    "method": "visual_attribution_crop",
+    "image_sha256": "de1f53b90e0b7faff36260071d8627604131e774588921f7f83515ca9b56a852",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-27": {
+    "author_foreign_name": "John Steinbeck",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f7059cb198794e3684253327c2ff3fb02a2ff0971fdedeba1aeab598a44e3383",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-02-28": {
+    "author_foreign_name": "Henry James",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a5c1b7b7e83d6429071726adb00ae68967f92796d24cbb23f80f09e034a46f23",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-01": {
+    "author_foreign_name": "Ryunosuke",
+    "method": "visual_attribution_crop",
+    "image_sha256": "99de1e9d70ca6607ccc11d407ffae56a57f95581dd8060b7a59fab1ae70a4142",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-02": {
+    "author_foreign_name": "Lou Reed",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e04cc4267f793b20648f9b10fb5ae9aaa8b5872458c8b90b638f3054af9bf0ae",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-04": {
+    "author_foreign_name": "Nikolai Vasilievich Gogol",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f5fdcfd84f5d2d87137c418f7202471284bfcb9a5dfcba8400b767109984e763",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-07": {
+    "author_foreign_name": "Jürg Schubiger",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bc9a185b5ec3b8fc42c0dc7f6958c48d696cdba348d59419fe721c18833d77e3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-08": {
+    "author_foreign_name": "Dame Rebecca West",
+    "method": "visual_attribution_crop",
+    "image_sha256": "90d350e568c385d854fe485ee3286d92492334783994dc718eafec0d4f41bedc",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-10": {
+    "author_foreign_name": "Eduardo Galeano",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ad99084db16b0163e83d997c7b1fe9d6307c141d96f64a5b3e650a42a118b9fd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-13": {
+    "author_foreign_name": "Krzysztof Kieslowski",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7433178f76dca29edaeafd9e56cfcfc2fb138551582bf01df4263e27e627bf66",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-14": {
+    "author_foreign_name": "Albert Einstein",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b03b61fe7d622309df1d52731bf8aa8164bb89db896b1173d680e3cc9ff5b7c6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-15": {
+    "author_foreign_name": "Patrick Modiano",
+    "method": "visual_attribution_crop",
+    "image_sha256": "51469f710b73c60b2943b6025230a83b27a37b3b225e3c7699334b588017197f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-17": {
+    "author_foreign_name": "Derek Walcott",
+    "method": "visual_attribution_crop",
+    "image_sha256": "552d241bdd077e208043245130618f8b68b9dc8e50cb89024b5dbf7fd4b4f2c8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-19": {
+    "author_foreign_name": "Arthur Charles Clarke",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aecfb78bc1c5becdacdd916692a917e71a70283632ad1be41f3978c1a3306dd5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-20": {
+    "author_foreign_name": "Henrik Ibsen",
+    "method": "visual_attribution_crop",
+    "image_sha256": "57d49c26d713b304301d3f015c3543fcbb3aa0bb2e6e9d49fafb25581e5049a4",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-21": {
+    "author_foreign_name": "Anton Pavlovich Chekhov",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d7a3e32338930114e28b07e6076237360ae85399abb01171b92e4ad169e43efd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-22": {
+    "author_foreign_name": "Johann Wolfgang von Goethe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4f8d126ae33646395786c9a2a941bae7e2e13240c44dea087ec4332c63658d72",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-25": {
+    "author_foreign_name": "Achille-Claude Debussy",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f41aa0dee8f0d8757e001d3554c56b10766700e61d234a25bb8ab601aff7322a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-29": {
+    "author_foreign_name": "Paul Verlaine",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f8c83c972cf8f2f670c5d814bcd543bb1d2853364d1f5c2637ddc752d468cbd6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-30": {
+    "author_foreign_name": "Vincent Willem van Gogh",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1db6949ae3582f9855bf678e5f5ed7dd7e5d5a73c0195631bc23a458f48b1d3b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-03-31": {
+    "author_foreign_name": "Octavio Paz",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c2d0e57d05e6ae1d7c9e7451421d4fec29a59704aa2180da03ba4a918895f6d3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-02": {
+    "author_foreign_name": "Hans Christian Andersen",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ffb56802dbaa620e0e36a0348ab56f07778d1aee305f1d3bdc349a4777a18e10",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-04": {
+    "author_foreign_name": "Martin Luther King",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8a99b6a778cef2f9b67623bd47b3f792984b4dc3947116249f760c0e4267ef40",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-05": {
+    "author_foreign_name": "Allen Ginsberg",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2ed2ea6a6bcba60eae2a04da99ccc69d00ba44c525d116bf19b2d7cbd758ec83",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-06": {
+    "author_foreign_name": "Gabriela Mistral",
+    "method": "visual_attribution_crop",
+    "image_sha256": "88170ec08a23decd9027aa53f174c220f4c8cf4d8d95a4d12dae859b7bb9efdb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-07": {
+    "author_foreign_name": "William Wordsworth",
+    "method": "visual_attribution_crop",
+    "image_sha256": "764a3617b8e83247b95ac3b119a17990973b3a9b931087ceb0648f79fe2aaca8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-08": {
+    "author_foreign_name": "Pablo Picasso",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8a08d9dbd84e6f806f6053cf76c57daa302b31a124ebf34c3bd8bff2aac352f4",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-09": {
+    "author_foreign_name": "Charles Pierre Baudelaire",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d6b1ae76efa93ac6e27f66eac326cf6769a39d96be50a6ade1a4c2b82facf568",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-10": {
+    "author_foreign_name": "Kahlil Gibran",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b6a487c72e56b03c8e31f4f2ddcec8ea2bd39684f4c12276c67dfda7ad25e9d1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-12": {
+    "author_foreign_name": "Émile Zola",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ab06776685186873cacbc3dc905e34560c6e07fd21a0c7d2a396e5216878479f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-13": {
+    "author_foreign_name": "Samuel Beckett",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0ff1a499d4f9afea2e2b71ec7566b1e125d4a127e845b1d5e926cbf2418f023f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-14": {
+    "author_foreign_name": "Маяковский",
+    "method": "visual_attribution_crop",
+    "image_sha256": "585c85e4d0e8021ae023d49c3adc39b2968b508b520ceb69706181e61856e18f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-15": {
+    "author_foreign_name": "Jean-Paul Sartre",
+    "method": "visual_attribution_crop",
+    "image_sha256": "39967fd5f6199a4c4e084ebd35d41e1bc0ea5b65b6f6cf21712c9141e5fdf11d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-16": {
+    "author_foreign_name": "Charlie Chaplin",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0e4f1547a06afaba0d678639efc04fe4f85ea8a95f37f08fe461ae21faea60fb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-17": {
+    "author_foreign_name": "Gabriel García Márquez",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0ba8e45f39a48a23933a4d2d37585ee5214b56c443801372bde5066aaacd0f1a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-18": {
+    "author_foreign_name": "John Williams",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5786a1e5d81671980d6354b400de4fc75dde9dc82785d5b3f1aa16ad07770573",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-19": {
+    "author_foreign_name": "George Gordon Byron",
+    "method": "visual_attribution_crop",
+    "image_sha256": "34c638a7c910a585f1624b9b7d6ef86e2514f6ecc53201371c5b4ca011255d62",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-23": {
+    "author_foreign_name": "William Shakespeare",
+    "method": "visual_attribution_crop",
+    "image_sha256": "cab8193898ba2ed3a7ace2880a1ecb7af52cd1cfe695f77a31b315c3291316f7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-24": {
+    "author_foreign_name": "Daniel Defoe",
+    "method": "visual_attribution_crop",
+    "image_sha256": "27a15f07b750439d5fb9fe9aee9f5282544096c071a62867cad496fd2ef9c050",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-25": {
+    "author_foreign_name": "Al Pacino",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e118548b9089512857ce6b50b3123fa91b289f842235137c0acf1393117934e6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-26": {
+    "author_foreign_name": "Ludwig Wittgenstein",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7cd685123b8ed151eda7b32d20d3ea920d405b4e41e57cad1fcbad5de22e6493",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-28": {
+    "author_foreign_name": "Steven Spielberg",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1239501d279603af3c297291ec841bde5e79bf41097f705d41cba22bad3839ac",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-04-29": {
+    "author_foreign_name": "Alfred Hitchcock",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aa265725e1160e85388dff9e5ed7c58e8de4b3caa24c372950e5993602157544",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-01": {
+    "author_foreign_name": "Paul Gauguin",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ad3213ac1704b537846b61af846d1a6a57c663a2bb471a7f9da7a6ce097e2858",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-02": {
+    "author_foreign_name": "Leonardo Di Serpiero Da Vinci",
+    "method": "visual_attribution_crop",
+    "image_sha256": "170466208789b58a0fa4f44a3b42d9737b34a9199044b282370e46535fdf7846",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-03": {
+    "author_foreign_name": "Margaret Hilda Thatcher",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6c62f3aceb8a914f6139de97958ca7c41d8e76581f0e3241cfe3574d92d36d32",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-04": {
+    "author_foreign_name": "Audrey Hepburn",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c279e62db4740f5cc08c29925e89b9bff9aa21515d7240bd0dc1efa2249fa1f9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-07": {
+    "author_foreign_name": "Rabindranath Tagore",
+    "method": "visual_attribution_crop",
+    "image_sha256": "18f1dcef0068c43d085c6a898aba6cc4ca597e62a6a686321777702860d36898",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-08": {
+    "author_foreign_name": "Gustave Flaubert",
+    "method": "visual_attribution_crop",
+    "image_sha256": "369cd506ae3be82efb2fb84bcb2aeb56ea4efcf75c51efa81a507c39a383c771",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-09": {
+    "author_foreign_name": "Friedrich Schiller",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1f5f3bf17704fc0a80c444013431bad7fe6a93246c69c8131f89618fa3b9863b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-11": {
+    "author_foreign_name": "Salvador Dalí",
+    "method": "visual_attribution_crop",
+    "image_sha256": "799962e17b78b95be2b5d345b2cf926bd27db165c113722e96ad306f149779fa",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-15": {
+    "author_foreign_name": "Carlos Fuentes",
+    "method": "visual_attribution_crop",
+    "image_sha256": "79c0b387405e4963842d0f9033868857fce13dfc84620f6a5fb74b48b5c8575d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-18": {
+    "author_foreign_name": "Alain de Botton",
+    "method": "visual_attribution_crop",
+    "image_sha256": "373c4ba5313e84270069050789598aca38c3658ef8afc8228ba1db9a239d221b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-19": {
+    "author_foreign_name": "José Martí",
+    "method": "visual_attribution_crop",
+    "image_sha256": "937837b338c96d7e6ca5c366eec62d1eb284b12bae4d23b11be0f470c2aafc36",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-20": {
+    "author_foreign_name": "Balzac",
+    "method": "visual_attribution_crop",
+    "image_sha256": "20a807cc8e884fff55a25acf526088b9b291888f3b019eb8d0d457278a423213",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-21": {
+    "author_foreign_name": "Geoff Dyer",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f537101cf9b785882c0053cc9716e431b74c4450d6b5790e9a8d098faac07bae",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-22": {
+    "author_foreign_name": "Arthur Conan Doyle",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9ef7412f49b04ea22ab7ea8a8323e5c6e51bd5a52e7501f38026efcf97a3ac9f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-23": {
+    "author_foreign_name": "Sylvia Nasar",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e6e4f9d74a001a44876bf6b3e7359604fcb9a27ca4e52b169dd142d490e03c38",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-26": {
+    "author_foreign_name": "Martin Heidegger",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a9bcd5f9595927a4eb5352d87c36cea9987240d5797c72ef62278be0c413db62",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-28": {
+    "author_foreign_name": "Alice Munro",
+    "method": "visual_attribution_crop",
+    "image_sha256": "761684a1ab075395f7e0ae8a6d23c2b95c03dc006abfc65907534ee698385f97",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-30": {
+    "author_foreign_name": "Voltaire",
+    "method": "visual_attribution_crop",
+    "image_sha256": "698622aa5f9686708ebd9e14b094ad88f66092f2dff52dde0c101c69c17066fe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-05-31": {
+    "author_foreign_name": "Walt Whitman",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0822d749038cfe7b28fdafc9cff02d83aaebfc8ff18891373bbd6030816efa93",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-05": {
+    "author_foreign_name": "O HENRY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ddef9936ded8812bf387cad02dfd192d392b960fd1a53526705deb06c03ecbd1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-09": {
+    "author_foreign_name": "CHARLES DICKENS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b0dfe7126495fb77a585522182f9790351b579c2d93949127dca65e4a1e67c86",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-17": {
+    "author_foreign_name": "ERNESTO GUEVARA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dd9fc6a59548983f45569824f63bf9ca0ca62f14510d40abccd0b6aff13ff368",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-18": {
+    "author_foreign_name": "МАКСИМ ГОРЬКИЙ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f379624a84aa0a2635a365bcd1626546b8c1f6588e50f06a026f697c7999a901",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-20": {
+    "author_foreign_name": "UMBERTO ECO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a616e3fea07b41b37b9322e4c136356c4884b725b369d94fadab502093b501ad",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-23": {
+    "author_foreign_name": "АННА АНДРЕЕВНА.АХМАТОВА",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dfeb867be2dd5200b1af52bef8fe4f56b01e17019de8420f3c4287de502bc166",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-06-27": {
+    "author_foreign_name": "HELEN KELLER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "117042a28f6b791700d5bf540fc8648c3127d5b8b7641941fd201e9e8ac6111f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-07": {
+    "author_foreign_name": "ВЛАДИМИР В МАЯКОВСКИЙ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e6a829375d52e63573ffcccef8e52aa7cd6b62c961e6c4a1c25e75be7f9de33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-11": {
+    "author_foreign_name": "ELWYN BROOKS WHITE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "991b71da92fe5944775a7c4c495e16c2789e628aa526ee72535db489e5c304f5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-13": {
+    "author_foreign_name": "PABLO NERUDA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "73b5b7836c470830b13584e4bce77d8c6026f8061d871e3e2913a75e2fe5ea7c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-15": {
+    "author_foreign_name": "ANTON PAVLOVICH CHEKHOV",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7a4b04cae030839dbe1c374a1fa8273ae0305e2d19b3e20c8e5b9c6a25c87d2f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-18": {
+    "author_foreign_name": "JANE AUSTEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "01cbda1ccb861ea559edc231e6dec5ebdf6293b0e5ca6721cc3de0d3a8201efe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-26": {
+    "author_foreign_name": "CARL GUSTAV JUNG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0090020471136d1ea78946bf70453504beadd53235ea8dcd20e815d0a2fe6c64",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-07-29": {
+    "author_foreign_name": "VINCENT WILLEM VAN GOGH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b1681864a79aaa172532cec2758d56bca3363ba0176a4051c245c1b356f0c880",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-01": {
+    "author_foreign_name": "DAVID GASCOYNE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6b07c03376fbb83299972ab3a83a69cd78a2a7a8d2d2b3664e32af5ee8e11335",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-04": {
+    "author_foreign_name": "HANS CHRISTIAN ANDERSEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8e5f7fe1147bfeedacb00715312ea4d94219985b0a4e613059d2b29dc4b81421",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-06": {
+    "author_foreign_name": "SEAMUS HEANEY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "41bbc491c3f17c4135b0b055caf582f2947270f329447144223c16419b290752",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-12": {
+    "author_foreign_name": "THOMAS MANN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bcc44c9f9e31b38bce70626223f41b72c527fee8cc9be21af3f2e3109d13ad9d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-13": {
+    "author_foreign_name": "ALFRED HITCHCOCK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "35e34000cb675390f9a48a5c425871cd81e6e42c36a2458f0db7d5e60bb8a948",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-15": {
+    "author_foreign_name": "SCOTT WALTER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "08a68531c5dd6e19ca4e94d82abdf7cfc95e7c760e3bb685bd19fc678e53dc38",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-18": {
+    "author_foreign_name": "ALAIN ROBBE-GRILLET",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8d33bd3f3dba0777337b630b5b5a9aaf1ecd3f4953916fa9b021af975337ed33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2016-08-19": {
+    "author_foreign_name": "Gabrielle Chanel",
+    "method": "visual_attribution_crop",
+    "image_sha256": "260262369b00e90fe18ce9e6a02c7d3a2b2d23cfca48cf50082ad0cc020e3ef9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-02": {
+    "author_foreign_name": "STENDHAL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dc110d8eaa1e8a209936e5537ed63c700454248eb2241252990733b349d8a305",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-03": {
+    "author_foreign_name": "LINXI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fc89eae012900e0faffd43d5dafddf1f57a247fd6ee9e01e061f6166b5da3519",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-05": {
+    "author_foreign_name": "OCTAVIO PAZ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4e813c96b26c37b4a33944f04c86294d1ffbef262ed7f4e9dbeff2357a846acb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-06": {
+    "author_foreign_name": "COMTE DE LAUTRÉAMONT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5f83bd223a72aa279869f97d516368e2a95c2823ab961eb5ff251787dd59fd9c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-07": {
+    "author_foreign_name": "SHAKESPEARE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bb1b82c5ed35c4b1775491d60be167f31cbe3d910131e348cb28853ff1a79469",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-21": {
+    "author_foreign_name": "COLM TOIBIN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f5823a951eb75977fb073d0c5c99ad40a5c9a722c615d7df56c383ca3c41ae64",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-25": {
+    "author_foreign_name": "WILLIAM SOMERSET MAUGHAM",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9557131229711fba6c17cac972477be540a5695ab20f3a5758e10c79eca7f1e3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-26": {
+    "author_foreign_name": "SCOTT FITZGERALD",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f72b548ce870251e140a6f91bd3dd5082b9b483340de8efd77ce80afb6a1f494",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-01-30": {
+    "author_foreign_name": "ORHAN PAMUK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f3e138a9ff8f6fa95ffdfad6f7cd84b9fdfa7af9ea2bb806579229680d98ba54",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-05": {
+    "author_foreign_name": "NICK CAVE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2c17ce2892e8c1275ab656ef65a591b73151339d86f8feb413cf6434954545a3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-07": {
+    "author_foreign_name": "VLADIMIR MENSHOV",
+    "method": "visual_attribution_crop",
+    "image_sha256": "10399ff3cb6e5fe0350fd1dd531a0e175f9a2ce5a843912282ef2aad5441d11f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-09": {
+    "author_foreign_name": "LIAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2b45fd13592deaa8d8f571ad961a6299f15eb7ab77f44f4f06825b4736d3f337",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-13": {
+    "author_foreign_name": "YUXINQIAO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f6d66f8d4ecb600dcc3e01a7f2f115f9da9b6db5e42cfb0003abd25eefde93ff",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-14": {
+    "author_foreign_name": "RICHARD LINKLATER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4b7192eaddf35fb99a18646f2a1c66361b0607b16f105f4f92408504a788a187",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-22": {
+    "author_foreign_name": "STEFAN ZWEIG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6d25044b3e94edd8c56da1bae15821029489730fec26684e672e536451268fce",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-02-27": {
+    "author_foreign_name": "SYDNEY POLLACK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "50002ffd9028b067e0fc35e432226e5c3821f9543cb4e494f79ea74dd19da035",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-03": {
+    "author_foreign_name": "MA YAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e95c108daa482da2bcce0e5e8f8ddd88563cc546573e74ccc0c5e1c39538232a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-04": {
+    "author_foreign_name": "JEAN-PAUL SARTRE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a4a879f38a4ffe6dddad104c236469941d7741f6bf448f34b8d57809092c1035",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-05": {
+    "author_foreign_name": "WALLACE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "512c71eb24d7b51e67d3811d696bd654b5b8ca154d81ea4d3ad016f73458ddf7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-08": {
+    "author_foreign_name": "ITALO CALVINO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e6313bbab67f9e7149482899d6e74ea09dd8dc09aea339a7874ad67dd19630e7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-12": {
+    "author_foreign_name": "FRANZ KAFKA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e5565e6bef7bb49a04b27b47b6eac6a75503ded7d132d8a5151066d01e69e391",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-15": {
+    "author_foreign_name": "ITALO CALVINO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "533bcf0c07c004ebeb49282de964bfb0f1d8492a2fd5e421ff930f00af1ba042",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-17": {
+    "author_foreign_name": "SIMONE WEIL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ef6985147dc4ee45ab02ca8dec716d6bd0821ac91915abcd592f63753cb8f0f2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-18": {
+    "author_foreign_name": "SWOODY ALLEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4a170be22e348099df909aac1bdbd8614c897636a332bf82f41b8a2bd71aa58c",
+    "note": "原图印为 SWOODY ALLEN；保留源图多出的 S。",
+    "source_name_suspect": true
+  },
+  "2019-03-19": {
+    "author_foreign_name": "MILAN KUNDERA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "84443a8a73f8ed5a6009ce3ec2b36b79a7c5f1a90316d568a66a309b61fa1517",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-21": {
+    "author_foreign_name": "GUCHENG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "493d7643c97c4d3fb7fd86660f8b42d8fbe841a96eb78c25856554a6f0a578bd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-22": {
+    "author_foreign_name": "YVES BONNEFOY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "612a6d696aa8a1c37960ce0f84644bfb1bc6b26a6fdc8931bfafb37c59e56537",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-24": {
+    "author_foreign_name": "PATTI SMITH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a6c81a72337db0d421231dc2773cb871c35a6a9360364ee3a4dbd1ac27271a6c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-25": {
+    "author_foreign_name": "IAN MCEWAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "104bb7af97bd875167220c92df366a63fbbec0863c54e36fcb37556ab534de63",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-29": {
+    "author_foreign_name": "WILLIAM SHAKESPEARE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "904ff781f949fa7a78bc0f8cbefdee51dde65cf7b912eaefe66005b1de3b117c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-03-30": {
+    "author_foreign_name": "PRIMO LEVI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "23ba4a29428edc70539d54425ac55b954c01958c10c70873ad7f43608599a128",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-01": {
+    "author_foreign_name": "SIGMUND FREUD",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3eea29dfef8ac06adaf98934eb03a71c5be56ef24a42bf571a90d5c88b8143e8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-02": {
+    "author_foreign_name": "MIDORIKAWA YUKI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee9871d37ade6dfa296e1aa25daeceb5861aebc3f642b3774615d7cd9398f2ef",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-06": {
+    "author_foreign_name": "RACHEL CARSON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "86899d9f667a936f1367c363a8d76ecdb3370b7f700082ab2224e1e7772721db",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-07": {
+    "author_foreign_name": "RACHEL CARSON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bf89d0a19552da52822eb7564176bed32f9705e622e3d64714f609d2a5323209",
+    "note": "原图中文艾丽丝·门罗，外文 RACHEL CARSON；源图署名冲突。",
+    "source_name_conflict": true
+  },
+  "2019-04-10": {
+    "author_foreign_name": "J.M.COETZEE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "53791fa6262d3c86102bd81e08aafec73236b6d9bc3ea278a30c9cbdcc6188a6",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "J.M.库切"
+  },
+  "2019-04-12": {
+    "author_foreign_name": "LAWRENCE KRAUSS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8dad13b800a168ca8323d7dccdc6d4cfe4a5dadf09b2f73d29c4561b90ce39c8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-15": {
+    "author_foreign_name": "GEORGE MARTIN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e0acc16bca2a120b1153dbf4f21b6f4309e6c3df9d45fdbce546baf9bbe79f2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-16": {
+    "author_foreign_name": "T.S.ELIOT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "427e0cebb4e0092abcbfae2ec7d62a8df01d8314c66a130cfae958572d359931",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "T.S.艾略特"
+  },
+  "2019-04-17": {
+    "author_foreign_name": "RILKE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b41c43d2328a766543ff39cdb9d1d26864e753f7da60baf4c5d8bbcf15984cbe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-21": {
+    "author_foreign_name": "KRZYSZTOF KIESLOWSKI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e4f7c60fa4a4f45a568396dcbccde8668d3635887b430a4f24bc9f1f54082e8b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-22": {
+    "author_foreign_name": "GARCÍA MÁRQUEZ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "51f6dd8a8a289950c485ee55eb838ed75f898f9207f4f078691bf0b1ea7ef18a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-24": {
+    "author_foreign_name": "SALMAN RUSHDIE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b70131bfe591fe4d72541222f3a70018ca37dc10066364e99a7988341bbf22b7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-26": {
+    "author_foreign_name": "LUDWIG WITTGENSTEIN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e319036ccf22a124ee56c0366218d6df93079eb3079152e9ae0e12101408f530",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-04-28": {
+    "author_foreign_name": "JOSEPH BRODSKY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "232b3a8028b135e786c8ca3151a02b984b1bd6ac4ce4e95c4dc07deedf23d023",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-01": {
+    "author_foreign_name": "FRANZ KAFKA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bcaca7571df446c0ef3ce9fe8820e341c011884f5933382777337eecc0a75b6f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-07": {
+    "author_foreign_name": "CHARLES R. CROSS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0337f39fda17d13192669e80af3207bcbf1bb1f2efadea28ff50abfb435c1ae4",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "查尔斯·R·克罗斯"
+  },
+  "2019-05-09": {
+    "author_foreign_name": "KARL THEODOR JASPERS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "94a77d9ebc062d67aa1083ce87826353470e9e201329a8151f91daedd3f64242",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-12": {
+    "author_foreign_name": "WOO-JEONG LEE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1aec3bdddf7c9972597b6255135838061b12b36fc7c50b8a58264a02ba9c63c2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-13": {
+    "author_foreign_name": "DAVID BAYLES",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6dbeb2e495ead5df7560ead6fe0fabc5d70543f4469fc14877fd70221d2551be",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-15": {
+    "author_foreign_name": "RICHARD FEYNMAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6fd1f922fbd7144a2d46574d21515dd791abf2be902a7d1930749914811becfb",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-16": {
+    "author_foreign_name": "AMY LEACH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "068735b17f0716d52bbb090f8f6af25f10ee162e9c02d1b7a256f0e37fa1efb1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-18": {
+    "author_foreign_name": "ROBERT BRESSON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a626c8c2aa226ffea8e7d69697a5caa5b2f45280b298254218d3c702c8c58b73",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-21": {
+    "author_foreign_name": "LEONARD COHEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e079e35492bffbfb819991d87a01c5a9e71e7811c0a173b95cc4379f89bb0333",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-22": {
+    "author_foreign_name": "YUKIO MISHIMA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee4c1fb1f01832e8cde5a745a687363e70680ddaddeb66f12fc36e2835071f8b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-25": {
+    "author_foreign_name": "WIM WENDERS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fa137ca0e5f9f8b0b13826b5bdf4a528ab12f21cfcb8b22a03fbb2d6eeee6859",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-26": {
+    "author_foreign_name": "OLGA TOKARCZUK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a9e7a9b387deb68f08f9c61a58fc24b44a24703c7cd153acd29cef2b33bbbfb7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-29": {
+    "author_foreign_name": "WYSTAN HUGH AUDEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7d956e46a286015064dc547a4c45708d05570c74af0b1f1bce5e7adafc8702b0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-05-30": {
+    "author_foreign_name": "JAMES IVORY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f533dca5bad6feee9c0f2eb5423a30d09fa9a5541d7992a458a7c6d8fc20e51a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-03": {
+    "author_foreign_name": "FERNANDO PESSOA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "02395202bf0e44083d3764b8dbe7d5aebe1634870f4be99699c8b3d2bdca90fd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-04": {
+    "author_foreign_name": "MIYAZAKI HAYAO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "57846e136e094baf725324388ba167617aefc9811982de7545d3f0edceb235a8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-05": {
+    "author_foreign_name": "ODA EIICHIRO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "539e839ad62dcb4a94bd91ec4125a22c646af7d7981e394a426017a23bdc57dc",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-06": {
+    "author_foreign_name": "WYSTAN HUGH AUDEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bfdf7c74aafaa28458aaf5d05a3655353b8f8dac5e51926c5254ad42c1ea6e0f",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "W.H.奥登"
+  },
+  "2019-06-10": {
+    "author_foreign_name": "SAM MENDES",
+    "method": "visual_attribution_crop",
+    "image_sha256": "18e2c96a33eecd2016fb1824bc4926b3a7f3b99ea085872ff107bac43fb1f0fe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-12": {
+    "author_foreign_name": "MARCEL PROUST",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bbbb4b6557eb47441d1effd515ad8c20c9d5f55f45b686afd83c9b56e586a888",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-16": {
+    "author_foreign_name": "PETER FARRELLY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6cb354829d5b6ed95c08d04eb8776863f9b4466bb2c89ecba42e54d1fbf444a6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-18": {
+    "author_foreign_name": "PUBLIUS VERGILIUS MARO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "76750f3a1e9c28f97debe5554dc678b9543a553b394ae84e70b5d90975ba1820",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-19": {
+    "author_foreign_name": "JOHN WILLIAMS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fe6e1cdc4f25da0996bd7543bbeb9587b6328698b20110a456faa53dc4755f77",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-20": {
+    "author_foreign_name": "RICHARD ATTENBOROUGH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "53eb22b8ba6e035362091188adee984a87aa89b836695a237e6fba6ca7a60b64",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-21": {
+    "author_foreign_name": "TOBOSO YANA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "59fe917c3535a02f703e5460f751eb03937a5bfa834c85dffd9f33ca96a3078d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-23": {
+    "author_foreign_name": "MARGUERITE DURAS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "920fa520ad0877820c1b57d0a7eae46b5440b0d0d723216af8dacbf30243b911",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-24": {
+    "author_foreign_name": "NURI BILGE CEYLAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e506ad74c95d88ebbe0200b3bf85b76344bf48773005d5fb8b23ac83ceb5b6b4",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-25": {
+    "author_foreign_name": "SIMONE WEIL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1375df8d3110ef0678a4dd3d0b5ec8cafcbb437cb808e663156b195c3c5e2d7e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-26": {
+    "author_foreign_name": "HECTOR LOUIS BERLIOZ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "badc912f870ca412faf11ece1c2af1c4e72a56fe6989fabad901ea29f244825a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-27": {
+    "author_foreign_name": "ERIC ROHMER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5ae7d87f0592a5d47ccc68e1f7916af8df8e85f15274dcc06086c42152f6a128",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-06-30": {
+    "author_foreign_name": "PABLO PICASSO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "09d7862c3a3986b5443f7d19fce5984194ecb4a3d98e4b60196dd51182a1e5aa",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-01": {
+    "author_foreign_name": "SARAH WATERS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d6f1338f4a1aa44c79b37fa7dbe9375b9ad7078d230bb07e0e8abe2e672db391",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-03": {
+    "author_foreign_name": "GILBERT KEITH CHESTERTON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6fe8174f2ae4c23ebc79d460d94637bb3d9f06defcae96413d8634c093352de0",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "G.K.切斯特顿"
+  },
+  "2019-07-05": {
+    "author_foreign_name": "MIYAZAKI HAYAO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0eb62d206050a93db71fc4b5653633dc1f0b1d3b7983508bfe3033a06cc7764b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-08": {
+    "author_foreign_name": "JOSEF KOUDELKA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "23d070e93d4b1609e2d1763ecd25bedf9d8c3bf6c1406790c5cba0e181ac8d76",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-09": {
+    "author_foreign_name": "PETER HANDKE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "988e16f16287ea94d96e0f73f8c6fab3faf9bd5b537bbf02176ce8f02724abda",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-10": {
+    "author_foreign_name": "HANYA YANAGIHARA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4a31bd4dd5e3c5661d8b8ac43e272654f79dc32307e2c51210ec0a2741c58ba1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-13": {
+    "author_foreign_name": "SOFIA COPPOLA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ff96438426d44f82953b3d722149a08d96934b4e1f9bd093f11224b673a30e27",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-15": {
+    "author_foreign_name": "ROBERTO BOLANO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6f1942b1f00f95a75be22df2548aac5f85657356f401b3557c3ade83688a44d0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-17": {
+    "author_foreign_name": "LUIS CERNUDA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a4836698fe4be773b004e7379239a8a2b1b8891d51ff009bc23fdbe31eaffe68",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-20": {
+    "author_foreign_name": "PHILIP KAUFMAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a3fbe7c26cc5fd67f00f889527746913462e5416dc363a876db249dd591d7247",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-22": {
+    "author_foreign_name": "JAMES BALDWIN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5bedc0f0355ed751452aa2274aa9c3de577ba88e839be469d81669a586858640",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-23": {
+    "author_foreign_name": "LONE SCHERFIG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1687e35f6b60b4ab644d3f61d0b7bb57417525908a2365bd0cbc248008b2e684",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-27": {
+    "author_foreign_name": "PASTERNAK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c3775c4406dd1ad457cad6d00d0320bfc2038461ac2e25dc0115e95161a7df39",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-28": {
+    "author_foreign_name": "JIM JARMUSCH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "74a0897ff54932a60e4d3614e8b585b08df766909488a803807e26245dc8b554",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-29": {
+    "author_foreign_name": "ERIK LARSON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "db3def9ce55471ede44124f7e1ff7607a87ef58dc2c5c7ee1d98a227395156ce",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-07-30": {
+    "author_foreign_name": "MICHAEL HANEKE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4bc54e20c72721ad0655533f01c6401d4e9265ec771b5b867be3a79588764353",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-08-01": {
+    "author_foreign_name": "GRETCHEN SCHULTZ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "56427159ae8636b71809583ee46f51865ec7f18a3b6dc98f8532a9c7c9293cf1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-08-03": {
+    "author_foreign_name": "NOVALIS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "df4f996591d722f72a413805413d550e14588ad1be023560e5e8127e15b5b739",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-08-04": {
+    "author_foreign_name": "LYDIA DAVIS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "97c0e949585de371efca54457d491b2db245806ed6cc8a61b333a701780d30f5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-08-05": {
+    "author_foreign_name": "KITANO TAKESHI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ef6f67e1e6cdf6c772a474c7ac24bdff2497ebcfd2fcd3f8ed1e32fb2757ecb0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-09-24": {
+    "author_foreign_name": "ANTHONY BURGESS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "38a17f781a556a2a5959daad908a3914d3c893793812d5fec59ab7b3cf30a235",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-09-25": {
+    "author_foreign_name": "APEDRO ALMODÓVAR",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c2c458fb895f3833909e12c1eadfed29e87afb465d30c259e889f8a396bcd795",
+    "note": "原图印为 APEDRO ALMODÓVAR，保留多出的 A。",
+    "source_name_suspect": true
+  },
+  "2019-09-26": {
+    "author_foreign_name": "NEIL YOUNG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5bd0e0c4a93b5366d7bf8c13788e6a029fddf31feebdccc618ec6a9df8ff305c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-02": {
+    "author_foreign_name": "GUILLAUME APOLLINAIRE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a25e8cecf05a1fcb5cb0046af0e02c64a2dd61a22d9a988378057cbebeafde21",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-06": {
+    "author_foreign_name": "ELIZABETH BISHOP",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d1c07d960885b8732195fb5eed5eae6dce36b59642b5509d236f447bb136ca8d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-11": {
+    "author_foreign_name": "CRUSSELL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2a57e1596a75fa292535845749b062aba9df522b02a49b65f8d70e41354f3c55",
+    "note": "原图印为 CRUSSELL，保留原图拼写。",
+    "source_name_suspect": true
+  },
+  "2019-10-15": {
+    "author_foreign_name": "SAUL BELLOW",
+    "method": "visual_attribution_crop",
+    "image_sha256": "126dd9ffd868965e2234839e43684e01125800dc2b1adb32cd6768a97685acf9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-16": {
+    "author_foreign_name": "JONATHAN FRANZEN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "78dde6ef1ac9842ea60ebfc914ddd10e9e45d82d2e419b7946c4403424abbb39",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-19": {
+    "author_foreign_name": "DEREK JARMAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b778dff554af56ae5299342131dc799c8e0c7497ca58ed6910916fb464521397",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-20": {
+    "author_foreign_name": "GEORGES BATAILLE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6501e5084c2694adc9fc2cf4efdc7ab66aaadef6648616da078ef1dfe157b8ac",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-22": {
+    "author_foreign_name": "MARGARET ATWOOD",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e37f936fc7ffa4c5c25300221b6bea5f1a82d6b732a1638ec366921d63354bf7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-25": {
+    "author_foreign_name": "JOSEPH BRODSKY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "00fdbb678e208a8d1fb0c74d7ea5b9e3c528a88cce3b2b887fd04a488e4b81cf",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-26": {
+    "author_foreign_name": "YUKIO MISHIMA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "096cbc9d4aa590fa989099b779e62e3616a86d719a20abe067f14e04239b1bc6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-27": {
+    "author_foreign_name": "JAMES JOYCE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a886497eb8df3a2d2ceff801855ff8b52ae20dfec46cfa56e2f969f2937ac803",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-28": {
+    "author_foreign_name": "MIKHAIL BULGAKOV",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a4dad6c159827b7267b64f4ca308f45e37bc7a2ea35680a5ed99defcd6506d98",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-29": {
+    "author_foreign_name": "GUSTAVE FLAUBERT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "57276f58e226fab4d1b74f226ef5430c96677580bdc5d30929a75c8acb6cbff9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-30": {
+    "author_foreign_name": "JOHN MCNULTY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f03dbd0fcd5ea80b863a41fb58c8c1bceada27e5adff4af77016ab9621cea5dd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-10-31": {
+    "author_foreign_name": "COLM TÓIBÍN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "159374b29fcd2d212d30086118d861bf74830f75c1b22e8c0d716ad609106b8f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-02": {
+    "author_foreign_name": "SIMONE WEIL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "14cd3ffd009f7e84fe75a88842e7b870dc849da2649fad0f4f13d6210520c6d2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-03": {
+    "author_foreign_name": "LYNDALL GORDON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a7346cf32d70e441b8c3c9e4f40a9fb5c111800ef22824bace4f7ea61b0131c3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-04": {
+    "author_foreign_name": "NICK CAVE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "76f12c736c8ee853cff36c9044a7b7cb5cbd01f66755fd593a7914760055b045",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-05": {
+    "author_foreign_name": "JOHN KROKIDAS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee4911b500d61b239fe3b35b1f1fc809c595ff661c578022f95afaa34bb25ba8",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-10": {
+    "author_foreign_name": "ANTON CHEKHOV",
+    "method": "visual_attribution_crop",
+    "image_sha256": "318a1f206b7f58de1d1e2b4a09a0b1ca62e81843aafc3980e765d4423ba5e33a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-12": {
+    "author_foreign_name": "GRETA GERWIG",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7c06c090962270ceb4fb479a2508e3b22a27a560575e19fd055218f653567224",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-13": {
+    "author_foreign_name": "ROBERT LOWELL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "81fc5f6b69d603a4f1b6e8e405f48e0fcd5815228d4ae985c6cb748b2a3c2b75",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-14": {
+    "author_foreign_name": "RAINER MARIA RILKE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5ac7ebd7b2c5a82c0121ad82dcbeb6117604c76c194cb8d68053f88fcfa74284",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-15": {
+    "author_foreign_name": "WALTER BENJAMIN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4afc1f1de49e7e98c25c102f60ada55f74121c39d6ad93028156ca1dca47cd8c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-18": {
+    "author_foreign_name": "JOHN WILLIAMS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "52372ff90b66c502bce70414541e9dfbd82204f2b5c21f4024802f70cda19757",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-19": {
+    "author_foreign_name": "CHET BAKER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dc2fa26cddcc431623a3b79378df2af8b8168cd13f9fff0204082cb517a9fe4b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-26": {
+    "author_foreign_name": "MIKHAIL SHOLOKHOV",
+    "method": "visual_attribution_crop",
+    "image_sha256": "031f7861003c2f98188fd372361542893bc17f39c20efef79a801d50c6e0a53a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-11-29": {
+    "author_foreign_name": "RICHARD SENNETT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2c8752368a1b80a30a20da76cc02abe491ecc2abf7f0b25a8d0e5677797abea0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-01": {
+    "author_foreign_name": "JONATHAN DEMME",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f29106e5329f3aaf91db8a6e753670d45537efcea66610a10c18339dab8608d3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-02": {
+    "author_foreign_name": "THEO ANGELOPOULOS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9186a28b18f65f9bda54f57b6886780bff800ba041b334475c86eb77a6cc0d3d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-03": {
+    "author_foreign_name": "J.M.COETZEE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0304ef3f472ced9cb314ba3e08ca012b8658caa365057e47ca44c99d8cfc1347",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "J.M.库切"
+  },
+  "2019-12-04": {
+    "author_foreign_name": "GEORGES COURTELINE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "acac03a77f66eccb3dd7f5986d35eca4564925f4ac0d3cf3e5e5fd6821df736f",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-10": {
+    "author_foreign_name": "SAMUEL BECKETT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ddfd26cf3a3982983d75be2f1d29c3ffa3df1fc9453bcdb271c13c8e13cf1f33",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-13": {
+    "author_foreign_name": "AYN RAND",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b1b67dcc8d32e3de03cacecd38ffbd05af96cec9f222cbe4a934ac47a92edfa3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-20": {
+    "author_foreign_name": "STEPHEN CHBOSKY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "da8921bc479bef3aa6fbfce64cc0e596435bd5e5a182d5549e10d7148d798255",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-23": {
+    "author_foreign_name": "GEORGE ORWELL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "03a8b70175f2057d0a174bf03f01b87731e22e4554fae0f9e7d1e0378884d310",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-24": {
+    "author_foreign_name": "FRANÇOIS TRUFFAUT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6849ad674bb017a05ed573f5670a0063c43fd02b6e5358ffb0c07d53ef1cf8ca",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-25": {
+    "author_foreign_name": "WIM WENDERS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3566f95a641070f2270f6cbdc9410b240a6f705a619f6bbfba02fa96029eb9e3",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-26": {
+    "author_foreign_name": "OLGA TOKARCZUK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "701d33aee2536ddfb49d70b31564d351f208083e71de8c7e7f4235263e81c70c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2019-12-29": {
+    "author_foreign_name": "TROYE SIVAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f0aab41fb3f3fb1ea63e8baebbd855e672216d4212190c726ba3d9a37c04e179",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-01-06": {
+    "author_foreign_name": "W. SOMERSET MAUGHAM",
+    "method": "visual_attribution_crop",
+    "image_sha256": "68eefa9cb5b884f05d133e6014d2ac75b4d7b3964303fc1f4fd867185ccda044",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-01-20": {
+    "author_foreign_name": "FEDERICO FELLINI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0b2782becef0ef45b69cac110f1925adf40241e8d61ca680bba73d0bc9675c2b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-01-26": {
+    "author_foreign_name": "BRAD BIRD/JAN PINKAVA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b12c963f666166b01845cf4b9f4848e7d943f92c98266ea6a2ddfd30394f31e0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-02-02": {
+    "author_foreign_name": "GIACOMETTI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "68149d2d29c38d51672e11762f12911d512055211761a3a541779efebaffb343",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-02": {
+    "author_foreign_name": "AMOR TOWLES",
+    "method": "visual_attribution_crop",
+    "image_sha256": "06d5846a066915f0b7e3a8cba1c1f56cb8156dc2f4f69c77efd55c0b6366e534",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-06": {
+    "author_foreign_name": "TODD HAYNES",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7f1209a7d3ed94c3e288df9c1f5390f26f35e8259e56b8213c389b19f915b65d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-07": {
+    "author_foreign_name": "CÉLINE SCIAMMA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f019dd4b404bfdd3ef458c619b1dc9cb3fff6e4191feba2ee221471944eff5ac",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-11": {
+    "author_foreign_name": "MARILYNNE ROBINSON",
+    "method": "visual_attribution_crop",
+    "image_sha256": "bb470db4c978885c96988d4e8ed1f57e98c391f17ffafbc7c442f690c29eb5ee",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-16": {
+    "author_foreign_name": "PHILIP ROTH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "64cb0660dbf1ddf036a3405f6378458509f01162a2c4f72ed4fdb5fe881a3977",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-17": {
+    "author_foreign_name": "ERIC ROHMER",
+    "method": "visual_attribution_crop",
+    "image_sha256": "fdcb37b60883087248c5cf536cea4c416bdebc6edd6b06e4846c6142746cbe87",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-03-20": {
+    "author_foreign_name": "ALCOTT, LOUISA MAY",
+    "method": "visual_attribution_crop",
+    "image_sha256": "87fcb3e22327450c34933498d266df84e6f8c7f47f291483bcb3458c0acb7398",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-04-13": {
+    "author_foreign_name": "MAIWENN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "62a9f2bd814de35bf0d7f444ef3d07734aef47666455a130de84c269a738d6a2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-05-09": {
+    "author_foreign_name": "PENELOPE FITZGERALD",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2261c14900cea0cda11e05bb25c0f07943c68862cf91d7351270abd8140ec5ed",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-05-19": {
+    "author_foreign_name": "MICHAEL IGNATIEFF",
+    "method": "visual_attribution_crop",
+    "image_sha256": "03c574dd1ef637e3de2eb5e1c774d69ea533bf99f19a5752f655d93da128a3a2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-05-30": {
+    "author_foreign_name": "TAKESHI KITANO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "740f33be0cb14bbf66060f6ae0e6ed40c1d742d0f83701d1da60ff2c806bd5f2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-06-03": {
+    "author_foreign_name": "ELIZABETH STROUT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0b5b1d037e785a4500dde6a16922c829178d28674e9931e9a49779d8dc3d550d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-06-08": {
+    "author_foreign_name": "PIETRO MARCELLO",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1ea05e3a44e835d872134006622ad4d18762ab2c0825e00b9eff853fe86e071a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-06-30": {
+    "author_foreign_name": "LYDIA DAVIS",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b65f908491ac628c918de66afdcf466c3765fbedd3d26d3514468fe4d7ebd4fe",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-07-06": {
+    "author_foreign_name": "PHILIP ROTH",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2a5c5064fb520bc64c61bdee5dc33ecc616d512c348ec6ec8666f45bff1d6d30",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-08-01": {
+    "author_foreign_name": "ANNA AKHMATOVA",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6068ead9da04cf40fa9a9c0a4ae865a7c0a6962f1e8d16bb44cdc68f3a0c708b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-08-29": {
+    "author_foreign_name": "CHARLIE COVELL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ec0ec1e28d576f96862988fe94de341056570d2d32dd655302f66fb295053cb9",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-09-03": {
+    "author_foreign_name": "MICHAEL ONDAATJE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "44b72e2c86f444ce947a698c19bb4e7a48f43e6455ffc641bad8e9c65e368d5c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-09-06": {
+    "author_foreign_name": "ELIAS CANETTI",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2513afc107b6ce12587c1016dbe67170019615f7be9233d2290d3a06f4c37f3c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-09-19": {
+    "author_foreign_name": "KENNETH GRAHAME",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2803c3d4164a48a6e6f08266db932fd1ea9209330c2d2b81f741787332a489ca",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-10-21": {
+    "author_foreign_name": "Charles Dickens",
+    "method": "visual_attribution_crop",
+    "image_sha256": "366094bcbde7e02ea0723895dd8aefbd582e8e17b58acbd5fcdcf83e2bdcabc6",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-10-29": {
+    "author_foreign_name": "ELENA FERRANTE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f0b93f1ea70b906c4bd8b06aa9afef4ff39dfc684659f5fe3cf39eb11e297810",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-06": {
+    "author_foreign_name": "Paul Morand",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e1bc64fdb6bc89deb81e989f0baa8992c0c825f098ba1b8cefc2c4a6c90130e1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-10": {
+    "author_foreign_name": "WALT WHITMAN",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8a6632d687fec1a20e81c40f890ce274e161a69be5c941eae5c4faa9caf6aea7",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-11": {
+    "author_foreign_name": "J.M.COETZEE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2cf24129b1771a5c223cbe6ad0241daa1ec5823577e7b2f36c55187d5b61e296",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "J.M.库切"
+  },
+  "2020-11-12": {
+    "author_foreign_name": "SCOTT FRANK",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ffb5ef27e99672d10d3026c0df754ec77b5812e14baf67b5f4f2ced5dca9caed",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-14": {
+    "author_foreign_name": "JEAN-MARC VALLÉE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3baf30c7e7c275f0e618cff77af7412f7a37eb312e3076ee8332616c62f28532",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-20": {
+    "author_foreign_name": "NATHAN HILL",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f8d7bd80fd56286f010e04dc45df825b85d7b855b25456f48c4b26eaaf6a3fc5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-28": {
+    "author_foreign_name": "DANIEL DESMARQUEST",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a5e957a326caba23a2aafee326a26073b9d3f2fe52e53932bcde3b59bdc14d25",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-29": {
+    "author_foreign_name": "MICHEL FOUCAULT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "28509a35dba6508a5aa2cabe57f9855a96df837d63a78fe5ed61382fff1e1b64",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-11-30": {
+    "author_foreign_name": "GEORGE ELIOT",
+    "method": "visual_attribution_crop",
+    "image_sha256": "99eafd650d5613aed5721a332df2c973d812062a01d7175914f1a198e5a4c2b5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-12-06": {
+    "author_foreign_name": "SPIKE JONZE",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3dea5cf31197c23d24b91a393026013bcfb665ed8382ff83718a00d1032f8fe0",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-12-15": {
+    "author_foreign_name": "JOHN LE CARRÉ",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b52f135fca51c534bd30ddddd1fd2cf609b8a135e667a519ba69c1a4343fca70",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-12-26": {
+    "author_foreign_name": "Ian McEwan",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ac63dede993b9b57b0c34461a9f9e6729bb7df65594b0ee4b739d34c322f89f2",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2020-12-31": {
+    "author_foreign_name": "Louise Glück",
+    "method": "visual_attribution_crop",
+    "image_sha256": "447deccd11f2f84c4fb4db8214d77ac5ece3a361836febbbc996ea68c474e857",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-01-09": {
+    "author_foreign_name": "Umberto Eco",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5f8aaf3c170809a28a43d8136fbf881f1e592fc78d749aca9043819e4946ba7a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-03-13": {
+    "author_foreign_name": "François Truffaut",
+    "method": "visual_attribution_crop",
+    "image_sha256": "21c43d69d4be0370a91507f0a44b5778d3862ba4ac697388b350c364ebcd2fd1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-04-03": {
+    "author_foreign_name": "Θουκυδίδης",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e2ff7af27a75352342c5b5b578fb9c7188357f1fcd46ff18e11829c51ef08e7e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-04-04": {
+    "author_foreign_name": "Святлана Аляксандраўна Алексіевіч",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9aeb4b0938452e28cbc4084b31d8f1d84c711779b9d6a26de56352ca896dc868",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "S.A.阿列克谢耶维奇"
+  },
+  "2021-04-10": {
+    "author_foreign_name": "Czesław Miłosz",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7e7e744f85cbd61c4328345e02b9f4ced0f27303621739cc1bd38fb1be887d7d",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-04-17": {
+    "author_foreign_name": "Лев Николаевич Толстой",
+    "method": "visual_attribution_crop",
+    "image_sha256": "763798aa75b0752b4cfd572fa596289fef4336b7f4e9897634535cb868d397dd",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-04-18": {
+    "author_foreign_name": "Nicole Eisenman",
+    "method": "visual_attribution_crop",
+    "image_sha256": "67473cba1acf5aadd9f7fded4a3f97ad7cb173760b024dff32adf19abe38c4f5",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-05-25": {
+    "author_foreign_name": "Михаил Лермонтов",
+    "method": "visual_attribution_crop",
+    "image_sha256": "26cd7b6d4200710ebc8e61d7ce84a1f15041022271692e0a0dd956a71e4bf6ec",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-05-28": {
+    "author_foreign_name": "Herta Müller",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6ee1165bafbb116a671fbbda8eadcc307a3a4a8a9a6d0a1065bfefa4ecaaaab4",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-06-03": {
+    "author_foreign_name": "Erich Maria Remarque",
+    "method": "visual_attribution_crop",
+    "image_sha256": "1a9fe292b0dbbea3a1f952d935df9060a8473417cae147a5f5b587f7b840c1af",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-06-05": {
+    "author_foreign_name": "Michael Joseph Jackson",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3f452efea623490dc3da00f72c8c3afd5a07be49b5b1e7a98d8e8831f80522be",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-06-06": {
+    "author_foreign_name": "Александр Сергеевич Пушкин",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c9745b981346f45792a4d5247f3821e1736a6b81cacf45e64d8bc1ee016d123c",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-06-23": {
+    "author_foreign_name": "Анна Ахматова",
+    "method": "visual_attribution_crop",
+    "image_sha256": "5765829bc793b888d99aa28ed7836ae77e8fd49962c4854299e5a90a78ac3458",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-06-26": {
+    "author_foreign_name": "Clarice Lispector",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ffa15f840c731dd6934dfdb51d44ce5c22a7fbc85dbe121e0941db2dbf8d8194",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-07-06": {
+    "author_foreign_name": "Rupert Everett",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6573c446387a39c5958ee9679318ff76ae1115c34af0b41bd309fe8b2d2f7a4a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-07-27": {
+    "author_foreign_name": "Willy Lipatov",
+    "method": "visual_attribution_crop",
+    "image_sha256": "525963c2650cfe6796c52463a9747b9a19524c697f30baadfeb99f8ea7c4194b",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-08-19": {
+    "author_foreign_name": "В.В.Розанов",
+    "method": "visual_attribution_crop",
+    "image_sha256": "da0fe4f854d8d2603620e510a4a79f7b3256bd834f96a803a793836c98b02db5",
+    "note": "重新对照原图外文署名；保留原图拼写。",
+    "author": "B.B.罗赞诺夫"
+  },
+  "2021-08-22": {
+    "author_foreign_name": "Lee Unkrich & Adrian Molina",
+    "method": "visual_attribution_crop",
+    "image_sha256": "251260fd55bfe2ff2ad6bc99a71ed3b4a589460ea1eac40aaed1cba6f52261e1",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-09-18": {
+    "author_foreign_name": "Luis Cernuda Bidón",
+    "method": "visual_attribution_crop",
+    "image_sha256": "51633577edb9c4cb12408f473f94f616af9f4ba811141542d1a77678b9cb030a",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2021-10-14": {
+    "author_foreign_name": "Ernest Hemingway",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7636b2da56ac98e97875be8cff9271f9f0636dd73bb054274cc24e1a9723153e",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2025-06-13": {
+    "author_foreign_name": "William Butler Yeats",
+    "method": "visual_attribution_crop",
+    "image_sha256": "976bd12d16c5852dfb6b8674e65b354c4b40aa831855bdf292aac28162c92993",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2025-08-24": {
+    "author_foreign_name": "Jorge Luis Borges",
+    "method": "visual_attribution_crop",
+    "image_sha256": "d33917e63029b62781980cb1b36ccb47cd0e5fcff5a24f7a22e7d347cff71961",
+    "note": "重新对照原图外文署名；保留原图拼写。"
+  },
+  "2022-02-28": {
+    "author_foreign_name": "Ива́н Серге́евич Турге́нев",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e52d4d255b94ba10703f1e5230b43b9353c6f7ef49549c86be5bb087f8bf213c",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-03-10": {
+    "author_foreign_name": "Фёдор Достоевский",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6beea516ec52112d30df28a2075a892ec1bae641a65f6d262a93fa2cb893a80c",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-03-31": {
+    "author_foreign_name": "Roberto Bolaño",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7182cb6a0ef3b9c044d5e98d2096a6804ad97069566300133c4daf3943c34ef9",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-06-15": {
+    "author_foreign_name": "Πλάτων",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c40e2f9d806970218064836b8465ea732dc0fc34502b7e0087d7b36e5f5f827c",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-06-19": {
+    "author_foreign_name": "Seamus Heaney",
+    "method": "visual_attribution_crop",
+    "image_sha256": "abbc354864b3f46b3520c9f7c1bd0356d464973a654d458f398b83016fac3f2e",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-07-22": {
+    "author_foreign_name": "Roberto Bolaño",
+    "method": "visual_attribution_crop",
+    "image_sha256": "8c6355b504a743abb4b9528f522d2cf414ea448d1e69fbe90d1ea0ac2915118a",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-07-27": {
+    "author_foreign_name": "Константин Паустовский",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3b717b0c26aa64f029877c441a15a5cad4a6fbc46c3c9e44bf8292cfa00a0e05",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-08-04": {
+    "author_foreign_name": "Фёдор Достоевский",
+    "method": "visual_attribution_crop",
+    "image_sha256": "611d3c99e07a5c4cfe025d1eb3f8fff8ec67c75832cda7355aaca346d4b52985",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-08-06": {
+    "author_foreign_name": "Борис Пастернак",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2f8bf88285964436d176bdee03170252b643df50cea1a30dce7e591397c06b66",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-10-02": {
+    "author_foreign_name": "Анна Ахматова",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f26145b52c5b53edf9b76d3d48ff3f310defa77ee27917cca13b53bec60d88f3",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-10-28": {
+    "author_foreign_name": "Louis Armstrong",
+    "method": "visual_attribution_crop",
+    "image_sha256": "af7c8f519d7f019a0178ed9add819d8a682b4756676eb9d253b9056c4dc66381",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2022-12-02": {
+    "author_foreign_name": "Алексей толстой",
+    "method": "visual_attribution_crop",
+    "image_sha256": "23f50bc66932479b7c532e6a174e897dfd57f38fac80e80c3e257235ffe566d7",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-01-16": {
+    "author_foreign_name": "Михаи́л Шо́лохов",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9711088ea3b9689e9c2bdd605cf081921869b55467917801d52321a0ec5585af",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-01-24": {
+    "author_foreign_name": "Емир Кустурица",
+    "method": "visual_attribution_crop",
+    "image_sha256": "107c1870b4dc668ca9a0c663fdc93ebf4ae035c1bb3dbc513d21fd54c10ca793",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-01-27": {
+    "author_foreign_name": "Александр Солженицын",
+    "method": "visual_attribution_crop",
+    "image_sha256": "29b1bd2aac1b27bd8c1856a40efb7aefc13b771f9aa099dfe68a1ad8086ddcfa",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-06-11": {
+    "author_foreign_name": "Лев Толстой",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a23d26d1f50505ff21c5268777e019c33705380bb83a12031677d8fec3c7f717",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-06-27": {
+    "author_foreign_name": "Carlos Ruiz Zafón",
+    "method": "visual_attribution_crop",
+    "image_sha256": "a1e87ee8770778a4d002376e77a241e8cae3ea6e87e0f5aeacde5ff5ea83a1f7",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-09-19": {
+    "author_foreign_name": "Roberto Bolaño",
+    "method": "visual_attribution_crop",
+    "image_sha256": "40b369c63d5102e31ecdd48e6515d07978c0060448401e2135568f9378c41c6c",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-09-30": {
+    "author_foreign_name": "Алекса́ндр Пу́шкин",
+    "method": "visual_attribution_crop",
+    "image_sha256": "0be2bd01a351a8dc2ef44326361a71358576dcb0481277214585c4dda3020252",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2024-10-07": {
+    "author_foreign_name": "Алекса́ндр Пу́шкин",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4808878b5f68ad2de7badfb1876a240088240e308c770bee6394e98dae700056",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-01-01": {
+    "author_foreign_name": "Miranda July",
+    "method": "visual_attribution_crop",
+    "image_sha256": "2d2ab52803a5bc71e0044b71be09e5433815dded6203cd0a94d4603ef3cf85a9",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-01-09": {
+    "author_foreign_name": "Simone de Beauvoir",
+    "method": "visual_attribution_crop",
+    "image_sha256": "aa02370a669dfe2a0b6bc586a05907ef887da75b6ddea31c035d8e641e441c11",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-01-17": {
+    "author_foreign_name": "Olga Tokarczuk",
+    "method": "visual_attribution_crop",
+    "image_sha256": "c5eeec133505fa24431523ce8cf211e9a6b62bbb14fc41fe40081a2ec3ec8f93",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-01-31": {
+    "author_foreign_name": "Hilary Mantel",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3a94060ac326421764506676f4f34670e50b1f787372ba9f5934d7a1ca3d18c1",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-02-03": {
+    "author_foreign_name": "Alejandro González Iñárritu",
+    "method": "visual_attribution_crop",
+    "image_sha256": "dc127f9fd4ef632c5db1b0199231af159548c3add5e2e36e1bb83116f08b5cc0",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-02-04": {
+    "author_foreign_name": "Sally Rooney",
+    "method": "visual_attribution_crop",
+    "image_sha256": "361954c29fc3e7d1156d166aa795c6731d2ba3ce3ef10bf94ec0438b45e2d7b3",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-02-17": {
+    "author_foreign_name": "Alistair MacLeod",
+    "method": "visual_attribution_crop",
+    "image_sha256": "25e0091a59d3d0f34ce6a444523c3a52d20a37f3db585b5ae173f3c23a5294d9",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-03-12": {
+    "author_foreign_name": "Herta Müller",
+    "method": "visual_attribution_crop",
+    "image_sha256": "6e1f9e94bb63307028d96260a7a8e689809355537a0f14fa397756065751723e",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-03-13": {
+    "author_foreign_name": "Ron Rash",
+    "method": "visual_attribution_crop",
+    "image_sha256": "b891309002f715f5017c47c45fab9282bb5e5f2fdeb0c1f2b4c5aacfe8e67e3b",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-03-19": {
+    "author_foreign_name": "García Márquez",
+    "method": "visual_attribution_crop",
+    "image_sha256": "f8d5c88d5b639aee1c65eb2a746f3b514fffe2bffa9a77a52f9c4bfa7fea19ce",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-05-22": {
+    "author_foreign_name": "Arthur Conan Doyle",
+    "method": "visual_attribution_crop",
+    "image_sha256": "9b112e9d145e8013e42e623f8a80faa357804844dc6bab996bec83524750e1fe",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-06-02": {
+    "author_foreign_name": "Thomas Hardy",
+    "method": "visual_attribution_crop",
+    "image_sha256": "3df469d01fb027e2bac38e466aadfd63d0a56f279620269425f892412b4c94e3",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-06-04": {
+    "author_foreign_name": "Abdulrazak Gumah",
+    "method": "visual_attribution_crop",
+    "image_sha256": "4d60063c5ecc42efd52dbf58f6b965c9904d20e8e114fcbb19dede6319d1f2be",
+    "note": "原图低分辨率下 rn 与 m 难分，现有 Gumah 暂保留并标记待核。",
+    "source_name_suspect": true
+  },
+  "2025-06-24": {
+    "author_foreign_name": "Octavio Paz",
+    "method": "visual_attribution_crop",
+    "image_sha256": "e7c3ceb7a776d9d0e9cf738407c584c6fd684072a20dfbaf6390eeeaae1e0d9b",
+    "note": "对照原图外文署名；恢复原语种字符，排版造成的词内空格已合并。"
+  },
+  "2025-10-05": {
+    "author_foreign_name": "Flannery O'Connor",
+    "method": "visual_attribution_crop",
+    "image_sha256": "7195edd9c80fd6206ef9506822b291a26dd45c0fe9c93b31ca277e72acb1acc0",
+    "note": "对照原图署名区核对。"
+  },
+  "2025-12-19": {
+    "author_foreign_name": "Arthur C.Clarke",
+    "method": "visual_attribution_crop",
+    "image_sha256": "83423503f625493ea04b96303f1cf9a7296020befa3710b5b234ac22c3170793",
+    "note": "对照原图署名区核对。",
+    "author": "阿瑟·C·克拉克"
+  },
+  "2025-12-20": {
+    "author_foreign_name": "Roberto Bolaño",
+    "method": "visual_attribution_crop",
+    "image_sha256": "ee3f0ff45d3a41b279c7f83d168c67cdc94c36e27f5192d3f1148bc4a39db293",
+    "note": "对照原图署名区核对。"
+  }
+}

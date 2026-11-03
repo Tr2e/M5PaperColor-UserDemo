@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output"
 E = lambda value: html.escape(str(value or "—"), quote=True)
 FLAG_NAMES = {
+    "source_name_conflict": "原图中外文署名冲突", "source_name_suspect": "原图署名疑误／待确认",
+    "author_not_credited_in_reviewed_region": "署名区未列作者",
     "title_unresolved": "标题未识别", "multiple_title_candidates": "多个标题候选",
     "author_unresolved": "作者未识别", "source_not_detected": "出处未检出",
     "low_ocr_confidence": "OCR低置信度",
@@ -36,7 +38,7 @@ body{max-width:1180px;margin:44px auto;padding:0 24px;color:#202020;background:#
 h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size:20px;margin-top:34px}p{max-width:920px}a{color:#175e86}table{width:100%;border-collapse:collapse;margin:18px 0 30px;font-size:14px;table-layout:fixed}th,td{padding:10px 11px;vertical-align:top;text-align:left;border-bottom:1px solid #ddd;overflow-wrap:anywhere}th{background:#f1f3f4;color:#111}tr:nth-child(even){background:#fafafa}.date{width:104px}.title{width:145px}.author{width:180px}.state{width:140px}.muted{color:#626262;font-size:13px}.missing{color:#666}.nav{display:flex;gap:18px;flex-wrap:wrap}input{font:inherit;padding:8px 12px;width:min(460px,90%);border:1px solid #999}button{font:inherit;padding:8px 12px;margin-left:8px}caption{text-align:left;font-weight:600;padding:8px 0}.year{scroll-margin-top:20px}.month{scroll-margin-top:20px}@media print{body{margin:0;padding:0;font-size:10pt}h2{break-before:page}.controls,.nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}a{color:#222;text-decoration:none}table{font-size:8pt}}
 </style><main><h1>单向历 2015 至 2025 年历史内容索引</h1>"""]
     out.append(f"<p>按年分析版式、按月整理的历史元数据索引。覆盖 <strong>{len(rows):,}</strong> 个日期，其中 <strong>{len(indexed):,}</strong> 个标准地址返回可识别图片，<strong>{missing}</strong> 个返回 404 或 410。查询日期为 2026 年 11 月 3 日。</p>")
-    out.append("<p>本索引收录日期、宜忌短标题、作者、出处和官方图片链接，并对所有可读日期补充内容摘录（excerpt）字段。摘录为机器提取、尚未逐条校对，不保留完整引文全文。字段为机器提取，尚未逐条人工校对；空值不等同于原图没有该信息。日期来自请求地址，图片内日期尚未逐张确认。链接失效只说明测试的标准地址不可读取。</p>")
+    out.append("<p>本索引收录日期、宜忌短标题、作者、出处、内容摘录和官方图片链接。内容摘录及职业沿用现有统计表，包括用户补充的内容。本次作者核对保留这些字段原值；作者修正及来源疑误见<a href=\"作者姓名核对清单.html\">作者姓名核对清单</a>。署名核对不代表选句、出处或日期均已校对；空值不等同于原图没有该信息。</p>")
     conflicts=[r for r in rows if r.get('date_verification')=='visually_checked_mismatch']
     out.append(f'<p><strong>已确认 {len(conflicts)} 条日期冲突。</strong>这些地址返回了其他日期的图片，索引保留服务器实际返回的书目字段并标记，不能视为目标日期的内容。</p><details><summary>查看日期冲突清单</summary><ul>'+''.join(f'<li>{E(r["date"])} 地址 → 图内日期 {E(r["printed_date"])}</li>' for r in conflicts)+'</ul></details>')
     out.append('<nav class="nav">' + ' '.join(f'<a href="#year-{r["year"]}">{r["year"]}</a>' for r in reviews) + '</nav>')
@@ -61,6 +63,9 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
                     state = ('样本字段已核对；'+flags).rstrip('；') if row.get('review_status') == 'sample_metadata_verified' else flags or '机器提取 未逐条校对'
                     if row.get('date_verification')=='visually_checked_mismatch':
                         state += '；图内日期 '+row['printed_date']
+                    if row.get('author_name_audit'):
+                        checked='、'.join('中文／主署名' if k=='author' else '外文署名' for k in row['author_name_audit']['fields'])
+                        state += '；已对照原图核对'+checked
                 elif status == 'missing_at_tested_url':
                     state = f'标准地址 HTTP {row["http_status"]}'
                 else:
@@ -80,7 +85,7 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
                 out.append(f'<tr class="record" data-search="{E(search.lower())}"><td><a href="{E(row["url"])}" target="_blank" rel="noopener noreferrer">{E(row["date"])}</a></td><td>{E(title_display)}</td><td>{author_display}</td><td>{E(row.get("source"))}</td><td>{E(row.get("excerpt"))}</td><td class="muted">{E(state)}</td></tr>')
             out.append('</tbody></table></section>')
         out.append('</section>')
-    out.append('''<h2>来源及复核方法</h2><p>数据来源为单向空间公开图片服务器。每条日期链接指向其标准 JPG 地址；索引保存请求状态、图像哈希和检查时间，可与按月 JSONL 数据核对。原图仅用于临时识别，未纳入仓库。</p><p>要分析选材或作者分布，应先逐条核对所用样本的作者与出处。宜忌比例只能描述标题形式，无法单独证明情绪倾向；本索引不包含选句，因此不能据此完成全文语义分析。</p></main><script>
+    out.append('''<h2>来源及复核方法</h2><p>数据来源为单向空间公开图片服务器。每条日期链接指向其标准 JPG 地址；索引保存请求状态、图像哈希和检查时间，可与按月 JSONL 数据核对。原图仅用于临时识别，未纳入仓库。</p><p>本轮全量扫描已有作者字段，并对可疑项核对原图。未把译名变体强行合并，也未把原图自身的署名冲突改写成推断答案。作者分布仍需区分同名、译名及创作角色；内容摘录与出处不属于本轮校对范围。</p></main><script>
 const input=document.querySelector('#search'),records=[...document.querySelectorAll('.record')];
 function filter(){let q=input.value.trim().toLowerCase(),n=0;for(const r of records){r.hidden=q&&!r.dataset.search.includes(q);if(!r.hidden)n++}for(const m of document.querySelectorAll('.month'))m.hidden=![...m.querySelectorAll('.record')].some(r=>!r.hidden);for(const y of document.querySelectorAll('.year'))y.hidden=![...y.querySelectorAll('.month')].some(m=>!m.hidden);document.querySelector('#hits').textContent=`显示 ${n.toLocaleString()} 条日期记录`;}
 input.addEventListener('input',filter);document.querySelector('#clear').onclick=()=>{input.value='';filter();};filter();
