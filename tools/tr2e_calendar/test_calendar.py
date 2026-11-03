@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import patch
 from calendar_data import Calendar
 from planner import event_for,load_inputs,plan_year,save_plan
-from render import layout,render,wrap
+from render import layout,render,wrap,face
 
 ROOT=Path(__file__).resolve().parent
 
@@ -90,5 +90,22 @@ class CalendarTests(unittest.TestCase):
                 self.assertEqual(next(t['font_px'] for t in result['text'] if t['text']=='Tr2e'),14)
                 image=Image.open(target);self.assertEqual(image.size,(400,600));self.assertEqual(set(image.convert('L').tobytes()),{0,255})
                 self.assertEqual(target.with_suffix('.bin').stat().st_size,30000)
+
+    def test_header_spacing_and_preserved_author(self):
+        with tempfile.TemporaryDirectory() as directory:
+            for date in ('2020-03-19','2020-11-11'):
+                record=self.by_id[date]
+                result=render(self.calendar.day(date),record,Path(directory)/(date+'.png'))
+                date_text,weekday=result['text'][:2]
+                self.assertAlmostEqual(weekday['x']-date_text['x']-date_text['width'],10,places=1)
+                self.assertEqual(weekday['font_px'],14)
+                identity=' · '.join(filter(None,['、'.join(record['roles']),record['author']]))
+                author=next(t for t in result['text'] if t['text']==identity)
+                self.assertEqual((author['style'],author['font_px'],author['x']),('body',13,36))
+                if record['foreign_name']:
+                    foreign=next(t for t in result['text'] if t['text']==record['foreign_name'])
+                    self.assertEqual((foreign['style'],foreign['font_px']),('body',11))
+            # A style label alone must not silently fall back to the old serif.
+            for c in '双城记':self.assertIn('TR2ESans',str(face(c,'sans',12)[1].path))
 
 if __name__=='__main__':unittest.main()

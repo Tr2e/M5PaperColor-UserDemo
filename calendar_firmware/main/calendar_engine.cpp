@@ -105,14 +105,15 @@ bool CalendarPack::render(Date date,uint8_t* bits,size_t size) const {
     auto header=[&](int id){text(id,x,49,31,bits);x+=textWidth(id);};
     if(date.month>=10) { header(date.month/10); }
     header(date.month%10);header(10);header(date.day/10);header(date.day%10);
-    text(22+(ordinal(date)-1)%7,112*64,50,13,bits);text(e.label,112*64,70,13,bits);
+    const int meta_x=x+10*64;
+    text(22+(ordinal(date)-1)%7,meta_x,50,14,bits);text(e.label,meta_x,70,14,bits);
     int year_ids[]={11+date.year/1000,11+(date.year/100)%10,11+(date.year/10)%10,11+date.year%10,21};
     int w=0;for(int id:year_ids) w+=textWidth(id);x=379*64-w;
-    for(int id:year_ids) {text(id,x,50,13,bits);x+=textWidth(id);}
+    for(int id:year_ids) {text(id,x,50,14,bits);x+=textWidth(id);}
     int month=29+(e.lunar&15)-1,day=41+((e.lunar>>4)&31)-1;
     w=textWidth(month)+textWidth(day)+((e.lunar&512)?textWidth(71):0);x=379*64-w;
-    if(e.lunar&512){text(71,x,70,13,bits);x+=textWidth(71);}
-    text(month,x,70,13,bits);x+=textWidth(month);text(day,x,70,13,bits);
+    if(e.lunar&512){text(71,x,70,14,bits);x+=textWidth(71);}
+    text(month,x,70,14,bits);x+=textWidth(month);text(day,x,70,14,bits);
     const auto* record=data_+u32(data_+field(7)+e.record*4)+4;
     uint16_t digit_y=u16(record),scale=u16(record+2);int count=date.day>=10?2:1;
     uint16_t digits[2]={u16(data_+field(11)+(scale*10+(date.day>=10?date.day/10:date.day))*2),u16(data_+field(11)+(scale*10+date.day%10)*2)};
@@ -139,6 +140,16 @@ uint32_t CalendarPack::planHash(int year) const {
     return value;
 }
 
+Boot classifyBoot(Reset reset,bool physical_button,bool rtc_signal,bool timer_wake) {
+    // PMIC wake flags can survive an ESP crash: never let stale flags turn
+    // watchdog/brownout/software recovery into repeated network attempts.
+    if(reset==Reset::Recovery) return Boot::Recovery;
+    // A real button press wins if it coincides with the midnight alarm.
+    if(physical_button) return Boot::Manual;
+    if(timer_wake || (reset==Reset::PowerOn && rtc_signal)) return Boot::Rtc;
+    if(reset==Reset::PowerOn || reset==Reset::External) return Boot::Manual;
+    return Boot::Recovery;
+}
 bool shouldSync(Boot boot,uint32_t today,const SyncState& state) {
     return boot==Boot::Manual || (boot==Boot::Rtc && today && (!state.next_attempt_day || today>=state.next_attempt_day));
 }

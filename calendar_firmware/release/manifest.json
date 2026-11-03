@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "target": "M5Stack PaperColor ESP32-S3 / 400x600",
   "offsets": {
     "bootloader.bin": "0x0",
@@ -19,20 +19,20 @@
       "sha256": "12fddf556d016edfe5b0d82d75e2c81c1a11bbfcd08458a241889052407b3739"
     },
     "tr2e_calendar.bin": {
-      "bytes": 3704656,
-      "sha256": "0c8f10699b06debd21187e3fb1a99a7af50b544549ccb0df9e3ff6c8949d11d7"
+      "bytes": 3703712,
+      "sha256": "f5d95ce7f72f77071e8a8ec24a8c322b24deb4a5593ea3ebad28908f44547e3f"
     },
     "README.md": {
-      "bytes": 6945,
-      "sha256": "e9830fcf575f9f746b657625330e90b80bb6dac54212eb9e36596567c7429260"
+      "bytes": 7855,
+      "sha256": "ce1d8f60dd98b34f259158fd5541ed432117f6c776e73bad03acb8ad183b29ba"
     },
     "verification.json": {
       "bytes": 7528,
-      "sha256": "708adf248d011e7812e6187574720aa56dd215208fc3bd01b2a9f11f42d28873"
+      "sha256": "e8362e5a3e635bd1c6ee1e34eb55a7e3b2e1c10810fef593a2ae6974432adcd4"
     },
     "build-verification.json": {
-      "bytes": 417,
-      "sha256": "b958d73f08c46e5d3b9a9028e760d9d5523a1dd9885e0ddf2411660932ce4242"
+      "bytes": 556,
+      "sha256": "5cc6511a0f4f1c76f5f825575009d6fa1efb663a211349e2ad668ddb012b5a6f"
     },
     "licenses/NotoSans-OFL.txt": {
       "bytes": 4301,
@@ -49,12 +49,12 @@
   },
   "source_hashes": {
     "network.cpp": "030d1d9b65de3fd3f9517ad58b8da144784323933373c002028bca50f324c67d",
-    "calendar_engine.cpp": "5669c14cfd88ea013c9465cc2d02925026bb07cbdaba8c704659de3296a0bd36",
-    "main.cpp": "b99f5045f13b2333d1acd147a63a7173efded9c09195831d32fcc075b2e8445b"
+    "calendar_engine.cpp": "d533031baac69738a99746c22dbc317e97f4a4a0e19d8a3aac84cabfa9f1b43d",
+    "main.cpp": "7c12506e1d1d6dad57870c9c23deb255ae65ee0cf14bd3032fd02305636c1a7f"
   },
   "package": {
-    "file": "tr2e-calendar-0.1.0.zip",
-    "bytes": 2359419,
-    "sha256": "f3bcaa38fa977b8d8e2e8b3e0e690b487a77ac03521e6a5848a3ce2e8cab4137"
+    "file": "tr2e-calendar-0.1.1.zip",
+    "bytes": 2359355,
+    "sha256": "ea535fb2d30bfc2996ee44e2953437fe0c1cd300020d125b60c078ada93e1f67"
   }
 }

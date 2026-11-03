@@ -47,12 +47,14 @@ def main():
     common.update(json.loads((ROOT/'personal_rules.json').read_text()).get('signature','TR2E'))
     calendar_meta=json.loads((assets/'calendar.json').read_text())
     common.update(''.join(calendar_meta['months']+calendar_meta['days']+calendar_meta['terms']))
-    chars=set(common);heading_chars=set(common)
+    chars=set(common);heading_chars=set(common);metadata_chars=set(common)
     for p in (REPO/'research/owspace-calendar/months').glob('*.jsonl'):
         for row in map(json.loads,p.read_text().splitlines()):
             for key in ('title','excerpt','author','source','author_foreign_name'):chars.update(row.get(key) or '')
             heading_chars.update(row.get('title') or '')
             chars.update(''.join(row.get('author_roles',[])))
+            for key in ('author','source','author_foreign_name'):metadata_chars.update(row.get(key) or '')
+            metadata_chars.update(''.join(row.get('author_roles',[])))
     chars.update(chr(c) for c in range(32,127))
     font_specs=[('NotoSerifCJKsc-Regular.otf','TR2ESerif-Regular.otf','TR2E Serif','Regular'),('NotoSerifCJKsc-Bold.otf','TR2ESerif-Bold.otf','TR2E Serif','Bold'),('NotoSansCJKsc-Regular.otf','TR2ESans-Regular.otf','TR2E Sans','Regular'),('Tinos-Regular.ttf','TR2ELatin-Regular.ttf','TR2E Latin','Regular')]
     font_meta=[]
@@ -60,7 +62,7 @@ def main():
         src=args.cache/'fonts'/src_name
         if not src.exists() and src_name.startswith('NotoSans'):src=Path('/tmp/owspace-research/fonts')/src_name
         font=TTFont(src);options=subset.Options();options.name_IDs=['*'];options.name_legacy=True;options.name_languages=['*']
-        needed={c for c in chars if ord(c)<0x3000} if 'Latin' in dest_name else common if 'Sans' in dest_name else heading_chars if style=='Bold' else chars
+        needed={c for c in chars if ord(c)<0x3000} if 'Latin' in dest_name else metadata_chars if 'Sans' in dest_name else heading_chars if style=='Bold' else chars
         sub=subset.Subsetter(options=options);sub.populate(text=''.join(sorted(needed)));sub.subset(font)
         # Subset fonts receive project-specific names; upstream licenses remain intact.
         for rec in font['name'].names:

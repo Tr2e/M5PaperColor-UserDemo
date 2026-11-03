@@ -27,6 +27,8 @@ private:
 };
 
 enum class Boot { Manual, Rtc, Recovery };
+enum class Reset { PowerOn, External, DeepSleep, Recovery };
+Boot classifyBoot(Reset reset, bool physical_button, bool rtc_signal, bool timer_wake);
 struct SyncState { uint32_t next_attempt_day = 0, last_success_day = 0; };
 bool shouldSync(Boot boot, uint32_t today, const SyncState& state);
 void recordAttempt(SyncState& state, uint32_t today, bool success);

@@ -3,7 +3,7 @@ import hashlib,json,zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
-VERSION='0.1.0'
+VERSION='0.1.1'
 
 def main():
     files={

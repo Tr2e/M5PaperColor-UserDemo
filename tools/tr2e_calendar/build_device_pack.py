@@ -56,13 +56,13 @@ def build(first=2026,last=2099,cache=None):
         for i,text in enumerate(s['title_lines']):lines.append(line(text,(400-width(text,'title',s['title_size']))/2,s['title_y']+38*i,'title',s['title_size']))
         for i,text in enumerate(s['quote_lines']):lines.append(line(text,36,s['quote_y']+i*s['quote_leading'],'body',s['quote_size']))
         y=s['footer_top']+9
-        for text,size in s['footer']:lines.append(line(text,36,y,'body',size));y+=size+4
+        for text,size,style in s['footer']:lines.append(line(text,36,y,style,size));y+=size+4
         signature=rules['signature'];lines.append(line(signature,364-width(signature,'body',14),552,'body',14))
         bodies.append(struct.pack('<IHHHHH',dt.date.fromisoformat(r['source_date']).toordinal(),s['digit_y'],HEIGHTS.index(s['digit_h']),s['quote_y']-15,s['footer_top'],len(lines))+b''.join(lines))
     cal=Calendar();labels=sorted({d['display_label'] for p in history for d in p['days']})
-    texts=[(c,'title',31) for c in '0123456789.']+[(c,'sans',13) for c in '0123456789年']
-    texts += [('星期'+c,'sans',13) for c in '一二三四五六日']
-    texts += [(s,'sans',13) for s in cal.meta['months']+cal.meta['days']+['闰']+labels]
+    texts=[(c,'title',31) for c in '0123456789.']+[(c,'sans',14) for c in '0123456789年']
+    texts += [('星期'+c,'sans',14) for c in '一二三四五六日']
+    texts += [(s,'sans',14) for s in cal.meta['months']+cal.meta['days']+['闰']+labels]
     strings=[]
     for text,style,size in texts:
         codes=[glyph(c,style,size) for c in text];strings.append(struct.pack('<H',len(codes))+struct.pack('<'+'H'*len(codes),*codes))

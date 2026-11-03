@@ -181,11 +181,15 @@ extern "C" void app_main() {
     power.pinMode(M5PM1_GPIO_NUM_3,OUTPUT);power.digitalWrite(M5PM1_GPIO_NUM_3,LOW);
     power.pinMode(M5PM1_GPIO_NUM_4,OUTPUT);power.digitalWrite(M5PM1_GPIO_NUM_4,LOW);
     power.setLdoEnable(false);
-    uint8_t source=0;power.getWakeSource(&source,M5PM1_CLEAN_NONE);
+    uint8_t source=0;power.getWakeSource(&source,M5PM1_CLEAN_ALL);
     auto reason=esp_reset_reason();auto sleep_cause=esp_sleep_get_wakeup_cause();
-    tr2e::Boot boot=tr2e::Boot::Recovery;
-    if(sleep_cause==ESP_SLEEP_WAKEUP_TIMER || (reason==ESP_RST_POWERON && (source&M5PM1_WAKE_SRC_EXT_WAKE))) boot=tr2e::Boot::Rtc;
-    else if(reason==ESP_RST_POWERON || reason==ESP_RST_EXT) boot=tr2e::Boot::Manual;
+    auto reset=reason==ESP_RST_POWERON?tr2e::Reset::PowerOn:
+        reason==ESP_RST_EXT?tr2e::Reset::External:
+        reason==ESP_RST_DEEPSLEEP?tr2e::Reset::DeepSleep:tr2e::Reset::Recovery;
+    // The top power/reset button is handled by M5PM1, not a polled ESP GPIO.
+    // One press powers on/restarts the board, including while ESP is asleep.
+    auto boot=tr2e::classifyBoot(reset,source&(M5PM1_WAKE_SRC_PWRBTN|M5PM1_WAKE_SRC_RSTBTN),
+        source&M5PM1_WAKE_SRC_EXT_WAKE,sleep_cause==ESP_SLEEP_WAKEUP_TIMER);
     const bool manual=boot==tr2e::Boot::Manual;if(manual) power_hint();
     ESP_LOGI(TAG,"Calendar boot kind=%u, wake-source=%u",unsigned(boot),source);
     uint16_t battery_mv=0;

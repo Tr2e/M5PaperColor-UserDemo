@@ -66,9 +66,10 @@ def draw_text(draw,text,x,y,style,size,audit):
 def layout(record):
     footer=[]
     identity=' · '.join(filter(None,['、'.join(record['roles']),record['author']]))
-    for text,size in ((identity,13),(record['foreign_name'],11),('《'+record['source']+'》' if record['source'] else '',12)):
-        if text:footer.extend((line,size) for line in wrap(text,'body',size,256))
-    footer_height=sum(size+4 for _,size in footer)
+    # Author/occupation and foreign name retain their approved typography.
+    for text,size,style in ((identity,13,'body'),(record['foreign_name'],11,'body'),('《'+record['source']+'》' if record['source'] else '',12,'sans')):
+        if text:footer.extend((line,size,style) for line in wrap(text,style,size,256))
+    footer_height=sum(size+4 for _,size,_ in footer)
     footer_top=568-footer_height-9
     title_size=30
     title_lines=wrap(record['title'],'title',title_size,324)
@@ -93,11 +94,14 @@ def render(day,record,target,signature=None):
     draw.line((250,50,250,80),fill=0,width=1)
     md=f'{int(day["date"][5:7])}.{int(day["date"][8:]):02}'
     draw_text(draw,md,20,49,'title',31,audit)
-    draw_text(draw,'星期'+'一二三四五六日'[day['weekday']],112,50,'sans',13,audit)
+    # Keep the weekday attached to the actual month/day width, including
+    # two-digit months. A fixed column leaves short dates visually detached.
+    meta_x=20+width(md,'title',31)+10
+    draw_text(draw,'星期'+'一二三四五六日'[day['weekday']],meta_x,50,'sans',14,audit)
     label=(day.get('solar_term') or '') if day.get('personal') else day.get('display_label',day.get('event_label')) or day.get('solar_term') or ''
-    if label:draw_text(draw,label,112,70,'sans',13,audit)
+    if label:draw_text(draw,label,meta_x,70,'sans',14,audit)
     for text,y in ((day['date'][:4]+'年',50),(day['lunar_label'],70)):
-        draw_text(draw,text,379-width(text,'sans',13),y,'sans',13,audit)
+        draw_text(draw,text,379-width(text,'sans',14),y,'sans',14,audit)
     digits=[]
     for char in str(int(day['date'][8:])):
         glyph=Image.open(ASSETS/'digits'/f'{char}.png').convert('L')
@@ -111,7 +115,7 @@ def render(day,record,target,signature=None):
     for i,line in enumerate(spec['quote_lines']):draw_text(draw,line,36,spec['quote_y']+i*spec['quote_leading'],'body',spec['quote_size'],audit)
     draw.line((36,spec['footer_top'],363,spec['footer_top']),fill=0,width=1)
     y=spec['footer_top']+9
-    for line,size in spec['footer']:draw_text(draw,line,36,y,'body',size,audit);y+=size+4
+    for line,size,style in spec['footer']:draw_text(draw,line,36,y,style,size,audit);y+=size+4
     draw_text(draw,signature,364-width(signature,'body',14),552,'body',14,audit)
     for item in audit:
         left,top,right,bottom=item['ink_bounds']
