@@ -67,6 +67,7 @@ def parse_metadata(ocr):
     rows = [{"text": " ".join(r["text"] for r in sorted(g, key=lambda r: r["x"])),
              "confidence": min(r["confidence"] for r in g)} for g in groups]
     people, roles, confidence = [], [], []
+    foreign_names = []
     for row in rows:
         text = SOURCE_RE.sub("", row["text"])
         text = re.sub(r"[單单]向[历曆曆]|OWSPACE", "", text, flags=re.I)
@@ -76,11 +77,25 @@ def parse_metadata(ocr):
             continue
         text = clean(text)
         confidence.append(row["confidence"])
+        # A purely-Latin attribution row carries the author's foreign spelling
+        # (e.g. "Adonis", "Emir Kusturica"). Capture it before role/name split.
+        if re.fullmatch(r"[A-Za-z][A-Za-z\s.'’\-·]+", text):
+            fn = clean(text)
+            if fn and len(fn) <= 40 and not fn.lower().startswith("owspace"):
+                foreign_names.append(fn)
+            continue
         has_role = bool(ROLE_RE.search(text))
         roles.extend(ROLE_RE.findall(text))
         text = ROLE_RE.sub("", text)
         has_chinese_name = bool(re.search(r"[\u3400-\u9fff]", text))
         if has_chinese_name:
+            # A Chinese name may be followed by its foreign spelling on the same
+            # line ("辛波斯卡 Wistana Szymborska"). Keep the foreign part.
+            m = re.search(r"([A-Za-z][A-Za-z\s.'’\-·]{2,})\s*$", text)
+            if m:
+                fn = clean(m.group(1))
+                if fn and len(fn) <= 40:
+                    foreign_names.append(fn)
             text = re.sub(r"[A-Za-z][A-Za-z\s.'’\-]*", "", text)
         elif not has_role:
             continue
@@ -95,6 +110,7 @@ def parse_metadata(ocr):
             if normalized:
                 people.append(normalized)
     people = list(dict.fromkeys(people))
+    foreign_names = list(dict.fromkeys(foreign_names))
     if not people:
         flags.append("author_unresolved")
     if not sources:
@@ -138,6 +154,7 @@ def parse_metadata(ocr):
         "source": "；".join(dict.fromkeys(sources)) or None,
         "author": "；".join(people) or None,
         "author_roles": list(dict.fromkeys(roles)),
+        "author_foreign_name": "；".join(foreign_names) or None,
         "excerpt": excerpt,
         "ocr_confidence_min": min(confidence) if confidence else None,
         "review_flags": list(dict.fromkeys(flags)),

@@ -11,7 +11,7 @@
 - `source_not_detected` 包含原图未注明出处和 OCR 漏识别两种可能。
 - 所有自动识别记录标为未人工核验。置信度是 OCR 引擎的启发式分数，不能当作准确率。
 - 字段为空时不猜测补全；图像 SHA-256 可用于检查重复资源，但不存储图像。
-- 临时图片用于本地 OCR，处理结束立即删除。引文正文不序列化，不保存 OCR 全文。内容摘录字段 `excerpt` 覆盖所有可读日期，机器生成、未逐条校对，低置信度以 `excerpt_ocr_confidence_min` 标记复核。
+- 临时图片用于本地 OCR，处理结束立即删除。引文正文不序列化，不保存 OCR 全文。内容摘录字段 `excerpt` 覆盖所有可读日期，外文名 `author_foreign_name` 与职业 `author_roles` 从署名区域提取，均机器生成、未逐条校对，低置信度以 `ocr_confidence_min` / `low_ocr_confidence` 标记复核。
 - `sample_metadata_verified` 表示该日期的标题、作者、出处已对照原图核对；人工修正前的值保留在 `metadata_edits` 和 Git 历史中。
 - 2023 年的 `reader_question` 页面没有宜忌标题，使用 `title_kind: 问答` 和空标题，不将其计作标题漏识别。
 - 标准地址虽以 `.jpg` 结尾，也可能返回 PNG；实际格式由文件签名判断。
@@ -41,6 +41,8 @@ python3 research/owspace-calendar/tidy_roles.py 2015 --commit
 python3 research/owspace-calendar/review_year.py 2015
 # 回填所有可读日期的内容摘录（按月提交）
 python3 research/owspace-calendar/extract_excerpts.py --commit
+# 回填外文名 author_foreign_name（按月提交）
+python3 research/owspace-calendar/extract_names.py --commit
 ```
 
 每次只处理一年。先保存该年 `years/YYYY-layout.json` 版式分析，再逐月提取，最后执行全年检查；前一年覆盖检查通过后才能开始下一年。默认 3 个工作线程，所有网络请求合计最多每秒 4 次；临时网络错误最多重试 3 次。脚本可中断续跑。`--commit` 只允许在 `codex/owspace-calendar-index-2015-2025` 分支运行，只提交对应月份的数据文件。

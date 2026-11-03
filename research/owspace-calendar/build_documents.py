@@ -65,9 +65,19 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
                     state = f'标准地址 HTTP {row["http_status"]}'
                 else:
                     state = '处理异常 ' + status
-                search = ' '.join(str(row.get(k) or '') for k in ['date','title','author','source','excerpt'])
+                search = ' '.join(str(row.get(k) or '') for k in ['date','title','author','author_foreign_name','author_roles','source','excerpt'])
                 title_display = row.get('title') or ('问答页（无宜忌）' if row.get('layout_variant')=='reader_question' else None)
-                out.append(f'<tr class="record" data-search="{E(search.lower())}"><td><a href="{E(row["url"])}" target="_blank" rel="noopener noreferrer">{E(row["date"])}</a></td><td>{E(title_display)}</td><td>{E(row.get("author"))}</td><td>{E(row.get("source"))}</td><td>{E(row.get("excerpt"))}</td><td class="muted">{E(state)}</td></tr>')
+                author_display = row.get('author')
+                roles = '、'.join(row.get('author_roles') or [])
+                fn = row.get('author_foreign_name')
+                if roles or fn:
+                    parts = []
+                    if roles: parts.append(E(roles))
+                    if fn: parts.append(E(fn))
+                    author_display = (E(author_display or '') + '<br><span class="muted">' + ' · '.join(parts) + '</span>')
+                else:
+                    author_display = E(author_display)
+                out.append(f'<tr class="record" data-search="{E(search.lower())}"><td><a href="{E(row["url"])}" target="_blank" rel="noopener noreferrer">{E(row["date"])}</a></td><td>{E(title_display)}</td><td>{author_display}</td><td>{E(row.get("source"))}</td><td>{E(row.get("excerpt"))}</td><td class="muted">{E(state)}</td></tr>')
             out.append('</tbody></table></section>')
         out.append('</section>')
     out.append('''<h2>来源及复核方法</h2><p>数据来源为单向空间公开图片服务器。每条日期链接指向其标准 JPG 地址；索引保存请求状态、图像哈希和检查时间，可与按月 JSONL 数据核对。原图仅用于临时识别，未纳入仓库。</p><p>要分析选材或作者分布，应先逐条核对所用样本的作者与出处。宜忌比例只能描述标题形式，无法单独证明情绪倾向；本索引不包含选句，因此不能据此完成全文语义分析。</p></main><script>
