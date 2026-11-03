@@ -45,23 +45,33 @@ def parse_metadata(ocr):
         flags.append("multiple_title_candidates")
     sources = list(dict.fromkeys(clean(m.group(1)) for line in ocr.get("sources", [])
                                  for m in SOURCE_RE.finditer(line["text"])))
-    rows = sorted(ocr.get("attribution", []), key=lambda x: (round(x["y"] / .012), x["x"]))
+    rows = sorted(ocr.get("attribution", []), key=lambda x: (x["y"], x["x"]))
+    groups = []
+    for row in rows:
+        if groups and abs(groups[-1][0]["y"] - row["y"]) < .014:
+            groups[-1].append(row)
+        else:
+            groups.append([row])
+    rows = [{"text": " ".join(r["text"] for r in sorted(g, key=lambda r: r["x"])),
+             "confidence": min(r["confidence"] for r in g)} for g in groups]
     people, roles, confidence = [], [], []
     for row in rows:
         text = clean(SOURCE_RE.sub("", row["text"]))
-        # Only role-bearing attribution lines may supply author names. Uncertain
-        # free text is discarded rather than saved as a potential quotation.
-        if not ROLE_RE.search(text):
+        text = re.sub(r"[單单]向[历曆曆]|OWSPACE", "", text, flags=re.I)
+        # The calibrated footer contains short bibliographic lines. Reject any
+        # sentence-like or long text instead of serializing possible body text.
+        if re.search(r"[。！？!?]", text):
             continue
         confidence.append(row["confidence"])
         roles.extend(ROLE_RE.findall(text))
         text = ROLE_RE.sub("", text)
-        text = re.sub(r"\b[A-Za-z][A-Za-z\s.'’\-]*", "", text)
+        text = re.sub(r"[A-Za-z][A-Za-z\s.'’\-]*", "", text)
         text = clean(text).strip(" ，,、；;：:")
-        if text and len(text) <= 55 and not re.search(r"[。！？!?]", text):
+        if re.fullmatch(r"[\u3400-\u9fff]{0,5}(民谣|谚语|俗语|格言)", text):
+            sources.append(text)
+            continue
+        if text and len(text) <= 35:
             people.append(text)
-        else:
-            flags.append("author_unresolved")
     people = list(dict.fromkeys(people))
     if not people:
         flags.append("author_unresolved")
@@ -73,7 +83,7 @@ def parse_metadata(ocr):
     return {
         "title": title,
         "title_kind": title[0] if title else None,
-        "source": "；".join(sources) or None,
+        "source": "；".join(dict.fromkeys(sources)) or None,
         "author": "；".join(people) or None,
         "author_roles": list(dict.fromkeys(roles)),
         "ocr_confidence_min": min(confidence) if confidence else None,
@@ -159,7 +169,7 @@ def run(args):
                 target = directory / f"{key}.jsonl"
                 rows = {r["date"]: r for r in map(json.loads, target.read_text().splitlines())} if target.exists() else {}
                 dates = [dt.date(year, month, day) for day in range(1, calendar.monthrange(year, month)[1] + 1)]
-                todo = [d for d in dates if str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error")]
+                todo = [d for d in dates if args.refresh or str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error")]
                 futures = {pool.submit(one, d, args): d for d in todo}
                 for future in concurrent.futures.as_completed(futures):
                     result = future.result()
@@ -189,4 +199,5 @@ if __name__ == "__main__":
     p.add_argument("--workers", type=int, default=3)
     p.add_argument("--interval", type=float, default=.25, help="Global minimum seconds between HTTP requests")
     p.add_argument("--commit", action="store_true")
+    p.add_argument("--refresh", action="store_true", help="Re-extract an existing month after changing annual rules")
     run(p.parse_args())

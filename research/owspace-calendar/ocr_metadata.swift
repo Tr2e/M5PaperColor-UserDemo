@@ -20,15 +20,15 @@ while let input = readLine() {
                   let img = CGImageSourceCreateImageAtIndex(src, 0, nil) else {
                 throw NSError(domain: "image_decode", code: 1)
             }
-            func recognize(top: Double, bottom: Double) throws -> [Line] {
+            func recognize(top: Double, bottom: Double, scale: Int = 2) throws -> [Line] {
                 let rect = CGRect(x: 0, y: Double(img.height) * top,
                                   width: Double(img.width), height: Double(img.height) * (bottom - top))
                 guard let crop = img.cropping(to: rect),
-                      let context = CGContext(data: nil, width: crop.width * 2, height: crop.height * 2,
+                      let context = CGContext(data: nil, width: crop.width * scale, height: crop.height * scale,
                           bitsPerComponent: 8, bytesPerRow: 0, space: CGColorSpaceCreateDeviceRGB(),
                           bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue) else { return [] }
                 context.interpolationQuality = .high
-                context.draw(crop, in: CGRect(x: 0, y: 0, width: crop.width * 2, height: crop.height * 2))
+                context.draw(crop, in: CGRect(x: 0, y: 0, width: crop.width * scale, height: crop.height * scale))
                 guard let resized = context.makeImage() else { return [] }
                 let request = VNRecognizeTextRequest()
                 request.recognitionLevel = .accurate
@@ -61,11 +61,14 @@ while let input = readLine() {
             case 2024: titleBand = (0.390, 0.450)
             default: titleBand = (0.535, 0.635)
             }
-            let titles = try recognize(top: titleBand.0, bottom: titleBand.1).filter {
+            let allLines = year <= 2020 ? try recognize(top: 0, bottom: 1, scale: 1) : []
+            let titleLines = year <= 2020 ? allLines.filter { $0.y > titleBand.0 && $0.y < titleBand.1 } : try recognize(top: titleBand.0, bottom: titleBand.1)
+            let titles = titleLines.filter {
                 let s = $0.text.replacingOccurrences(of: " ", with: "")
                 return s.count <= 18 && (s.hasPrefix("宜") || s.hasPrefix("忌"))
             }
-            let attribution = try recognize(top: lower - 0.015, bottom: upper).filter {
+            let footerLines = year <= 2020 ? allLines : try recognize(top: lower - 0.015, bottom: upper)
+            let attribution = footerLines.filter {
                 $0.y >= lower && $0.y <= upper && !(year == 2021 && $0.x < 0.28)
             }
             let sourceLines = year == 2022 ? try recognize(top: 0.51, bottom: 0.795) : attribution
