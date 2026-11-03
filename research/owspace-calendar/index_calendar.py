@@ -56,12 +56,13 @@ def parse_metadata(ocr):
              "confidence": min(r["confidence"] for r in g)} for g in groups]
     people, roles, confidence = [], [], []
     for row in rows:
-        text = clean(SOURCE_RE.sub("", row["text"]))
+        text = SOURCE_RE.sub("", row["text"])
         text = re.sub(r"[單单]向[历曆曆]|OWSPACE", "", text, flags=re.I)
         # The calibrated footer contains short bibliographic lines. Reject any
         # sentence-like or long text instead of serializing possible body text.
-        if re.search(r"[。！？!?]", text):
+        if re.search(r"[。！？!?]|我们|你们|他们|她们|这是|不是|就是|没有|一个|自己|只要|因为|所以", text):
             continue
+        text = clean(text)
         confidence.append(row["confidence"])
         roles.extend(ROLE_RE.findall(text))
         text = ROLE_RE.sub("", text)
@@ -70,7 +71,9 @@ def parse_metadata(ocr):
         if re.fullmatch(r"[\u3400-\u9fff]{0,5}(民谣|谚语|俗语|格言)", text):
             sources.append(text)
             continue
-        if text and len(text) <= 35:
+        if text in ("电影", "电视剧", "纪录片", "歌曲", "小说", "诗歌", "单向空间"):
+            continue
+        if text and len(text) <= 24:
             people.append(text)
     people = list(dict.fromkeys(people))
     if not people:
