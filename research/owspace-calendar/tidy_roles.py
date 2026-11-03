@@ -15,6 +15,10 @@ for path in sorted((ROOT/'months').glob(f'{args.year}-*.jsonl')):
     rows=[json.loads(l) for l in path.read_text().splitlines()]
     changed=0
     for row in rows:
+        if args.year==2022 and row.get('source') and re.search(r'[A-Za-z]',row['source']) and row.get('review_status')!='sample_metadata_verified':
+            if 'english_source_review' not in row.get('review_flags',[]):
+                row.setdefault('review_flags',[]).append('english_source_review')
+                changed+=1
         author=row.get('author')
         if not author:
             continue

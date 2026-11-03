@@ -58,7 +58,7 @@ while let input = readLine() {
             switch year {
             case 2015...2018: titleBand = (0.48, 0.64)
             case 2019...2021: titleBand = (0.53, 0.66)
-            case 2022: titleBand = (0.415, 0.505)
+            case 2022: titleBand = (0.415, 0.540)
             case 2023: titleBand = (0.585, 0.690)
             case 2024: titleBand = (0.390, 0.450)
             default: titleBand = (0.535, 0.635)
