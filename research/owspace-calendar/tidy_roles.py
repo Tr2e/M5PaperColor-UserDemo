@@ -15,6 +15,10 @@ for path in sorted((ROOT/'months').glob(f'{args.year}-*.jsonl')):
     rows=[json.loads(l) for l in path.read_text().splitlines()]
     changed=0
     for row in rows:
+        if row.get('author') and re.search(r'[,，【】]|农历|星期|单向|單向',row['author']) and row.get('review_status')!='sample_metadata_verified':
+            if 'author_format_review' not in row.get('review_flags',[]):
+                row.setdefault('review_flags',[]).append('author_format_review')
+                changed+=1
         if args.year==2022 and row.get('source') and re.search(r'[A-Za-z]',row['source']) and row.get('review_status')!='sample_metadata_verified':
             if 'english_source_review' not in row.get('review_flags',[]):
                 row.setdefault('review_flags',[]).append('english_source_review')
@@ -42,4 +46,4 @@ for path in sorted((ROOT/'months').glob(f'{args.year}-*.jsonl')):
         print(path.name,changed)
         if args.commit:
             rel=str(path.relative_to(ROOT));git('add','--',rel)
-            git('commit','--only','-m',f'fix(owspace): separate occupation prefixes in {path.stem}','--',rel)
+            git('commit','--only','-m',f'fix(owspace): clean and flag bibliographic fields in {path.stem}','--',rel)

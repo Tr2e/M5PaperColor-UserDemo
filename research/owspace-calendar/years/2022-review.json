@@ -1,6 +1,6 @@
 {
   "year": 2022,
-  "reviewed_at": "2026-11-03T03:02:16+00:00",
+  "reviewed_at": "2026-11-03T03:22:52+00:00",
   "date_coverage_pass": true,
   "expected_days": 365,
   "record_count": 365,
@@ -21,12 +21,14 @@
   },
   "review_flag_counts": {
     "low_ocr_confidence": 105,
+    "author_format_review": 28,
     "source_not_detected": 20,
     "english_source_review": 27
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
+  "image_date_mismatches": [],
   "top_authors_machine_extracted": [
     [
       "木心",

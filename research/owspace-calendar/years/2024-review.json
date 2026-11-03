@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "reviewed_at": "2026-11-03T03:22:24+00:00",
+  "reviewed_at": "2026-11-03T03:35:00+00:00",
   "date_coverage_pass": true,
   "expected_days": 366,
   "record_count": 366,
@@ -47,6 +47,10 @@
       "printed_date": "2024-12-22"
     }
   ],
+  "image_date_ocr_status_counts": {
+    "month_candidate_match": 364,
+    "month_candidate_mismatch": 2
+  },
   "top_authors_machine_extracted": [
     [
       "弗吉尼亚·伍尔夫",

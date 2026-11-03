@@ -1,6 +1,6 @@
 {
   "year": 2019,
-  "reviewed_at": "2026-11-03T02:40:32+00:00",
+  "reviewed_at": "2026-11-03T03:22:50+00:00",
   "date_coverage_pass": true,
   "expected_days": 365,
   "record_count": 365,
@@ -12,7 +12,7 @@
   "field_counts": {
     "title": 365,
     "source": 345,
-    "author": 363
+    "author": 361
   },
   "visually_verified_samples": 5,
   "title_kind_counts": {
@@ -21,12 +21,14 @@
   },
   "review_flag_counts": {
     "low_ocr_confidence": 207,
-    "author_unresolved": 2,
+    "author_format_review": 13,
+    "author_unresolved": 4,
     "source_not_detected": 20
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
+  "image_date_mismatches": [],
   "top_authors_machine_extracted": [
     [
       "木心",
@@ -42,6 +44,10 @@
     ],
     [
       "西蒙娜·薇依",
+      3
+    ],
+    [
+      "埃里克·侯麦",
       3
     ],
     [
@@ -70,10 +76,6 @@
     ],
     [
       "李安",
-      2
-    ],
-    [
-      "罗兰·巴特",
       2
     ]
   ],

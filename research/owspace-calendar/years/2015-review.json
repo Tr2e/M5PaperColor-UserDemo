@@ -1,6 +1,6 @@
 {
   "year": 2015,
-  "reviewed_at": "2026-11-03T02:40:30+00:00",
+  "reviewed_at": "2026-11-03T03:22:49+00:00",
   "date_coverage_pass": true,
   "expected_days": 365,
   "record_count": 365,
@@ -23,7 +23,8 @@
   "review_flag_counts": {
     "source_not_detected": 171,
     "low_ocr_confidence": 150,
-    "author_unresolved": 13
+    "author_unresolved": 13,
+    "author_format_review": 6
   },
   "missing_dates": [
     "2015-01-01",
@@ -77,10 +78,15 @@
   ],
   "error_dates": [],
   "identical_image_groups": [],
+  "image_date_mismatches": [],
   "top_authors_machine_extracted": [
     [
       "顾城",
       8
+    ],
+    [
+      "奥斯卡·王尔德",
+      7
     ],
     [
       "加缪",
@@ -91,11 +97,23 @@
       4
     ],
     [
+      "泰戈尔",
+      4
+    ],
+    [
+      "辛波斯卡",
+      3
+    ],
+    [
       "波伏娃",
       3
     ],
     [
       "本雅明",
+      3
+    ],
+    [
+      "博尔赫斯",
       3
     ],
     [
@@ -107,23 +125,7 @@
       3
     ],
     [
-      "奥斯卡·王尔德 0",
-      3
-    ],
-    [
       "兰波",
-      3
-    ],
-    [
-      "爱因斯坦",
-      3
-    ],
-    [
-      "歌德",
-      3
-    ],
-    [
-      "奥斯卡·王尔德",
       3
     ]
   ],

@@ -18,7 +18,7 @@ for month in sorted({date[:7] for date in checks}):
         printed=checks[row['date']]
         row['printed_date']=printed
         row['date_verification']='visually_checked_match' if printed==row['date'] else 'visually_checked_mismatch'
-        flags=[f for f in row.get('review_flags',[]) if f!='image_date_mismatch']
+        flags=[f for f in row.get('review_flags',[]) if f not in ('image_date_mismatch','image_date_suspected_mismatch')]
         if printed!=row['date']:
             flags.append('image_date_mismatch')
         row['review_flags']=flags

@@ -1,6 +1,6 @@
 {
   "year": 2016,
-  "reviewed_at": "2026-11-03T02:40:31+00:00",
+  "reviewed_at": "2026-11-03T03:22:49+00:00",
   "date_coverage_pass": true,
   "expected_days": 366,
   "record_count": 366,
@@ -22,14 +22,24 @@
   "review_flag_counts": {
     "source_not_detected": 238,
     "low_ocr_confidence": 198,
+    "author_format_review": 14,
     "author_unresolved": 6
   },
   "missing_dates": [],
   "error_dates": [],
   "identical_image_groups": [],
+  "image_date_mismatches": [],
   "top_authors_machine_extracted": [
     [
       "王小波",
+      3
+    ],
+    [
+      "马雅可夫斯基",
+      3
+    ],
+    [
+      "玛格丽特·米切尔",
       3
     ],
     [
@@ -41,11 +51,19 @@
       2
     ],
     [
-      "玛格丽特·米切尔",
+      "巴勃罗·聂鲁达",
+      2
+    ],
+    [
+      "玛格丽特杜拉斯",
       2
     ],
     [
       "萧红",
+      2
+    ],
+    [
+      "安德烈·纪德",
       2
     ],
     [
@@ -58,22 +76,6 @@
     ],
     [
       "汉斯·克里斯汀·安徒生",
-      2
-    ],
-    [
-      "夏尔·皮埃尔·波德莱尔",
-      2
-    ],
-    [
-      "马雅可夫斯基",
-      2
-    ],
-    [
-      "让-保罗·萨特",
-      2
-    ],
-    [
-      "马克·吐温",
       2
     ]
   ],

@@ -1,0 +1,191 @@
+{
+  "year": 2025,
+  "reviewed_at": "2026-11-03T03:35:00+00:00",
+  "date_coverage_pass": true,
+  "expected_days": 365,
+  "record_count": 365,
+  "status_counts": {
+    "indexed": 364,
+    "missing_at_tested_url": 1
+  },
+  "first_available": "2025-01-01",
+  "last_available": "2025-12-31",
+  "field_counts": {
+    "title": 364,
+    "source": 345,
+    "author": 364
+  },
+  "visually_verified_samples": 5,
+  "title_kind_counts": {
+    "宜": 266,
+    "忌": 98
+  },
+  "review_flag_counts": {
+    "low_ocr_confidence": 35,
+    "author_format_review": 56,
+    "source_not_detected": 19,
+    "image_date_mismatch": 8
+  },
+  "missing_dates": [
+    "2025-02-06"
+  ],
+  "error_dates": [],
+  "identical_image_groups": [
+    [
+      "2025-05-25",
+      "2025-08-16"
+    ],
+    [
+      "2025-05-28",
+      "2025-08-12"
+    ],
+    [
+      "2025-08-10",
+      "2025-08-11"
+    ],
+    [
+      "2025-09-06",
+      "2025-09-07"
+    ]
+  ],
+  "image_date_mismatches": [
+    {
+      "requested_date": "2025-02-13",
+      "printed_date": "2025-03-13"
+    },
+    {
+      "requested_date": "2025-02-16",
+      "printed_date": "2025-03-16"
+    },
+    {
+      "requested_date": "2025-02-25",
+      "printed_date": "2025-01-25"
+    },
+    {
+      "requested_date": "2025-08-10",
+      "printed_date": "2025-05-13"
+    },
+    {
+      "requested_date": "2025-08-11",
+      "printed_date": "2025-05-13"
+    },
+    {
+      "requested_date": "2025-08-12",
+      "printed_date": "2025-05-28"
+    },
+    {
+      "requested_date": "2025-08-16",
+      "printed_date": "2025-05-25"
+    },
+    {
+      "requested_date": "2025-09-07",
+      "printed_date": "2025-09-06"
+    }
+  ],
+  "image_date_ocr_status_counts": {
+    "unresolved": 41,
+    "candidate_match": 312,
+    "candidate_mismatch": 11
+  },
+  "top_authors_machine_extracted": [
+    [
+      "珍妮特·温特森",
+      4
+    ],
+    [
+      "杜布拉夫卡·乌格雷西奇",
+      3
+    ],
+    [
+      "加西亚·马尔克斯",
+      3
+    ],
+    [
+      "迈克尔·翁达杰",
+      3
+    ],
+    [
+      "王小波",
+      3
+    ],
+    [
+      "埃莱娜·费兰特",
+      3
+    ],
+    [
+      "玛格丽特·阿特伍德",
+      2
+    ],
+    [
+      "若泽·爱德华多·阿瓜卢萨",
+      2
+    ],
+    [
+      "詹姆斯·索特",
+      2
+    ],
+    [
+      "克拉丽丝·李斯佩克朵",
+      2
+    ],
+    [
+      "赫塔·米勒",
+      2
+    ],
+    [
+      "伊恩·麦克尤恩",
+      2
+    ]
+  ],
+  "top_sources_machine_extracted": [
+    [
+      "爱你就像爱生命",
+      3
+    ],
+    [
+      "呼吸",
+      2
+    ],
+    [
+      "巴黎评论·女性作家访谈",
+      2
+    ],
+    [
+      "美丽的世界，你在哪里",
+      2
+    ],
+    [
+      "炽焰燃烧",
+      2
+    ],
+    [
+      "希尼诗文集",
+      2
+    ],
+    [
+      "荒野之境",
+      2
+    ],
+    [
+      "伊甸之东",
+      2
+    ],
+    [
+      "人都去哪了",
+      2
+    ],
+    [
+      "拒绝所有的岸：瞭望员马克洛尔集",
+      2
+    ],
+    [
+      "英国病人",
+      2
+    ],
+    [
+      "万火归一",
+      2
+    ]
+  ],
+  "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
+}
