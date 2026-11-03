@@ -159,6 +159,15 @@ def git(*args):
 
 
 def run(args):
+    if args.start[:4] != args.end[:4]:
+        raise SystemExit("Process one year at a time; review it before starting the next year")
+    year = int(args.start[:4])
+    if not (ROOT / "years" / f"{year}-layout.json").exists():
+        raise SystemExit("Annual layout analysis is required before extraction")
+    if year > 2015:
+        previous = ROOT / "years" / f"{year-1}-review.json"
+        if not previous.exists() or not json.loads(previous.read_text())["date_coverage_pass"]:
+            raise SystemExit("The preceding year must pass the date coverage review first")
     if args.commit and git("branch", "--show-current") != BRANCH:
         raise SystemExit("Refusing to commit on an unexpected branch")
     directory = ROOT / "months"
@@ -197,7 +206,7 @@ def run(args):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--start", default="2015-01")
-    p.add_argument("--end", default="2025-12")
+    p.add_argument("--end", default="2015-12")
     p.add_argument("--ocr", default="/tmp/owspace-research/ocr_metadata")
     p.add_argument("--workers", type=int, default=3)
     p.add_argument("--interval", type=float, default=.25, help="Global minimum seconds between HTTP requests")

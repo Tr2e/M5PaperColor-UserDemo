@@ -20,9 +20,10 @@
 ```sh
 mkdir -p /tmp/owspace-research
 swiftc -O -module-cache-path /tmp/owspace-research/swift-cache research/owspace-calendar/ocr_metadata.swift -o /tmp/owspace-research/ocr_metadata
-python3 research/owspace-calendar/index_calendar.py --start 2015-01 --end 2025-12 --commit
+python3 research/owspace-calendar/index_calendar.py --start 2015-01 --end 2015-12 --commit
+python3 research/owspace-calendar/review_year.py 2015
 ```
 
-默认 3 个工作线程，所有网络请求合计最多每秒 4 次；临时网络错误最多重试 3 次。脚本可中断续跑。`--commit` 只允许在 `codex/owspace-calendar-index-2015-2025` 分支运行，只提交对应月份的数据文件。
+每次只处理一年。先保存该年 `years/YYYY-layout.json` 版式分析，再逐月提取，最后执行全年检查；前一年覆盖检查通过后才能开始下一年。默认 3 个工作线程，所有网络请求合计最多每秒 4 次；临时网络错误最多重试 3 次。脚本可中断续跑。`--commit` 只允许在 `codex/owspace-calendar-index-2015-2025` 分支运行，只提交对应月份的数据文件。
 
 原始来源：`https://img.owspace.com/Public/uploads/Download/{YYYY}/{MMDD}.jpg`。
