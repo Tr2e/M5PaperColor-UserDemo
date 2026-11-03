@@ -1,0 +1,130 @@
+{
+  "year": 2016,
+  "reviewed_at": "2026-11-03T02:17:24+00:00",
+  "date_coverage_pass": true,
+  "expected_days": 366,
+  "record_count": 366,
+  "status_counts": {
+    "indexed": 366
+  },
+  "first_available": "2016-01-01",
+  "last_available": "2016-12-31",
+  "field_counts": {
+    "title": 366,
+    "source": 125,
+    "author": 360
+  },
+  "title_kind_counts": {
+    "宜": 235,
+    "忌": 131
+  },
+  "review_flag_counts": {
+    "source_not_detected": 241,
+    "low_ocr_confidence": 200,
+    "author_unresolved": 6
+  },
+  "missing_dates": [],
+  "error_dates": [],
+  "identical_image_groups": [],
+  "top_authors_machine_extracted": [
+    [
+      "王小波",
+      3
+    ],
+    [
+      "苏轼",
+      2
+    ],
+    [
+      "乔治·戈登·拜伦",
+      2
+    ],
+    [
+      "玛格丽特·米切尔",
+      2
+    ],
+    [
+      "萧红",
+      2
+    ],
+    [
+      "阿尔伯特·爱因斯坦",
+      2
+    ],
+    [
+      "赛珍珠",
+      2
+    ],
+    [
+      "汉斯·克里斯汀·安徒生",
+      2
+    ],
+    [
+      "夏尔·皮埃尔·波德莱尔",
+      2
+    ],
+    [
+      "马雅可夫斯基",
+      2
+    ],
+    [
+      "让-保罗·萨特",
+      2
+    ],
+    [
+      "马克·吐温",
+      2
+    ]
+  ],
+  "top_sources_machine_extracted": [
+    [
+      "白银时代",
+      1
+    ],
+    [
+      "好兵帅克",
+      1
+    ],
+    [
+      "撒哈拉的故事",
+      1
+    ],
+    [
+      "穿裤子的云",
+      1
+    ],
+    [
+      "子夜歌",
+      1
+    ],
+    [
+      "新桥恋人",
+      1
+    ],
+    [
+      "辛德勒的名单",
+      1
+    ],
+    [
+      "阿甘正传",
+      1
+    ],
+    [
+      "流动的盛宴",
+      1
+    ],
+    [
+      "最后一次举杯",
+      1
+    ],
+    [
+      "长眠不醒",
+      1
+    ],
+    [
+      "基督山伯爵",
+      1
+    ]
+  ],
+  "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
+}
