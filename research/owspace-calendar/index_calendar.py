@@ -128,10 +128,11 @@ def one(date, args):
         record.update(status="missing_at_tested_url" if status in (404, 410) else "request_error", error=error,
                       title=None, source=None, author=None, quotation_status="not_collected")
         return record
-    if not body.startswith(b"\xff\xd8") or len(body) > 6_000_000:
-        record.update(status="unexpected_response", error="Expected a JPEG smaller than 6 MB", quotation_status="not_collected")
+    image_format = "jpeg" if body.startswith(b"\xff\xd8") else "png" if body.startswith(b"\x89PNG\r\n\x1a\n") else None
+    if not image_format or len(body) > 6_000_000:
+        record.update(status="unexpected_response", error="Expected a JPEG or PNG smaller than 6 MB", quotation_status="not_collected")
         return record
-    record.update(image_sha256=hashlib.sha256(body).hexdigest(), image_bytes=len(body), last_modified=modified)
+    record.update(image_sha256=hashlib.sha256(body).hexdigest(), image_bytes=len(body), image_format=image_format, last_modified=modified)
     path = None
     try:
         with tempfile.NamedTemporaryFile(prefix="owspace-meta-", suffix=".jpg", delete=False) as tmp:
@@ -181,7 +182,7 @@ def run(args):
                 target = directory / f"{key}.jsonl"
                 rows = {r["date"]: r for r in map(json.loads, target.read_text().splitlines())} if target.exists() else {}
                 dates = [dt.date(year, month, day) for day in range(1, calendar.monthrange(year, month)[1] + 1)]
-                todo = [d for d in dates if args.refresh or str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error")]
+                todo = [d for d in dates if args.refresh or str(d) not in rows or rows[str(d)]["status"] in ("request_error", "ocr_error", "unexpected_response")]
                 futures = {pool.submit(one, d, args): d for d in todo}
                 for future in concurrent.futures.as_completed(futures):
                     result = future.result()

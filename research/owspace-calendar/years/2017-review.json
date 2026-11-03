@@ -1,0 +1,130 @@
+{
+  "year": 2017,
+  "reviewed_at": "2026-11-03T02:22:51+00:00",
+  "date_coverage_pass": true,
+  "expected_days": 365,
+  "record_count": 365,
+  "status_counts": {
+    "indexed": 365
+  },
+  "first_available": "2017-01-01",
+  "last_available": "2017-12-31",
+  "field_counts": {
+    "title": 365,
+    "source": 221,
+    "author": 352
+  },
+  "title_kind_counts": {
+    "宜": 235,
+    "忌": 130
+  },
+  "review_flag_counts": {
+    "source_not_detected": 144,
+    "author_unresolved": 13,
+    "low_ocr_confidence": 94
+  },
+  "missing_dates": [],
+  "error_dates": [],
+  "identical_image_groups": [],
+  "top_authors_machine_extracted": [
+    [
+      "海子",
+      3
+    ],
+    [
+      "孟京辉",
+      3
+    ],
+    [
+      "高行健",
+      2
+    ],
+    [
+      "东野圭吾",
+      2
+    ],
+    [
+      "海涅",
+      2
+    ],
+    [
+      "胡适",
+      2
+    ],
+    [
+      "是枝裕和",
+      2
+    ],
+    [
+      "伍迪艾伦",
+      2
+    ],
+    [
+      "米兰·昆德拉",
+      2
+    ],
+    [
+      "萨特",
+      2
+    ],
+    [
+      "萨尔瓦多·达利",
+      2
+    ],
+    [
+      "亚历桑德罗·佐杜洛夫斯基",
+      2
+    ]
+  ],
+  "top_sources_machine_extracted": [
+    [
+      "灵山",
+      2
+    ],
+    [
+      "红楼梦",
+      2
+    ],
+    [
+      "洗衣服",
+      2
+    ],
+    [
+      "卡萨布兰卡",
+      2
+    ],
+    [
+      "在零和一之间",
+      1
+    ],
+    [
+      "玉米少女",
+      1
+    ],
+    [
+      "给青年作家的忠告",
+      1
+    ],
+    [
+      "时间之线",
+      1
+    ],
+    [
+      "黑色的春天",
+      1
+    ],
+    [
+      "万物理论",
+      1
+    ],
+    [
+      "暴风雪",
+      1
+    ],
+    [
+      "羊奶煮羊羔",
+      1
+    ]
+  ],
+  "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
+}
