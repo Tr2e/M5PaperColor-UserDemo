@@ -3,7 +3,7 @@
 import argparse
 import json
 import re
-from index_calendar import ROOT, BRANCH, ROLE_RE, clean, git
+from index_calendar import ROOT, BRANCH, ROLE_RE, clean, clean_author_footer, git
 
 p=argparse.ArgumentParser()
 p.add_argument('year',type=int)
@@ -18,16 +18,20 @@ for path in sorted((ROOT/'months').glob(f'{args.year}-*.jsonl')):
         author=row.get('author')
         if not author:
             continue
+        if row.get('review_status')=='sample_metadata_verified':
+            continue
         match=ROLE_RE.match(author)
-        if not match:
+        role=match.group() if match else None
+        corrected=clean(author[match.end():]).strip(' ，,；;：:') if match else author
+        corrected=clean_author_footer(corrected)
+        if corrected==author:
             continue
-        role=match.group()
-        corrected=clean(author[match.end():]).strip(' ，,；;：:')
-        if not corrected:
-            continue
-        row.setdefault('metadata_edits',[]).append({'field':'author','before':author,'after':corrected,'reason':'remove_known_occupation_prefix'})
+        row.setdefault('metadata_edits',[]).append({'field':'author','before':author,'after':corrected,'reason':'remove_known_occupation_prefix_or_footer_ocr_noise'})
         row['author']=corrected
-        row['author_roles']=list(dict.fromkeys(row.get('author_roles',[])+[role]))
+        if role:
+            row['author_roles']=list(dict.fromkeys(row.get('author_roles',[])+[role]))
+        if not corrected:
+            row['review_flags']=list(dict.fromkeys(row.get('review_flags',[])+['author_unresolved']))
         changed+=1
     if changed:
         path.write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in rows))

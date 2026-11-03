@@ -36,6 +36,16 @@ def clean(text):
     return re.sub(r"\s+", " ", text).strip(" ，,；;。")
 
 
+def clean_author_footer(value):
+    if not value:
+        return None
+    if re.search(r"影像展|超级品牌|来福士|读书会|二维码|公众号|单向空间", value):
+        return None
+    if not re.search(r"[\u3400-\u9fffA-Za-z]", value):
+        return None
+    return re.sub(r"(?<=[\u3400-\u9fff])[\d\s\W]+$", "", value)
+
+
 def parse_metadata(ocr):
     flags = []
     titles = ocr.get("titles", [])
@@ -75,7 +85,9 @@ def parse_metadata(ocr):
         if text in ("电影", "电视剧", "纪录片", "歌曲", "小说", "诗歌", "单向空间"):
             continue
         if text and len(text) <= 24:
-            people.append(text)
+            normalized = clean_author_footer(text)
+            if normalized:
+                people.append(normalized)
     people = list(dict.fromkeys(people))
     if not people:
         flags.append("author_unresolved")
