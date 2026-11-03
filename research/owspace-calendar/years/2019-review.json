@@ -1,0 +1,130 @@
+{
+  "year": 2019,
+  "reviewed_at": "2026-11-03T02:34:18+00:00",
+  "date_coverage_pass": true,
+  "expected_days": 365,
+  "record_count": 365,
+  "status_counts": {
+    "indexed": 365
+  },
+  "first_available": "2019-01-01",
+  "last_available": "2019-12-31",
+  "field_counts": {
+    "title": 365,
+    "source": 345,
+    "author": 363
+  },
+  "title_kind_counts": {
+    "宜": 238,
+    "忌": 127
+  },
+  "review_flag_counts": {
+    "low_ocr_confidence": 210,
+    "author_unresolved": 2,
+    "source_not_detected": 20
+  },
+  "missing_dates": [],
+  "error_dates": [],
+  "identical_image_groups": [],
+  "top_authors_machine_extracted": [
+    [
+      "木心",
+      4
+    ],
+    [
+      "艾丽丝·门罗",
+      3
+    ],
+    [
+      "契诃夫",
+      3
+    ],
+    [
+      "西蒙娜·薇依",
+      3
+    ],
+    [
+      "奥尔加·托卡尔丘克",
+      3
+    ],
+    [
+      "莎士比亚",
+      2
+    ],
+    [
+      "埃里克．侯麦",
+      2
+    ],
+    [
+      "北野武",
+      2
+    ],
+    [
+      "史铁生",
+      2
+    ],
+    [
+      "尼克·凯夫",
+      2
+    ],
+    [
+      "李安",
+      2
+    ],
+    [
+      "罗兰·巴特",
+      2
+    ]
+  ],
+  "top_sources_machine_extracted": [
+    [
+      "哈姆雷特",
+      2
+    ],
+    [
+      "亲爱的生活",
+      2
+    ],
+    [
+      "心的岁月",
+      2
+    ],
+    [
+      "阿特拉斯耸耸肩",
+      2
+    ],
+    [
+      "被拯救的威尼斯",
+      2
+    ],
+    [
+      "权力的游戏",
+      2
+    ],
+    [
+      "革命之路",
+      2
+    ],
+    [
+      "单读20",
+      2
+    ],
+    [
+      "小径分岔的花园",
+      1
+    ],
+    [
+      "红与黑",
+      1
+    ],
+    [
+      "赤子",
+      1
+    ],
+    [
+      "写在身体上",
+      1
+    ]
+  ],
+  "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
+}
