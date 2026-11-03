@@ -50,7 +50,8 @@ def parse_metadata(ocr):
     flags = []
     titles = ocr.get("titles", [])
     title = clean(titles[0]["text"]).replace(" ", "") if len(titles) == 1 else None
-    if not title:
+    question_page = ocr.get("layout_variant") == "reader_question"
+    if not title and not question_page:
         flags.append("title_unresolved")
     if len(titles) > 1:
         flags.append("multiple_title_candidates")
@@ -103,7 +104,9 @@ def parse_metadata(ocr):
         flags.append("low_ocr_confidence")
     return {
         "title": title,
-        "title_kind": title[0] if title else None,
+        "title_kind": title[0] if title else "问答" if question_page else None,
+        "layout_variant": ocr.get("layout_variant") or "standard",
+        "title_status": "not_applicable_question_layout" if question_page else "extracted" if title else "unresolved",
         "source": "；".join(dict.fromkeys(sources)) or None,
         "author": "；".join(people) or None,
         "author_roles": list(dict.fromkeys(roles)),

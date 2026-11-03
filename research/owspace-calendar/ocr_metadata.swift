@@ -10,6 +10,12 @@ struct Line: Codable {
     let y: Double
     let height: Double
 }
+struct MetadataResult: Codable {
+    let titles: [Line]
+    let attribution: [Line]
+    let sources: [Line]
+    let layout_variant: String?
+}
 
 while let input = readLine() {
     autoreleasepool {
@@ -79,9 +85,29 @@ while let input = readLine() {
                 }
                 if !portrait.isEmpty { attribution = portrait }
             }
-            let sourceLines = year == 2022 ? try recognize(top: 0.51, bottom: 0.795) : attribution
+            var layoutVariant: String? = nil
+            var sourceLines = year == 2022 ? try recognize(top: 0.51, bottom: 0.795) : attribution
+            if year == 2023 && titles.isEmpty {
+                let questionLines = try recognize(top: 0, bottom: 1, scale: 1)
+                if questionLines.contains(where: { $0.y < 0.15 && ($0.text.contains("问题由") || $0.text.contains("提出")) }) {
+                    layoutVariant = "reader_question"
+                    let credits = questionLines.filter {
+                        $0.y > 0.20 && $0.y < 0.55 && $0.x > 0.35 &&
+                        $0.text.range(of: "^[A-Za-zＡΛ△]{0,2}\\s*(作家|诗人|编剧|歌手|导演|演员|哲学家|音乐人|乐队|艺术家|记者|画家|学者|词作者)", options: .regularExpression) != nil
+                    }.map { Line(text: $0.text.replacingOccurrences(of: "^[A-Za-zＡΛ△]{1,2}\\s*", with: "", options: .regularExpression), confidence: $0.confidence, x: $0.x, y: $0.y, height: $0.height) }
+                    attribution = credits
+                    if let credit = credits.first {
+                        attribution += questionLines.filter {
+                            $0.y > credit.y + 0.02 && $0.y < credit.y + 0.05 && $0.x > 0.45 &&
+                            abs($0.height - credit.height) < 0.008 &&
+                            $0.text.range(of: "[。！？!?《》]", options: .regularExpression) == nil
+                        }
+                    }
+                    sourceLines = questionLines.filter { $0.y > 0.3 && $0.y < 0.85 && $0.height < 0.028 }
+                }
+            }
             var sources = sourceLines.filter {
-                $0.y > (year == 2022 ? 0.52 : lower - 0.025) && $0.y < upper &&
+                $0.y > (layoutVariant != nil ? 0.3 : year == 2022 ? 0.52 : lower - 0.025) && $0.y < upper &&
                 ($0.text.contains("《") || $0.text.contains("〈"))
             }.compactMap { line -> Line? in
                 // Source titles only; never return surrounding body text here.
@@ -104,7 +130,7 @@ while let input = readLine() {
                                         x: line.x, y: line.y, height: line.height))
                 }
             }
-            let result = ["titles": titles, "attribution": attribution, "sources": sources]
+            let result = MetadataResult(titles: titles, attribution: attribution, sources: sources, layout_variant: layoutVariant)
             let data = try JSONEncoder().encode(result)
             print(String(decoding: data, as: UTF8.self))
             fflush(stdout)

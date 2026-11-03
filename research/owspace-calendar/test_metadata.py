@@ -38,6 +38,12 @@ class MetadataTests(unittest.TestCase):
         self.assertEqual(parse_metadata({'attribution':[line('乐队，U2')]})['author'],'U2')
         self.assertEqual(parse_metadata({'attribution':[line('乐队，Schoolgirl Byebye')]})['author'],'Schoolgirl Byebye')
 
+    def test_question_layout_has_no_imagined_title(self):
+        r=parse_metadata({'layout_variant':'reader_question','attribution':[line('作家，李娟')]})
+        self.assertIsNone(r['title'])
+        self.assertEqual(r['title_kind'],'问答')
+        self.assertNotIn('title_unresolved',r['review_flags'])
+
 
 if __name__ == "__main__":
     unittest.main()
