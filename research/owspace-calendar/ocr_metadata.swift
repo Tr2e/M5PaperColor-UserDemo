@@ -45,7 +45,7 @@ while let input = readLine() {
             let upper: Double
             switch year {
             case 2015...2019: lower = 0.925; upper = 0.985
-            case 2020: lower = 0.915; upper = 0.960
+            case 2020: lower = 0.915; upper = 0.985
             case 2021: lower = 0.875; upper = 0.945
             case 2022: lower = 0.805; upper = 0.930
             case 2023: lower = 0.890; upper = 0.970
