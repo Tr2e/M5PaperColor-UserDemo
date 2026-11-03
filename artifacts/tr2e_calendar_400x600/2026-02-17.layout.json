@@ -1,0 +1,213 @@
+{
+  "display_date": "2026-02-17",
+  "source_date": "2024-02-09",
+  "record_id": "2024-02-09",
+  "event_label": "春节",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "balanced",
+    "digit_y": 139,
+    "digit_h": 124,
+    "title_y": 301,
+    "title_lines": [
+      "宜返乡"
+    ],
+    "title_size": 30,
+    "quote_y": 378,
+    "quote_size": 21,
+    "quote_leading": 28,
+    "quote_lines": [
+      "家乡再没有什么可以给我了。而",
+      "我，则需要用一生的时间，把自己",
+      "还给家乡。"
+    ],
+    "footer_top": 526,
+    "footer": [
+      [
+        "作家 · 刘亮程",
+        13
+      ],
+      [
+        "《把地上的事往天上聊》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "2.17",
+      "x": 20,
+      "y": 49,
+      "width": 60.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        80.0,
+        80
+      ]
+    },
+    {
+      "text": "星期二",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "春节",
+      "x": 112,
+      "y": 70,
+      "width": 26.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        72,
+        138.0,
+        85
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "正月初一",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜返乡",
+      "x": 155.0,
+      "y": 301,
+      "width": 90.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        155.0,
+        305,
+        245.0,
+        335
+      ]
+    },
+    {
+      "text": "家乡再没有什么可以给我了。而",
+      "x": 36,
+      "y": 378,
+      "width": 294.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        381,
+        330.0,
+        403
+      ]
+    },
+    {
+      "text": "我，则需要用一生的时间，把自己",
+      "x": 36,
+      "y": 406,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        409,
+        351.0,
+        433
+      ]
+    },
+    {
+      "text": "还给家乡。",
+      "x": 36,
+      "y": 434,
+      "width": 105.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        437,
+        141.0,
+        458
+      ]
+    },
+    {
+      "text": "作家 · 刘亮程",
+      "x": 36,
+      "y": 535,
+      "width": 75.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        537,
+        111.0,
+        551
+      ]
+    },
+    {
+      "text": "《把地上的事往天上聊》",
+      "x": 36,
+      "y": 552,
+      "width": 132.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        552,
+        168.0,
+        565
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

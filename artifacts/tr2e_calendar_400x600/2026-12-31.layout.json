@@ -1,0 +1,213 @@
+{
+  "display_date": "2026-12-31",
+  "source_date": "2025-12-05",
+  "record_id": "2025-12-05",
+  "event_label": "岁末",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "standard",
+    "digit_y": 155,
+    "digit_h": 136,
+    "title_y": 335,
+    "title_lines": [
+      "宜张开双臂"
+    ],
+    "title_size": 30,
+    "quote_y": 428,
+    "quote_size": 22,
+    "quote_leading": 29,
+    "quote_lines": [
+      "不过，仅由风推着，不费力气地",
+      "穿过热带海域，也是一种幸福的",
+      "感觉。"
+    ],
+    "footer_top": 527,
+    "footer": [
+      [
+        "作家 · 朱利安·桑克顿",
+        13
+      ],
+      [
+        "Julian Sancton",
+        11
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "12.31",
+      "x": 20,
+      "y": 49,
+      "width": 74.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        94.0,
+        80
+      ]
+    },
+    {
+      "text": "星期四",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "岁末",
+      "x": 112,
+      "y": 70,
+      "width": 26.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        72,
+        138.0,
+        85
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "十一月廿三",
+      "x": 314.0,
+      "y": 70,
+      "width": 65.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        314.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜张开双臂",
+      "x": 125.0,
+      "y": 335,
+      "width": 150.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        125.0,
+        339,
+        275.0,
+        369
+      ]
+    },
+    {
+      "text": "不过，仅由风推着，不费力气地",
+      "x": 36,
+      "y": 428,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        431,
+        344.0,
+        456
+      ]
+    },
+    {
+      "text": "穿过热带海域，也是一种幸福的",
+      "x": 36,
+      "y": 457,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        460,
+        344.0,
+        485
+      ]
+    },
+    {
+      "text": "感觉。",
+      "x": 36,
+      "y": 486,
+      "width": 66.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        489,
+        102.0,
+        511
+      ]
+    },
+    {
+      "text": "作家 · 朱利安·桑克顿",
+      "x": 36,
+      "y": 536,
+      "width": 118.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        537,
+        155.0,
+        552
+      ]
+    },
+    {
+      "text": "Julian Sancton",
+      "x": 36,
+      "y": 553,
+      "width": 78.0,
+      "font_px": 11,
+      "style": "body",
+      "ink_bounds": [
+        35,
+        555,
+        114.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

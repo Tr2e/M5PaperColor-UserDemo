@@ -1,0 +1,198 @@
+{
+  "display_date": "2026-09-25",
+  "source_date": "2019-09-13",
+  "record_id": "2019-09-13",
+  "event_label": "中秋节",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "standard",
+    "digit_y": 155,
+    "digit_h": 136,
+    "title_y": 335,
+    "title_lines": [
+      "宜共情"
+    ],
+    "title_size": 30,
+    "quote_y": 428,
+    "quote_size": 22,
+    "quote_leading": 29,
+    "quote_lines": [
+      "你呼吸着阳光，我呼吸着月亮，",
+      "可我们在同一的爱情中生长。"
+    ],
+    "footer_top": 526,
+    "footer": [
+      [
+        "诗人 · 安娜．阿赫玛托娃",
+        13
+      ],
+      [
+        "《我们将不会从同一只杯子》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "9.25",
+      "x": 20,
+      "y": 49,
+      "width": 64.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        84.0,
+        80
+      ]
+    },
+    {
+      "text": "星期五",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "中秋节",
+      "x": 112,
+      "y": 70,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        72,
+        151.0,
+        85
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "八月十五",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜共情",
+      "x": 155.0,
+      "y": 335,
+      "width": 90.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        155.0,
+        339,
+        245.0,
+        371
+      ]
+    },
+    {
+      "text": "你呼吸着阳光，我呼吸着月亮，",
+      "x": 36,
+      "y": 428,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        431,
+        344.0,
+        456
+      ]
+    },
+    {
+      "text": "可我们在同一的爱情中生长。",
+      "x": 36,
+      "y": 457,
+      "width": 286.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        460,
+        322.0,
+        482
+      ]
+    },
+    {
+      "text": "诗人 · 安娜．阿赫玛托娃",
+      "x": 36,
+      "y": 535,
+      "width": 140.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        536,
+        176.0,
+        551
+      ]
+    },
+    {
+      "text": "《我们将不会从同一只杯子》",
+      "x": 36,
+      "y": 552,
+      "width": 156.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        552,
+        192.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

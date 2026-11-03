@@ -1,0 +1,7314 @@
+{
+  "schema": 1,
+  "year": 2026,
+  "owner_id": "TR2E",
+  "timezone": "UTC+08:00",
+  "input_version": "7e86946c64fd861d8d42a78815907d0aeeb0c1f5050017efcd077db8b4883e24",
+  "calendar_sha256": "9bf2c51a729e8bbe53698976562b49e6783838edfa73c4c96125d1ee836a23f3",
+  "days": [
+    {
+      "date": "2026-01-01",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "十一月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-03-12",
+      "content_group": "eecefcb2f059c30b4565",
+      "title_key": "宜播种希望",
+      "event_id": "year_boundary_window",
+      "event_label": "元旦",
+      "display_label": "元旦",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "十一月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-02-08",
+      "content_group": "d0f922da09ebf9b91058",
+      "title_key": "宜迎新",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "十一月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-09-11",
+      "content_group": "267f0a85377b39260abf",
+      "title_key": "宜积极生活",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "十一月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-05-05",
+      "content_group": "8e645447dcc104848219",
+      "title_key": "宜小确幸",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "weekday": 0,
+      "lunar_month": 11,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "十一月十七",
+      "solar_term": "小寒",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-05-08",
+      "content_group": "5a5f25d10a999dfd9a15",
+      "title_key": "宜大笑",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "weekday": 1,
+      "lunar_month": 11,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "十一月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-09-29",
+      "content_group": "f6b774e284d81977b415",
+      "title_key": "宜再等等",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "十一月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-07-13",
+      "content_group": "ff26c394d7eb9dc62d0b",
+      "title_key": "宜歌颂日常",
+      "event_id": "year_boundary_window",
+      "event_label": "迎新",
+      "display_label": "迎新",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "十一月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-11-28",
+      "content_group": "dae9a8457d96c752e2b5",
+      "title_key": "宜珍惜寒冷",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "十一月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-01-19",
+      "content_group": "5343a4c7d555d5d0d69a",
+      "title_key": "忌冬眠",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "十一月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-03-01",
+      "content_group": "2b4fb1945be0d4eca88b",
+      "title_key": "宜藏形匿影",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "十一月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-02-10",
+      "content_group": "1b1d5a1a5ffbdf9b8d36",
+      "title_key": "宜放歌",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "weekday": 0,
+      "lunar_month": 11,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "十一月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-06-27",
+      "content_group": "1abcc4743eeb8fdcf210",
+      "title_key": "宜荒岛求生",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "weekday": 1,
+      "lunar_month": 11,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "十一月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-01-13",
+      "content_group": "a5e0f4663d5c5dfd9aa5",
+      "title_key": "宜任性",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "十一月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-12-13",
+      "content_group": "35ab66b406a62c85ff81",
+      "title_key": "宜远眺",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "十一月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-12-12",
+      "content_group": "2d0cfc51904ecf74ac1b",
+      "title_key": "宜保持距离",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-16",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "十一月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-12-27",
+      "content_group": "edc30e5f9e7307a4c947",
+      "title_key": "宜思考",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "十一月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-11-18",
+      "content_group": "624c7c8be7ca59b75426",
+      "title_key": "宜冰冻",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "十一月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-10-19",
+      "content_group": "94ee47f0f1907f941695",
+      "title_key": "宜保暖",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "weekday": 0,
+      "lunar_month": 12,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "十二月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-12-04",
+      "content_group": "17523ec3ca5ef25dd292",
+      "title_key": "忌背对冬日",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "weekday": 1,
+      "lunar_month": 12,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "十二月初二",
+      "solar_term": "大寒",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-01-26",
+      "content_group": "0ba30eded1906a9ba2eb",
+      "title_key": "宜对酒",
+      "event_id": "大寒",
+      "event_label": "大寒",
+      "display_label": "大寒",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "weekday": 2,
+      "lunar_month": 12,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "十二月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-01-08",
+      "content_group": "b9836e8a7e3815c2f2e0",
+      "title_key": "宜重温",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "weekday": 3,
+      "lunar_month": 12,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "十二月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-11-08",
+      "content_group": "10fc6c8025bb21eaffcb",
+      "title_key": "忌翘首以待",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "weekday": 4,
+      "lunar_month": 12,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "十二月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-07-21",
+      "content_group": "392dcf2917197783193c",
+      "title_key": "忌渐行渐远",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "weekday": 5,
+      "lunar_month": 12,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "十二月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-03-20",
+      "content_group": "afcf1032258b5d9b9c16",
+      "title_key": "宜踏青",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "weekday": 6,
+      "lunar_month": 12,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "十二月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-11-23",
+      "content_group": "282dceb95fc0e48541cc",
+      "title_key": "宜冬眠",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "weekday": 0,
+      "lunar_month": 12,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "十二月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-05-31",
+      "content_group": "28a6dc621be256149665",
+      "title_key": "宜记住痛",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "weekday": 1,
+      "lunar_month": 12,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "十二月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-08",
+      "content_group": "ce83089a5e575a27166a",
+      "title_key": "忌伤怀",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "weekday": 2,
+      "lunar_month": 12,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "十二月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-05-20",
+      "content_group": "32676372e3e131f12f46",
+      "title_key": "忌不为所动",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "weekday": 3,
+      "lunar_month": 12,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "十二月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-11-21",
+      "content_group": "1e141dd0950baa983c12",
+      "title_key": "宜雪中漫步",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "weekday": 4,
+      "lunar_month": 12,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "十二月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-04-25",
+      "content_group": "8da50a636f7b3b35367b",
+      "title_key": "宜存在",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "weekday": 5,
+      "lunar_month": 12,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "十二月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-12-04",
+      "content_group": "cf6779b6b0fdf9e0685c",
+      "title_key": "宜堆雪人",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "weekday": 6,
+      "lunar_month": 12,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "十二月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-26",
+      "content_group": "fd0dab34a9f16c742265",
+      "title_key": "忌停息",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "weekday": 0,
+      "lunar_month": 12,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "十二月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-12-04",
+      "content_group": "5e441a2b1749f831afe3",
+      "title_key": "宜如沐春风",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "weekday": 1,
+      "lunar_month": 12,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "十二月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-11-30",
+      "content_group": "04ce44f59770e25b0d3b",
+      "title_key": "宜回忆",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "weekday": 2,
+      "lunar_month": 12,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "十二月十七",
+      "solar_term": "立春",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-11-07",
+      "content_group": "233c62c618485f15ffdc",
+      "title_key": "忌目光短浅",
+      "event_id": "立春",
+      "event_label": "立春",
+      "display_label": "立春",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "weekday": 3,
+      "lunar_month": 12,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "十二月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-11-22",
+      "content_group": "13c51ca60e948b7835ee",
+      "title_key": "宜归零",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "weekday": 4,
+      "lunar_month": 12,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "十二月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-12-18",
+      "content_group": "753083a033473a5879d2",
+      "title_key": "宜冬泳",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "weekday": 5,
+      "lunar_month": 12,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "十二月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-03-19",
+      "content_group": "43190eaaee83c86b5ac0",
+      "title_key": "忌迷失",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-02-08",
+      "weekday": 6,
+      "lunar_month": 12,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "十二月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-11-13",
+      "content_group": "11c58032f42d841e4e3c",
+      "title_key": "宜小劳作",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "weekday": 0,
+      "lunar_month": 12,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "十二月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-01-31",
+      "content_group": "30b846c0f9aac797dffd",
+      "title_key": "宜看海",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "weekday": 1,
+      "lunar_month": 12,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "十二月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-24",
+      "content_group": "cf5651a65cfcbcbe2f90",
+      "title_key": "忌锋利",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "weekday": 2,
+      "lunar_month": 12,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "十二月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-01-16",
+      "content_group": "811635ea7eb9371beb0a",
+      "title_key": "宜淡泊",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "weekday": 3,
+      "lunar_month": 12,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "十二月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-07-24",
+      "content_group": "49741aba7e89f32162e5",
+      "title_key": "宜吸猫",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "weekday": 4,
+      "lunar_month": 12,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "十二月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-11-27",
+      "content_group": "ec1f97acd6f5e9c34c6c",
+      "title_key": "宜暖心",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-14",
+      "weekday": 5,
+      "lunar_month": 12,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "十二月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-12-22",
+      "content_group": "8ade7f98971a04ad6794",
+      "title_key": "宜眷恋冬天",
+      "event_id": "02-14",
+      "event_label": "情人节",
+      "display_label": "情人节",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "weekday": 6,
+      "lunar_month": 12,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "十二月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-02-01",
+      "content_group": "55b618e1fd7dfb3c6dbc",
+      "title_key": "宜归乡",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "weekday": 0,
+      "lunar_month": 12,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "十二月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": true,
+      "record_id": "2018-12-24",
+      "content_group": "b18bc8686910a96251f9",
+      "title_key": "宜相守",
+      "event_id": "lunar_new_year_window",
+      "event_label": "除夕",
+      "display_label": "除夕",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "weekday": 1,
+      "lunar_month": 1,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "正月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-02-09",
+      "content_group": "48e471114a49ef6dbc6a",
+      "title_key": "宜返乡",
+      "event_id": "lunar_new_year_window",
+      "event_label": "春节",
+      "display_label": "春节",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "weekday": 2,
+      "lunar_month": 1,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "正月初二",
+      "solar_term": "雨水",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-02-07",
+      "content_group": "4948b77312faaabe35d2",
+      "title_key": "宜羁绊",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "weekday": 3,
+      "lunar_month": 1,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "正月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-11-30",
+      "content_group": "ad39da44619ecdcb236d",
+      "title_key": "宜陪伴",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "weekday": 4,
+      "lunar_month": 1,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "正月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-12-21",
+      "content_group": "61da8d0a3d9e3b010811",
+      "title_key": "宜吃火锅",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "weekday": 5,
+      "lunar_month": 1,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "正月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-05-01",
+      "content_group": "891e0ed43408a71da2bc",
+      "title_key": "宜寻找同伴",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "weekday": 6,
+      "lunar_month": 1,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "正月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-10-08",
+      "content_group": "1b7e9789ba49d5ef9d6b",
+      "title_key": "宜长相伴",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-23",
+      "weekday": 0,
+      "lunar_month": 1,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "正月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-04-20",
+      "content_group": "b5d33f80132bc91a8a5a",
+      "title_key": "宜元气满满",
+      "event_id": "lunar_new_year_window",
+      "event_label": "迎春",
+      "display_label": "迎春",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_new_year_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "weekday": 1,
+      "lunar_month": 1,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "正月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-17",
+      "content_group": "9c87a1d2fb02fd97aa72",
+      "title_key": "宜吟诗",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "weekday": 2,
+      "lunar_month": 1,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "正月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-06-23",
+      "content_group": "46d7ed5d8aab71f5875a",
+      "title_key": "忌道别",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "weekday": 3,
+      "lunar_month": 1,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "正月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-08-19",
+      "content_group": "35b588e470134d26f644",
+      "title_key": "宜脱单",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "weekday": 4,
+      "lunar_month": 1,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "正月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-15",
+      "content_group": "0501ac07196476e422b0",
+      "title_key": "宜野趣",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "weekday": 5,
+      "lunar_month": 1,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "正月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-05-09",
+      "content_group": "bbcf1655bf436a59594a",
+      "title_key": "忌加班",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "weekday": 6,
+      "lunar_month": 1,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "正月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-08-23",
+      "content_group": "3cc0937ee2a78b8294f8",
+      "title_key": "宜汹涌",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "weekday": 0,
+      "lunar_month": 1,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "正月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-02-15",
+      "content_group": "baab3dff0a3674d75bac",
+      "title_key": "忌轻信诺言",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "weekday": 1,
+      "lunar_month": 1,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "正月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-02-24",
+      "content_group": "5cfd726500d7c2507707",
+      "title_key": "宜捕捉月亮",
+      "event_id": "元宵节",
+      "event_label": "元宵节",
+      "display_label": "元宵节",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_festival_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "weekday": 2,
+      "lunar_month": 1,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "正月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-04",
+      "content_group": "e9545f64f3d5bcff0864",
+      "title_key": "宜不悔",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "weekday": 3,
+      "lunar_month": 1,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "正月十七",
+      "solar_term": "驚蟄",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-03-21",
+      "content_group": "db6c3c17c23774ab637f",
+      "title_key": "宜奔赴",
+      "event_id": "驚蟄",
+      "event_label": "驚蟄",
+      "display_label": "驚蟄",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "weekday": 4,
+      "lunar_month": 1,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "正月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-17",
+      "content_group": "512deca63f9163cc9bda",
+      "title_key": "忌念旧",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "weekday": 5,
+      "lunar_month": 1,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "正月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-12-27",
+      "content_group": "24c69b0d110151655f1a",
+      "title_key": "宜随性",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "weekday": 6,
+      "lunar_month": 1,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "正月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-14",
+      "content_group": "1776c58eaa1b22005713",
+      "title_key": "宜风流",
+      "event_id": "03-08",
+      "event_label": "妇女节",
+      "display_label": "妇女节",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "weekday": 0,
+      "lunar_month": 1,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "正月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-04-17",
+      "content_group": "b591157717d2270c00e6",
+      "title_key": "忌宅居",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "weekday": 1,
+      "lunar_month": 1,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "正月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-09-21",
+      "content_group": "07dd11ac5e1ae4e4b096",
+      "title_key": "宜回首",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "weekday": 2,
+      "lunar_month": 1,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "正月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-02-16",
+      "content_group": "3cff0be6631d10579610",
+      "title_key": "宜期许",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "weekday": 3,
+      "lunar_month": 1,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "正月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-04-28",
+      "content_group": "5fc79332ef8524c200d9",
+      "title_key": "忌零落",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "weekday": 4,
+      "lunar_month": 1,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "正月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-02-09",
+      "content_group": "036097f4da4db66de07f",
+      "title_key": "忌催促",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "weekday": 5,
+      "lunar_month": 1,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "正月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-06-04",
+      "content_group": "ec1b081e25d66ec051a0",
+      "title_key": "宜游荡",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "weekday": 6,
+      "lunar_month": 1,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "正月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-03-21",
+      "content_group": "2a9d044242ac320dffc3",
+      "title_key": "宜明媚",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "weekday": 0,
+      "lunar_month": 1,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "正月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-03-02",
+      "content_group": "df9fc5e10a6751344511",
+      "title_key": "宜春夜漫游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "weekday": 1,
+      "lunar_month": 1,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "正月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-01-04",
+      "content_group": "c49ee58cb5f8fdb63f0f",
+      "title_key": "宜倾城",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "weekday": 2,
+      "lunar_month": 1,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "正月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-10-04",
+      "content_group": "97c243db325e7f7c0aa0",
+      "title_key": "宜拥抱",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "weekday": 3,
+      "lunar_month": 2,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "二月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-02-14",
+      "content_group": "f599008eeb01d214fa7a",
+      "title_key": "宜回望",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "weekday": 4,
+      "lunar_month": 2,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "二月初二",
+      "solar_term": "春分",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-03-22",
+      "content_group": "67baa82f84d764a2a049",
+      "title_key": "忌冷落爱人",
+      "event_id": "春分",
+      "event_label": "春分",
+      "display_label": "春分",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "weekday": 5,
+      "lunar_month": 2,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "二月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-05-14",
+      "content_group": "0d96850c53a820f81500",
+      "title_key": "宜释怀",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "weekday": 6,
+      "lunar_month": 2,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "二月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-02-04",
+      "content_group": "d52fcdfc771f0f168af9",
+      "title_key": "宜春光乍泄",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "weekday": 0,
+      "lunar_month": 2,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "二月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-02-19",
+      "content_group": "3e22a87de7994a9b522a",
+      "title_key": "忌暗无天日",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "weekday": 1,
+      "lunar_month": 2,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "二月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-10-03",
+      "content_group": "ee9b547af744aead9f15",
+      "title_key": "宜炽烈",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "weekday": 2,
+      "lunar_month": 2,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "二月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-04-01",
+      "content_group": "0da24b57c2fcac9807f0",
+      "title_key": "忌真话",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "weekday": 3,
+      "lunar_month": 2,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "二月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-29",
+      "content_group": "d20df3ccd60985f102f9",
+      "title_key": "宜谈笑风生",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "weekday": 4,
+      "lunar_month": 2,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "二月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-01-30",
+      "content_group": "b3f9e2cc6360bc0ddde5",
+      "title_key": "宜春天相爱",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "weekday": 5,
+      "lunar_month": 2,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "二月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-04-14",
+      "content_group": "175be74df1ed1a546ff7",
+      "title_key": "忌芥撞",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "weekday": 6,
+      "lunar_month": 2,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "二月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-10-07",
+      "content_group": "2bfe0ab0be53bc4b9a65",
+      "title_key": "宜享受闲暇",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "weekday": 0,
+      "lunar_month": 2,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "二月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-09-28",
+      "content_group": "1fd2ce973c1f67137cc3",
+      "title_key": "宜再次青春",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "weekday": 1,
+      "lunar_month": 2,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "二月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-03-31",
+      "content_group": "cc042c4e298c32542e9b",
+      "title_key": "宜无暇",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "weekday": 2,
+      "lunar_month": 2,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "二月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-01-08",
+      "content_group": "3873adc595d05ca1639a",
+      "title_key": "忌执念",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "weekday": 3,
+      "lunar_month": 2,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "二月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-09-08",
+      "content_group": "57174d11f1584cee6ab3",
+      "title_key": "忌青春",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "weekday": 4,
+      "lunar_month": 2,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "二月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-04-09",
+      "content_group": "6865482974e8f18fb071",
+      "title_key": "宜music",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "weekday": 5,
+      "lunar_month": 2,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "二月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-03-22",
+      "content_group": "3bf27f870562c7832b6a",
+      "title_key": "宜放空",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "weekday": 6,
+      "lunar_month": 2,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "二月十八",
+      "solar_term": "清明",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-01-20",
+      "content_group": "cf54f04d45f80f35b1ea",
+      "title_key": "宜穿棉袄",
+      "event_id": "清明",
+      "event_label": "清明",
+      "display_label": "清明",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "weekday": 0,
+      "lunar_month": 2,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "二月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-10-03",
+      "content_group": "095810b1327eee8fe88f",
+      "title_key": "宜浮生若梦",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "weekday": 1,
+      "lunar_month": 2,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "二月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-05-04",
+      "content_group": "735af37308cdb723d558",
+      "title_key": "宜刺挠",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "weekday": 2,
+      "lunar_month": 2,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "二月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-06-15",
+      "content_group": "b1aa0f5e01beb1568333",
+      "title_key": "宜直面",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "weekday": 3,
+      "lunar_month": 2,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "二月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-30",
+      "content_group": "4ec8caa796fc55fb788c",
+      "title_key": "宜漫游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "weekday": 4,
+      "lunar_month": 2,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "二月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-04-06",
+      "content_group": "937571493562ed20c0e9",
+      "title_key": "宜春游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "weekday": 5,
+      "lunar_month": 2,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "二月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-01",
+      "content_group": "0da71e543e25cd622100",
+      "title_key": "宜一知半解",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "weekday": 6,
+      "lunar_month": 2,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "二月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-01-04",
+      "content_group": "fcdd0a2b510383bcd97e",
+      "title_key": "宜新生",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "weekday": 0,
+      "lunar_month": 2,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "二月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-07-18",
+      "content_group": "6dd6347bd84f11df49b7",
+      "title_key": "宜年轻气盛",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-14",
+      "weekday": 1,
+      "lunar_month": 2,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "二月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-04-25",
+      "content_group": "4532add23f6e6cfadd50",
+      "title_key": "宜情窦初开",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-15",
+      "weekday": 2,
+      "lunar_month": 2,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "二月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-06-03",
+      "content_group": "7a670f98ce0c7e98a9e0",
+      "title_key": "宜激情",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-16",
+      "weekday": 3,
+      "lunar_month": 2,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "二月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-11-27",
+      "content_group": "ec7b7d956876bca623cb",
+      "title_key": "忌世故",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "weekday": 4,
+      "lunar_month": 3,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "三月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-04-19",
+      "content_group": "5c582d9edf01ddf99b97",
+      "title_key": "忌薄情",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "weekday": 5,
+      "lunar_month": 3,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "三月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-04-27",
+      "content_group": "3e3e57201baf793c6d32",
+      "title_key": "宜闲散",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "weekday": 6,
+      "lunar_month": 3,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "三月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-04-29",
+      "content_group": "b5466dbac25620dd9d55",
+      "title_key": "宜不负今日",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "weekday": 0,
+      "lunar_month": 3,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "三月初四",
+      "solar_term": "穀雨",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-06-07",
+      "content_group": "d3df5da097293bdab44a",
+      "title_key": "宜少当努力",
+      "event_id": "穀雨",
+      "event_label": "穀雨",
+      "display_label": "穀雨",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "weekday": 1,
+      "lunar_month": 3,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "三月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-09-03",
+      "content_group": "7325b1c26a50669d1b86",
+      "title_key": "宜远征",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "weekday": 2,
+      "lunar_month": 3,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "三月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-06-07",
+      "content_group": "ae9b068d5e59fa8a8c73",
+      "title_key": "忌成败论",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "weekday": 3,
+      "lunar_month": 3,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "三月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-03-11",
+      "content_group": "5d61b9a5bc1347f09a55",
+      "title_key": "宜温存",
+      "event_id": "04-23",
+      "event_label": "读书日",
+      "display_label": "读书日",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "weekday": 4,
+      "lunar_month": 3,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "三月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-02-24",
+      "content_group": "0e5b459d0e9e68fbddf4",
+      "title_key": "宜深邃",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "weekday": 5,
+      "lunar_month": 3,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "三月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-21",
+      "content_group": "28c473d411ea53d8c0d5",
+      "title_key": "宜梦游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "weekday": 6,
+      "lunar_month": 3,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "三月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-08-03",
+      "content_group": "a58adf48c0655f3ed409",
+      "title_key": "宜随时快乐",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "weekday": 0,
+      "lunar_month": 3,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "三月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-08-31",
+      "content_group": "2fe5d7b5f8bb5f254303",
+      "title_key": "忌欺骗",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "weekday": 1,
+      "lunar_month": 3,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "三月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-04-04",
+      "content_group": "650321337cd9ff3557cd",
+      "title_key": "宜春之祭",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "weekday": 2,
+      "lunar_month": 3,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "三月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-07-22",
+      "content_group": "73df541f4bfe96620edc",
+      "title_key": "宜过眼云烟",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "weekday": 3,
+      "lunar_month": 3,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "三月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-14",
+      "content_group": "cc5df14b0d0383e29611",
+      "title_key": "宜情话连篇",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "weekday": 4,
+      "lunar_month": 3,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "三月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-03-10",
+      "content_group": "b58da4cde16bcb19a29a",
+      "title_key": "宜醉春风",
+      "event_id": "05-01",
+      "event_label": "劳动节",
+      "display_label": "劳动节",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "weekday": 5,
+      "lunar_month": 3,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "三月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-07-16",
+      "content_group": "d37da64ff6c19beaf2ba",
+      "title_key": "忌打卡坐班",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "weekday": 6,
+      "lunar_month": 3,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "三月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-04-26",
+      "content_group": "c004ef204e00f30854b9",
+      "title_key": "宜适度",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "weekday": 0,
+      "lunar_month": 3,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "三月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-06-10",
+      "content_group": "8154f53e0c2278093cfb",
+      "title_key": "宜买夏装",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "weekday": 1,
+      "lunar_month": 3,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "三月十九",
+      "solar_term": "立夏",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-10-20",
+      "content_group": "0b3a4583a3c18e9a139e",
+      "title_key": "忌匆匆",
+      "event_id": "立夏",
+      "event_label": "立夏",
+      "display_label": "立夏",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "weekday": 2,
+      "lunar_month": 3,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "三月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-04-08",
+      "content_group": "f2d116c1b68e7d74efae",
+      "title_key": "宜逛花市",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "weekday": 3,
+      "lunar_month": 3,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "三月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-05-05",
+      "content_group": "4015ed7ef5c80e061706",
+      "title_key": "宜故地重游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "weekday": 4,
+      "lunar_month": 3,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "三月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-03-26",
+      "content_group": "5c3fafaf20286794faee",
+      "title_key": "宜做个幸福的人",
+      "event_id": "wife_birthday",
+      "event_label": "妻子生日",
+      "display_label": "",
+      "personal": true,
+      "selection_reasons": [
+        "personal_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "weekday": 5,
+      "lunar_month": 3,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "三月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-12-11",
+      "content_group": "6734df0bf109db39f304",
+      "title_key": "忌偷懒",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "weekday": 6,
+      "lunar_month": 3,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "三月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-04-22",
+      "content_group": "7a67f0429f069d664d39",
+      "title_key": "宜踏春",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "weekday": 0,
+      "lunar_month": 3,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "三月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-02-03",
+      "content_group": "43f2230846c3c2ef7c41",
+      "title_key": "宜苏醒",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "weekday": 1,
+      "lunar_month": 3,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "三月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-02-04",
+      "content_group": "406db47bc20ec10e3ed8",
+      "title_key": "宜复苏",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "weekday": 2,
+      "lunar_month": 3,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "三月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-04-11",
+      "content_group": "7cbb9c8480de73f250ab",
+      "title_key": "忌胆怯",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "weekday": 3,
+      "lunar_month": 3,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "三月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-03-12",
+      "content_group": "3614d1fbea72dd8fa937",
+      "title_key": "宜迎春",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "weekday": 4,
+      "lunar_month": 3,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "三月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-02-19",
+      "content_group": "8be5d66ca2fefcd7f65f",
+      "title_key": "忌离别",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "weekday": 5,
+      "lunar_month": 3,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "三月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-07-09",
+      "content_group": "e651ce0d05728396ff1e",
+      "title_key": "宜聆听",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "weekday": 6,
+      "lunar_month": 4,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "四月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-26",
+      "content_group": "ca107327992b8e8725a3",
+      "title_key": "宜忙里偷闲",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "weekday": 0,
+      "lunar_month": 4,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "四月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-02-16",
+      "content_group": "470da7153d0e1b1441bc",
+      "title_key": "忌止步不前",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "weekday": 1,
+      "lunar_month": 4,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "四月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-03-17",
+      "content_group": "afba83daeef0fb67eea8",
+      "title_key": "宜艳遇",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "weekday": 2,
+      "lunar_month": 4,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "四月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-09-17",
+      "content_group": "e60aa3c8a9568e31c956",
+      "title_key": "忌懵懂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "weekday": 3,
+      "lunar_month": 4,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "四月初五",
+      "solar_term": "小滿",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-08-04",
+      "content_group": "3131988108f459220ccf",
+      "title_key": "忌一板正经",
+      "event_id": "小滿",
+      "event_label": "小滿",
+      "display_label": "小滿",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "weekday": 4,
+      "lunar_month": 4,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "四月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-05-22",
+      "content_group": "c47cabe0d0e67d3d09e2",
+      "title_key": "宜整理大脑",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "weekday": 5,
+      "lunar_month": 4,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "四月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-10-08",
+      "content_group": "aaa053ffa92f5d04cce3",
+      "title_key": "宜朝九晚五",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "weekday": 6,
+      "lunar_month": 4,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "四月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-08-30",
+      "content_group": "f90dfbb3ed1b5c36b6e4",
+      "title_key": "忌搬弄是非",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "weekday": 0,
+      "lunar_month": 4,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "四月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-08-21",
+      "content_group": "ad8fdec473207ab3df9a",
+      "title_key": "宜一分为二",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "weekday": 1,
+      "lunar_month": 4,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "四月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-03-17",
+      "content_group": "3a318be5581d06cbb6a0",
+      "title_key": "宜熨烫记忆",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "weekday": 2,
+      "lunar_month": 4,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "四月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-02-04",
+      "content_group": "674e470e75c1f10aae1f",
+      "title_key": "宜迎接春天",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "weekday": 3,
+      "lunar_month": 4,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "四月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-11-03",
+      "content_group": "44068c5cdd369dc90589",
+      "title_key": "宜春秋两不沾",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "weekday": 4,
+      "lunar_month": 4,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "四月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-05-19",
+      "content_group": "048d0a414ec16d87227a",
+      "title_key": "忌心事重重",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "weekday": 5,
+      "lunar_month": 4,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "四月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-12-01",
+      "content_group": "9212efe76dec46063bf6",
+      "title_key": "宜幽默风趣",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "weekday": 6,
+      "lunar_month": 4,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "四月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-07-05",
+      "content_group": "28c89aa4f4e9d4fb24bd",
+      "title_key": "宜松弛",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "weekday": 0,
+      "lunar_month": 4,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "四月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-06-01",
+      "content_group": "bbe128994e2d8c372022",
+      "title_key": "宜单纯",
+      "event_id": "06-01",
+      "event_label": "儿童节",
+      "display_label": "儿童节",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "weekday": 1,
+      "lunar_month": 4,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "四月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-07-07",
+      "content_group": "84c8bda6d194a66db084",
+      "title_key": "忌鼻塞",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "weekday": 2,
+      "lunar_month": 4,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "四月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-08-05",
+      "content_group": "d9c75c1fc0e02b430619",
+      "title_key": "宜思考人生",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "weekday": 3,
+      "lunar_month": 4,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "四月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-07-29",
+      "content_group": "31ec15826b2f4f29eee1",
+      "title_key": "宜婉转",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "weekday": 4,
+      "lunar_month": 4,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "四月二十",
+      "solar_term": "芒種",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-06-24",
+      "content_group": "cafd240844db4d872fc5",
+      "title_key": "宜流汗",
+      "event_id": "芒種",
+      "event_label": "芒種",
+      "display_label": "芒種",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "weekday": 5,
+      "lunar_month": 4,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "四月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-06-29",
+      "content_group": "57a3fd4ad7c3761d798e",
+      "title_key": "宜火热",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "weekday": 6,
+      "lunar_month": 4,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "四月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-08-23",
+      "content_group": "d967f624283e0655b420",
+      "title_key": "宜醒来",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "weekday": 0,
+      "lunar_month": 4,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "四月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-06-21",
+      "content_group": "c9dcaacc0f83bc32e2df",
+      "title_key": "宜收听电台",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "weekday": 1,
+      "lunar_month": 4,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "四月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-03-15",
+      "content_group": "4ca2341cc523ca6a316f",
+      "title_key": "宜下决心",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "weekday": 2,
+      "lunar_month": 4,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "四月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-07-31",
+      "content_group": "fa592a46a420db00c971",
+      "title_key": "宜暴露自己",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "weekday": 3,
+      "lunar_month": 4,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "四月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-05-02",
+      "content_group": "052e07d04d9c843a4772",
+      "title_key": "忌沉迷过去",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "weekday": 4,
+      "lunar_month": 4,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "四月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-05-05",
+      "content_group": "9878ce0e0555629c0343",
+      "title_key": "宜发呆",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "weekday": 5,
+      "lunar_month": 4,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "四月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-07-05",
+      "content_group": "57337ce8b805135a3f55",
+      "title_key": "忌强拆",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "weekday": 6,
+      "lunar_month": 4,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "四月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-11-03",
+      "content_group": "95efe972d2df0817c0a0",
+      "title_key": "宜深藏",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "weekday": 0,
+      "lunar_month": 5,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "五月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-07-27",
+      "content_group": "af47f47532423b5700d1",
+      "title_key": "宜海岛度假",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "weekday": 1,
+      "lunar_month": 5,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "五月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-06-21",
+      "content_group": "31bf6e910990e29dea69",
+      "title_key": "宜清凉",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "weekday": 2,
+      "lunar_month": 5,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "五月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-04-03",
+      "content_group": "00272709bfb9a4059a00",
+      "title_key": "宜懵懂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "weekday": 3,
+      "lunar_month": 5,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "五月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-05-05",
+      "content_group": "670bee16ccc9610f9dad",
+      "title_key": "宜等待夏天",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "weekday": 4,
+      "lunar_month": 5,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "五月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-06-25",
+      "content_group": "e28e1ba86bc1fe35aa63",
+      "title_key": "宜适意",
+      "event_id": "端午节",
+      "event_label": "端午节",
+      "display_label": "端午节",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_festival_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "weekday": 5,
+      "lunar_month": 5,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "五月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-05-01",
+      "content_group": "1662e3d63280159269ce",
+      "title_key": "宜劳作",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "weekday": 6,
+      "lunar_month": 5,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "五月初七",
+      "solar_term": "夏至",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-08-01",
+      "content_group": "68b606aeeecae4b35d30",
+      "title_key": "宜肩并肩",
+      "event_id": "wedding_anniversary",
+      "event_label": "结婚纪念日",
+      "display_label": "夏至",
+      "personal": true,
+      "selection_reasons": [
+        "personal_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "weekday": 0,
+      "lunar_month": 5,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "五月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-07-16",
+      "content_group": "6cbd6a59db2e701fc126",
+      "title_key": "宜撒欢",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "weekday": 1,
+      "lunar_month": 5,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "五月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-07-07",
+      "content_group": "829aaec8af9866584f5d",
+      "title_key": "宜听虫声",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "weekday": 2,
+      "lunar_month": 5,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "五月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-07-02",
+      "content_group": "3faeb697567c1bff2c37",
+      "title_key": "宜进度过半",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "weekday": 3,
+      "lunar_month": 5,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "五月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-05-07",
+      "content_group": "b4c1888f0842064c2fb6",
+      "title_key": "宜优其跬步",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "weekday": 4,
+      "lunar_month": 5,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "五月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-07-12",
+      "content_group": "2e93548fc524af205cdf",
+      "title_key": "宜消暑",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "weekday": 5,
+      "lunar_month": 5,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "五月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-04-30",
+      "content_group": "8e28f0e66006724f5d13",
+      "title_key": "忌紧张",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "weekday": 6,
+      "lunar_month": 5,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "五月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-04-05",
+      "content_group": "afb56a450202322bd51d",
+      "title_key": "宜厮磨",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "weekday": 0,
+      "lunar_month": 5,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "五月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-11-28",
+      "content_group": "ce90057b000d49780555",
+      "title_key": "宜初雪",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "weekday": 1,
+      "lunar_month": 5,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "五月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-11-19",
+      "content_group": "cfc2b8b6f97835fa00d4",
+      "title_key": "宜有盼头",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "weekday": 2,
+      "lunar_month": 5,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "五月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-06-13",
+      "content_group": "ec8a88ae6894b0fc32d6",
+      "title_key": "宜颜控",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "weekday": 3,
+      "lunar_month": 5,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "五月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-07-21",
+      "content_group": "38a96444af12d41274fa",
+      "title_key": "宜敏锐",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "weekday": 4,
+      "lunar_month": 5,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "五月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-08-23",
+      "content_group": "0fc39a0fbab735ed47f3",
+      "title_key": "忌恋夏",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "weekday": 5,
+      "lunar_month": 5,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "五月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-08",
+      "content_group": "f98a1ff338952ddcf760",
+      "title_key": "宜开心上班去",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "weekday": 6,
+      "lunar_month": 5,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "五月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-09-15",
+      "content_group": "96594650a788cd00c859",
+      "title_key": "忌装忙",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "weekday": 0,
+      "lunar_month": 5,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "五月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-12-06",
+      "content_group": "2350bebfacf4477e0901",
+      "title_key": "宜自省",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "weekday": 1,
+      "lunar_month": 5,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "五月廿三",
+      "solar_term": "小暑",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-29",
+      "content_group": "8ea2b35e43a4f65eeb93",
+      "title_key": "宜避暑",
+      "event_id": "小暑",
+      "event_label": "小暑",
+      "display_label": "小暑",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "weekday": 2,
+      "lunar_month": 5,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "五月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-08-23",
+      "content_group": "0f7cf451205553769f4b",
+      "title_key": "宜乘凉",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "weekday": 3,
+      "lunar_month": 5,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "五月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-10-04",
+      "content_group": "475f23a82dcaea541043",
+      "title_key": "忌揣摩",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "weekday": 4,
+      "lunar_month": 5,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "五月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-08-13",
+      "content_group": "7148e150a6247b9ecff9",
+      "title_key": "宜休整添新",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "weekday": 5,
+      "lunar_month": 5,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "五月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-04-08",
+      "content_group": "95ab3e82021f20f9489f",
+      "title_key": "宜疯狂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "weekday": 6,
+      "lunar_month": 5,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "五月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-03-28",
+      "content_group": "c26f516c145a15333439",
+      "title_key": "宜撩拨春心",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "weekday": 0,
+      "lunar_month": 5,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "五月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-12-25",
+      "content_group": "fd028d847bd69fe8df57",
+      "title_key": "宜许愿",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "weekday": 1,
+      "lunar_month": 6,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "六月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-06-03",
+      "content_group": "41658353bf6cd772317b",
+      "title_key": "宜坚挺",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "weekday": 2,
+      "lunar_month": 6,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "六月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-06-23",
+      "content_group": "1248c23048855e9daf52",
+      "title_key": "忌怂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "weekday": 3,
+      "lunar_month": 6,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "六月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-01-29",
+      "content_group": "383269143e61e95f43a6",
+      "title_key": "宜放手一搏",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "weekday": 4,
+      "lunar_month": 6,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "六月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-03",
+      "content_group": "f4676c0b39417d03de19",
+      "title_key": "宜幻想",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "weekday": 5,
+      "lunar_month": 6,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "六月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-12-16",
+      "content_group": "96a4e27ecf1a5128d725",
+      "title_key": "宜单身贵族",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "weekday": 6,
+      "lunar_month": 6,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "六月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-01-25",
+      "content_group": "9cdd736041018ef2b3dd",
+      "title_key": "宜抬头",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "weekday": 0,
+      "lunar_month": 6,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "六月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-11-20",
+      "content_group": "e9efdeee242da71e44a2",
+      "title_key": "宜改变",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "weekday": 1,
+      "lunar_month": 6,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "六月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-10-25",
+      "content_group": "ead95da7126bab40af94",
+      "title_key": "忌感情用事",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "weekday": 2,
+      "lunar_month": 6,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "六月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-12-28",
+      "content_group": "6fc3ec4dd202fc5d80c4",
+      "title_key": "宜笑对镜头",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "weekday": 3,
+      "lunar_month": 6,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "六月初十",
+      "solar_term": "大暑",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-05-06",
+      "content_group": "b695d15f6b26be8e6d6d",
+      "title_key": "宜热烈",
+      "event_id": "大暑",
+      "event_label": "大暑",
+      "display_label": "大暑",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "weekday": 4,
+      "lunar_month": 6,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "六月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-11-28",
+      "content_group": "7bda3c3014b2c7e8d601",
+      "title_key": "宜暗恋",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "weekday": 5,
+      "lunar_month": 6,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "六月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-11-28",
+      "content_group": "744cebcfd8d4746fd63f",
+      "title_key": "宜抱被而眠",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "weekday": 6,
+      "lunar_month": 6,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "六月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-02-28",
+      "content_group": "7904a37646378a6b71fb",
+      "title_key": "宜散漫",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "weekday": 0,
+      "lunar_month": 6,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "六月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-17",
+      "content_group": "b0b76b77037a4c76e90b",
+      "title_key": "宜胡思乱想",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "weekday": 1,
+      "lunar_month": 6,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "六月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-10-17",
+      "content_group": "5bdff455b6912fffb344",
+      "title_key": "宜探索真相",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "weekday": 2,
+      "lunar_month": 6,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "六月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-09-23",
+      "content_group": "ea7e1890e701389ba907",
+      "title_key": "宜自由生长",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "weekday": 3,
+      "lunar_month": 6,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "六月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-02-09",
+      "content_group": "6fe9e8ad8cd38e538802",
+      "title_key": "忌自我封闭",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "weekday": 4,
+      "lunar_month": 6,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "六月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-11-27",
+      "content_group": "cd7e80ed5759ebd852e8",
+      "title_key": "宜甜蜜负荷",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "weekday": 5,
+      "lunar_month": 6,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "六月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-11-21",
+      "content_group": "edb84dec4b9fe5320848",
+      "title_key": "宜准点下班",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "weekday": 6,
+      "lunar_month": 6,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "六月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-07-25",
+      "content_group": "7772874089e1212e0415",
+      "title_key": "宜长久",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "weekday": 0,
+      "lunar_month": 6,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "六月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-10-17",
+      "content_group": "6181a9b9fdb8ef5455fb",
+      "title_key": "忌吐槽",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "weekday": 1,
+      "lunar_month": 6,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "六月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-04-11",
+      "content_group": "21ece039710aeff879d7",
+      "title_key": "忌昨天买了个表",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "weekday": 2,
+      "lunar_month": 6,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "六月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-06-09",
+      "content_group": "fa6387263afc3d9bc86e",
+      "title_key": "宜闹中取静",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "weekday": 3,
+      "lunar_month": 6,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "六月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-11-03",
+      "content_group": "a4240a10ff12d63c2554",
+      "title_key": "宜保持清醒",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "weekday": 4,
+      "lunar_month": 6,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "六月廿五",
+      "solar_term": "立秋",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-09-05",
+      "content_group": "6bb5b35feb229e831ea7",
+      "title_key": "宜打扫生活",
+      "event_id": "立秋",
+      "event_label": "立秋",
+      "display_label": "立秋",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "weekday": 5,
+      "lunar_month": 6,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "六月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-09-20",
+      "content_group": "62f924d14a897b7e58a5",
+      "title_key": "忌停滞",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "weekday": 6,
+      "lunar_month": 6,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "六月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-08-28",
+      "content_group": "547610e212312803edcb",
+      "title_key": "忌碎碎念",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "weekday": 0,
+      "lunar_month": 6,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "六月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-11-11",
+      "content_group": "afdcfdf1b7c1e648cc4a",
+      "title_key": "宜反剁手",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "weekday": 1,
+      "lunar_month": 6,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "六月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-05-11",
+      "content_group": "4369fa786fd9f74d4ba9",
+      "title_key": "宜拥抱妈妈",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "weekday": 2,
+      "lunar_month": 6,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "六月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-03",
+      "content_group": "6ac270c7673312a9d484",
+      "title_key": "忌行尸走肉",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "weekday": 3,
+      "lunar_month": 7,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "七月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-05",
+      "content_group": "34c1f5a9ea1bbc64c664",
+      "title_key": "忌握手言和",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "weekday": 4,
+      "lunar_month": 7,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "七月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-10-09",
+      "content_group": "63d5f4de8dee919e6bc5",
+      "title_key": "忌阴霾",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "weekday": 5,
+      "lunar_month": 7,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "七月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-04-20",
+      "content_group": "a5555f7d5ec9125e3cd8",
+      "title_key": "忌伤感",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "weekday": 6,
+      "lunar_month": 7,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "七月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-02-11",
+      "content_group": "16f5bc95abb192839d5c",
+      "title_key": "宜玩闹",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "weekday": 0,
+      "lunar_month": 7,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "七月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-12-08",
+      "content_group": "8b33d1bb90d64013c03a",
+      "title_key": "宜摸鱼",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "weekday": 1,
+      "lunar_month": 7,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "七月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-24",
+      "content_group": "f0793121a3267cb4aa21",
+      "title_key": "宜爱一点",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "weekday": 2,
+      "lunar_month": 7,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "七月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-08-22",
+      "content_group": "2156782c634b8db487c8",
+      "title_key": "宜你依我侬",
+      "event_id": "七夕",
+      "event_label": "七夕",
+      "display_label": "七夕",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_festival_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "weekday": 3,
+      "lunar_month": 7,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "七月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-12-03",
+      "content_group": "d8269dc7bb804c034c99",
+      "title_key": "宜其乐融融",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "weekday": 4,
+      "lunar_month": 7,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "七月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-10-22",
+      "content_group": "8f24402b7cfb5f54a056",
+      "title_key": "宜主动",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "weekday": 5,
+      "lunar_month": 7,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "七月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-09-04",
+      "content_group": "d4d82a05606f55b12175",
+      "title_key": "宜惜时",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "weekday": 6,
+      "lunar_month": 7,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "七月十一",
+      "solar_term": "處暑",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-09-25",
+      "content_group": "e9e693331578712676eb",
+      "title_key": "宜停止",
+      "event_id": "處暑",
+      "event_label": "處暑",
+      "display_label": "處暑",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "weekday": 0,
+      "lunar_month": 7,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "七月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-27",
+      "content_group": "4393030a3769f94c7fe5",
+      "title_key": "忌深思熟虑",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "weekday": 1,
+      "lunar_month": 7,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "七月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-02-07",
+      "content_group": "6b3e9ecd5159615d9d4d",
+      "title_key": "忌重蹈覆辙",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "weekday": 2,
+      "lunar_month": 7,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "七月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-07-28",
+      "content_group": "8d5a6f1a83f83329eb7f",
+      "title_key": "忌自满",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "weekday": 3,
+      "lunar_month": 7,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "七月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-04-24",
+      "content_group": "8a96883f999c0123a590",
+      "title_key": "忌drama",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "weekday": 4,
+      "lunar_month": 7,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "七月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-07-28",
+      "content_group": "75641f3bc05b5d9f0c62",
+      "title_key": "忌沉沦",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "weekday": 5,
+      "lunar_month": 7,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "七月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-09-01",
+      "content_group": "1899b684d171f1eddb0f",
+      "title_key": "宜召唤",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "weekday": 6,
+      "lunar_month": 7,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "七月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-06-12",
+      "content_group": "82270b38c1d453c18d4e",
+      "title_key": "宜抉择",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "weekday": 0,
+      "lunar_month": 7,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "七月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-04-13",
+      "content_group": "fac54fe416b7aafadad7",
+      "title_key": "忌夜猫子",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "weekday": 1,
+      "lunar_month": 7,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "七月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-03-28",
+      "content_group": "89bcfbb5fc2f7b1aad8d",
+      "title_key": "宜独自心碎",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "weekday": 2,
+      "lunar_month": 7,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "七月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-10-04",
+      "content_group": "f30fa796213c6de22872",
+      "title_key": "宜团圆",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "weekday": 3,
+      "lunar_month": 7,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "七月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-11-08",
+      "content_group": "6fe3da5090da0d477481",
+      "title_key": "宜朝思暮想",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "weekday": 4,
+      "lunar_month": 7,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "七月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-11-19",
+      "content_group": "4c568ffb15ac5ee31269",
+      "title_key": "忌转行",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "weekday": 5,
+      "lunar_month": 7,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "七月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-08-16",
+      "content_group": "cd7963dfdede03289e02",
+      "title_key": "忌不劳而获",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "weekday": 6,
+      "lunar_month": 7,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "七月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-09-23",
+      "content_group": "1481dc663a70ea97ec7d",
+      "title_key": "宜赏秋色",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "weekday": 0,
+      "lunar_month": 7,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "七月廿六",
+      "solar_term": "白露",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-10-08",
+      "content_group": "ad6c2b9a4a5181da44fe",
+      "title_key": "宜怀秋",
+      "event_id": "白露",
+      "event_label": "白露",
+      "display_label": "白露",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "weekday": 1,
+      "lunar_month": 7,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "七月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-09-23",
+      "content_group": "cf9b79e55453df8750ef",
+      "title_key": "宜踏秋",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "weekday": 2,
+      "lunar_month": 7,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "七月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-10-26",
+      "content_group": "e6395f2dcd654e7e51b8",
+      "title_key": "宜回味",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "weekday": 3,
+      "lunar_month": 7,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "七月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-08-07",
+      "content_group": "41dd202b8003c75937bf",
+      "title_key": "宜迎秋风",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "weekday": 4,
+      "lunar_month": 8,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "八月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-11-07",
+      "content_group": "a4f2e85ed37d24a28aa2",
+      "title_key": "宜冬日恋歌",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "weekday": 5,
+      "lunar_month": 8,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "八月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-04-17",
+      "content_group": "6ad1342f7ab0da4d1b43",
+      "title_key": "宜四海力家",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "weekday": 6,
+      "lunar_month": 8,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "八月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-09",
+      "content_group": "1f6a38c5545578cf26ae",
+      "title_key": "宜偷懒",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "weekday": 0,
+      "lunar_month": 8,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "八月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-08-07",
+      "content_group": "71cef82d6caeed5cdb7c",
+      "title_key": "宜特立独行",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "weekday": 1,
+      "lunar_month": 8,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "八月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-09-26",
+      "content_group": "3069e396833c4196a8c6",
+      "title_key": "宜随风起舞",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "weekday": 2,
+      "lunar_month": 8,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "八月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-08",
+      "content_group": "d0d994e536803deab72c",
+      "title_key": "宜失落",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "weekday": 3,
+      "lunar_month": 8,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "八月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-02-05",
+      "content_group": "4dbf7cd39ca682c23cc8",
+      "title_key": "宜移情",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "weekday": 4,
+      "lunar_month": 8,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "八月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-10-24",
+      "content_group": "23407f8033e44a7ab76c",
+      "title_key": "宜秋游",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "weekday": 5,
+      "lunar_month": 8,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "八月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-08-17",
+      "content_group": "ee19e745dba017d8624d",
+      "title_key": "宜适度悲观",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "weekday": 6,
+      "lunar_month": 8,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "八月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-01-24",
+      "content_group": "5a5365faac2fb924b113",
+      "title_key": "忌过劳",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "weekday": 0,
+      "lunar_month": 8,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "八月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-10-30",
+      "content_group": "5fd3c0742e177f2677de",
+      "title_key": "宜翘班",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": 1,
+      "lunar_month": 8,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "八月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-09-13",
+      "content_group": "c899ef0d8233ce16b464",
+      "title_key": "宜回忆杀",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": 2,
+      "lunar_month": 8,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "八月十三",
+      "solar_term": "秋分",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-11-03",
+      "content_group": "1e59bb4c4768567d4744",
+      "title_key": "宜赏秋",
+      "event_id": "秋分",
+      "event_label": "秋分",
+      "display_label": "秋分",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": 3,
+      "lunar_month": 8,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "八月十四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-03",
+      "content_group": "fb9ceb4bdfd38a950787",
+      "title_key": "忌束手束脚",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": 4,
+      "lunar_month": 8,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "八月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-09-13",
+      "content_group": "25e53bf7ae0718008c36",
+      "title_key": "宜共情",
+      "event_id": "中秋节",
+      "event_label": "中秋节",
+      "display_label": "中秋节",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_festival_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "weekday": 5,
+      "lunar_month": 8,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "八月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-09-21",
+      "content_group": "28220a26ee104bc3a60f",
+      "title_key": "宜返老还童",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "weekday": 6,
+      "lunar_month": 8,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "八月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-11-26",
+      "content_group": "2e97f1a3289a07d7747a",
+      "title_key": "忌画饼",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": 0,
+      "lunar_month": 8,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "八月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-09-07",
+      "content_group": "2b247dcf9501b6e154e6",
+      "title_key": "忌留白",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": 1,
+      "lunar_month": 8,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "八月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-10",
+      "content_group": "aa6c8292976b5d50cd64",
+      "title_key": "宜看见风的形状",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": 2,
+      "lunar_month": 8,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "八月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-09-30",
+      "content_group": "9cff10456ad095f8759e",
+      "title_key": "忌尔虞我诈",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": 3,
+      "lunar_month": 8,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "八月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-01-04",
+      "content_group": "7ad66ee3e3b1043f97db",
+      "title_key": "宜再次出发",
+      "event_id": "10-01",
+      "event_label": "国庆节",
+      "display_label": "国庆节",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": 4,
+      "lunar_month": 8,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "八月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-09-25",
+      "content_group": "ff57acd6ec2100d24e89",
+      "title_key": "宜定格",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "weekday": 5,
+      "lunar_month": 8,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "八月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-04-26",
+      "content_group": "3ead4a64e8eee22594a6",
+      "title_key": "宜打盹儿",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "weekday": 6,
+      "lunar_month": 8,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "八月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-06-08",
+      "content_group": "4b9378bf67c010ace852",
+      "title_key": "宜睡前阅读",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": 0,
+      "lunar_month": 8,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "八月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-08-29",
+      "content_group": "3334d4cb5cf285f0f513",
+      "title_key": "宜彼此支撑",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": 1,
+      "lunar_month": 8,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "八月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-12-17",
+      "content_group": "d9cd67b4fff1aa2dd15f",
+      "title_key": "忌被塑造",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": 2,
+      "lunar_month": 8,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "八月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-01-15",
+      "content_group": "d38c35b160f7517e244c",
+      "title_key": "宜低调",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": 3,
+      "lunar_month": 8,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "八月廿八",
+      "solar_term": "寒露",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-09-23",
+      "content_group": "a61deb9b74aa24cd09fb",
+      "title_key": "宜收割",
+      "event_id": "寒露",
+      "event_label": "寒露",
+      "display_label": "寒露",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": 4,
+      "lunar_month": 8,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "八月廿九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-03-03",
+      "content_group": "4ad11e9e1d12c85a58df",
+      "title_key": "忌虚无",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "weekday": 5,
+      "lunar_month": 9,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "九月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-07-23",
+      "content_group": "48f9c0dcb0c67afc3da1",
+      "title_key": "宜闲逛",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "weekday": 6,
+      "lunar_month": 9,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "九月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-05-01",
+      "content_group": "f74d8fa5a8d77605c086",
+      "title_key": "宜大睡",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": 0,
+      "lunar_month": 9,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "九月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-08-24",
+      "content_group": "fd36245f75821e089b13",
+      "title_key": "宜微醺",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": 1,
+      "lunar_month": 9,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "九月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-02-02",
+      "content_group": "9438142e9404d833e30a",
+      "title_key": "宜玩耍",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": 2,
+      "lunar_month": 9,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "九月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-08-20",
+      "content_group": "bb3ff429768fb84399a1",
+      "title_key": "宜暗涌",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": 3,
+      "lunar_month": 9,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "九月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-06-22",
+      "content_group": "db1916772111a2385ecd",
+      "title_key": "忌伤害",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": 4,
+      "lunar_month": 9,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "九月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-04-11",
+      "content_group": "bad43e80101371048c4f",
+      "title_key": "宜找乐子",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "weekday": 5,
+      "lunar_month": 9,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "九月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-09-27",
+      "content_group": "d199bbea11cfd2df59f0",
+      "title_key": "宜造句",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "weekday": 6,
+      "lunar_month": 9,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "九月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-23",
+      "content_group": "08b9ac1890669c652db4",
+      "title_key": "忌年龄焦虑",
+      "event_id": "重阳节",
+      "event_label": "重阳节",
+      "display_label": "重阳节",
+      "personal": false,
+      "selection_reasons": [
+        "lunar_festival_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": 0,
+      "lunar_month": 9,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "九月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-03-02",
+      "content_group": "32c8221ce5c6cd1c2344",
+      "title_key": "宜云淡风轻",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": 1,
+      "lunar_month": 9,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "九月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-07-19",
+      "content_group": "493eddff9fb7880a61d2",
+      "title_key": "忌畏缩",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": 2,
+      "lunar_month": 9,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "九月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-08-27",
+      "content_group": "7bfbb94b8b1f304d2cf0",
+      "title_key": "宜不设防",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": 3,
+      "lunar_month": 9,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "九月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-02-10",
+      "content_group": "5779741f7d97a7843f30",
+      "title_key": "忌误解",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": 4,
+      "lunar_month": 9,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "九月十四",
+      "solar_term": "霜降",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-12-11",
+      "content_group": "537ea27ebe473903dfc6",
+      "title_key": "忌玩火自焚",
+      "event_id": "霜降",
+      "event_label": "霜降",
+      "display_label": "霜降",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "weekday": 5,
+      "lunar_month": 9,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "九月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-06-26",
+      "content_group": "dda18683a44bf6a4f77e",
+      "title_key": "忌虚无诱惑",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "weekday": 6,
+      "lunar_month": 9,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "九月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-05-31",
+      "content_group": "519920e28d44cdbe6862",
+      "title_key": "忌不接地气",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": 0,
+      "lunar_month": 9,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "九月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-03-06",
+      "content_group": "ca02ee45175cc7f941a6",
+      "title_key": "宜发梦",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": 1,
+      "lunar_month": 9,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "九月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-10-09",
+      "content_group": "38e8d00c61823cddc48b",
+      "title_key": "宜牵挂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": 2,
+      "lunar_month": 9,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "九月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-07-20",
+      "content_group": "0e726f05dad95ef22ff6",
+      "title_key": "宜冒险",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": 3,
+      "lunar_month": 9,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "九月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-09-21",
+      "content_group": "7ba98acbfc6ca4ac7d93",
+      "title_key": "忌陈词滥调",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": 4,
+      "lunar_month": 9,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "九月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-08-26",
+      "content_group": "90616010c4038366c042",
+      "title_key": "宜奇迹",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "weekday": 5,
+      "lunar_month": 9,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "九月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-02-23",
+      "content_group": "46db8f5090052e080e69",
+      "title_key": "宜春暖花开",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "weekday": 6,
+      "lunar_month": 9,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "九月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-09-02",
+      "content_group": "21208a905989dff1e359",
+      "title_key": "宜苦中作乐",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": 0,
+      "lunar_month": 9,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "九月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-10-26",
+      "content_group": "0c688ca71c83afa393a2",
+      "title_key": "宜尊重小孩",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": 1,
+      "lunar_month": 9,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "九月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-08-19",
+      "content_group": "eedc36a027f2e7c0a87e",
+      "title_key": "忌节食",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": 2,
+      "lunar_month": 9,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "九月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-05-29",
+      "content_group": "7b2b8776aa639ce73803",
+      "title_key": "宜孤独终老",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "weekday": 3,
+      "lunar_month": 9,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "九月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-09",
+      "content_group": "fb4aada31ab4f07ff286",
+      "title_key": "宜照顾自己",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": 4,
+      "lunar_month": 9,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "九月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-05-16",
+      "content_group": "4088b90fb439a3a6a9c0",
+      "title_key": "宜放轻松",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "weekday": 5,
+      "lunar_month": 9,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "九月廿九",
+      "solar_term": "立冬",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-03-05",
+      "content_group": "174f86f5c006109420aa",
+      "title_key": "宜心情明亮",
+      "event_id": "立冬",
+      "event_label": "立冬",
+      "display_label": "立冬",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme",
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "weekday": 6,
+      "lunar_month": 9,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "九月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-10",
+      "content_group": "353d1c98190144c7f125",
+      "title_key": "宜分身",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "weekday": 0,
+      "lunar_month": 10,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "十月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-12-31",
+      "content_group": "34a9dcde62aa04adc6f2",
+      "title_key": "宜蓄势待发",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "weekday": 1,
+      "lunar_month": 10,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "十月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-09-14",
+      "content_group": "37fdd710e856cc025bfe",
+      "title_key": "宜逃离",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "weekday": 2,
+      "lunar_month": 10,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "十月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-02-12",
+      "content_group": "82e761772c148e88d917",
+      "title_key": "宜返璞归真",
+      "event_id": "son_birthday",
+      "event_label": "儿子生日",
+      "display_label": "",
+      "personal": true,
+      "selection_reasons": [
+        "personal_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "weekday": 3,
+      "lunar_month": 10,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "十月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-02-28",
+      "content_group": "61858a95f8a499aec5aa",
+      "title_key": "宜与时间共振",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "weekday": 4,
+      "lunar_month": 10,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "十月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-04-08",
+      "content_group": "b6d3d4b71d0d39c45c2d",
+      "title_key": "宜抢红包",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "weekday": 5,
+      "lunar_month": 10,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "十月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-12-20",
+      "content_group": "c740ff6f019483a3ad3b",
+      "title_key": "忌多管闲事",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "weekday": 6,
+      "lunar_month": 10,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "十月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-04-29",
+      "content_group": "54d9cce9c39873e29652",
+      "title_key": "宜摇滚",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "weekday": 0,
+      "lunar_month": 10,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "十月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-07-05",
+      "content_group": "c036f18579f327d72afb",
+      "title_key": "宜内养",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": 1,
+      "lunar_month": 10,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "十月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-12-29",
+      "content_group": "79dad751d685538e08e3",
+      "title_key": "忌侥幸",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "weekday": 2,
+      "lunar_month": 10,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "十月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-12",
+      "content_group": "697991068ac58293e1e1",
+      "title_key": "忌怀旧",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_death_anniversary"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": 3,
+      "lunar_month": 10,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "十月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-08-18",
+      "content_group": "fe36aaf066654bd15345",
+      "title_key": "忌岁月无痕",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "weekday": 4,
+      "lunar_month": 10,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "十月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-02-21",
+      "content_group": "6ce2ce212be00451c201",
+      "title_key": "忌自我",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "weekday": 5,
+      "lunar_month": 10,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "十月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-02-11",
+      "content_group": "8ab453abb3437dcd39da",
+      "title_key": "宜平等",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "weekday": 6,
+      "lunar_month": 10,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "十月十四",
+      "solar_term": "小雪",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-12-10",
+      "content_group": "c77f98906e9c684b6448",
+      "title_key": "宜风雪归人",
+      "event_id": "小雪",
+      "event_label": "小雪",
+      "display_label": "小雪",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "weekday": 0,
+      "lunar_month": 10,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "十月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-10-19",
+      "content_group": "24d95e64464217c3b121",
+      "title_key": "宜烛光晚餐",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": 1,
+      "lunar_month": 10,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "十月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-03-13",
+      "content_group": "def3a650fdbbe7aeaaa6",
+      "title_key": "宜携手相随",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": 2,
+      "lunar_month": 10,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "十月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-28",
+      "content_group": "15b988aeacc369037fa5",
+      "title_key": "忌空白",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": 3,
+      "lunar_month": 10,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "十月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-04-05",
+      "content_group": "b29cfe63f0ea1062448d",
+      "title_key": "宜毁减",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": 4,
+      "lunar_month": 10,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "十月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-01-18",
+      "content_group": "1f60727cbfe674d3d484",
+      "title_key": "宜慵懒",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "weekday": 5,
+      "lunar_month": 10,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "十月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2017-11-05",
+      "content_group": "9f977e32c36ae3d049d1",
+      "title_key": "宜激励",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "weekday": 6,
+      "lunar_month": 10,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "十月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-01",
+      "content_group": "370ff17aab2292b9063a",
+      "title_key": "忌宅一天",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "weekday": 0,
+      "lunar_month": 10,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "十月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2015-08-01",
+      "content_group": "11dc6f014f6a2ea04365",
+      "title_key": "宜得不到",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "weekday": 1,
+      "lunar_month": 10,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "十月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-07",
+      "content_group": "a4cc14a5d357b8f573b4",
+      "title_key": "宜狂喜",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "weekday": 2,
+      "lunar_month": 10,
+      "lunar_day": 24,
+      "leap_month": false,
+      "lunar_label": "十月廿四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-11-24",
+      "content_group": "bf2540c145c33027d81c",
+      "title_key": "忌扔旧物",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "weekday": 3,
+      "lunar_month": 10,
+      "lunar_day": 25,
+      "leap_month": false,
+      "lunar_label": "十月廿五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-11-01",
+      "content_group": "b100485a2b2ee5fa23d9",
+      "title_key": "宜侧耳倾听",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "weekday": 4,
+      "lunar_month": 10,
+      "lunar_day": 26,
+      "leap_month": false,
+      "lunar_label": "十月廿六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-07-19",
+      "content_group": "4c941b520dcf17b96a47",
+      "title_key": "忌草芥",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "weekday": 5,
+      "lunar_month": 10,
+      "lunar_day": 27,
+      "leap_month": false,
+      "lunar_label": "十月廿七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-09-11",
+      "content_group": "fb5c3ff5548f9e720fa3",
+      "title_key": "忌工作狂",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-06",
+      "weekday": 6,
+      "lunar_month": 10,
+      "lunar_day": 28,
+      "leap_month": false,
+      "lunar_label": "十月廿八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-02-18",
+      "content_group": "e90aaf5cc0b9afc1a50b",
+      "title_key": "宜向身体道歉",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-07",
+      "weekday": 0,
+      "lunar_month": 10,
+      "lunar_day": 29,
+      "leap_month": false,
+      "lunar_label": "十月廿九",
+      "solar_term": "大雪",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-04-21",
+      "content_group": "f9b531b37d7c26528b27",
+      "title_key": "宜保持沉默",
+      "event_id": "大雪",
+      "event_label": "大雪",
+      "display_label": "大雪",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "weekday": 1,
+      "lunar_month": 10,
+      "lunar_day": 30,
+      "leap_month": false,
+      "lunar_label": "十月三十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-02-27",
+      "content_group": "fe1d2acef24c121056bd",
+      "title_key": "宜做梦",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 1,
+      "leap_month": false,
+      "lunar_label": "十一月初一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2018-12-06",
+      "content_group": "89b46d8e4782d0c28bc1",
+      "title_key": "宜添衣",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 2,
+      "leap_month": false,
+      "lunar_label": "十一月初二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-04-02",
+      "content_group": "00c4a49770c7da1c37bf",
+      "title_key": "宜疯狂追问",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 3,
+      "leap_month": false,
+      "lunar_label": "十一月初三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-12-22",
+      "content_group": "c5095965ffbd36b01b21",
+      "title_key": "忌拖延症",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-12",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 4,
+      "leap_month": false,
+      "lunar_label": "十一月初四",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-08-30",
+      "content_group": "d18bb056a5f500b635fb",
+      "title_key": "宜穿越边界",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-13",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 5,
+      "leap_month": false,
+      "lunar_label": "十一月初五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-12-26",
+      "content_group": "85196651dc6b487c6daf",
+      "title_key": "宜交卷",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "weekday": 0,
+      "lunar_month": 11,
+      "lunar_day": 6,
+      "leap_month": false,
+      "lunar_label": "十一月初六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2022-12-07",
+      "content_group": "41970a8af9551bebd992",
+      "title_key": "宜梦幻",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "weekday": 1,
+      "lunar_month": 11,
+      "lunar_day": 7,
+      "leap_month": false,
+      "lunar_label": "十一月初七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-12-07",
+      "content_group": "a440ecfb3fc7af63cd4e",
+      "title_key": "宜等雪",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 8,
+      "leap_month": false,
+      "lunar_label": "十一月初八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-09-09",
+      "content_group": "b37a2c91b091a9f18703",
+      "title_key": "忌事与愿违",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "author_birthday"
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 9,
+      "leap_month": false,
+      "lunar_label": "十一月初九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-10-25",
+      "content_group": "2dfdb34b2681318ddd1d",
+      "title_key": "宜泄露快乐",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 10,
+      "leap_month": false,
+      "lunar_label": "十一月初十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-11-09",
+      "content_group": "364ab897f7ef56757dc0",
+      "title_key": "宜拥抱自然",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-19",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 11,
+      "leap_month": false,
+      "lunar_label": "十一月十一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-01-07",
+      "content_group": "1dcebe1beccaf2cec98a",
+      "title_key": "宜辗转反侧",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-20",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 12,
+      "leap_month": false,
+      "lunar_label": "十一月十二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2020-07-04",
+      "content_group": "1bb0105ff37c52d2eed1",
+      "title_key": "宜英雄主义",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-21",
+      "weekday": 0,
+      "lunar_month": 11,
+      "lunar_day": 13,
+      "leap_month": false,
+      "lunar_label": "十一月十三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2021-07-26",
+      "content_group": "c1d55de8723f11728666",
+      "title_key": "宜多多益善",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-22",
+      "weekday": 1,
+      "lunar_month": 11,
+      "lunar_day": 14,
+      "leap_month": false,
+      "lunar_label": "十一月十四",
+      "solar_term": "冬至",
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-12-26",
+      "content_group": "8b51d1fc3fa167c57399",
+      "title_key": "宜暖暖心",
+      "event_id": "冬至",
+      "event_label": "冬至",
+      "display_label": "冬至",
+      "personal": false,
+      "selection_reasons": [
+        "calendar_theme"
+      ]
+    },
+    {
+      "date": "2026-12-23",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 15,
+      "leap_month": false,
+      "lunar_label": "十一月十五",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-02-11",
+      "content_group": "755181d8f014f89162cd",
+      "title_key": "宜脚踏实地",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-24",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 16,
+      "leap_month": false,
+      "lunar_label": "十一月十六",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2016-07-31",
+      "content_group": "3d3d3bb6c25c85ad58e1",
+      "title_key": "忌以貌取人",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-25",
+      "weekday": 4,
+      "lunar_month": 11,
+      "lunar_day": 17,
+      "leap_month": false,
+      "lunar_label": "十一月十七",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2019-06-10",
+      "content_group": "984bb846fb11fd8b07a5",
+      "title_key": "忌麻木",
+      "event_id": "ordinary",
+      "event_label": "",
+      "display_label": "",
+      "personal": false,
+      "selection_reasons": [
+        "season_weekday_variety"
+      ]
+    },
+    {
+      "date": "2026-12-26",
+      "weekday": 5,
+      "lunar_month": 11,
+      "lunar_day": 18,
+      "leap_month": false,
+      "lunar_label": "十一月十八",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2023-04-12",
+      "content_group": "9a06e45e68ca77e4caab",
+      "title_key": "宜泡壶茶",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-12-27",
+      "weekday": 6,
+      "lunar_month": 11,
+      "lunar_day": 19,
+      "leap_month": false,
+      "lunar_label": "十一月十九",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-10-01",
+      "content_group": "726ec17ecb6de5b31320",
+      "title_key": "宜昂扬",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-12-28",
+      "weekday": 0,
+      "lunar_month": 11,
+      "lunar_day": 20,
+      "leap_month": false,
+      "lunar_label": "十一月二十",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-02-26",
+      "content_group": "c4b6a32315e7814f473d",
+      "title_key": "宜耕种花园",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-12-29",
+      "weekday": 1,
+      "lunar_month": 11,
+      "lunar_day": 21,
+      "leap_month": false,
+      "lunar_label": "十一月廿一",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2024-12-29",
+      "content_group": "3e88bd0cd07998d116c0",
+      "title_key": "宜享受过程",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-12-30",
+      "weekday": 2,
+      "lunar_month": 11,
+      "lunar_day": 22,
+      "leap_month": false,
+      "lunar_label": "十一月廿二",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-11-08",
+      "content_group": "e8e1253f7dbac4a77b8c",
+      "title_key": "宜把握选择",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    },
+    {
+      "date": "2026-12-31",
+      "weekday": 3,
+      "lunar_month": 11,
+      "lunar_day": 23,
+      "leap_month": false,
+      "lunar_label": "十一月廿三",
+      "solar_term": null,
+      "is_lunar_new_year_eve": false,
+      "record_id": "2025-12-05",
+      "content_group": "c198e756817d880121ce",
+      "title_key": "宜张开双臂",
+      "event_id": "year_boundary_window",
+      "event_label": "岁末",
+      "display_label": "岁末",
+      "personal": false,
+      "selection_reasons": [
+        "positive_year_boundary_curated_pool"
+      ]
+    }
+  ],
+  "unique_content_groups": 365,
+  "unique_titles": 365,
+  "note": "Historical source_date stays separate from display date; ordinary rules use lexical tags, not an on-device language model."
+}

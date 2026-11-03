@@ -1,0 +1,246 @@
+{
+  "display_date": "2026-06-21",
+  "source_date": "2025-08-01",
+  "record_id": "2025-08-01",
+  "event_label": "夏至",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "balanced",
+    "digit_y": 139,
+    "digit_h": 124,
+    "title_y": 301,
+    "title_lines": [
+      "宜肩并肩"
+    ],
+    "title_size": 30,
+    "quote_y": 378,
+    "quote_size": 21,
+    "quote_leading": 28,
+    "quote_lines": [
+      "我们就像两尾鲤鱼，躲在自己的鱼",
+      "缸里，对外界不闻不问，从今往后",
+      "我们要像两条鳟鱼，肩并肩地在排",
+      "山倒海的巨浪中一起颠簸漂泊"
+    ],
+    "footer_top": 511,
+    "footer": [
+      [
+        "作家 · 米歇尔·图尼埃",
+        13
+      ],
+      [
+        "Michel Tournier",
+        11
+      ],
+      [
+        "《爱情半夜餐》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "6.21",
+      "x": 20,
+      "y": 49,
+      "width": 60.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        80.0,
+        80
+      ]
+    },
+    {
+      "text": "星期日",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "夏至",
+      "x": 112,
+      "y": 70,
+      "width": 26.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        73,
+        138.0,
+        85
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "五月初七",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜肩并肩",
+      "x": 140.0,
+      "y": 301,
+      "width": 120.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        140.0,
+        305,
+        260.0,
+        335
+      ]
+    },
+    {
+      "text": "我们就像两尾鲤鱼，躲在自己的鱼",
+      "x": 36,
+      "y": 378,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        381,
+        351.0,
+        405
+      ]
+    },
+    {
+      "text": "缸里，对外界不闻不问，从今往后",
+      "x": 36,
+      "y": 406,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        409,
+        351.0,
+        433
+      ]
+    },
+    {
+      "text": "我们要像两条鳟鱼，肩并肩地在排",
+      "x": 36,
+      "y": 434,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        437,
+        351.0,
+        461
+      ]
+    },
+    {
+      "text": "山倒海的巨浪中一起颠簸漂泊",
+      "x": 36,
+      "y": 462,
+      "width": 273.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        465,
+        309.0,
+        487
+      ]
+    },
+    {
+      "text": "作家 · 米歇尔·图尼埃",
+      "x": 36,
+      "y": 520,
+      "width": 118.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        521,
+        155.0,
+        536
+      ]
+    },
+    {
+      "text": "Michel Tournier",
+      "x": 36,
+      "y": 537,
+      "width": 89.0,
+      "font_px": 11,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        539,
+        126.0,
+        548
+      ]
+    },
+    {
+      "text": "《爱情半夜餐》",
+      "x": 36,
+      "y": 552,
+      "width": 84.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        552,
+        120.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

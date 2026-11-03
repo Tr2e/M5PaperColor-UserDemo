@@ -1,0 +1,20 @@
+{
+  "eligible_records": 3877,
+  "modes": {
+    "balanced": 1685,
+    "standard": 2020,
+    "long": 168,
+    "long-small": 4
+  },
+  "failures": [],
+  "rendered_2026_pages": 365,
+  "rendered_2026_modes": {
+    "standard": 188,
+    "balanced": 162,
+    "long": 14,
+    "long-small": 1
+  },
+  "signature": "Tr2e",
+  "signature_font_px": 14,
+  "personal_labels_visible": false
+}

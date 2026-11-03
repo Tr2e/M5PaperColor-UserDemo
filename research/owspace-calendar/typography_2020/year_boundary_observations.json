@@ -1,0 +1,13 @@
+{
+  "year_boundary": {
+    "records": 135,
+    "yi": 96,
+    "renewal_words": 21
+  },
+  "ordinary": {
+    "records": 3772,
+    "yi": 2557,
+    "renewal_words": 289
+  },
+  "note": "关键词计数只描述文本，不能代替情绪判定；窗口为本次产品规则的默认值，不声称原编辑固定采用此边界。"
+}

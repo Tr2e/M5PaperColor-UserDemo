@@ -1,0 +1,199 @@
+{
+  "display_date": "2020-04-15",
+  "source_date": "2020-04-15",
+  "record_id": "2020-04-15",
+  "event_label": "",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "balanced",
+    "digit_y": 139,
+    "digit_h": 124,
+    "title_y": 301,
+    "title_lines": [
+      "忌逆来顺受"
+    ],
+    "title_size": 30,
+    "quote_y": 378,
+    "quote_size": 21,
+    "quote_leading": 28,
+    "quote_lines": [
+      "忍耐不是美德，把忍耐当成美德是",
+      "这个伪善的世界维持它扭曲的秩序",
+      "的方式，生气才是美徳。"
+    ],
+    "footer_top": 526,
+    "footer": [
+      [
+        "作家 · 林奕含",
+        13
+      ],
+      [
+        "《房思琪的初恋乐园》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "4.15",
+      "x": 20,
+      "y": 49,
+      "width": 60.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        80.0,
+        80
+      ]
+    },
+    {
+      "text": "星期三",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "2020年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "三月廿三",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "忌逆来顺受",
+      "x": 125.0,
+      "y": 301,
+      "width": 150.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        125.0,
+        305,
+        275.0,
+        336
+      ]
+    },
+    {
+      "text": "忍耐不是美德，把忍耐当成美德是",
+      "x": 36,
+      "y": 378,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        381,
+        351.0,
+        405
+      ]
+    },
+    {
+      "text": "这个伪善的世界维持它扭曲的秩序",
+      "x": 36,
+      "y": 406,
+      "width": 315.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        409,
+        351.0,
+        430
+      ]
+    },
+    {
+      "text": "的方式，生气才是美徳。",
+      "x": 36,
+      "y": 434,
+      "width": 231.0,
+      "font_px": 21,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        437,
+        267.0,
+        461
+      ]
+    },
+    {
+      "text": "作家 · 林奕含",
+      "x": 36,
+      "y": 535,
+      "width": 75.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        536,
+        111.0,
+        551
+      ]
+    },
+    {
+      "text": "《房思琪的初恋乐园》",
+      "x": 36,
+      "y": 552,
+      "width": 120.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        552,
+        156.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

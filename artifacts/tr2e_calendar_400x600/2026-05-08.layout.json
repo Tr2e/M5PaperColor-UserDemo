@@ -1,0 +1,181 @@
+{
+  "display_date": "2026-05-08",
+  "source_date": "2017-03-26",
+  "record_id": "2017-03-26",
+  "event_label": "",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "standard",
+    "digit_y": 155,
+    "digit_h": 136,
+    "title_y": 335,
+    "title_lines": [
+      "宜做个幸福的人"
+    ],
+    "title_size": 30,
+    "quote_y": 428,
+    "quote_size": 22,
+    "quote_leading": 29,
+    "quote_lines": [
+      "陌生人，我也为你祝福；愿你有",
+      "一个灿烂的前程；愿你有情人终",
+      "成眷属；愿你在尘世获得幸福。"
+    ],
+    "footer_top": 542,
+    "footer": [
+      [
+        "海子",
+        13
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "5.08",
+      "x": 20,
+      "y": 49,
+      "width": 64.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        84.0,
+        80
+      ]
+    },
+    {
+      "text": "星期五",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "三月廿二",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜做个幸福的人",
+      "x": 95.0,
+      "y": 335,
+      "width": 210.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        95.0,
+        339,
+        305.0,
+        369
+      ]
+    },
+    {
+      "text": "陌生人，我也为你祝福；愿你有",
+      "x": 36,
+      "y": 428,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        431,
+        344.0,
+        456
+      ]
+    },
+    {
+      "text": "一个灿烂的前程；愿你有情人终",
+      "x": 36,
+      "y": 457,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        460,
+        344.0,
+        483
+      ]
+    },
+    {
+      "text": "成眷属；愿你在尘世获得幸福。",
+      "x": 36,
+      "y": 486,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        489,
+        344.0,
+        512
+      ]
+    },
+    {
+      "text": "海子",
+      "x": 36,
+      "y": 551,
+      "width": 26.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        553,
+        62.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

@@ -1,0 +1,223 @@
+{
+  "source_year": 2020,
+  "digit_source": "public calendar images; extracted for this local prototype",
+  "cell": [
+    104,
+    144
+  ],
+  "ink_height_target": 136,
+  "bit_order": "MSB first; 1 means black",
+  "digits": [
+    {
+      "digit": "0",
+      "source_date": "2020-04-10",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0410.jpg",
+      "source_sha256": "5cd95b471cb80c6a02d4ee5fa741b14cb050d3fe1bed2e0e7691c67ac1f01dd6",
+      "source_bbox": [
+        321,
+        259,
+        495,
+        488
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        174,
+        229
+      ],
+      "bitmap_ink_width": 103
+    },
+    {
+      "digit": "1",
+      "source_date": "2020-04-01",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0401.jpg",
+      "source_sha256": "5dca07c1edb4940bce8319d42c8443f1f66387cf4e59b5c89cc0a6e91ce537f5",
+      "source_bbox": [
+        299,
+        260,
+        390,
+        486
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        91,
+        226
+      ],
+      "bitmap_ink_width": 55
+    },
+    {
+      "digit": "2",
+      "source_date": "2020-04-02",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0402.jpg",
+      "source_sha256": "74a4153ed200cf3bec1ab7f32c4491b465e48505f384ad0b584e5fa757ab981c",
+      "source_bbox": [
+        280,
+        259,
+        409,
+        485
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        129,
+        226
+      ],
+      "bitmap_ink_width": 78
+    },
+    {
+      "digit": "3",
+      "source_date": "2020-04-03",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0403.jpg",
+      "source_sha256": "2d650438e014c640744c2dff5bf3674a6d7543cf4d078943c993e8dfe52b2ee3",
+      "source_bbox": [
+        275,
+        259,
+        409,
+        488
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        134,
+        229
+      ],
+      "bitmap_ink_width": 80
+    },
+    {
+      "digit": "4",
+      "source_date": "2020-04-04",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0404.jpg",
+      "source_sha256": "058b9ab208e3551529a4d2cc8d9e7d93c43fd8a702ac04b26d05023a9ec34680",
+      "source_bbox": [
+        268,
+        260,
+        417,
+        485
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        149,
+        225
+      ],
+      "bitmap_ink_width": 90
+    },
+    {
+      "digit": "5",
+      "source_date": "2020-04-05",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0405.jpg",
+      "source_sha256": "cb4a768a4b1346e31d5533cb6cd400f9257eaea3c4fe26b38a90f103a4e628b0",
+      "source_bbox": [
+        275,
+        262,
+        412,
+        488
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        137,
+        226
+      ],
+      "bitmap_ink_width": 82
+    },
+    {
+      "digit": "6",
+      "source_date": "2020-04-06",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0406.jpg",
+      "source_sha256": "6e1c0241894722c5f7a65a03e8fc7e52e36a0346abd3278d708894ebf213dce6",
+      "source_bbox": [
+        269,
+        259,
+        421,
+        488
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        152,
+        229
+      ],
+      "bitmap_ink_width": 90
+    },
+    {
+      "digit": "7",
+      "source_date": "2020-04-07",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0407.jpg",
+      "source_sha256": "a105e1962196fd2b6028323b2644c8f086f9d39cbc2036606669f3b547dcc04a",
+      "source_bbox": [
+        272,
+        262,
+        420,
+        485
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        148,
+        223
+      ],
+      "bitmap_ink_width": 90
+    },
+    {
+      "digit": "8",
+      "source_date": "2020-04-08",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0408.jpg",
+      "source_sha256": "304fba92f7906048d121f8c8853d609397a31f1c9588dab898b8174f9dda7333",
+      "source_bbox": [
+        270,
+        257,
+        422,
+        486
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        152,
+        229
+      ],
+      "bitmap_ink_width": 90
+    },
+    {
+      "digit": "9",
+      "source_date": "2020-04-09",
+      "url": "https://img.owspace.com/Public/uploads/Download/2020/0409.jpg",
+      "source_sha256": "d55e5b1cf79502970aa1b67badaa012b1a4916903958d2d390d4f3bc7c732956",
+      "source_bbox": [
+        268,
+        259,
+        419,
+        488
+      ],
+      "source_size": [
+        691,
+        1006
+      ],
+      "ink_size": [
+        151,
+        229
+      ],
+      "bitmap_ink_width": 90
+    }
+  ],
+  "bytes": 18720
+}

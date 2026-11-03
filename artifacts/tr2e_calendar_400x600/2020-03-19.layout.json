@@ -1,0 +1,262 @@
+{
+  "display_date": "2020-03-19",
+  "source_date": "2020-03-19",
+  "record_id": "2020-03-19",
+  "event_label": "",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "long-small",
+    "digit_y": 108,
+    "digit_h": 106,
+    "title_y": 242,
+    "title_lines": [
+      "忌迷失"
+    ],
+    "title_size": 30,
+    "quote_y": 304,
+    "quote_size": 18,
+    "quote_leading": 25,
+    "quote_lines": [
+      "那是最美好的时代，那是最糟糕的时代；",
+      "那是智慧的年头，那是愚昧的年头；那是",
+      "信仰的时期，那是怀疑的时期；那是光明",
+      "的季节，那是黑暗的季节；那是希望的春",
+      "天，那是失望的冬天；我们全都直奔天",
+      "堂，我们全都在直奔相反的方向。"
+    ],
+    "footer_top": 511,
+    "footer": [
+      [
+        "作家 · 查尔斯·狄更斯",
+        13
+      ],
+      [
+        "CHARLES DICKENS",
+        11
+      ],
+      [
+        "《双城记》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "3.19",
+      "x": 20,
+      "y": 49,
+      "width": 60.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        80.0,
+        80
+      ]
+    },
+    {
+      "text": "星期四",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "2020年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "二月廿六",
+      "x": 327.0,
+      "y": 70,
+      "width": 52.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        327.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "忌迷失",
+      "x": 155.0,
+      "y": 242,
+      "width": 90.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        155.0,
+        246,
+        245.0,
+        276
+      ]
+    },
+    {
+      "text": "那是最美好的时代，那是最糟糕的时代；",
+      "x": 36,
+      "y": 304,
+      "width": 324.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        306,
+        360.0,
+        326
+      ]
+    },
+    {
+      "text": "那是智慧的年头，那是愚昧的年头；那是",
+      "x": 36,
+      "y": 329,
+      "width": 324.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        330,
+        360.0,
+        351
+      ]
+    },
+    {
+      "text": "信仰的时期，那是怀疑的时期；那是光明",
+      "x": 36,
+      "y": 354,
+      "width": 324.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        355,
+        360.0,
+        376
+      ]
+    },
+    {
+      "text": "的季节，那是黑暗的季节；那是希望的春",
+      "x": 36,
+      "y": 379,
+      "width": 324.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        381,
+        360.0,
+        401
+      ]
+    },
+    {
+      "text": "天，那是失望的冬天；我们全都直奔天",
+      "x": 36,
+      "y": 404,
+      "width": 306.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        406,
+        342.0,
+        426
+      ]
+    },
+    {
+      "text": "堂，我们全都在直奔相反的方向。",
+      "x": 36,
+      "y": 429,
+      "width": 270.0,
+      "font_px": 18,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        431,
+        306.0,
+        451
+      ]
+    },
+    {
+      "text": "作家 · 查尔斯·狄更斯",
+      "x": 36,
+      "y": 520,
+      "width": 118.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        521,
+        154.0,
+        536
+      ]
+    },
+    {
+      "text": "CHARLES DICKENS",
+      "x": 36,
+      "y": 537,
+      "width": 106.0,
+      "font_px": 11,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        540,
+        142.0,
+        548
+      ]
+    },
+    {
+      "text": "《双城记》",
+      "x": 36,
+      "y": 552,
+      "width": 60.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        553,
+        96.0,
+        566
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}

@@ -1,0 +1,198 @@
+{
+  "display_date": "2026-02-16",
+  "source_date": "2018-12-24",
+  "record_id": "2018-12-24",
+  "event_label": "除夕",
+  "owner_id": "TR2E",
+  "signature": "Tr2e",
+  "resolution": [
+    400,
+    600
+  ],
+  "layout": {
+    "mode": "standard",
+    "digit_y": 155,
+    "digit_h": 136,
+    "title_y": 335,
+    "title_lines": [
+      "宜相守"
+    ],
+    "title_size": 30,
+    "quote_y": 428,
+    "quote_size": 22,
+    "quote_leading": 29,
+    "quote_lines": [
+      "世上有许许多多的人，陪着回家",
+      "的，只能有一个。"
+    ],
+    "footer_top": 526,
+    "footer": [
+      [
+        "作家 · 李碧华",
+        13
+      ],
+      [
+        "《青蛇》",
+        12
+      ]
+    ]
+  },
+  "text": [
+    {
+      "text": "2.16",
+      "x": 20,
+      "y": 49,
+      "width": 60.0,
+      "font_px": 31,
+      "style": "title",
+      "ink_bounds": [
+        20,
+        57,
+        80.0,
+        80
+      ]
+    },
+    {
+      "text": "星期一",
+      "x": 112,
+      "y": 50,
+      "width": 39.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        52,
+        151.0,
+        66
+      ]
+    },
+    {
+      "text": "除夕",
+      "x": 112,
+      "y": 70,
+      "width": 26.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        112,
+        72,
+        138.0,
+        85
+      ]
+    },
+    {
+      "text": "2026年",
+      "x": 338.0,
+      "y": 50,
+      "width": 41.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        338.0,
+        52,
+        379.0,
+        65
+      ]
+    },
+    {
+      "text": "十二月廿九",
+      "x": 314.0,
+      "y": 70,
+      "width": 65.0,
+      "font_px": 13,
+      "style": "sans",
+      "ink_bounds": [
+        314.0,
+        72,
+        379.0,
+        86
+      ]
+    },
+    {
+      "text": "宜相守",
+      "x": 155.0,
+      "y": 335,
+      "width": 90.0,
+      "font_px": 30,
+      "style": "title",
+      "ink_bounds": [
+        155.0,
+        339,
+        245.0,
+        369
+      ]
+    },
+    {
+      "text": "世上有许许多多的人，陪着回家",
+      "x": 36,
+      "y": 428,
+      "width": 308.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        431,
+        344.0,
+        456
+      ]
+    },
+    {
+      "text": "的，只能有一个。",
+      "x": 36,
+      "y": 457,
+      "width": 176.0,
+      "font_px": 22,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        460,
+        212.0,
+        485
+      ]
+    },
+    {
+      "text": "作家 · 李碧华",
+      "x": 36,
+      "y": 535,
+      "width": 75.0,
+      "font_px": 13,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        536,
+        111.0,
+        551
+      ]
+    },
+    {
+      "text": "《青蛇》",
+      "x": 36,
+      "y": 552,
+      "width": 48.0,
+      "font_px": 12,
+      "style": "body",
+      "ink_bounds": [
+        36,
+        552,
+        84.0,
+        565
+      ]
+    },
+    {
+      "text": "Tr2e",
+      "x": 333.0,
+      "y": 552,
+      "width": 31.0,
+      "font_px": 14,
+      "style": "body",
+      "ink_bounds": [
+        333.0,
+        555,
+        364.0,
+        566
+      ]
+    }
+  ],
+  "framebuffer_bytes": 30000,
+  "original_text_preserved": true
+}
