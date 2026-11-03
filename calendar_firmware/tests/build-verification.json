@@ -1,0 +1,13 @@
+{
+  "project": "standalone Tr2e calendar",
+  "idf": "5.5.x (local 5.5.4 toolchain)",
+  "target": "esp32s3",
+  "firmware_bytes": 3704656,
+  "firmware_sha256": "0c8f10699b06debd21187e3fb1a99a7af50b544549ccb0df9e3ff6c8949d11d7",
+  "app_partition_bytes": 10420224,
+  "app_free_bytes": 6715568,
+  "build_succeeded": true,
+  "host_rule_tests": 9,
+  "native_engine_tests_passed": true,
+  "physical_device_verified": false
+}

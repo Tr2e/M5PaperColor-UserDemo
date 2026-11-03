@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tr2e 独立日历固件</title>
+<style>body{margin:0;background:#f4f2ec;color:#23251f;font:16px/1.8 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:48px 28px}h1{font-size:40px;line-height:1.2}h2{margin-top:44px;padding-top:18px;border-top:1px solid #c7c8bb}.note{background:#e6e9df;padding:18px 24px;border-left:4px solid #5d6e4c}a{color:#365b4a}.flow{display:flex;gap:10px;flex-wrap:wrap}.flow div{padding:12px 18px;border:1px solid #a5ad96;background:white;border-radius:3px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}figure{margin:0}img{max-width:100%;height:auto}figcaption{font-size:14px;color:#656b5c}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:12px;border-bottom:1px solid #ccd0c3;vertical-align:top}small{color:#6a705f}code{background:#e5e7de;padding:2px 5px}</style>
+<main><small>2026-11-03 · PaperColor · 400 × 600 · v0.1.0</small><h1>Tr2e<br>独立日历固件</h1>
+<p class="note">已完成独立程序、ESP-IDF编译、离线内容验证和C++渲染对照。设备目前未连接；本版为可烧录候选版，真实凌晨唤醒、休眠电流和屏幕效果尚待上机验收。</p>
+<p><a href="release/tr2e-calendar-0.1.0.zip">下载可烧录包</a> · <a href="README.md">使用与构建说明</a> · <a href="tests/verification.json">完整验证记录</a></p>
+<h2>每天只做必要的事</h2><div class="flow"><div>RTC凌晨00:00唤醒</div><div>读取本地日期</div><div>显示当天内容</div><div>到15天才校时</div><div>复核画面 → 休眠</div></div>
+<table><tr><th>场景</th><th>联网</th><th>显示与电源</th></tr>
+<tr><td>手动开机/关机重启</td><td>先显示，再使用已保存网络校时</td><td>时间校准后检查日期，必要时重绘，再休眠</td></tr>
+<tr><td>普通凌晨唤醒</td><td>不初始化Wi-Fi</td><td>换到当天，设置下一天闹钟，断电/深睡</td></tr>
+<tr><td>15天维护到期</td><td>连接最多12秒，SNTP最多18秒</td><td>成功才写RTC；失败保留时间并休眠</td></tr>
+<tr><td>网络失败</td><td>不后台重连，不变成每天重试</td><td>下一维护窗口或手动开机再尝试</td></tr>
+<tr><td>需要修改Wi-Fi</td><td>按住A键开机，才开启临时配置热点</td><td>保存后关闭，最长180秒超时关闭</td></tr></table>
+<p>RGB仅在手动开机/休眠前各给80ms低亮度提示；普通自动唤醒完全静默。屏幕保留墨水画面，日历不使用SD、麦克风、扬声器、云服务、相册或后台Web服务。RTC硬件断电唤醒为首选，USB等情况下使用ESP深睡作为备用。</p>
+<p>午夜前10秒的边界单独处理，防止闹钟在断电过程中触发而漏掉一天；校时后按UTC+8重新检查显示日期。RTC异常时不猜日期、不无限重试。</p>
+<h2>跨年不需要重新下载</h2>
+<p>固件内置2026—2099年，共74年、27,028天的安排和必要字形，资源约1.85MB，完整固件约3.5MiB。按既定规则预编译年度安排，设备根据RTC直接选择当天记录；断电和重启不会重新抽签。</p>
+<p>每年内部选句组、完整标题均不重复。普通选句至少冷却5年、普通标题至少冷却2年；特殊主题池优先选最久未使用的内容。全部年份验证中，相邻两年最多16个选句组相同，至少<strong>95.6%不同</strong>。有限内容库会在多年后轮换复用。</p>
+<p>岁末年初、春节窗口、农历节日、作者纪念日与季节规则均保留。三个人日期只参与内部选句，不显示生日/纪念日说明；落款为小字号<code>Tr2e</code>。年度指纹保存于NVS，避免固件升级时悄悄重排正在使用的年份。</p>
+<h2>长句页重新平衡</h2><p>长句页的日期从靠近顶框的位置下移，保持数字上方留白；正文改用19px为主、少数18px和较紧行距。数字、标题、正文分布更均匀，不截断原文。以下是最终规则生成的样稿。</p>
+<div class="grid"><figure><img src="../artifacts/tr2e_calendar_400x600/2026-06-21.png" width="400" height="600" alt="常规页"><figcaption>常规页：夏至；私人含义只在选排内部使用</figcaption></figure><figure><img src="../artifacts/tr2e_calendar_400x600/2020-03-19.png" width="400" height="600" alt="优化后的长句页"><figcaption>长句版式验证：完整保留原文，日期上方留白增加</figcaption></figure></div>
+<h2>已经验证与尚待验收</h2><p>已验证全74年年内去重、专题池、普通内容冷却期及相邻年重复上限。371页使用实际C++渲染器对照Python参考图：365页逐像素相同，6页只有1像素的文字边缘差异。日期跨年、闰日、15天联网条件、失败后的维护窗口、年度指纹和资源校验也有主机测试。</p>
+<p>尚未实测：电池供电下PMIC断电及凌晨唤醒、USB供电的深睡备用路径、网络失败和校时跨日、RGB静默、RTC掉电恢复以及真实休眠电流。未据此估算续航天数。</p>
+<p>项目位于<code>calendar_firmware/</code>，原Demo应用代码没有修改。烧录包仅写引导程序、分区表与应用，不擦除NVS或原照片存储区。详见<a href="README.md">README</a>与<a href="release/manifest.json">发布校验清单</a>。</p>
+</main></html>

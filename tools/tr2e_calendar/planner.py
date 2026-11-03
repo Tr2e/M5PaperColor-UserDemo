@@ -40,10 +40,17 @@ def event_for(day,rules):
         return dict(id=day['solar_term'],label=day['solar_term'],tags=[season],priority=50,personal=False)
     return dict(id='ordinary',label='',tags=[],priority=0,personal=False)
 
-def plan_year(year,catalog=None,rules=None):
+def plan_year(year,catalog=None,rules=None,history=None):
     loaded,personal,_=load_inputs();catalog=loaded if catalog is None else catalog;rules=personal if rules is None else rules
     version=hashlib.sha256(json.dumps([catalog,rules],ensure_ascii=False,sort_keys=True).encode()+Path(__file__).read_bytes()).hexdigest()
     calendar=Calendar();days=calendar.year(year);records=[r for r in catalog['records'] if r['eligible']]
+    history=history or []
+    if any(p['year']>=year for p in history):raise ValueError('History must precede the planned year')
+    last_group={};last_title={}
+    for p in sorted(history,key=lambda p:p['year']):
+        for d in p['days']:last_group[d['content_group']]=p['year'];last_title[d['title_key']]=p['year']
+    recent_groups={g for g,y in last_group.items() if year-y<=5}
+    recent_titles={t for t,y in last_title.items() if year-y<=2}
     for day in days:
         tomorrow=dt.date.fromisoformat(day['date'])+dt.timedelta(days=1)
         # Lunar New Year cannot occur after the table's final December day.
@@ -64,6 +71,8 @@ def plan_year(year,catalog=None,rules=None):
             shift=0 if event['id']=='lunar_new_year_window' else (year-2026)%len(pool)
             ordered=pool[shift:]+pool[:shift]
             options=[by_id[i] for i in ordered if i in by_id]
+            if history:
+                options.sort(key=lambda r:(last_group.get(r['content_group'],-1),last_title.get(r['title_key'],-1)))
         else:
             month=int(date[5:7]);season='spring' if 3<=month<=5 else 'summer' if 6<=month<=8 else 'autumn' if 9<=month<=11 else 'winter'
             def score(r):
@@ -77,8 +86,8 @@ def plan_year(year,catalog=None,rules=None):
                 value-=8*len(author_days.get(r['author_id'],[]))
                 value-=10 if r.get('confidence') is not None and r['confidence']<.8 else 0
                 tie=hashlib.sha256((str(year)+'|'+date+'|'+r['id']).encode()).digest()
-                return (-value,tie)
-            options=sorted(records,key=score)
+                return (-value,last_group.get(r['content_group'],-1) if history else -1,tie)
+            options=sorted((r for r in records if r['content_group'] not in recent_groups and r['title_key'] not in recent_titles),key=score)
         chosen=next((r for r in options if r['content_group'] not in used_groups and (not rules['annual_unique_title'] or r['title_key'] not in used_titles)),None)
         if chosen is None:raise ValueError(f'No unique eligible content for {date} ({event["id"]}); no silent repetition or unrelated personal-date fallback')
         used_groups.add(chosen['content_group']);used_titles.add(chosen['title_key']);author_days.setdefault(chosen['author_id'],[]).append(ordinal)

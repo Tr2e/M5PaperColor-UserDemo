@@ -54,9 +54,12 @@ def draw_text(draw,text,x,y,style,size,audit):
     x0=x;ink=[]
     for char in text:
         glyph,f,advance=face(char,style,size)
-        box=draw.textbbox((x,y+size),glyph,font=f,anchor='ls')
+        # E-ink has an integer pixel grid; keep the host preview and the
+        # firmware bitmap atlas aligned, including mixed Latin/CJK headings.
+        pixel_x=int(x)
+        box=draw.textbbox((pixel_x,y+size),glyph,font=f,anchor='ls')
         if not char.isspace():ink.append(box)
-        draw.text((x,y+size),glyph,font=f,fill=0,anchor='ls');x+=advance
+        draw.text((pixel_x,y+size),glyph,font=f,fill=0,anchor='ls');x+=advance
     bounds=[min(b[0] for b in ink),min(b[1] for b in ink),max(b[2] for b in ink),max(b[3] for b in ink)] if ink else [x0,y,x0,y]
     audit.append(dict(text=text,x=round(x0,2),y=y,width=round(x-x0,2),font_px=size,style=style,ink_bounds=bounds))
 
@@ -71,7 +74,9 @@ def layout(record):
     title_lines=wrap(record['title'],'title',title_size,324)
     # Preserve the 2020 whitespace when possible; move the body up for longer
     # excerpts. Text is neither truncated nor summarized to fit the screen.
-    modes=[('standard',155,136,335,428,22,29),('balanced',139,124,301,378,21,28),('long',112,112,253,314,20,27),('long-small',108,106,242,302,18,25)]
+    modes=[('standard',155,136,335,428,22,29),('balanced',139,124,301,378,21,28),
+           ('long',128,124,280,348,19,25),('long-small',128,124,280,348,18,24),
+           ('compact',122,106,250,312,18,24)]
     for name,digit_y,digit_h,title_y,quote_y,size,leading in modes:
         actual_quote_y=max(quote_y,title_y+len(title_lines)*38+24)
         lines=wrap(record['excerpt'],'body',size,328)

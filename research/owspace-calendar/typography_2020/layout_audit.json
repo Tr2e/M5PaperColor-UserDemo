@@ -3,8 +3,8 @@
   "modes": {
     "balanced": 1685,
     "standard": 2020,
-    "long": 168,
-    "long-small": 4
+    "long": 170,
+    "long-small": 2
   },
   "failures": [],
   "rendered_2026_pages": 365,
@@ -16,5 +16,6 @@
   },
   "signature": "Tr2e",
   "signature_font_px": 14,
-  "personal_labels_visible": false
+  "personal_labels_visible": false,
+  "long_quote_revision": "2026-11-03: 32px or more above digits; 19/18px body with tighter leading; integer pixel alignment"
 }

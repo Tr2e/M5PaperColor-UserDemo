@@ -1,0 +1,60 @@
+{
+  "version": "0.1.0",
+  "target": "M5Stack PaperColor ESP32-S3 / 400x600",
+  "offsets": {
+    "bootloader.bin": "0x0",
+    "partition-table.bin": "0x8000",
+    "tr2e_calendar.bin": "0x10000"
+  },
+  "preserves_nvs": true,
+  "preserves_storage": true,
+  "physical_device_verified": false,
+  "files": {
+    "bootloader.bin": {
+      "bytes": 20832,
+      "sha256": "26f587aae14542e00568b9d0a32458c63d11251c3fa489b9424bd6d54762072d"
+    },
+    "partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "12fddf556d016edfe5b0d82d75e2c81c1a11bbfcd08458a241889052407b3739"
+    },
+    "tr2e_calendar.bin": {
+      "bytes": 3704656,
+      "sha256": "0c8f10699b06debd21187e3fb1a99a7af50b544549ccb0df9e3ff6c8949d11d7"
+    },
+    "README.md": {
+      "bytes": 6945,
+      "sha256": "e9830fcf575f9f746b657625330e90b80bb6dac54212eb9e36596567c7429260"
+    },
+    "verification.json": {
+      "bytes": 7528,
+      "sha256": "708adf248d011e7812e6187574720aa56dd215208fc3bd01b2a9f11f42d28873"
+    },
+    "build-verification.json": {
+      "bytes": 417,
+      "sha256": "b958d73f08c46e5d3b9a9028e760d9d5523a1dd9885e0ddf2411660932ce4242"
+    },
+    "licenses/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "licenses/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "licenses/Tinos-OFL.txt": {
+      "bytes": 4383,
+      "sha256": "63973b65d7d72075b2b04051effaf999082027cb18c96f79ec11f2382b19b4e6"
+    }
+  },
+  "source_hashes": {
+    "network.cpp": "030d1d9b65de3fd3f9517ad58b8da144784323933373c002028bca50f324c67d",
+    "calendar_engine.cpp": "5669c14cfd88ea013c9465cc2d02925026bb07cbdaba8c704659de3296a0bd36",
+    "main.cpp": "b99f5045f13b2333d1acd147a63a7173efded9c09195831d32fcc075b2e8445b"
+  },
+  "package": {
+    "file": "tr2e-calendar-0.1.0.zip",
+    "bytes": 2359419,
+    "sha256": "f3bcaa38fa977b8d8e2e8b3e0e690b487a77ac03521e6a5848a3ce2e8cab4137"
+  }
+}

@@ -1,5 +1,7 @@
 # PaperColor User Demo
 
+独立的 **Tr2e日历程序** 位于 [calendar_firmware](calendar_firmware/README.md)，使用单独的构建与烧录入口；原Demo应用保持独立。
+
 ### SKU: C151
 
 ## Related Link
