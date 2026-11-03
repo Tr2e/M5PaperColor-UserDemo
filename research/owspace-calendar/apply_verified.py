@@ -22,7 +22,7 @@ for path in sorted((ROOT/'months').glob(f'{args.year}-*.jsonl')):
             if row.get(field)!=value:
                 row.setdefault('metadata_edits',[]).append({'field':field,'before':row.get(field),'after':value,'reason':'visually_checked_against_official_image'})
             row[field]=value
-        row['title_kind']=row['title'][0] if row.get('title') else None
+        row['title_kind']=next((c for c in ['宜','忌'] if c in (row.get('title') or '')), '其他') if row.get('title') else None
         row['review_status']='sample_metadata_verified'
         row['manual_review_fields']=['title','author','source']
         row['source_status']='printed' if row['source'] else 'not_printed_in_reviewed_sample'

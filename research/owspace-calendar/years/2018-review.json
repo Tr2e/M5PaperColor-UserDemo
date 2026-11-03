@@ -1,6 +1,6 @@
 {
   "year": 2018,
-  "reviewed_at": "2026-11-03T02:33:28+00:00",
+  "reviewed_at": "2026-11-03T02:40:31+00:00",
   "date_coverage_pass": true,
   "expected_days": 365,
   "record_count": 365,
@@ -14,13 +14,14 @@
     "source": 332,
     "author": 363
   },
+  "visually_verified_samples": 5,
   "title_kind_counts": {
     "宜": 234,
     "忌": 131
   },
   "review_flag_counts": {
-    "source_not_detected": 33,
     "low_ocr_confidence": 79,
+    "source_not_detected": 32,
     "author_unresolved": 2
   },
   "missing_dates": [],
