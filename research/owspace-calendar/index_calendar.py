@@ -168,7 +168,8 @@ def run(args):
         raise SystemExit("Annual layout analysis is required before extraction")
     if year > 2015:
         previous = ROOT / "years" / f"{year-1}-review.json"
-        if not previous.exists() or not json.loads(previous.read_text())["date_coverage_pass"]:
+        prior = json.loads(previous.read_text()) if previous.exists() else {}
+        if not prior.get("date_coverage_pass") or prior.get("error_dates"):
             raise SystemExit("The preceding year must pass the date coverage review first")
     if args.commit and git("branch", "--show-current") != BRANCH:
         raise SystemExit("Refusing to commit on an unexpected branch")

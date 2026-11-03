@@ -36,6 +36,7 @@ def review(year):
         "first_available": indexed[0]["date"] if indexed else None,
         "last_available": indexed[-1]["date"] if indexed else None,
         "field_counts": {field: sum(bool(r.get(field)) for r in indexed) for field in ["title", "source", "author"]},
+        "visually_verified_samples": sum(r.get("review_status") == "sample_metadata_verified" for r in indexed),
         "title_kind_counts": dict(Counter(r.get("title_kind") for r in indexed)),
         "review_flag_counts": dict(Counter(flag for r in indexed for flag in r.get("review_flags", []))),
         "missing_dates": [r["date"] for r in rows if r["status"] == "missing_at_tested_url"],

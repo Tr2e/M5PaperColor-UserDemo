@@ -42,7 +42,8 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
     for review in reviews:
         year = review['year']
         layout = layouts[year]
-        out.append(f'<section class="year" id="year-{year}"><h2>{year} 年</h2><p>{E(layout["layout"])}</p><p class="muted">版式抽查：{E("、".join(layout["sample_dates"]))}。规则：{E(" ".join(layout["rules"]))}</p>')
+        kinds=review['title_kind_counts']
+        out.append(f'<section class="year" id="year-{year}"><h2>{year} 年</h2><p>{E(layout["layout"])}</p><p>已识别标题中，宜 {kinds.get("宜",0)} 条，忌 {kinds.get("忌",0)} 条。</p><p class="muted">版式抽查：{E("、".join(layout["sample_dates"]))}。规则：{E(" ".join(layout["rules"]))}</p>')
         for key, batch in months.items():
             if not key.startswith(str(year)):
                 continue
@@ -51,7 +52,7 @@ h1{font-size:32px;line-height:1.4}h2{font-size:25px;margin-top:50px}h3{font-size
                 status = row['status']
                 if status == 'indexed':
                     flags = '；'.join(FLAG_NAMES.get(f,f) for f in row.get('review_flags',[]))
-                    state = flags or '机器提取 未逐条校对'
+                    state = '样本字段已核对' if row.get('review_status') == 'sample_metadata_verified' else flags or '机器提取 未逐条校对'
                 elif status == 'missing_at_tested_url':
                     state = f'标准地址 HTTP {row["http_status"]}'
                 else:
@@ -79,9 +80,17 @@ def make_docx(months, reviews, layouts):
     sec = doc.sections[0]
     sec.top_margin = sec.bottom_margin = Inches(.75)
     sec.left_margin = sec.right_margin = Inches(.8)
-    for name in ['Normal','Title','Heading 1','Heading 2','Heading 3']:
-        style=doc.styles[name]; style.font.name='PingFang SC';style.font.color.rgb=RGBColor(0,0,0)
-        style.element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'PingFang SC')
+    for style in doc.styles:
+        if style.type not in (1,2):
+            continue
+        style.font.name='Noto Sans CJK SC';style.font.color.rgb=RGBColor(0,0,0)
+        fonts=style.element.get_or_add_rPr().rFonts
+        for attr in list(fonts.attrib):
+            del fonts.attrib[attr]
+        for attr in ['ascii','hAnsi','cs','eastAsia']:
+            fonts.set(qn('w:'+attr),'Noto Sans CJK SC')
+        for border in list(style.element.iter(qn('w:pBdr'))):
+            border.getparent().remove(border)
     doc.styles['Normal'].font.size=Pt(10)
     doc.styles['Normal'].paragraph_format.space_after=Pt(7)
     doc.styles['Normal'].paragraph_format.line_spacing=1.15
