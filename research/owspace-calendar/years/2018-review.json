@@ -1,0 +1,130 @@
+{
+  "year": 2018,
+  "reviewed_at": "2026-11-03T02:28:47+00:00",
+  "date_coverage_pass": true,
+  "expected_days": 365,
+  "record_count": 365,
+  "status_counts": {
+    "indexed": 365
+  },
+  "first_available": "2018-01-01",
+  "last_available": "2018-12-31",
+  "field_counts": {
+    "title": 365,
+    "source": 332,
+    "author": 363
+  },
+  "title_kind_counts": {
+    "宜": 234,
+    "忌": 131
+  },
+  "review_flag_counts": {
+    "source_not_detected": 33,
+    "low_ocr_confidence": 79,
+    "author_unresolved": 2
+  },
+  "missing_dates": [],
+  "error_dates": [],
+  "identical_image_groups": [],
+  "top_authors_machine_extracted": [
+    [
+      "奥尔罕·帕慕克",
+      3
+    ],
+    [
+      "狄兰·托马斯",
+      2
+    ],
+    [
+      "杜尚",
+      2
+    ],
+    [
+      "村上春树",
+      2
+    ],
+    [
+      "王小波",
+      2
+    ],
+    [
+      "阿兰．德波顿",
+      2
+    ],
+    [
+      "漫，空知英秋",
+      2
+    ],
+    [
+      "是枝裕和",
+      2
+    ],
+    [
+      "帕蒂·史密斯",
+      2
+    ],
+    [
+      "尼采",
+      2
+    ],
+    [
+      "加西亚·马尔克斯",
+      2
+    ],
+    [
+      "金宇澄",
+      2
+    ]
+  ],
+  "top_sources_machine_extracted": [
+    [
+      "海边的卡夫卡",
+      2
+    ],
+    [
+      "犬的记忆",
+      2
+    ],
+    [
+      "银魂",
+      2
+    ],
+    [
+      "百年孤独",
+      2
+    ],
+    [
+      "繁花",
+      2
+    ],
+    [
+      "青春",
+      2
+    ],
+    [
+      "写在人生边上",
+      2
+    ],
+    [
+      "文化与价值",
+      2
+    ],
+    [
+      "麦田里的守望者",
+      2
+    ],
+    [
+      "包法利夫人",
+      2
+    ],
+    [
+      "精疲力尽",
+      2
+    ],
+    [
+      "追忆似水年华",
+      2
+    ]
+  ],
+  "assessment": "日期覆盖检查完成；字段为机器提取，未经逐条人工核验。完整性检查不代表OCR准确率。"
+}
