@@ -1,0 +1,65 @@
+{
+  "days": 365,
+  "unique_groups": 365,
+  "unique_titles": 365,
+  "repeat_groups_vs_2026": 0,
+  "repeat_titles_vs_2026": 0,
+  "max_author_count": 3,
+  "normalized_author_keys": 353,
+  "author_pairs_within_21_days": [],
+  "kind_counts": {
+    "宜": 246,
+    "忌": 119
+  },
+  "themes": {
+    "行动与希望": 52,
+    "自我与边界": 70,
+    "松弛与日常": 74,
+    "感官与自然": 35,
+    "阅读与表达": 44,
+    "相伴与体谅": 56,
+    "亲密与欣赏": 34
+  },
+  "tones": {
+    "温和": 255,
+    "轻巧": 43,
+    "沉思": 67
+  },
+  "lunar_and_personal_dates_checked": true,
+  "source_note": "对既有文本做语义通读筛选；本次没有把365张原图逐一重新OCR。作者统计使用有限别名表，不代表完整权威人名消歧。",
+  "layout_modes": {
+    "balanced": 190,
+    "standard": 150,
+    "long": 25
+  },
+  "all_365_full_text_and_bounds_checked": true,
+  "protected_files_unchanged": true,
+  "protected_sha256": {
+    "artifacts/tr2e_calendar_400x600/2020-03-19.layout.json": "6b32eb684a1c82ed86f6f0e73c335b561af7d8a7dcf1b8a43234f2f91fbe2cf1",
+    "artifacts/tr2e_calendar_400x600/2020-04-15.layout.json": "df40b419165500910f9278c063bebcd412546162843db71c633085fd3f0e11f4",
+    "artifacts/tr2e_calendar_400x600/2026-01-01.layout.json": "66f476a18b3b0a83a6209eff6de817e9aaaf160f43b9dc28120a2eab379a3a9b",
+    "artifacts/tr2e_calendar_400x600/2026-02-16.layout.json": "b515851308391c7efa756e9ff0f4900ffb535273048b6b0cdebb52d6e1cf3c11",
+    "artifacts/tr2e_calendar_400x600/2026-02-17.layout.json": "3703a05d63cd8ef6b7a62b375a1c09e6d2cc4a240aa561bcf00b66b873751b8f",
+    "artifacts/tr2e_calendar_400x600/2026-05-08.layout.json": "af7e7e66bb175da5538f0255c3fbaae9fe7f6d55528857691b51f2e8861a729d",
+    "artifacts/tr2e_calendar_400x600/2026-06-21.layout.json": "02bc8cb2842a672d65c252e5c491c6cd78b3b3073fe44b97abe617f0f153a07a",
+    "artifacts/tr2e_calendar_400x600/2026-09-25.layout.json": "e92c8ed5d3cf897fc868887e2e2725f3a1ff2f6d1abc43c0711d10d4a7074cb0",
+    "artifacts/tr2e_calendar_400x600/2026-11-11.layout.json": "bd91cc2ed1ddd7fc670373c0adbddb7cd38f37d5bc5a6cc760525c73d6924be1",
+    "artifacts/tr2e_calendar_400x600/2026-12-31.layout.json": "cad0086c4a122ffa94d16e54fbf768bd817f8bdae9ef4327cfac3affefef3f89",
+    "artifacts/tr2e_calendar_400x600/2026.json": "74e86ec2a926497b1dfaa22f3a186396517cfdcdc681a81302c4ea87faa49944",
+    "calendar_firmware/main/CMakeLists.txt": "1b7a7299b654a77c13d74e77749e840e08bab65272c64548fda0f86aefb6716a",
+    "calendar_firmware/main/assets/calendar.pack": "6fc32a8a986d224402d9075509b195608934959a70c1246687e6d1dd5d90e7bd",
+    "calendar_firmware/main/assets/manifest.json": "b233615fad16befa03a57a8b40fb795736c38f2e187ea2e0b7db3311719fd571",
+    "calendar_firmware/main/calendar_engine.cpp": "d533031baac69738a99746c22dbc317e97f4a4a0e19d8a3aac84cabfa9f1b43d",
+    "calendar_firmware/main/calendar_engine.h": "92e1f025e7f41a8b9476209da887252c3625a393786279cef6cd67dedf44cc0e",
+    "calendar_firmware/main/main.cpp": "7c12506e1d1d6dad57870c9c23deb255ae65ee0cf14bd3032fd02305636c1a7f",
+    "calendar_firmware/main/network.cpp": "030d1d9b65de3fd3f9517ad58b8da144784323933373c002028bca50f324c67d",
+    "calendar_firmware/main/network.h": "785b2ad21ce94bde69d16476b6b895d1c756069062aeaa94f1433cec437d56ab",
+    "calendar_firmware/release/manifest.json": "a4e0afe5a42083c8af87420fa43e3298cc2e7de14d80244c4c74a48d424f36f8",
+    "calendar_firmware/release/tr2e-calendar-0.1.0.zip": "f3bcaa38fa977b8d8e2e8b3e0e690b487a77ac03521e6a5848a3ce2e8cab4137",
+    "calendar_firmware/release/tr2e-calendar-0.1.1.zip": "ea535fb2d30bfc2996ee44e2953437fe0c1cd300020d125b60c078ada93e1f67",
+    "tools/tr2e_calendar/assets/catalog.json": "6d7bc732046ce1a2fe29be677210c13d80bc5faf98c5ee15e66ee5642212dc67",
+    "tools/tr2e_calendar/personal_rules.json": "bf0898dad314facb77178f547a2747fa476102640e68e002b814b79952f0784f",
+    "tools/tr2e_calendar/planner.py": "76d3e014ec21c2e9084ed5091ee994b7a4bdf44b683a79769d13144c7c0b8db4",
+    "tools/tr2e_calendar/render.py": "6d420b3430a2f0a2e43795a51d7b913ac48a6ffe3613e2ef11e9979cdbdfc928"
+  }
+}

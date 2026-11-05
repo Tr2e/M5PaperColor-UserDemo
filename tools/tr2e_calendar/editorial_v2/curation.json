@@ -1,0 +1,4973 @@
+{
+  "version": "editorial-preview-v2.1",
+  "scope": "2027样稿专用；不接入固件",
+  "candidate_pool_note": "600条有限候选分两批按年份抽取，加补关键日期；不代表全库已复核。本次暂不使用2022批次。优先选择能完整显示、文本通顺且适合本年主题的标题选句原配；长文本仍使用既有自适应排版。",
+  "reviewed": [
+    {
+      "record_id": "2020-02-25",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-09-19",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-29",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-19",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-20",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-06",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-08",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2020-05-16",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-19",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2020-08-15",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-24",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-06",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-29",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2020-10-08",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-10-24",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "秋"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-20",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-27",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-04-23",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-10",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-08",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-21",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-15",
+      "theme": "感官与自然",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-02-15",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-05-09",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-11-22",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-08",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-11",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-21",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-04",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-09-02",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-02-23",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-10",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-04-27",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-11-24",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2020-09-26",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-01-11",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-10-12",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-25",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-03-06",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-13",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-09-05",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-11-08",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-23",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-11-07",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-02-08",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-24",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2020-10-03",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-16",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-06",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-15",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-09-23",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-24",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-03",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-11",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-14",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-09-16",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2021-10-14",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-07-31",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-03-14",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-01-21",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-01",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-06-03",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2021-10-16",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2021-03-19",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-13",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2021-08-10",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-12-03",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-09-12",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-02-14",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "成人亲密"
+      ]
+    },
+    {
+      "record_id": "2021-10-20",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-01-25",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-06-17",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2021-09-17",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-07",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-10-09",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-06-12",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-03-10",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2021-09-23",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-27",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-11-28",
+      "theme": "行动与希望",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-02-04",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-02-01",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-06-30",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-03-30",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-11-21",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-07-23",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-08-04",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-11",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-18",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-02-06",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-11-02",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2021-03-27",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-06-19",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-09-20",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-11-13",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-03-13",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-30",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-14",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-01-09",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-12-02",
+      "theme": "行动与希望",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-29",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-10-08",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-01-29",
+      "theme": "自我与边界",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-10-26",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-24",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-12-30",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-05-16",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-12-23",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2021-01-02",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-13",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-05-15",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-04-23",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-08-02",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-15",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-10-16",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-23",
+      "theme": "相伴与体谅",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-04",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "春"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-12-15",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-23",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-06",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-10-21",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-25",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-28",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-21",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-04",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-12",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-24",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-23",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-10-29",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-29",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-12-14",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-08",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-12-30",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-10-11",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2023-09-04",
+      "theme": "自我与边界",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-19",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-17",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-27",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-28",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-18",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-12-08",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-25",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-10",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-26",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-11",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-23",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-15",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-22",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-06",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-13",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-01",
+      "theme": "亲密与欣赏",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-10",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-05",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2023-11-17",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-27",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-29",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-20",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-03",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-05",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "春"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-09",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-09",
+      "theme": "亲密与欣赏",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-10-26",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-23",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-10",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-02",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-25",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-14",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-15",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-27",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-19",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-02",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-20",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-23",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-13",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2023-08-18",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-31",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-18",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-27",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-28",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-01",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-11",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2023-10-27",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-24",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-21",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-07",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-10",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-12",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-03",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-29",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-03",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-09",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2024-01-28",
+      "theme": "感官与自然",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-11-16",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-07-30",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-11-06",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-10-30",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-08-11",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-12-08",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-12-16",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-03-26",
+      "theme": "自我与边界",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-12-05",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-27",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "成人亲密"
+      ]
+    },
+    {
+      "record_id": "2024-09-23",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-09-19",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-10-18",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-08-09",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-01-20",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "成人亲密"
+      ]
+    },
+    {
+      "record_id": "2024-10-17",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2024-09-18",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-07-17",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-06-26",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-07-25",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "春",
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-01-19",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-09-24",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-09-06",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "成人亲密"
+      ]
+    },
+    {
+      "record_id": "2024-08-05",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-09-05",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-29",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2024-08-06",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-05-02",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-06",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-28",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-04-04",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2024-02-02",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-01-01",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-12-07",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-11-11",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-04-08",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-08-01",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-06-14",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "春"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-10-15",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-05-16",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-01-16",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2024-03-16",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-06-19",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-05",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-01-04",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-12-02",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-06-05",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-08-21",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2024-08-03",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "春",
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-02-17",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-04-03",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-07-06",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "成人亲密"
+      ]
+    },
+    {
+      "record_id": "2024-02-25",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-10-28",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-03-21",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-11-13",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2024-11-17",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2024-03-29",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2024-03-09",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-05-15",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2024-11-21",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-06-27",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2024-05-24",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-12-15",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-02-09",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-06-01",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-09",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-08-13",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2025-08-15",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-11",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-06-27",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-09-11",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-03-01",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-10-27",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2025-07-18",
+      "theme": "感官与自然",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-09-19",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-03-10",
+      "theme": "行动与希望",
+      "tone": "轻巧",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-01-03",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-03-17",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-08-28",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-02-20",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-03-15",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-08-20",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-09-05",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-04-09",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2025-12-12",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2025-06-17",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-01-06",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-06-23",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2025-06-04",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "春",
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-12-19",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-19",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2025-11-10",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2025-04-05",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-04-14",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-11-15",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-01-31",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-11-21",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [
+        "秋",
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-03-02",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-04-29",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-09-18",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-24",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-16",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-06-25",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-01",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-02",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-23",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-07-22",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-01-19",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-05-04",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-10",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-29",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-10-14",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2025-08-31",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2025-04-15",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-04-12",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "夏",
+        "秋"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-02-24",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-03-29",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-12-29",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-11-03",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-02-21",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2025-02-08",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-01-13",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-03-21",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-05-25",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-05-18",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-11-05",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2018-07-21",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-04-14",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-03-26",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-10-31",
+      "theme": "感官与自然",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2018-04-03",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-01-24",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [
+        "冬"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-08-20",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-01-31",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-06-06",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-05-03",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-12-19",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2018-09-18",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2018-08-30",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-12-25",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-02-12",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-03-01",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-09-11",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2018-06-16",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-07-19",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-11-25",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-01-13",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-28",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2019-02-16",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-06",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-04-18",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-05-25",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-05-11",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-01-27",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-05-19",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-27",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2019-04-19",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2019-06-04",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-12-18",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-05-02",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-10-15",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-12-19",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-07-07",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-07-01",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-08-17",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-06-01",
+      "theme": "行动与希望",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-01-02",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-05",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-26",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-12-20",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-10-05",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-01-08",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-07-06",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2017-04-09",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-04-09",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-03-06",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-02-16",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-28",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-09-17",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-29",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2024-08-10",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2025-05-13",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2017-02-02",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-01",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-28",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-09",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-03",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2023-06-14",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-11-19",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-03-05",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-07-16",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-22",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-06-28",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-05-18",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-03-18",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-07-10",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-08-27",
+      "theme": "亲密与欣赏",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-01-21",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2019-12-21",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2021-11-06",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-03",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-13",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-06-08",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-17",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-09-11",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-10",
+      "theme": "亲密与欣赏",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2020-06-12",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-07-16",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-04-22",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2019-05-22",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-16",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-10",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-11-11",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-22",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-09-22",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-04-07",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-07-31",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2020-08-18",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-01",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-07-11",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-27",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-12-25",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-03-26",
+      "theme": "行动与希望",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2019-03-04",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-08",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-27",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-11-15",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-22",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-06",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "心理困境"
+      ]
+    },
+    {
+      "record_id": "2020-11-06",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-03-04",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2023-10-31",
+      "theme": "阅读与表达",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-17",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-05-10",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-08",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-05-28",
+      "theme": "松弛与日常",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-12-02",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-03-16",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-08-03",
+      "theme": "自我与边界",
+      "tone": "沉思",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "冲突或压迫"
+      ]
+    },
+    {
+      "record_id": "2021-02-16",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-12-09",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-08-21",
+      "theme": "相伴与体谅",
+      "tone": "沉思",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2023-10-06",
+      "theme": "亲密与欣赏",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-01-30",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-23",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-13",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-02-18",
+      "theme": "阅读与表达",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-09-24",
+      "theme": "行动与希望",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-21",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-10-23",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-06-15",
+      "theme": "自我与边界",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2021-08-06",
+      "theme": "相伴与体谅",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-01-15",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-09-30",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-04-04",
+      "theme": "阅读与表达",
+      "tone": "沉思",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": [
+        "失落或离别"
+      ]
+    },
+    {
+      "record_id": "2019-11-14",
+      "theme": "行动与希望",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-11-13",
+      "theme": "自我与边界",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-04-22",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2020-06-18",
+      "theme": "松弛与日常",
+      "tone": "温和",
+      "relation": "提醒与反向提示",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2019-04-15",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "同题回应",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2023-05-30",
+      "theme": "感官与自然",
+      "tone": "温和",
+      "relation": "日常场景转译",
+      "seasons": [],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    },
+    {
+      "record_id": "2018-06-18",
+      "theme": "松弛与日常",
+      "tone": "轻巧",
+      "relation": "同题回应",
+      "seasons": [
+        "夏"
+      ],
+      "review": "2026-11-05通读标题与选句；未逐张复核原图",
+      "context_flags": []
+    }
+  ],
+  "rejected": [
+    {
+      "record_id": "2020-01-22",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-04-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-06-20",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-05-17",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-11-11",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-08-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-06-14",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-11-23",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-07-08",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-04-30",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-01-14",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-05-14",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-12-28",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-12-10",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-10-01",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-03-18",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-05-31",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-03-21",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-03-08",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-01-29",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-04-13",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-07-23",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2020-12-23",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2020-10-31",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-03-28",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-09-03",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-05-12",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-05-09",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-07-14",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-10-30",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-05-20",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-10-28",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-06-26",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-02-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-05-17",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-11-03",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-11-09",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-05-19",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-07-13",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-06-24",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2021-10-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-09-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-03-22",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-11-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-01-08",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2021-06-23",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-10-07",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2023-01-26",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-08-19",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2023-05-16",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-09-12",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-01-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-12-02",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-05-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-01-16",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-07-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-08-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-10-19",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2023-05-18",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-11-20",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-08-26",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-05-14",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-06-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-10-21",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-04-18",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-03-28",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-07-04",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-06-25",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-07-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-04-26",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-04-09",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-01-10",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-11-27",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-10-13",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-02-26",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-09-09",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-05-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-01-29",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-06-12",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-11-08",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-04-22",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-06-10",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-08-12",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2024-02-23",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2024-05-18",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-01-24",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-05-20",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-10-05",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-08-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-07-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-12-20",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-01-28",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-03-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-12-02",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-03-08",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-03-30",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-09-06",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-09-22",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-04-30",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-09-12",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-03-25",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-11-07",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-07-13",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-11-12",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-02-10",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-11-19",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-04-06",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-01-23",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-10-01",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-09-24",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2025-02-07",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2025-12-26",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2018-07-12",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-05-31",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-05-09",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-11-11",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-04-21",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-02-03",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2018-06-13",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-06-11",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2018-08-14",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2018-09-01",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-04-08",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-06-28",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-11-26",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2018-02-08",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-11-10",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-09-15",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-09-05",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2019-12-23",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-08-24",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-06-15",
+      "reason": "疑似OCR、缺字或杂字，等待原图核对"
+    },
+    {
+      "record_id": "2019-03-17",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2019-09-18",
+      "reason": "本次年度主题/语境适配较弱，暂不选入；非文本真伪结论"
+    },
+    {
+      "record_id": "2023-08-07",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2023-09-06",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-08-14",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-07-03",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2023-09-30",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-09-14",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-01-11",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2021-07-05",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-03-27",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-05-07",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2021-08-13",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-10-11",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-05-15",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-11-09",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-04-14",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2023-01-08",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-06-02",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-11-29",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2019-04-21",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2023-01-12",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2021-12-06",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2020-03-13",
+      "reason": "文字疑点或本次年度语境适配较弱，暂不选入"
+    },
+    {
+      "record_id": "2023-05-14",
+      "reason": "引文与署名关系待进一步核对；本次不选入"
+    }
+  ]
+}
