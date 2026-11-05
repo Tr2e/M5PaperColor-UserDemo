@@ -1,14 +1,7 @@
 {
-  "version": "balanced-stack-seal-v2",
+  "version": "balanced-stack-signature-A-v1",
   "scope": "仅样稿，固件未改",
   "signature": "Tr2e",
-  "seal_size": [
-    48,
-    22
-  ],
-  "seal_corner_radius": 3,
-  "seal_font": "TR2ESerif-Bold.otf",
-  "seal_font_px": 15,
   "quote_bottom_gap_px": 16,
   "verified_days": 365,
   "author_footer_pixels_unchanged": true,
@@ -21,6 +14,20 @@
   "protected_files_unchanged": true,
   "sources": {
     "tools/tr2e_calendar/editorial_v2/restyle_preview.py": "829c4e463d399c5b3051cfc82a1af26110675bd11644c288d5d4aeb313198a0d",
-    "tools/tr2e_calendar/assets/TR2ESerif-Bold.otf": "a22f1765d05e6a0a97bfd0e990d4e253cfc03d9887be8848885ee8ef57a7bb4e"
-  }
+    "tools/tr2e_calendar/assets/TR2ESerif-Bold.otf": "a22f1765d05e6a0a97bfd0e990d4e253cfc03d9887be8848885ee8ef57a7bb4e",
+    "tools/tr2e_calendar/editorial_v2/apply_signature_choice.py": "f3482af31aabfb28e34ea6f1f05a59c1a0a5e388771deff89a0e4c4083772fec",
+    "artifacts/tr2e_signature_studies/A.png": "90a263844927b89e1a4cdd98f736020da899ba301e43a34be313ef2508b6956b"
+  },
+  "signature_variant": "A",
+  "signature_name": "书末署名",
+  "signature_font": "TR2ESerif-Regular.otf",
+  "signature_font_px": 15,
+  "signature_tracking_px": 0.6,
+  "signature_patch_bounds": [
+    300,
+    530,
+    365,
+    570
+  ],
+  "outside_signature_pixels_unchanged": true
 }
