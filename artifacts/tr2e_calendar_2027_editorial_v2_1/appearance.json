@@ -1,5 +1,5 @@
 {
-  "version": "bottom-aligned-seal-v1",
+  "version": "balanced-stack-seal-v2",
   "scope": "仅样稿，固件未改",
   "signature": "Tr2e",
   "seal_size": [
@@ -12,10 +12,15 @@
   "quote_bottom_gap_px": 16,
   "verified_days": 365,
   "author_footer_pixels_unchanged": true,
+  "title_to_divider_gap_px": 20,
+  "date_height_range": [
+    122,
+    184
+  ],
   "selection_plan_sha256": "95a2bb3f319af03137f12d62cdf082407cde101dd7ca92011fb9c90746095799",
   "protected_files_unchanged": true,
   "sources": {
-    "tools/tr2e_calendar/editorial_v2/restyle_preview.py": "f11133798952894122f55f0cd00047a576f8841cc2cbc29f7fc3d5839a8ad4de",
+    "tools/tr2e_calendar/editorial_v2/restyle_preview.py": "829c4e463d399c5b3051cfc82a1af26110675bd11644c288d5d4aeb313198a0d",
     "tools/tr2e_calendar/assets/TR2ESerif-Bold.otf": "a22f1765d05e6a0a97bfd0e990d4e253cfc03d9887be8848885ee8ef57a7bb4e"
   }
 }
