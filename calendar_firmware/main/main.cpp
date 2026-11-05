@@ -28,14 +28,20 @@ uint32_t displayed_day=0;
 bool state_ok=false;
 bool error_visible=false;
 
-void led_off() {M5.Led.setAllColor(0);M5.Led.display();}
-void power_hint() {
+void led_off() {M5.Led.setAllColor(0,0,0);M5.Led.setBrightness(0);M5.Led.display();}
+void led_on(uint8_t red,uint8_t green,uint8_t blue,uint8_t brightness=96) {
     power.setLdoEnable(true);
-    M5.Led.setBrightness(12);M5.Led.setAllColor(0x303030);M5.Led.display();
-    vTaskDelay(pdMS_TO_TICKS(80));led_off();power.setLdoEnable(false);
+    M5.Led.setBrightness(brightness);M5.Led.setAllColor(red,green,blue);M5.Led.display();
+}
+void led_pulse(uint8_t red,uint8_t green,uint8_t blue,uint32_t duration_ms=220) {
+    led_on(red,green,blue);vTaskDelay(pdMS_TO_TICKS(duration_ms));led_off();power.setLdoEnable(false);
 }
 void push() {
-    M5.Display.setEpdMode(epd_mode_t::epd_quality);
+    // ED2208 "quality" is a six-colour photo dither.  It deliberately mixes
+    // native green pixels into solid RGB black, which shows up as pinholes in
+    // large date glyphs.  Text mode keeps binary endpoints as native black and
+    // white while retaining the panel's full refresh sequence.
+    M5.Display.setEpdMode(epd_mode_t::epd_text);
     canvas.pushSprite(0,0);M5.Display.waitDisplay();
 }
 void message(const char* title,const char* body,const char* detail=nullptr) {
@@ -44,7 +50,7 @@ void message(const char* title,const char* body,const char* detail=nullptr) {
     canvas.setTextDatum(top_left);canvas.setFont(&fonts::efontCN_24_b);canvas.drawString(title,24,150);
     canvas.setFont(&fonts::efontCN_16);canvas.drawString(body,24,210);
     if(detail) canvas.drawString(detail,24,242);
-    canvas.drawString("按住 A 键开机可配置网络",24,330);
+    canvas.drawString("开机后长按顶部 G1 键可配置网络",24,330);
     canvas.setFont(&fonts::Font2);canvas.drawString("Tr2e",330,555);push();displayed_day=0;error_visible=true;
 }
 bool read_clock(tr2e::Date& day,m5::rtc_time_t& clock) {
@@ -102,21 +108,51 @@ bool set_clock(int64_t utc) {
 }
 bool setup_requested(tr2e::Boot boot) {
     if(boot!=tr2e::Boot::Manual) return false;
-    M5.update();if(!M5.BtnA.isPressed()) return false;
-    // A is a display button, separate from the power button; deliberate hold
-    // only. No idle scan or automatically opened AP.
-    for(int i=0;i<20;++i) {vTaskDelay(pdMS_TO_TICKS(50));M5.update();if(!M5.BtnA.isPressed()) return false;}
-    return true;
+    // In portrait orientation the top user key is G1 / BtnC. Give a short
+    // post-wake window so it can be pressed after the separate power button,
+    // instead of requiring A+RESET to be held together.
+    const int64_t deadline=esp_timer_get_time()+4000000;
+    unsigned held=0;
+    while(esp_timer_get_time()<deadline) {
+        M5.update();
+        if(M5.BtnC.isPressed()) {
+            if(held++==0) led_on(0,80,255);
+            if(held>=24) {led_on(0,255,220);vTaskDelay(pdMS_TO_TICKS(250));return true;}
+        } else if(held) {
+            held=0;led_off();power.setLdoEnable(false);
+        }
+        vTaskDelay(pdMS_TO_TICKS(50));
+    }
+    led_off();power.setLdoEnable(false);return false;
 }
 void configure() {
-    char ssid[33],pass[16];if(!calendar_setup_start(ssid,sizeof(ssid),pass,sizeof(pass))) return;
+    char ssid[33],pass[16];
+    if(!calendar_setup_start(ssid,sizeof(ssid),pass,sizeof(pass))) {
+        ESP_LOGE(TAG,"Network setup AP failed to start");
+        led_pulse(255,0,0,500);
+        error_visible=false;message("网络设置启动失败","请短按顶部电源键后重试");return;
+    }
+    // Steady blue means that the temporary setup AP is active.
+    led_on(0,80,255);
     canvas.setRotation(1);canvas.fillScreen(TFT_WHITE);canvas.setTextColor(TFT_BLACK,TFT_WHITE);canvas.setTextDatum(top_left);
     canvas.setFont(&fonts::efontCN_24_b);canvas.drawString("连接此网络配置日历",24,110);
     canvas.setFont(&fonts::Font2);canvas.drawString(ssid,24,170);canvas.drawString(pass,24,210);canvas.drawString("http://192.168.4.1",24,270);
-    canvas.setFont(&fonts::efontCN_16);canvas.drawString("上行为网络名称，下行为密码",24,320);canvas.drawString("3分钟后自动关闭",24,355);push();displayed_day=0;error_visible=false;
+    canvas.setFont(&fonts::efontCN_16);canvas.drawString("手机通常会自动打开配网页",24,320);canvas.drawString("选择家中 Wi-Fi 并输入密码",24,355);canvas.drawString("3分钟后自动关闭",24,390);push();displayed_day=0;error_visible=false;
     int64_t deadline=esp_timer_get_time()+180000000;
-    while(esp_timer_get_time()<deadline && !calendar_setup_saved()) vTaskDelay(pdMS_TO_TICKS(100));
-    vTaskDelay(pdMS_TO_TICKS(250));calendar_setup_stop();
+    auto previous=CalendarSetupState::Ready;
+    while(esp_timer_get_time()<deadline && !calendar_setup_saved()) {
+        auto state=calendar_setup_state();
+        if(state!=previous) {
+            previous=state;
+            if(state==CalendarSetupState::Connecting) led_on(255,110,0);
+            else if(state==CalendarSetupState::Failed) led_on(255,0,0);
+            else if(state==CalendarSetupState::Ready) led_on(0,80,255);
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+    const bool saved=calendar_setup_saved();
+    if(saved) led_on(0,255,60);else led_on(255,0,0);
+    vTaskDelay(pdMS_TO_TICKS(saved?500:350));led_off();calendar_setup_stop();power.setLdoEnable(false);
 }
 [[noreturn]] void sleep_until_midnight(bool manual) {
     tr2e::Date day{};m5::rtc_time_t time;bool valid=read_clock(day,time);
@@ -155,7 +191,7 @@ void configure() {
         power.gpioSetPull(M5PM1_GPIO_NUM_2,M5PM1_GPIO_PULL_UP)==M5PM1_OK &&
         power.gpioSetWakeEdge(M5PM1_GPIO_NUM_2,M5PM1_GPIO_WAKE_FALLING)==M5PM1_OK &&
         power.gpioSetWakeEnable(M5PM1_GPIO_NUM_2,true)==M5PM1_OK;
-    if(manual) { power_hint(); }
+    if(manual) { led_pulse(255,110,0); }
     led_off();M5.Display.waitDisplay();M5.Display.sleep();
     power.digitalWrite(M5PM1_GPIO_NUM_0,LOW);power.digitalWrite(M5PM1_GPIO_NUM_3,LOW);power.digitalWrite(M5PM1_GPIO_NUM_4,LOW);power.setLdoEnable(false);
     uint8_t wake=0;power.getWakeSource(&wake,M5PM1_CLEAN_ALL);
@@ -173,7 +209,9 @@ void configure() {
 extern "C" void app_main() {
     setenv("TZ","UTC0",1);tzset();
     auto cfg=M5.config();cfg.clear_display=false;cfg.internal_spk=false;cfg.internal_mic=false;cfg.internal_imu=false;cfg.output_power=false;
-    M5.begin(cfg);led_off();
+    M5.begin(cfg);
+    ESP_LOGI(TAG,"Board=%u RGB enabled=%u count=%u",unsigned(M5.getBoard()),M5.Led.begin(),unsigned(M5.Led.getCount()));
+    led_off();
     power.begin(&M5.In_I2C,M5PM1_DEFAULT_ADDR,M5PM1_I2C_FREQ_100K);power.setI2cConfig(0);
     power.pinMode(M5PM1_GPIO_NUM_0,OUTPUT);power.digitalWrite(M5PM1_GPIO_NUM_0,HIGH);
     // M5Unified enables the TF card rail during board init. This application
@@ -190,7 +228,7 @@ extern "C" void app_main() {
     // One press powers on/restarts the board, including while ESP is asleep.
     auto boot=tr2e::classifyBoot(reset,source&(M5PM1_WAKE_SRC_PWRBTN|M5PM1_WAKE_SRC_RSTBTN),
         source&M5PM1_WAKE_SRC_EXT_WAKE,sleep_cause==ESP_SLEEP_WAKEUP_TIMER);
-    const bool manual=boot==tr2e::Boot::Manual;if(manual) power_hint();
+    const bool manual=boot==tr2e::Boot::Manual;if(manual) led_pulse(0,255,60);
     ESP_LOGI(TAG,"Calendar boot kind=%u, wake-source=%u",unsigned(boot),source);
     uint16_t battery_mv=0;
     if(power.readVbat(&battery_mv)==M5PM1_OK && battery_mv>0 && battery_mv<3100) {
@@ -203,10 +241,15 @@ extern "C" void app_main() {
     if(!frame || !canvas.getBuffer() || !pack.open(pack_start,pack_end-pack_start)) {
         ESP_LOGE(TAG,"Calendar resource/memory validation failed");sleep_until_midnight(manual);
     }
-    // First operation is local display, before any network initialization.
+    // Latch the deliberate top G1 / BtnC hold before the slow E Ink refresh.
+    const bool setup=setup_requested(boot);
+    // An explicit setup request takes priority over the normal local-first
+    // startup so the AP becomes available without waiting for an unrelated
+    // calendar refresh.  All ordinary boots still initialize no network before
+    // showing the local page.
+    if(setup) configure();
     bool displayed=show_today();
-    if(!displayed) message("时间或年度计划需要检查","按住 A 键重新开机进行设置");
-    if(setup_requested(boot)) configure();
+    if(!displayed) message("时间或年度计划需要检查","开机后长按顶部 G1 键进行设置");
     tr2e::Date day{};m5::rtc_time_t clock;uint32_t today=read_clock(day,clock)?tr2e::ordinal(day):0;
     auto state=load_sync();
     if(state_ok && tr2e::shouldSync(boot,today,state)) {
@@ -221,6 +264,6 @@ extern "C" void app_main() {
         }
     }
     // Sync can cross midnight/year boundary: render the corrected civil date.
-    if(!show_today() && !displayed_day) message("时间或年度计划需要检查","按住 A 键重新开机进行设置");
+    if(!show_today() && !displayed_day) message("时间或年度计划需要检查","开机后长按顶部 G1 键进行设置");
     sleep_until_midnight(manual);
 }

@@ -10,6 +10,8 @@ from production_layout import render,layout
 from calendar_data import Calendar
 from PIL import Image,ImageChops
 
+POPCOUNT=tuple(bin(value).count('1') for value in range(256))
+
 def main():
     catalog,rules,_=load_inputs();by={r['id']:r for r in catalog['records']};cal=Calendar()
     manifest=json.loads((ROOT/'main/assets/manifest.json').read_text());path=ROOT/'main/assets/calendar.pack';blob=path.read_bytes()
@@ -85,7 +87,7 @@ def main():
             if date.startswith('2027-'):
                 with Image.open(expected) as reference,Image.open(REPO/'artifacts/tr2e_calendar_2027_editorial_v2_1/days'/(date+'.png')) as approved:
                     assert ImageChops.difference(reference,approved).getbbox() is None,date
-            difference=sum((x^y).bit_count() for x,y in zip(a,b))
+            difference=sum(POPCOUNT[x^y] for x,y in zip(a,b))
             # The pack includes sparse glyph-overlap ink corrections, so even
             # author-credit edge pixels must match, not just text positions.
             assert difference==0,(date,difference)
