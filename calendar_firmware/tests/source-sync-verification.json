@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-05",
+  "source_version": "0.2.0",
+  "esp_idf_build_invoked": false,
+  "firmware_compiled": false,
+  "host_core_compiled": true,
+  "existing_firmware_sha256": "f5d95ce7f72f77071e8a8ec24a8c322b24deb4a5593ea3ebad28908f44547e3f",
+  "existing_firmware_and_release_archives_unchanged": true,
+  "pack_schema": 3,
+  "pack_sha256": "469dac77babe82c429faf5c4e3a8508419bc1ea84cb59495635fb8ab23e9c3ae",
+  "pack_bytes": 2435508,
+  "years": [
+    2026,
+    2099
+  ],
+  "days": 27028,
+  "frozen_2026_plan_hash": 189380513,
+  "frozen_2027_plan_sha256": "95a2bb3f319af03137f12d62cdf082407cde101dd7ca92011fb9c90746095799",
+  "approved_2027_gallery_unchanged": true,
+  "signature": "A: Tr2e with short underline",
+  "author_typography_and_positions_unchanged": true,
+  "quote_bottom_gap_px": 16,
+  "title_to_divider_gap_px": 20,
+  "native_pixel_exact_pages": 739,
+  "max_pixel_difference": 0,
+  "annual_repeats": 0,
+  "max_adjacent_repeated_groups": 15,
+  "python_rule_tests_passed": 15,
+  "preview_integrity_tests_passed": 7,
+  "physical_device_verified": false,
+  "sources": {
+    "tools/tr2e_calendar/production_planner.py": "138ed134f9499189b7bd68ed7fad1aa132f9239c1ce7e3e3efc3c56298b23240",
+    "tools/tr2e_calendar/production_layout.py": "162b42d6bf846c90816af06fd6364ce31bbc9a11ea35aafb5f9fc1bdb9c3cfba",
+    "tools/tr2e_calendar/build_device_pack.py": "193be8df21f299d7fa45b0ab4429021b4d653d0cb64e08309ee7b15a95453aff",
+    "tools/tr2e_calendar/editorial_v2/curation.json": "a9e7373d6524d001cae09e9a3f79701796d1c73fa279a8b5963d8c62686162da",
+    "tools/tr2e_calendar/editorial_v2/rules_2027.json": "191ec47bbc211a49699fedffdba41b19e411233ca515c69fc3d31027f7bccfde",
+    "calendar_firmware/main/calendar_engine.cpp": "711671f2e6b8224be5cb3ae964bad7836a4e33c08d85d0e48d346266f02b2811"
+  }
+}

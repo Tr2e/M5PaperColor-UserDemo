@@ -36,12 +36,13 @@ uint32_t CalendarPack::field(unsigned n) const { return data_ ? u32(data_+8+4*n)
 bool CalendarPack::range(size_t offset, size_t bytes) const { return offset <= size_ && bytes <= size_-offset; }
 bool CalendarPack::open(const uint8_t* data, size_t size) {
     data_ = nullptr; size_ = 0;
-    if (!data || size < 72 || std::memcmp(data,"TR2EPK02",8) || u32(data+8)!=size ||
-        u32(data+64)!=2 || crc(data,size)!=u32(data+12)) return false;
+    if (!data || size < 72 || std::memcmp(data,"TR2EPK03",8) || u32(data+8)!=size ||
+        u32(data+64)!=3 || crc(data,size)!=u32(data+12)) return false;
     data_ = data; size_ = size;
     bool ok = field(4)>0 && field(4)<65536 && field(5)>0 && field(5)<65536 &&
         field(10)>=73 && range(field(6),16*size_t(field(4))) && range(field(7),4*(size_t(field(5))+1)) &&
-        range(field(8),6*size_t(field(3))) && range(field(9),4*(size_t(field(10))+1)) && range(field(11),80);
+        range(field(8),6*size_t(field(3))) && range(field(9),4*(size_t(field(10))+1)) &&
+        field(15)>0 && field(15)<=128 && range(field(11),20*size_t(field(15)));
     for (uint32_t i=0; ok && i<field(4); ++i) {
         const auto* g=data_+field(6)+i*16;size_t w=u16(g+4),h=u16(g+6);
         ok=w<=400 && h<=600 && range(u32(g),((w+7)/8)*h);
@@ -56,7 +57,7 @@ bool CalendarPack::open(const uint8_t* data, size_t size) {
                 if (2+size_t(u16(data_+a))*2!=b-a) {ok=false;break;}
                 for (uint32_t j=a+2;j<b;j+=2) if(u16(data_+j)>=field(4)) ok=false;
             } else {
-                if (u16(data_+a+6)>=4) {ok=false;break;}
+                if (u16(data_+a+6)>=field(15)) {ok=false;break;}
                 uint32_t n=u16(data_+a+12),p=a+14;
                 for (uint32_t j=0;ok && j<n;++j) {
                     if (p+6>b) {ok=false;break;}
@@ -68,7 +69,7 @@ bool CalendarPack::open(const uint8_t* data, size_t size) {
             }
         }
     }
-    for(uint32_t i=0;ok && i<40;++i) if(u16(data_+field(11)+i*2)>=field(4)) ok=false;
+    for(uint32_t i=0;ok && i<field(15)*10;++i) if(u16(data_+field(11)+i*2)>=field(4)) ok=false;
     if (!ok) {data_=nullptr;size_=0;}
     return ok;
 }

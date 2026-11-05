@@ -4,17 +4,25 @@
 #include <iterator>
 #include <vector>
 #include <cstdio>
+#include <cstring>
 
 int main(int argc,char** argv) {
     assert(argc>=2);std::ifstream input(argv[1],std::ios::binary);
     std::vector<uint8_t> data{std::istreambuf_iterator<char>(input),{}};
-    tr2e::CalendarPack pack;assert(pack.open(data.data(),data.size()));
+    tr2e::CalendarPack pack;
+    if(argc==3 && !std::strcmp(argv[2],"--reject")) {
+        assert(!pack.open(data.data(),data.size()));return 0;
+    }
+    assert(pack.open(data.data(),data.size()));
     assert(tr2e::ordinal({2028,2,29})+1==tr2e::ordinal({2028,3,1}));
     assert(!tr2e::ordinal({2027,2,29}));assert(!tr2e::ordinal({2100,2,29}));
     assert(tr2e::ordinal({2026,12,31})+1==tr2e::ordinal({2027,1,1}));
     tr2e::Entry e;assert(pack.entry({2026,12,31},e));assert(pack.entry({2027,1,1},e));
     assert(!pack.entry({2025,12,31},e));assert(!pack.entry({2100,1,1},e));
     assert(pack.planHash(2026)!=0 && pack.planHash(2027)!=0);
+    // Updating typography/resources must not invalidate the current-year NVS
+    // assignment lock. This is the approved 2026 source-date FNV fingerprint.
+    assert(pack.planHash(2026)==189380513U);
     assert(pack.planHash(2026)!=pack.planHash(2027));assert(pack.planHash(2100)==0);
     tr2e::SyncState state;auto today=tr2e::ordinal({2026,12,25});
     using tr2e::Boot;using tr2e::Reset;using tr2e::classifyBoot;
@@ -44,6 +52,15 @@ int main(int argc,char** argv) {
         tr2e::Date date{std::stoi(argv[3]),std::stoi(argv[4]),std::stoi(argv[5])};
         std::vector<uint8_t> bits(30000);assert(pack.render(date,bits.data(),bits.size()));
         std::ofstream out(argv[2],std::ios::binary);out.write(reinterpret_cast<const char*>(bits.data()),bits.size());
+    }
+    if(argc==5 && !std::strcmp(argv[2],"--batch")) {
+        std::ifstream dates(argv[4]);tr2e::Date date{};
+        while(dates>>date.year>>date.month>>date.day) {
+            std::vector<uint8_t> bits(30000);assert(pack.render(date,bits.data(),bits.size()));
+            char name[32];std::snprintf(name,sizeof(name),"/%04d-%02d-%02d.bin",date.year,date.month,date.day);
+            std::ofstream out(std::string(argv[3])+name,std::ios::binary);
+            out.write(reinterpret_cast<const char*>(bits.data()),bits.size());assert(out.good());
+        }
     }
     data.back()^=1;assert(!pack.open(data.data(),data.size()));
     std::puts("engine/date/rollover/15-day-radio/failed-sync/corruption checks passed");

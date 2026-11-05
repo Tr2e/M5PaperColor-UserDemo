@@ -63,9 +63,13 @@ class PreviewTests(unittest.TestCase):
         for word in ('结婚纪念日', '妻子生日', '儿子生日'):
             self.assertNotIn(word, gallery)
 
-    def test_firmware_and_v1_inputs_unchanged(self):
+    def test_frozen_preview_inputs_unchanged(self):
         verified = b.read(b.DEFAULT_OUT/'verification.json')
-        self.assertEqual(verified['protected_sha256'], b.protected_hashes())
+        # The user subsequently authorized firmware integration. Preserve the
+        # preview's original editorial inputs; validate firmware in its suite.
+        original={k:v for k,v in verified['protected_sha256'].items() if not k.startswith('calendar_firmware/')}
+        current={k:v for k,v in b.protected_hashes().items() if not k.startswith('calendar_firmware/')}
+        self.assertEqual(original,current)
 
 
 if __name__ == '__main__':

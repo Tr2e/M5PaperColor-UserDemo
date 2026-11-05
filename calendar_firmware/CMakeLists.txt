@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 set(IDF_TARGET esp32s3)
-set(PROJECT_VER "0.1.1")
+set(PROJECT_VER "0.2.0")
 # Share only hardware drivers with the sibling demo. No demo app/HAL is linked.
 get_filename_component(PAPERCOLOR_ROOT "${CMAKE_CURRENT_LIST_DIR}/.." ABSOLUTE)
 list(APPEND CMAKE_MODULE_PATH "${PAPERCOLOR_ROOT}/managed_components/espressif__cmake_utilities")
