@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2022-02-14",
+    "url": "https://img.owspace.com/Public/uploads/Download/2022/0214.jpg",
+    "sha256": "45d1a62b828f1fc01cbe8131229abb0c42604c4b5cf3456f391516fb5dba4c9a",
+    "bytes": 100268,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图确认为宜心无旁骛、情人节；正文表达爱情来临时可以把朋友放在次位。原excerpt有多处OCR错字，仅据原图作关系判读。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2022-04-22",
+    "url": "https://img.owspace.com/Public/uploads/Download/2022/0422.jpg",
+    "sha256": "1f034e04e7a96aba5adf038efad3ad19600f893209430da0a3702f4bfc1ce39e",
+    "bytes": 99812,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图确认为忌充耳不闻、世界地球日；歌词表达守护不同主体的微弱声音。原excerpt有OCR错误；不重新转录整段歌词。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2022-05-16",
+    "url": "https://img.owspace.com/Public/uploads/Download/2022/0516.jpg",
+    "sha256": "29aca6701323591cae4782df8df6717520d91b3764b355627cfe01c835ea2121",
+    "bytes": 95492,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图确认为宜交心；正文讨论越亲近、深爱的人越难描绘。原excerpt有OCR错误。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2022-07-02",
+    "url": "https://img.owspace.com/Public/uploads/Download/2022/0702.jpg",
+    "sha256": "a96d35dfeba2594d8cfa8549e20a3182afcb62699e92f429bf1c2117ea795db9",
+    "bytes": 195371,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图直接标注作家欧内斯特·海明威逝世纪念日，标题宜发酵，选句涉及酒与想象，署名配肖像；来源为《一滴滴谷物酿造的酒精》，原source为空。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2022-11-30",
+    "url": "https://img.owspace.com/Public/uploads/Download/2022/1130.jpg",
+    "sha256": "d82b93a7be841e46bc37eb43a114fb9c754067cf0da855c1691b1d9dfebc26b4",
+    "bytes": 94178,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图确认为宜酷；正文用石头的坚硬、安宁、冰冷和现实表达愿望。原excerpt有OCR错误。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2017-09-10",
+    "url": "https://img.owspace.com/Public/uploads/Download/2017/0910.jpg",
+    "sha256": "d136f17d55daadc84b01d587e6748782887f47bc653b42a63aaffd93f2bde12b",
+    "bytes": 133902,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图标题确实印为忌蒙味，不能将蒙味全归咎OCR，也不在本报告中擅自改成蒙昧。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2023-12-27",
+    "url": "https://img.owspace.com/Public/uploads/Download/2023/1227.jpg",
+    "sha256": "ef32e7862398239805ec4c813e274d2e9c1b723ade46f962de69248bfb6b35ab",
+    "bytes": 113946,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图确认为宜放过自己；正文以闭眼表示集中精力听讲的辩解形成幽默。原图同样印作聚中，并非必然由OCR产生。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  },
+  {
+    "date": "2018-02-16",
+    "url": "https://img.owspace.com/Public/uploads/Download/2018/0216.jpg",
+    "sha256": "88ea0be3a12dfe321fa91adda096d74592b67b6187975da61eb3377b37cea7cc",
+    "bytes": 220513,
+    "reviewed_on": "2026-11-05",
+    "review": "assistant_visual_check",
+    "finding": "原图明确标注正月初一、春节，标题宜健胃消食片；选句将独处比作消化世界。日期、标题、选句均可视核验。",
+    "source_records_modified": false,
+    "matches_indexed_image_sha256": true
+  }
+]

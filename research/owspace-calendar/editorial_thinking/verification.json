@@ -1,0 +1,18 @@
+{
+  "analysis_date": "2026-11-05",
+  "valid_pages": 3959,
+  "normal_pairs": 3905,
+  "sample_count": 66,
+  "sample_strata_unique": true,
+  "visual_checks": 8,
+  "visual_hashes_match": true,
+  "source_month_files_unchanged": true,
+  "local_report_links_valid": true,
+  "report_sha256": "3c470d8ed7e2535a35163c4407040133bda2c320e7596b1487958dbe24c3e336",
+  "browser": {
+    "samples": 66,
+    "search_and_filter": true,
+    "desktop_mobile_no_overflow": true,
+    "page_errors": []
+  }
+}
