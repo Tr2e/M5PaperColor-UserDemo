@@ -1,0 +1,100 @@
+{
+  "variants": [
+    {
+      "code": "A",
+      "name": "书末署名",
+      "description": "疏朗的衬线字，配一条短线。像书页末尾的私人落款。",
+      "note": "最轻，接近日历本身的文字气质。",
+      "patch": "A.png",
+      "ink_bounds": [
+        25,
+        19,
+        59,
+        37
+      ]
+    },
+    {
+      "code": "B",
+      "name": "细框藏书印",
+      "description": "白底细框与日签边框呼应，留下清楚的归属标记。",
+      "note": "适合想保留“盖章感”，又不希望太重。",
+      "patch": "B.png",
+      "ink_bounds": [
+        11,
+        15,
+        64,
+        38
+      ]
+    },
+    {
+      "code": "C",
+      "name": "开放角标",
+      "description": "只保留对角的两处边角，让字标与纸面之间有呼吸。",
+      "note": "推荐：有辨识度，也能融入细线与留白。",
+      "patch": "C.png",
+      "ink_bounds": [
+        18,
+        15,
+        64,
+        38
+      ]
+    },
+    {
+      "code": "D",
+      "name": "椭圆书印",
+      "description": "纤细的椭圆围住署名，带一点旧书藏章的温和感。",
+      "note": "轮廓柔和，比矩形更有手工印记的感觉。",
+      "patch": "D.png",
+      "ink_bounds": [
+        8,
+        10,
+        64,
+        38
+      ]
+    },
+    {
+      "code": "E",
+      "name": "双行方印",
+      "description": "将 Tr／2e 排成两行，收进小方框，像一枚简洁私印。",
+      "note": "印章感最强，字标的存在感也更明确。",
+      "patch": "E.png",
+      "ink_bounds": [
+        28,
+        2,
+        64,
+        38
+      ]
+    },
+    {
+      "code": "F",
+      "name": "轻邮戳",
+      "description": "圆形邮戳配两道短波纹，像给这一页留下寄出的印记。",
+      "note": "更有叙事趣味，装饰性也更明显。",
+      "patch": "F.png",
+      "ink_bounds": [
+        5,
+        2,
+        64,
+        38
+      ]
+    }
+  ],
+  "dates": [
+    "2027-01-09",
+    "2027-08-08",
+    "2027-12-30"
+  ],
+  "source": "../tr2e_calendar_2027_editorial_v2_1/days/",
+  "patch_box": [
+    300,
+    530,
+    365,
+    570
+  ],
+  "existing_calendar_unchanged": true,
+  "resolution": [
+    400,
+    600
+  ],
+  "signature": "Tr2e"
+}

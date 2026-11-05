@@ -1,0 +1,17 @@
+{
+  "exports": 18,
+  "offline": true,
+  "variants": 6,
+  "days": 3,
+  "mobile_no_overflow": true,
+  "errors": [],
+  "pixel_comparison": {
+    "images": 18,
+    "resolution": [
+      400,
+      600
+    ],
+    "outside_signature_region_unchanged": true,
+    "binary_black_white": true
+  }
+}
