@@ -97,15 +97,23 @@ void CalendarPack::text(uint16_t id,int x64,int y,int size,uint8_t* bits) const 
         uint16_t g=u16(p+2+2*i);glyph(g,x64,y+size,bits);x64+=u16(data_+field(6)+16*g+12);
     }
 }
+int CalendarPack::headerDate(Date date,uint8_t* bits) const {
+    int x=20*64;
+    auto header=[&](int id){text(id,x,49,31,bits);x+=textWidth(id);};
+    if(date.month>=10) { header(date.month/10); }
+    header(date.month%10);header(10);header(date.day/10);header(date.day%10);
+    return x;
+}
+bool CalendarPack::renderHeaderDate(Date date,uint8_t* bits,size_t size) const {
+    Entry e{};if(!bits || size<30000 || !entry(date,e)) return false;
+    std::memset(bits,0,30000);headerDate(date,bits);return true;
+}
 bool CalendarPack::render(Date date,uint8_t* bits,size_t size) const {
     Entry e{};if(!bits || size<30000 || !entry(date,e)) return false;
     std::memset(bits,0,30000);
     rule(bits,20,38,360);rule(bits,20,94,360,2);rule(bits,20,578,360,2);
     rule(bits,20,94,2,486);rule(bits,378,94,2,486);rule(bits,250,50,1,31);
-    int x=20*64;
-    auto header=[&](int id){text(id,x,49,31,bits);x+=textWidth(id);};
-    if(date.month>=10) { header(date.month/10); }
-    header(date.month%10);header(10);header(date.day/10);header(date.day%10);
+    int x=headerDate(date,bits);
     const int meta_x=x+10*64;
     text(22+(ordinal(date)-1)%7,meta_x,50,14,bits);text(e.label,meta_x,70,14,bits);
     int year_ids[]={11+date.year/1000,11+(date.year/100)%10,11+(date.year/10)%10,11+date.year%10,21};

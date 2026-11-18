@@ -27,6 +27,25 @@ uint8_t* frame=nullptr;
 uint32_t displayed_day=0;
 bool state_ok=false;
 bool error_visible=false;
+bool battery_date_warning=false;
+
+uint16_t read_wake_battery() {
+    uint16_t samples[5]{};unsigned count=0;
+    for(unsigned i=0;i<5;++i) {
+        uint16_t mv=0;
+        if(power.readVbat(&mv)==M5PM1_OK && mv>0) samples[count++]=mv;
+        vTaskDelay(pdMS_TO_TICKS(20));
+    }
+    if(count<3) {
+        ESP_LOGW(TAG,"Battery sampling failed; date warning unavailable");return 0;
+    }
+    for(unsigned i=1;i<count;++i) {
+        const uint16_t value=samples[i];unsigned j=i;
+        while(j>0 && samples[j-1]>value) {samples[j]=samples[j-1];--j;}
+        samples[j]=value;
+    }
+    return samples[count/2];
+}
 
 void led_off() {M5.Led.setAllColor(0,0,0);M5.Led.setBrightness(0);M5.Led.display();}
 void led_on(uint8_t red,uint8_t green,uint8_t blue,uint8_t brightness=96) {
@@ -78,7 +97,12 @@ bool show_today() {
         message("年度计划需要检查","请保留本年已有的内容计划","升级固件不能重新抽取本年内容");return false;
     }
     if(!pack.render(day,frame,30000)) return false;
-    canvas.setRotation(1);canvas.fillScreen(TFT_WHITE);canvas.drawBitmap(0,0,frame,400,600,TFT_BLACK);push();
+    canvas.setRotation(1);canvas.fillScreen(TFT_WHITE);canvas.drawBitmap(0,0,frame,400,600,TFT_BLACK);
+    // Reuse the copied frame as an exact glyph mask, including the decimal
+    // point. Weekday, rules, large day number and body remain untouched.
+    if(battery_date_warning && pack.renderHeaderDate(day,frame,30000))
+        canvas.drawBitmap(0,0,frame,400,600,0xBF0000U);
+    push();
     displayed_day=key;error_visible=false;tr2e::Entry entry{};pack.entry(day,entry);
     ESP_LOGI(TAG,"Displayed %04d-%02d-%02d source-index=%u",day.year,day.month,day.day,entry.record);
     return true;
@@ -228,10 +252,13 @@ extern "C" void app_main() {
     // One press powers on/restarts the board, including while ESP is asleep.
     auto boot=tr2e::classifyBoot(reset,source&(M5PM1_WAKE_SRC_PWRBTN|M5PM1_WAKE_SRC_RSTBTN),
         source&M5PM1_WAKE_SRC_EXT_WAKE,sleep_cause==ESP_SLEEP_WAKEUP_TIMER);
+    // Sample on every boot/wake, before LED, display and radio load.
+    const uint16_t battery_mv=read_wake_battery();
+    battery_date_warning=tr2e::batteryDateWarning(battery_mv);
+    ESP_LOGI(TAG,"Wake battery=%u mV, date-low-battery=%u",unsigned(battery_mv),unsigned(battery_date_warning));
     const bool manual=boot==tr2e::Boot::Manual;if(manual) led_pulse(0,255,60);
     ESP_LOGI(TAG,"Calendar boot kind=%u, wake-source=%u",unsigned(boot),source);
-    uint16_t battery_mv=0;
-    if(power.readVbat(&battery_mv)==M5PM1_OK && battery_mv>0 && battery_mv<3100) {
+    if(battery_mv>0 && battery_mv<3100) {
         ESP_LOGW(TAG,"Low battery: skip refresh and radio");sleep_until_midnight(false);
     }
     // Never erase NVS automatically: existing credentials and annual locks matter.

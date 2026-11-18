@@ -48,6 +48,31 @@ int main(int argc,char** argv) {
     assert(!tr2e::shouldSync(tr2e::Boot::Rtc,0,state));
     assert(tr2e::secondsUntilMidnight(23,59,59)==1);
     assert(tr2e::secondsUntilMidnight(0,0,0)==86400);
+    assert(!tr2e::batteryDateWarning(0)); // Failed read is not an empty battery.
+    assert(tr2e::batteryDateWarning(3100));
+    assert(tr2e::batteryDateWarning(3399));
+    assert(!tr2e::batteryDateWarning(3400)); // Exactly 5% stays black.
+    assert(!tr2e::batteryDateWarning(4200));
+    // Check all month/day widths, including double-digit months and leap day.
+    for(int month=1;month<=12;++month) for(int day=1;day<=31;++day) {
+        tr2e::Date date{2028,month,day};if(!tr2e::ordinal(date)) continue;
+        std::vector<uint8_t> full(30000),mask(30000,255);
+        assert(pack.render(date,full.data(),full.size()));
+        assert(pack.renderHeaderDate(date,mask.data(),mask.size()));
+        unsigned ink=0;
+        for(int y=0;y<600;++y) for(int x=0;x<400;++x) {
+            int offset=y*50+x/8;uint8_t bit=0x80>>(x&7);
+            if(mask[offset]&bit) {
+                ++ink;assert(full[offset]&bit);
+                assert(x>=20 && x<110 && y>38 && y<94);
+            } else if(x>=20 && x<110 && y>=50 && y<85) {
+                // Weekday starts beyond the right edge of the date plus 10px.
+                // Compare only the date's known left-hand portion here.
+                if(x<70) assert(!(full[offset]&bit));
+            }
+        }
+        assert(ink>100);
+    }
     if(argc==6) {
         tr2e::Date date{std::stoi(argv[3]),std::stoi(argv[4]),std::stoi(argv[5])};
         std::vector<uint8_t> bits(30000);assert(pack.render(date,bits.data(),bits.size()));

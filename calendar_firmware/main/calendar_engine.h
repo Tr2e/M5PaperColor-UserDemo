@@ -13,6 +13,8 @@ public:
     bool open(const uint8_t* data, size_t size);
     bool entry(Date date, Entry& result) const;
     bool render(Date date, uint8_t* black_bits, size_t size) const;
+    // Same small month/day glyphs as render(), on an otherwise empty mask.
+    bool renderHeaderDate(Date date, uint8_t* bits, size_t size) const;
     uint32_t planHash(int year) const;
     uint32_t firstDay() const { return field(2); }
     uint32_t dayCount() const { return field(3); }
@@ -24,6 +26,7 @@ private:
     void glyph(uint16_t id, int x64, int baseline, uint8_t* bits) const;
     int textWidth(uint16_t id) const;
     void text(uint16_t id, int x64, int y, int font_size, uint8_t* bits) const;
+    int headerDate(Date date, uint8_t* bits) const;
 };
 
 enum class Boot { Manual, Rtc, Recovery };
@@ -33,4 +36,6 @@ struct SyncState { uint32_t next_attempt_day = 0, last_success_day = 0; };
 bool shouldSync(Boot boot, uint32_t today, const SyncState& state);
 void recordAttempt(SyncState& state, uint32_t today, bool success);
 uint32_t secondsUntilMidnight(int hour, int minute, int second);
+// Match the PaperColor demo voltage estimate: 3400mV = 5%, not a fuel gauge.
+inline bool batteryDateWarning(uint16_t mv) { return mv > 0 && mv < 3400; }
 } // namespace tr2e
